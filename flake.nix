@@ -2,14 +2,14 @@
 	description = "Nixos config flake";
 
 	inputs = {
-	  nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-	  home-manager = {
-	  	url = "github:nix-community/home-manager";
-	  	inputs.nixpkgs.follows = "nixpkgs";
-	  };
+		home-manager = {
+			url = "github:nix-community/home-manager";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 
-	  hyprsome.url = "github:sopa0/hyprsome";
+		hyprsome.url = "github:sopa0/hyprsome";
 	};
 
 	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: {
@@ -20,14 +20,14 @@
 				modules = [
 					./configuration.nix
 
-					home-manager.nixosModules.home-manager.home-manager {
-						useGlobalPkgs = true;
-						useUserPackages = true;
-						users.ayes = import ./home.nix;
+					home-manager.nixosModules.home-manager {
+						home-manager.useGlobalPkgs = true;
+						home-manager.useUserPackages = true;
+						home-manager.users.ayes = import ./home.nix;
 
 						# Optionally, use home-manager.extraSpecialArgs to pass
 						# arguments to home.nix
-						extraSpecialArgs = { inherit inputs; };
+						home-manager.extraSpecialArgs = { inherit inputs; };
 					}
 				];
 			};

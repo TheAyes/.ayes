@@ -1,14 +1,11 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, lib, ... }: {
 	imports = [
-		./hyprland.nix
-		./waybar.nix
-		./theme.nix
-		./vesktop.nix
+		./config/vesktop.nix
 	];
 
 	home = {
 		username = "ayes";
-		homeDirectory = "/home/ayes";
+		homeDirectory = lib.mkForce "/home/ayes";
 		stateVersion = "23.11";
 
 		packages = with pkgs; [
@@ -25,8 +22,8 @@
 		];
 
 		file = {
-			".config/micro/colorschemes/rose-pine.micro" = {
-				source = "./config/micro/colorschemes";
+			"${config.xdg.configHome}/micro/colorschemes" = {
+				source = ./config/micro/colorschemes;
 				recursive = true;
 			};
 		};
@@ -58,15 +55,18 @@
 
 	qt = {
 		enable = true;
-		style = "gtk2";
-		platformTheme = "gtk2";
+		style = {
+			name = "qt6gtk2";
+			package = pkgs.qt6Packages.qt6gtk2;
+		};
+		platformTheme = "gtk3";
 	};
 
 	programs = {
 		eww = {
 			enable = true;
 			package = pkgs.eww;
-			configDir = ./.config/eww;
+			configDir = ./config/eww;
 		};
 		
 		eza = {
@@ -129,13 +129,6 @@
 	};
 
 	services = {
-		home-manager = {
-			autoupgrade = {
-				enable = true;
-				frequency = "daily";
-			};
-		};
-
 		hypridle = {
 			enable = true;
 			package = pkgs.hypridle;
@@ -159,6 +152,7 @@
 		mpd = {
 			enable = true;
 			package = pkgs.mpd;
+			musicDirectory = config.services.mpd.musicDirectory;
 		};
 	};
 

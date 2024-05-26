@@ -90,7 +90,9 @@
 				};
 			};
 		};
+
   		nameservers = [ "8.8.8.8" "1.1.1.1" ];
+
   		firewall = {
   			enable = true;
   			#allowedTCPPorts = [];
@@ -183,7 +185,7 @@
 
 		blueman.enable = true;
 
-		wxserver = {
+		xserver = {
 			enable = true;
 			xkb.layout = "de";
 			xkb.variant = "nodeadkeys";

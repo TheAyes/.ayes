@@ -10,8 +10,8 @@ if git diff --quiet '*.nix'; then
 fi
 
 # Autoformat your nix files
-alejandra . &>/dev/null \
-  || ( alejandra . ; echo "formatting failed!" && exit 1)
+#alejandra . &>/dev/null \
+#  || ( alejandra . ; echo "formatting failed!" && exit 1)
 
 # Shows your changes
 git diff -U0 '*.nix'
@@ -19,7 +19,7 @@ git diff -U0 '*.nix'
 echo "NixOs Rebuilding..."
 
 # Rebuild, output simplified errors, log tracebacks
-sudo nixos-rebuild switch &>nixos-switch.log || (cmd < nixos-switch.log | grep --color error && exit 1)
+sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
