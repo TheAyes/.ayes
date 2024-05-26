@@ -59,7 +59,7 @@
 			name = "qt6gtk2";
 			package = pkgs.qt6Packages.qt6gtk2;
 		};
-		platformTheme = "gtk3";
+		platformTheme.name = "gtk3";
 	};
 
 	programs = {
@@ -129,15 +129,15 @@
 	};
 
 	services = {
-		hypridle = {
-			enable = true;
-			package = pkgs.hypridle;
-		};
+		#hypridle = {
+		#	enable = true;
+		#	package = pkgs.hypridle;
+		#};
 
-		hyprpaper = {
-			enable = true;
-			package = pkgs.hyprpaper;
-		};
+		#hyprpaper = {
+		#	enable = true;
+		#	package = pkgs.hyprpaper;
+		#};
 	
 		dunst = {
 			enable = true;
@@ -149,11 +149,11 @@
 			enable = true;
 		};
 
-		mpd = {
-			enable = true;
-			package = pkgs.mpd;
-			musicDirectory = config.services.mpd.musicDirectory;
-		};
+		#mpd = {
+		#	enable = true;
+		#	package = pkgs.mpd;
+		#	musicDirectory = config.services.mpd.musicDirectory;
+		#};
 	};
 
 	nixpkgs.config.allowUnfree = true;
