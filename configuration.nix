@@ -20,8 +20,8 @@
 			modesetting.enable = true;
 			
 			powerManagement = {
-				enable = true;
-				finegrained = true;
+				enable = false;
+				finegrained = false;
 			};
 
 			package = let 
@@ -189,6 +189,8 @@
 			enable = true;
 			xkb.layout = "de";
 			xkb.variant = "nodeadkeys";
+
+			videoDrivers = [ "nvidia" ];
 		};
 	};
 
