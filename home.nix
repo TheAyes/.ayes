@@ -20,7 +20,8 @@
 			hyprshot
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
-
+			xorg.xhost
+			gpu-screen-recorder-gtk
 		];
 
 		file = {

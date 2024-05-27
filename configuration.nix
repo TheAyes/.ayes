@@ -162,7 +162,7 @@
 		xwayland
 		wl-clipboard
 		wev
-		gpu-screen-recorder-gtk
+
 	];
 
 	services = {
