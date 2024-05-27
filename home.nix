@@ -21,6 +21,7 @@
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
 			gpu-screen-recorder
+			gpu-screen-recorder-gtk
 		];
 
 		file = {
