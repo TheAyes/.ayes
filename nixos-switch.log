@@ -1,30 +1,32 @@
+warning: Git tree '/home/ayes/.nixos' is dirty
 building the system configuration...
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/qzjidyx3fip413vg7by6ibl22lwizc68-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/qzjidyx3fip413vg7by6ibl22lwizc68-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: syntax error, unexpected '}', expecting ';'
-
-       at /nix/store/0gld1v6rx346d8r458vlw9a3qcspqnxc-source/ayes/home.nix:28:4:
-
-           27|                          source = "./.config/micro/colorschemes"
-           28|                  };
-             |    ^
-           29|           };
+warning: Git tree '/home/ayes/.nixos' is dirty
+these 9 derivations will be built:
+  /nix/store/b290q4hpmwqnqg4sgccxrcgcd4ncixg6-home-manager-path.drv
+  /nix/store/38pmvph57xmx3d643fqvs2nyqq4n71wf-user-environment.drv
+  /nix/store/yrd3vw5as7129bldshgcl0a8dfj93dc6-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/s7nx2gf8dp5p03vqhjvqyd23qapd5s81-home-manager-files.drv
+  /nix/store/3z6rxn4g2kp38az8blwkxq8r8iv44sib-home-manager-generation.drv
+  /nix/store/d6vmn9lhwy6vs6wl5xjjp51jqnp6rj50-unit-home-manager-ayes.service.drv
+  /nix/store/hhhldzjr0pb43mgv209y5m45y764q6zp-system-units.drv
+  /nix/store/v83z88cdpgpafrd0dz5r5wjdy399prsm-etc.drv
+  /nix/store/gr4cwlw5l33bgw22kn4cs7xg1smwn395-nixos-system-io-24.11.20240524.bfb7a88.drv
+these 2 paths will be fetched (0.13 MiB download, 0.43 MiB unpacked):
+  /nix/store/48sqdhhrv4g78yr9ghlxja9y2dk6mggj-gpu-screen-recorder-gtk-3.2.5
+  /nix/store/0mshrcfr3887qi8c4c4svsqbda5s638z-gpu-screen-recorder-unstable-2023-11-18
+copying path '/nix/store/0mshrcfr3887qi8c4c4svsqbda5s638z-gpu-screen-recorder-unstable-2023-11-18' from 'https://cache.nixos.org'...
+copying path '/nix/store/48sqdhhrv4g78yr9ghlxja9y2dk6mggj-gpu-screen-recorder-gtk-3.2.5' from 'https://cache.nixos.org'...
+building '/nix/store/b290q4hpmwqnqg4sgccxrcgcd4ncixg6-home-manager-path.drv'...
+building '/nix/store/yrd3vw5as7129bldshgcl0a8dfj93dc6-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/38pmvph57xmx3d643fqvs2nyqq4n71wf-user-environment.drv'...
+building '/nix/store/s7nx2gf8dp5p03vqhjvqyd23qapd5s81-home-manager-files.drv'...
+building '/nix/store/3z6rxn4g2kp38az8blwkxq8r8iv44sib-home-manager-generation.drv'...
+building '/nix/store/d6vmn9lhwy6vs6wl5xjjp51jqnp6rj50-unit-home-manager-ayes.service.drv'...
+building '/nix/store/hhhldzjr0pb43mgv209y5m45y764q6zp-system-units.drv'...
+building '/nix/store/v83z88cdpgpafrd0dz5r5wjdy399prsm-etc.drv'...
+building '/nix/store/gr4cwlw5l33bgw22kn4cs7xg1smwn395-nixos-system-io-24.11.20240524.bfb7a88.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for ayes...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-ayes.service
