@@ -13,7 +13,8 @@
 			micro
 			vesktop
 			prismlauncher
-			jetbrains-toolbox
+			#jetbrains-toolbox
+			jetbrains.idea-ultimate
 			bitwig-studio
 			pcmanfm
 			xarchiver
