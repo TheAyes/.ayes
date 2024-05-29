@@ -5,7 +5,6 @@
 { config, pkgs, ... }: {
 	imports = [
 		./hardware-configuration.nix
-		#<home-manager/nixos>
 	];
 
 	hardware = {
@@ -69,10 +68,6 @@
 			efi.canTouchEfiVariables = true;
 		};
 	};
-	#boot.loader.systemd-boot.enable = true;
-	#boot.loader.efi.canTouchEfiVariables = true;
-
-	#boot.kernelPackages = pkgs.linuxPackages_zen;
 	
 	########## Networking ##########
 
@@ -159,7 +154,6 @@
 		pavucontrol
 		playerctl
 		git
-		xwayland
 		wl-clipboard
 		wev
 

@@ -21,8 +21,8 @@
 			hyprshot
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
-			xorg.xhost
-			gpu-screen-recorder-gtk
+			#xorg.xhost
+			#gpu-screen-recorder-gtk
 			xdg-desktop-portal-hyprland
 			kdePackages.polkit-kde-agent-1
 		];
@@ -154,12 +154,6 @@
 		gnome-keyring = {
 			enable = true;
 		};
-
-		#mpd = {
-		#	enable = true;
-		#	package = pkgs.mpd;
-		#	musicDirectory = config.services.mpd.musicDirectory;
-		#};
 	};
 
 	nixpkgs.config.allowUnfree = true;
@@ -168,6 +162,10 @@
 		windowManager.hyprland = {
 			enable = true;
 			settings = import ./config/hyprland.nix;
+
+			xwayland = {
+				enable = true;
+			};
 		};
 	};
 
