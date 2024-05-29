@@ -8,6 +8,8 @@
 	];
 
 	hardware = {
+		#pulseaudio.enabled = false;
+
 		bluetooth = {
 			enable = true;
 			powerOnBoot = true;
@@ -54,10 +56,20 @@
 		};
 	};
 
-	nix.settings.experimental-features = [
-		"nix-command"
-		"flakes"
-	];
+	nix = {
+		settings = {
+			auto-optimise-store = true;
+			#gc = {
+			#	automatic = true;
+			#	dates = "weekly";
+			#	options = "--delete-older-than 7d";
+			#};
+			experimental-features = [
+				"nix-command"
+				"flakes"
+			];
+		};
+	};
 
 	# Bootloader
 	boot = {
@@ -147,17 +159,32 @@
 
 	# List packages installed in system profile. To search, run:
 	# $ nix search wget
-	environment.systemPackages = with pkgs; [
-		wget
-		kitty
-		alejandra
-		pavucontrol
-		playerctl
-		git
-		wl-clipboard
-		wev
+	environment = {
+		variables = {
+			NIXOS_OZONE_WL = "1";
+			XCURSOR_SIZE = "24";
+			HYPRCURSOR_SIZE = "24";
 
-	];
+			QT_QPA_PLATFORMTHEME = "qt6ct";
+
+			XDG_SESSION_TYPE = "wayland";
+			LIBVA_DRIVER_NAME = "nvidia";
+			__GLX_VENDOR_LIBRARY_NAME = "nvidia";
+			GBM_BACKEND = "nvidia-drm";
+			NVD_BACKEND = "direct";
+			WLR_NO_HARDWARE_CURSORS = "1";
+		};
+		systemPackages = with pkgs; [
+			wget
+			kitty
+			alejandra
+			pavucontrol
+			playerctl
+			git
+			wl-clipboard
+			wev
+		];
+	};
 
 	services = {
 		displayManager.sddm.enable = true;
@@ -192,10 +219,6 @@
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
 	# programs.mtr.enable = true;
-	# programs.gnupg.agent = {
-	#   enable = true;
-	#   enableSSHSupport = true;
-	# };
 	programs = {
 		hyprland.enable = true;
 		steam = {
@@ -204,6 +227,10 @@
 			dedicatedServer.openFirewall = true;
 		};
 		fish.enable = true;
+		gnupg.agent = {
+		  enable = true;
+		  enableSSHSupport = true;
+		};
 	};
 	
 	programs.bash = {

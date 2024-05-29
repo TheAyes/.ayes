@@ -4,17 +4,7 @@
 	source = [];
 
 	env = [
-		"XCURSOR_SIZE, 24"
-		"HYPRCURSOR_SIZE, 24"
 
-		"QT_QPA_PLATFORMTHEME, qt6ct"
-
-		"XDG_SESSION_TYPE, wayland"
-		"LIBVA_DRIVER_NAME, nvidia"
-		"__GLX_VENDOR_LIBRARY_NAME, nvidia"
-		"GBM_BACKEND, nvidia-drm"
-		"NVD_BACKEND, direct"
-		"WLR_NO_HARDWARE_CURSORS, 1"
 	];
 
 	monitor = [
