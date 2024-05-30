@@ -4,7 +4,7 @@
 	source = [];
 
 	env = [
-
+		"WLR_NO_HARDWARE_CURSORS, 1"
 	];
 
 	monitor = [
