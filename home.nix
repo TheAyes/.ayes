@@ -25,6 +25,7 @@
 			#gpu-screen-recorder-gtk
 			xdg-desktop-portal-hyprland
 			kdePackages.polkit-kde-agent-1
+			godot_4
 		];
 
 		file = {
