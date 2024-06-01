@@ -129,17 +129,17 @@
 		};
 
 		wofi = {
-			enable = false;
+			enable = true;
 			package = pkgs.wofi;
 			settings = {
 				prompt = "Search";
-				matching = "fuzzy";
+				matching = "contains";
 				insensitive = true;
 			};
 		};
 
 		fuzzel = {
-			enable = true;
+			enable = false;
 			package = pkgs.fuzzel;
 			settings = {
 				main = {
