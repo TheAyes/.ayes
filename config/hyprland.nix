@@ -50,7 +50,7 @@
 		"$mainMod, M, exit,"
 		"$mainMod, E, exec, dolphin"
 		"$mainMod, V, togglefloating," 
-		"$mainMod, R, exec, wofi --show drun"
+		"$mainMod, R, exec, fuzzel --show drun"
 		"$mainMod, P, pseudo, # dwindle"
 		"$mainMod, J, togglesplit, # dwindle"
 		"$mainMod, F, fullscreen"

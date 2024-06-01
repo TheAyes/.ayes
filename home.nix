@@ -129,12 +129,25 @@
 		};
 
 		wofi = {
-			enable = true;
+			enable = false;
 			package = pkgs.wofi;
 			settings = {
 				prompt = "Search";
 				matching = "fuzzy";
 				insensitive = true;
+			};
+		};
+
+		fuzzel = {
+			enable = true;
+			package = pkgs.fuzzel;
+			settings = {
+				main = {
+					terminal = "${pkgs.kitty}/bin/kitty";
+					layer = "overlay";
+					icon-theme = "rose-pine";
+					
+				};
 			};
 		};
 	};
