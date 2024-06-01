@@ -13,9 +13,9 @@
 		"DP-2, preferred, -1920x0, auto"
 	];
 
-	cursor = {
-		no_hardware_cursors = true;
-	};
+	#cursor = {
+	#	no_hardware_cursors = true;
+	#};
 
 	#workspace = (
 	#	builtins.concatLists(

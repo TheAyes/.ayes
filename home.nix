@@ -131,7 +131,11 @@
 		wofi = {
 			enable = true;
 			package = pkgs.wofi;
-			#settings = {};
+			settings = {
+				prompt = "Search";
+				matching = "fuzzy";
+				insensitive = true;
+			};
 		};
 	};
 
