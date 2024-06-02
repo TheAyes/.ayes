@@ -5,4 +5,4 @@ color-link default "#e0def4,"
 color-link selection "#e0def4,#403d52"
 
 # Divider
-color-link divider "#524f67"
+color-link divider "#e0def4,#524f67"
