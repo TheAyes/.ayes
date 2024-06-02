@@ -1,6 +1,7 @@
 { config, pkgs, inputs, lib, ... }: {
 	imports = [
 		./config/vesktop.nix
+		inputs.ags.homeManagerModules.default
 	];
 
 	home = {
@@ -71,8 +72,17 @@
 	};
 
 	programs = {
-		eww = {
+		ags = {
 			enable = true;
+			configDir = ./config/ags;
+			extraPackages = with pkgs; [
+				gtksourceview
+				webkitgtk
+				accountsservice
+			];
+		};
+		eww = {
+			enable = false;
 			package = pkgs.eww;
 			configDir = ./config/eww;
 		};

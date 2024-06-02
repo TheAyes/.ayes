@@ -10,6 +10,7 @@
 		};
 
 		hyprsome.url = "github:sopa0/hyprsome";
+		ags.url = "github:Aylur/ags";
 	};
 
 	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: {
