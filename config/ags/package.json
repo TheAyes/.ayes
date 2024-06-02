@@ -1,6 +1,0 @@
-{
-	"name": "ags-config",
-	"devDependencies": {
-		"prettier": "^3.3.0"
-	}
-}

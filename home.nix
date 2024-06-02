@@ -23,6 +23,8 @@
 			hyprshot
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
+
+			nodePackages_latest.nodejs
 			nodePackages_latest.pnpm
 			#xorg.xhost
 			#gpu-screen-recorder-gtk
