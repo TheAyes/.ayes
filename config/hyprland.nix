@@ -26,6 +26,10 @@
 	#)
 
 	exec-once = [
+		"eww open bar --screen 0 --id primary"
+		"eww open bar --screen 1 --id secondary"
+		"eww open bar --screen 2 --id tertiary"
+		"waybar"
 		"firefox"
 		"vesktop"
 		"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
@@ -50,7 +54,7 @@
 		"$mainMod, M, exit,"
 		"$mainMod, E, exec, dolphin"
 		"$mainMod, V, togglefloating," 
-		"$mainMod, R, exec, fuzzel --show drun"
+		"$mainMod, R, exec, wofi --show drun"
 		"$mainMod, P, pseudo, # dwindle"
 		"$mainMod, J, togglesplit, # dwindle"
 		"$mainMod, F, fullscreen"

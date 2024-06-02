@@ -75,6 +75,29 @@
 			package = pkgs.eww;
 			configDir = ./config/eww;
 		};
+
+		waybar = {
+			enable = false;
+			systemd.enable = true;
+			package = pkgs.waybar;
+			settings = {
+				mainBar = {
+					layer = "top";
+					position = "top";
+					height = 30;
+					modules-left = [];
+					modules-center = [];
+					module-right = [
+						"clock"
+					];
+				};
+				clock = {
+					format = "{%H:%M:%S %d/%m%y}";
+					
+				};
+			};
+			
+		};
 		
 		eza = {
 			enable = true;
