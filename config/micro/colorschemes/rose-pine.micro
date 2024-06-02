@@ -1,1 +1,8 @@
+# Text color
 color-link default "#e0def4,"
+
+# Text selection color
+color-link selection "#e0def4,#403d52"
+
+# Divider
+color-link divider "#524f67"
