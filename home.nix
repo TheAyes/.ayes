@@ -17,6 +17,7 @@
 			jetbrains.idea-ultimate
 			bitwig-studio
 			pcmanfm
+			hyprland-workspaces
 			xarchiver
 			hyprshot
 			lutris
@@ -148,6 +149,7 @@
 			settings = {
 				autosu = true;
 				mkparents = true;
+				colorscheme = "rose-pine";
 			};
 		};
 
