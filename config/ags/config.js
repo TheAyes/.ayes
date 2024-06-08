@@ -1,3 +1,21 @@
+const makeBar = (monitor = 0) => {
+	const label = Widget.Label({
+		label: "Test Content"
+	});
+
+	Utils.interval(1000, async () => {
+		label.label = await Utils.execAsync("date");
+	});
+
+	return Widget.Window({
+		monitor,
+		exclusivity: "exclusive",
+		name: `bar${monitor}`,
+		anchor: ["top", "left", "right"],
+		child: Widget.Label().poll(1000, async (label) => (label.label = await Utils.execAsync("date")))
+	});
+};
+
 App.config({
-	windows: []
+	windows: [makeBar(0), makeBar(1), makeBar(2)]
 });

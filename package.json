@@ -1,0 +1,6 @@
+{
+	"name": "dotayes",
+	"devDependencies": {
+		"prettier": "latest"
+	}
+}
