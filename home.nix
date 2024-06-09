@@ -32,6 +32,7 @@
 			kdePackages.polkit-kde-agent-1
 			clangStdenv
 			godot_4
+			python3
 		];
 
 		file = {
