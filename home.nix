@@ -16,6 +16,7 @@
 			prismlauncher
 			#jetbrains-toolbox
 			jetbrains.idea-ultimate
+			jetbrains.rider
 			bitwig-studio
 			pcmanfm
 			hyprland-workspaces
@@ -30,9 +31,7 @@
 			#gpu-screen-recorder-gtk
 			xdg-desktop-portal-hyprland
 			kdePackages.polkit-kde-agent-1
-			clangStdenv
 			godot_4
-			python3
 		];
 
 		file = {
