@@ -26,9 +26,7 @@
 	#)
 
 	exec-once = [
-		"eww open bar --screen 0 --id primary"
-		"eww open bar --screen 1 --id secondary"
-		"eww open bar --screen 2 --id tertiary"
+		"ags -c ~/.nixos/config/ags/config.js"
 		"waybar"
 		"firefox"
 		"vesktop"
