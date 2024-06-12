@@ -17,13 +17,47 @@
 	#	no_hardware_cursors = true;
 	#};
 
-	#workspace = (
-	#	builtins.concatLists(
-	#		builtins.genList(
-	#			
-	#		)
-	#	)
-	#)
+	workspace = [
+		"1, monitor:HDMI-A-1"
+		"2, monitor:HDMI-A-1"
+		"3, monitor:HDMI-A-1"
+		"4, monitor:HDMI-A-1"
+		"5, monitor:HDMI-A-1"
+		"6, monitor:HDMI-A-1"
+		"7, monitor:HDMI-A-1"
+		"8, monitor:HDMI-A-1"
+		"9, monitor:HDMI-A-1"
+
+		"11, monitor:DP-1"
+		"12, monitor:DP-1"
+		"13, monitor:DP-1"
+		"14, monitor:DP-1"
+		"15, monitor:DP-1"
+		"16, monitor:DP-1"
+		"17, monitor:DP-1"
+		"18, monitor:DP-1"
+		"19, monitor:DP-1"
+
+		"21, monitor:DP-2"
+		"22, monitor:DP-2"
+		"23, monitor:DP-2"
+		"24, monitor:DP-2"
+		"25, monitor:DP-2"
+		"26, monitor:DP-2"
+		"27, monitor:DP-2"
+		"28, monitor:DP-2"
+		"29, monitor:DP-2"
+	];/* ++ builtins.concatLists(
+		builtins.map(
+			monitor: builtins.genList(
+				workspaceGroup: let
+				in [
+					"${workspaceGroup}"
+				]
+			)
+			9
+		)["HDMI-A-1" "DP-1" "DP-2"]
+	);*/
 
 	exec-once = [
 		"ags -c ~/.nixos/config/ags/config.js"
@@ -62,6 +96,7 @@
 		"$mainMod SHIFT, S, movetoworkspace, special:magic"
 	] ++ (
 		builtins.concatLists(
+
 			builtins.genList(
 				x: let
 					ws = let
@@ -69,8 +104,8 @@
 					in
 						builtins.toString(x + 1 - (x * 10));
 				in [
-					"$mainMod, ${ws}, workspace, ${toString(x + 1)}"
-					"$mainMod SHIFT, ${ws}, movetoworkspace, ${toString(x + 1)}"
+					"$mainMod, ${ws}, exec, hyprsome workspace ${toString(x + 1)}"
+					"$mainMod SHIFT, ${ws}, exec, hyprsome move, ${toString(x + 1)}"
 				]
 			)
 			10

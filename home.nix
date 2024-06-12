@@ -15,8 +15,7 @@
 			vesktop
 			prismlauncher
 			#jetbrains-toolbox
-			jetbrains.idea-ultimate
-			jetbrains.rider
+
 			bitwig-studio
 			pcmanfm
 			hyprland-workspaces
@@ -24,12 +23,8 @@
 			hyprshot
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
-
-			nodePackages_latest.nodejs
-			nodePackages_latest.pnpm
 			#xorg.xhost
 			#gpu-screen-recorder-gtk
-			xdg-desktop-portal-hyprland
 			kdePackages.polkit-kde-agent-1
 			godot_4
 		];
@@ -191,6 +186,10 @@
 		windowManager.hyprland = {
 			enable = true;
 			settings = import ./config/hyprland.nix;
+			systemd = {
+				enable = true;
+				enableXdgAutostart = true;
+			};
 
 			xwayland = {
 				enable = true;

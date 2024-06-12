@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
 	imports = [
 		./hardware-configuration.nix
 	];
@@ -223,7 +223,10 @@
 	# started in user sessions.
 	# programs.mtr.enable = true;
 	programs = {
-		hyprland.enable = true;
+		hyprland = {
+			enable = true;
+			portalPackage = inputs.nixpkgs-old.x86_64-linux.xdg-desktop-portal-hyprland;
+		};
 		steam = {
 			enable = true;
 			remotePlay.openFirewall = true;
