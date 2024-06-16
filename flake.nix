@@ -16,6 +16,7 @@
 
 	outputs = { self, nixpkgs, nixpkgs-old, home-manager, hyprsome, ... }@inputs: let
 		system = "x86_64-linux";
+		pkgs = import nixpkgs { overlays = []; config = { allowUnfree = true; }; inherit system; };
 	in {
 		nixosConfigurations = {
 			io = nixpkgs.lib.nixosSystem {
@@ -37,7 +38,7 @@
 			};
 		};
 
-		devShells.${system}.default = import ./environments/development.nix;
+		devShells.${system}.default = import ./environments/development.nix pkgs;
 		
 	};
 }

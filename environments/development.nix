@@ -1,10 +1,6 @@
-{ pkgs ? (import <nixpkgs> {
-    config.allowUnfree = true;
-    config.segger-jlink.acceptLicense = true;
-}), ... }: pkgs.mkShell {
-
-
-	nativeBuildInputs = with pkgs; [
+pkgs: pkgs.mkShell {
+	
+	packages = with pkgs; [
 		nodePackages_latest.nodejs
 		nodePackages_latest.pnpm
 		bun

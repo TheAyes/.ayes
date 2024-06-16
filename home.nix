@@ -89,9 +89,13 @@
 			icons = true;
 		};
 
+		librewolf = {
+			enable = true;
+		};
+
 		firefox = {
 			enable = true;
-			package = pkgs.firefox;
+			#package = pkgs.librewolf;
 			policies = {
 				PasswordManagerEnabled = false;
 				PopupBlocking = true;
