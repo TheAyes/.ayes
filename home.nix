@@ -81,6 +81,10 @@
 				accountsservice
 			];
 		};
+
+		direnv = {
+			enable = true;
+		};
 		
 		eza = {
 			enable = true;
@@ -172,11 +176,6 @@
 				upgrade = "~/.nixos/upgrade.sh";
 				test-rebuild = "~/.nixos/test.sh";
 			};
-
-			interactiveShellInit = ''
-				direnv hook fish | source
-				set -g direnv_fish_mode eval_on_arrow
-			'';
 
 			functions = {
 				rebuild = "/home/ayes/.nixos/rebuild.sh $argv";
