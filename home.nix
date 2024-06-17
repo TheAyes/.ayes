@@ -24,8 +24,7 @@
 			hyprshot
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
-			#xorg.xhost
-			#gpu-screen-recorder-gtk
+			gpu-screen-recorder-gtk
 			kdePackages.polkit-kde-agent-1
 			godot_4
 		];
@@ -84,6 +83,7 @@
 
 		direnv = {
 			enable = true;
+			config = {};
 		};
 		
 		eza = {
