@@ -1,6 +1,6 @@
 const makeBar = (monitor = 0) => {
 	const label = Widget.Label({
-		label: "Test Content"
+		label: "date"
 	});
 
 	Utils.interval(1000, async () => {
