@@ -83,7 +83,9 @@
 
 		direnv = {
 			enable = true;
-			config = {};
+			config = {
+
+			};
 		};
 		
 		eza = {
