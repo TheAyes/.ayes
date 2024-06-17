@@ -15,7 +15,8 @@
 			vesktop
 			prismlauncher
 			#jetbrains-toolbox
-
+			jetbrains.idea-ultimate
+			jetbrains.rider
 			bitwig-studio
 			pcmanfm
 			hyprland-workspaces

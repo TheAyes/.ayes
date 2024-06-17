@@ -3,7 +3,6 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-		nixpkgs-old.url = "github:nixos/nixpkgs/63346afdb84343873a5ea407279dc6a111f7e2e2";
 
 		home-manager = {
 			url = "github:nix-community/home-manager";
@@ -14,13 +13,16 @@
 		ags.url = "github:Aylur/ags";
 	};
 
-	outputs = { self, nixpkgs, nixpkgs-old, home-manager, hyprsome, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: let
 		system = "x86_64-linux";
-		pkgs = import nixpkgs { overlays = []; config = { allowUnfree = true; }; inherit system; };
+		pkgs = import nixpkgs {
+			overlays = [];
+			config = { allowUnfree = true; };
+			inherit system;
+		};
 	in {
 		nixosConfigurations = {
 			io = nixpkgs.lib.nixosSystem {
-				inherit system;
 				specialArgs = { inherit inputs; };
 				modules = [
 					./configuration.nix
@@ -38,7 +40,6 @@
 			};
 		};
 
-		devShells.${system}.default = import ./environments/development.nix pkgs;
-		
+		devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
 	};
 }

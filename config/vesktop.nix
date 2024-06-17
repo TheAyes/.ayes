@@ -3,7 +3,7 @@
 		"vesktop/settings.json" = {
 			enable = true;
 			text = ''{
-				"discordBranch": "canary",
+				"discordBranch": "stable",
 				"arpc": "on",
 				"splashColor": "rgb(219, 222, 225)",
 				"splashBackground": "rgb(49, 51, 56)",
@@ -25,7 +25,7 @@
 			    "frameless": false,
 			    "transparent": true,
 			    "winCtrlQ": false,
-			    "disableMinSize": false,
+			    "disableMinSize": true,
 			    "winNativeTitleBar": false,
 			    "plugins": {
 			        "BadgeAPI": {
@@ -557,9 +557,9 @@
 			        "logLimit": 50
 			    },
 			    "cloud": {
-			        "authenticated": true,
+			        "authenticated": false,
 			        "url": "https://api.vencord.dev/",
-			        "settingsSync": true,
+			        "settingsSync": false,
 			        "settingsSyncVersion": 1715318753811
 			    }
 			}'';

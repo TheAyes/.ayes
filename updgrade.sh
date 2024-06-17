@@ -4,6 +4,6 @@ pushd ~/.nixos
 
 sudo nix-channel --update
 sudo nix flake update
-sudo nixos-rebuild --switch --upgrade
+sudo nixos-rebuild switch --upgrade
 
 popd

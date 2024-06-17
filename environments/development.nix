@@ -5,7 +5,5 @@ pkgs: pkgs.mkShell {
 		nodePackages_latest.pnpm
 		bun
 		typescript
-		jetbrains.idea-ultimate
-		jetbrains.rider
 	];
 }
