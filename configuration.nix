@@ -44,7 +44,7 @@
 		kernelPackages = pkgs.linuxPackages_zen;
 		#kernelPackages = pkgs.linuxPackages;
 		kernelParams = [
-			"nvidia_drm.fbdev=1"
+			#"nvidia_drm.fbdev=1"
 		];
 
 		loader = {
@@ -92,8 +92,6 @@
 	# Enable networking
 	# networking.networkmanager.enable = true;
 
-	########## Locales ##########
-
 	security = {
 		polkit.enable = true;
 
@@ -106,6 +104,8 @@
 			};
 		};
 	};
+
+	########## Locales ##########;
 
 	# Set your time zone.
 	time.timeZone = "Europe/Berlin";
