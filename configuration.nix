@@ -41,8 +41,11 @@
 
 	# Bootloader
 	boot = {
-		#kernelPackages = pkgs.linuxPackages_zen;
-		kernelPackages = pkgs.linuxPackages;
+		kernelPackages = pkgs.linuxPackages_zen;
+		#kernelPackages = pkgs.linuxPackages;
+		kernelParams = [
+			"nvidia_drm.fbdev=1"
+		];
 
 		loader = {
 			systemd-boot.enable = true;
