@@ -91,6 +91,19 @@
 
 	########## Locales ##########
 
+	security = {
+		polkit.enable = true;
+
+		wrappers = {
+			gsr-kms-server = {
+				owner = "root";
+				group = "root";
+				capabilities = "cap_sys_admin+ep";
+				source = "${pkgs.gpu-screen-recorder}/bin/gsr-kms-server";
+			};
+		};
+	};
+
 	# Set your time zone.
 	time.timeZone = "Europe/Berlin";
 
@@ -154,6 +167,7 @@
 			git-credential-manager
 			wl-clipboard
 			wev
+			kdePackages.polkit-kde-agent-1
 		];
 	};
 

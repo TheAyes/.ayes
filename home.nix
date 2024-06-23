@@ -25,7 +25,7 @@
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
 			gpu-screen-recorder-gtk
-			kdePackages.polkit-kde-agent-1
+			
 			godot_4
 		];
 
