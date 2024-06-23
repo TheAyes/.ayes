@@ -193,7 +193,7 @@
 	programs = {
 		hyprland = {
 			enable = true;
-			#portalPackage = inputs.nixpkgs-old.x86_64-linux.xdg-desktop-portal-hyprland;
+			portalPackage = inputs.nixpkgs-old.x86_64-linux.xdg-desktop-portal-hyprland;
 		};
 
 		steam = {
