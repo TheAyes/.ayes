@@ -268,6 +268,13 @@
 		defaultApplications = {
 			"inode/directory" = ["pcmanfm.desktop"];
 			"application/pdf" = ["firefox.desktop"];
+
+			## Videos ##
+			"application/mp4" = ["haruna"];
+
+			## Music ##
+			"application/mp3" = ["haruna"];
+			"application/wav" = ["haruna"];
 		};
 	};
 }
