@@ -172,7 +172,8 @@
 			wl-clipboard
 			wev
 			kdePackages.qtwayland
-			kdePackages.polkit-kde-agent-1
+			#kdePackages.polkit-kde-agent-1
+			libsForQt5.polkit-kde-agent
 		];
 	};
 
