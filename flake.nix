@@ -3,6 +3,7 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs-old.url = "github:nixos/nixpkgs?rev=c407032be28ca2236f45c49cfb2b8b3885294f7f";
 
 		home-manager = {
 			url = "github:nix-community/home-manager";
