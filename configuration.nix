@@ -109,6 +109,7 @@
 
 	security = {
 		polkit.enable = true;
+		rtkit.enable = true;
 
 		wrappers = {
 			gsr-kms-server = {
