@@ -51,6 +51,7 @@
 
 	fonts.fontconfig.enable = true;
 
+	
 	gtk = {
 		enable = true;
 		theme = {
@@ -67,10 +68,10 @@
 	qt = {
 		enable = true;
 		style = {
-			name = "qt6gtk2";
-			package = pkgs.qt6Packages.qt6gtk2;
+			name = "breeze";
+			#package = pkgs.kdePackages.qt6gtk2;
 		};
-		platformTheme.name = "gtk3";
+		platformTheme.name = "adwaita";
 	};
 
 	programs = {
