@@ -179,9 +179,11 @@
 
 		systemPackages = with pkgs; [
 			wget
-			#kitty
 			alejandra
+
 			libsForQt5.qtstyleplugin-kvantum
+			catppuccin-sddm
+
 			pavucontrol
 			playerctl
 			git
