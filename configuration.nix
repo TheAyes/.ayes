@@ -179,7 +179,7 @@
 
 		systemPackages = with pkgs; [
 			wget
-			kitty
+			#kitty
 			alejandra
 			libsForQt5.qtstyleplugin-kvantum
 			pavucontrol

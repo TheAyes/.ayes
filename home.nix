@@ -90,6 +90,13 @@
 
 			};
 		};
+
+		kitty = {
+			enable = true;
+			settings = {
+				shell_integration = true;
+			};
+		};
 		
 		eza = {
 			enable = true;

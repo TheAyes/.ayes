@@ -19,7 +19,7 @@
 			    "useQuickCss": true,
 			    "themeLinks": [],
 			    "enabledThemes": [
-			        "rose-pine.theme.css"
+			        "catppuccin-mocha.css"
 			    ],
 			    "enableReactDevtools": false,
 			    "frameless": false,
