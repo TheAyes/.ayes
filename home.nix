@@ -181,7 +181,7 @@
                 color15 #a6adc8
 
                 background_opacity 	0.8
-				background_blur		system
+				background_blur		0
 			'';
 		};
 		
