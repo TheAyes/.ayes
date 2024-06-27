@@ -26,6 +26,7 @@
 			inputs.hyprsome.packages.x86_64-linux.default
 			#gpu-screen-recorder
 			#gpu-screen-recorder-gtk
+			obs-studio
 			haruna
 			nomacs
 			
@@ -68,10 +69,8 @@
 	qt = {
 		enable = true;
 		style = {
-			name = "breeze";
-			#package = pkgs.kdePackages.qt6gtk2;
+			name = "kvantum";
 		};
-		platformTheme.name = "adwaita";
 	};
 
 	programs = {

@@ -181,6 +181,7 @@
 			wget
 			kitty
 			alejandra
+			libsForQt5.qtstyleplugin-kvantum
 			pavucontrol
 			playerctl
 			git
