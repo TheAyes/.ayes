@@ -144,7 +144,7 @@
 		blur = {
 			enabled = true;
 			size = 6;
-			passes = 1;
+			passes = 3;
 		};
 
 		drop_shadow = "yes";
