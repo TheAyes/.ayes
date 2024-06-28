@@ -27,6 +27,7 @@
 			#gpu-screen-recorder
 			#gpu-screen-recorder-gtk
 			obs-studio
+			obs-studio-plugins.obs-pipewire-audio-capture
 			haruna
 			nomacs
 			
