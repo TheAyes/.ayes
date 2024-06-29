@@ -3,7 +3,7 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-		nixpkgs-old.url = "github:nixos/nixpkgs?rev=c407032be28ca2236f45c49cfb2b8b3885294f7f";
+		nixpkgs-alternate.url = "github:NixOS/nixpkgs/6acd31ddaff676c571d58636985a4802f7743809";
 
 		home-manager = {
 			url = "github:nix-community/home-manager";
@@ -14,19 +14,16 @@
 		ags.url = "github:Aylur/ags";
 	};
 
-	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, hyprsome, nixpkgs-alternate, ... }@inputs: let
 		system = "x86_64-linux";
-		pkgs = import nixpkgs {
-			overlays = [];
-			config = { allowUnfree = true; };
-			inherit system;
-		};
 	in {
 		nixosConfigurations = {
 			io = nixpkgs.lib.nixosSystem {
 				specialArgs = { inherit inputs; };
 				modules = [
 					./configuration.nix
+
+
 
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;

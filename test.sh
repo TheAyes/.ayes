@@ -10,6 +10,6 @@ fi
 
 git diff -U0 '*.nix' ./config/
 
-sudo nixos-rebuild test --flake ~/.nixos/
+nixos-rebuild --use-remote-sudo test --flake ~/.nixos/
 
 popd
