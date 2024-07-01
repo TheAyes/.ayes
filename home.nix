@@ -37,7 +37,7 @@
 			godot_4
 
 
-			#solaar
+			solaar
 		];
 
 		file = {
