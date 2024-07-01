@@ -12,9 +12,16 @@
 
 		hyprsome.url = "github:sopa0/hyprsome";
 		ags.url = "github:Aylur/ags";
+
+		solaar = {
+			url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz"; # For latest stable version
+			#url = "https://flakehub.com/f/Svenum/Solaar-Flake/1.1.13.tar.gz" # uncomment line for version 1.1.13
+			#url = "github:Svenum/Solaar-Flake/main"; # Uncomment line for latest unstable version
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, hyprsome, nixpkgs-alternate, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, hyprsome, nixpkgs-alternate, solaar, ... }@inputs: let
 		system = "x86_64-linux";
 	in {
 		nixosConfigurations = {
@@ -23,7 +30,7 @@
 				modules = [
 					./configuration.nix
 
-
+					solaar.nixosModules.default
 
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;
