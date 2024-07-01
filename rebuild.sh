@@ -15,12 +15,12 @@ pushd ~/.nixos
 #  || ( alejandra . ; echo "formatting failed!" && exit 1)
 
 # Shows your changes
-git diff -U0 '*.nix' ./config/
+git --no-pager diff -U0 '*.nix' '*.sh' '*.css' '*.scss' '*.js' '*.ts' '*.md' '*.json'
 
 echo "NixOs Rebuilding..."
 
 # Rebuild, output simplified errors, log tracebacks
-sudo nixos-rebuild switch --flake ~/.nixos/ &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+nixos-rebuild --use-remote-sudo switch --flake ~/.nixos/ &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)

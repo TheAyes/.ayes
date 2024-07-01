@@ -27,10 +27,9 @@
 			hyprland-workspaces
 			xarchiver
 			hyprshot
-			#xivlauncher
 			lutris
 			inputs.hyprsome.packages.x86_64-linux.default
-			nixpkgs-alternate.xivlauncher # TODO: Check if the official package is up to date yet
+			xivlauncher
 			obs-studio
 			obs-studio-plugins.obs-pipewire-audio-capture
 			haruna

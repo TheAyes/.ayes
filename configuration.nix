@@ -22,11 +22,8 @@
 			package = config.boot.kernelPackages.nvidiaPackages.beta;
 		};
 
-		opengl = {
-			enable = true;
-			driSupport = true;
-			driSupport32Bit = true;
-		};
+		graphics.enable = true;
+
 	};
 
 	nix = {
