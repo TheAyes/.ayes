@@ -1,12 +1,20 @@
 warning: Git tree '/home/ayes/.nixos' is dirty
+warning: updating lock file '/home/ayes/.nixos/flake.lock':
+• Removed input 'solaar'
+• Removed input 'solaar/flake-compat'
+• Removed input 'solaar/nixpkgs'
+warning: Git tree '/home/ayes/.nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/ayes/.nixos' is dirty
-stopping the following units: systemd-udevd-control.socket, systemd-udevd-kernel.socket, systemd-udevd.service
+these 3 derivations will be built:
+  /nix/store/dkpbgq70nqn7a7vvwfd256kl6qbifrhk-system-units.drv
+  /nix/store/3lzpwmc2gvqh3xcdd5j05cglajhhvfgm-etc.drv
+  /nix/store/z4jw3n480smlc0klpznr1gf80kh9anmr-nixos-system-io-24.11.20240627.b2852eb.drv
+building '/nix/store/dkpbgq70nqn7a7vvwfd256kl6qbifrhk-system-units.drv'...
+building '/nix/store/3lzpwmc2gvqh3xcdd5j05cglajhhvfgm-etc.drv'...
+building '/nix/store/z4jw3n480smlc0klpznr1gf80kh9anmr-nixos-system-io-24.11.20240627.b2852eb.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for ayes...
 restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-starting the following units: systemd-udevd-control.socket, systemd-udevd-kernel.socket
-the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+restarting the following units: home-manager-ayes.service
