@@ -35,6 +35,8 @@
 			haruna
 			
 			godot_4
+
+			solaar
 		];
 
 		file = {
