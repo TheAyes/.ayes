@@ -1,15 +1,6 @@
 #! /run/current-system/sw/bin/bash
-set -e
-pushd ~/.nixos
+. ./commands.sh test
 
-if git diff --quiet '*.nix' ./config; then
-    echo "No changes detected, exiting."
-    popd
-    exit 0
-fi
+$rebuild
 
-git diff -U0 '*.nix' ./config/
-
-nixos-rebuild --use-remote-sudo test --flake ~/.nixos/
-
-popd
+$return

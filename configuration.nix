@@ -194,6 +194,7 @@
 			wev
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
+			wineWowPackages.staging
 		];
 	};
 
