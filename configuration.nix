@@ -113,6 +113,19 @@
 		polkit.enable = true;
 		rtkit.enable = true;
 
+		sudo = {
+			enable = true;
+			extraRules = [{
+				commands = [
+					{
+						command = "/home/ayes/.nixos/test.sh";
+						options = [ "NOPASSWD" ];
+					}
+				];
+				groups = [ "wheel" ];
+			}];
+		};
+
 		wrappers = {
 			gsr-kms-server = {
 				owner = "root";
@@ -153,7 +166,9 @@
 			isNormalUser = true;
 			description = "Ayes";
 			extraGroups = [ "wheel" "networkmanager" ];
-			packages = with pkgs; [];
+			packages = with pkgs; [
+
+			];
 		};
 	};
 
