@@ -1,3 +1,5 @@
+import { players } from "./widgets/musicPlayer.js";
+
 const systemtray = await Service.import("systemtray");
 
 /** @param {import("types/service/systemtray").TrayItem} item */
@@ -21,18 +23,21 @@ const focusedTitle = Widget.Label({
 });
 
 const Workspaces = () =>
-	Widget.EventBox({
-		child: Widget.Box({
-			children: Array.from({ length: 9 }, (_, i) => i + 1).map((i) =>
-				Widget.Button({
-					attribute: i,
-					label: `${i}`,
-					onClicked: () => Utils.exec(`hyprsome workspace ${i}`)
-				})
-			)
-		})
+	Widget.Box({
+		children: Array.from({ length: 9 }, (_, i) => i + 1).map((i) =>
+			Widget.Button({
+				attribute: i,
+				label: `${i}`,
+				class_name: "workspaces",
+				onClicked: () => Utils.exec(`hyprsome workspace ${i}`),
+				setup: (self) =>
+					self.hook(hyprland, () => {
+						self.toggleClassName("active", hyprland.active.workspace.id === i);
+						self.toggleClassName("occupied", (hyprland.getWorkspace(i)?.windows || 0) > 0);
+					})
+			})
+		)
 	});
-
 const makeBar = (monitor = 0) => {
 	const label = Widget.Label({
 		label: "date"
@@ -52,22 +57,27 @@ const makeBar = (monitor = 0) => {
 			vertical: false,
 			startWidget: Widget.Box({
 				hpack: "start",
-				child: label
+				spacing: 8,
+				children: [label, players]
 			}),
 			centerWidget: Widget.Box({
 				hpack: "center",
-				child: Workspaces(monitor)
+				children: [Workspaces()]
 			}),
 			endWidget: Widget.Box({
 				hpack: "end",
-				child: sysTray
+				children: [sysTray]
 			})
 		})
 	});
 
 	return bar;
 };
+const scss = "/home/ayes/.nixos/config/ags/style.scss";
+const css = "/home/ayes/.nixos/config/ags/out/style.css";
+Utils.exec(`sassc ${scss} ${css}`);
 
 App.config({
-	windows: [makeBar(0), makeBar(1), makeBar(2)]
+	windows: [makeBar(0), makeBar(1), makeBar(2)],
+	style: css
 });

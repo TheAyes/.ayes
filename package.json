@@ -1,4 +1,7 @@
 {
+	"dependencies": {
+		"sass": "^1.77.6"
+	},
 	"devDependencies": {
 		"prettier": "^3.3.2"
 	}

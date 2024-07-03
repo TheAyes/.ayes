@@ -33,9 +33,13 @@
 			obs-studio
 			obs-studio-plugins.obs-pipewire-audio-capture
 			haruna
-			bun
+
 			godot_4
 			solaar
+
+			## Dev Stuff
+			bun
+			sassc
 		];
 
 		file = {
