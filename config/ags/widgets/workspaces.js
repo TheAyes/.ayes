@@ -2,6 +2,7 @@ const hyprland = await Service.import("hyprland");
 
 export const workspaces = (monitor) =>
 	Widget.Box({
+		spacing: 8,
 		children: Array.from({ length: 9 }, (_, i) => i + 1).map((i) =>
 			Widget.Button({
 				attribute: i,

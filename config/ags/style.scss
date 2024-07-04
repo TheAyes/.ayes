@@ -1,7 +1,13 @@
+@import "theme";
+
 .workspaces {
+	padding: 4px;
+
 	.workspace_btn {
+		border-radius: 999px;
+
 		&.active {
-			background: red;
+			background: #89b4fa;
 		}
 	}
 }
