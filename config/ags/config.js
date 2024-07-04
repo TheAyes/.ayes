@@ -1,4 +1,5 @@
 import { players } from "./widgets/musicPlayer.js";
+import { workspaces } from "./widgets/workspaces.js";
 
 const systemtray = await Service.import("systemtray");
 
@@ -21,23 +22,6 @@ const focusedTitle = Widget.Label({
 	label: hyprland.active.client.bind("title"),
 	visible: hyprland.active.client.bind("address").as((addr) => !!addr)
 });
-
-const Workspaces = () =>
-	Widget.Box({
-		children: Array.from({ length: 9 }, (_, i) => i + 1).map((i) =>
-			Widget.Button({
-				attribute: i,
-				label: `${i}`,
-				class_name: "workspaces",
-				onClicked: () => Utils.exec(`hyprsome workspace ${i}`),
-				setup: (self) =>
-					self.hook(hyprland, () => {
-						self.toggleClassName("active", hyprland.active.workspace.id === i);
-						self.toggleClassName("occupied", (hyprland.getWorkspace(i)?.windows || 0) > 0);
-					})
-			})
-		)
-	});
 const makeBar = (monitor = 0) => {
 	const label = Widget.Label({
 		label: "date"
@@ -62,7 +46,8 @@ const makeBar = (monitor = 0) => {
 			}),
 			centerWidget: Widget.Box({
 				hpack: "center",
-				children: [Workspaces()]
+				class_name: "workspaces",
+				children: [workspaces(monitor)]
 			}),
 			endWidget: Widget.Box({
 				hpack: "end",
