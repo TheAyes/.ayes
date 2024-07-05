@@ -7,6 +7,7 @@ export const workspaces = (monitor) =>
 			Widget.Button({
 				attribute: i,
 				label: ``,
+				vpack: "center",
 				class_name: "workspace_btn",
 				onClicked: () => Utils.exec(`hyprsome workspace ${i}`),
 				setup: (self) =>

@@ -36,6 +36,7 @@ const makeBar = (monitor = 0) => {
 		exclusivity: "exclusive",
 		name: `bar${monitor}`,
 		anchor: ["top", "left", "right"],
+		class_name: "bar",
 		child: Widget.CenterBox({
 			spacing: 8,
 			vertical: false,

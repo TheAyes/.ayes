@@ -1,14 +1,33 @@
+//@use 'sass:color';
+
 @import "theme";
 
-.workspaces {
-	padding: 4px;
+.bar {
+	background: none;
 
-	.workspace_btn {
-		border-radius: 999px;
+	.workspaces {
+		padding: 4px;
 
-		&.active {
-			background: #89b4fa;
+		.workspace_btn {
+			font-size: 0;
+			min-width: 5pt;
+			min-height: 5pt;
+			margin: 0;
+			padding: 2pt;
+
+			transition: padding 200ms, background 200ms;
+
+			border: 1px solid transparentize($fg-primary, 20%);
+			border-radius: 999px;
+
+			background: none; //darken($bg-primary, 0.8);
+
+			&.active {
+				padding: 2pt 8pt;
+				background: $fg-primary;
+			}
 		}
 	}
 }
+
 

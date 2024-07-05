@@ -65,13 +65,13 @@
 	gtk = {
 		enable = true;
 		theme = {
-			package = pkgs.rose-pine-gtk-theme;
-			name = "rose-pine";
+			package = pkgs.catppuccin-gtk;
+			name = "catppuccin-mocha-blue";
 		};
 		
 		iconTheme = {
-			package = pkgs.rose-pine-icon-theme;
-			name = "rose-pine";
+			package = pkgs.papirus-icon-theme;
+			name = "papirus";
 		};
 	};
 
