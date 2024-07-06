@@ -239,19 +239,30 @@
 		#	package = pkgs.hypridle;
 		#};
 
-		#hyprpaper = {
-		#	enable = true;
-		#	package = pkgs.hyprpaper;
-		#};
+		/*hyprpaper = {
+			enable = true;
+			package = pkgs.hyprpaper;
+			settings = {
+				ipc = "on";
+				splash = false;
+				splash_offset = 2.0;
+
+				preload = [
+					"/share/wallpapers/buttons.png"
+					"/share/wallpapers/cat_pacman.png"
+				];
+
+				wallpaper = [
+					"DP-3,/share/wallpapers/buttons.png"
+					"DP-1,/share/wallpapers/cat_pacman.png"
+				];
+			};
+		};*/
 	
 		dunst = {
 			enable = true;
 			package = pkgs.dunst;
 			configFile = "$XDG_CONFIG_HOME/dunst/dunstrc";
-		};
-
-		gnome-keyring = {
-			enable = true;
 		};
 	};
 
