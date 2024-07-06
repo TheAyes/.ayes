@@ -210,6 +210,7 @@
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
 			wineWowPackages.staging
+			gnome-keyring
 		];
 	};
 
@@ -221,7 +222,6 @@
 
 			theme = "catppuccin-mocha";
 		};
-		gnome.gnome-keyring.enable = true;
 		
   		resolved = {
 	    	enable = true;
