@@ -15,29 +15,37 @@
 		stateVersion = "23.11";
 
 		packages = with pkgs; [
+
+			## Systm
 			btop
 			micro
-			vesktop
-			prismlauncher
-			#jetbrains-toolbox
-			jetbrains.idea-ultimate
-			jetbrains.rider
-			bitwig-studio
 			pcmanfm
-			hyprland-workspaces
-			xarchiver
-			hyprshot
-			lutris
-			inputs.hyprsome.packages.x86_64-linux.default
-			xivlauncher
 			obs-studio
-			obs-studio-plugins.obs-pipewire-audio-capture
+			xarchiver
+
+			##hyprstuff
+			inputs.hyprsome.packages.x86_64-linux.default
+			hyprshot
+
+			## Media
+			bitwig-studio
 			haruna
 
-			godot_4
+			## configuration Utils
 			solaar
 
+			## Community
+			vesktop
+
+			## Gaming
+			xivlauncher
+			prismlauncher
+			lutris
+
 			## Dev Stuff
+			jetbrains.idea-ultimate
+			jetbrains.rider
+			godot_4
 			bun
 			sassc
 		];
