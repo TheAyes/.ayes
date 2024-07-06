@@ -65,8 +65,11 @@
 	gtk = {
 		enable = true;
 		theme = {
-			package = pkgs.catppuccin-gtk;
-			name = "catppuccin-mocha-blue";
+			package = pkgs.catppuccin-gtk.override {
+				accents = [ "blue" ];
+				variant = "mocha";
+			};
+			name = "catppuccin-mocha-blue-standard+default";
 		};
 		
 		iconTheme = {

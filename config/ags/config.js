@@ -1,4 +1,3 @@
-import { players } from "./widgets/musicPlayer.js";
 import { workspaces } from "./widgets/workspaces.js";
 
 const systemtray = await Service.import("systemtray");
@@ -43,7 +42,7 @@ const makeBar = (monitor = 0) => {
 			startWidget: Widget.Box({
 				hpack: "start",
 				spacing: 8,
-				children: [label, players]
+				children: [label]
 			}),
 			centerWidget: Widget.Box({
 				hpack: "center",
