@@ -33,6 +33,7 @@
 
 			## configuration Utils
 			solaar
+			piper
 
 			## Community
 			vesktop

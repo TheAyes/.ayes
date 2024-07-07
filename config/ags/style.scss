@@ -15,6 +15,7 @@
 }
 
 .bar {
+	min-height: 4pt;
 	background: none;
 
 	.workspaces {
@@ -29,13 +30,13 @@
 
 			transition: padding 200ms, background 200ms;
 
-			border: 1px solid #333333;
+			border: 1px solid rgba(255, 255, 255, 0.4);
 			border-radius: 999px;
 
 			background: none; //darken($bg-primary, 0.8);
 
 			&.occupied {
-				background: rgba(map-deep-get($theme, "buttons", "btn-primary-bg"), 0.2);
+				background: rgba(map-deep-get($theme, "buttons", "btn-primary-bg"), 0.4);
 			}
 
 			&.active {
