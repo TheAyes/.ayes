@@ -49,6 +49,7 @@
 			godot_4
 			bun
 			sassc
+			python3
 		];
 
 		file = {
