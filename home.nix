@@ -32,7 +32,7 @@
 			haruna
 
 			## configuration Utils
-			solaar
+			#solaar
 			piper
 
 			## Community
@@ -49,7 +49,7 @@
 			godot_4
 			bun
 			sassc
-			python3
+			#python3
 		];
 
 		file = {
