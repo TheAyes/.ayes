@@ -22,9 +22,9 @@
 			package = config.boot.kernelPackages.nvidiaPackages.beta;
 		};
 
-		#logitech.wireless = {
-		#	enable = true;
-		#};
+		logitech.wireless = {
+			enable = true;
+		};
 
 
 		graphics.enable = true;
@@ -112,6 +112,8 @@
 	security = {
 		polkit.enable = true;
 		rtkit.enable = true;
+
+		pam.services.sddm.enableGnomeKeyring = true;
 
 		sudo = {
 			enable = true;
@@ -210,7 +212,7 @@
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
 			wineWowPackages.staging
-			gnome-keyring
+
 		];
 	};
 
@@ -250,7 +252,11 @@
 			videoDrivers = [ "nvidia" ];
 		};
 
+		gnome.gnome-keyring.enable = true;
+
 		ratbagd.enable = true;
+
+		openssh.enable = true;
 	};
 
 	# Some programs need SUID wrappers, can be configured further or are
@@ -292,22 +298,6 @@
 		  enableSSHSupport = true;
 		};
 	};
-	
-	#programs.bash = {
-	#  interactiveShellInit = ''
-	#    if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
-	#    then
-	#      shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-	#      exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-	#    fi
-	#  '';
-	#};
-
-	# List services that you want to enable:
-
-	# Enable the OpenSSH daemon.
-	# services.openssh.enable = true;
-	
 
 	# This value determines the NixOS release from which the default
 	# settings for stateful data, like file locations and database versions
