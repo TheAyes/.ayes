@@ -22,9 +22,9 @@
 			package = config.boot.kernelPackages.nvidiaPackages.beta;
 		};
 
-		logitech.wireless = {
-			enable = true;
-		};
+		#logitech.wireless = {
+		#	enable = true;
+		#};
 
 
 		graphics.enable = true;
