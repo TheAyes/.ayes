@@ -84,8 +84,11 @@
 		};
 		
 		iconTheme = {
-			package = pkgs.rose-pine-icon-theme;
-			name = "rose-pine-moon";
+			name = "Papirus-Dark";
+			package = pkgs.catppuccin-papirus-folders.override {
+				flavor = "mocha";
+				accent = "blue";
+			};
 		};
 	};
 
