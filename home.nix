@@ -57,6 +57,11 @@
 				source = ./config/micro/colorschemes;
 				recursive = true;
 			};
+
+			"${config.xdg.configHome}/btop/btop.conf" = {
+				source = ./config/btop;
+				recursive = true;
+			};
 		};
 
 		pointerCursor = {
