@@ -58,7 +58,7 @@
 				recursive = true;
 			};
 
-			"${config.xdg.configHome}/btop/btop.conf" = {
+			"${config.xdg.configHome}/btop" = {
 				source = ./config/btop;
 				recursive = true;
 			};
