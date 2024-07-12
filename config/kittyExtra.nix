@@ -80,6 +80,6 @@
 	color7  #bac2de
 	color15 #a6adc8
 
-	background_opacity 	0.0
+	background_opacity 	0.6
 	background_blur		0
 ''
