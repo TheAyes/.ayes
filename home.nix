@@ -84,7 +84,8 @@
 		};
 		
 		iconTheme = {
-			name = "cat-mocha-blue";
+			package = pkgs.rose-pine-icon-theme;
+			name = "rose-pine-moon";
 		};
 	};
 
