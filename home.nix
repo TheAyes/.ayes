@@ -84,8 +84,7 @@
 		};
 		
 		iconTheme = {
-			package = pkgs.papirus-icon-theme;
-			name = "papirus";
+			name = "cat-mocha-blue";
 		};
 	};
 
