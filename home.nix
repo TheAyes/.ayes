@@ -15,7 +15,6 @@
 		stateVersion = "23.11";
 
 		packages = with pkgs; [
-
 			## Systm
 			btop
 			micro
