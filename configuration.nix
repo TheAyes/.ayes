@@ -48,7 +48,6 @@
 			enable = true;
 		};*/
 
-
 		graphics.enable = true;
 
 	};
