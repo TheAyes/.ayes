@@ -44,9 +44,9 @@
 			};*/
 		};
 
-		/*logitech.wireless = {
+		logitech.wireless = {
 			enable = true;
-		};*/
+		};
 
 		graphics.enable = true;
 
@@ -100,7 +100,7 @@
 			startLimitIntervalSec = 1800;
 			startLimitBurst = 5;
 			serviceConfig = {
-				ExecStart = "steam -nochatui -nofriendui -silent %U";
+				ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
 				Restart = "on-failure";
 				RestartSec = "5s";
 
@@ -307,23 +307,6 @@
 			remotePlay.openFirewall = true;
 			dedicatedServer.openFirewall = true;
 		};
-
-		#fish = {
-		#	enable = true;
-		#	shellAliases = {
-		#		l = "ls -alh --color=auto";
-		#		ll = "ls -l --color=auto";
-		#		ls = "ls --color=auto";
-		#		rebuild = "~/.nixos/rebuild.sh";
-		#		upgrade = "~/.nixos/upgrade.sh";
-		#		test-rebuild = "~/.nixos/test.sh";
-		#	};
-		#
-		#	interactiveShellInit = ''
-		#		direnv hook fish | source
-		#		set -g direnv_fish_mode eval_on_arrow
-		#	'';
-		#};
 
 		gnupg.agent = {
 		  enable = true;
