@@ -81,6 +81,9 @@
 		"$mainMod, J, togglesplit, # dwindle"
 		"$mainMod, F, fullscreen"
 		", Print, exec, hyprshot -m region --clipboard-only"
+		# to switch between windows in a floating workspace
+        "$mainMod, Tab, cyclenext,"     # change focus to another window
+        "$mainMod, Tab, bringactivetotop,"   # bring it to the top
 
 		"$mainMod, S, togglespecialworkspace, magic"
 		"$mainMod SHIFT, S, movetoworkspace, special:magic"
