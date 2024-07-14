@@ -253,31 +253,29 @@
 		#	package = pkgs.hypridle;
 		#};
 
-		/*hyprpaper = {
+		hyprpaper = {
 			enable = true;
-			package = pkgs.hyprpaper;
 			settings = {
 				ipc = "on";
 				splash = false;
-				splash_offset = 2.0;
 
 				preload = [
-					"/share/wallpapers/buttons.png"
-					"/share/wallpapers/cat_pacman.png"
+					"/share/wallpapers/yuffie_wallpaper_1080x1920.jpg"
 				];
 
 				wallpaper = [
-					"DP-3,/share/wallpapers/buttons.png"
-					"DP-1,/share/wallpapers/cat_pacman.png"
+					"DP-3,/share/wallpapers/yuffie_wallpaper_1080x1920.jpg"
 				];
 			};
-		};*/
+		};
 	
 		dunst = {
 			enable = true;
 			package = pkgs.dunst;
 			configFile = "$XDG_CONFIG_HOME/dunst/dunstrc";
 		};
+
+		arrpc.enable = true;
 	};
 
 	wayland = {
@@ -302,18 +300,18 @@
 			"application/pdf" = ["firefox.desktop"];
 
 			## Archives ##
-			"application/rar" = ["xarchiver"];
-			"application/zip" = ["xarchiver"];
-			"application/7zip" = ["xarchiver"];
-			"application/tar.gz" = ["xarchiver"];
-			"application/tar.xz" = ["xarchiver"];
+			"application/vnd.rar" = ["xarchiver.desktop"];
+			"application/zip" = ["xarchiver.desktop"];
+			"application/x-7z-compressed" = ["xarchiver.desktop"];
+			"application/gzip" = ["xarchiver.desktop"];
+			"application/x-tar" = ["xarchiver.desktop"];
 
 			## Videos ##
-			"application/mp4" = ["haruna"];
+			"application/mp4" = ["haruna.desktop"];
 
 			## Music ##
-			"application/mp3" = ["haruna"];
-			"application/wav" = ["haruna"];
+			"application/mp3" = ["haruna.desktop"];
+			"application/wav" = ["haruna.desktop"];
 		};
 	};
 }

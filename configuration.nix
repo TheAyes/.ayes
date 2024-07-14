@@ -74,10 +74,13 @@
 			systemd-boot.enable = true;
 			efi.canTouchEfiVariables = true;
 		};
+
+		initrd.systemd.dbus.enable = true;
 	};
 
 	systemd.user.services = {
 		polkit-kde-authentication-agent-1 = {
+			enable = true;
 			wantedBy = [ "graphical-session.target" ];
 			wants = [ "graphical-session.target" ];
 			after = [ "graphical-session.target" ];
@@ -87,6 +90,28 @@
 				Restart = "on-failure";
 				RestartSec = 1;
 				TimeoutStopSec = 10;
+			};
+		};
+
+		steam = {
+			enable = true;
+			description = "Open Steam in the background at boot";
+			serviceConfig = {
+				ExecStart = "steam -nochatui -nofriendui -silent %U";
+				wantedBy = [ "graphical-session.target" ];
+				Restart = "on-failure";
+				RestartSec = "5s";
+			};
+		};
+
+		ags = {
+			enable = true;
+			description = "Open AGS at boot";
+			serviceConfig = {
+				ExecStart = "${pkgs.steam}/bin/steam";
+				wantedBy = [ "graphical-session.target" ];
+				Restart = "on-failure";
+				RestartSec = "5s";
 			};
 		};
 	};
@@ -270,6 +295,8 @@
 		ratbagd.enable = true;
 
 		openssh.enable = true;
+
+		gvfs.enable = true;
 	};
 
 	# Some programs need SUID wrappers, can be configured further or are

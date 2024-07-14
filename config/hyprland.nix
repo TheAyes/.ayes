@@ -50,8 +50,7 @@
 	];
 
 	exec-once = [
-		"ags -c ~/.nixos/config/ags/config.js"
-		"waybar"
+		"ags -c /home/ayes/.nixos/config/ags/config.js"
 		"firefox"
 		"vesktop"
 		"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
