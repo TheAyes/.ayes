@@ -96,22 +96,14 @@
 		steam = {
 			enable = true;
 			description = "Open Steam in the background at boot";
+			wantedBy = [ "graphical-session.target" ];
+			startLimitIntervalSec = 1800;
+			startLimitBurst = 5;
 			serviceConfig = {
 				ExecStart = "steam -nochatui -nofriendui -silent %U";
-				wantedBy = [ "graphical-session.target" ];
 				Restart = "on-failure";
 				RestartSec = "5s";
-			};
-		};
 
-		ags = {
-			enable = true;
-			description = "Open AGS at boot";
-			serviceConfig = {
-				ExecStart = "${pkgs.steam}/bin/steam";
-				wantedBy = [ "graphical-session.target" ];
-				Restart = "on-failure";
-				RestartSec = "5s";
 			};
 		};
 	};
