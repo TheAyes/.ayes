@@ -106,6 +106,20 @@
 
 			};
 		};
+
+		solaar = {
+			enable = true;
+			description = "Open Solaar in the background at boot";
+			wantedBy = [ "graphical-session.target" ];
+			startLimitIntervalSec = 1800;
+			startLimitBurst = 5;
+			serviceConfig = {
+				ExecStart = "${pkgs.solaar}/bin/solaar --window=hide";
+				Restart = "on-failure";
+				RestartSec = "5s";
+
+			};
+		};
 	};
 	
 	########## Networking ##########
