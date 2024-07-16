@@ -1,6 +1,7 @@
 { config, pkgs, inputs, lib, nixpkgs-alternate, ... }: {
 	imports = [
 		./config/vesktop.nix
+		./config/hypr/hyprland.base.nix
 		inputs.ags.homeManagerModules.default
 	];
 
@@ -281,7 +282,6 @@
 	wayland = {
 		windowManager.hyprland = {
 			enable = true;
-			settings = import ./config/hyprland.nix;
 			systemd = {
 				enable = true;
 				enableXdgAutostart = true;
