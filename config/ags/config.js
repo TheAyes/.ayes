@@ -1,12 +1,19 @@
-import { makeBar } from "./widgets/bar.js";
+const entry = "/home/ayes/.nixos/config/ags/src/main.ts";
+const outdir = "/home/ayes/.nixos/config/ags/out/";
 
-const scss = "/home/ayes/.nixos/config/ags/style.scss";
-const css = "/home/ayes/.nixos/config/ags/out/style.css";
-Utils.exec(`sassc ${scss} ${css}`);
-
-const monitors = JSON.parse(Utils.exec(`hyprctl monitors -j`));
-
-App.config({
-	windows: monitors.map((monitor) => makeBar(monitor)),
-	style: css
-});
+try {
+	await Utils.execAsync([
+		"bun",
+		"build",
+		entry,
+		"--outdir",
+		outdir,
+		"--external",
+		"resource://*",
+		"--external",
+		"gi://*"
+	]);
+	await import(`file://${outdir}/main.js`);
+} catch (error) {
+	console.error(error);
+}
