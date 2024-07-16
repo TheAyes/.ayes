@@ -62,7 +62,9 @@ const scss = "/home/ayes/.nixos/config/ags/style.scss";
 const css = "/home/ayes/.nixos/config/ags/out/style.css";
 Utils.exec(`sassc ${scss} ${css}`);
 
+const monitors = JSON.parse(Utils.exec(`hyprctl monitors -j`));
+
 App.config({
-	windows: [makeBar(0), makeBar(1), makeBar(2)],
+	windows: monitors.map((monitor) => makeBar(monitor.id)),
 	style: css
 });
