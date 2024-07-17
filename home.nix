@@ -157,7 +157,7 @@
 						installation_mode = "force_installed";
 						install_url = extensionUrl "ublock-origin";
 					};
-					
+
 					"addon@darkreader.org" = {
 						installation_mode = "force_installed";
 						install_url = extensionUrl "darkreader";

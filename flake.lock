@@ -150,22 +150,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-alternate": {
-      "locked": {
-        "lastModified": 1719620656,
-        "narHash": "sha256-+QomfbPjZ+FmR1edL3N6mCzmRFNEumZ4UK5MvZP+Q0M=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "6acd31ddaff676c571d58636985a4802f7743809",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "6acd31ddaff676c571d58636985a4802f7743809",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1716128955,
@@ -203,8 +187,7 @@
         "ags": "ags",
         "home-manager": "home-manager",
         "hyprsome": "hyprsome",
-        "nixpkgs": "nixpkgs_3",
-        "nixpkgs-alternate": "nixpkgs-alternate"
+        "nixpkgs": "nixpkgs_3"
       }
     },
     "rust-overlay": {
