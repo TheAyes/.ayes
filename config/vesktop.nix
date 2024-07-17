@@ -13,7 +13,7 @@
 		};
 		"vesktop/themes/catppuccin-mocha.css" = {
 			enable = true;
-			text = ''{
+			text = ''
 				/**
                  * @name Catppuccin Mocha
                  * @author winston#0001
@@ -25,7 +25,7 @@
                  * **/
 
                 @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-			}'';
+			'';
 		};
 		"vesktop/settings/quickCss.css" = {
 			enable = true;
