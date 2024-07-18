@@ -49,6 +49,7 @@
 			jetbrains.rider
 			jetbrains.webstorm
 			godot_4
+			nodejs
 			bun
 			sassc
 			python3
