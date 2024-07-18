@@ -47,6 +47,7 @@
 			## Dev Stuff
 			jetbrains.idea-ultimate
 			jetbrains.rider
+			jetbrains.webstorm
 			godot_4
 			bun
 			sassc
