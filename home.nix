@@ -30,6 +30,7 @@
 			## Media
 			bitwig-studio
 			haruna
+			obsidian
 
 			## configuration Utils
 			solaar
