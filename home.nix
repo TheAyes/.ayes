@@ -42,6 +42,7 @@
 			## Gaming
 			xivlauncher
 			prismlauncher
+			heroic
 			lutris
 
 			## Dev Stuff

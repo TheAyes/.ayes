@@ -4,18 +4,19 @@
 $update
 $rebuild build
 
-echo ''
-nix store diff-closures /run/current-system ./result | awk '/[0-9] →|→ [0-9]/ && !/nixos/' || echo
+diff=$(nix store diff-closures /run/current-system ./result --no-warn-dirty)
+echo "$diff"
 
-read -p $'\nProceed with update? (Y|n) ' answer
-
-case ${answer:0:1} in
-	n|N )
-
-	;;
-	* )
-		$rebuild switch
-	;;
-esac
+REPLY="Y"
+if [[ -z "$diff" ]]; then
+    echo "No updates found. Exiting..."
+else
+	read -p "Found $(echo "$diff" | wc -l) updates. Proceed with update? (Y|n) " -n 1 -r
+	REPLY=${REPLY:-"Y"}
+	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+		[[ "$0" = "${BASH_SOURCE[*]}" ]] && exit 1 || return 1
+	fi
+	$rebuild switch
+fi
 
 $return
