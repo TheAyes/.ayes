@@ -9,8 +9,8 @@ popd () {
 
 export pushd popd
 export nixosConfigPath="$HOME/.nixos"
-export update="nix flake update $nixosConfigPath --no-warn-dirty"
-export rebuild="nixos-rebuild --use-remote-sudo --flake $nixosConfigPath --option eval-cache=false --no-warn-dirty"
+export update="nix flake update $nixosConfigPath"
+export rebuild="nixos-rebuild --use-remote-sudo --flake $nixosConfigPath --option eval-cache=false"
 
 export return=popd
 
