@@ -2,7 +2,7 @@
 . ./commands.sh
 
 # Rebuild, output simplified errors, log tracebacks
-$rebuild "test"
+$rebuild "switch"
 
 # Commit all changes with the generation metadata
 git commit -am "$(nixos-rebuild list-generations | grep current)"

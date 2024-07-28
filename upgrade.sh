@@ -16,7 +16,7 @@ else
 	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 		[[ "$0" = "${BASH_SOURCE[*]}" ]] && exit 1 || return 1
 	fi
-	$rebuild switch
+	./rebuild.sh
 fi
 
 $return
