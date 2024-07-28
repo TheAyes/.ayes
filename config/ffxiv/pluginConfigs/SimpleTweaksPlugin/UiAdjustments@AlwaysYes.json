@@ -1,0 +1,19 @@
+{
+  "SelectCheckBox": true,
+  "YesNo": true,
+  "DutyConfirmation": true,
+  "CardsShop": true,
+  "RetainerVentures": true,
+  "RetainerEntrustDuplicates": true,
+  "MateriaMelds": true,
+  "MateriaExtractions": true,
+  "MateriaRetrievals": true,
+  "GlamourDispels": true,
+  "Desynthesis": true,
+  "AutomaticAetherialReduction": true,
+  "Lobby": true,
+  "ItemExchangeConfirmations": true,
+  "BlundervilleExitDialog": true,
+  "ExceptionsYesNo": [],
+  "Version": 1
+}
