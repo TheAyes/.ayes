@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/config/ags/out" />
       <excludeFolder url="file://$MODULE_DIR$/result" />
+      <excludeFolder url="file://$MODULE_DIR$/config/ffxiv/ffxivConfig/FFXIV_CHR0040002E92DA86E6/log" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
