@@ -68,8 +68,8 @@ PetMirageTypeFairy	0
 TimeMode	2
 Time12	0
 TimeEorzea	0
-TimeLocal	1
-TimeServer	0
+TimeLocal	0
+TimeServer	1
 ActiveLS_H	0
 ActiveLS_L	0
 HotbarLock	1
