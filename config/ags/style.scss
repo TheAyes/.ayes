@@ -1,18 +1,7 @@
 @import "theme";
-//@use "sass:color";
+@import "src/styles/functions";
 
-/// Map deep get
-/// @author Kitty Giraudel
-/// @access public
-/// @param {Map} $map - Map
-/// @param {Arglist} $keys - Key chain
-/// @return {*} - Desired value
-@function map-deep-get($map, $keys...) {
-	@each $key in $keys {
-		$map: map-get($map, $key);
-	}
-	@return $map;
-}
+//@use "sass:color";
 
 .bar {
 	min-height: 4pt;
@@ -47,4 +36,4 @@
 	}
 }
 
-
+@import "src/styles/notification";

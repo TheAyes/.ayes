@@ -53,7 +53,6 @@
 			nodejs
 			bun
 			sassc
-			python3
 		];
 
 		file = {
@@ -275,7 +274,7 @@
 		};
 	
 		dunst = {
-			enable = true;
+			enable = false;
 			package = pkgs.dunst;
 			configFile = "$XDG_CONFIG_HOME/dunst/dunstrc";
 		};

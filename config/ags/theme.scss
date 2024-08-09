@@ -110,6 +110,14 @@ $theme: (
 		btn-disabled-bg: map-get($base-colors, light),
 		btn-disabled-color: map-get($base-colors, dark),
 	),
+	notifications: (
+		ntfy-primary-bg: map-get($catppuccin-mocha, "surface0"),
+		ntfy-primary-color: map-get($base-colors, light),
+		ntfy-secondary-bg: map-get($base-colors, secondary),
+		ntfy-secondary-color: map-get($base-colors, light),
+		ntfy-disabled-bg: map-get($base-colors, light),
+		ntfy-disabled-color: map-get($base-colors, dark),
+	),
 	layout: (
 		container-width-sm: 540px,
 		container-width-md: 720px,

@@ -1,6 +1,6 @@
 #! /run/current-system/sw/bin/bash
-. ./commands.sh test
+. ./commands.sh
 
-$rebuild
+$rebuild test
 
 $return
