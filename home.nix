@@ -81,7 +81,7 @@
 
 	
 	gtk = {
-		enable = true;
+		enable = false;
 		theme = {
 			package = pkgs.rose-pine-gtk-theme;
 			name = "rose-pine-moon";
