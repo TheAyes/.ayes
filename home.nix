@@ -83,8 +83,8 @@
 	gtk = {
 		enable = false;
 		theme = {
-			package = pkgs.fluent-gtk-theme;
-			#name = "rose-pine";
+			package = pkgs.rose-pine-gtk-theme;
+			#name = "rose-pine-moon";
 		};
 		
 		iconTheme = {
