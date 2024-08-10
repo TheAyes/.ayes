@@ -60,46 +60,59 @@
 		initrd.systemd.dbus.enable = true;
 	};
 
-	systemd.user.services = {
-		polkit-kde-authentication-agent-1 = {
-			enable = true;
-			wantedBy = [ "graphical-session.target" ];
-			wants = [ "graphical-session.target" ];
-			after = [ "graphical-session.target" ];
-			serviceConfig = {
-				Type = "simple";
-				ExecStart = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1";
-				Restart = "on-failure";
-				RestartSec = 1;
-				TimeoutStopSec = 10;
+	systemd = {
+		services = {
+			lact = {
+				description = "AMDGPU Control Daemon";
+				enable = true;
+				serviceConfig = {
+					ExecStart = "${pkgs.lact}/bin/lact daemon";
+				};
+				wantedBy = ["multi-user.target"];
 			};
 		};
 
-		steam = {
-			enable = true;
-			description = "Open Steam in the background at boot";
-			wantedBy = [ "graphical-session.target" ];
-			startLimitIntervalSec = 1800;
-			startLimitBurst = 5;
-			serviceConfig = {
-				ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
-				Restart = "on-failure";
-				RestartSec = "5s";
-
+		user.services = {
+			polkit-kde-authentication-agent-1 = {
+				enable = true;
+				wantedBy = [ "graphical-session.target" ];
+				wants = [ "graphical-session.target" ];
+				after = [ "graphical-session.target" ];
+				serviceConfig = {
+					Type = "simple";
+					ExecStart = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1";
+					Restart = "on-failure";
+					RestartSec = 1;
+					TimeoutStopSec = 10;
+				};
 			};
-		};
 
-		solaar = {
-			enable = true;
-			description = "Open Solaar in the background at boot";
-			wantedBy = [ "graphical-session.target" ];
-			startLimitIntervalSec = 1800;
-			startLimitBurst = 5;
-			serviceConfig = {
-				ExecStart = "${pkgs.solaar}/bin/solaar --window=hide";
-				Restart = "on-failure";
-				RestartSec = "5s";
+			steam = {
+				enable = true;
+				description = "Open Steam in the background at boot";
+				wantedBy = [ "graphical-session.target" ];
+				startLimitIntervalSec = 1800;
+				startLimitBurst = 5;
+				serviceConfig = {
+					ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
+					Restart = "on-failure";
+					RestartSec = "5s";
 
+				};
+			};
+
+			solaar = {
+				enable = true;
+				description = "Open Solaar in the background at boot";
+				wantedBy = [ "graphical-session.target" ];
+				startLimitIntervalSec = 1800;
+				startLimitBurst = 5;
+				serviceConfig = {
+					ExecStart = "${pkgs.solaar}/bin/solaar --window=hide";
+					Restart = "on-failure";
+					RestartSec = "5s";
+
+				};
 			};
 		};
 	};
