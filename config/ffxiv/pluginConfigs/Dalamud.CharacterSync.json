@@ -1,0 +1,15 @@
+{
+  "$type": "Dalamud.RichPresence.Config.CharacterSyncConfig, Dalamud.CharacterSync",
+  "IsEnabled": true,
+  "SyncHotbars": true,
+  "SyncMacro": true,
+  "SyncKeybind": true,
+  "SyncLogfilter": true,
+  "SyncCharSettings": true,
+  "SyncKeyboardSettings": true,
+  "SyncGamepadSettings": true,
+  "SyncCardSets": true,
+  "Cid": 18014598541772518,
+  "SetName": "Meira Kisaragi on Odin",
+  "Version": 0
+}
