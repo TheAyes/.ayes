@@ -13,7 +13,10 @@
 			enable = true;
 		};
 
-		graphics.enable = true;
+		graphics = {
+			enable = true;
+			enable32Bit = true;
+		};
 
 	};
 
@@ -34,6 +37,12 @@
 
 		kernelModules = [
 			"amdgpu"
+		];
+
+		kernelParams = [
+			"video=DP-1:1920x1080@60"
+			"video=DP-2:1920x1080@60"
+			"video=HDMI-A-1:1920x1080@60"
 		];
 
 		loader = {
