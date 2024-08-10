@@ -83,7 +83,7 @@
 	gtk = {
 		enable = false;
 		theme = {
-			package = pkgs.rose-pine-gtk-theme;
+			package = pkgs.rose-pine-gtk-theme-unstable;
 			name = "rose-pine-moon";
 		};
 		
