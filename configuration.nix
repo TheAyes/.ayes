@@ -16,7 +16,14 @@
 		graphics = {
 			enable = true;
 			enable32Bit = true;
+
+			extraPackages = [
+				pkgs.amdvlk
+			];
 		};
+
+
+
 
 	};
 
@@ -224,6 +231,8 @@
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
 			wineWow64Packages.staging
+
+			lact
 		];
 	};
 
