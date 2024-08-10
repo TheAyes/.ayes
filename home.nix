@@ -84,7 +84,7 @@
 		enable = false;
 		theme = {
 			package = pkgs.rose-pine-gtk-theme;
-			#name = "rose-pine-moon";
+			name = "rose-pine-moon";
 		};
 		
 		iconTheme = {
