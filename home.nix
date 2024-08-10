@@ -83,8 +83,8 @@
 	gtk = {
 		enable = true;
 		theme = {
-			package = pkgs.rose-pine-gtk-theme;
-			name = "rose-pine-moon";
+			package = pkgs.flat-remix-gtk;
+			name = "Flat-Remix-GTK-Blue-Dark";
 		};
 		
 		iconTheme = {
