@@ -288,7 +288,7 @@
 			xkb.layout = "de";
 			xkb.variant = "nodeadkeys";
 
-			videoDrivers = [ "amdgpu" ];
+			videoDrivers = [ "amdgpu" "vmware" ];
 		};
 
 		gnome.gnome-keyring.enable = true;
@@ -299,6 +299,9 @@
 
 		gvfs.enable = true;
 	};
+
+	virtualisation.virtualbox.host.enable = true;
+	virtualisation.virtualbox.host.enableExtensionPack = true;
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
