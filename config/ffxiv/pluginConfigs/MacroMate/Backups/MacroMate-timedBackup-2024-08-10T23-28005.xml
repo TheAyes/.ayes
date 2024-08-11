@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MacroMate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ConfigVersion="1">
+  <LinkPlaceholderIconId>60042</LinkPlaceholderIconId>
+  <ShowVanillaMacroContextMenus>true</ShowVanillaMacroContextMenus>
+  <Root>
+    <Name>Root</Name>
+    <Nodes>
+      <Group>
+        <Name>M1S</Name>
+        <Nodes />
+      </Group>
+    </Nodes>
+  </Root>
+</MacroMate>

@@ -469,11 +469,12 @@
 			        "ShowMeYourName": {
 			            "enabled": true,
 			            "displayNames": false,
-			            "mode": "user-nick",
+			            "mode": "nick-user",
 			            "inReplies": false
 			        },
 			        "SilentMessageToggle": {
-			            "enabled": true
+			            "enabled": true,
+			            "persistState": true
 			        },
 			        "SilentTyping": {
 			            "enabled": true,
