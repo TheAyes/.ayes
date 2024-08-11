@@ -106,8 +106,8 @@ ScreenShotDir	"C:\Users\Justs\OneDrive\Dokumente\My Games\FINAL FANTASY XIV - A 
 <Graphics Settings DX11>
 AntiAliasing_DX11	1
 TextureFilterQuality_DX11	2
-TextureAnisotropicQuality_DX11	1
-SSAO_DX11	4
+TextureAnisotropicQuality_DX11	2
+SSAO_DX11	6
 Glare_DX11	2
 DistortionWater_DX11	2
 DepthOfField_DX11	1
@@ -141,7 +141,7 @@ GraphicsRezoUpscaleType	0
 GrassEnableDynamicInterference	1
 ShadowBgLOD	0
 TextureRezoType	1
-ShadowLightValidType	1
+ShadowLightValidType	2
 DynamicRezoEnableCutScene	1
 UiSystemEnlarge	0
 SoundPadSeType	1
@@ -171,7 +171,7 @@ MouseAutoFocus	0
 FPSDownAFK	0
 IdlingCameraAFK	0
 MouseSpeed	0.760000
-CameraZoom	20000
+CameraZoom	8160
 DynamicRezoType	1
 
 <Move Operation>

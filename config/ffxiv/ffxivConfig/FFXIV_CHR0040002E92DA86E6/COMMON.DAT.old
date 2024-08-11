@@ -274,8 +274,8 @@ NamePlateDispTypeFeastPet	0
 NamePlateHpTypeFeastPet	2
 NamePlateNameTitleTypeFeast	1
 NamePlateDispSize	0
-NamePlateDispJobIcon	0
-NamePlateDispJobIconType	0
+NamePlateDispJobIcon	1
+NamePlateDispJobIconType	1
 NamePlateSetRoleColor	0
 NamePlateColorTank	4294942528
 NamePlateEdgeTank	4282392608

@@ -1,5 +1,6 @@
 {
   "SelectCheckBox": true,
+  "IgnoreTickedCheckBox": true,
   "YesNo": true,
   "DutyConfirmation": true,
   "CardsShop": true,
