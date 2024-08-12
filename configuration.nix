@@ -197,15 +197,19 @@
 	console.keyMap = "de-latin1-nodeadkeys";
 
 	# Define a user account. Don't forget to set a password with ‘passwd’.
-	users.users = {
-		ayes = {
-			isNormalUser = true;
-			description = "Ayes";
-			extraGroups = [ "wheel" "networkmanager" ];
-			packages = with pkgs; [
+	users = {
+		users = {
+			ayes = {
+				isNormalUser = true;
+				description = "Ayes";
+				extraGroups = [ "wheel" "networkmanager" ];
+				packages = with pkgs; [
 
-			];
+				];
+			};
 		};
+
+		extraGroups.vboxusers.members = [ "ayes" ];
 	};
 
 	# Allow unfree packages
@@ -300,8 +304,19 @@
 		gvfs.enable = true;
 	};
 
-	virtualisation.virtualbox.host.enable = true;
-	virtualisation.virtualbox.host.enableExtensionPack = true;
+	virtualisation.virtualbox = {
+		host = {
+			enable = true;
+			enableExtensionPack = true;
+		};
+
+		guest = {
+			enable = true;
+			clipboard = true;
+			dragAndDrop = true;
+		};
+	};
+
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
