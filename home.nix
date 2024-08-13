@@ -255,6 +255,18 @@
 			userName = "Ayes";
 			userEmail = "github.com.faculty419@passmail.net";
 			lfs.enable = true;
+			diff-so-fancy.enable = true;
+
+			extraConfig = {
+				user = {
+					name = "Ayes";
+					email = "github.com.faculty419@passmail.net";
+				};
+
+	credential = {
+		credentialStore = "secretservice";
+	};
+			};
 		};
 	};
 
