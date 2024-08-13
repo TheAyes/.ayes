@@ -322,6 +322,10 @@
 	xdg.portal.enable = true;
 
 	programs = {
+		nix-ld = {
+			enable = true;
+		};
+
 		hyprland = {
 			enable = true;
 			portalPackage = pkgs.xdg-desktop-portal-hyprland;
