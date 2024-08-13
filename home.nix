@@ -263,9 +263,9 @@
 					email = "github.com.faculty419@passmail.net";
 				};
 
-	credential = {
-		credentialStore = "secretservice";
-	};
+				credential = {
+					credentialStore = "secretservice";
+				};
 			};
 		};
 	};
