@@ -241,8 +241,6 @@
 
 			pavucontrol
 			playerctl
-			git
-			git-credential-manager
 			wl-clipboard
 			wev
 			kdePackages.qtwayland
