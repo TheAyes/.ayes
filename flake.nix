@@ -11,9 +11,13 @@
 
 		hyprsome.url = "github:sopa0/hyprsome";
 		ags.url = "github:Aylur/ags";
+		nix-ld = {
+			url = "github:Mic92/nix-ld";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, hyprsome, nix-ld, ... }@inputs: let
 		system = "x86_64-linux";
 	in {
 		nixosConfigurations = {
@@ -29,6 +33,10 @@
 
 						home-manager.extraSpecialArgs = { inherit inputs; };
 					}
+
+					nix-ld.nixosModules.nix-ld
+					{ programs.nix-ld.dev.enable = true; }
+
 				];
 			};
 		};
