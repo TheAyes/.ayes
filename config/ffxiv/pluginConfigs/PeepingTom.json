@@ -37,7 +37,7 @@
   "SoundDeviceNew": "00000000-0000-0000-0000-000000000000",
   "SoundCooldown": 10.0,
   "PlaySoundWhenClosed": false,
-  "OpenOnLogin": false,
+  "OpenOnLogin": true,
   "AllowMovement": true,
   "AllowResize": true,
   "ShowInCombat": false,

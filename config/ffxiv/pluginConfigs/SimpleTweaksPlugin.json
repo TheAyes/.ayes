@@ -12,7 +12,6 @@
   },
   "EnabledTweaks": [
     "ChatTweaks@ClickableLinks",
-    "ChatTweaks@DisableAutoChatInputs",
     "ChatTweaks@ReplyChannelSwitch",
     "ChatTweaks@DisableChatAutoscroll",
     "DisableTitleScreenMovie",
@@ -38,7 +37,16 @@
     "UiAdjustments@TargetHP",
     "UiAdjustments@LimitTargetStatusEffects",
     "AutoLockHotbar",
-    "AutoOpenCommendWindow"
+    "AutoOpenCommendWindow",
+    "UiAdjustments@ExamineItemLevel",
+    "ChatTweaks@EchoPartyFinder",
+    "UiAdjustments@ExtendedDesynthesisWindow",
+    "ExtendedMacroIcon",
+    "UiAdjustments@HideAchievementsNotifications",
+    "HighResScreenshots",
+    "TooltipTweaks@SimplifiedClassJobDisplay",
+    "SmartStrafe",
+    "UiAdjustments@TargetCastbarCountdown"
   ],
   "HiddenTweaks": [],
   "CustomTweakProviders": [],

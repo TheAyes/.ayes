@@ -1,7 +1,7 @@
 {
   "$type": "NoClippy.Configuration, NoClippy",
   "EnableAnimLockComp": true,
-  "EnableLogging": false,
+  "EnableLogging": true,
   "EnableDryRun": false,
   "AnimationLocks": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Single, System.Private.CoreLib]], System.Private.CoreLib",
@@ -55,11 +55,11 @@
     "1128": 2.1,
     "25872": 0.6
   },
-  "TotalActionsReduced": 11461,
-  "TotalAnimationLockReduction": 276.1131929755211,
+  "TotalActionsReduced": 14639,
+  "TotalAnimationLockReduction": 355.5514025390148,
   "LogToChat": false,
   "LogChatType": 0,
-  "EnableEncounterStats": false,
+  "EnableEncounterStats": true,
   "EnableEncounterStatsLogging": false,
   "PredictStatusApplications": false,
   "PredictMudras": false,

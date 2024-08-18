@@ -20,7 +20,8 @@
     6,
     7,
     9,
-    8
+    8,
+    1
   ],
   "MlFilters": {
     "$type": "System.Collections.Generic.Dictionary`2[[NoSoliciting.Ml.MessageCategory, NoSoliciting],[System.Collections.Generic.HashSet`1[[NoSoliciting.ChatType, NoSoliciting]], System.Private.CoreLib]], System.Private.CoreLib",

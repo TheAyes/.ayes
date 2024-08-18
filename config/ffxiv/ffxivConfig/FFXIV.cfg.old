@@ -26,7 +26,7 @@ ScreenMode	2
 FullScreenWidth	1920
 FullScreenHeight	1080
 Refreshrate	60
-Fps	1
+Fps	0
 AntiAliasing	1
 FPSInActive	0
 ResoMouseDrag	1
@@ -104,7 +104,7 @@ WindowDispNum	1
 ScreenShotDir	"C:\Users\Justs\OneDrive\Dokumente\My Games\FINAL FANTASY XIV - A Realm Reborn\screenshots"
 
 <Graphics Settings DX11>
-AntiAliasing_DX11	1
+AntiAliasing_DX11	3
 TextureFilterQuality_DX11	2
 TextureAnisotropicQuality_DX11	2
 SSAO_DX11	6
@@ -115,7 +115,7 @@ RadialBlur_DX11	1
 Vignetting_DX11	1
 GrassQuality_DX11	3
 TranslucentQuality_DX11	1
-ShadowSoftShadowType_DX11	1
+ShadowSoftShadowType_DX11	2
 ShadowTextureSizeType_DX11	2
 ShadowCascadeCountType_DX11	2
 LodType_DX11	1
@@ -171,7 +171,7 @@ MouseAutoFocus	0
 FPSDownAFK	0
 IdlingCameraAFK	0
 MouseSpeed	0.760000
-CameraZoom	20000
+CameraZoom	14750
 DynamicRezoType	1
 
 <Move Operation>
@@ -201,7 +201,7 @@ SoundSystem	37
 SoundPerform	100
 SoundPlayer	100
 SoundParty	100
-SoundOther	100
+SoundOther	25
 IsSndMaster	0
 IsSndBgm	1
 IsSndSe	0
