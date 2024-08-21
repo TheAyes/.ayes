@@ -474,7 +474,8 @@
 			        },
 			        "SilentMessageToggle": {
 			            "enabled": true,
-			            "persistState": true
+			            "persistState": true,
+			            "autoDisable": false
 			        },
 			        "SilentTyping": {
 			            "enabled": true,
