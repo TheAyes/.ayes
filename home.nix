@@ -140,7 +140,7 @@
 		};
 
 		librewolf = {
-			enable = true;
+			enable = false;
 		};
 
 		firefox = {
