@@ -1,7 +1,26 @@
-.musicPlayer {
-	max-width: 30ch;
 
-	.musicLabel {
-		white-space: nowrap;
+.musicPlayer {
+	.musicPlayerButton {
+		background: transparent;
+
+		&.musicPlayerButton-inactive {
+			color: map-deep-get($theme, "buttons", "btn-disabled-color");
+
+			border-color: transparent;
+			outline: none;
+
+			background: inherit;
+
+			&:hover, &:active {
+				border-color: transparent;
+				outline: none;
+
+				background: inherit;
+			}
+		}
+
+		&:hover {
+			background: map-deep-get($theme, "buttons", "btn-secondary-bg");
+		}
 	}
 }

@@ -108,7 +108,7 @@ $theme: (
 		btn-secondary-bg: map-get($base-colors, secondary),
 		btn-secondary-color: map-get($base-colors, light),
 		btn-disabled-bg: map-get($base-colors, light),
-		btn-disabled-color: map-get($base-colors, dark),
+		btn-disabled-color: lighten(map-get($base-colors, dark), 20%),
 	),
 	notifications: (
 		ntfy-primary-bg: map-get($catppuccin-mocha, "surface0"),

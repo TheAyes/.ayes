@@ -1,10 +1,8 @@
 import { makeMonitor, Monitor } from "../../types";
 import { makeDateTime } from "./dateTime";
-import { playerWidget } from "./musicPlayer";
+import { makePlayerWidget } from "./musicPlayer";
 import { makeSystemTray } from "./systemTray";
 import { workspaces } from "./workspaces";
-
-const mprisService = await Service.import("mpris");
 
 export const makeBar = (monitor: Monitor = makeMonitor()) => {
 	return Widget.Window({
@@ -19,10 +17,7 @@ export const makeBar = (monitor: Monitor = makeMonitor()) => {
 			startWidget: Widget.Box({
 				hpack: "start",
 				spacing: 8,
-				children: [
-					makeDateTime(),
-					Widget.Box({ children: mprisService.bind("players").as((p) => p.map(playerWidget)) })
-				]
+				children: [makeDateTime(), makePlayerWidget()]
 			}),
 			centerWidget: Widget.Box({
 				hpack: "center",

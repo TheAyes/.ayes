@@ -35,6 +35,7 @@
 			## configuration Utils
 			solaar
 			piper
+			font-manager
 
 			## Community
 			vesktop
@@ -77,7 +78,14 @@
 		};
 	};
 
-	fonts.fontconfig.enable = true;
+	fonts.fontconfig = {
+		enable = true;
+		defaultFonts = {
+			serif = [ "NotoSerif Nerd Font" ];
+			sansSerif = [ "FiraMono Nerd Font Propo" ];
+			monospace = [ "FiraCode Nerd Font Propo" ];
+		};
+	};
 
 	
 	gtk = {
