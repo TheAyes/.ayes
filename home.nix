@@ -5,10 +5,10 @@
 		inputs.ags.homeManagerModules.default
 	];
 
-	_module.args.nixpkgs-alternate = import inputs.nixpkgs-alternate {
+	/*_module.args.nixpkgs-alternate = import inputs.nixpkgs-alternate {
 		config.allowUnfree = true;
 		inherit (pkgs.stdenv) system;
-	};
+	};*/
 
 	home = {
 		username = "ayes";
@@ -47,9 +47,9 @@
 
 			## Dev Stuff
 			jetbrains.idea-ultimate
-			jetbrains.rider
-			jetbrains.webstorm
-			godot_4
+			#jetbrains.rider
+			#jetbrains.webstorm
+			#godot_4
 			nodejs
 			bun
 			sassc
@@ -107,15 +107,15 @@
 		ags = {
 			enable = true;
 			configDir = ./config/ags;
-			extraPackages = with pkgs; [
+			/*extraPackages = with pkgs; [
 				gtksourceview
 				webkitgtk
 				accountsservice
-			];
+			];*/
 		};
 
 		direnv = {
-			enable = true;
+			enable = false;
 			config = {
 
 			};
@@ -277,7 +277,7 @@
 		#};
 
 		hyprpaper = {
-			enable = true;
+			enable = false;
 			settings = {
 				ipc = "on";
 				splash = false;
