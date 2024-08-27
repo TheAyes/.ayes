@@ -202,7 +202,7 @@
 			ayes = {
 				isNormalUser = true;
 				description = "Ayes";
-				extraGroups = [ "wheel" "networkmanager" ];
+				extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
 				packages = with pkgs; [
 
 				];
