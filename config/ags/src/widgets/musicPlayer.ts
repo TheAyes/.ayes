@@ -10,19 +10,17 @@ export const playerWidgets = mprisService.bind("players").as((p) =>
 			children: [
 				Widget.Box({
 					children: [
-						Widget.Button({
-							child: Widget.Label({ class_name: "musicLabel" }).hook(player, (label: Label<any>) => {
-								const { track_artists, track_title } = player;
-								const filteredTrackArtists = track_artists.filter(
-									(currentArtist) => currentArtist.length > 0
-								);
+						Widget.Label({ class_name: "musicLabel" }).hook(player, (label: Label<any>) => {
+							const { track_artists, track_title } = player;
+							const filteredTrackArtists = track_artists.filter(
+								(currentArtist) => currentArtist.length > 0
+							);
 
-								const artists =
-									filteredTrackArtists.length > 0
-										? `${filteredTrackArtists.join(", ")} plays `
-										: "Currently playing ";
-								label.label = artists + track_title;
-							})
+							const artists =
+								filteredTrackArtists.length > 0
+									? `${filteredTrackArtists.join(", ")} plays `
+									: "Currently playing ";
+							label.label = artists + track_title;
 						})
 					]
 				}),

@@ -248,6 +248,7 @@
 			wineWow64Packages.staging
 
 			lact
+			virt-manager
 		];
 	};
 
@@ -303,18 +304,7 @@
 		gvfs.enable = true;
 	};
 
-	virtualisation.virtualbox = {
-		host = {
-			enable = true;
-			enableExtensionPack = true;
-		};
-
-		guest = {
-			enable = true;
-			clipboard = true;
-			dragAndDrop = true;
-		};
-	};
+	virtualisation.libvirtd.enable = true;
 
 
 	# Some programs need SUID wrappers, can be configured further or are
@@ -340,6 +330,8 @@
 		  enable = true;
 		  enableSSHSupport = true;
 		};
+		dconf.enable = true;
+
 	};
 
 	# This value determines the NixOS release from which the default

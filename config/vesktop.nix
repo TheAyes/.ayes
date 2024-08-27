@@ -60,6 +60,9 @@
 			    "disableMinSize": true,
 			    "winNativeTitleBar": false,
 			    "plugins": {
+			    	"YoutubeAdblock": {
+			    		"enabled": true
+					},
 			        "BadgeAPI": {
 			            "enabled": true
 			        },
