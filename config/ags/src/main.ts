@@ -12,16 +12,17 @@ Utils.exec(
 
 const monitors = JSON.parse(Utils.exec(`hyprctl monitors -j`)) as Monitor[];
 
+// Todo: Handle cases where certain monitor id's do not exist
 const operationsPerMonitor = [
 	{
 		monitorId: 0,
 		operations: [makeBar(monitors[0]), makeNotifications(monitors[0])]
 	},
-	{ monitorId: 1, operations: [makeBar(monitors[1])] },
-	{
+	{ monitorId: 1, operations: [makeBar(monitors[1])] }
+	/*{
 		monitorId: 2,
 		operations: [makeBar(monitors[2])]
-	}
+	}*/
 ];
 
 App.config({

@@ -1,7 +1,7 @@
 {
 	wayland.windowManager.hyprland.settings = {
 		monitor = [
-			"DP-1, preferred, 1920x0, auto"
+			"DP-1, preferred, -1920x0, auto"
 			"DP-2, preferred, 0x0, auto"
 		];
 
