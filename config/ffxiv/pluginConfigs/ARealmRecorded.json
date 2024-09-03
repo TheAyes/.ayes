@@ -1,0 +1,16 @@
+{
+  "$type": "ARealmRecorded.Configuration, ARealmRecorded",
+  "LastLoadedReplay": null,
+  "EnableRecordingIcon": false,
+  "MaxAutoRenamedReplays": 30,
+  "MaxDeletedReplays": 10,
+  "EnablePlaybackControlHiding": false,
+  "EnableHideOwnName": false,
+  "EnableQuickLoad": true,
+  "EnableJumpToTime": false,
+  "MaxSeekDelta": 100.0,
+  "CustomSpeedPreset": 30.0,
+  "EnableWaymarks": true,
+  "PluginVersion": "1.0.1.0",
+  "Version": 0
+}
