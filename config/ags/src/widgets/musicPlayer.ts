@@ -1,6 +1,8 @@
 import { MprisPlayer } from "../../types/service/mpris";
 import Label from "../../types/widgets/label";
 
+const MAX_LENGTH = 50;
+
 const mprisService = await Service.import("mpris");
 
 export const playerWidgets = mprisService.bind("players").as((p) =>
@@ -20,7 +22,7 @@ export const playerWidgets = mprisService.bind("players").as((p) =>
 								filteredTrackArtists.length > 0
 									? `${filteredTrackArtists.join(", ")} plays `
 									: "Currently playing ";
-							label.label = artists + track_title;
+							label.label = (artists + track_title).slice(0, MAX_LENGTH);
 						})
 					]
 				}),

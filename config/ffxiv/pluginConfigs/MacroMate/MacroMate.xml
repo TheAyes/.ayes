@@ -2,6 +2,8 @@
 <MacroMate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ConfigVersion="1">
   <LinkPlaceholderIconId>60042</LinkPlaceholderIconId>
   <ShowVanillaMacroContextMenus>true</ShowVanillaMacroContextMenus>
+  <EnableSubscriptionAutoCheckForUpdates>true</EnableSubscriptionAutoCheckForUpdates>
+  <MinutesBetweenSubscriptionAutoCheckForUpdates>120</MinutesBetweenSubscriptionAutoCheckForUpdates>
   <Root>
     <Name>Root</Name>
     <Nodes>
@@ -17,13 +19,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Pair stacks! </Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <LocationCondition>
-                  <!--Scratching Ring (1225)-->
-                  <Territory>1225</Territory>
-                </LocationCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -36,13 +44,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Light party stacks! East and West!</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <LocationCondition>
-                  <!--Scratching Ring (1225)-->
-                  <Territory>1225</Territory>
-                </LocationCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -55,13 +69,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Role stacks! T-H-D</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <LocationCondition>
-                  <!--Scratching Ring (1225)-->
-                  <Territory>1225</Territory>
-                </LocationCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -77,13 +97,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 1 Inside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -96,13 +122,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 1 Outside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -115,13 +147,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 2 Inside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -134,13 +172,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 2 Outside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -153,13 +197,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 3 Inside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -172,15 +222,23 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 3 Outside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
-                  <AndCondition />
+                  <AndCondition>
+                    <OpExprs />
+                  </AndCondition>
                 </OrCondition>
               </Macro>
               <Macro>
@@ -192,13 +250,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 4 Inside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <LocationCondition>
-                      <!--Scratching Ring (1225)-->
-                      <Territory>1225</Territory>
-                    </LocationCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -211,15 +275,23 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p 4 Outside to avoid cleave!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
-                  <AndCondition />
+                  <AndCondition>
+                    <OpExprs />
+                  </AndCondition>
                 </OrCondition>
               </Macro>
             </Nodes>
@@ -236,13 +308,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p Baits on 1!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -255,13 +333,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p Baits on 2!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -274,13 +358,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p Baits on 3!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -293,13 +383,19 @@
                 </MacroSlots>
                 <LinkWithMacroChain>false</LinkWithMacroChain>
                 <Lines>/p Baits on 4!</Lines>
+                <Notes />
                 <AlwaysLinked>false</AlwaysLinked>
                 <OrCondition>
                   <AndCondition>
-                    <ContentCondition>
-                      <!--AAC Light-heavyweight M1 (Savage) (986)-->
-                      <Content>986</Content>
-                    </ContentCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
                   </AndCondition>
                 </OrCondition>
               </Macro>
@@ -319,13 +415,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Pair stacks! </Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <ContentCondition>
-                  <!--AAC Light-heavyweight M2 (Savage) (988)-->
-                  <Content>988</Content>
-                </ContentCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -338,13 +440,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Spreads!</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <ContentCondition>
-                  <!--AAC Light-heavyweight M2 (Savage) (988)-->
-                  <Content>988</Content>
-                </ContentCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -357,13 +465,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p DPS explode first!</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <ContentCondition>
-                  <!--AAC Light-heavyweight M2 (Savage) (988)-->
-                  <Content>988</Content>
-                </ContentCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -376,13 +490,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>/p Supports explode first!</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <ContentCondition>
-                  <!--AAC Light-heavyweight M2 (Savage) (988)-->
-                  <Content>988</Content>
-                </ContentCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>
@@ -395,13 +515,19 @@
             </MacroSlots>
             <LinkWithMacroChain>false</LinkWithMacroChain>
             <Lines>Didn't see! Please specify with d or s, if you know!</Lines>
+            <Notes />
             <AlwaysLinked>false</AlwaysLinked>
             <OrCondition>
               <AndCondition>
-                <ContentCondition>
-                  <!--AAC Light-heavyweight M2 (Savage) (988)-->
-                  <Content>988</Content>
-                </ContentCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
               </AndCondition>
             </OrCondition>
           </Macro>

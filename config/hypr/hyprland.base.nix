@@ -1,6 +1,6 @@
 {
 	imports = [
-		./hyprland.home.nix
+		./hyprland.parents.nix
 	];
 
 	wayland.windowManager.hyprland.settings = {
