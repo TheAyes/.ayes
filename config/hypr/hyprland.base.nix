@@ -15,7 +15,6 @@
 		exec-once = [
 			"ags -c /home/ayes/.nixos/config/ags/config.js"
 			"firefox"
-			"vesktop"
 			"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 		];
 
@@ -24,12 +23,8 @@
 			kb_variant = "nodeadkeys";
 
 			follow_mouse = "1";
-
-			touchpad = {
-				natural_scroll = "no";
-			};
-
 			sensitivity = "0";
+			accel_profile = "adaptive";
 		};
 
 		bind = [
@@ -151,7 +146,7 @@
 		];
 
 		workspace = [
-			"special:special"
+			"special:magic, on-created-empty:vesktop"
 		];
 	};
 }
