@@ -333,10 +333,14 @@
 
 				preload = [
 					"/home/ayes/.nixos/config/hypr/wallpapers/yuffie_wallpaper_1080x1920.jpg"
+					"/home/ayes/.nixos/config/hypr/wallpapers/dark_anime_wallpaper.jpg"
+					"/home/ayes/.nixos/config/hypr/wallpapers/black-rock-shooter-43606-1920x1080.jpg"
 				];
 
 				wallpaper = [
-					", /home/ayes/.nixos/config/hypr/wallpapers/yuffie_wallpaper_1080x1920.jpg"
+					"DP-1, /home/ayes/.nixos/config/hypr/wallpapers/dark_love_wallpaper.jpg"
+					"DP-2, /home/ayes/.nixos/config/hypr/wallpapers/dark_anime_wallpaper.jpg"
+					"HDMI-A-1, /home/ayes/.nixos/config/hypr/wallpapers/black-rock-shooter-43606-1920x1080.jpg"
 				];
 			};
 		};
