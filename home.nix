@@ -286,11 +286,6 @@
 	};
 
 	services = {
-		#hypridle = {
-		#	enable = true;
-		#	package = pkgs.hypridle;
-		#};
-
 		hyprpaper = {
 			enable = false;
 			settings = {
@@ -298,19 +293,29 @@
 				splash = false;
 
 				preload = [
-					"/share/wallpapers/yuffie_wallpaper_1080x1920.jpg"
+					"/home/ayes/.nixos/config/hypr/wallpapers/yuffie_wallpaper_1080x1920.jpg"
 				];
 
 				wallpaper = [
-					"DP-3,/share/wallpapers/yuffie_wallpaper_1080x1920.jpg"
+					", /home/ayes/.nixos/config/hypr/wallpapers/yuffie_wallpaper_1080x1920.jpg"
 				];
 			};
 		};
-	
-		dunst = {
-			enable = false;
-			package = pkgs.dunst;
-			configFile = "$XDG_CONFIG_HOME/dunst/dunstrc";
+
+		hypridle = {
+			enable = true;
+			settings = {
+				general = {
+
+				};
+
+				listener = [
+					{
+                        timeout = 300;
+                        on-timeout = "hyprlock";
+                    }
+				];
+			};
 		};
 
 		arrpc.enable = true;
