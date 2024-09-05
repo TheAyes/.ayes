@@ -283,11 +283,50 @@
 				};
 			};
 		};
+
+		hyprlock = {
+			enable = true;
+			settings = {
+				general = {
+					disable_loading_bar = false;
+					grace = 0;
+					hide_cursor = false;
+					no_fade_in = false;
+				};
+
+				background = [
+					{
+						color = "rgba(25, 20, 20, 1.0)";
+
+						blur_passes = 3;
+						blur_size = 12;
+						noise = 0.0117;
+					}
+				];
+
+				input-field = [
+					{
+						size = "300, 50";
+						position = "0, -80";
+						monitor = "";
+						dots_center = true;
+						fade_on_empty = false;
+						font_color = "rgb(202, 211, 245)";
+						inner_color = "rgb(91, 96, 120)";
+						outer_color = "rgb(24, 25, 38)";
+						outline_thickness = 3;
+						placeholder_text = ''<span foreground="##cad3f5">Password...</span>'';
+						shadow_passes = 2;
+					}
+				];
+			};
+
+		};
 	};
 
 	services = {
 		hyprpaper = {
-			enable = false;
+			enable = true;
 			settings = {
 				ipc = "on";
 				splash = false;
@@ -301,6 +340,8 @@
 				];
 			};
 		};
+
+
 
 		hypridle = {
 			enable = true;
