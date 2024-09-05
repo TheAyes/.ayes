@@ -1,6 +1,7 @@
 {
 	wayland.windowManager.hyprland.settings = {
 		monitor = [
+			", preferred, auto, 1"
 			"DP-1, preferred, -1920x0, auto"
 			"DP-2, preferred, 0x0, auto"
 		];
@@ -26,5 +27,9 @@
 			"18, monitor:DP-2"
 			"19, monitor:DP-2"
 		];
+
+		cursor = {
+			default_monitor = "DP-2";
+		};
 	};
 }
