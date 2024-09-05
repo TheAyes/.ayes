@@ -100,7 +100,7 @@
 			# Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
 			allow_tearing = false;
 			resize_on_border = true;
-			#default_cursor_monitor = "HDMI-A-1";
+
 		};
 
 		decoration = {
@@ -148,6 +148,10 @@
 
 		windowrulev2 = [
 			"nofocus, noinitialfocus, class:^$, title:^$"
+		];
+
+		workspace = [
+			"special:special"
 		];
 	};
 }

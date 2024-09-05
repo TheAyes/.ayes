@@ -565,7 +565,7 @@
 			            "enabled": false
 			        },
 			        "ViewRaw": {
-			            "enabled": false
+			            "enabled": true
 			        },
 			        "VoiceMessages": {
 			            "enabled": false
