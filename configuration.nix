@@ -21,10 +21,6 @@
 				pkgs.amdvlk
 			];
 		};
-
-
-
-
 	};
 
 	nix = {
@@ -239,6 +235,7 @@
 			WLR_NO_HARDWARE_CURSORS = "1";
 
 			AMD_VULKAN_ICD = "RADV";
+			VK_ICD_FILENAMES="${pkgs.amdvlk}/share/vulkan/icd.d/radeon_icd.x86_64.json";
 		};
 
 		systemPackages = with pkgs; [
@@ -248,7 +245,7 @@
 			libsForQt5.qtstyleplugin-kvantum
 			catppuccin-sddm
 
-			pavucontrol
+			pwvucontrol
 			playerctl
 			wl-clipboard
 			wev
