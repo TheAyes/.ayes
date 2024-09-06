@@ -332,7 +332,7 @@
 				splash = false;
 
 				preload = [
-					"/home/ayes/.nixos/config/hypr/wallpapers/yuffie_wallpaper_1080x1920.jpg"
+					"/home/ayes/.nixos/config/hypr/wallpapers/dark_love_wallpaper.jpg"
 					"/home/ayes/.nixos/config/hypr/wallpapers/dark_anime_wallpaper.jpg"
 					"/home/ayes/.nixos/config/hypr/wallpapers/black-rock-shooter-43606-1920x1080.jpg"
 				];
