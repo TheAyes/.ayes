@@ -18,11 +18,11 @@ const operationsPerMonitor = [
 		monitorId: 0,
 		operations: [makeBar(monitors[0]), makeNotifications(monitors[0])]
 	},
-	{ monitorId: 1, operations: [makeBar(monitors[1])] }
-	/*{
+	{ monitorId: 1, operations: [makeBar(monitors[1])] },
+	{
 		monitorId: 2,
 		operations: [makeBar(monitors[2])]
-	}*/
+	}
 ];
 
 const filteredOperations = operationsPerMonitor.filter((item) => {
