@@ -5,11 +5,6 @@
 		inputs.ags.homeManagerModules.default
 	];
 
-	/*_module.args.nixpkgs-alternate = import inputs.nixpkgs-alternate {
-		config.allowUnfree = true;
-		inherit (pkgs.stdenv) system;
-	};*/
-
 	home = {
 		username = "ayes";
 		homeDirectory = lib.mkForce "/home/ayes";
@@ -31,10 +26,10 @@
 			bitwig-studio
 			haruna
 			obsidian
+			gpu-screen-recorder-gtk
 
 			## configuration Utils
 			solaar
-			piper
 			font-manager
 
 			## Community
@@ -48,9 +43,6 @@
 
 			## Dev Stuff
 			jetbrains.idea-ultimate
-			#jetbrains.rider
-			#jetbrains.webstorm
-			#godot_4
 			nodejs
 			bun
 			sassc
@@ -122,11 +114,11 @@
 		ags = {
 			enable = true;
 			configDir = ./config/ags;
-			/*extraPackages = with pkgs; [
+			extraPackages = with pkgs; [
 				gtksourceview
 				webkitgtk
 				accountsservice
-			];*/
+			];
 		};
 
 		direnv = {
@@ -160,7 +152,6 @@
 
 		firefox = {
 			enable = true;
-			#package = pkgs.librewolf;
 			policies = {
 				PasswordManagerEnabled = false;
 				PopupBlocking = true;
