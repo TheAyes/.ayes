@@ -25,9 +25,13 @@ const operationsPerMonitor = [
 	}*/
 ];
 
+const filteredOperations = operationsPerMonitor.filter((item) => {
+	return monitors.some((monitor) => monitor.id === item.monitorId);
+});
+
 App.config({
 	windows: (() => {
-		return operationsPerMonitor.reduce((accumulator, currentValue) => {
+		return filteredOperations.reduce((accumulator, currentValue) => {
 			return accumulator.concat(currentValue.operations);
 		}, [] as any[]);
 	})(),

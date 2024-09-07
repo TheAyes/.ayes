@@ -17,9 +17,9 @@
 			enable = true;
 			enable32Bit = true;
 
-			extraPackages = [
+			/*extraPackages = [
 				pkgs.amdvlk
-			];
+			];*/
 		};
 	};
 
@@ -154,19 +154,6 @@
 
 		pam.services.sddm.enableGnomeKeyring = true;
 
-		sudo = {
-			enable = true;
-			extraRules = [{
-				commands = [
-					{
-						command = "/home/ayes/.nixos/test.sh";
-						options = [ "NOPASSWD" ];
-					}
-				];
-				groups = [ "wheel" ];
-			}];
-		};
-
 		wrappers = {
 			gsr-kms-server = {
 				owner = "root";
@@ -255,6 +242,7 @@
 
 			lact
 			virt-manager
+			amdvlk
 		];
 	};
 
