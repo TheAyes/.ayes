@@ -17,9 +17,9 @@
 			enable = true;
 			enable32Bit = true;
 
-			/*extraPackages = [
+			extraPackages = [
 				pkgs.amdvlk
-			];*/
+			];
 		};
 	};
 
