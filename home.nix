@@ -19,7 +19,7 @@
 			xarchiver
 
 			##hyprstuff
-			inputs.hyprsome.packages.x86_64-linux.default
+			inputs.hyprsome.packages.${pkgs.stdenv.hostPlatform.system}.default
 			hyprshot
 
 			## Media
@@ -360,6 +360,8 @@
 	wayland = {
 		windowManager.hyprland = {
 			enable = true;
+			package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+
 			systemd = {
 				enable = true;
 				enableXdgAutostart = true;
