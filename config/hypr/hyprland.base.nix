@@ -16,6 +16,7 @@
 			"ags -c /home/ayes/.nixos/config/ags/config.js"
 			"firefox"
 			"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+			"vesktop"
 		];
 
 		input = {
@@ -44,26 +45,15 @@
 
 			"$mainMod, S, togglespecialworkspace, magic"
 			"$mainMod SHIFT, S, movetoworkspace, special:magic"
-		] ++ [
-			"$mainMod, 1, exec, hyprsome workspace 1"
-			"$mainMod, 2, exec, hyprsome workspace 2"
-			"$mainMod, 3, exec, hyprsome workspace 3"
-			"$mainMod, 4, exec, hyprsome workspace 4"
-			"$mainMod, 5, exec, hyprsome workspace 5"
-			"$mainMod, 6, exec, hyprsome workspace 6"
-			"$mainMod, 7, exec, hyprsome workspace 7"
-			"$mainMod, 8, exec, hyprsome workspace 8"
-			"$mainMod, 9, exec, hyprsome workspace 9"
-			"$mainMod SHIFT, 1, exec, hyprsome move 1"
-			"$mainMod SHIFT, 2, exec, hyprsome move 2"
-			"$mainMod SHIFT, 3, exec, hyprsome move 3"
-			"$mainMod SHIFT, 4, exec, hyprsome move 4"
-			"$mainMod SHIFT, 5, exec, hyprsome move 5"
-			"$mainMod SHIFT, 6, exec, hyprsome move 6"
-			"$mainMod SHIFT, 7, exec, hyprsome move 7"
-			"$mainMod SHIFT, 8, exec, hyprsome move 8"
-			"$mainMod SHIFT, 9, exec, hyprsome move 9"
-		];
+		] ++ (builtins.concatLists (
+			builtins.genList (i: let
+				ws = toString (i + 1);
+				in [
+					"$mainMod, ${ws}, exec, hyprsome workspace ${ws}"
+					"$mainMod SHIFT, ${ws}, exec, hyprsome move ${ws}"
+				]
+			) 9
+		));
 
 		bindl = [
 			", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"

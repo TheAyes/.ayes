@@ -9,11 +9,12 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+		hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 		hyprsome.url = "github:sopa0/hyprsome";
 		ags.url = "github:Aylur/ags";
 	};
 
-	outputs = { self, nixpkgs, home-manager, hyprsome, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, hyprland, hyprsome, ... }@inputs: let
 		system = "x86_64-linux";
 	in {
 		nixosConfigurations = {
