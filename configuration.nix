@@ -302,7 +302,7 @@
 
 	xdg.portal = {
 		enable = true;
-		config.common.default = "*";
+		#config.common.default = "*";
 	};
 
 	programs = {
