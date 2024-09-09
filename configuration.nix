@@ -315,7 +315,7 @@
 			remotePlay.openFirewall = true;
 			dedicatedServer.openFirewall = true;
 
-			gamescopeSession.enable = true;
+			gamescopeSession.enable = false;
 		};
 
 		gnupg.agent = {
