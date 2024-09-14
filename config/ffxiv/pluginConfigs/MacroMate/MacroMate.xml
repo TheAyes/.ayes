@@ -535,4 +535,7 @@
       </Group>
     </Nodes>
   </Root>
+  <SubscriptionUrlCache>
+    <Urls />
+  </SubscriptionUrlCache>
 </MacroMate>
