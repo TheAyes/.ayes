@@ -162,6 +162,12 @@
 				source = "${pkgs.gpu-screen-recorder}/bin/gsr-kms-server";
 			};
 		};
+
+		sudo = {
+			enable = true;
+
+			wheelNeedsPassword = false;
+		};
 	};
 
 	########## Locales ##########;
@@ -248,9 +254,9 @@
 
 	fonts.packages = with pkgs; [
 		nerdfonts
-		/*noto-fonts
+		noto-fonts
 		noto-fonts-cjk
-		noto-fonts-emoji*/
+		noto-fonts-emoji
 	];
 
 	services = {
@@ -302,7 +308,6 @@
 
 	xdg.portal = {
 		enable = true;
-		#config.common.default = "*";
 	};
 
 	programs = {
@@ -315,7 +320,7 @@
 			remotePlay.openFirewall = true;
 			dedicatedServer.openFirewall = true;
 
-			gamescopeSession.enable = false;
+			gamescopeSession.enable = true;
 		};
 
 		gnupg.agent = {

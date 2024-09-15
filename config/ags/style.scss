@@ -3,6 +3,11 @@
 
 //@use "sass:color";
 
+* {
+	font-family: "NotoSans NFP";
+	font-weight: 500;
+}
+
 .bar {
 	min-height: 4pt;
 	background: none;
@@ -36,5 +41,6 @@
 	}
 }
 
-@import "src/styles/notification";
+@import "src/widgets/notification/notification";
 @import "src/styles/musicPlayer";
+@import "src/widgets/dateTime/dateTime";

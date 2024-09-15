@@ -1,5 +1,5 @@
-import { Monitor } from "../../types";
-import { Notification } from "../../types/service/notifications";
+import { Monitor } from "../../../types";
+import { Notification } from "../../../types/service/notifications";
 
 export const notificationService = await Service.import("notifications");
 

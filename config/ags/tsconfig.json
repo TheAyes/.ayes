@@ -9,6 +9,7 @@
 		"checkJs": true,
 		"strict": true,
 		"noImplicitAny": false,
+		"moduleResolution": "nodenext",
 		"baseUrl": ".",
 		"typeRoots": [
 			"./types"
