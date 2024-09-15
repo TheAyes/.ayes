@@ -384,7 +384,7 @@ LogColorRoleTank	4278223103
 LogColorRoleHealer	4286642272
 LogColorRoleDPS	4294921292
 LogColorOtherClass	4291611852
-ChatType	2
+ChatType	0
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278
@@ -487,7 +487,7 @@ BannerContentsOrderType	0
 CCProgressAllyFixLeftSide	0
 CCMapAllyFixLeftSide	0
 DispCCCountDown	1
-EmoteTextType	0
+EmoteTextType	1
 IsEmoteSe	0
 EmoteSeType	0
 PartyFinderNewArrivalDisp	0

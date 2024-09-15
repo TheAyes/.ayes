@@ -9,60 +9,55 @@ export const playerWidgets = mprisService.bind("players").as((p) =>
 	p.map((player: MprisPlayer) => {
 		return Widget.Box({
 			class_name: "musicPlayer",
+			vertical: true,
 			children: [
 				Widget.Box({
 					children: [
-						Widget.Label({ class_name: "musicLabel" }).hook(player, (label: Label<any>) => {
-							const { track_artists, track_title } = player;
-							const filteredTrackArtists = track_artists.filter(
-								(currentArtist) => currentArtist.length > 0
-							);
+						Widget.Box({
+							children: [
+								Widget.Label({ class_name: "musicLabel" }).hook(player, (label: Label<any>) => {
+									const { track_title } = player;
 
-							const artists =
-								filteredTrackArtists.length > 0
-									? `${filteredTrackArtists.join(", ")} plays `
-									: "Currently playing ";
-							label.label = (artists + track_title).slice(0, MAX_LENGTH);
+									label.label = track_title.slice(0, MAX_LENGTH);
+								})
+							]
+						}),
+						Widget.Box({
+							children: [
+								Widget.Button({
+									classNames: ["musicPlayerButton"],
+									onClicked: () => player.playPause(),
+									child: Widget.Label().hook(player, (label: Label<any>) => {
+										switch (player.play_back_status) {
+											case "Playing":
+												label.label = "";
+												break;
+
+											case "Stopped":
+											case "Paused":
+												label.label = "";
+												break;
+										}
+									})
+								})
+							]
 						})
 					]
 				}),
-				Widget.Box({
-					children: [
-						Widget.Button({
-							sensitive: !player.can_go_prev,
-							classNames: ["musicPlayerButton", player.can_go_prev ? "" : "musicPlayerButton-inactive"],
-							onClicked: () => {
-								if (player.can_go_prev) player.previous().then();
-							},
-							child: Widget.Label({ label: "" })
-						}),
-						Widget.Button({
-							classNames: ["musicPlayerButton"],
-							onClicked: () => player.playPause(),
-							child: Widget.Label().hook(player, (label: Label<any>) => {
-								switch (player.play_back_status) {
-									case "Playing":
-										label.label = "";
-										break;
-									case "Paused":
-										label.label = "";
-										break;
-									case "Stopped":
-										label.label = "";
-										break;
-								}
-							})
-						}),
-						Widget.Button({
-							sensitive: !player.can_go_next,
-							classNames: ["musicPlayerButton", player.can_go_next ? "" : "musicPlayerButton-inactive"],
-							onClicked: () => {
-								if (player.can_go_next) player.next().then();
-							},
+				Widget.Slider({
+					drawValue: false,
+					onChange: ({ value }) => (player.position = value * player.length),
+					visible: player.bind("length").as((l) => l > 0),
+					setup: (self) => {
+						const update = () => {
+							const value = player.position / player.length;
+							self.value = value > 0 ? value : 0;
+						};
 
-							child: Widget.Label({ label: "" })
-						})
-					]
+						self.hook(player, update);
+						self.hook(player, update, "position");
+						self.poll(1000, update);
+					}
 				})
 			]
 		});
