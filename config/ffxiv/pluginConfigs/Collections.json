@@ -12,7 +12,8 @@
       37156,
       19174,
       24115,
-      38213
+      38213,
+      13673
     ]
   },
   "Wishlist": {
@@ -561,7 +562,13 @@
     42567,
     42556,
     42551,
-    10583
+    10583,
+    38212,
+    38213,
+    38214,
+    38216,
+    38215,
+    42566
   ],
   "ArmoireItemIds": [],
   "GlamourTree": {
@@ -579,22 +586,17 @@
               "Body": {
                 "$type": "Collections.GlamourItem, Collections",
                 "ItemId": 37197,
-                "StainId": 6
-              },
-              "Gloves": {
-                "$type": "Collections.GlamourItem, Collections",
-                "ItemId": 38213,
-                "StainId": 6
+                "StainId": 101
               },
               "Legs": {
                 "$type": "Collections.GlamourItem, Collections",
-                "ItemId": 24115,
-                "StainId": 6
+                "ItemId": 7267,
+                "StainId": 101
               },
               "Feet": {
                 "$type": "Collections.GlamourItem, Collections",
                 "ItemId": 24006,
-                "StainId": 6
+                "StainId": 101
               }
             }
           }

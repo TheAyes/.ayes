@@ -18,12 +18,18 @@ export const makeDateTime = () => {
 		"width-chars": 2
 	});
 
+	const progress = Widget.LevelBar({
+		value: 0,
+		maxValue: 100,
+		minValue: 0
+	});
+
 	Utils.interval(1000, async () => {
 		const dateTime = new Date();
 
 		dateLabel.label = dateTime.toLocaleString("de-DE", {
-			day: "numeric",
-			month: "numeric",
+			day: "2-digit",
+			month: "2-digit",
 			year: "2-digit"
 		});
 
@@ -34,11 +40,18 @@ export const makeDateTime = () => {
 		});
 
 		dotLabel.label = dateTime.getSeconds() % 2 === 0 ? "•" : "";
+
+		progress.value = Math.floor((dateTime.getSeconds() / 59) * progress.maxValue);
 	});
 
 	return Widget.Box({
 		className: "dateTime",
-		vertical: false,
-		children: [timeLabel, dotLabel, dateLabel]
+		vertical: true,
+		children: [
+			Widget.Box({
+				children: [timeLabel, dotLabel, dateLabel]
+			}),
+			progress
+		]
 	});
 };
