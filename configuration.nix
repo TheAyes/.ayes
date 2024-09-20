@@ -18,8 +18,12 @@
 			enable32Bit = true;
 
 			extraPackages = [
-				pkgs.amdvlk
+				/*pkgs.amdvlk*/
 			];
+		};
+
+		amdgpu = {
+			initrd.enable = true;
 		};
 	};
 
@@ -233,7 +237,6 @@
 
 		systemPackages = with pkgs; [
 			wget
-			alejandra
 
 			libsForQt5.qtstyleplugin-kvantum
 			catppuccin-sddm
@@ -244,11 +247,9 @@
 			wev
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
-			wineWow64Packages.staging
 
 			lact
 			virt-manager
-			amdvlk
 		];
 	};
 
@@ -292,7 +293,7 @@
 			xkb.layout = "de";
 			xkb.variant = "nodeadkeys";
 
-			videoDrivers = [ "amdgpu" "vmware" ];
+			videoDrivers = [ "vmware" ];
 		};
 
 		gnome.gnome-keyring.enable = true;
