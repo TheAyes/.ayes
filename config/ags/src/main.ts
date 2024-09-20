@@ -1,6 +1,6 @@
 import { Monitor } from "../types";
-import { makeBar } from "./widgets/bar.js";
 import { makeNotifications } from "./widgets/notification/notification";
+import { makeBar } from "./widgets/taskbar/bar.js";
 
 const scss = "/home/ayes/.nixos/config/ags/style.scss";
 const css = "/home/ayes/.nixos/config/ags/out/style.css";
