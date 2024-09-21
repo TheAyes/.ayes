@@ -288,6 +288,14 @@
 
 		blueman.enable = true;
 
+		udev = {
+			enable = true;
+			extraRules = ''
+				ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+				ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+			'';
+		};
+
 		xserver = {
 			enable = true;
 			xkb.layout = "de";
@@ -301,7 +309,7 @@
 			enable = true; # Default
 
 			touchpad = {
-				sendEventsMode = "disabled-on-external-mouse";
+				sendEventsMode = "disabled";
 			};
 		};
 
