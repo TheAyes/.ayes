@@ -241,7 +241,7 @@
 			libsForQt5.qtstyleplugin-kvantum
 			catppuccin-sddm
 
-			pwvucontrol
+			pavucontrol
 			playerctl
 			wl-clipboard
 			wev
@@ -293,7 +293,16 @@
 			xkb.layout = "de";
 			xkb.variant = "nodeadkeys";
 
+
 			videoDrivers = [ "vmware" ];
+		};
+
+		libinput = {
+			enable = true; # Default
+
+			touchpad = {
+				sendEventsMode = "disabled-on-external-mouse";
+			};
 		};
 
 		gnome.gnome-keyring.enable = true;
