@@ -10,6 +10,7 @@
   "MateriaExtractions": true,
   "MateriaRetrievals": true,
   "GlamourDispels": true,
+  "Dyes": true,
   "Desynthesis": true,
   "AutomaticAetherialReduction": true,
   "Lobby": true,
