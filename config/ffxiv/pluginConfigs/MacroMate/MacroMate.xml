@@ -4,6 +4,7 @@
   <ShowVanillaMacroContextMenus>true</ShowVanillaMacroContextMenus>
   <EnableSubscriptionAutoCheckForUpdates>true</EnableSubscriptionAutoCheckForUpdates>
   <MinutesBetweenSubscriptionAutoCheckForUpdates>120</MinutesBetweenSubscriptionAutoCheckForUpdates>
+  <CharPickerDialogFavourites />
   <Root>
     <Name>Root</Name>
     <Nodes>
