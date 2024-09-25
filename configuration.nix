@@ -248,6 +248,8 @@
 			kdePackages.qtwayland
 			kdePackages.polkit-kde-agent-1
 
+			rustdesk
+
 			lact
 			virt-manager
 		];
@@ -303,6 +305,11 @@
 
 
 			videoDrivers = [ "vmware" ];
+		};
+
+		xrdp = {
+			enable = true;
+			openFirewall = true;
 		};
 
 		libinput = {
