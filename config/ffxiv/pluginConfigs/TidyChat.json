@@ -1,6 +1,6 @@
 {
   "$type": "TidyChat.Configuration, TidyChat",
-  "TtlMessagesBlocked": 11359,
+  "TtlMessagesBlocked": 12963,
   "Enabled": true,
   "EnableDebugMode": false,
   "EnableInverseMode": false,
@@ -37,7 +37,7 @@
   "HideCompletedVenture": false,
   "HideInstanceMessage": false,
   "HideQuestReminder": false,
-  "HideUsedEmotes": true,
+  "HideUsedEmotes": false,
   "HideOtherCustomEmotes": true,
   "HideReadyChecks": false,
   "HideCountdownTime": false,
