@@ -45,10 +45,10 @@
   },
   "FloatingWindow": {
     "$type": "EngageTimer.Configuration.FloatingWindowConfiguration, EngageTimer",
-    "AccurateMode": true,
-    "Display": true,
+    "AccurateMode": false,
+    "Display": false,
     "EnableCountdown": false,
-    "EnableStopwatch": true,
+    "EnableStopwatch": false,
     "Lock": false,
     "DecimalCountdownPrecision": 0,
     "DecimalStopwatchPrecision": 0,

@@ -487,7 +487,7 @@ BannerContentsOrderType	0
 CCProgressAllyFixLeftSide	0
 CCMapAllyFixLeftSide	0
 DispCCCountDown	1
-EmoteTextType	1
+EmoteTextType	0
 IsEmoteSe	0
 EmoteSeType	0
 PartyFinderNewArrivalDisp	0
