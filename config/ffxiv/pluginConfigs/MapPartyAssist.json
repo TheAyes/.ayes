@@ -1,0 +1,159 @@
+{
+  "$type": "MapPartyAssist.Settings.Configuration, MapPartyAssist",
+  "Version": 3,
+  "MasterSwitch": true,
+  "ArchiveThresholdHours": 24,
+  "UndockZoneWindow": false,
+  "HideZoneTable": false,
+  "HideZoneTableWhenEmpty": false,
+  "RequireDoubleClickOnClearAll": false,
+  "NoOverwriteMapLink": false,
+  "HighlightLinksInCurrentZone": true,
+  "HighlightClosestLink": true,
+  "ShowStatsWindowTooltips": true,
+  "ShowAdvancedFilters": false,
+  "ProgressTableCount": 0,
+  "ProgressTableRate": 1,
+  "ClearSequenceCount": 1,
+  "TotalMapsClearSequence": false,
+  "EnableWhileSolo": true,
+  "CurrentCharacterStatsOnly": false,
+  "DutyConfigurations": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist]], System.Private.CoreLib",
+    "179": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 179,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "268": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 268,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "276": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 276,
+      "DisplayClearSequence": true,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "586": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 586,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "688": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 688,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "745": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 745,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "819": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 819,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "909": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 909,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    },
+    "993": {
+      "$type": "MapPartyAssist.Settings.DutyConfiguration, MapPartyAssist",
+      "DutyId": 993,
+      "DisplayClearSequence": false,
+      "DisplayRunsSinceLastClear": true,
+      "DisplayDeaths": false,
+      "OmitZeroCheckpoints": false
+    }
+  },
+  "StatsWindowFilters": {
+    "$type": "MapPartyAssist.Settings.FilterConfiguration, MapPartyAssist",
+    "MapFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.MapFilter, MapPartyAssist",
+      "FilterState": {
+        "$type": "System.Collections.Generic.Dictionary`2[[MapPartyAssist.Types.TreasureMapCategory, MapPartyAssist],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "ARealmReborn": false,
+        "Heavensward": false,
+        "Stormblood": false,
+        "Shadowbringers": false,
+        "Endwalker": false,
+        "Elpis": false,
+        "Dawntrail": true,
+        "Unknown": false
+      }
+    },
+    "DutyFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.DutyFilter, MapPartyAssist",
+      "FilterState": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "179": true,
+        "268": true,
+        "276": true,
+        "586": true,
+        "688": true,
+        "745": true,
+        "819": true,
+        "909": true,
+        "993": true
+      }
+    },
+    "OwnerFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.OwnerFilter, MapPartyAssist",
+      "Owner": ""
+    },
+    "PartyMemberFilter": null,
+    "TimeFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.TimeFilter, MapPartyAssist",
+      "StatRange": 8,
+      "StartTime": "0001-01-01T00:00:00",
+      "EndTime": "0001-01-01T00:00:00"
+    },
+    "ProgressFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.ProgressFilter, MapPartyAssist",
+      "OnlyClears": false
+    },
+    "ImportFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.ImportFilter, MapPartyAssist",
+      "IncludeImports": false
+    },
+    "MiscFilter": {
+      "$type": "MapPartyAssist.Windows.Filter.MiscFilter, MapPartyAssist",
+      "LootOnly": false,
+      "ShowDeleted": false
+    }
+  },
+  "LootPins": [],
+  "EnablePriceCheck": false,
+  "MapLinkChat": null,
+  "RecentPartyList": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[MapPartyAssist.Types.MPAMember, MapPartyAssist]], System.Private.CoreLib"
+  },
+  "DutyResults": []
+}

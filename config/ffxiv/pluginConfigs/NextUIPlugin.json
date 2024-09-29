@@ -1,0 +1,40 @@
+{
+  "$type": "NextUIPlugin.Configuration.NextUIConfiguration, NextUIPlugin",
+  "socketPort": 32805,
+  "firstInstalled": false,
+  "overlays": [
+    {
+      "$type": "NextUIPlugin.Configuration.OverlayConfig, NextUIPlugin",
+      "Guid": "20a90ce2-b339-4821-a389-3093a2f5e7b6",
+      "Name": "NextUI",
+      "Url": "https://kaminaris.github.io/Next-UI/?OVERLAY_WS=ws://127.0.0.1:10501/ws",
+      "Size": "1920|1080",
+      "Position": "0|0",
+      "FullScreen": true,
+      "ClickThrough": true,
+      "TypeThrough": false,
+      "Locked": true,
+      "Hidden": true,
+      "VisibilityShow": 0,
+      "VisibilityHide": 0,
+      "FullScreenSize": "1920|1080"
+    },
+    {
+      "$type": "NextUIPlugin.Configuration.OverlayConfig, NextUIPlugin",
+      "Guid": "6ac0eb15-4428-4bb7-8bb8-dd4a44db11a9",
+      "Name": "DPS Meter",
+      "Url": "http://proxy.iinact.com/overlay/kagerou/?HOST_PORT=ws://127.0.0.1:10501",
+      "Size": "619|278",
+      "Position": "1299|796",
+      "FullScreen": false,
+      "ClickThrough": false,
+      "TypeThrough": false,
+      "Locked": true,
+      "Hidden": false,
+      "VisibilityShow": 0,
+      "VisibilityHide": 0,
+      "FullScreenSize": "1920|1080"
+    }
+  ],
+  "Version": 3
+}
