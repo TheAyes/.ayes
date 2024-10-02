@@ -375,25 +375,35 @@
     };
   };
 
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "inode/directory" = [ "pcmanfm.desktop" ];
-      "application/pdf" = [ "firefox.desktop" ];
+  xdg = {
+    desktopEntries = {
+      xivlauncher = {
+        name = "XIVLauncher";
+        exec = ''sh -c "XIVLauncher.Core & NIXPKGS_ALLOW_UNFREE=1 nix-shell -p fflogs --run fflogs"'';
+        genericName = "Custom launcher for FFXIV";
+      };
+    };
 
-      ## Archives ##
-      "application/vnd.rar" = [ "xarchiver.desktop" ];
-      "application/zip" = [ "xarchiver.desktop" ];
-      "application/x-7z-compressed" = [ "xarchiver.desktop" ];
-      "application/gzip" = [ "xarchiver.desktop" ];
-      "application/x-tar" = [ "xarchiver.desktop" ];
+    mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "inode/directory" = [ "pcmanfm.desktop" ];
+        "application/pdf" = [ "firefox.desktop" ];
 
-      ## Videos ##
-      "application/mp4" = [ "haruna.desktop" ];
+        ## Archives ##
+        "application/vnd.rar" = [ "xarchiver.desktop" ];
+        "application/zip" = [ "xarchiver.desktop" ];
+        "application/x-7z-compressed" = [ "xarchiver.desktop" ];
+        "application/gzip" = [ "xarchiver.desktop" ];
+        "application/x-tar" = [ "xarchiver.desktop" ];
 
-      ## Music ##
-      "application/mp3" = [ "haruna.desktop" ];
-      "application/wav" = [ "haruna.desktop" ];
+        ## Videos ##
+        "application/mp4" = [ "haruna.desktop" ];
+
+        ## Music ##
+        "application/mp3" = [ "haruna.desktop" ];
+        "application/wav" = [ "haruna.desktop" ];
+      };
     };
   };
 }
