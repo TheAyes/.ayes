@@ -1,0 +1,25 @@
+﻿{
+  "Version": 1,
+  "Data": [
+    {
+      "Name": "Bnuuy",
+      "Identifier": {
+        "Type": "Player",
+        "PlayerName": "Meira Kisaragi",
+        "HomeWorld": 65535
+      },
+      "Enabled": true,
+      "BaseState": "Current",
+      "Designs": [
+        {
+          "Design": "ebde8299-7f59-4506-a916-4842eadc3fb7",
+          "Type": 31,
+          "Conditions": {
+            "Gearset": -1,
+            "JobGroup": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -129,6 +129,7 @@
   },
   "DebugLogEnabled": false,
   "PositionalLogEnabled": false,
+  "PositionalReportEnabled": false,
   "Fools2023Config": {
     "$type": "DamageInfoPlugin.Fools2023Config, DamageInfoPlugin",
     "Unlocked": false,
