@@ -27,6 +27,8 @@
       haruna
       obsidian
       gpu-screen-recorder-gtk
+      yabridge
+      yabridgectl
 
       ## configuration Utils
       solaar
