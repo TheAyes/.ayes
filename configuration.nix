@@ -247,7 +247,7 @@
       wev
       kdePackages.qtwayland
       kdePackages.polkit-kde-agent-1
-      wineWow64Packages.waylandFull
+      wineWowPackages.stagingFull
 
       rustdesk
 
