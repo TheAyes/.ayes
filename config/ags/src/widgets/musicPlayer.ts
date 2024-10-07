@@ -43,8 +43,8 @@ export const playerWidgets = mprisService.bind("players").as((p) =>
 							]
 						})
 					]
-				}),
-				Widget.Slider({
+				})
+				/*Widget.Slider({
 					drawValue: false,
 					onChange: ({ value }) => (player.position = value * player.length),
 					visible: player.bind("length").as((l) => l > 0),
@@ -54,11 +54,12 @@ export const playerWidgets = mprisService.bind("players").as((p) =>
 							self.value = value > 0 ? value : 0;
 						};
 
+
 						self.hook(player, update);
 						self.hook(player, update, "position");
 						self.poll(1000, update);
 					}
-				})
+				})*/
 			]
 		});
 	})
