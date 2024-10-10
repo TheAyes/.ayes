@@ -53,6 +53,7 @@
     "DecimalCountdownPrecision": 0,
     "DecimalStopwatchPrecision": 0,
     "StopwatchOnlyInDuty": false,
+    "HideInCutscenes": true,
     "StopwatchAsSeconds": false,
     "CountdownNegativeSign": true,
     "ForceHideWindowBorder": true,

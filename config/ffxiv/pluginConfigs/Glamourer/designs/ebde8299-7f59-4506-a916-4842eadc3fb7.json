@@ -1,8 +1,8 @@
 ﻿{
   "FileVersion": 2,
   "Identifier": "ebde8299-7f59-4506-a916-4842eadc3fb7",
-  "CreationDate": "2024-09-29T21:42:00.2324921+00:00",
-  "LastEdit": "2024-09-29T22:10:02.0212182+00:00",
+  "CreationDate": "2024-09-29T23:42:00.2324921+02:00",
+  "LastEdit": "2024-10-08T17:29:03.5048768+00:00",
   "Name": "Catto",
   "Description": "",
   "ForcedRedraw": false,
@@ -32,8 +32,8 @@
     "Head": {
       "ItemId": 8557,
       "Crest": false,
-      "Apply": false,
-      "ApplyStain": false,
+      "Apply": true,
+      "ApplyStain": true,
       "ApplyCrest": true,
       "Stain": 101,
       "Stain2": 0
@@ -41,8 +41,8 @@
     "Body": {
       "ItemId": 37197,
       "Crest": false,
-      "Apply": false,
-      "ApplyStain": false,
+      "Apply": true,
+      "ApplyStain": true,
       "ApplyCrest": true,
       "Stain": 101,
       "Stain2": 0
@@ -50,8 +50,8 @@
     "Hands": {
       "ItemId": 38213,
       "Crest": false,
-      "Apply": false,
-      "ApplyStain": false,
+      "Apply": true,
+      "ApplyStain": true,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 113
@@ -59,8 +59,8 @@
     "Legs": {
       "ItemId": 41593,
       "Crest": false,
-      "Apply": false,
-      "ApplyStain": false,
+      "Apply": true,
+      "ApplyStain": true,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 0
@@ -68,8 +68,8 @@
     "Feet": {
       "ItemId": 24006,
       "Crest": false,
-      "Apply": false,
-      "ApplyStain": false,
+      "Apply": true,
+      "ApplyStain": true,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 0
