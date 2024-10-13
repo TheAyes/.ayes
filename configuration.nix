@@ -158,15 +158,6 @@
 
     pam.services.sddm.enableGnomeKeyring = true;
 
-    wrappers = {
-      gsr-kms-server = {
-        owner = "root";
-        group = "root";
-        capabilities = "cap_sys_admin+ep";
-        source = "${pkgs.gpu-screen-recorder}/bin/gsr-kms-server";
-      };
-    };
-
     sudo = {
       enable = true;
 
@@ -205,9 +196,6 @@
         isNormalUser = true;
         description = "Ayes";
         extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
-        packages = with pkgs; [
-
-        ];
       };
     };
 
@@ -294,9 +282,9 @@
     udev = {
       enable = true;
       extraRules = ''
-        		ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
-        		ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
-        	  '';
+        				ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+        				ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+        			'';
     };
 
     xserver = {

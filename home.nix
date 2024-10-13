@@ -45,6 +45,7 @@
 
       ## Dev Stuff
       jetbrains.idea-ultimate
+      jetbrains.webstorm
       nodejs
       bun
       sassc
