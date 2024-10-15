@@ -248,6 +248,10 @@
           					end
           				'';
       };
+
+      shellInitLast = ''
+        	clear
+      '';
     };
 
     bash = {
