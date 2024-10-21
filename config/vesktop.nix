@@ -1,51 +1,52 @@
 {
-	xdg.configFile = {
-		"vesktop/settings.json" = {
-			enable = true;
-			text = ''{
-				"discordBranch": "stable",
-				"arpc": "on",
-				"splashColor": "rgb(219, 222, 225)",
-				"splashBackground": "rgb(49, 51, 56)",
-				"splashTheming": true
-			}'';
-			target = "vesktop/settings.json";
-		};
-		"vesktop/themes/catppuccin-mocha.css" = {
-			enable = true;
-			text = ''
-				/**
-                 * @name Catppuccin Mocha
-                 * @author winston#0001
-                 * @authorId 505490445468696576
-                 * @version 0.2.0
-                 * @description 🎮 Soothing pastel theme for Discord
-                 * @website https://github.com/catppuccin/discord
-                 * @invite r6Mdz5dpFc
-                 * **/
+  xdg.configFile = {
+    "vesktop/settings.json" = {
+      enable = true;
+      text = ''{
+				"splashColor": "rgb(205, 214, 244)",
+				"splashBackground": "rgba(30, 30, 46, 0.19)",
+				"arRPC": true,
+				"disableMinSize": true,
+				"splashTheming": false,
+				"discordBranch": "ptb"
+		  }'';
+      target = "vesktop/settings.json";
+    };
+    "vesktop/themes/catppuccin-mocha.css" = {
+      enable = true;
+      text = ''
+        				/**
+                         * @name Catppuccin Mocha
+                         * @author winston#0001
+                         * @authorId 505490445468696576
+                         * @version 0.2.0
+                         * @description 🎮 Soothing pastel theme for Discord
+                         * @website https://github.com/catppuccin/discord
+                         * @invite r6Mdz5dpFc
+                         * **/
 
-                @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-			'';
-		};
-		"vesktop/settings/quickCss.css" = {
-			enable = true;
-			text = ''
-				:root {
-                    --background-primary: #1e1e2e30;
-                	--background-secondary: #18182570;
-                	--background-secondary-alt: #14141f70;
-                	--background-tertiary: #11111b70;
-                	--background-accent: #89b4fa;
-                	--background-floating: #0d0d15;
-                	--background-nested-floating: #181825;
-                	--background-mobile-primary: #1e1e2e;
-                	--background-mobile-secondary: #181825;
-                }
-			'';
-		};
-		"vesktop/settings/settings.json" = {
-			enable = true;
-			text = ''{
+                        @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+        			'';
+    };
+    "vesktop/settings/quickCss.css" = {
+      enable = true;
+      text = ''
+        				:root {
+                            --background-primary: #1e1e2e30;
+                        	--background-secondary: #18182570;
+                        	--background-secondary-alt: #14141f70;
+                        	--background-tertiary: #11111b70;
+                        	--background-accent: #89b4fa;
+                        	--background-floating: #0d0d15;
+                        	--background-nested-floating: #181825;
+                        	--background-mobile-primary: #1e1e2e;
+                        	--background-mobile-secondary: #181825;
+                        }
+        			'';
+    };
+    "vesktop/settings/settings.json" = {
+      enable = true;
+      text = ''{
 			    "autoUpdate": true,
 			    "autoUpdateNotification": true,
 			    "useQuickCss": true,
@@ -119,7 +120,7 @@
 			            "randomisedLength": 7
 			        },
 			        "WebRichPresence (arRPC)": {
-			            "enabled": false
+			            "enabled": true
 			        },
 			        "BANger": {
 			            "enabled": false
@@ -600,6 +601,6 @@
 			        "settingsSyncVersion": 1715318753811
 			    }
 			}'';
-		};
-	};
+    };
+  };
 }
