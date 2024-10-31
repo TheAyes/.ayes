@@ -138,6 +138,7 @@
       "nofocus, noinitialfocus, class:^$, title:^$"
 
       "fullscreen, class:^TL .+$"
+      "idleinhibit fullscreen/focus, *"
     ];
 
     workspace = [
