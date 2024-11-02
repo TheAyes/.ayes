@@ -327,6 +327,9 @@
       base0F = "f2cdcd"; # flamingo
     };
 
+    targets = {
+      gtk.enable = true;
+    };
 
   };
 

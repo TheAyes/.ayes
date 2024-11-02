@@ -93,12 +93,12 @@
   };
 
 
-  /*gtk = {
+  gtk = {
     enable = true;
-    theme = {
+    /*theme = {
       package = pkgs.flat-remix-gtk;
       name = "Flat-Remix-GTK-Blue-Dark";
-    };
+    };*/
 
     iconTheme = {
       name = "Papirus-Dark";
@@ -107,22 +107,35 @@
         accent = "blue";
       };
     };
-  };*/
+  };
 
-  /*qt = {
+  qt = {
     enable = true;
-    style = {
+    style.name = "adwaita-dark";
+    platformTheme.name = "qt5ct";
+    /*style = {
       name = "kvantum";
-    };
-    platformTheme = "qtct";
-  };*/
+      };
+    platformTheme = "qtct";*/
+  };
 
   stylix = {
     enable = true;
+    autoEnable = false;
+
     targets = {
       firefox = {
         profileNames = [ "default" ];
       };
+
+      gtk.enable = true;
+      gnome.enable = true;
+      hyprland.enable = true;
+      hyprpaper.enable = true;
+      kde.enable = true;
+      kitty.enable = true;
+      vesktop.enable = false;
+      wofi.enable = true;
     };
   };
 
