@@ -17,7 +17,7 @@
       dolphin
       # pcmanfm
       obs-studio
-      xarchiver
+      ark
 
       ##hyprstuff
       inputs.hyprsome.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -416,15 +416,15 @@
     mimeApps = {
       enable = true;
       defaultApplications = {
-        "inode/directory" = [ "pcmanfm.desktop" ];
+        "inode/directory" = [ "dolphin.desktop" ];
         "application/pdf" = [ "firefox.desktop" ];
 
         ## Archives ##
-        "application/vnd.rar" = [ "xarchiver.desktop" ];
-        "application/zip" = [ "xarchiver.desktop" ];
-        "application/x-7z-compressed" = [ "xarchiver.desktop" ];
-        "application/gzip" = [ "xarchiver.desktop" ];
-        "application/x-tar" = [ "xarchiver.desktop" ];
+        "application/vnd.rar" = [ "ark.desktop" ];
+        "application/zip" = [ "ark.desktop" ];
+        "application/x-7z-compressed" = [ "ark.desktop" ];
+        "application/gzip" = [ "ark.desktop" ];
+        "application/x-tar" = [ "ark.desktop" ];
 
         ## Videos ##
         "application/mp4" = [ "haruna.desktop" ];
