@@ -111,7 +111,7 @@
 
   qt = {
     enable = true;
-    style.name = "breeze";
+    /*style.name = "breeze";*/
     platformTheme.name = "qt6ct";
     /*style = {
       name = "kvantum";
