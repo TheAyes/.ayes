@@ -223,7 +223,7 @@
       #HYPRCURSOR_SIZE = "24";
 
       QT_QPA_PLATFORM = "wayland";
-      QT_QPA_PLATFORMTHEME = "qt6ct";
+      /*QT_QPA_PLATFORMTHEME = "qt6ct";*/
 
       XDG_SESSION_TYPE = "wayland";
       WLR_NO_HARDWARE_CURSORS = "1";
@@ -245,6 +245,7 @@
       kdePackages.qtwayland
       kdePackages.qtsvg
       kdePackages.qt6ct
+      libsForQt5.qt5ct
       kdePackages.polkit-kde-agent-1
       wineWowPackages.stagingFull
 
