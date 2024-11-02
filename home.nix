@@ -30,6 +30,8 @@
       gpu-screen-recorder-gtk
       yabridge
       yabridgectl
+      kdePackages.gwenview
+      kdePackages.okular
 
       ## configuration Utils
       solaar
@@ -417,7 +419,11 @@
       enable = true;
       defaultApplications = {
         "inode/directory" = [ "dolphin.desktop" ];
-        "application/pdf" = [ "firefox.desktop" ];
+        "application/pdf" = [ "okular.desktop" ];
+
+        ## Pictures ##
+        "application/png" = [ "gwenview.desktop" ];
+        "application/jpeg" = [ "gwenview.desktop" ];
 
         ## Archives ##
         "application/vnd.rar" = [ "ark.desktop" ];
