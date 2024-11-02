@@ -1,40 +1,47 @@
 {
-	description = "Nixos config flake";
+  description = "Nixos config flake";
 
-	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-		home-manager = {
-			url = "github:nix-community/home-manager";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-		hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-		hyprsome.url = "github:sopa0/hyprsome";
-		ags.url = "github:Aylur/ags";
-	};
+    stylix.url = "github:danth/stylix";
 
-	outputs = { self, nixpkgs, home-manager, hyprland, hyprsome, ... }@inputs: let
-		system = "x86_64-linux";
-	in {
-		nixosConfigurations = {
-			io = nixpkgs.lib.nixosSystem {
-				specialArgs = { inherit inputs; };
-				modules = [
-					./configuration.nix
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    hyprsome.url = "github:sopa0/hyprsome";
+    ags.url = "github:Aylur/ags";
+  };
 
-					home-manager.nixosModules.home-manager {
-						home-manager.useGlobalPkgs = true;
-						home-manager.useUserPackages = true;
-						home-manager.users.ayes = import ./home.nix;
+  outputs = { self, nixpkgs, home-manager, hyprland, hyprsome, ... }@inputs:
+    let
+      system = "x86_64-linux";
+    in
+    {
+      nixosConfigurations = {
+        io = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configuration.nix
 
-						home-manager.extraSpecialArgs = { inherit inputs; };
-					}
+            inputs.stylix.nixosModules.stylix
 
-				];
-			};
-		};
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.ayes = import ./home.nix;
 
-		#devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
-	};
+              home-manager.extraSpecialArgs = { inherit inputs; };
+            }
+
+          ];
+        };
+      };
+
+      #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
+    };
 }
