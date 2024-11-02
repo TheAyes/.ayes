@@ -14,7 +14,8 @@
       ## Systm
       btop
       micro
-      pcmanfm
+      dolphin
+      # pcmanfm
       obs-studio
       xarchiver
 
@@ -65,14 +66,14 @@
       };
     };
 
-    pointerCursor = {
+    /*pointerCursor = {
       package = pkgs.rose-pine-cursor;
       name = "BreezeX-RosePineDawn-Linux";
       size = 24;
 
       gtk.enable = true;
       x11.enable = true;
-    };
+    };*/
   };
 
   dconf.settings = {
@@ -92,7 +93,7 @@
   };
 
 
-  gtk = {
+  /*gtk = {
     enable = true;
     theme = {
       package = pkgs.flat-remix-gtk;
@@ -106,12 +107,22 @@
         accent = "blue";
       };
     };
-  };
+  };*/
 
-  qt = {
+  /*qt = {
     enable = true;
     style = {
       name = "kvantum";
+    };
+    platformTheme = "qtct";
+  };*/
+
+  stylix = {
+    enable = true;
+    targets = {
+      firefox = {
+        profileNames = [ "default" ];
+      };
     };
   };
 
@@ -148,7 +159,7 @@
       enableFishIntegration = true;
       package = pkgs.eza;
       git = true;
-      icons = true;
+      icons = "auto";
     };
 
     librewolf = {

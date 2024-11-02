@@ -219,8 +219,8 @@
   environment = {
     variables = {
       NIXOS_OZONE_WL = "1";
-      XCURSOR_SIZE = "24";
-      HYPRCURSOR_SIZE = "24";
+      #XCURSOR_SIZE = "24";
+      #HYPRCURSOR_SIZE = "24";
 
       QT_QPA_PLATFORM = "wayland";
       QT_QPA_PLATFORMTHEME = "qt6ct";
@@ -243,6 +243,8 @@
       wl-clipboard
       wev
       kdePackages.qtwayland
+      kdePackages.qtsvg
+      kdePackages.qt6ct
       kdePackages.polkit-kde-agent-1
       wineWowPackages.stagingFull
 
@@ -259,6 +261,74 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
   ];
+
+  stylix = {
+    enable = true;
+    polarity = "dark";
+
+    image = ./config/hypr/wallpapers/dark_anime_wallpaper.jpg;
+
+    cursor = {
+      package = pkgs.rose-pine-cursor;
+      name = "BreezeX-RosePineDawn-Linux";
+      size = 24;
+    };
+
+    fonts = {
+      sizes = {
+        applications = 10;
+        desktop = 10;
+        popups = 10;
+        terminal = 10;
+      };
+
+      /*packages = [
+        pkgs.fira-code-symbols
+      ];*/
+
+      monospace = {
+        name = "FiraCode Nerd Font Propo";
+        package = pkgs.fira-code-nerdfont;
+      };
+
+      sansSerif = {
+        name = "Noto Sans";
+        package = pkgs.noto-fonts;
+      };
+
+      serif = {
+        name = "DejaVu Serif";
+        package = pkgs.dejavu_fonts;
+      };
+
+
+      emoji = {
+        name = "Noto Emoji";
+        package = pkgs.noto-fonts-emoji;
+      };
+    };
+
+    base16Scheme = {
+      base00 = "1e1e2e"; # base
+      base01 = "181825"; # mantle
+      base02 = "313244"; # surface0
+      base03 = "45475a"; # surface1
+      base04 = "585b70"; # surface2
+      base05 = "cdd6f4"; # text
+      base06 = "f5e0dc"; # rosewater
+      base07 = "b4befe"; # lavender
+      base08 = "f38ba8"; # red
+      base09 = "fab387"; # peach
+      base0A = "f9e2af"; # yellow
+      base0B = "a6e3a1"; # green
+      base0C = "94e2d5"; # teal
+      base0D = "89b4fa"; # blue
+      base0E = "cba6f7"; # mauve
+      base0F = "f2cdcd"; # flamingo
+    };
+
+
+  };
 
   services = {
     displayManager.sddm = {
@@ -329,8 +399,12 @@
 
   virtualisation.libvirtd.enable = true;
 
-  xdg.portal = {
-    enable = true;
+  xdg = {
+    mime.enable = true;
+    menus.enable = true;
+    portal = {
+      enable = true;
+    };
   };
 
   programs = {

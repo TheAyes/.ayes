@@ -7,7 +7,7 @@
 				"splashBackground": "rgba(30, 30, 46, 0.19)",
 				"arRPC": true,
 				"disableMinSize": true,
-				"splashTheming": false,
+				"splashTheming": true,
 				"discordBranch": "ptb"
 		  }'';
       target = "vesktop/settings.json";
