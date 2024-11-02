@@ -111,8 +111,8 @@
 
   qt = {
     enable = true;
-    style.name = "adwaita-dark";
-    platformTheme.name = "qt5ct";
+    style.name = "kvantum";
+    platformTheme.name = "gtk2";
     /*style = {
       name = "kvantum";
       };
@@ -124,9 +124,7 @@
     autoEnable = false;
 
     targets = {
-      firefox = {
-        profileNames = [ "default" ];
-      };
+      firefox.enable = true;
 
       gtk.enable = true;
       gnome.enable = true;
