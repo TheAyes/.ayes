@@ -238,6 +238,8 @@
       libsForQt5.qtstyleplugin-kvantum
       catppuccin-sddm
 
+      nix-index
+
       pavucontrol
       playerctl
       wl-clipboard
