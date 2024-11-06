@@ -36,6 +36,8 @@
       ## configuration Utils
       solaar
       font-manager
+      libratbag
+      piper
 
       ## Community
       vesktop
@@ -114,11 +116,10 @@
   qt = {
     enable = true;
     /*style.name = "breeze";*/
-    platformTheme.name = "qt6ct";
-    /*style = {
+    platformTheme.name = "qt5ct";
+    style = {
       name = "kvantum";
-      };
-    platformTheme = "qtct";*/
+    };
   };
 
   stylix = {

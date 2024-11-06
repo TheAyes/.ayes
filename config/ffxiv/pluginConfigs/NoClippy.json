@@ -97,10 +97,12 @@
     "7511": 0.6,
     "16525": 0.6,
     "1695": 2.1,
-    "2443": 2.1
+    "2443": 2.1,
+    "16524": 0.6,
+    "3598": 0.6
   },
-  "TotalActionsReduced": 65993,
-  "TotalAnimationLockReduction": 2645.0682529509068,
+  "TotalActionsReduced": 66389,
+  "TotalAnimationLockReduction": 2658.3551764190197,
   "LogToChat": false,
   "LogChatType": 0,
   "EnableEncounterStats": true,
