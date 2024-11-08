@@ -11,7 +11,7 @@ export const makeRightBar = (monitor: Monitor) =>
 		// Previously this check has been put into the makeSystemTray() function itself.
 		// This however led to an error as the property here can't handle undefined returns.
 		children: (() => {
-			const widgets = monitor.x !== 0 || monitor.y !== 0 ? [] : [makeSystemTray()];
+			const widgets = monitor.x === 0 && monitor.y === 0 ? [makeSystemTray()] : [];
 
 			// @ts-ignore
 			return widgets.concat([makeDateTime()]);
