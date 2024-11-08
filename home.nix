@@ -53,7 +53,7 @@
       jetbrains.webstorm
       nodejs
       bun
-      sassc
+      #sassc
 
       graalvm-ce
     ];

@@ -4,6 +4,7 @@ import { makeLeftBar } from "./leftBar";
 import { makeRightBar } from "./rightBar";
 
 export const makeBar = (monitor: Monitor = makeMonitor()) => {
+	console.log(monitor);
 	return Widget.Window({
 		monitor: monitor.id,
 		exclusivity: "exclusive",
