@@ -32,6 +32,7 @@
       yabridgectl
       kdePackages.gwenview
       kdePackages.okular
+      kdePackages.kolourpaint
 
       ## configuration Utils
       solaar
@@ -59,8 +60,8 @@
     ];
 
     file = {
-      "${config.xdg.configHome}/micro/colorschemes" = {
-        source = ./config/micro/colorschemes;
+      "${config.xdg.configHome}/micro" = {
+        source = ./config/micro;
         recursive = true;
       };
 
