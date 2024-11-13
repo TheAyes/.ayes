@@ -63,7 +63,7 @@
 			    "plugins": {
 			    	"YoutubeAdblock": {
 			    		"enabled": true
-					},
+						},
 			        "BadgeAPI": {
 			            "enabled": true
 			        },
@@ -255,7 +255,7 @@
 			            "enabled": false
 			        },
 			        "ImplicitRelationships": {
-			            "enabled": false
+			            "enabled": true
 			        },
 			        "InvisibleChat": {
 			            "enabled": false
