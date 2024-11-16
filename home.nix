@@ -16,8 +16,12 @@
       micro
       dolphin
       # pcmanfm
-      obs-studio
       ark
+      kdePackages.kio
+      kdePackages.kio-admin
+      kdePackages.kio-extras
+      kdePackages.kio-extras-kf5
+      kdePackages.wayland-protocols
 
       ##hyprstuff
       inputs.hyprsome.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -350,6 +354,16 @@
       };
 
     };
+
+    obs-studio = {
+      enable = true;
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-replay-source
+        obs-pipewire-audio-capture
+        advanced-scene-switcher
+      ];
+    };
   };
 
   services = {
@@ -373,7 +387,10 @@
       };
     };
 
-
+    cliphist = {
+      enable = true;
+      systemdTarget = "hyprland-session.target";
+    };
 
     hypridle = {
       enable = true;

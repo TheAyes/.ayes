@@ -31,9 +31,10 @@
     bind = [
       "$mainMod, Q, exec, kitty"
       "$mainMod, C, killactive,"
+      "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
       "$mainMod, M, exit,"
       "$mainMod, E, exec, dolphin"
-      "$mainMod, V, togglefloating,"
+      "$mainMod, X, togglefloating,"
       "$mainMod, R, exec, wofi --show drun"
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
