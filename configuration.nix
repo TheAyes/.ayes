@@ -243,6 +243,7 @@
       pavucontrol
       playerctl
       wl-clipboard
+      wl-clip-persist
       wev
       kdePackages.qtwayland
       kdePackages.qtsvg
