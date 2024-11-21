@@ -243,7 +243,7 @@
       libsForQt5.qt5ct
       kdePackages.polkit-kde-agent-1
       wineWowPackages.stagingFull
-
+      catppuccin-sddm
       lact
       virt-manager
     ];
@@ -328,7 +328,7 @@
       wayland.enable = true;
       package = pkgs.kdePackages.sddm;
       extraPackages = with pkgs; [
-        catppuccin-sddm
+
       ];
 
       theme = "catppuccin-mocha";
