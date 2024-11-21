@@ -219,26 +219,18 @@
   environment = {
     variables = {
       NIXOS_OZONE_WL = "1";
-      #XCURSOR_SIZE = "24";
-      #HYPRCURSOR_SIZE = "24";
 
       QT_QPA_PLATFORM = "wayland";
-      /*QT_QPA_PLATFORMTHEME = "qt6ct";*/
 
+      XDG_RUNTIME_DIR = "/run/user/$UID";
       XDG_SESSION_TYPE = "wayland";
       WLR_NO_HARDWARE_CURSORS = "1";
 
       AMD_VULKAN_ICD = "RADV";
-      #VK_ICD_FILENAMES="${pkgs.amdvlk}/share/vulkan/icd.d/radeon_icd.x86_64.json";
     };
 
     systemPackages = with pkgs; [
-      wget
-
       libsForQt5.qtstyleplugin-kvantum
-      catppuccin-sddm
-
-      nix-index
 
       pavucontrol
       playerctl
@@ -251,8 +243,6 @@
       libsForQt5.qt5ct
       kdePackages.polkit-kde-agent-1
       wineWowPackages.stagingFull
-
-      rustdesk
 
       lact
       virt-manager
@@ -285,10 +275,6 @@
         popups = 10;
         terminal = 10;
       };
-
-      /*packages = [
-        pkgs.fira-code-symbols
-      ];*/
 
       monospace = {
         name = "FiraCode Nerd Font Propo";
@@ -334,7 +320,6 @@
     targets = {
       gtk.enable = true;
     };
-
   };
 
   services = {
@@ -342,6 +327,9 @@
       enable = true;
       wayland.enable = true;
       package = pkgs.kdePackages.sddm;
+      extraPackages = with pkgs; [
+        catppuccin-sddm
+      ];
 
       theme = "catppuccin-mocha";
     };
@@ -353,8 +341,6 @@
       fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
       dnsovertls = "true";
     };
-
-    flatpak.enable = true;
 
     pipewire = {
       enable = true;
@@ -382,25 +368,9 @@
       videoDrivers = [ "vmware" ];
     };
 
-    xrdp = {
-      enable = true;
-      openFirewall = true;
-    };
-
-    libinput = {
-      enable = true; # Default
-
-      touchpad = {
-        sendEventsMode = "disabled";
-      };
-    };
-
     gnome.gnome-keyring.enable = true;
-
     ratbagd.enable = true;
-
     openssh.enable = true;
-
     gvfs.enable = true;
   };
 
