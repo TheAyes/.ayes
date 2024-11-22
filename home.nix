@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, lib, nixpkgs-alternate, ... }: {
+{ config, pkgs, inputs, lib, ... }: {
   imports = [
     ./config/vesktop.nix
     ./config/hypr/hyprland.base.nix
@@ -250,6 +250,7 @@
         rebuild = "~/.nixos/rebuild.sh";
         upgrade = "~/.nixos/upgrade.sh";
         test-rebuild = "~/.nixos/test.sh";
+        logout = "hyprctl dispatch exit";
       };
 
       functions = {
