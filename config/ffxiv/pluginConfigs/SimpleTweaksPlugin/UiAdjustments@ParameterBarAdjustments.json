@@ -28,49 +28,26 @@
   },
   "AutoHideMp": false,
   "CenterHpWithMpHidden": false,
-  "HpColor": {
-    "X": 0.0,
-    "Y": 0.0,
-    "Z": 0.0,
-    "W": 0.0
-  },
-  "MpColor": {
-    "X": 0.0,
-    "Y": 0.0,
-    "Z": 0.0,
-    "W": 0.0
-  },
-  "GpColor": {
-    "X": 0.0,
-    "Y": 0.0,
-    "Z": 0.0,
-    "W": 0.0
-  },
-  "CpColor": {
-    "X": 0.0,
-    "Y": 0.0,
-    "Z": 0.0,
-    "W": 0.0
-  },
-  "HpAddRGB": {
+  "HpAddRgb": {
     "X": 20.0,
     "Y": 75.0,
     "Z": 0.0
   },
-  "MpAddRGB": {
+  "MpAddRgb": {
     "X": 120.0,
     "Y": 0.0,
     "Z": 60.0
   },
-  "GpAddRGB": {
+  "GpAddRgb": {
     "X": 0.0,
     "Y": 70.0,
     "Z": 100.0
   },
-  "CpAddRGB": {
+  "CpAddRgb": {
     "X": 70.0,
     "Y": 10.0,
     "Z": 100.0
   },
+  "CancelDefaultTint": false,
   "Version": 1
 }
