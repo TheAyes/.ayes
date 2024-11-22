@@ -204,7 +204,7 @@
       ayes = {
         isNormalUser = true;
         description = "Ayes";
-        extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
+        extraGroups = [ "wheel" "networkmanager" "libvirtd" "docker" ];
       };
     };
 
@@ -374,7 +374,10 @@
     gvfs.enable = true;
   };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+    docker.enable = true;
+    libvirtd.enable = true;
+  };
 
   xdg = {
     mime.enable = true;

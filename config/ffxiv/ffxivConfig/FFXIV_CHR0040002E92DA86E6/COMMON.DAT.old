@@ -50,6 +50,9 @@ AutoNearestTargetType	0
 RightClickExclusionPC	0
 RightClickExclusionBNPC	0
 RightClickExclusionMinion	0
+EnableMoveTiltCharacter	1
+EnableMoveTiltMountGround	1
+EnableMoveTiltMountFly	1
 TurnSpeed	50
 FootEffect	0
 LegacySeal	1
@@ -508,8 +511,8 @@ MouseWheelOperationAltUp	0
 MouseWheelOperationAltDown	0
 MouseWheelOperationShiftUp	0
 MouseWheelOperationShiftDown	0
-TelepoTicketUseType	0
-TelepoTicketGilSetting	1
+TelepoTicketUseType	4
+TelepoTicketGilSetting	5000
 TelepoCategoryType	1
 HidePcAroundQuestProgressNpc	0
 HidePcAroundQuestProgressNpcIncludeParty	0
