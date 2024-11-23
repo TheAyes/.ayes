@@ -13,7 +13,7 @@
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprsome.url = "github:sopa0/hyprsome";
-    ags.url = "github:Aylur/ags";
+    ags.url = "github:Aylur/ags/v1";
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, hyprsome, ... }@inputs:
