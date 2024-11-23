@@ -331,6 +331,12 @@
 
       ];
 
+      settings = {
+        General = {
+          DefaultSession = "hyprland.desktop";
+        };
+      };
+
       theme = "catppuccin-mocha";
     };
 
