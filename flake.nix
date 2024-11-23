@@ -11,8 +11,8 @@
 
     stylix.url = "github:danth/stylix?rev=762c07ee10b381bc8e085be5b6c2ec43139f13b0";
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hyprsome.url = "github:sopa0/hyprsome";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&rev=54f57797e9d025db72777ccf4adb0ddb25125016";
+    hyprsome.url = "github:sopa0/hyprsome?rev=ce62bd7271d9b140451d837520da1607bc64567f";
     ags.url = "github:Aylur/ags/v1";
   };
 
