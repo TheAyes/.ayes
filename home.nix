@@ -139,7 +139,7 @@
       hyprland.enable = true;
       hyprpaper.enable = true;
       kde.enable = true;
-      kitty.enable = true;
+      kitty.enable = false;
       vesktop.enable = false;
       wofi.enable = true;
     };
