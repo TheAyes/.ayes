@@ -8,7 +8,7 @@
   "FoodHQOnly": true,
   "CharacterAutoFood": true,
   "CharacterAutoPartyBonus": false,
-  "ExamineOpen": true,
+  "ExamineOpen": false,
   "CharacterOpen": false,
   "DisplayWithExamine": true,
   "DisplayWithCharacter": true,
