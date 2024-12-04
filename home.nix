@@ -37,6 +37,7 @@
       kdePackages.gwenview
       kdePackages.okular
       kdePackages.kolourpaint
+      kdePackages.kcalc
 
       ## configuration Utils
       solaar
@@ -56,7 +57,7 @@
       ## Dev Stuff
       jetbrains.idea-ultimate
       jetbrains.webstorm
-      jetbrains.rider
+      jetbrains-toolbox
 
       nodejs
       bun
