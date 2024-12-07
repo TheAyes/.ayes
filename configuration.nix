@@ -250,10 +250,10 @@
   };
 
   fonts.packages = with pkgs; [
-    nerdfonts
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
+    nerd-fonts.noto
+    nerd-fonts.fira-code
+    nerd-fonts.caskaydia-cove
+    nerd-fonts._0xproto
   ];
 
   stylix = {

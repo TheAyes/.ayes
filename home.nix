@@ -39,6 +39,8 @@
       kdePackages.kolourpaint
       kdePackages.kcalc
 
+      dotool
+
       ## configuration Utils
       solaar
       font-manager
@@ -186,6 +188,8 @@
 
     librewolf = {
       enable = false;
+
+      #settings = {;
     };
 
     firefox = {

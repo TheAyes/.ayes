@@ -13,11 +13,6 @@
         <fileSet type="globPattern" pattern="node_modules/" />
       </list>
     </option>
-    <CssCodeStyleSettings>
-      <option name="HEX_COLOR_LOWER_CASE" value="true" />
-      <option name="HEX_COLOR_LONG_FORMAT" value="true" />
-      <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
-    </CssCodeStyleSettings>
     <DBN-PSQL>
       <case-options enabled="true">
         <option name="KEYWORD_CASE" value="lower" />
@@ -48,15 +43,6 @@
       <option name="HTML_NEWLINE_BEFORE_FIRST_ATTRIBUTE" value="When multiline" />
       <option name="HTML_NEWLINE_AFTER_LAST_ATTRIBUTE" value="When multiline" />
     </HTMLCodeStyleSettings>
-    <JSCodeStyleSettings version="0">
-      <option name="FORCE_SEMICOLON_STYLE" value="true" />
-      <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
-      <option name="FORCE_QUOTE_STYlE" value="true" />
-      <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
-      <option name="JSX_ATTRIBUTE_VALUE" value="Based on type" />
-      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
-      <option name="SPACES_WITHIN_IMPORTS" value="true" />
-    </JSCodeStyleSettings>
     <JetCodeStyleSettings>
       <option name="CONTINUATION_INDENT_IN_SUPERTYPE_LISTS" value="true" />
     </JetCodeStyleSettings>
@@ -166,21 +152,6 @@
       <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/CONTINUOUS_LINE_INDENT/@EntryValue" value="Double" type="string" />
       <option name="/Default/CodeStyle/CodeFormatting/CppFormatting/TAB_WIDTH/@EntryValue" value="4" type="int" />
     </RiderCodeStyleSettings>
-    <ScssCodeStyleSettings>
-      <option name="HEX_COLOR_LOWER_CASE" value="true" />
-      <option name="HEX_COLOR_LONG_FORMAT" value="true" />
-    </ScssCodeStyleSettings>
-    <TypeScriptCodeStyleSettings version="0">
-      <option name="JSDOC_INCLUDE_TYPES" value="true" />
-      <option name="FORCE_SEMICOLON_STYLE" value="true" />
-      <option name="FILE_NAME_STYLE" value="CAMEL_CASE" />
-      <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
-      <option name="FORCE_QUOTE_STYlE" value="true" />
-      <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
-      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
-      <option name="SPACES_WITHIN_IMPORTS" value="true" />
-      <option name="IMPORT_SORT_MODULE_NAME" value="true" />
-    </TypeScriptCodeStyleSettings>
     <VueCodeStyleSettings>
       <option name="INTERPOLATION_NEW_LINE_AFTER_START_DELIMITER" value="false" />
       <option name="INTERPOLATION_NEW_LINE_BEFORE_END_DELIMITER" value="false" />
