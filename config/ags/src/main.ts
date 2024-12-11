@@ -37,3 +37,5 @@ App.config({
 	})(),
 	style: css
 });
+
+const testvariable = {};

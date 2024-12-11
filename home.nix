@@ -189,7 +189,7 @@
     librewolf = {
       enable = false;
 
-      #settings = {;
+      settings = { };
     };
 
     firefox = {
