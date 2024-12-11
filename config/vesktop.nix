@@ -204,7 +204,7 @@
 			            "enabled": false
 			        },
 			        "FakeNitro": {
-			            "enabled": false
+			            "enabled": true
 			        },
 			        "FakeProfileThemes": {
 			            "enabled": false
@@ -548,7 +548,7 @@
 			            "enabled": true
 			        },
 			        "USRBG": {
-			            "enabled": false
+			            "enabled": true
 			        },
 			        "ValidUser": {
 			            "enabled": false
