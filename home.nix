@@ -48,7 +48,8 @@
       piper
 
       ## Community
-      vesktop
+      #vesktop
+      equibop
 
       ## Gaming
       xivlauncher

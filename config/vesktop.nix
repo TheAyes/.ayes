@@ -1,6 +1,6 @@
 {
   xdg.configFile = {
-    "vesktop/settings.json" = {
+    "equibop/settings.json" = {
       enable = true;
       text = ''{
 				"splashColor": "rgb(205, 214, 244)",
@@ -8,11 +8,11 @@
 				"arRPC": true,
 				"disableMinSize": true,
 				"splashTheming": true,
-				"discordBranch": "ptb"
+				"discordBranch": "canary"
 		  }'';
-      target = "vesktop/settings.json";
+      target = "equibop/settings.json";
     };
-    "vesktop/themes/catppuccin-mocha.css" = {
+    "equibop/themes/catppuccin-mocha.css" = {
       enable = true;
       text = ''/**
 				 * @name Catppuccin Mocha
@@ -27,7 +27,7 @@
 				@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
 			'';
     };
-    "vesktop/settings/quickCss.css" = {
+    "equibop/settings/quickCss.css" = {
       enable = true;
       text = '' :root {
 				--background-primary: #1e1e2e30;
@@ -41,7 +41,7 @@
 				--background-mobile-secondary: #181825;
 			}'';
     };
-    "vesktop/settings/settings.json" = {
+    "equibop/settings/settings.json" = {
       enable = true;
       text = ''{
 				"autoUpdate": true,
