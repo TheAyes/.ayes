@@ -14,55 +14,52 @@
     };
     "vesktop/themes/catppuccin-mocha.css" = {
       enable = true;
-      text = ''
-        				/**
-                         * @name Catppuccin Mocha
-                         * @author winston#0001
-                         * @authorId 505490445468696576
-                         * @version 0.2.0
-                         * @description 🎮 Soothing pastel theme for Discord
-                         * @website https://github.com/catppuccin/discord
-                         * @invite r6Mdz5dpFc
-                         * **/
+      text = ''/**
+				 * @name Catppuccin Mocha
+				 * @author winston#0001
+				 * @authorId 505490445468696576
+				 * @version 0.2.0
+				 * @description 🎮 Soothing pastel theme for Discord
+				 * @website https://github.com/catppuccin/discord
+				 * @invite r6Mdz5dpFc
+				 * **/
 
-                        @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-        			'';
+				@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
+			'';
     };
     "vesktop/settings/quickCss.css" = {
       enable = true;
-      text = ''
-        				:root {
-                            --background-primary: #1e1e2e30;
-                        	--background-secondary: #18182570;
-                        	--background-secondary-alt: #14141f70;
-                        	--background-tertiary: #11111b70;
-                        	--background-accent: #89b4fa;
-                        	--background-floating: #0d0d15;
-                        	--background-nested-floating: #181825;
-                        	--background-mobile-primary: #1e1e2e;
-                        	--background-mobile-secondary: #181825;
-                        }
-        			'';
+      text = '' :root {
+				--background-primary: #1e1e2e30;
+				--background-secondary: #18182570;
+				--background-secondary-alt: #14141f70;
+				--background-tertiary: #11111b70;
+				--background-accent: #89b4fa;
+				--background-floating: #0d0d15;
+				--background-nested-floating: #181825;
+				--background-mobile-primary: #1e1e2e;
+				--background-mobile-secondary: #181825;
+			}'';
     };
     "vesktop/settings/settings.json" = {
       enable = true;
       text = ''{
-			 "autoUpdate": true,
-			 "autoUpdateNotification": true,
-			 "useQuickCss": true,
-			 "themeLinks": [
-			 	"https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css"
-			 ],
-			 "enabledThemes": [
+				"autoUpdate": true,
+				"autoUpdateNotification": true,
+				"useQuickCss": true,
+				"themeLinks": [
+				"https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css"
+				],
+				"enabledThemes": [
 					 "catppuccin-mocha.css"
-			 ],
-			 "enableReactDevtools": false,
-			 "frameless": false,
-			 "transparent": true,
-			 "winCtrlQ": false,
-			 "disableMinSize": true,
-			 "winNativeTitleBar": false,
-			 "plugins": {
+				],
+				"enableReactDevtools": true,
+				"frameless": false,
+				"transparent": true,
+				"winCtrlQ": false,
+				"disableMinSize": true,
+				"winNativeTitleBar": false,
+				"plugins": {
 					 "YoutubeAdblock": {
 							 "enabled": true
 					 },
@@ -711,20 +708,20 @@
 					 "WebScreenShareFixes": {
 							 "enabled": true
 					 }
-			 },
-			 "notifications": {
-					 "timeout": 5000,
-					 "position": "bottom-right",
+				},
+				"notifications": {
+					 "timeout": 10000,
+					 "position": "top-right",
 					 "useNative": "not-focused",
-					 "logLimit": 50
-			 },
-			 "cloud": {
+					 "logLimit": 150
+				},
+				"cloud": {
 					 "authenticated": false,
 					 "url": "https://api.vencord.dev/",
 					 "settingsSync": false,
 					 "settingsSyncVersion": 1733949839893
-			 }
-	 }'';
+				}
+	 		}'';
     };
   };
 }
