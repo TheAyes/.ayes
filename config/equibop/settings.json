@@ -1,0 +1,15 @@
+{
+	"discordBranch": "canary",
+	"tray": true,
+	"minimizeToTray": true,
+	"arRPC": true,
+	"trayColor": "",
+	"trayMainOverride": false,
+	"splashColor": "rgb(205, 214, 244)",
+	"splashBackground": "rgb(30, 30, 46)",
+	"splashProgress": true,
+	"spellCheckLanguages": [
+		"en-US",
+		"en"
+	]
+}
