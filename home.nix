@@ -79,6 +79,11 @@
         source = ./config/btop;
         recursive = true;
       };
+
+      "${config.xdg.configHome}/equibop" = {
+        source = ./config/equibop;
+        recursive = true;
+      };
     };
 
     /*pointerCursor = {
