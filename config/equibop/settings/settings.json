@@ -11,7 +11,7 @@
 	],
 	"enableReactDevtools": false,
 	"frameless": false,
-	"transparent": false,
+	"transparent": true,
 	"winCtrlQ": false,
 	"disableMinSize": false,
 	"updateRelaunch": false,
