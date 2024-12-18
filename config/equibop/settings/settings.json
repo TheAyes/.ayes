@@ -864,7 +864,7 @@
 			"enabled": false
 		},
 		"GoodPerson": {
-			"enabled": true,
+			"enabled": false,
 			"incoming": true,
 			"blockSexual": true,
 			"blockBrainrot": true,
@@ -1081,8 +1081,8 @@
 		"RPCStats": {
 			"enabled": true,
 			"assetURL": "",
-			"RPCTitle": "RPCStats",
-			"statDisplay": 0,
+			"RPCTitle": "Discord Statistics",
+			"statDisplay": 1,
 			"lastFMApiKey": "",
 			"lastFMUsername": "",
 			"albumCoverImage": true,
