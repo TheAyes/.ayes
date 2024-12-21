@@ -1,4 +1,4 @@
-{ config }: {
+{ config, pkgs, inputs, lib, ... }: {
   home.file = {
     "${config.xdg.configHome}/kdeglobals" = {
       text = ''
