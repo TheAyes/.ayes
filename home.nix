@@ -2,6 +2,7 @@
   imports = [
     ./config/vesktop.nix
     ./config/hypr/hyprland.base.nix
+    ./config/kde.nix
     inputs.ags.homeManagerModules.default
   ];
 
