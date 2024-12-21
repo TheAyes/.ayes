@@ -452,47 +452,53 @@
       enable = true;
     };
 
-    mimeApps = {
-      enable = true;
-      defaultApplications = {
-        "inode/directory" = [ "dolphin.desktop" ];
-        "application/pdf" = [ "okular.desktop" "firefox.desktop" ];
+    mimeApps =
+      let
+        applications = {
+          "inode/directory" = [ "dolphin.desktop" ];
+          "application/pdf" = [ "okular.desktop" "firefox.desktop" ];
 
-        ## Text ##
-        "text/plain" = [ "micro.desktop" ];
-        "text/typescript" = [ "micro.desktop" ];
+          ## Text ##
+          "text/plain" = [ "micro.desktop" ];
+          "text/typescript" = [ "micro.desktop" ];
 
-        ## Pictures ##
-        "application/png" = [ "gwenview.desktop" "firefox.desktop" ];
-        "application/jpeg" = [ "gwenview.desktop" "firefox.desktop" ];
+          ## Pictures ##
+          "application/png" = [ "gwenview.desktop" "firefox.desktop" ];
+          "application/jpeg" = [ "gwenview.desktop" "firefox.desktop" ];
 
-        ## Archives ##
-        "application/zip" = [ "ark.desktop" ]; # or your preferred archive manager
-        "application/x-zip" = [ "ark.desktop" ];
-        "application/x-zip-compressed" = [ "ark.desktop" ];
-        "application/x-rar" = [ "ark.desktop" ];
-        "application/x-rar-compressed" = [ "ark.desktop" ];
-        "application/x-7z-compressed" = [ "ark.desktop" ];
-        "application/x-tar" = [ "ark.desktop" ];
-        "application/x-bzip" = [ "ark.desktop" ];
-        "application/x-bzip2" = [ "ark.desktop" ];
-        "application/x-gzip" = [ "ark.desktop" ];
-        "application/gzip" = [ "ark.desktop" ];
-        "application/x-xz" = [ "ark.desktop" ];
-        "application/x-compress" = [ "ark.desktop" ];
-        "application/x-compressed" = [ "ark.desktop" ];
-        "application/vnd.rar" = [ "ark.desktop" ];
+          ## Archives ##
+          "application/zip" = [ "ark.desktop" ]; # or your preferred archive manager
+          "application/x-zip" = [ "ark.desktop" ];
+          "application/x-zip-compressed" = [ "ark.desktop" ];
+          "application/x-rar" = [ "ark.desktop" ];
+          "application/x-rar-compressed" = [ "ark.desktop" ];
+          "application/x-7z-compressed" = [ "ark.desktop" ];
+          "application/x-tar" = [ "ark.desktop" ];
+          "application/x-bzip" = [ "ark.desktop" ];
+          "application/x-bzip2" = [ "ark.desktop" ];
+          "application/x-gzip" = [ "ark.desktop" ];
+          "application/gzip" = [ "ark.desktop" ];
+          "application/x-xz" = [ "ark.desktop" ];
+          "application/x-compress" = [ "ark.desktop" ];
+          "application/x-compressed" = [ "ark.desktop" ];
+          "application/vnd.rar" = [ "ark.desktop" ];
 
-        ## Videos ##
-        "application/mp4" = [ "haruna.desktop" "firefox.desktop" ];
+          ## Videos ##
+          "application/mp4" = [ "haruna.desktop" "firefox.desktop" ];
 
-        ## Music ##
-        "application/mp3" = [ "haruna.desktop" "firefox.desktop" ];
-        "application/wav" = [ "haruna.desktop" "firefox.desktop" ];
+          ## Music ##
+          "application/mp3" = [ "haruna.desktop" "firefox.desktop" ];
+          "application/wav" = [ "haruna.desktop" "firefox.desktop" ];
 
-        ## System ##
-        "application/x-desktop" = [ "kitty.desktop" ];
+          ## System ##
+          "application/x-desktop" = [ "kitty.desktop" ];
+        };
+      in
+      {
+        enable = true;
+
+        associations.added = applications;
+        defaultApplications = applications;
       };
-    };
   };
 }
