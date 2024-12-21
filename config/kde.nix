@@ -6,18 +6,18 @@
                 ShowDeleteCommand=false
 
                 [KFileDialog Settings]
-                Allow Expansion=false
+                Allow Expansion=true
                 Automatically select filename extension=true
                 Breadcrumb Navigation=true
                 Decoration position=2
                 LocationCombo Completionmode=5
                 PathCombo Completionmode=5
                 Show Bookmarks=false
-                Show Full Path=false
+                Show Full Path=true
                 Show Inline Previews=true
                 Show Preview=false
                 Show Speedbar=true
-                Show hidden files=false
+                Show hidden files=true
                 Sort by=Name
                 Sort directories first=true
                 Sort hidden files last=false
