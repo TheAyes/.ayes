@@ -177,7 +177,6 @@
 
     sudo = {
       enable = true;
-
       wheelNeedsPassword = false;
     };
   };
