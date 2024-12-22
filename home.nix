@@ -435,7 +435,7 @@
       };
 
       xwayland = {
-        enable = false;
+        enable = true;
       };
     };
   };
