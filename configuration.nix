@@ -278,7 +278,7 @@
 
       monospace = {
         name = "FiraCode Nerd Font Propo";
-        package = pkgs.fira-code-nerdfont;
+        package = pkgs.nerd-fonts.fira-code;
       };
 
       sansSerif = {
@@ -390,6 +390,7 @@
     menus.enable = true;
     portal = {
       enable = true;
+      wlr.enable = true;
     };
   };
 
