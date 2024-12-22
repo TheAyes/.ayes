@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, lib, ... }: {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -60,6 +60,14 @@
       "video=DP-2:1920x1080@60"
       "video=HDMI-A-1:1920x1080@60"
     ];
+
+    plymouth = {
+      enable = true;
+      #theme = lib.mkForce "catppuccin-mocha";
+      #themePackages = with pkgs; [
+      #  catppuccin-plymouth
+      #];
+    };
 
     loader = {
       systemd-boot.enable = true;
@@ -318,6 +326,7 @@
     };
 
     targets = {
+      plymouth.enable = true;
       gtk.enable = true;
     };
   };
