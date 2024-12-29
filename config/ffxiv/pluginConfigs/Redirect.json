@@ -22,6 +22,7 @@
         "UI Mouseover",
         "Cursor",
         "<2>",
+        "<3>",
         "Self"
       ]
     },
@@ -41,7 +42,9 @@
         "UI Mouseover",
         "Target",
         "Focus",
-        "Target of Target"
+        "Target of Target",
+        "<2>",
+        "<3>"
       ]
     },
     "16556": {
@@ -51,7 +54,9 @@
         "UI Mouseover",
         "Target",
         "Focus",
-        "Target of Target"
+        "Target of Target",
+        "<2>",
+        "<3>"
       ]
     },
     "37021": {
@@ -234,7 +239,9 @@
         "UI Mouseover",
         "Target",
         "Focus",
-        "Target of Target"
+        "Target of Target",
+        "<2>",
+        "<3>"
       ]
     },
     "3594": {
@@ -244,7 +251,9 @@
         "UI Mouseover",
         "Target",
         "Focus",
-        "Target of Target"
+        "Target of Target",
+        "<2>",
+        "<3>"
       ]
     },
     "3595": {
@@ -254,7 +263,9 @@
         "UI Mouseover",
         "Target",
         "Focus",
-        "Target of Target"
+        "Target of Target",
+        "<2>",
+        "<3>"
       ]
     }
   }

@@ -63,6 +63,9 @@
       jetbrains.webstorm
       jetbrains-toolbox
 
+      godot_4
+      gdtoolkit_4
+
       nodejs
       bun
       sassc
