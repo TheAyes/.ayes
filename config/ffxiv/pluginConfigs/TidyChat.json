@@ -1,6 +1,6 @@
 {
   "$type": "TidyChat.Configuration, TidyChat",
-  "TtlMessagesBlocked": 14964,
+  "TtlMessagesBlocked": 15831,
   "Enabled": true,
   "EnableDebugMode": false,
   "DebugIncludeChannel": false,
@@ -21,7 +21,8 @@
   "NoCoffee": false,
   "Version": 0,
   "FilterSystemMessages": true,
-  "FilterEmoteSpam": true,
+  "FilterEmoteChannel": false,
+  "FilterCustomEmoteChannel": false,
   "FilterObtainedSpam": true,
   "FilterLootSpam": true,
   "FilterProgressSpam": true,
@@ -41,7 +42,7 @@
   "ShowCompletedVenture": true,
   "ShowInstanceMessage": true,
   "ShowQuestReminder": true,
-  "ShowUsedEmotes": true,
+  "ShowSelfUsedEmotes": true,
   "ShowOtherCustomEmotes": true,
   "ShowReadyChecks": true,
   "ShowCountdownTime": true,
@@ -145,6 +146,7 @@
   "ShowDesynthesisObtains": false,
   "ShowTrialMessages": true,
   "ShowOtherSynthesis": false,
+  "ShowAllOtherCrafting": false,
   "FilterGatheringSpam": true,
   "ShowGatheringSenses": true,
   "ShowAetherialReductionSands": true,
@@ -157,5 +159,6 @@
   "ShowMooching": true,
   "ShowCurrentFishingHole": true,
   "ShowDiscoveredFishingHole": true,
-  "ShowMeasuringIlms": true
+  "ShowMeasuringIlms": true,
+  "ShowAllOtherGathering": false
 }
