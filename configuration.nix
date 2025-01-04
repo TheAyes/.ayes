@@ -213,6 +213,12 @@
         description = "Ayes";
         extraGroups = [ "wheel" "networkmanager" "libvirtd" "docker" ];
       };
+
+      janny = {
+        isNormalUser = true;
+        description = "Janny";
+        extraGroups = [ "networkmanager" ];
+      };
     };
 
     extraGroups.vboxusers.members = [ "ayes" ];
