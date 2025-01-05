@@ -104,7 +104,7 @@
         };
       };
 
-      steam = {
+      /*steam = {
         enable = true;
         description = "Open Steam in the background at boot";
         wantedBy = [ "graphical-session.target" ];
@@ -116,7 +116,7 @@
           RestartSec = "5s";
 
         };
-      };
+      };*/
 
       solaar = {
         enable = true;
@@ -413,11 +413,6 @@
   };
 
   programs = {
-    nix-ld = {
-      libraries = with pkgs; [
-        electron
-      ];
-    };
 
     hyprland = {
       enable = true;
