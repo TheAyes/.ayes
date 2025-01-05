@@ -39,7 +39,7 @@
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
       "$mainMod, F, fullscreen"
-      ", Print, exec, hyprshot -m region --clipboard-only"
+      ", Print, exec, grim -g \"$(slurp)\" - | swappy -f - "
 
       "$mainMod, Right, movefocus, r"
       "$mainMod, Left, movefocus, l"
