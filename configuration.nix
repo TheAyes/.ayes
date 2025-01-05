@@ -245,6 +245,10 @@
     systemPackages = with pkgs; [
       libsForQt5.qtstyleplugin-kvantum
 
+      grim
+      slurp
+      swappy
+
       pavucontrol
       playerctl
       wl-clipboard
@@ -409,6 +413,12 @@
   };
 
   programs = {
+    nix-ld = {
+      libraries = with pkgs; [
+        electron
+      ];
+    };
+
     hyprland = {
       enable = true;
     };

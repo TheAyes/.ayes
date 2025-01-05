@@ -27,7 +27,7 @@
 
       ##hyprstuff
       inputs.hyprsome.packages.${pkgs.stdenv.hostPlatform.system}.default
-      hyprshot
+      #hyprshot
 
       ## Media
       bitwig-studio
@@ -200,6 +200,8 @@
 
       settings = { };
     };
+
+
 
     firefox = {
       enable = true;
