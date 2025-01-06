@@ -72,6 +72,7 @@
       sassc
 
       graalvm-ce
+      vdhcoapp
     ];
 
     file = {

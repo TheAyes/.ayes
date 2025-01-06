@@ -104,7 +104,7 @@
         };
       };
 
-      /*steam = {
+      steam = {
         enable = true;
         description = "Open Steam in the background at boot";
         wantedBy = [ "graphical-session.target" ];
@@ -114,9 +114,8 @@
           ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
           Restart = "on-failure";
           RestartSec = "5s";
-
         };
-      };*/
+      };
 
       solaar = {
         enable = true;
