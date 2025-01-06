@@ -61,6 +61,7 @@
 
       ## Dev Stuff
       jetbrains.idea-ultimate
+      jetbrains.rust-rover
       jetbrains.webstorm
       jetbrains-toolbox
 
@@ -175,9 +176,8 @@
 
     direnv = {
       enable = true;
+      silent = true;
       nix-direnv.enable = true;
-
-      config = { };
     };
 
     kitty = {
