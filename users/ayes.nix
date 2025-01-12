@@ -34,8 +34,10 @@
       haruna
       obsidian
       gpu-screen-recorder-gtk
+
       yabridge
       yabridgectl
+
       kdePackages.gwenview
       kdePackages.okular
       kdePackages.kolourpaint
