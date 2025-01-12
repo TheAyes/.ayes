@@ -71,6 +71,7 @@
       nodejs
       bun
       sassc
+      rustup
 
       graalvm-ce
       vdhcoapp
