@@ -9,7 +9,7 @@
   "CharacterAutoFood": true,
   "CharacterAutoPartyBonus": false,
   "ExamineOpen": false,
-  "CharacterOpen": false,
+  "CharacterOpen": true,
   "DisplayWithExamine": true,
   "DisplayWithCharacter": true,
   "AttachToExamine": true,

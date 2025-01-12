@@ -200,7 +200,7 @@ NamePlateColorAlliance	4291202303
 NamePlateEdgeAlliance	4280485440
 NamePlateDispTypeAlliance	3
 NamePlateNameTypeAlliance	0
-NamePlateHpTypeAlliance	3
+NamePlateHpTypeAlliance	2
 NamePlateDispTypeAlliancePet	0
 NamePlateHpTypeAlliancePet	2
 NamePlateColorOther	4289111718
@@ -387,7 +387,7 @@ LogColorRoleTank	4278223103
 LogColorRoleHealer	4286642272
 LogColorRoleDPS	4294921292
 LogColorOtherClass	4291611852
-ChatType	3
+ChatType	0
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278

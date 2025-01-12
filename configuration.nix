@@ -258,7 +258,7 @@
       kdePackages.qt6ct
       libsForQt5.qt5ct
       kdePackages.polkit-kde-agent-1
-      wineWowPackages.stagingFull
+      wineWow64Packages.full
       catppuccin-sddm
       lact
       virt-manager

@@ -2,7 +2,7 @@
   "UseRestrictedGearProtection": false,
   "OpenFoldersByDefault": false,
   "AutoRedrawEquipOnChanges": false,
-  "EnableAutoDesigns": true,
+  "EnableAutoDesigns": false,
   "HideApplyCheckmarks": false,
   "SmallEquip": false,
   "UnlockedItemMode": false,
@@ -27,6 +27,11 @@
   "AlwaysApplyAssociatedMods": false,
   "AllowDoubleClickToApply": false,
   "RespectManualOnAutomationUpdate": false,
+  "DefaultDesignSettings": {
+    "AlwaysForceRedrawing": false,
+    "ResetAdvancedDyes": false,
+    "ShowQuickDesignBar": true
+  },
   "HeightDisplayType": 1,
   "ShowRename": 4,
   "ToggleQuickDesignBar": {
