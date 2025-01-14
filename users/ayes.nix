@@ -35,8 +35,8 @@
       obsidian
       gpu-screen-recorder-gtk
 
-      yabridge
-      yabridgectl
+      (yabridge.override { wine = wineWowPackages.waylandFull; })
+      (yabridgectl.override { wine = wineWowPackages.waylandFull; })
 
       kdePackages.gwenview
       kdePackages.okular
