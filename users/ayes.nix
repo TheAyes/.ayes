@@ -42,6 +42,7 @@
       kdePackages.okular
       kdePackages.kolourpaint
       kdePackages.kcalc
+      kdePackages.kfind
 
       dotool
 
