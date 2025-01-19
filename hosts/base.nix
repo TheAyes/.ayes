@@ -1,6 +1,7 @@
 {
   inputs,
   config,
+  users,
   pkgs,
   ...
 }:
@@ -21,6 +22,17 @@
 
   users = {
     mutableUsers = true;
+    users = builtins.listToAttrs (
+      builtins.map
+      (user: {
+        name = user.username;
+        value = {
+          isNormalUser = true;
+          extraGroups = user.extraGroups;
+        };
+      })
+      users
+    );
   };
 
   nix = {

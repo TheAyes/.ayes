@@ -33,12 +33,10 @@
         modules = [
           home-manager.nixosModules.home-manager
           {
-            /*
-              home-manager = import ./home/base.nix {
-              inherit users;
+            home-manager = import ./home/base.nix {
+              users = users;
               inherit inputs;
             };
-            */
           }
         ];
       }
@@ -56,6 +54,7 @@
                 ./repo.nix
 
                 ./hosts/base.nix
+                {users = users;}
 
                 ./hosts/${host.hostname}
               ]

@@ -11,10 +11,10 @@
     (user: {
       name = user.username;
       value =
-        (import ./${user.username} {inherit user;})
+        (import ./${user.username} {user = user.username;})
         // {
           home = {
-            username = user;
+            username = user.username;
             stateVersion = "23.11";
           };
         };
