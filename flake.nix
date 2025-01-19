@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     stylix.url = "github:danth/stylix?rev=762c07ee10b381bc8e085be5b6c2ec43139f13b0";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
@@ -24,7 +19,6 @@
     self,
     nixpkgs,
     home-manager,
-    sops-nix,
     ...
   } @ inputs: let
     users = [
@@ -46,9 +40,27 @@
 
           home-manager.nixosModules.home-manager
           {
-            home-manager = import ./home/base.nix {
-              users = users;
-              inherit inputs;
+            home-manager = {
+              useUserPackages = true;
+              useGlobalPkgs = true;
+
+              users = builtins.listToAttrs (
+                builtins.map
+                (user: {
+                  name = user.username;
+                  value =
+                    (import ./${user.username} {user = user.username;})
+                    // {
+                      home = {
+                        username = user.username;
+                        homeDirectory = "/home/${user.username}";
+
+                        stateVersion = "23.11";
+                      };
+                    };
+                })
+                users
+              );
             };
           }
         ];
@@ -63,18 +75,15 @@
           value = nixpkgs.lib.nixosSystem {
             specialArgs = {
               inherit inputs;
-              users = users;
-              host = host.hostname;
+              users = users; # Todo: Switch to a custom module
+              host = host.hostname; # Todo: ^
             };
 
             modules =
               [
-                sops-nix.nixosModules.sops
-
                 ./repo.nix
 
                 ./hosts/base.nix
-
                 ./hosts/${host.hostname}
               ]
               ++ host.modules;
