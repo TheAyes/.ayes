@@ -2,9 +2,7 @@
   users,
   inputs,
   ...
-}: let
-  var = builtins.trace "users" users;
-in {
+}: {
   useUserPackages = true;
   useGlobalPkgs = true;
 
@@ -12,7 +10,14 @@ in {
     builtins.map
     (user: {
       name = user.username;
-      value = import ./${user.username} {inherit user;};
+      value =
+        (import ./${user.username} {inherit user;})
+        // {
+          home = {
+            username = user;
+            stateVersion = "23.11";
+          };
+        };
     })
     users
   );
