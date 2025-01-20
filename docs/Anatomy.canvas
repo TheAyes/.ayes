@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"0777fe186edb236c","type":"file","file":"flake.nix.md","x":-480,"y":-580,"width":400,"height":340},
+		{"id":"024f9c6e644530f4","x":-480,"y":-80,"width":400,"height":140,"type":"text","text":"# Legend\n"}
+	],
+	"edges":[]
+}
