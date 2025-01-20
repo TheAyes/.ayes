@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "groups": "multitext",
+    "environments": "multitext",
+    "home-manager": "checkbox",
+    "users": "multitext",
+    "isNormalUser": "checkbox",
+    "isSystemUser": "checkbox"
+  }
+}
