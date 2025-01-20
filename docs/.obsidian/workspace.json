@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modules/Environments/KDE.md",
+                "file": "Modules/Audio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KDE"
+              "title": "Audio"
             }
           }
         ]
@@ -183,26 +183,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f1b43287d0ba966b",
+  "active": "789cbaab4ac21b5a",
   "lastOpenFiles": [
+    "Hosts/io.md",
+    "Modules/Audio.md",
+    "Modules/File Explorer.md",
+    "Users/Ayes.md",
+    "Users/Janny.md",
+    "Templates/User.md",
+    "Templates/Host.md",
+    "Templates/Templates.md",
     "Modules/Environments/KDE.md",
-    "Modules/Dolphin.md",
     "Modules/Environments/Hyprland.md",
     "Modules/Packages/Packages.md",
     "Modules/Environments/Environments.md",
     "Modules/Modules.md",
     "Modules/Packages",
-    "Users/Janny.md",
-    "Users/Ayes.md",
     "flake.nix.md",
     "Users/Users.md",
-    "Templates/Templates.md",
-    "Templates/Host.md",
-    "Hosts/io.md",
     "Hosts/Hosts.md",
     "Modules/Models/User.md",
     "Modules/Models/Host.md",
-    "Templates/User.md",
     "Modules/Models",
     "Modules/Environments",
     "templates/Untitled",
