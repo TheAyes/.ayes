@@ -16,7 +16,7 @@
         modules = [
           #./modules/users.nix
 
-          ./configuration.nix
+          ./hosts/io
         ];
       };
     };

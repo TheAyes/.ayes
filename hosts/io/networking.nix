@@ -1,6 +1,6 @@
-{host, ...}: {
+{...}: {
   networking = {
-    hostName = host;
+    hostName = "io";
 
     wireless = {
       userControlled.enable = true;
