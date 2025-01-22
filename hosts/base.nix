@@ -4,6 +4,7 @@
   host,
   users,
   pkgs,
+  stateVersion,
   ...
 }:
 #
@@ -51,5 +52,5 @@
   nixpkgs.config.allowUnfree = true;
 
   # If we change this things will be sad
-  system.stateVersion = "23.11";
+  system.stateVersion = stateVersion;
 }
