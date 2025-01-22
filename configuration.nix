@@ -16,6 +16,8 @@
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
 
+    ./hosts/io/boot.nix
+
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
   ];
