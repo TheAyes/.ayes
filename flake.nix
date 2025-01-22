@@ -14,7 +14,7 @@
       io = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [
-          #./modules/users.nix
+          #./modules/user-manager
 
           ./hosts/io
         ];

@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:Users  ",
@@ -35,10 +35,10 @@
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.691080729166667,
+  "repelStrength": 11.5804036458333,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.000000000000004,
+  "scale": 1.0000000000000042,
   "close": true
 }

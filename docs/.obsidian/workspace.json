@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modules/File Explorer.md",
+                "file": "Users/Ayes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Explorer"
+              "title": "Ayes"
             }
           }
         ]
@@ -95,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 660.5
+    "width": 476.5
   },
   "right": {
     "id": "2cfe8c90dcfbb07e",
@@ -181,14 +181,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ded25b57a5148906",
+  "active": "7e203ff1e43f879a",
   "lastOpenFiles": [
-    "Modules/File Explorer.md",
-    "Modules/Audio.md",
+    "Users/Janny.md",
     "Users/Ayes.md",
     "Users/Users.md",
+    "Modules/File Explorer.md",
+    "Modules/Audio.md",
     "Hosts/io.md",
-    "Users/Janny.md",
     "Templates/User.md",
     "Templates/Host.md",
     "Templates/Templates.md",
