@@ -1,6 +1,6 @@
 ---
 tags:
-  - module_core
+  - core
 ---
 
 ### Package

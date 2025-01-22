@@ -2,3 +2,4 @@
 - **ID**: `ayes`
 - **Groups**: 
 	- wheel
+- `extraModules`
