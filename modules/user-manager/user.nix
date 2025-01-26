@@ -1,20 +1,20 @@
-{
-  lib,
-  config,
-  user,
-  ...
-}: {
+{ lib, ... }: {
   options = {
     groups = lib.mkOption {
       type = with lib.types; listOf str;
-      default = [];
-      example = "[ wheel, network-manager ]";
+      default = [ ];
+      example = [ "wheel" "network-manager" ];
     };
-  };
 
-  config = {
-    users.users.${user} = lib.mkMerge {
-      extraGroups = config.groups;
+
+    home-manager = {
+      enable = lib.mkEnableOption "Home Manager";
+
+      extraModules = lib.mkOption {
+        type = with lib.types; listOf deferredModule;
+        default = [ ];
+        example = lib.literalExpression [ ./my-module.nix ];
+      };
     };
   };
 }
