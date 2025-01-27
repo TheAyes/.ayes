@@ -1,6 +1,5 @@
 {
   "$type": "IINACT.Configuration, IINACT",
-  "DefaultLogFilePath": "C:\\users\\ayes\\Documents\\IINACT",
   "ParseFilterMode": 0,
   "DisableDamageShield": false,
   "DisableCombinePets": false,
@@ -12,5 +11,5 @@
   "WriteLogFile": true,
   "DisableWritingPvpLogFile": false,
   "Version": 1,
-  "SelectedOverlay": "Ikegami"
+  "SelectedOverlay": "Horizoverlay"
 }

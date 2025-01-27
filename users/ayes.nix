@@ -1,4 +1,10 @@
-{ config, pkgs, inputs, lib, ... }: {
+{
+  config,
+  pkgs,
+  inputs,
+  lib,
+  ...
+}: {
   imports = [
     ../config/vesktop.nix
     ../config/kittyExtra.nix
@@ -35,8 +41,8 @@
       obsidian
       gpu-screen-recorder-gtk
 
-      (yabridge.override { wine = wineWowPackages.waylandFull; })
-      (yabridgectl.override { wine = wineWowPackages.waylandFull; })
+      (yabridge.override {wine = wineWowPackages.waylandFull;})
+      (yabridgectl.override {wine = wineWowPackages.waylandFull;})
 
       kdePackages.gwenview
       kdePackages.okular
@@ -97,39 +103,42 @@
       };
     };
 
-    /*pointerCursor = {
+    /*
+      pointerCursor = {
       package = pkgs.rose-pine-cursor;
       name = "BreezeX-RosePineDawn-Linux";
       size = 24;
 
       gtk.enable = true;
       x11.enable = true;
-    };*/
+    };
+    */
   };
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu:///system" ];
-      uris = [ "qemu:///system" ];
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
     };
   };
 
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      serif = [ "NotoSerif Nerd Font" ];
-      sansSerif = [ "FiraMono Nerd Font Propo" ];
-      monospace = [ "FiraCode Nerd Font Propo" ];
+      serif = ["NotoSerif Nerd Font"];
+      sansSerif = ["FiraMono Nerd Font Propo"];
+      monospace = ["FiraCode Nerd Font Propo"];
     };
   };
 
-
   gtk = {
     enable = true;
-    /*theme = {
+    /*
+      theme = {
       package = pkgs.flat-remix-gtk;
       name = "Flat-Remix-GTK-Blue-Dark";
-    };*/
+    };
+    */
 
     iconTheme = {
       name = "Papirus-Dark";
@@ -142,7 +151,9 @@
 
   qt = {
     enable = true;
-    /*style.name = "breeze";*/
+    /*
+    style.name = "breeze";
+    */
     platformTheme.name = "qt5ct";
     style = {
       name = "kvantum";
@@ -203,10 +214,8 @@
     librewolf = {
       enable = false;
 
-      settings = { };
+      settings = {};
     };
-
-
 
     firefox = {
       enable = true;
@@ -217,31 +226,29 @@
         HardwareAcceleration = true;
 
         ExtensionUpdate = true;
-        ExtensionSettings =
-          let
-            extensionUrl = x: "https://addons.mozilla.org/firefox/downloads/latest/${x}/latest.xpi";
-          in
-          {
-            "uBlock0@raymondhill.net" = {
-              installation_mode = "force_installed";
-              install_url = extensionUrl "ublock-origin";
-            };
-
-            "addon@darkreader.org" = {
-              installation_mode = "force_installed";
-              install_url = extensionUrl "darkreader";
-            };
-
-            "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
-              installation_mode = "force_installed";
-              install_url = extensionUrl "proton-pass";
-            };
-
-            "FirefoxColor@mozilla.com" = {
-              installation_mode = "force_installed";
-              install_url = extensionUrl "firefox-color";
-            };
+        ExtensionSettings = let
+          extensionUrl = x: "https://addons.mozilla.org/firefox/downloads/latest/${x}/latest.xpi";
+        in {
+          "uBlock0@raymondhill.net" = {
+            installation_mode = "force_installed";
+            install_url = extensionUrl "ublock-origin";
           };
+
+          "addon@darkreader.org" = {
+            installation_mode = "force_installed";
+            install_url = extensionUrl "darkreader";
+          };
+
+          "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
+            installation_mode = "force_installed";
+            install_url = extensionUrl "proton-pass";
+          };
+
+          "FirefoxColor@mozilla.com" = {
+            installation_mode = "force_installed";
+            install_url = extensionUrl "firefox-color";
+          };
+        };
       };
     };
 
@@ -288,14 +295,14 @@
     bash = {
       enable = true;
       initExtra = ''
-        				if [[
-        					$(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" &&
-        					-z ''${BASH_EXECUTION_STRING}
-        				]] then
-        					shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-        					exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-        				fi
-        			'';
+        if [[
+        	$(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" &&
+        	-z ''${BASH_EXECUTION_STRING}
+        ]] then
+        	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        	exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+        fi
+      '';
     };
 
     git = {
@@ -353,7 +360,6 @@
           }
         ];
       };
-
     };
 
     obs-studio = {
@@ -396,7 +402,7 @@
     hypridle = {
       enable = true;
       settings = {
-        general = { };
+        general = {};
 
         listener = [
           {
@@ -439,53 +445,51 @@
       enable = true;
     };
 
-    mimeApps =
-      let
-        applications = {
-          "inode/directory" = [ "dolphin.desktop" ];
-          "application/pdf" = [ "okular.desktop" "firefox.desktop" ];
+    mimeApps = let
+      applications = {
+        "inode/directory" = ["dolphin.desktop"];
+        "application/pdf" = ["okular.desktop" "firefox.desktop"];
 
-          ## Text ##
-          "text/plain" = [ "micro.desktop" ];
-          "text/typescript" = [ "micro.desktop" ];
+        ## Text ##
+        "text/plain" = ["micro.desktop"];
+        "text/typescript" = ["micro.desktop"];
 
-          ## Pictures ##
-          "application/png" = [ "gwenview.desktop" "firefox.desktop" ];
-          "application/jpeg" = [ "gwenview.desktop" "firefox.desktop" ];
+        ## Pictures ##
+        "application/png" = ["gwenview.desktop" "firefox.desktop"];
+        "application/jpeg" = ["gwenview.desktop" "firefox.desktop"];
 
-          ## Archives ##
-          "application/zip" = [ "ark.desktop" ]; # or your preferred archive manager
-          "application/x-zip" = [ "ark.desktop" ];
-          "application/x-zip-compressed" = [ "ark.desktop" ];
-          "application/x-rar" = [ "ark.desktop" ];
-          "application/x-rar-compressed" = [ "ark.desktop" ];
-          "application/x-7z-compressed" = [ "ark.desktop" ];
-          "application/x-tar" = [ "ark.desktop" ];
-          "application/x-bzip" = [ "ark.desktop" ];
-          "application/x-bzip2" = [ "ark.desktop" ];
-          "application/x-gzip" = [ "ark.desktop" ];
-          "application/gzip" = [ "ark.desktop" ];
-          "application/x-xz" = [ "ark.desktop" ];
-          "application/x-compress" = [ "ark.desktop" ];
-          "application/x-compressed" = [ "ark.desktop" ];
-          "application/vnd.rar" = [ "ark.desktop" ];
+        ## Archives ##
+        "application/zip" = ["ark.desktop"]; # or your preferred archive manager
+        "application/x-zip" = ["ark.desktop"];
+        "application/x-zip-compressed" = ["ark.desktop"];
+        "application/x-rar" = ["ark.desktop"];
+        "application/x-rar-compressed" = ["ark.desktop"];
+        "application/x-7z-compressed" = ["ark.desktop"];
+        "application/x-tar" = ["ark.desktop"];
+        "application/x-bzip" = ["ark.desktop"];
+        "application/x-bzip2" = ["ark.desktop"];
+        "application/x-gzip" = ["ark.desktop"];
+        "application/gzip" = ["ark.desktop"];
+        "application/x-xz" = ["ark.desktop"];
+        "application/x-compress" = ["ark.desktop"];
+        "application/x-compressed" = ["ark.desktop"];
+        "application/vnd.rar" = ["ark.desktop"];
 
-          ## Videos ##
-          "application/mp4" = [ "haruna.desktop" "firefox.desktop" ];
+        ## Videos ##
+        "application/mp4" = ["haruna.desktop" "firefox.desktop"];
 
-          ## Music ##
-          "application/mp3" = [ "haruna.desktop" "firefox.desktop" ];
-          "application/wav" = [ "haruna.desktop" "firefox.desktop" ];
+        ## Music ##
+        "application/mp3" = ["haruna.desktop" "firefox.desktop"];
+        "application/wav" = ["haruna.desktop" "firefox.desktop"];
 
-          ## System ##
-          "application/x-desktop" = [ "kitty.desktop" ];
-        };
-      in
-      {
-        enable = true;
-
-        associations.added = applications;
-        defaultApplications = applications;
+        ## System ##
+        "application/x-desktop" = ["kitty.desktop"];
       };
+    in {
+      enable = true;
+
+      associations.added = applications;
+      defaultApplications = applications;
+    };
   };
 }
