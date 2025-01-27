@@ -1,9 +1,8 @@
-{
-  config,
-  pkgs,
-  inputs,
-  lib,
-  ...
+{ config
+, pkgs
+, inputs
+, lib
+, ...
 }: {
   imports = [
     ../config/vesktop.nix
@@ -39,10 +38,10 @@
       bitwig-studio
       haruna
       obsidian
-      gpu-screen-recorder-gtk
+      #gpu-screen-recorder-gtk
 
-      (yabridge.override {wine = wineWowPackages.waylandFull;})
-      (yabridgectl.override {wine = wineWowPackages.waylandFull;})
+      #(yabridge.override { wine = wineWowPackages.waylandFull; })
+      #(yabridgectl.override { wine = wineWowPackages.waylandFull; })
 
       kdePackages.gwenview
       kdePackages.okular
@@ -70,9 +69,9 @@
 
       ## Dev Stuff
       jetbrains.idea-ultimate
-      jetbrains.rust-rover
-      jetbrains.webstorm
-      jetbrains-toolbox
+      #jetbrains.rust-rover
+      #jetbrains.webstorm
+      #jetbrains-toolbox
 
       godot_4
       gdtoolkit_4
@@ -111,23 +110,23 @@
 
       gtk.enable = true;
       x11.enable = true;
-    };
+      };
     */
   };
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = ["qemu:///system"];
-      uris = ["qemu:///system"];
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
     };
   };
 
   fonts.fontconfig = {
     enable = true;
     defaultFonts = {
-      serif = ["NotoSerif Nerd Font"];
-      sansSerif = ["FiraMono Nerd Font Propo"];
-      monospace = ["FiraCode Nerd Font Propo"];
+      serif = [ "NotoSerif Nerd Font" ];
+      sansSerif = [ "FiraMono Nerd Font Propo" ];
+      monospace = [ "FiraCode Nerd Font Propo" ];
     };
   };
 
@@ -137,7 +136,7 @@
       theme = {
       package = pkgs.flat-remix-gtk;
       name = "Flat-Remix-GTK-Blue-Dark";
-    };
+      };
     */
 
     iconTheme = {
@@ -152,7 +151,7 @@
   qt = {
     enable = true;
     /*
-    style.name = "breeze";
+      style.name = "breeze";
     */
     platformTheme.name = "qt5ct";
     style = {
@@ -214,7 +213,7 @@
     librewolf = {
       enable = false;
 
-      settings = {};
+      settings = { };
     };
 
     firefox = {
@@ -226,29 +225,31 @@
         HardwareAcceleration = true;
 
         ExtensionUpdate = true;
-        ExtensionSettings = let
-          extensionUrl = x: "https://addons.mozilla.org/firefox/downloads/latest/${x}/latest.xpi";
-        in {
-          "uBlock0@raymondhill.net" = {
-            installation_mode = "force_installed";
-            install_url = extensionUrl "ublock-origin";
-          };
+        ExtensionSettings =
+          let
+            extensionUrl = x: "https://addons.mozilla.org/firefox/downloads/latest/${x}/latest.xpi";
+          in
+          {
+            "uBlock0@raymondhill.net" = {
+              installation_mode = "force_installed";
+              install_url = extensionUrl "ublock-origin";
+            };
 
-          "addon@darkreader.org" = {
-            installation_mode = "force_installed";
-            install_url = extensionUrl "darkreader";
-          };
+            "addon@darkreader.org" = {
+              installation_mode = "force_installed";
+              install_url = extensionUrl "darkreader";
+            };
 
-          "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
-            installation_mode = "force_installed";
-            install_url = extensionUrl "proton-pass";
-          };
+            "78272b6fa58f4a1abaac99321d503a20@proton.me" = {
+              installation_mode = "force_installed";
+              install_url = extensionUrl "proton-pass";
+            };
 
-          "FirefoxColor@mozilla.com" = {
-            installation_mode = "force_installed";
-            install_url = extensionUrl "firefox-color";
+            "FirefoxColor@mozilla.com" = {
+              installation_mode = "force_installed";
+              install_url = extensionUrl "firefox-color";
+            };
           };
-        };
       };
     };
 
@@ -318,9 +319,9 @@
           email = "github.com.faculty419@passmail.net";
         };
 
-        credential = {
+        /*credential = {
           credentialStore = "secretservice";
-        };
+        };*/
       };
     };
 
@@ -363,12 +364,12 @@
     };
 
     obs-studio = {
-      enable = true;
+      enable = false;
       plugins = with pkgs.obs-studio-plugins; [
-        wlrobs
-        obs-replay-source
-        obs-pipewire-audio-capture
-        advanced-scene-switcher
+        #wlrobs
+        #obs-replay-source
+        #obs-pipewire-audio-capture
+        #advanced-scene-switcher
       ];
     };
   };
@@ -402,7 +403,7 @@
     hypridle = {
       enable = true;
       settings = {
-        general = {};
+        general = { };
 
         listener = [
           {
@@ -445,51 +446,53 @@
       enable = true;
     };
 
-    mimeApps = let
-      applications = {
-        "inode/directory" = ["dolphin.desktop"];
-        "application/pdf" = ["okular.desktop" "firefox.desktop"];
+    mimeApps =
+      let
+        applications = {
+          "inode/directory" = [ "dolphin.desktop" ];
+          "application/pdf" = [ "okular.desktop" "firefox.desktop" ];
 
-        ## Text ##
-        "text/plain" = ["micro.desktop"];
-        "text/typescript" = ["micro.desktop"];
+          ## Text ##
+          "text/plain" = [ "micro.desktop" ];
+          "text/typescript" = [ "micro.desktop" ];
 
-        ## Pictures ##
-        "application/png" = ["gwenview.desktop" "firefox.desktop"];
-        "application/jpeg" = ["gwenview.desktop" "firefox.desktop"];
+          ## Pictures ##
+          "application/png" = [ "gwenview.desktop" "firefox.desktop" ];
+          "application/jpeg" = [ "gwenview.desktop" "firefox.desktop" ];
 
-        ## Archives ##
-        "application/zip" = ["ark.desktop"]; # or your preferred archive manager
-        "application/x-zip" = ["ark.desktop"];
-        "application/x-zip-compressed" = ["ark.desktop"];
-        "application/x-rar" = ["ark.desktop"];
-        "application/x-rar-compressed" = ["ark.desktop"];
-        "application/x-7z-compressed" = ["ark.desktop"];
-        "application/x-tar" = ["ark.desktop"];
-        "application/x-bzip" = ["ark.desktop"];
-        "application/x-bzip2" = ["ark.desktop"];
-        "application/x-gzip" = ["ark.desktop"];
-        "application/gzip" = ["ark.desktop"];
-        "application/x-xz" = ["ark.desktop"];
-        "application/x-compress" = ["ark.desktop"];
-        "application/x-compressed" = ["ark.desktop"];
-        "application/vnd.rar" = ["ark.desktop"];
+          ## Archives ##
+          "application/zip" = [ "ark.desktop" ]; # or your preferred archive manager
+          "application/x-zip" = [ "ark.desktop" ];
+          "application/x-zip-compressed" = [ "ark.desktop" ];
+          "application/x-rar" = [ "ark.desktop" ];
+          "application/x-rar-compressed" = [ "ark.desktop" ];
+          "application/x-7z-compressed" = [ "ark.desktop" ];
+          "application/x-tar" = [ "ark.desktop" ];
+          "application/x-bzip" = [ "ark.desktop" ];
+          "application/x-bzip2" = [ "ark.desktop" ];
+          "application/x-gzip" = [ "ark.desktop" ];
+          "application/gzip" = [ "ark.desktop" ];
+          "application/x-xz" = [ "ark.desktop" ];
+          "application/x-compress" = [ "ark.desktop" ];
+          "application/x-compressed" = [ "ark.desktop" ];
+          "application/vnd.rar" = [ "ark.desktop" ];
 
-        ## Videos ##
-        "application/mp4" = ["haruna.desktop" "firefox.desktop"];
+          ## Videos ##
+          "application/mp4" = [ "haruna.desktop" "firefox.desktop" ];
 
-        ## Music ##
-        "application/mp3" = ["haruna.desktop" "firefox.desktop"];
-        "application/wav" = ["haruna.desktop" "firefox.desktop"];
+          ## Music ##
+          "application/mp3" = [ "haruna.desktop" "firefox.desktop" ];
+          "application/wav" = [ "haruna.desktop" "firefox.desktop" ];
 
-        ## System ##
-        "application/x-desktop" = ["kitty.desktop"];
+          ## System ##
+          "application/x-desktop" = [ "kitty.desktop" ];
+        };
+      in
+      {
+        enable = true;
+
+        associations.added = applications;
+        defaultApplications = applications;
       };
-    in {
-      enable = true;
-
-      associations.added = applications;
-      defaultApplications = applications;
-    };
   };
 }
