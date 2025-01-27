@@ -276,6 +276,7 @@
       wl-clipboard
       wl-clip-persist
       wev
+      libsForQt5.qt5.qtwayland
       kdePackages.qtwayland
       kdePackages.qtsvg
       kdePackages.qt6ct
