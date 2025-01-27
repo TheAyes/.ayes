@@ -1,2 +1,5 @@
-{user, ...}: {
+{...}: {
+  imports = [
+    ../../configs/fish
+  ];
 }

@@ -1,4 +1,8 @@
 {user, ...}: {
+  imports = [
+    ../../configs/fish
+  ];
+
   wayland.windowManager = {
     hyprland = {
       enable = true;
