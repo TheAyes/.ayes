@@ -14,8 +14,11 @@
       powerOnBoot = true;
     };
 
-    logitech.wireless = {
+    logitech = {
       enable = true;
+      wireless = {
+        enable = true;
+      };
     };
 
     graphics = {
@@ -133,6 +136,10 @@
           ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
           Restart = "on-failure";
           RestartSec = "5s";
+        };
+
+        environment = {
+          QT_QPA_PLATFORM = "xcb";
         };
       };
 
