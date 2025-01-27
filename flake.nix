@@ -16,33 +16,38 @@
     ags.url = "github:Aylur/ags/v1";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, hyprsome, ... }@inputs:
-    let
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations = {
-        io = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./configuration.nix
+  outputs = {
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: let
+    system = "x86_64-linux";
+    users = [
+      "janny"
+      "ayes"
+    ];
+  in {
+    nixosConfigurations = {
+      io = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [
+          ./configuration.nix
 
-            inputs.stylix.nixosModules.stylix
+          inputs.stylix.nixosModules.stylix
 
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.ayes = import ./users/ayes.nix;
-              home-manager.users.janny = import ./users/janny.nix;
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.ayes = import ./users/ayes.nix;
+            home-manager.users.janny = import ./users/janny.nix;
 
-              home-manager.extraSpecialArgs = { inherit inputs; };
-            }
-
-          ];
-        };
+            home-manager.extraSpecialArgs = {inherit inputs;};
+          }
+        ];
       };
-
-      #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
     };
+
+    #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
+  };
 }

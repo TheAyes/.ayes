@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, lib, ... }: {
+{ config
+, pkgs
+, inputs
+, lib
+, ...
+}: {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -18,7 +23,9 @@
       enable32Bit = true;
 
       extraPackages = [
-        /*pkgs.amdvlk*/
+        /*
+        pkgs.amdvlk
+        */
       ];
     };
 
@@ -127,8 +134,12 @@
           ExecStart = "${pkgs.solaar}/bin/solaar --window=hide";
           Restart = "on-failure";
           RestartSec = "5s";
-
         };
+      };
+
+      monado.environment = {
+        STEAMVR_LH_ENABLE = "1";
+        XRT_COMPOSITOR_COMPUTE = "1";
       };
     };
   };
@@ -307,7 +318,6 @@
         package = pkgs.dejavu_fonts;
       };
 
-
       emoji = {
         name = "Noto Emoji";
         package = pkgs.noto-fonts-emoji;
@@ -340,13 +350,14 @@
   };
 
   services = {
+    monado = {
+      enable = true;
+      defaultRuntime = true;
+    };
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
       package = pkgs.kdePackages.sddm;
-      extraPackages = with pkgs; [
-
-      ];
 
       settings = {
         General = {
@@ -377,16 +388,15 @@
     udev = {
       enable = true;
       extraRules = ''
-        				ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
-        				ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
-        			'';
+        ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+        ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+      '';
     };
 
     xserver = {
       enable = true;
       xkb.layout = "de";
       xkb.variant = "nodeadkeys";
-
 
       videoDrivers = [ "vmware" ];
     };
@@ -412,7 +422,10 @@
   };
 
   programs = {
-
+    git = {
+      enable = true;
+      lfs.enable = true;
+    };
     hyprland = {
       enable = true;
     };
@@ -430,7 +443,6 @@
       enableSSHSupport = true;
     };
     dconf.enable = true;
-
   };
 
   # This value determines the NixOS release from which the default
