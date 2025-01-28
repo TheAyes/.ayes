@@ -375,6 +375,14 @@
       enable = true;
       defaultRuntime = true;
     };
+
+    ollama = {
+      enable = true;
+      #acceleration = "rocm";
+      # Optional: load models on startup
+      loadModels = [ "deepseek-r1" ];
+    };
+
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
