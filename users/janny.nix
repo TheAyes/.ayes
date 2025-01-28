@@ -355,7 +355,7 @@
         wlrobs
         obs-replay-source
         obs-pipewire-audio-capture
-        advanced-scene-switcher
+        #advanced-scene-switcher
       ];
     };
   };

@@ -2,11 +2,12 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs_unstable";
     };
 
     stylix.url = "github:danth/stylix?rev=762c07ee10b381bc8e085be5b6c2ec43139f13b0";
@@ -16,38 +17,36 @@
     ags.url = "github:Aylur/ags/v1";
   };
 
-  outputs = {
-    nixpkgs,
-    home-manager,
-    ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    users = [
-      "janny"
-      "ayes"
-    ];
-  in {
-    nixosConfigurations = {
-      io = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
-        modules = [
-          ./configuration.nix
+  outputs =
+    { nixpkgs_unstable
+    , home-manager
+    , ...
+    } @ inputs:
+    let
+    in
+    {
+      nixosConfigurations = {
+        io = nixpkgs_unstable.lib.nixosSystem {
+          specialArgs = { inherit inputs; pkgs_stable = inputs.nixpkgs_stable.legacyPackages."x86_64-linux"; };
 
-          inputs.stylix.nixosModules.stylix
+          modules = [
+            ./configuration.nix
 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.ayes = import ./users/ayes.nix;
-            home-manager.users.janny = import ./users/janny.nix;
+            inputs.stylix.nixosModules.stylix
 
-            home-manager.extraSpecialArgs = {inherit inputs;};
-          }
-        ];
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.ayes = import ./users/ayes.nix;
+              home-manager.users.janny = import ./users/janny.nix;
+
+              home-manager.extraSpecialArgs = { inherit inputs; };
+            }
+          ];
+        };
       };
-    };
 
-    #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
-  };
+      #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
+    };
 }
