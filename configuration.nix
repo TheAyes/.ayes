@@ -1,5 +1,6 @@
 { config
 , pkgs
+, pkgs_stable
 , inputs
 , lib
 , ...
@@ -271,7 +272,7 @@
       AMD_VULKAN_ICD = "RADV";
     };
 
-    systemPackages = with pkgs; [
+    systemPackages = with pkgs_stable; [
       libsForQt5.qtstyleplugin-kvantum
 
       grim
@@ -454,11 +455,11 @@
       enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
-      extest.enable = true;
+      #extest.enable = true;
 
-      gamescopeSession.enable = true;
+      #gamescopeSession.enable = true;
 
-      package = pkgs.steam.override {
+      /*package = pkgs.steam.override {
         extraPkgs = pkgs:
           with pkgs; [
             xorg.libXcursor
@@ -472,7 +473,7 @@
             libkrb5
             keyutils
           ];
-      };
+      };*/
     };
 
     gnupg.agent = {

@@ -1,6 +1,6 @@
 {
   "$type": "TidyChat.Configuration, TidyChat",
-  "TtlMessagesBlocked": 20881,
+  "TtlMessagesBlocked": 21042,
   "Enabled": true,
   "EnableDebugMode": false,
   "DebugIncludeChannel": false,

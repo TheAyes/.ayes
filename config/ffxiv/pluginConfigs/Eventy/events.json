@@ -20,4 +20,5 @@
  {"id":20,"name":"Fall Guys Collaboration Rerun","begin":"2024-10-23T08:00:00+00:00","end":"2024-11-12T08:00:00+00:00","special":false,"url":"https://eu.finalfantasyxiv.com/lodestone/special/fallguys/","pvp":false}, 
  {"id":21,"name":"Starlight Celebration","begin":"2024-12-16T08:00:00+00:00","end":"2024-12-31T14:00:00+00:00","special":false,"url":"https://eu.finalfantasyxiv.com/lodestone/special/2024/Starlight_Celebration/2w4vdz8s0c","pvp":false}, 
  {"id":22,"name":"Heavensturn","begin":"2024-12-31T14:00:00+00:00","end":"2025-01-16T13:59:00+00:00","special":false,"url":"https://eu.finalfantasyxiv.com/lodestone/special/2025/Heavensturn/xhy9z0p5ev","pvp":false}, 
- {"id":23,"name":"Crystalline Conflict Season 12","begin":"2024-12-11T09:00:00+00:00","end":"2025-01-21T09:00:00+00:00","special":false,"url":"","pvp":true}]
+ {"id":23,"name":"Crystalline Conflict Season 12","begin":"2024-12-11T09:00:00+00:00","end":"2025-01-21T09:00:00+00:00","special":false,"url":"","pvp":true}, 
+ {"id":24,"name":"Valentione's Day","begin":"2025-02-03T08:00:00+00:00","end":"2025-02-17T14:59:00+00:00","special":false,"url":"https://eu.finalfantasyxiv.com/lodestone/special/2025/Valentiones_Day/xe76ytdwz8","pvp":false}]

@@ -69,8 +69,8 @@
 
       ## Dev Stuff
       jetbrains.idea-ultimate
-      #jetbrains.rust-rover
-      #jetbrains.webstorm
+      jetbrains.rust-rover
+      jetbrains.webstorm
       #jetbrains-toolbox
 
       godot_4
@@ -364,11 +364,11 @@
     };
 
     obs-studio = {
-      enable = false;
+      enable = true;
       plugins = with pkgs.obs-studio-plugins; [
-        #wlrobs
-        #obs-replay-source
-        #obs-pipewire-audio-capture
+        wlrobs
+        obs-replay-source
+        obs-pipewire-audio-capture
         #advanced-scene-switcher
       ];
     };
