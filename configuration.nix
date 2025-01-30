@@ -393,7 +393,7 @@
       rocmOverrideGfx = "11.0.1";
       acceleration = "rocm";
       # Optional: load models on startup
-      loadModels = [ "deepseek-r1:70b" ];
+      loadModels = [ "llama3.2" ];
     };
     # open-webui.enable = true;
 
