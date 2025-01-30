@@ -5,7 +5,7 @@
 , ...
 }: {
   imports = [
-    ../config/vesktop.nix
+    #../config/vesktop.nix
     ../config/kittyExtra.nix
     ../config/hypr/hyprland.base.nix
     ../config/kde.nix

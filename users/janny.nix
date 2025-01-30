@@ -1,6 +1,6 @@
 { config, pkgs, inputs, lib, ... }: {
   imports = [
-    ../config/vesktop.nix
+    #../config/vesktop.nix
     ../config/kittyExtra.nix
     ../config/hypr/hyprland.base.nix
     ../config/kde.nix
@@ -50,8 +50,8 @@
       piper
 
       ## Community
-      #vesktop
-      equibop
+      vesktop
+      #equibop
 
       ## Gaming
       xivlauncher
@@ -85,8 +85,8 @@
         recursive = true;
       };
 
-      "${config.xdg.configHome}/equibop" = {
-        source = ../config/equibop;
+      "${config.xdg.configHome}/vesktop" = {
+        source = ../config/vesktop;
         recursive = true;
       };
     };
