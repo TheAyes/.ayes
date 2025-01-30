@@ -318,6 +318,16 @@
       size = 24;
     };
 
+    /*iconTheme = {
+      enable = true;
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "blue";
+      };
+      dark = "Papirus-Dark";
+      #light = "Papirus-Light";
+    };*/
+
     fonts = {
       sizes = {
         applications = 10;
@@ -443,7 +453,7 @@
 
   virtualisation = {
     #docker.enable = true;
-    libvirtd.enable = true;
+    libvirtd.enable = false;
   };
 
   xdg = {
