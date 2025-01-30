@@ -16,7 +16,7 @@
       "ags -c /home/ayes/.nixos/config/ags/config.js"
       "firefox"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-      "equibop"
+      "vesktop"
     ];
 
     input = {
