@@ -58,8 +58,8 @@
       piper
 
       ## Community
-      #vesktop
-      equibop
+      vesktop
+      #equibop
 
       ## Gaming
       xivlauncher
@@ -96,8 +96,8 @@
         recursive = true;
       };
 
-      "${config.xdg.configHome}/equibop" = {
-        source = ../config/equibop;
+      "${config.xdg.configHome}/vesktop" = {
+        source = ../config/vesktop;
         recursive = true;
       };
     };
