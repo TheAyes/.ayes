@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -19,6 +20,7 @@
 
   outputs =
     { nixpkgs_unstable
+    , nixpkgs_workaround
     , home-manager
     , ...
     } @ inputs:
@@ -26,7 +28,7 @@
     in
     {
       nixosConfigurations = {
-        io = nixpkgs_unstable.lib.nixosSystem {
+        io = nixpkgs_workaround.lib.nixosSystem {
           specialArgs = { inherit inputs; pkgs_stable = inputs.nixpkgs_stable.legacyPackages."x86_64-linux"; };
 
           modules = [
