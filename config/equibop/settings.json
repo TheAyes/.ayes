@@ -1,5 +1,5 @@
 {
-	"discordBranch": "canary",
+	"discordBranch": "stable",
 	"tray": true,
 	"minimizeToTray": true,
 	"arRPC": true,

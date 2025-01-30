@@ -16,7 +16,6 @@
     };
 
     logitech = {
-      enable = true;
       wireless = {
         enable = true;
       };
@@ -255,7 +254,10 @@
   };
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    rocmSupport = true;
+    allowUnfree = true;
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -372,16 +374,19 @@
 
   services = {
     monado = {
-      enable = true;
+      enable = false;
       defaultRuntime = true;
     };
 
     ollama = {
       enable = true;
-      #acceleration = "rocm";
+      rocmOverrideGfx = "11.0.1";
+      acceleration = "rocm";
       # Optional: load models on startup
-      loadModels = [ "deepseek-r1" ];
+      loadModels = [ "deepseek-r1:70b" ];
     };
+    # open-webui.enable = true;
+
 
     displayManager.sddm = {
       enable = true;
