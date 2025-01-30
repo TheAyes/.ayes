@@ -163,6 +163,8 @@
     enable = true;
     autoEnable = false;
 
+
+
     targets = {
       firefox.enable = true;
 
