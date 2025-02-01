@@ -3,7 +3,8 @@
 	"autoUpdateNotification": true,
 	"useQuickCss": true,
 	"themeLinks": [
-		"https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css"
+		"https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css",
+		"https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css"
 	],
 	"enabledThemes": [],
 	"enabledThemeLinks": [

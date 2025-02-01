@@ -72,6 +72,7 @@
       jetbrains.rust-rover
       jetbrains.webstorm
       jetbrains.pycharm-professional
+      jetbrains.gateway
       #jetbrains-toolbox
 
       godot_4
