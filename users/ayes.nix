@@ -38,7 +38,7 @@
       bitwig-studio
       haruna
       obsidian
-      #gpu-screen-recorder-gtk
+      gpu-screen-recorder-gtk
 
       #(yabridge.override { wine = wineWowPackages.waylandFull; })
       #(yabridgectl.override { wine = wineWowPackages.waylandFull; })
