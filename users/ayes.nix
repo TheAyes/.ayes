@@ -5,10 +5,8 @@
 , ...
 }: {
   imports = [
-    #../config/vesktop.nix
     ../config/kittyExtra.nix
     ../config/hypr/hyprland.base.nix
-    ../config/kde.nix
     inputs.ags.homeManagerModules.default
   ];
 
@@ -40,8 +38,8 @@
       obsidian
       gpu-screen-recorder-gtk
 
-      #(yabridge.override { wine = wineWowPackages.waylandFull; })
-      #(yabridgectl.override { wine = wineWowPackages.waylandFull; })
+      (yabridge.override { wine = wineWowPackages.waylandFull; })
+      (yabridgectl.override { wine = wineWowPackages.waylandFull; })
 
       kdePackages.gwenview
       kdePackages.okular
@@ -60,7 +58,6 @@
       ## Community
       vesktop
       #equibop
-      alvr
 
       ## Gaming
       xivlauncher
@@ -73,11 +70,6 @@
       jetbrains.rust-rover
       jetbrains.webstorm
       jetbrains.pycharm-professional
-      jetbrains.gateway
-      #jetbrains-toolbox
-
-      godot_4
-      gdtoolkit_4
 
       nodejs
       bun
@@ -133,14 +125,8 @@
     };
   };
 
-  gtk = {
+  /*gtk = {
     enable = true;
-    /*
-      theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-Blue-Dark";
-      };
-    */
 
     iconTheme = {
       name = "Papirus-Dark";
@@ -149,37 +135,47 @@
         accent = "blue";
       };
     };
-  };
+  };*/
 
-  qt = {
+  /*qt = {
     enable = true;
-    /*
-      style.name = "breeze";
-    */
-    platformTheme.name = "qt5ct";
-    style = {
-      name = "kvantum";
-    };
-  };
+    platformTheme.name = "gtk";
+    style.name = "gtk2";
+  };*/
 
   stylix = {
     enable = true;
     autoEnable = false;
 
 
+    iconTheme = {
+      enable = true;
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "blue";
+      };
+      dark = "Papirus-Dark";
+      light = "Papirus-Light";
+    };
 
     targets = {
       firefox.enable = true;
-
       gtk.enable = true;
       gnome.enable = true;
       hyprland.enable = true;
       hyprpaper.enable = true;
-      kde.enable = true;
+      kde.enable = false;
       kitty.enable = false;
       vesktop.enable = false;
+      fish.enable = true;
       wofi.enable = true;
+      qt = {
+        enable = true;
+        platform = "qtct";
+      };
     };
+
+
   };
 
   programs = {
@@ -426,10 +422,12 @@
     windowManager.hyprland = {
       enable = true;
       package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
       systemd = {
-        enable = true;
+        enable = false; # Disable to prefer uwsm
         enableXdgAutostart = true;
+        variables = [ "--all" ];
       };
 
       xwayland = {

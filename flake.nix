@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs_unstable";
     };
 
-    stylix.url = "github:danth/stylix?rev=762c07ee10b381bc8e085be5b6c2ec43139f13b0";
+    stylix.url = "github:mikilio/stylix/pr-142";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprsome.url = "github:sopa0/hyprsome";

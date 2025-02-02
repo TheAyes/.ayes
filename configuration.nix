@@ -43,6 +43,8 @@
       dates = [ "06:00" ];
     };
     settings = {
+      substituters = [ "https://hyprland.cachix.org" ];
+      trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
       experimental-features = [
         "nix-command"
         "flakes"
@@ -269,17 +271,18 @@
 
       XDG_RUNTIME_DIR = "/run/user/$UID";
       XDG_SESSION_TYPE = "wayland";
-      WLR_NO_HARDWARE_CURSORS = "1";
+      #WLR_NO_HARDWARE_CURSORS = "1";
 
       AMD_VULKAN_ICD = "RADV";
     };
 
     systemPackages = with pkgs_stable; [
-      libsForQt5.qtstyleplugin-kvantum
+      #libsForQt5.qtstyleplugin-kvantum
 
       grim
       slurp
       swappy
+      usbutils
 
       pavucontrol
       playerctl
@@ -303,11 +306,14 @@
     nerd-fonts.noto
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
-    nerd-fonts._0xproto
+    #nerd-fonts._0xproto
   ];
 
   stylix = {
-    enable = true;
+    enable = false;
+    autoEnable = false;
+    homeManagerIntegration.followSystem = true;
+
     polarity = "dark";
 
     image = ./config/hypr/wallpapers/dark_anime_wallpaper.jpg;
@@ -318,15 +324,7 @@
       size = 24;
     };
 
-    /*iconTheme = {
-      enable = true;
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "blue";
-      };
-      dark = "Papirus-Dark";
-      #light = "Papirus-Light";
-    };*/
+
 
     fonts = {
       sizes = {
@@ -401,7 +399,7 @@
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      #package = pkgs.kdePackages.sddm;
+      package = pkgs.kdePackages.sddm;
 
       settings = {
         General = {
@@ -444,10 +442,6 @@
 
       videoDrivers = [ "vmware" ];
 
-      desktopManager.plasma6 = {
-        enable = false;
-        #enableQt5Integration = true;
-      };
     };
 
     gnome.gnome-keyring.enable = true;
@@ -477,12 +471,14 @@
     };
     hyprland = {
       enable = true;
+      withUWSM = true;
     };
 
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
+
       #extest.enable = true;
 
       #gamescopeSession.enable = true;
