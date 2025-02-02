@@ -60,6 +60,7 @@
       ## Community
       vesktop
       #equibop
+      alvr
 
       ## Gaming
       xivlauncher
