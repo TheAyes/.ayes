@@ -13,6 +13,7 @@
     ];
 
     exec-once = [
+      "wl-paste --watch cliphist store"
       "ags -c /home/ayes/.nixos/config/ags/config.js"
       "firefox"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
@@ -31,15 +32,15 @@
     bind = [
       "$mainMod, Q, exec, kitty"
       "$mainMod, C, killactive,"
-      "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-paste -p"
+      "$mainMod, V, exec, cliphist list | (uwsm app -- wofi --dmenu) | cliphist decode | wl-paste -p"
       "$mainMod, M, exit,"
-      "$mainMod, E, exec, dolphin"
+      "$mainMod, E, exec, uwsm app -- dolphin"
       "$mainMod, X, togglefloating,"
-      "$mainMod, R, exec, wofi --show drun"
+      "$mainMod, R, exec, uwsm app -- wofi --show drun"
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
       "$mainMod, F, fullscreen"
-      ", Print, exec, grim -g \"$(slurp)\" - | swappy -f - "
+      ", Print, exec, uwsm app -- (grim -g \"$(slurp)\" - | swappy -f -)"
 
       "$mainMod, Right, movefocus, r"
       "$mainMod, Left, movefocus, l"
@@ -144,7 +145,7 @@
     ];
 
     workspace = [
-      "special:magic, on-created-empty:equicord"
+      "special:magic, on-created-empty:vesktop"
     ];
   };
 }
