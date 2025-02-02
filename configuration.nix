@@ -401,7 +401,7 @@
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      package = pkgs.kdePackages.sddm;
+      #package = pkgs.kdePackages.sddm;
 
       settings = {
         General = {
@@ -443,6 +443,11 @@
       xkb.variant = "nodeadkeys";
 
       videoDrivers = [ "vmware" ];
+
+      desktopManager.plasma6 = {
+        enable = false;
+        #enableQt5Integration = true;
+      };
     };
 
     gnome.gnome-keyring.enable = true;
