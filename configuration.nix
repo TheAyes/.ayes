@@ -135,7 +135,7 @@
         startLimitIntervalSec = 1800;
         startLimitBurst = 5;
         serviceConfig = {
-          ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
+          ExecStart = "uwsm app -- ${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
           Restart = "on-failure";
           RestartSec = "5s";
         };
@@ -323,8 +323,6 @@
       name = "BreezeX-RosePineDawn-Linux";
       size = 24;
     };
-
-
 
     fonts = {
       sizes = {
