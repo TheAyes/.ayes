@@ -16,6 +16,8 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprsome.url = "github:sopa0/hyprsome";
     ags.url = "github:Aylur/ags/v1";
+
+    nixcord.url = "github:kaylorben/nixcord?rev=33a6b0bccde4f82baa9e2b9d58e22901c0ec8dad";
   };
 
   outputs =
@@ -43,6 +45,7 @@
               home-manager.users.ayes = import ./users/ayes.nix;
               home-manager.users.janny = import ./users/janny.nix;
 
+              home-manager.sharedModules = [ inputs.nixcord.homeManagerModules.nixcord ];
               home-manager.extraSpecialArgs = { inherit inputs; };
             }
           ];

@@ -145,7 +145,9 @@
 			"enabled": false
 		},
 		"CustomRPC": {
-			"enabled": false
+			"enabled": false,
+			"type": 0,
+			"timestampMode": 0
 		},
 		"CustomIdle": {
 			"enabled": false
@@ -195,7 +197,8 @@
 			"disableEmbedPermissionCheck": false
 		},
 		"FakeProfileThemes": {
-			"enabled": false
+			"enabled": true,
+			"nitroFirst": true
 		},
 		"FavoriteEmojiFirst": {
 			"enabled": true
@@ -213,7 +216,7 @@
 			"enabled": true
 		},
 		"FixYoutubeEmbeds": {
-			"enabled": false
+			"enabled": true
 		},
 		"ForceOwnerCrown": {
 			"enabled": false
@@ -374,7 +377,8 @@
 			"enabled": false
 		},
 		"NoMosaic": {
-			"enabled": false
+			"enabled": true,
+			"inlineVideo": true
 		},
 		"NoOnboardingDelay": {
 			"enabled": false
@@ -383,7 +387,7 @@
 			"enabled": false
 		},
 		"NoProfileThemes": {
-			"enabled": false
+			"enabled": true
 		},
 		"NoReplyMention": {
 			"enabled": false
@@ -526,7 +530,8 @@
 		"ShowHiddenChannels": {
 			"enabled": true,
 			"showMode": 0,
-			"channelStyle": 0
+			"channelStyle": 0,
+			"hideUnreads": true
 		},
 		"ShowHiddenThings": {
 			"enabled": true,
@@ -590,7 +595,8 @@
 		"TypingIndicator": {
 			"enabled": true,
 			"includeMutedChannels": false,
-			"includeCurrentChannel": true
+			"includeCurrentChannel": true,
+			"indicatorMode": 3
 		},
 		"TypingTweaks": {
 			"enabled": false
@@ -602,7 +608,7 @@
 			"enabled": true
 		},
 		"UnsuppressEmbeds": {
-			"enabled": false
+			"enabled": true
 		},
 		"UserMessagesPronouns": {
 			"enabled": false
@@ -1253,6 +1259,21 @@
 		},
 		"SupportHelper": {
 			"enabled": true
+		},
+		"iLoveSpam": {
+			"enabled": false
+		},
+		"oneko": {
+			"enabled": false
+		},
+		"StreamerModeOnStream": {
+			"enabled": false
+		},
+		"VencordToolbox": {
+			"enabled": false
+		},
+		"BadgeAPI": {
+			"enabled": true
 		}
 	},
 	"notifications": {
@@ -1265,7 +1286,7 @@
 		"authenticated": false,
 		"url": "https://cloud.equicord.fyi/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1734241926787
+		"settingsSyncVersion": 1738791671424
 	},
 	"ignoreResetWarning": false,
 	"userCssVars": {}
