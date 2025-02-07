@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
-    nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
+    #nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -17,12 +17,11 @@
     hyprsome.url = "github:sopa0/hyprsome";
     ags.url = "github:Aylur/ags/v1";
 
-    nixcord.url = "github:kaylorben/nixcord?rev=33a6b0bccde4f82baa9e2b9d58e22901c0ec8dad";
+    nixcord.url = "github:kaylorben/nixcord";
   };
 
   outputs =
     { nixpkgs_unstable
-    , nixpkgs_workaround
     , home-manager
     , ...
     } @ inputs:
@@ -30,10 +29,11 @@
     in
     {
       nixosConfigurations = {
-        io = nixpkgs_workaround.lib.nixosSystem {
+        io = nixpkgs_unstable.lib.nixosSystem {
           specialArgs = { inherit inputs; pkgs_stable = inputs.nixpkgs_stable.legacyPackages."x86_64-linux"; };
 
           modules = [
+
             ./configuration.nix
 
             inputs.stylix.nixosModules.stylix
