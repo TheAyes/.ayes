@@ -479,6 +479,7 @@
       enable = true;
       lfs.enable = true;
     };
+    fish.enable = true;
     hyprland = {
       enable = true;
       withUWSM = true;
