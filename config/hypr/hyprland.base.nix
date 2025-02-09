@@ -92,7 +92,7 @@
       resize_on_border = true;
 
       snap = {
-        enable = true;
+        enabled = true;
       };
     };
 
