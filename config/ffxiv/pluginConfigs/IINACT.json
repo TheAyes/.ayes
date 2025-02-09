@@ -1,6 +1,6 @@
 {
   "$type": "IINACT.Configuration, IINACT",
-  "ParseFilterMode": 0,
+  "ParseFilterMode": 2,
   "DisableDamageShield": false,
   "DisableCombinePets": false,
   "DisablePvp": false,

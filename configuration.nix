@@ -137,7 +137,7 @@
         startLimitIntervalSec = 1800;
         startLimitBurst = 5;
         serviceConfig = {
-          ExecStart = "uwsm app -- ${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
+          ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
           Restart = "on-failure";
           RestartSec = "5s";
         };
@@ -257,10 +257,20 @@
     extraGroups.vboxusers.members = [ "ayes" ];
   };
 
-  # Allow unfree packages
-  nixpkgs.config = {
-    rocmSupport = true;
-    allowUnfree = true;
+
+  nixpkgs = {
+    overlays = [
+      (final: prev: {
+        lldb = prev.lldb.overrideAttrs {
+          dontCheckForBrokenSymlinks = true;
+        };
+      })
+    ];
+
+    config = {
+      rocmSupport = true;
+      allowUnfree = true;
+    };
   };
 
   # List packages installed in system profile. To search, run:

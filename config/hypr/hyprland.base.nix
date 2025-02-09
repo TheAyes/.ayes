@@ -91,6 +91,9 @@
       allow_tearing = false;
       resize_on_border = true;
 
+      snap = {
+        enable = true;
+      };
     };
 
     decoration = {
@@ -135,6 +138,8 @@
 
     misc = {
       force_default_wallpaper = -1;
+      initial_workspace_tracking = 2;
+      middle_click_paste = false;
     };
 
     windowrulev2 = [
