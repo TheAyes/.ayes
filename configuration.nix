@@ -397,7 +397,7 @@
     };
 
     ollama = {
-      enable = true;
+      enable = false;
       rocmOverrideGfx = "11.0.1";
       acceleration = "rocm";
       # Optional: load models on startup
