@@ -88,7 +88,7 @@
 
 
     plymouth = {
-      enable = true;
+      enable = false;
       #theme = lib.mkForce "catppuccin-mocha";
       #themePackages = with pkgs; [
       #  catppuccin-plymouth
