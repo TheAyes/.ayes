@@ -57,7 +57,7 @@
       xivlauncher
       prismlauncher
       heroic
-      lutris
+      #lutris
 
       ## Dev Stuff
       jetbrains.idea-ultimate

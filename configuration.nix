@@ -257,7 +257,6 @@
     extraGroups.vboxusers.members = [ "ayes" ];
   };
 
-  # Allow unfree packages
   nixpkgs.config = {
     rocmSupport = true;
     allowUnfree = true;
@@ -399,13 +398,13 @@
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      package = pkgs.kdePackages.sddm;
+      #package = pkgs.kdePackages.sddm;
 
-      settings = {
+      /*settings = {
         General = {
           DefaultSession = "hyprland.desktop";
         };
-      };
+      };*/
 
       theme = "catppuccin-mocha";
     };
