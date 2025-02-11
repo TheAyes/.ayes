@@ -194,6 +194,8 @@
       enable = true;
       silent = true;
       nix-direnv.enable = true;
+
+      enableBashIntegration = false;
     };
 
     kitty = {

@@ -137,7 +137,7 @@
         startLimitIntervalSec = 1800;
         startLimitBurst = 5;
         serviceConfig = {
-          ExecStart = "uwsm app -- ${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
+          ExecStart = "${pkgs.steam}/bin/steam -nochatui -nofriendui -silent %U";
           Restart = "on-failure";
           RestartSec = "5s";
         };
