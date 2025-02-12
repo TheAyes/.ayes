@@ -2,7 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs_unstable.url = "github:FraGag/nixpkgs/lldb";
+    nixpkgs_unstable.url = "github:nixos/nixpkgs/f5ff3cf76b1875f1f6104a4d0032e2c85c6f1b3a";
     nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
     #nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
 
