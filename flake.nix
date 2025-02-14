@@ -2,8 +2,8 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs_unstable.url = "github:nixos/nixpkgs/2d55b4c15311";
-    #nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    #nixpkgs_unstable.url = "github:nixos/nixpkgs/2d55b4c15311";
+    nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
     #nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
 
