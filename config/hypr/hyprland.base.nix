@@ -142,6 +142,8 @@
 
       "fullscreen, class:^TL .+$"
       "idleinhibit fullscreen/focus, title:.*"
+
+      "stayfocused, class:^jetbrains.*$, title:^(win|Rename).*$"
     ];
 
     workspace = [
