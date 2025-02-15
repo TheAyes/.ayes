@@ -37,6 +37,10 @@
     amdgpu = {
       initrd.enable = true;
       opencl.enable = true;
+      amdvlk = {
+        enable = true;
+        support32Bit.enable = true;
+      };
     };
   };
 
@@ -320,10 +324,10 @@
       virt-manager
       uv
 
-      rocmPackages.rocblas
-      rocmPackages.hipblas
-      rocmPackages.clr
-      rocmPackages.rocminfo
+      #rocmPackages.rocblas
+      #rocmPackages.hipblas
+      #rocmPackages.clr
+      #rocmPackages.rocminfo
     ];
   };
 
