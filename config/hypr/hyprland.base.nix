@@ -40,7 +40,8 @@
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
       "$mainMod, F, fullscreen"
-      ", Print, exec, grim -g \"$(slurp)\" - | swappy -f -"
+      #", Print, exec, grim -g \"$(slurp)\" - | swappy -f -"
+      ", Print, exec, grimblast copy area"
 
       "$mainMod, Right, movefocus, r"
       "$mainMod, Left, movefocus, l"
