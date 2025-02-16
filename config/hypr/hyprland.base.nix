@@ -17,7 +17,7 @@
       "ags -c /home/ayes/.nixos/config/ags/config.js"
       "firefox"
       "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-      "vesktop"
+      "discord"
     ];
 
     input = {
@@ -40,7 +40,8 @@
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
       "$mainMod, F, fullscreen"
-      ", Print, exec, grim -g \"$(slurp)\" - | swappy -f -"
+      #", Print, exec, grim -g \"$(slurp)\" - | swappy -f -"
+      ", Print, exec, grimblast copy area --freeze"
 
       "$mainMod, Right, movefocus, r"
       "$mainMod, Left, movefocus, l"
@@ -147,6 +148,8 @@
 
       "fullscreen, class:^TL .+$"
       "idleinhibit fullscreen/focus, title:.*"
+
+      "stayfocused, class:^jetbrains.*$, title:^(win|Rename).*$"
     ];
 
     workspace = [

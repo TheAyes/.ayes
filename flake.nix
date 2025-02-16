@@ -2,6 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
+    #nixpkgs_unstable.url = "github:nixos/nixpkgs/2d55b4c15311";
     nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
     #nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
@@ -11,7 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs_unstable";
     };
 
-    stylix.url = "github:mikilio/stylix/pr-142";
+    stylix.url = "github:danth/stylix";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprsome.url = "github:sopa0/hyprsome";

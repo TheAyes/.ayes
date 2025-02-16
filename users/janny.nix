@@ -57,7 +57,7 @@
       xivlauncher
       prismlauncher
       heroic
-      lutris
+      #lutris
 
       ## Dev Stuff
       jetbrains.idea-ultimate
@@ -383,7 +383,7 @@
 
     cliphist = {
       enable = true;
-      systemdTarget = "hyprland-session.target";
+      systemdTargets = "hyprland-session.target";
     };
 
     hypridle = {

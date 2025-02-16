@@ -64,7 +64,7 @@
       xivlauncher
       prismlauncher
       heroic
-      lutris
+      #lutris
 
       ## Dev Stuff
       jetbrains.idea-ultimate
@@ -194,6 +194,8 @@
       enable = true;
       silent = true;
       nix-direnv.enable = true;
+
+      enableBashIntegration = false;
     };
 
     kitty = {
@@ -213,9 +215,14 @@
     };
 
     nixcord = {
-      enable = true; # enable Nixcord. Also installs discord package
-      discord.enable = false;
-      vesktop.enable = true;
+      enable = true;
+      discord = {
+        enable = true;
+        package = pkgs.discord-canary;
+        vencord.enable = true;
+      };
+
+      #vesktop.enable = true;
 
       config = {
         useQuickCss = true; # use out quickCSS
@@ -486,7 +493,7 @@
 
     cliphist = {
       enable = true;
-      systemdTarget = "hyprland-session.target";
+      systemdTargets = "hyprland-session.target";
     };
 
     hypridle = {
