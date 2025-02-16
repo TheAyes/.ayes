@@ -27,7 +27,8 @@
       enable = true;
       enable32Bit = true;
 
-      extraPackages = [
+      extraPackages = with pkgs; [
+        #clinfo
         /*
         pkgs.amdvlk
         */
@@ -119,6 +120,21 @@
         wantedBy = [ "multi-user.target" ];
       };
     };
+
+    tmpfiles.rules =
+      let
+        rocmEnv = pkgs.symlinkJoin {
+          name = "rocm-combined";
+          paths = with pkgs.rocmPackages; [
+            rocblas
+            hipblas
+            clr
+          ];
+        };
+      in
+      [
+        "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+      ];
 
     /*tmpfiles.rules =
       let
@@ -499,6 +515,11 @@
     hyprland = {
       enable = true;
       withUWSM = true;
+    };
+
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [ rocmPackages.llvm.llvm ];
     };
 
     steam = {
