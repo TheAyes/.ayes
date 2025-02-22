@@ -1,58 +1,75 @@
 {
-  description = "Nixos config flake";
-
   inputs = {
-    #nixpkgs_unstable.url = "github:nixos/nixpkgs/2d55b4c15311";
-    nixpkgs_unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs_stable.url = "github:nixos/nixpkgs/nixos-24.11";
-    #nixpkgs_workaround.url = "github:mschwaig/nixpkgs/comically-bad-rocm-workaround";
-
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs_unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+    flake-parts.url = "github:hercules-ci/flake-parts";
 
     stylix.url = "github:danth/stylix";
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hyprsome.url = "github:sopa0/hyprsome";
-    ags.url = "github:Aylur/ags/v1";
-
     nixcord.url = "github:kaylorben/nixcord";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
-    { nixpkgs_unstable
-    , home-manager
+    inputs @ { nixpkgs
+    , flake-parts
     , ...
-    } @ inputs:
-    let
-    in
-    {
-      nixosConfigurations = {
-        io = nixpkgs_unstable.lib.nixosSystem {
-          specialArgs = { inherit inputs; pkgs_stable = inputs.nixpkgs_stable.legacyPackages."x86_64-linux"; };
+    }:
+    flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, flake-parts-lib, ... }: {
+      imports = [
+        ./modules/flake/host-manager
+      ];
 
-          modules = [
+      systems = [
+        "x86_64-linux"
+      ];
 
-            ./configuration.nix
+      host-manager = {
+        enable = true;
+        hosts = {
+          io = {
+            enable = true;
 
-            inputs.stylix.nixosModules.stylix
+            home-manager = {
+              enable = true;
+              sharedModules = [ inputs.nixcord.homeManagerModules.nixcord ];
+            };
 
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.ayes = import ./users/ayes.nix;
-              home-manager.users.janny = import ./users/janny.nix;
+            users = {
+              ayes = {
+                enable = true;
+                home-manager.enable = true;
+                groups = [ "networkmanager" "wheel" ];
+              };
 
-              home-manager.sharedModules = [ inputs.nixcord.homeManagerModules.nixcord ];
-              home-manager.extraSpecialArgs = { inherit inputs; };
-            }
-          ];
+              janny = {
+                enable = true;
+                home-manager.enable = true;
+              };
+            };
+          };
+
+          leda = {
+            enable = true;
+
+            extraModules = [
+              inputs.nixos-wsl.nixosModules.default
+            ];
+          };
         };
       };
 
-      #devShells.${system}.default = import ./environments/development.nix nixpkgs.legacyPackages.${system};
-    };
+      perSystem =
+        { pkgs
+        , config
+        , ...
+        }: {
+          formatter = pkgs.nixpkgs-fmt;
+        };
+    });
 }
