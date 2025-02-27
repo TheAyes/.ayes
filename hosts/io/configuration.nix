@@ -1,4 +1,9 @@
-{ hostname, pkgs, config, ... }: {
+{
+  hostname,
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
 
@@ -25,15 +30,15 @@
   ##################################
   ## Services
   ##################################
-  services = { };
+  services = {};
 
   ##################################
   ## Networking
   ##################################
-  networking = { };
+  networking = {};
 
   ##################################
-  ## Ssecurity
+  ## Security
   ##################################
   security = {
     sudo.wheelNeedsPassword = false;
@@ -42,5 +47,5 @@
   ##################################
   ## Boot
   ##################################
-  boot = { };
+  boot = {};
 }
