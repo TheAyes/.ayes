@@ -16,6 +16,13 @@
         type = with lib.types; attrsOf (submoduleWith { modules = [ ./host.nix ]; });
         default = { };
       };
+
+      home-manager = {
+        globalModules = lib.mkOption {
+          type = with lib.types; listOf deferredModule;
+          default = [ ];
+        };
+      };
     };
   };
 
@@ -46,7 +53,7 @@
                     home-manager = {
                       useGlobalPkgs = true;
                       useUserPackages = true;
-                      sharedModules = hostConfig.home-manager.sharedModules;
+                      sharedModules = hostConfig.home-manager.sharedModules ++ config.host-manager.home-manager.globalModules;
 
                       users = lib.concatMapAttrs
                         (username: userConfig: {

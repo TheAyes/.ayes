@@ -9,4 +9,6 @@
     kolourpaint
     kcalc
   ];
+
+  xdg.icons.fallbackCursorThemes = [ "breeze_cursors" ];
 }

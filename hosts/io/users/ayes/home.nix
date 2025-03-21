@@ -12,5 +12,13 @@
     jetbrains.webstorm
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
+
+    bun
+
+    revolt-desktop
   ];
+
+  programs = {
+    bitwig.enable = true;
+  };
 }
