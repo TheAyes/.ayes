@@ -11,5 +11,11 @@
     xivlauncher
     prismlauncher
     heroic
+
+    # Music Production
+    bitwig-studio
+
+    # Documentation and Writing
+    obsidian
   ];
 }
