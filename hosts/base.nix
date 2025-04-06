@@ -8,6 +8,7 @@
       allowUnfree = lib.mkDefault true;
     };
   };
+
   nix =
     let
       flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
@@ -17,7 +18,7 @@
         experimental-features = lib.mkDefault "nix-command flakes";
         flake-registry = lib.mkDefault "";
       };
-      channel.enable = lib.mkDefault false;
+      #channel.enable = lib.mkDefault false;
 
       # Opinionated: make flake registry and nix path match flake inputs
       registry = lib.mapAttrs (_: flake: { inherit flake; }) flakeInputs;

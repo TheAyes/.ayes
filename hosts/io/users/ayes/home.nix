@@ -1,5 +1,7 @@
 { user
 , pkgs
+, system
+, inputs
 , ...
 }: {
   imports = [
@@ -15,7 +17,12 @@
 
     bun
 
-    revolt-desktop
+    #revolt-desktop
+    blockbench
+
+    proton-pass
+
+    inputs.zen-browser.packages.${system}.default
   ];
 
   programs = {
