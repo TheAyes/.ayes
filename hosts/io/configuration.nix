@@ -70,6 +70,15 @@
     partition-manager.enable = true;
     firefox.enable = true;
     kdeconnect.enable = true;
+    obs-studio = {
+      enable = true;
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-replay-source
+        advanced-scene-switcher
+        obs-pipewire-audio-capture
+      ];
+    };
   };
 
   ##################################
@@ -130,17 +139,5 @@
         };
       }
     ];
-  };
-
-  ## Misc
-  musnix = {
-    enable = true;
-
-    kernel = {
-      realtime = true;
-      packages = pkgs.linuxPackages_latest_rt;
-    };
-
-    rtirq.enable = true;
   };
 }

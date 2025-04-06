@@ -3,7 +3,7 @@
     enable = true;
     discord = {
       enable = true;
-      package = pkgs.discord-canary;
+      package = pkgs.discord;
       vencord.enable = true;
     };
 

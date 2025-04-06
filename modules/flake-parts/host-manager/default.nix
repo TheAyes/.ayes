@@ -53,6 +53,10 @@
                     home-manager = {
                       useGlobalPkgs = true;
                       useUserPackages = true;
+                      extraSpecialArgs = {
+                        inherit inputs;
+                        system = hostConfig.systemType;
+                      };
                       sharedModules = hostConfig.home-manager.sharedModules ++ config.host-manager.home-manager.globalModules;
 
                       users = lib.concatMapAttrs
@@ -80,6 +84,7 @@
               system = hostConfig.systemType;
               specialArgs = {
                 inherit inputs hostname;
+                system = hostConfig.systemType;
               };
             }
         )
