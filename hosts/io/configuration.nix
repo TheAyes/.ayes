@@ -8,7 +8,10 @@
     ../../presets/nixos/audio/pipewire.nix
     ../../presets/nixos/networking/default.nix
     ../../presets/nixos/security
+
+    ../../presets/nixos/hardware/amdgpu.nix
     ../../presets/nixos/hardware/bluetooth.nix
+    ../../presets/nixos/hardware/logitech.nix
 
     ../../presets/nixos/locales/german.nix
 
@@ -21,10 +24,9 @@
   ## Nix
   ##################################
   nix = { };
+
   nixpkgs = {
-    config = {
-      rocmSupport = true;
-    };
+    config.rocmSupport = true;
   };
 
   ##################################
@@ -51,6 +53,9 @@
   ##################################
   environment = {
     systemPackages = with pkgs; [
+      qpwgraph
+      easyeffects
+
       wineWow64Packages.stagingFull
       winetricks
     ];
@@ -85,19 +90,6 @@
   ## Services
   ##################################
   services = {
-    udev.extraRules = ''
-      KERNEL=="rtc0", GROUP="audio"
-      KERNEL=="hpet", GROUP="audio"
-    '';
-
-    ollama = {
-      enable = true;
-      rocmOverrideGfx = "11.0.1";
-      acceleration = "rocm";
-      # Optional: load models on startup
-      loadModels = [ ];
-    };
-
     solaar = {
       enable = true; # Enable the service
       window = "hide"; # Show the window on startup (show, *hide*, only [window only])
@@ -112,32 +104,16 @@
   networking = { };
 
   ##################################
-  ## Ssecurity
+  ## Security
   ##################################
-  security = {
-    sudo.wheelNeedsPassword = false;
-    rtkit.enable = true;
-  };
+  security = { };
 
   ##################################
   ## Boot
   ##################################
   boot = {
-    #kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_zen;
 
-    kernelModules = [
-      "amdgpu"
-    ];
 
-    kernelPatches = [
-      {
-        name = "amdgpu-ignore-ctx-privileges";
-        patch = pkgs.fetchpatch {
-          name = "cap_sys_nice_begone.patch";
-          url = "https://github.com/Frogging-Family/community-patches/raw/master/linux61-tkg/cap_sys_nice_begone.mypatch";
-          hash = "sha256-Y3a0+x2xvHsfLax/uwycdJf3xLxvVfkfDVqjkxNaYEo=";
-        };
-      }
-    ];
   };
 }

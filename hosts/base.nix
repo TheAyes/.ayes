@@ -18,14 +18,22 @@
         experimental-features = lib.mkDefault "nix-command flakes";
         flake-registry = lib.mkDefault "";
       };
-      #channel.enable = lib.mkDefault false;
+      channel.enable = lib.mkForce false;
 
       # Opinionated: make flake registry and nix path match flake inputs
       registry = lib.mapAttrs (_: flake: { inherit flake; }) flakeInputs;
       nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
     };
 
-  programs.git.enable = lib.mkDefault true;
+  programs = {
+    nix-index = {
+      enable = true;
+      enableFishIntegration = true;
+    };
+    command-not-found.enable = false;
+
+    git.enable = lib.mkDefault true;
+  };
 
   environment.systemPackages = with pkgs; [
     micro

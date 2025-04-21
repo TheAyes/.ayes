@@ -10,6 +10,7 @@
     # Gaming
     xivlauncher
     prismlauncher
+    graalvm-ce
     heroic
 
     # Music Production
