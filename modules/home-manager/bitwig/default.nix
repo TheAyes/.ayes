@@ -18,6 +18,7 @@
 
       # VST's
       vital
+      decent-sampler
     ];
   };
 }

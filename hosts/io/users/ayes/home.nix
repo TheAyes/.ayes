@@ -16,11 +16,13 @@
     jetbrains.idea-ultimate
 
     bun
+    uv
 
     #revolt-desktop
     blockbench
 
     proton-pass
+
 
     inputs.zen-browser.packages.${system}.default
   ];
