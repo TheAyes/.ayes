@@ -24,10 +24,9 @@
 
     file = {
       "xiv-config" =  {
-        enable = false; # Broken until hm decides to actual make it useful
-        recursive = true;
+        enable = true;
 
-        source = "./external/xlcore";
+        source = ./external/xlcore;
         target = ".xlcore";
       };
     };
