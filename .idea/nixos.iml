@@ -6,6 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/docs/.obsidian/plugins" />
       <excludeFolder url="file://$MODULE_DIR$/docs/.obsidian/themes" />
       <excludeFolder url="file://$MODULE_DIR$/result" />
+      <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore-backup/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore-backup/wineprefix/drive_c/windows/logs" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
