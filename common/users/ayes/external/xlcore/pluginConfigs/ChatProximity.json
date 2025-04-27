@@ -1,0 +1,7 @@
+{
+  "$type": "ChatProximity.Configuration, ChatProximity",
+  "Version": 0,
+  "RecolorSayChat": true,
+  "VerticalIncrease": true,
+  "AnonymiseNames": true
+}

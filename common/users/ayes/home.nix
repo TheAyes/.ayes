@@ -6,17 +6,30 @@
     ../../../presets/home-manager/programs/direnv.nix
   ];
 
-  home.packages = with pkgs; [
-    # Gaming
-    xivlauncher
-    prismlauncher
-    graalvm-ce
-    heroic
+  home = {
+    pointerCursor = {
+      enable = true;
+      gtk.enable = true;
+      x11.enable = true;
+      dotIcons.enable = true;
 
-    # Music Production
-    bitwig-studio
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+    };
 
-    # Documentation and Writing
-    obsidian
-  ];
+    packages = with pkgs; [
+      # Documentation and Writing
+      obsidian
+    ];
+
+    file = {
+      "xiv-config" =  {
+        enable = false; # Broken until hm decides to actual make it useful
+        recursive = true;
+
+        source = "./external/xlcore";
+        target = ".xlcore";
+      };
+    };
+  };
 }

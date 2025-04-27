@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    godot-fix.url = "github:nixos/nixpkgs?rev=e32a27edc351e188df549efdcee3ca11bdb4af28";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -38,8 +39,6 @@
 
         home-manager = { };
 
-
-
         hosts = {
           io = {
             enable = true;
@@ -53,7 +52,7 @@
 
               # Modules for all users
               sharedModules = [
-                inputs.nixcord.homeManagerModules.nixcord
+                inputs.nixcord.homeModules.nixcord
                 ./modules/home-manager/bitwig
               ];
             };

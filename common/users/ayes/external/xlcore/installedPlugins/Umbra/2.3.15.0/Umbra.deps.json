@@ -1,0 +1,152 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Umbra/2.3.15": {
+        "dependencies": {
+          "DalamudPackager": "12.0.0",
+          "DotNet.ReproducibleBuilds": "1.2.25",
+          "Umbra.Common": "1.0.0",
+          "Umbra.Game": "1.0.1",
+          "Una.Drawing": "1.0.0"
+        },
+        "runtime": {
+          "Umbra.dll": {}
+        }
+      },
+      "DalamudPackager/12.0.0": {},
+      "DotNet.ReproducibleBuilds/1.2.25": {},
+      "SkiaSharp/3.118.0-preview.1.2": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.118.0-preview.1.2",
+          "SkiaSharp.NativeAssets.macOS": "3.118.0-preview.1.2"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "assemblyVersion": "3.118.0.0",
+            "fileVersion": "3.118.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.118.0-preview.1.2": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.118.0-preview.1.2": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Umbra.Common/1.0.0": {
+        "runtime": {
+          "Umbra.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Umbra.Game/1.0.1": {
+        "dependencies": {
+          "Umbra.Common": "1.0.0"
+        },
+        "runtime": {
+          "Umbra.Game.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "Una.Drawing/1.0.0": {
+        "dependencies": {
+          "SkiaSharp": "3.118.0-preview.1.2"
+        },
+        "runtime": {
+          "Una.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Umbra/2.3.15": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DalamudPackager/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J5TJLV3f16T/E2H2P17ClWjtfEBPpq3yxvqW46eN36JCm6wR+EaoaYkqG9Rm5sHqs3/nK/vKjWWyvEs/jhKoXw==",
+      "path": "dalamudpackager/12.0.0",
+      "hashPath": "dalamudpackager.12.0.0.nupkg.sha512"
+    },
+    "DotNet.ReproducibleBuilds/1.2.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCXiw7BCxHJ8pF6wPepRUddlh2dlQlbr81gXA72hdk4FLHkKXas7EH/n+fk5UCA/YfMqG1Z6XaPiUjDbUNBUzg==",
+      "path": "dotnet.reproduciblebuilds/1.2.25",
+      "hashPath": "dotnet.reproduciblebuilds.1.2.25.nupkg.sha512"
+    },
+    "SkiaSharp/3.118.0-preview.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ee/n3BGXKjwPGPr4/uOtoAsUWHUrqMnyyJrdxB5NCZ1VjuJA5u++CtY5W0zziBhzpmb8llws+Vgop1KNv9zsQ==",
+      "path": "skiasharp/3.118.0-preview.1.2",
+      "hashPath": "skiasharp.3.118.0-preview.1.2.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/3.118.0-preview.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-08uDbkHlSe0NhMmVn9V+KenxiGWU79KONBE3nd+gPh6IwXMSQbWS/j5Di3Gg5vVKDxI8n+m3igBDqQy4ngW9IA==",
+      "path": "skiasharp.nativeassets.macos/3.118.0-preview.1.2",
+      "hashPath": "skiasharp.nativeassets.macos.3.118.0-preview.1.2.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/3.118.0-preview.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pjcuvrYCJ74gPdz+W327JcwJKyy5QVXOfVXxAKnih+n1d8b6A0m41LNqlOMhUzfbpl4TDnqB19KraMWZqiaVjg==",
+      "path": "skiasharp.nativeassets.win32/3.118.0-preview.1.2",
+      "hashPath": "skiasharp.nativeassets.win32.3.118.0-preview.1.2.nupkg.sha512"
+    },
+    "Umbra.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Umbra.Game/1.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Una.Drawing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
