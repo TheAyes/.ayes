@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NoSoliciting</name>
+    </assembly>
+    <members>
+        <member name="M:NoSoliciting.Interface.Report.SetUpReportModal(NoSoliciting.Message)">
+             <summary>
+            
+             </summary>
+             <param name="message"></param>
+             <returns>true if modal is closing</returns>
+        </member>
+        <member name="T:NoSoliciting.Resources.Language">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.AdvancedMode">
+            <summary>
+              Looks up a localized string similar to Advanced mode.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.AdvancedWarning1">
+            <summary>
+              Looks up a localized string similar to Do not change advanced settings unless you know what you are doing..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.AdvancedWarning2">
+            <summary>
+              Looks up a localized string similar to The machine learning model was trained with certain channels in mind..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ChatFilters">
+            <summary>
+              Looks up a localized string similar to Chat filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.CommunityCategory">
+            <summary>
+              Looks up a localized string similar to Community ads.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.CommunityDescription">
+            <summary>
+              Looks up a localized string similar to Advertisements for general-purpose communities, generally Discord servers.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.EnableCustomChatFilters">
+            <summary>
+              Looks up a localized string similar to Enable custom chat filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.EnableCustomPartyFinderFilters">
+            <summary>
+              Looks up a localized string similar to Enable custom Party Finder filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FilterIlvlPfs">
+            <summary>
+              Looks up a localized string similar to Filter PFs with item level above maximum.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FilterPrivatePfs">
+            <summary>
+              Looks up a localized string similar to Apply filters to private Party Finder listings.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FiltersTab">
+            <summary>
+              Looks up a localized string similar to Filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FluffCategory">
+            <summary>
+              Looks up a localized string similar to Fluff.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FluffDescription">
+            <summary>
+              Looks up a localized string similar to Messages that don&apos;t fall into other categories and are not for content (Party Finder).
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FreeCompanyCategory">
+            <summary>
+              Looks up a localized string similar to Free Company ads.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.FreeCompanyDescription">
+            <summary>
+              Looks up a localized string similar to Advertisements for Free Companies.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.LogFilteredMessages">
+            <summary>
+              Looks up a localized string similar to Log filtered messages.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.LogFilteredPfs">
+            <summary>
+              Looks up a localized string similar to Log filtered PFs.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusDownloadingManifest">
+            <summary>
+              Looks up a localized string similar to Downloading model manifest.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusDownloadingModel">
+            <summary>
+              Looks up a localized string similar to Downloading model.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusInitialised">
+            <summary>
+              Looks up a localized string similar to Initialised.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusInitialising">
+            <summary>
+              Looks up a localized string similar to Initialising model and classifier.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusPreparing">
+            <summary>
+              Looks up a localized string similar to Preparing to update model.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelStatusUninitialised">
+            <summary>
+              Looks up a localized string similar to Uninitialised.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelTab">
+            <summary>
+              Looks up a localized string similar to Model.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelTabError">
+            <summary>
+              Looks up a localized string similar to Last error: {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelTabStatus">
+            <summary>
+              Looks up a localized string similar to Model status: {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ModelTabVersion">
+            <summary>
+              Looks up a localized string similar to Version: {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.NormalCategory">
+            <summary>
+              Looks up a localized string similar to Normal messages.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.NormalDescription">
+            <summary>
+              Looks up a localized string similar to Normal messages that should not be filtered.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.OtherFiltersTab">
+            <summary>
+              Looks up a localized string similar to Other filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.OtherGameLanguage">
+            <summary>
+              Looks up a localized string similar to Use the game&apos;s language setting instead of Dalamud&apos;s.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.OtherTab">
+            <summary>
+              Looks up a localized string similar to Other.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.PartyFinderFilters">
+            <summary>
+              Looks up a localized string similar to Party Finder filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.PhishingCategory">
+            <summary>
+              Looks up a localized string similar to Phishing messages.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.PhishingDescription">
+            <summary>
+              Looks up a localized string similar to Messages trying to trick you into revealing your account details in order to steal your account.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RegularExpressionsToFilter">
+            <summary>
+              Looks up a localized string similar to Regular expressions to filter.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportChatTab">
+            <summary>
+              Looks up a localized string similar to Chat.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnChannel">
+            <summary>
+              Looks up a localized string similar to Channel.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnDescription">
+            <summary>
+              Looks up a localized string similar to Description.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnHost">
+            <summary>
+              Looks up a localized string similar to Host.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnMessage">
+            <summary>
+              Looks up a localized string similar to Message.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnReason">
+            <summary>
+              Looks up a localized string similar to Reason.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnSender">
+            <summary>
+              Looks up a localized string similar to Sender.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportColumnTimestamp">
+            <summary>
+              Looks up a localized string similar to Timestamp.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportHelp">
+            <summary>
+              Looks up a localized string similar to Click on one of the entries below to report it to the developer as miscategorised..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.Reporting">
+            <summary>
+              Looks up a localized string similar to {0} reporting.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalCancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalClassificationOther">
+            <summary>
+              Looks up a localized string similar to Other.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalClassificationOtherDescription">
+            <summary>
+              Looks up a localized string similar to Messages that don&apos;t fall under any of the other categories..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalCopy">
+            <summary>
+              Looks up a localized string similar to Copy to clipboard.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalDisabledBadModel">
+            <summary>
+              Looks up a localized string similar to Reporting is disabled because your ML model was not functioning when you saw this message..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalDisabledCustom">
+            <summary>
+              Looks up a localized string similar to You cannot report messages filtered because of a custom filter..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalDisabledFilterNotEnabled">
+            <summary>
+              Looks up a localized string similar to Reporting is disabled because you weren&apos;t filtering for this kind of message at the time you saw it..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalDisabledItemLevel">
+            <summary>
+              Looks up a localized string similar to You cannot report messages filtered because of item level..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalDisabledSameClassification">
+            <summary>
+              Looks up a localized string similar to Reporting is disabled because you must choose a different classification than the original..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalGoToCustomButton">
+            <summary>
+              Looks up a localized string similar to Go to custom filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalHelp1">
+            <summary>
+              Looks up a localized string similar to Reporting this message will let the developer know that you think this message was incorrectly classified..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalHelp2">
+            <summary>
+              Looks up a localized string similar to NoSoliciting only works for English messages. Do not report non-English messages..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalOriginalClassification">
+            <summary>
+              Looks up a localized string similar to This message&apos;s original classification: {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalReport">
+            <summary>
+              Looks up a localized string similar to Report.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalSuggestedClassification">
+            <summary>
+              Looks up a localized string similar to How do you think this message should have been classified?.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportModalTitle">
+            <summary>
+              Looks up a localized string similar to Report to {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportPartyFinderTab">
+            <summary>
+              Looks up a localized string similar to Party Finder.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportStatusFailure">
+            <summary>
+              Looks up a localized string similar to failed to send.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportStatusInProgress">
+            <summary>
+              Looks up a localized string similar to sending.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportStatusMessage">
+            <summary>
+              Looks up a localized string similar to Last report status: {0}.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportStatusSuccessful">
+            <summary>
+              Looks up a localized string similar to sent successfully.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportStatusUnknown">
+            <summary>
+              Looks up a localized string similar to unknown.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportToastFailure">
+            <summary>
+              Looks up a localized string similar to Failed to report Party Finder listing hosted by {0}..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportToastSuccess">
+            <summary>
+              Looks up a localized string similar to Party Finder listing hosted by {0} reported successfully..
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ReportToNoSoliciting">
+            <summary>
+              Looks up a localized string similar to Report to NoSoliciting.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RmtContentCategory">
+            <summary>
+              Looks up a localized string similar to RMT (content).
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RmtContentDescription">
+            <summary>
+              Looks up a localized string similar to Real-money trade involving content (also known as content sellers).
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RmtGilCategory">
+            <summary>
+              Looks up a localized string similar to RMT (gil).
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RmtGilDescription">
+            <summary>
+              Looks up a localized string similar to Real-money trade involving gil or items (also known as RMT bots).
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RoleplayingCategory">
+            <summary>
+              Looks up a localized string similar to Roleplaying ads.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.RoleplayingDescription">
+            <summary>
+              Looks up a localized string similar to Advertisements for personal RP, RP communities, venues, or anything else related to roleplaying.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.SaveFilters">
+            <summary>
+              Looks up a localized string similar to Save filters.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.Settings">
+            <summary>
+              Looks up a localized string similar to {0} settings.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.ShowReportingWindow">
+            <summary>
+              Looks up a localized string similar to Show reporting window.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.StaticCategory">
+            <summary>
+              Looks up a localized string similar to Static recruitment.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.StaticDescription">
+            <summary>
+              Looks up a localized string similar to Statics looking for members or players looking for a static.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.StaticSubCategory">
+            <summary>
+              Looks up a localized string similar to Static substitutes.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.StaticSubDescription">
+            <summary>
+              Looks up a localized string similar to Statics looking for fill-ins of missing members for clears.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.SubstringsToFilter">
+            <summary>
+              Looks up a localized string similar to Substrings to filter.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.TradeCategory">
+            <summary>
+              Looks up a localized string similar to Trade ads.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.TradeDescription">
+            <summary>
+              Looks up a localized string similar to Messages advertising trading items or services for gil, such as omnicrafters looking for work or people selling rare items off the market board.
+            </summary>
+        </member>
+        <member name="P:NoSoliciting.Resources.Language.UpdateModel">
+            <summary>
+              Looks up a localized string similar to Update model.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,32 @@
+{
+  "$type": "Cammy.Configuration, Cammy",
+  "Presets": [
+    {
+      "$type": "Cammy.CameraConfigPreset, Cammy",
+      "Name": "New Preset",
+      "UseStartOnLogin": false,
+      "UseStartZoom": false,
+      "StartZoom": 6.0,
+      "MinZoom": 1.5,
+      "MaxZoom": 57.34,
+      "ZoomDelta": 0.75,
+      "UseStartFoV": false,
+      "StartFoV": 0.78,
+      "MinFoV": 0.69,
+      "MaxFoV": 0.78,
+      "FoVDelta": 0.08726647,
+      "MinVRotation": -1.48353,
+      "MaxVRotation": 0.785398,
+      "HeightOffset": 0.0,
+      "SideOffset": 0.0,
+      "Tilt": 0.0,
+      "LookAtHeightOffset": -0.219522,
+      "ViewBobMode": 0,
+      "ConditionSet": -1
+    }
+  ],
+  "EnableCameraNoClippy": false,
+  "DeathCamMode": 0,
+  "PluginVersion": "2.1.0.10",
+  "Version": 0
+}

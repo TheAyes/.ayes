@@ -1,0 +1,10 @@
+{
+  "NbStatusEffects": 30,
+  "LimitOnlyInCombat": false,
+  "FilterOnlyInCombat": false,
+  "FilterPersonalStatus": true,
+  "FilterTarget": true,
+  "FilterFocusTarget": true,
+  "FilteredStatusCustom": [],
+  "Version": 1
+}

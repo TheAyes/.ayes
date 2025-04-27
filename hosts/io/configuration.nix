@@ -54,7 +54,7 @@
   environment = {
     systemPackages = with pkgs; [
       qpwgraph
-      easyeffects
+      #easyeffects
 
       wineWow64Packages.stagingFull
       winetricks
@@ -113,7 +113,5 @@
   ##################################
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
-
-
   };
 }
