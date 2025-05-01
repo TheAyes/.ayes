@@ -18,6 +18,7 @@
     # Program Modules
     ../../presets/nixos/programs/steam.nix
     ../../presets/nixos/programs/envision.nix
+    ../../presets/nixos/programs/lact.nix
   ];
 
   ##################################
@@ -54,9 +55,10 @@
   environment = {
     systemPackages = with pkgs; [
       qpwgraph
+
       #easyeffects
 
-      wineWow64Packages.stagingFull
+      wineWowPackages.yabridge
       winetricks
     ];
   };
@@ -95,6 +97,12 @@
       window = "hide"; # Show the window on startup (show, *hide*, only [window only])
       batteryIcons = "regular"; # Which battery icons to use (*regular*, symbolic, solaar)
       extraArgs = ""; # Extra arguments to pass to solaar on startup
+    };
+
+    ollama = {
+      enable = true;
+      acceleration = "rocm";
+      rocmOverrideGfx = "gfx1101";
     };
   };
 
