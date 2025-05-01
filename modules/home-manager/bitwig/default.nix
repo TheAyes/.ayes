@@ -11,14 +11,16 @@
     home.packages = with pkgs; [
       config.programs.bitwig.package
 
+      yabridge
+      yabridgectl
       /*(yabridge.override { wine = wineWowPackages.waylandFull; })
       (yabridgectl.override { wine = wineWowPackages.waylandFull; })*/
-
-
 
       # VST's
       vital
       decent-sampler
     ];
+
+
   };
 }

@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -24,15 +24,20 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/home/ayes/projects" =
+    { device = "/dev/disk/by-uuid/0aac6061-404b-4749-b9f6-ff0958a33c74";
+      fsType = "ext4";
+    };
+
   fileSystems."/games" =
     { device = "/dev/disk/by-uuid/8da931bf-76ed-40b6-a030-70647e755c1a";
       fsType = "ext4";
     };
 
-  fileSystems."/home/ayes/projects" =
-    { device = "/dev/disk/by-uuid/0aac6061-404b-4749-b9f6-ff0958a33c74";
-      fsType = "ext4";
-    };
+  fileSystems."/nix-temp" = {
+    device = "/dev/disk/by-uuid/c88d9ce7-8aec-4be8-ba0f-501f86194066";
+    fsType = "ext4";
+  };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/bedd70b9-1e99-4ee2-90d7-7783c8fdfede"; }
