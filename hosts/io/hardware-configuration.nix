@@ -8,39 +8,44 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/3ede1d8f-dffa-42eb-964f-63e6bad2c448";
+    { device = "/dev/disk/by-uuid/77c30c8c-2b73-4596-ac6e-44ba4cf606a5";
+      fsType = "ext4";
+    };
+
+  fileSystems."/nix" =
+    { device = "/dev/disk/by-uuid/a1b38f00-6ecc-44db-8f2f-6e13d880eb19";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/C959-A808";
+    { device = "/dev/disk/by-uuid/4213-C231";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/home/ayes/projects" =
-    { device = "/dev/disk/by-uuid/0aac6061-404b-4749-b9f6-ff0958a33c74";
+  fileSystems."/home" =
+    { device = "/dev/disk/by-uuid/215985a5-1a1f-441e-9399-c1fd1ecfc761";
       fsType = "ext4";
     };
 
-  fileSystems."/games" =
+  fileSystems."/mnt/games" =
     { device = "/dev/disk/by-uuid/8da931bf-76ed-40b6-a030-70647e755c1a";
       fsType = "ext4";
     };
 
-  fileSystems."/nix-temp" = {
-    device = "/dev/disk/by-uuid/c88d9ce7-8aec-4be8-ba0f-501f86194066";
-    fsType = "ext4";
-  };
+  fileSystems."/mnt/projects" =
+    { device = "/dev/disk/by-uuid/df4ccd26-7eee-4410-a0e4-05fd70f5d633";
+      fsType = "ext4";
+    };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/bedd70b9-1e99-4ee2-90d7-7783c8fdfede"; }
+    [ { device = "/dev/disk/by-uuid/b606395b-1c6c-4289-82c8-11391b40e501"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
