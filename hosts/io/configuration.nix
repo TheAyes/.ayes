@@ -17,7 +17,7 @@
 
     # Program Modules
     ../../presets/nixos/programs/steam.nix
-    ../../presets/nixos/programs/envision.nix
+    #../../presets/nixos/programs/envision.nix
     ../../presets/nixos/programs/lact.nix
   ];
 
@@ -31,35 +31,23 @@
   };
 
   ##################################
-  ## Filesystems
-  ##################################
-  fileSystems = {
-    "/games" = {
-      enable = true;
-      neededForBoot = false;
-      device = "/dev/disk/by-uuid/8da931bf-76ed-40b6-a030-70647e755c1a";
-      fsType = "ext4";
-    };
-
-    "/home/ayes/projects" = {
-      enable = true;
-      neededForBoot = false;
-      device = "/dev/disk/by-uuid/0aac6061-404b-4749-b9f6-ff0958a33c74";
-      fsType = "ext4";
-    };
-  };
-
-  ##################################
   ## Environment
   ##################################
   environment = {
     systemPackages = with pkgs; [
       qpwgraph
 
-      #easyeffects
-
-      wineWowPackages.yabridge
+      wineWowPackages.staging
       winetricks
+    ];
+  };
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      portaudio
+      stdenv.cc.cc.lib
+      rocmPackages.llvm.llvm
     ];
   };
 
@@ -75,7 +63,7 @@
   ##################################
   programs = {
     partition-manager.enable = true;
-    firefox.enable = true;
+    firefox.enable = false;
     kdeconnect.enable = true;
     obs-studio = {
       enable = true;
@@ -85,6 +73,23 @@
         advanced-scene-switcher
         obs-pipewire-audio-capture
       ];
+    };
+    foot = {
+      enable = true;
+      theme = "catppuccin-mocha";
+      settings = {
+        main = {
+         font = "FreeMono:size=11";
+        };
+
+        scrollback = {
+         lines = 100000;
+        };
+
+        colors = {
+          #alpha = 0.8;
+        };
+      };
     };
   };
 
