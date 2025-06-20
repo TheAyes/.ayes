@@ -16,7 +16,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
-*.cer
 result
 result-*
 .DS_Store
