@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   imports = [
     ./programs/git.nix
 
@@ -17,13 +17,17 @@
       package = pkgs.bibata-cursors;
     };
 
+    sessionVariables = {
+      GIT_MERGE_AUTOEDIT = "no";
+    };
+
     packages = with pkgs; [
       # Documentation and Writing
       obsidian
     ];
 
     file = {
-      "xiv-config" =  {
+      "xiv-config" = {
         enable = true;
 
         source = ./external/xlcore;

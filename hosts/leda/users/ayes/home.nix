@@ -10,14 +10,15 @@
   ];
 
   home.packages = with pkgs; [
-    jetbrains.webstorm
-    jetbrains.pycharm-professional
-    jetbrains.idea-ultimate
+    #jetbrains.webstorm
+    #jetbrains.pycharm-professional
+    #jetbrains.idea-ultimate
 
     bun
+    lazygit
 
-    proton-pass
+    #proton-pass
 
-    inputs.zen-browser.packages.${system}.default
+    #inputs.zen-browser.packages.${system}.default
   ];
 }
