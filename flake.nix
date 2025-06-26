@@ -20,12 +20,16 @@
     };
   };
 
-  outputs =
-    inputs @ { nixpkgs
-    , flake-parts
-    , ...
-    }:
-    flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, flake-parts-lib, ... }: {
+  outputs = inputs @ {
+    nixpkgs,
+    flake-parts,
+    ...
+  }:
+    flake-parts.lib.mkFlake {inherit inputs;} ({
+      withSystem,
+      flake-parts-lib,
+      ...
+    }: {
       imports = [
         ./modules/flake-parts/host-manager
       ];
@@ -37,7 +41,7 @@
       host-manager = {
         enable = true;
 
-        home-manager = { };
+        home-manager = {};
 
         hosts = {
           io = {
@@ -61,19 +65,27 @@
               ayes = {
                 enable = true;
                 home-manager.enable = true;
-                groups = [ "networkmanager" "wheel" "gaming" "audio" ];
+                groups = ["networkmanager" "wheel" "gaming" "audio"];
               };
 
               janny = {
                 enable = true;
                 home-manager.enable = true;
-                groups = [ "gaming" ];
+                groups = ["gaming"];
               };
             };
           };
 
           leda = {
             enable = true;
+
+            users = {
+              ayes = {
+                enable = true;
+                home-manager.enable = true;
+                groups = ["wheel"];
+              };
+            };
 
             extraModules = [
               inputs.nixos-wsl.nixosModules.default
@@ -82,12 +94,12 @@
         };
       };
 
-      perSystem =
-        { pkgs
-        , config
-        , ...
-        }: {
-          formatter = pkgs.nixpkgs-fmt;
-        };
+      perSystem = {
+        pkgs,
+        config,
+        ...
+      }: {
+        formatter = pkgs.nixpkgs-fmt;
+      };
     });
 }
