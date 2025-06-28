@@ -1,20 +1,28 @@
 { pkgs, ... }: {
   hardware.amdgpu.opencl.enable = true;
-  hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
-  environment.systemPackages = [pkgs.clinfo];
-
-  systemd.tmpfiles.rules = let
-    rocmEnv = pkgs.symlinkJoin {
-      name = "rocm-combined";
-      paths = with pkgs.rocmPackages; [
-        rocblas
-        hipblas
-        clr
-      ];
-    };
-  in [
-    "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+  hardware.graphics.extraPackages = with pkgs; [
+    rocmPackages.clr.icd
+    rocmPackages.rocm-device-libs
+    rocmPackages.hsakmt
   ];
+  environment.systemPackages = [ pkgs.clinfo ];
+
+  systemd.tmpfiles.rules =
+    let
+      rocmEnv = pkgs.symlinkJoin {
+        name = "rocm-combined";
+        paths = with pkgs.rocmPackages; [
+          rocblas
+          hipblas
+          clr
+          rocm-device-libs
+          hsakmt
+        ];
+      };
+    in
+    [
+      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+    ];
 
   boot = {
     kernelModules = [

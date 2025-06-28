@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./programs/git.nix
+    ./programs/btop.nix
 
     ../../../presets/home-manager/programs/fish.nix
     ../../../presets/home-manager/programs/direnv.nix
