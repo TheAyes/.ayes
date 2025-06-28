@@ -1,4 +1,4 @@
-{ hostname, pkgs, config, ... }: {
+{ hostname, pkgs, config, lib, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -37,9 +37,35 @@
     systemPackages = with pkgs; [
       qpwgraph
 
+      ffmpeg
+      libopus
+      #vital
+
       wineWowPackages.staging
       winetricks
+
+      rocmPackages.rocm-device-libs
+      rocmPackages.hsakmt
     ];
+
+    variables =
+      let
+        makePluginPath = format:
+          (lib.strings.makeSearchPath format [
+            "$HOME/.nix-profile/lib"
+            "/run/current-system/sw/lib"
+            "/etc/profiles/per-user/$USER/lib"
+          ])
+          + ":$HOME/.${format}";
+      in
+      {
+        DSSI_PATH = makePluginPath "dssi";
+        LADSPA_PATH = makePluginPath "ladspa";
+        LV2_PATH = makePluginPath "lv2";
+        LXVST_PATH = makePluginPath "lxvst";
+        VST_PATH = makePluginPath "vst";
+        VST3_PATH = makePluginPath "vst3";
+      };
   };
 
   programs.nix-ld = {
@@ -62,8 +88,12 @@
   ## Programs
   ##################################
   programs = {
+
+    hyprland = { enable = true; };
     partition-manager.enable = true;
     firefox.enable = false;
+    gamemode.enable = true;
+
     kdeconnect.enable = true;
     obs-studio = {
       enable = true;
@@ -73,23 +103,6 @@
         advanced-scene-switcher
         obs-pipewire-audio-capture
       ];
-    };
-    foot = {
-      enable = true;
-      theme = "catppuccin-mocha";
-      settings = {
-        main = {
-         font = "FreeMono:size=11";
-        };
-
-        scrollback = {
-         lines = 100000;
-        };
-
-        colors = {
-          #alpha = 0.8;
-        };
-      };
     };
   };
 
@@ -109,7 +122,17 @@
       acceleration = "rocm";
       rocmOverrideGfx = "gfx1101";
     };
+
+    udev = {
+      enable = true;
+      extraRules = ''
+        ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+        ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+      '';
+    };
   };
+
+  virtualisation.docker.enable = true;
 
   ##################################
   ## Networking

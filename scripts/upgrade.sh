@@ -2,7 +2,7 @@
 DIR=$(git rev-parse --show-toplevel)
 
 nix flake update --flake "$DIR"
-nixos-rebuild build --use-remote-sudo --flake "$DIR"
+nixos-rebuild build --sudo --flake "$DIR"
 
 diff=$(nix store diff-closures /run/current-system ./result --no-warn-dirty)
 echo "$diff"
