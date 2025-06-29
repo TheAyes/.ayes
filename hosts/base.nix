@@ -38,6 +38,7 @@
   environment.systemPackages = with pkgs; [
     micro
     linuxHeaders
+    jq
   ];
 
   system.stateVersion = lib.mkForce "23.11";
