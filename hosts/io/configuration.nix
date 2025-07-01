@@ -44,6 +44,8 @@
 
       wineWowPackages.staging
       winetricks
+      bottles
+
 
       rocmPackages.rocm-device-libs
       rocmPackages.hsakmt
