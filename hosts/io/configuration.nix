@@ -46,7 +46,6 @@
       winetricks
       bottles
 
-
       rocmPackages.rocm-device-libs
       rocmPackages.hsakmt
     ];
