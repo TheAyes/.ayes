@@ -14,9 +14,11 @@
       flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
     in
     {
+      optimise.automatic = true;
       settings = {
         experimental-features = lib.mkDefault "nix-command flakes";
         flake-registry = lib.mkDefault "";
+        auto-optimise-store = true;
       };
       channel.enable = lib.mkForce false;
 

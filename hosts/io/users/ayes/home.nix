@@ -32,6 +32,7 @@
     uv
     ruff
     python312Full
+    #python312Packages.pip
     python312Packages.tkinter
 
     dotnetCorePackages.dotnet_9.sdk
