@@ -11,21 +11,22 @@
     ./nixcord.nix
   ];
 
-  home.packages = with pkgs; [
-    # Gaming
-    #xivlauncher
-    prismlauncher
-    graalvm-ce
-    heroic
+  home = {
+    packages = with pkgs; [
+      # Gaming
+      #xivlauncher
+      prismlauncher
+      graalvm-ce
+      heroic
 
-    # Music Production
-    bitwig-studio
+      # Music Production
+      bitwig-studio
 
-    jetbrains.webstorm
-    jetbrains.pycharm-professional
-    jetbrains.idea-ultimate
-    jetbrains.rider
-    inputs.godot-fix.legacyPackages.${system}.godot-mono
+      jetbrains.webstorm
+      jetbrains.pycharm-professional
+      jetbrains.idea-ultimate
+      jetbrains.rider
+      inputs.godot-fix.legacyPackages.${system}.godot-mono
 
     bun
     uv
@@ -35,12 +36,22 @@
 
     dotnetCorePackages.dotnet_9.sdk
 
-    #revolt-desktop
-    blockbench
-    proton-pass
+      #revolt-desktop
+      blockbench
+      proton-pass
 
-    inputs.zen-browser.packages.${system}.default
-  ];
+      inputs.zen-browser.packages.${system}.default
+    ];
+
+    file = {
+      "xiv-config" = {
+        enable = true;
+
+        source = ./external/xlcore;
+        target = ".xlcore";
+      };
+    };
+  };
 
   programs = {
     bitwig.enable = true;
