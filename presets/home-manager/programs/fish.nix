@@ -4,9 +4,9 @@
   config,
   ...
 }: {
-  programs.fish.enable = true;
+  programs.fish.enable = lib.mkDefault true;
 
-  programs.bash = {
+  programs.bash = lib.mkDefault {
     initExtra = ''
       if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
       then

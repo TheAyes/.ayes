@@ -17,6 +17,8 @@
 
     wslConf = {
       network.hostname = hostname;
+      boot.systemd = true;
+      interop.enabled = true;
     };
   };
 
@@ -40,16 +42,25 @@
     };
   };
 
+  services = {
+    passSecretService.enable = true;
+  };
+
   environment = {
     systemPackages = with pkgs; [
-      keepassxc
+      pass
+
       uv
       powershell
     ];
 
+    shellInit = ''
+
+    '';
+
     shellAliases = {
-      "rebuild-switch" = "nixos-rebuild switch --use-remote-sudo -v --flake /mnt/c/Projekte/.ayes/";
-      "rebuild-test" = "nixos-rebuild switch --use-remote-sudo -v --flake /mnt/c/Projekte/.ayes/";
+      "rebuild-switch" = "nixos-rebuild switch --sudo -v --flake /mnt/c/Projekte/.ayes/";
+      "rebuild-test" = "nixos-rebuild switch --sudo -v --flake /mnt/c/Projekte/.ayes/";
       "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/upgrade.sh && popd";
       "bc14-push" = "git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" && git push";
       "bc14-pull-master" = "git subtree pull --prefix apps/bc14 apps/bc14 refs/heads/master";
@@ -58,4 +69,5 @@
   };
 
   users.defaultUserShell = pkgs.fish;
+  virtualisation.docker.enable = true;
 }

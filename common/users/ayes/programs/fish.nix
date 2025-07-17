@@ -1,10 +1,31 @@
-{
+{pkgs, ...}: {
   programs.fish = {
     enable = true;
 
     shellAliases = {
-      rebuild = "nixos-rebuild switch --use-remote-sudo --flake $(git rev-parse --show-toplevel)";
-      #test = "nixos-rebuild test --use-remote-sudo --flake $(git rev-parse --show-toplevel)";
+      ls = "eza";
     };
+
+    shellInit = ''
+    '';
+
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
+
+    plugins = with pkgs.fishPlugins; [
+      {
+        name = "tide";
+        src = tide.src;
+      }
+      {
+        name = "grc";
+        src = grc.src;
+      }
+    ];
   };
+
+  home.packages = with pkgs; [
+    grc
+  ];
 }
