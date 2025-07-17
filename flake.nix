@@ -20,22 +20,30 @@
     };
   };
 
-  outputs = inputs @ { nixpkgs, flake-parts, ... }:
-    flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem, flake-parts-lib, ... }: {
-      imports = [ ./modules/flake-parts/host-manager ];
+  outputs = inputs @ {
+    nixpkgs,
+    flake-parts,
+    ...
+  }:
+    flake-parts.lib.mkFlake {inherit inputs;} ({
+      withSystem,
+      flake-parts-lib,
+      ...
+    }: {
+      imports = [./modules/flake-parts/host-manager];
 
-      systems = [ "x86_64-linux" ];
+      systems = ["x86_64-linux"];
 
       host-manager = {
         enable = true;
 
-        home-manager = { };
+        home-manager = {};
 
         hosts = {
           io = {
             enable = true;
 
-            extraModules = [ inputs.solaar.nixosModules.default ];
+            extraModules = [inputs.solaar.nixosModules.default];
 
             home-manager = {
               enable = true;
@@ -51,13 +59,13 @@
               ayes = {
                 enable = true;
                 home-manager.enable = true;
-                groups = [ "networkmanager" "wheel" "gaming" "audio" "docker" ];
+                groups = ["networkmanager" "wheel" "gaming" "audio" "docker"];
               };
 
               janny = {
                 enable = false;
                 home-manager.enable = true;
-                groups = [ "gaming" ];
+                groups = ["gaming"];
               };
             };
           };
@@ -69,16 +77,20 @@
               ayes = {
                 enable = true;
                 home-manager.enable = true;
-                groups = ["wheel"];
+                groups = ["wheel" "docker"];
               };
             };
 
-            extraModules = [ inputs.nixos-wsl.nixosModules.default ];
+            extraModules = [inputs.nixos-wsl.nixosModules.default];
           };
         };
       };
 
-      perSystem = { pkgs, config, ... }: {
+      perSystem = {
+        pkgs,
+        config,
+        ...
+      }: {
         formatter = pkgs.nixpkgs-fmt;
       };
     });
