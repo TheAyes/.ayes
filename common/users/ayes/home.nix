@@ -4,6 +4,7 @@
     ./programs/btop.nix
     ./programs/fish.nix
     ./programs/eza.nix
+    ./programs/zoxide.nix
 
     ../../../presets/home-manager/programs/fish.nix
     ../../../presets/home-manager/programs/direnv.nix
