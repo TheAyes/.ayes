@@ -32,13 +32,16 @@
 
     git = {
       enable = true;
-      package = pkgs.gitFull;
-      /*
-        config.credential = {
+      config.credential = {
         helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-        credentialStore = "secretservice";
+        credentialStore = "gpg";
       };
-      */
+    };
+
+    gnupg.agent = {
+      enable = true;
+      pinentryPackage = pkgs.pinentry.tty;
+      enableSSHSupport = true;
     };
   };
 
@@ -49,6 +52,7 @@
   environment = {
     systemPackages = with pkgs; [
       pass
+      gnupg1
 
       uv
       powershell
@@ -59,8 +63,8 @@
     '';
 
     shellAliases = {
-      "rebuild-switch" = "nixos-rebuild switch --sudo -v --flake /mnt/c/Projekte/.ayes/";
-      "rebuild-test" = "nixos-rebuild switch --sudo -v --flake /mnt/c/Projekte/.ayes/";
+      "rebuild-switch" = "nixos-rebuild switch --sudo --flake /mnt/c/Projekte/.ayes/";
+      "rebuild-test" = "nixos-rebuild switch --sudo --flake /mnt/c/Projekte/.ayes/";
       "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/upgrade.sh && popd";
       "bc14-push" = "git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" && git push";
       "bc14-pull-master" = "git subtree pull --prefix apps/bc14 apps/bc14 refs/heads/master";

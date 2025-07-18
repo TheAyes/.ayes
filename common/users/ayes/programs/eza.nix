@@ -4,4 +4,10 @@
     colors = "always";
     icons = "auto";
   };
+
+  programs.fish = {
+    shellAliases = {
+      ls = "eza -a";
+    };
+  };
 }
