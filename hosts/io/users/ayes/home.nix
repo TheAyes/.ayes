@@ -11,6 +11,13 @@
     ./nixcord.nix
   ];
 
+  home.packages = with pkgs; [
+    # Gaming
+    #xivlauncher
+    prismlauncher
+    graalvm-ce
+    heroic
+    lutris
   home = {
     packages = with pkgs; [
       # Gaming
