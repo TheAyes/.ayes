@@ -48,6 +48,7 @@
 
       rocmPackages.rocm-device-libs
       rocmPackages.hsakmt
+      rocmPackages.amdsmi
     ];
 
     variables =
