@@ -11,13 +11,6 @@
     ./nixcord.nix
   ];
 
-  home.packages = with pkgs; [
-    # Gaming
-    #xivlauncher
-    prismlauncher
-    graalvm-ce
-    heroic
-    lutris
   home = {
     packages = with pkgs; [
       # Gaming
@@ -25,6 +18,7 @@
       prismlauncher
       graalvm-ce
       heroic
+      lutris
 
       # Music Production
       bitwig-studio
@@ -35,14 +29,14 @@
       jetbrains.rider
       inputs.godot-fix.legacyPackages.${system}.godot-mono
 
-    bun
-    uv
-    ruff
-    python312Full
-    #python312Packages.pip
-    python312Packages.tkinter
+      bun
+      uv
+      ruff
+      python312Full
+      #python312Packages.pip
+      python312Packages.tkinter
 
-    dotnetCorePackages.dotnet_9.sdk
+      dotnetCorePackages.dotnet_9.sdk
 
       #revolt-desktop
       blockbench
@@ -52,12 +46,12 @@
     ];
 
     file = {
-      "xiv-config" = {
+      /*"xiv-config" = {
         enable = true;
 
         source = ./external/xlcore;
         target = ".xlcore";
-      };
+      };*/
     };
   };
 
