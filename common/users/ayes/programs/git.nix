@@ -8,6 +8,10 @@
     extraConfig = {
       color = {
         ui = "auto";
+        branch = "auto";
+        diff = "auto";
+        interactive = "auto";
+        status = "auto";
       };
     };
   };
