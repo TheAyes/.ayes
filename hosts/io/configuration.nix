@@ -1,4 +1,10 @@
-{ hostname, pkgs, config, lib, ... }: {
+{
+  hostname,
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
 
@@ -24,7 +30,7 @@
   ##################################
   ## Nix
   ##################################
-  nix = { };
+  nix = {};
 
   nixpkgs = {
     config.rocmSupport = true;
@@ -51,24 +57,22 @@
       rocmPackages.amdsmi
     ];
 
-    variables =
-      let
-        makePluginPath = format:
-          (lib.strings.makeSearchPath format [
-            "$HOME/.nix-profile/lib"
-            "/run/current-system/sw/lib"
-            "/etc/profiles/per-user/$USER/lib"
-          ])
-          + ":$HOME/.${format}";
-      in
-      {
-        DSSI_PATH = makePluginPath "dssi";
-        LADSPA_PATH = makePluginPath "ladspa";
-        LV2_PATH = makePluginPath "lv2";
-        LXVST_PATH = makePluginPath "lxvst";
-        VST_PATH = makePluginPath "vst";
-        VST3_PATH = makePluginPath "vst3";
-      };
+    variables = let
+      makePluginPath = format:
+        (lib.strings.makeSearchPath format [
+          "$HOME/.nix-profile/lib"
+          "/run/current-system/sw/lib"
+          "/etc/profiles/per-user/$USER/lib"
+        ])
+        + ":$HOME/.${format}";
+    in {
+      DSSI_PATH = makePluginPath "dssi";
+      LADSPA_PATH = makePluginPath "ladspa";
+      LV2_PATH = makePluginPath "lv2";
+      LXVST_PATH = makePluginPath "lxvst";
+      VST_PATH = makePluginPath "vst";
+      VST3_PATH = makePluginPath "vst3";
+    };
   };
 
   programs.nix-ld = {
@@ -84,15 +88,14 @@
   ## Groups
   ##################################
   users.groups.gaming = {
-    members = [ "ayes" "janny" ];
+    members = ["ayes" "janny"];
   };
 
   ##################################
   ## Programs
   ##################################
   programs = {
-
-    hyprland = { enable = true; };
+    hyprland = {enable = true;};
     partition-manager.enable = true;
     firefox.enable = false;
     gamemode.enable = true;
@@ -135,17 +138,22 @@
     };
   };
 
+  stylix = {
+    enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+  };
+
   virtualisation.docker.enable = true;
 
   ##################################
   ## Networking
   ##################################
-  networking = { };
+  networking = {};
 
   ##################################
   ## Security
   ##################################
-  security = { };
+  security = {};
 
   ##################################
   ## Boot
