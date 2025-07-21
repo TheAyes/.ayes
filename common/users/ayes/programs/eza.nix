@@ -1,7 +1,7 @@
 {
   programs.eza = {
     enable = true;
-    colors = "always";
+    colors = "auto";
     icons = "auto";
   };
 
