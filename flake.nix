@@ -10,12 +10,15 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     flake-parts.url = "github:hercules-ci/flake-parts";
 
-    stylix.url = "github:danth/stylix";
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nixcord.url = "github:kaylorben/nixcord";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     solaar = {
-      url = "github:Svenum/Solaar-Flake/main"; # Uncomment line for latest unstable version
+      url = "github:Svenum/Solaar-Flake/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -39,11 +42,17 @@
 
         home-manager = {};
 
+        sharedHostModules = [
+          inputs.stylix.nixosModules.stylix
+        ];
+
         hosts = {
           io = {
             enable = true;
 
-            extraModules = [inputs.solaar.nixosModules.default];
+            extraModules = [
+              inputs.solaar.nixosModules.default
+            ];
 
             home-manager = {
               enable = true;
