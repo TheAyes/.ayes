@@ -14,11 +14,12 @@
     startMenuLaunchers = true;
 
     defaultUser = "ayes";
+    interop.includePath = false;
 
     wslConf = {
       network.hostname = hostname;
       boot.systemd = true;
-      interop.enabled = true;
+      interop.enabled = false;
     };
   };
 
@@ -28,6 +29,13 @@
     direnv = {
       enable = true;
       nix-direnv.enable = true;
+    };
+
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        stdenv.cc.cc.lib
+      ];
     };
 
     git = {
@@ -63,7 +71,7 @@
     '';
 
     shellAliases = {
-      "rebuild-switch" = "nixos-rebuild switch --sudo --flake /mnt/c/Projekte/.ayes/";
+      "rebuild-switch" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh && popd";
       "rebuild-test" = "nixos-rebuild switch --sudo --flake /mnt/c/Projekte/.ayes/";
       "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/upgrade.sh && popd";
       "bc14-push" = "git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" && git push";
