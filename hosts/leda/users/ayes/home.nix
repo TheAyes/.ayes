@@ -12,5 +12,9 @@
   home.packages = with pkgs; [
     bun
     lazygit
+
+    (jetbrains.pycharm-professional.override {
+      jdk = openjdk21;
+    })
   ];
 }
