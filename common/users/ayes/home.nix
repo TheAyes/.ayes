@@ -11,7 +11,8 @@
   ];
 
   home = {
-    pointerCursor = {
+    /*
+      pointerCursor = {
       enable = true;
       gtk.enable = true;
       x11.enable = true;
@@ -20,6 +21,7 @@
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
     };
+    */
 
     sessionVariables = {
       GIT_MERGE_AUTOEDIT = "no";
@@ -29,5 +31,13 @@
       # Documentation and Writing
       obsidian
     ];
+  };
+
+  stylix = {
+    cursor = {
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 64;
+    };
   };
 }
