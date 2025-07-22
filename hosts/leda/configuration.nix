@@ -81,6 +81,12 @@
         name = "SerenityOS Emoji";
       };
     };
+
+    autoEnable = true;
+    targets = {
+      gtk.enable = true;
+      qt.enable = true;
+    };
   };
 
   environment = {

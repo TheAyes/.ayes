@@ -39,5 +39,17 @@
       package = pkgs.bibata-cursors;
       size = 14;
     };
+
+    targets = {
+      gtk.enable = true;
+      qt.enable = true;
+
+      nixcord.enable = true;
+      vencord.enable = true;
+      vesktop.enable = true;
+
+      btop.enable = true;
+      micro.enable = true;
+    };
   };
 }
