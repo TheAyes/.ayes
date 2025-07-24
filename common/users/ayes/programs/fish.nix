@@ -7,6 +7,7 @@
 
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
+      microfetch
     '';
 
     plugins = with pkgs.fishPlugins; [
@@ -23,5 +24,6 @@
 
   home.packages = with pkgs; [
     grc
+    microfetch
   ];
 }
