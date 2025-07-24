@@ -23,10 +23,10 @@
       # Music Production
       bitwig-studio
 
-      jetbrains.webstorm
-      jetbrains.pycharm-professional
-      jetbrains.idea-ultimate
-      jetbrains.rider
+      (jetbrains.webstorm.override { jdk = openjdk21; })
+      (jetbrains.pycharm-professional.override { jdk = openjdk21; })
+      (jetbrains.idea-ultimate.override { jdk = openjdk21; })
+      (jetbrains.rider.override { jdk = openjdk21; })
       inputs.godot-fix.legacyPackages.${system}.godot-mono
 
       bun
