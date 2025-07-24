@@ -40,6 +40,7 @@
       size = 14;
     };
 
+    autoEnable = false;
     targets = {
       gtk.enable = true;
       qt.enable = true;
