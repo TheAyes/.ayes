@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     ./programs/git.nix
     ./programs/btop.nix
@@ -6,7 +6,7 @@
     ./programs/eza.nix
     ./programs/zoxide.nix
 
-    ../../../presets/home-manager/programs/fish.nix
+    #../../../presets/home-manager/programs/fish.nix
     ../../../presets/home-manager/programs/direnv.nix
   ];
 
@@ -20,7 +20,7 @@
 
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
-    };
+      };
     */
 
     sessionVariables = {
