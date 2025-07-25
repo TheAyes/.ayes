@@ -45,12 +45,13 @@
       gtk.enable = true;
       qt.enable = true;
 
-      nixcord.enable = true;
-      vencord.enable = true;
-      vesktop.enable = true;
+      nixcord.enable = false;
+      vencord.enable = false;
+      vesktop.enable = false;
 
       btop.enable = true;
       micro.enable = true;
+
     };
   };
 }

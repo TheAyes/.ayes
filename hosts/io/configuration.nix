@@ -143,6 +143,35 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    fonts = {
+      serif = {
+        package = pkgs.caladea;
+        name = "Caladea-Regular";
+      };
+
+      sansSerif = {
+        package = pkgs.encode-sans;
+        name = "EncodeSans-Regular";
+      };
+
+      monospace = {
+        package = pkgs.cascadia-code;
+        name = "CascadiaCodeNF";
+      };
+
+      emoji = {
+        package = pkgs.serenityos-emoji-font;
+        name = "SerenityOS Emoji";
+      };
+    };
+
+    autoEnable = false;
+    targets = {
+      gtk.enable = true;
+      qt.enable = true;
+
+      grub.enable = false;
+    };
   };
 
   virtualisation.docker.enable = true;
