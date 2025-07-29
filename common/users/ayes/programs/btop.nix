@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.btop = {
     enable = true;
-    package = pkgs.btop-rocm;
+    #package = pkgs.btop-rocm;
 
     settings = {
       #color_theme = "catppuccin-mocha";
