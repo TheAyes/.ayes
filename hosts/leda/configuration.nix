@@ -96,6 +96,7 @@
       pass
       gnupg1
 
+      nodejs
       uv
       powershell
     ];
