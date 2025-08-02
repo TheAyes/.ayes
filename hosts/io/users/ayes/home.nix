@@ -9,6 +9,7 @@
 
     ./hyprland.nix
     ./nixcord.nix
+    ./kitty.nix
   ];
 
   home = {
@@ -23,10 +24,11 @@
       # Music Production
       bitwig-studio
 
-      (jetbrains.webstorm.override { jdk = openjdk21; })
-      (jetbrains.pycharm-professional.override { jdk = openjdk21; })
-      (jetbrains.idea-ultimate.override { jdk = openjdk21; })
-      (jetbrains.rider.override { jdk = openjdk21; })
+      jetbrains.webstorm
+      jetbrains.pycharm-professional
+      jetbrains.idea-ultimate
+      jetbrains.rider
+
       inputs.godot-fix.legacyPackages.${system}.godot-mono
 
       bun
@@ -35,6 +37,7 @@
       python312Full
       #python312Packages.pip
       python312Packages.tkinter
+      claude-code
 
       dotnetCorePackages.dotnet_9.sdk
 
@@ -57,15 +60,6 @@
 
   programs = {
     bitwig.enable = true;
-
-    kitty = {
-      enable = true;
-      settings = {
-        shell = "fish --login";
-        editor = "micro";
-        confirm_os_window_close = "-1 count-background";
-      };
-    };
   };
 
   xdg = {
@@ -97,4 +91,6 @@
       };
     };
   };
+
+  gtk.gtk2.enable = false;
 }
