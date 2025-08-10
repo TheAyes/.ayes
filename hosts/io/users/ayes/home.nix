@@ -16,8 +16,10 @@
     packages = with pkgs; [
       # Gaming
       #xivlauncher
-      prismlauncher
-      graalvm-ce
+      (prismlauncher.override {
+        jdks = [ graalvm-ce ];
+      })
+
       heroic
       lutris
 
@@ -34,9 +36,9 @@
       bun
       uv
       ruff
-      python312Full
+      #python312Full
       #python312Packages.pip
-      python312Packages.tkinter
+      #python312Packages.tkinter
       claude-code
 
       dotnetCorePackages.dotnet_9.sdk
@@ -72,11 +74,11 @@
         genericName = "noita-proxy";
         name = "Noita Entangled Worlds";
         icon = ../../../../assets/images/noita-proxy.png;
-        exec = "steam-run /mnt/games/noita_entangled_worlds/noita_proxy.x86_64";
+        exec = "sh -c \"steam-run /mnt/games/noita_entangled_worlds/noita_proxy.x86_64\"";
       };
     };
 
-    configFile = {
+    /*configFile = {
       "baloofilerc" = {
         enable = true;
 
@@ -89,7 +91,7 @@
           only basic indexing=true
         '';
       };
-    };
+    };*/
   };
 
   gtk.gtk2.enable = false;
