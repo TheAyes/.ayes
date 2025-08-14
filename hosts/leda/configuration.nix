@@ -4,8 +4,6 @@
   ...
 }: {
   imports = [
-    ../../presets/nixos/desktopManagers/kde.nix
-
     ./security.nix
   ];
 
