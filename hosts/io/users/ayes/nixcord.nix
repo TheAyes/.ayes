@@ -2,12 +2,13 @@
   programs.nixcord = {
     enable = true;
     discord = {
-      enable = true;
+      enable = false;
       package = pkgs.discord-canary;
+
       vencord.enable = true;
     };
 
-    vesktop.enable = false;
+    vesktop.enable = true;
 
     config = {
       useQuickCss = true; # use out quickCSS
