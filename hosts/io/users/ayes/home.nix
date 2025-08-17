@@ -33,6 +33,7 @@
 
       inputs.godot-fix.legacyPackages.${system}.godot-mono
 
+      nodejs
       bun
       uv
       ruff
