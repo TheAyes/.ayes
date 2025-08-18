@@ -81,9 +81,9 @@
         youtubeAdblock.enable = true;
 
         # Vesktop specific
-        webKeybinds.enable = false;
-        webRichPresence.enable = false;
-        webScreenShareFixes.enable = false;
+        webKeybinds.enable = true;
+        webRichPresence.enable = true;
+        webScreenShareFixes.enable = true;
       };
     };
     extraConfig = {
