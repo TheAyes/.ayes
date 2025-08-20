@@ -82,7 +82,7 @@
 
         # Vesktop specific
         webKeybinds.enable = true;
-        webRichPresence.enable = true;
+        webRichPresence.enable = false;
         webScreenShareFixes.enable = true;
       };
     };
