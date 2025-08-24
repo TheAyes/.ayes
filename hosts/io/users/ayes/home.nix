@@ -19,6 +19,7 @@
       (prismlauncher.override {
         jdks = [ graalvm-ce ];
       })
+      ed-odyssey-materials-helper
 
       heroic
       lutris
