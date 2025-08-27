@@ -17,7 +17,7 @@
       # Gaming
       #xivlauncher
       (prismlauncher.override {
-        jdks = [ graalvm-ce ];
+        jdks = [ graalvm-ce zulu17 ];
       })
       ed-odyssey-materials-helper
 
