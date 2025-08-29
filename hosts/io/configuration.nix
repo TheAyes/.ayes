@@ -2,12 +2,11 @@
 , pkgs
 , config
 , lib
+, inputs
 , ...
 }: {
   imports = [
     ./hardware-configuration.nix
-
-    ../../containers/prominence-server.nix
 
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
@@ -37,6 +36,7 @@
     config = {
       rocmSupport = true;
     };
+    overlays = [ inputs.nix-minecraft.overlay ];
   };
 
   ##################################
@@ -141,6 +141,21 @@
         ATTRS{name}=="Sony Computer Entertainment Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
         ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
       '';
+    };
+
+    minecraft-servers = {
+      enable = true;
+      eula = true;
+      openFirewall = true;
+      servers.fabric =
+        let
+          allowedRam = "32G";
+        in
+        {
+          enable = true;
+          package = pkgs.fabricServers.fabric-1_20_1;
+          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
+        };
     };
   };
 
