@@ -21,26 +21,27 @@
       url = "github:Svenum/Solaar-Flake/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
-  outputs = inputs @ {
-    nixpkgs,
-    flake-parts,
-    ...
-  }:
-    flake-parts.lib.mkFlake {inherit inputs;} ({
-      withSystem,
-      flake-parts-lib,
-      ...
-    }: {
-      imports = [./modules/flake-parts/host-manager];
+  outputs =
+    inputs @ { nixpkgs
+    , flake-parts
+    , ...
+    }:
+    flake-parts.lib.mkFlake { inherit inputs; } ({ withSystem
+                                                 , flake-parts-lib
+                                                 , ...
+                                                 }: {
 
-      systems = ["x86_64-linux"];
+      imports = [ ./modules/flake-parts/host-manager ];
+
+      systems = [ "x86_64-linux" ];
 
       host-manager = {
         enable = true;
 
-        home-manager = {};
+        home-manager = { };
 
         sharedHostModules = [
           inputs.stylix.nixosModules.stylix
@@ -52,6 +53,7 @@
 
             extraModules = [
               inputs.solaar.nixosModules.default
+              inputs.nix-minecraft.nixosModules.minecraft-servers
             ];
 
             home-manager = {
@@ -68,13 +70,13 @@
               ayes = {
                 enable = true;
                 home-manager.enable = true;
-                groups = ["networkmanager" "wheel" "gaming" "audio" "docker"];
+                groups = [ "networkmanager" "wheel" "gaming" "audio" "docker" "minecraft" ];
               };
 
               janny = {
                 enable = false;
                 home-manager.enable = true;
-                groups = ["gaming"];
+                groups = [ "gaming" ];
               };
             };
           };
@@ -86,21 +88,21 @@
               ayes = {
                 enable = true;
                 home-manager.enable = true;
-                groups = ["wheel" "docker"];
+                groups = [ "wheel" "docker" ];
               };
             };
 
-            extraModules = [inputs.nixos-wsl.nixosModules.default];
+            extraModules = [ inputs.nixos-wsl.nixosModules.default ];
           };
         };
       };
 
-      perSystem = {
-        pkgs,
-        config,
-        ...
-      }: {
-        formatter = pkgs.nixpkgs-fmt;
-      };
+      perSystem =
+        { pkgs
+        , config
+        , ...
+        }: {
+          formatter = pkgs.nixpkgs-fmt;
+        };
     });
 }
