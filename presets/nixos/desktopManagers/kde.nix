@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   services = {
     xserver.enable = true;
     displayManager.sddm.enable = true;
@@ -18,6 +18,8 @@
     konsole
     oxygen
   ];
+
+  qt.platformTheme = lib.mkForce "gtk2";
 
   xdg.icons.fallbackCursorThemes = [ "breeze_cursors" ];
 }
