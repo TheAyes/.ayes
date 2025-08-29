@@ -147,14 +147,38 @@
       enable = true;
       eula = true;
       openFirewall = true;
-      servers.fabric =
+      servers.prominence =
         let
           allowedRam = "32G";
         in
         {
           enable = true;
+          autoStart = true;
+          openFirewall = true;
           package = pkgs.fabricServers.fabric-1_20_1;
           jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
+          serverProperties = {
+            gamemode = 0;
+            force-gamemode = true;
+            difficulty = 3;
+            max-players = 10;
+            whitelist = true;
+            enforce-whitelist = true;
+          };
+          whitelist = {
+            CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+          };
+          symlinks = {
+            "ops.json" = {
+              value = [
+                {
+                  name = "CrystalMemories";
+                  uuid = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+                  level = 99;
+                }
+              ];
+            };
+          };
         };
     };
   };
