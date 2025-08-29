@@ -4,20 +4,29 @@ DIR=$(git rev-parse --show-toplevel)
 nix flake update --flake "$DIR"
 nixos-rebuild build --sudo --flake "$DIR"
 
-diff=$(nix store diff-closures /run/current-system ./result --no-warn-dirty)
-echo "$diff"
-
-REPLY="Y"
-if [[ -z "$diff" ]]; then
-    echo "No updates found. Exiting..."
+DIFF=$(nix store diff-closures /run/current-system ./result --no-warn-dirty)
+if [[ -z "$DIFF" ]]; then
+	echo "No updates found. Exiting..."
+	exit 0
 else
-	read -p "Found $(echo "$diff" | wc -l) updates. Proceed with update? (Y|n) " -n 1 -r
-	REPLY=${REPLY:-"Y"}
+	echo "$DIFF"
+fi
 
-	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-		[[ "$0" = "${BASH_SOURCE[*]}" ]] && exit 1 || return 1
-	fi
-	"$DIR"/scripts/rebuild.sh
+read -p "Found $(echo "$DIFF" | grep -c '^') updates. Proceed with update? (Y|n) " -n 1 -r USER_INPUT
+REPLY=${USER_INPUT:-"Y"}
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+	exit 1
+fi
 
-	rm -rf "$DIR"/result
+REBUILD_SCRIPT="$DIR/scripts/rebuild.sh"
+if [[ ! -x "$REBUILD_SCRIPT" ]]; then
+	echo "Error: rebuild script not found or not executable"
+	exit 1
+else
+	"$REBUILD_SCRIPT"
+fi
+
+RESULT_DIR="$DIR"/result
+if [[ -d "$RESULT_DIR" ]]; then
+	rm -rf "$RESULT_DIR"
 fi
