@@ -7,6 +7,8 @@
   imports = [
     ./hardware-configuration.nix
 
+    ../../containers/prominence-server.nix
+
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
     ../../presets/nixos/desktopManagers/kde.nix
@@ -32,7 +34,9 @@
   nix = { };
 
   nixpkgs = {
-    config.rocmSupport = true;
+    config = {
+      rocmSupport = true;
+    };
   };
 
   ##################################

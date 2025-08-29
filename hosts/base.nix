@@ -5,7 +5,7 @@
 }: {
   nixpkgs = {
     config = {
-      allowUnfree = lib.mkDefault true;
+      allowUnfree = lib.mkForce true;
     };
   };
 
