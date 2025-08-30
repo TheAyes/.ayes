@@ -5,7 +5,6 @@
       failregex = ^.*\(/<HOST>\) lost connection: You are not white-listed on this server!.*$
                   ^.*<HOST>.*tried to log in with an invalid session.*$
                   ^.*Player.*\[/<HOST>:\d+\] was kicked.*$
-
     '');
 
     "fail2ban/filter.d/minecraft-ddos.conf".text = pkgs.lib.mkDefault (pkgs.lib.mkAfter ''

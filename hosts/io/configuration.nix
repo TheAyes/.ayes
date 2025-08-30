@@ -165,16 +165,19 @@
             max-players = 10;
             white-list = true;
             enforce-whitelist = true;
-            level-seed = "-7827161134340464580";
+            #level-seed = "-7827161134340464580";
             pvp = false;
             sync-chunk-write = false;
             simulation-distance = 8;
             view-distance = 12;
           };
+
           whitelist = {
-            #CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+            CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
             Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
+            Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
           };
+
           symlinks = {
             "ops.json" = {
               value = [
