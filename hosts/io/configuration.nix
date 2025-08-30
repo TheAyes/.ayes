@@ -7,6 +7,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./fail2ban.nix
 
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
@@ -162,11 +163,17 @@
             force-gamemode = true;
             difficulty = 3;
             max-players = 10;
-            whitelist = true;
+            white-list = true;
             enforce-whitelist = true;
+            level-seed = "-7827161134340464580";
+            pvp = false;
+            sync-chunk-write = false;
+            simulation-distance = 8;
+            view-distance = 12;
           };
           whitelist = {
-            CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+            #CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+            Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
           };
           symlinks = {
             "ops.json" = {
