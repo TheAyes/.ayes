@@ -178,6 +178,7 @@
             Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
             Yuzumi25 = "8f371ca9-3095-4a7d-a641-9592e5355ba4";
             Ebilknibel = "89055e10-10cc-4cf0-a872-b5e713a786ba";
+            Tekklar334 = "cba06ef3-102b-43e9-962d-62ef49fc1ff3";
           };
 
           symlinks = {
