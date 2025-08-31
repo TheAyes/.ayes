@@ -173,16 +173,17 @@
           };
 
           whitelist = {
-            CrystalMemories = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
+            Ayes_For_Real = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
             Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
             Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
+            Yuzumi25 = "8f371ca9-3095-4a7d-a641-9592e5355ba4";
           };
 
           symlinks = {
             "ops.json" = {
               value = [
                 {
-                  name = "CrystalMemories";
+                  name = "Ayes_For_Real";
                   uuid = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
                   level = 99;
                 }
