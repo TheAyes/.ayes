@@ -159,7 +159,7 @@
           package = pkgs.fabricServers.fabric-1_20_1;
           jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
           serverProperties = {
-            gamemode = 0;
+            gamemode = 3;
             force-gamemode = true;
             difficulty = 3;
             max-players = 10;
@@ -177,6 +177,7 @@
             Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
             Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
             Yuzumi25 = "8f371ca9-3095-4a7d-a641-9592e5355ba4";
+            Ebilknibel = "89055e10-10cc-4cf0-a872-b5e713a786ba";
           };
 
           symlinks = {
