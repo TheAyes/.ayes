@@ -19,7 +19,7 @@
     oxygen
   ];
 
-  qt.platformTheme = lib.mkForce "qt5ct";
+  qt.platformTheme = lib.mkForce "kde";
 
   xdg.icons.fallbackCursorThemes = [ "breeze_cursors" ];
 }
