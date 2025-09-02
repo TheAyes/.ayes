@@ -32,7 +32,7 @@
       jetbrains.idea-ultimate
       jetbrains.rider
 
-      inputs.godot-fix.legacyPackages.${system}.godot-mono
+      godot-mono
 
       nodejs
       bun
