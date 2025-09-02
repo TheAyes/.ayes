@@ -46,7 +46,8 @@
   environment = {
     systemPackages = with pkgs; [
       keepassxc
-      cloudflared
+      sops
+      #cloudflared
 
       qpwgraph
 
@@ -196,6 +197,15 @@
             };
           };
         };
+    };
+
+    cloudflared = {
+      enable = true;
+      tunnels = {
+        # "Aethyria-Service-Tunnel" = {
+        #credentialsFile = "${config.sops.secrets.cloudflared-creds.path}";
+        # };
+      };
     };
   };
 

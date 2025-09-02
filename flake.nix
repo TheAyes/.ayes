@@ -1,14 +1,17 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    godot-fix.url = "github:nixos/nixpkgs?rev=e32a27edc351e188df549efdcee3ca11bdb4af28";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
 
     stylix = {
       url = "github:danth/stylix";
@@ -54,6 +57,7 @@
             extraModules = [
               inputs.solaar.nixosModules.default
               inputs.nix-minecraft.nixosModules.minecraft-servers
+              inputs.sops-nix.nixosModules.sops
             ];
 
             home-manager = {

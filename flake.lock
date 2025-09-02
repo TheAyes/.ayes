@@ -306,22 +306,6 @@
         "type": "github"
       }
     },
-    "godot-fix": {
-      "locked": {
-        "lastModified": 1745158351,
-        "narHash": "sha256-LgMbnD6jTyf0L774FOjTopriiNZ/cuAMPD2KZJcrhxM=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "e32a27edc351e188df549efdcee3ca11bdb4af28",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "e32a27edc351e188df549efdcee3ca11bdb4af28",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -561,13 +545,13 @@
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
-        "godot-fix": "godot-fix",
         "home-manager": "home-manager",
         "nix-minecraft": "nix-minecraft",
         "nixcord": "nixcord",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs_4",
         "solaar": "solaar",
+        "sops-nix": "sops-nix",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
       }
@@ -616,6 +600,26 @@
         "owner": "Svenum",
         "ref": "main",
         "repo": "Solaar-Flake",
+        "type": "github"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1754988908,
+        "narHash": "sha256-t+voe2961vCgrzPFtZxha0/kmFSHFobzF00sT8p9h0U=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "3223c7a92724b5d804e9988c6b447a0d09017d48",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
         "type": "github"
       }
     },
