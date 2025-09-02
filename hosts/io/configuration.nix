@@ -46,6 +46,8 @@
   environment = {
     systemPackages = with pkgs; [
       keepassxc
+      cloudflared
+
       qpwgraph
 
       ffmpeg
