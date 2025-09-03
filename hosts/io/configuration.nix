@@ -161,9 +161,9 @@
           autoStart = true;
           openFirewall = true;
           package = pkgs.fabricServers.fabric-1_20_1;
-          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam} -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true";
+          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
           serverProperties = {
-            gamemode = 3;
+            gamemode = 0;
             force-gamemode = true;
             difficulty = 3;
             max-players = 10;
@@ -179,11 +179,11 @@
           whitelist = {
             Ayes_For_Real = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
             Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
-            Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
+            #Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
             Yuzumi25 = "8f371ca9-3095-4a7d-a641-9592e5355ba4";
             Ebilknibel = "89055e10-10cc-4cf0-a872-b5e713a786ba";
             Tekklar334 = "cba06ef3-102b-43e9-962d-62ef49fc1ff3";
-            moonshiiine = "a09fedac-4b1c-485d-86b5-436a087b110d";
+            #moonshiiine = "a09fedac-4b1c-485d-86b5-436a087b110d";
             Ebil_1337 = "022e3770-2b75-49f0-a15c-65800ec2e263";
           };
 
@@ -200,23 +200,9 @@
           };
         };
     };
-
-    cloudflared = {
-      enable = false;
-      tunnels = {
-        "Aethyria-Server-Tunnel" = {
-          credentialsFile = "${config.sops.secrets."cloudflare/aethyria-tunnel-token".path}";
-          ingress = {
-            "mc.aethyria.live" = "http://localhost:8080";
-            #"mc-voice.aethyria.live" = "http://localhost:24454";
-          };
-          default = "http_status:404";
-        };
-      };
-    };
   };
 
-  systemd.services.minecraft-websockify = {
+  /*systemd.services.minecraft-websockify = {
     description = "Minecraft WebSocket Proxy";
     after = [ "minecraft-server-prominence.service" ];
     wantedBy = [ "multi-user.target" ];
@@ -225,7 +211,7 @@
       Restart = "always";
       User = "minecraft";
     };
-  };
+  };*/
 
   stylix = {
     enable = true;
