@@ -8,6 +8,7 @@
   imports = [
     ./hardware-configuration.nix
     ./fail2ban.nix
+    ./sops.nix
 
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
@@ -160,7 +161,7 @@
           autoStart = true;
           openFirewall = true;
           package = pkgs.fabricServers.fabric-1_20_1;
-          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
+          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam} -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true";
           serverProperties = {
             gamemode = 3;
             force-gamemode = true;
@@ -183,6 +184,7 @@
             Ebilknibel = "89055e10-10cc-4cf0-a872-b5e713a786ba";
             Tekklar334 = "cba06ef3-102b-43e9-962d-62ef49fc1ff3";
             moonshiiine = "a09fedac-4b1c-485d-86b5-436a087b110d";
+            Ebil_1337 = "022e3770-2b75-49f0-a15c-65800ec2e263";
           };
 
           symlinks = {
@@ -200,12 +202,28 @@
     };
 
     cloudflared = {
-      enable = true;
+      enable = false;
       tunnels = {
-        # "Aethyria-Service-Tunnel" = {
-        #credentialsFile = "${config.sops.secrets.cloudflared-creds.path}";
-        # };
+        "Aethyria-Server-Tunnel" = {
+          credentialsFile = "${config.sops.secrets."cloudflare/aethyria-tunnel-token".path}";
+          ingress = {
+            "mc.aethyria.live" = "http://localhost:8080";
+            #"mc-voice.aethyria.live" = "http://localhost:24454";
+          };
+          default = "http_status:404";
+        };
       };
+    };
+  };
+
+  systemd.services.minecraft-websockify = {
+    description = "Minecraft WebSocket Proxy";
+    after = [ "minecraft-server-prominence.service" ];
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.python3Packages.websockify}/bin/websockify 8080 localhost:25565";
+      Restart = "always";
+      User = "minecraft";
     };
   };
 
