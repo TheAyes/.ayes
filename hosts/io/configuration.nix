@@ -174,6 +174,7 @@
             sync-chunk-write = false;
             simulation-distance = 8;
             view-distance = 12;
+            spawn-protection = 0;
           };
 
           whitelist = {
