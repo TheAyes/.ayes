@@ -30,7 +30,7 @@
           spawn-protection = 0;
 
           enable-rcon = true;
-          #"rcon.password" = "${config.sops.secrets."minecraft-server/rcon-password"}";
+          "rcon.password" = "local";
           "rcon.port" = 26656;
           broadcast-rcon-to-ops = true;
         };
