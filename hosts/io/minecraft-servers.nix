@@ -79,6 +79,11 @@
     domains = [ "mc.aethyria.live" ];
   };
 
+  services.cloudflared = {
+    enable = true;
+  };
+
+
   environment.etc = {
     "fail2ban/filter.d/minecraft.local".text = pkgs.lib.mkDefault (pkgs.lib.mkAfter ''
       [Definition]
