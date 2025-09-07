@@ -9,6 +9,7 @@
     ./hardware-configuration.nix
     ./fail2ban.nix
     ./sops.nix
+    ./minecraft-servers.nix
 
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
@@ -134,6 +135,16 @@
       extraArgs = ""; # Extra arguments to pass to solaar on startup
     };
 
+    ddclient = {
+      enable = true;
+      quiet = true;
+
+      ssl = true;
+      protocol = "cloudflare";
+
+      passwordFile = "${config.sops.secrets."cloudflare/api-token".path}";
+    };
+
     ollama = {
       enable = true;
       acceleration = "rocm";
@@ -147,72 +158,7 @@
         ATTRS{name}=="Wireless Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
       '';
     };
-
-    minecraft-servers = {
-      enable = true;
-      eula = true;
-      openFirewall = true;
-      servers.prominence =
-        let
-          allowedRam = "32G";
-        in
-        {
-          enable = true;
-          autoStart = true;
-          openFirewall = true;
-          package = pkgs.fabricServers.fabric-1_20_1;
-          jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
-          serverProperties = {
-            gamemode = 0;
-            force-gamemode = true;
-            difficulty = 3;
-            max-players = 10;
-            white-list = true;
-            enforce-whitelist = true;
-            #level-seed = "-7827161134340464580";
-            pvp = false;
-            sync-chunk-write = false;
-            simulation-distance = 8;
-            view-distance = 12;
-            spawn-protection = 0;
-          };
-
-          whitelist = {
-            Ayes_For_Real = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
-            Slayandra = "548c4941-a799-40a0-b149-4296084ab876";
-            #Bestiary = "3585a188-dd90-4322-8e89-3bb457648e82";
-            Yuzumi25 = "8f371ca9-3095-4a7d-a641-9592e5355ba4";
-            Ebilknibel = "89055e10-10cc-4cf0-a872-b5e713a786ba";
-            Tekklar334 = "cba06ef3-102b-43e9-962d-62ef49fc1ff3";
-            #moonshiiine = "a09fedac-4b1c-485d-86b5-436a087b110d";
-            Ebil_1337 = "022e3770-2b75-49f0-a15c-65800ec2e263";
-          };
-
-          symlinks = {
-            "ops.json" = {
-              value = [
-                {
-                  name = "Ayes_For_Real";
-                  uuid = "9de723f7-dc47-4f22-bc46-bdf912e99f80";
-                  level = 99;
-                }
-              ];
-            };
-          };
-        };
-    };
   };
-
-  /*systemd.services.minecraft-websockify = {
-    description = "Minecraft WebSocket Proxy";
-    after = [ "minecraft-server-prominence.service" ];
-    wantedBy = [ "multi-user.target" ];
-    serviceConfig = {
-      ExecStart = "${pkgs.python3Packages.websockify}/bin/websockify 8080 localhost:25565";
-      Restart = "always";
-      User = "minecraft";
-    };
-  };*/
 
   stylix = {
     enable = true;
