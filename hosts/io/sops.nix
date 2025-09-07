@@ -7,6 +7,9 @@
     secrets = {
       "cloudflare/aethyria-tunnel-token" = { owner = config.users.users.ayes.name; };
       "cloudflare/cert" = { owner = config.users.users.ayes.name; };
+      "cloudflare/api-token" = { owner = config.users.users.ayes.name; };
+
+      "minecraft-server/rcon-password" = { owner = config.users.users.ayes.name; };
     };
   };
 }

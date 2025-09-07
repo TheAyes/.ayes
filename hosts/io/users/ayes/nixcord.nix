@@ -79,6 +79,8 @@
         viewIcons.enable = true;
         volumeBooster.enable = true;
         youtubeAdblock.enable = true;
+        #favouriteEmojiFirst.enable = true;
+        #silentTyping.enable = true;
 
         # Vesktop specific
         webKeybinds.enable = true;
