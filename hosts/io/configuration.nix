@@ -9,7 +9,7 @@
     ./hardware-configuration.nix
     ./fail2ban.nix
     ./sops.nix
-    ./minecraft-servers.nix
+    #./minecraft-servers.nix
 
     # System Modules
     ../../presets/nixos/boot/systemd-boot.nix
@@ -135,7 +135,7 @@
       extraArgs = ""; # Extra arguments to pass to solaar on startup
     };
 
-    ddclient = {
+    /*ddclient = {
       enable = true;
       quiet = true;
 
@@ -143,7 +143,7 @@
       protocol = "cloudflare";
 
       passwordFile = "${config.sops.secrets."cloudflare/api-token".path}";
-    };
+    };*/
 
     ollama = {
       enable = true;
