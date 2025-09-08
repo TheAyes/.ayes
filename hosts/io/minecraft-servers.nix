@@ -10,8 +10,8 @@
         allowedRam = "32G";
       in
       {
-        enable = true;
-        autoStart = true;
+        enable = false;
+        autoStart = false;
         openFirewall = true;
         package = pkgs.fabricServers.fabric-1_20_1;
         jvmOpts = "-Xmx${allowedRam} -Xms${allowedRam}";
