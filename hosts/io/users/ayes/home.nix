@@ -17,7 +17,7 @@
       # Gaming
       #xivlauncher
       (prismlauncher.override {
-        jdks = [ graalvm-ce zulu17 ];
+        jdks = [ graalvm-ce temurin-jre-bin ];
       })
       ed-odyssey-materials-helper
 
@@ -47,6 +47,7 @@
 
       #revolt-desktop
       blockbench
+      gimp
       proton-pass
 
       inputs.zen-browser.packages.${system}.default
