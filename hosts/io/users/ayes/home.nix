@@ -38,14 +38,10 @@
       bun
       uv
       ruff
-      #python312Full
-      #python312Packages.pip
-      #python312Packages.tkinter
       claude-code
 
       dotnetCorePackages.dotnet_9.sdk
 
-      #revolt-desktop
       blockbench
       gimp
       proton-pass

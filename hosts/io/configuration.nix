@@ -136,7 +136,7 @@
     };
 
     ddclient = {
-      enable = true;
+      enable = false;
       quiet = true;
 
       ssl = true;

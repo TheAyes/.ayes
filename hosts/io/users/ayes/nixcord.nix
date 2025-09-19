@@ -11,6 +11,7 @@
     vesktop.enable = true;
 
     config = {
+
       useQuickCss = true; # use out quickCSS
       themeLinks = [
         # or use an online theme
@@ -35,7 +36,7 @@
         dearrow.enable = true;
         decor.enable = true;
         disableCallIdle.enable = true;
-        emoteCloner.enable = true;
+        expressionCloner.enable = true;
         fakeNitro.enable = true;
         fakeProfileThemes = {
           enable = true;
@@ -92,6 +93,23 @@
       # Some extra JSON config here
       # ...
     };
+    quickCss = ''
+      :root {
+        --custom-app-top-bar-height: 0;
+      }
+
+      li.channel__972a0.container_e45859:has(div a[href="/store"]),
+      li.channel__972a0.container_e45859:has(div a[href="/shop"]),
+      div.buttons__74017 > div[aria-label="Send a gift"],
+      .mask__0d616,
+      div.bar_c38106 {
+        display: none
+      }
+
+      div.itemsContainer_ef3116 {
+        padding-block: 8px;
+      }
+    '';
   };
 
 }
