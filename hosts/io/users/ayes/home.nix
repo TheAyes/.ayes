@@ -31,9 +31,11 @@
       jetbrains.pycharm-professional
       jetbrains.idea-ultimate
       jetbrains.rider
+      jetbrains.rust-rover
 
       godot-mono
 
+      #rustup
       nodejs
       bun
       uv
