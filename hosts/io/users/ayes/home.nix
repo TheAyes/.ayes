@@ -27,6 +27,8 @@
       # Music Production
       bitwig-studio
 
+      zed-editor
+
       jetbrains.webstorm
       jetbrains.pycharm-professional
       jetbrains.idea-ultimate
@@ -41,6 +43,8 @@
       uv
       ruff
       claude-code
+      nil
+      nixd
 
       dotnetCorePackages.dotnet_9.sdk
 
