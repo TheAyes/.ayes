@@ -32,6 +32,13 @@
       enable = true;
       enableFishIntegration = true;
     };
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+        extraArgs = "--keep-since 14d --keep 5";
+      };
+    };
     command-not-found.enable = false;
 
     git.enable = lib.mkDefault true;
