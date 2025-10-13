@@ -75,7 +75,8 @@
     "UiAdjustments@ControlHintMirroring",
     "UiAdjustments@StopCraftingButton::2",
     "UiAdjustments@FadeUnavailableActions",
-    "UiAdjustments@LockWindowPosition"
+    "UiAdjustments@LockWindowPosition",
+    "UiAdjustments@SubmarineDestinationLetters"
   ],
   "HiddenCategories": [],
   "CustomizedCommands": {
@@ -102,6 +103,10 @@
   "ShowTweakIDs": false,
   "CustomCulture": "",
   "Language": "en",
+  "LanguageListUpdate": "0001-01-01T00:00:00",
+  "LanguageUpdates": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.DateTime, System.Private.CoreLib]], System.Private.CoreLib"
+  },
   "LastSeenChangelog": "1.10.4.0",
   "AutoOpenChangelog": false,
   "DisableChangelogNotification": false,

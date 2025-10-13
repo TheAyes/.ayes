@@ -15,7 +15,7 @@
   home = {
     packages = with pkgs; [
       # Gaming
-      #xivlauncher
+      xivlauncher
       (prismlauncher.override {
         jdks = [ graalvm-ce temurin-jre-bin ];
       })

@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ContactsTracker/1.0.7.0": {
+        "dependencies": {
+          "CsvHelper": "33.0.1",
+          "DalamudPackager": "13.0.0",
+          "DotNet.ReproducibleBuilds": "1.2.25"
+        },
+        "runtime": {
+          "ContactsTracker.dll": {}
+        }
+      },
+      "CsvHelper/33.0.1": {
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.0.1.24"
+          }
+        }
+      },
+      "DalamudPackager/13.0.0": {},
+      "DotNet.ReproducibleBuilds/1.2.25": {}
+    }
+  },
+  "libraries": {
+    "ContactsTracker/1.0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CsvHelper/33.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "path": "csvhelper/33.0.1",
+      "hashPath": "csvhelper.33.0.1.nupkg.sha512"
+    },
+    "DalamudPackager/13.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mb3cUDSK/vDPQ8gQIeuCw03EMYrej1B4J44a1AvIJ9C759p9XeqdU9Hg4WgOmlnlPe0G7ILTD32PKSUpkQNa8w==",
+      "path": "dalamudpackager/13.0.0",
+      "hashPath": "dalamudpackager.13.0.0.nupkg.sha512"
+    },
+    "DotNet.ReproducibleBuilds/1.2.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCXiw7BCxHJ8pF6wPepRUddlh2dlQlbr81gXA72hdk4FLHkKXas7EH/n+fk5UCA/YfMqG1Z6XaPiUjDbUNBUzg==",
+      "path": "dotnet.reproduciblebuilds/1.2.25",
+      "hashPath": "dotnet.reproduciblebuilds.1.2.25.nupkg.sha512"
+    }
+  }
+}

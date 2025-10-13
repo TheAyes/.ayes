@@ -1,5 +1,6 @@
 {
   "CombatStart": true,
+  "CombatEnd": false,
   "ZoneChange": false,
   "CrossHotbar": true,
   "Version": 1

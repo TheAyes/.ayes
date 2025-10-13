@@ -100,7 +100,8 @@
 
       li.channel__972a0.container_e45859:has(div a[href="/store"]),
       li.channel__972a0.container_e45859:has(div a[href="/shop"]),
-      div.buttons__74017 > div[aria-label="Send a gift"],
+      div.buttons__74017 div[aria-label="Send a gift"],
+      div.buttons__74017 div:has(div[aria-label="Send a gift"]),
       .mask__0d616,
       div.bar_c38106 {
         display: none

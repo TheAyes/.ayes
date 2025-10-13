@@ -1,0 +1,270 @@
+{
+  "$type": "Redirect.Configuration, Redirect",
+  "Version": 1,
+  "DefaultMouseoverFriendly": true,
+  "DefaultModelMouseoverFriendly": false,
+  "DefaultMouseoverHostile": false,
+  "DefaultModelMouseoverHostile": false,
+  "DefaultMouseoverGround": true,
+  "DefaultCursorMouseover": false,
+  "EnableMacroQueueing": true,
+  "QueueGroundActions": true,
+  "IgnoreErrors": true,
+  "DefaultRedirection": "UI Mouseover",
+  "Redirections": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Redirect.Redirection, Redirect]], System.Private.CoreLib",
+    "7439": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 7439,
+      "Priority": [
+        "UI Mouseover",
+        "Cursor",
+        "<2>",
+        "<3>",
+        "Self"
+      ]
+    },
+    "3615": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3615,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "25873": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 25873,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target",
+        "<2>",
+        "<3>"
+      ]
+    },
+    "16556": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 16556,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target",
+        "<2>",
+        "<3>"
+      ]
+    },
+    "37021": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 37021,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Target of Target",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>",
+        "<6>",
+        "<7>",
+        "<8>"
+      ]
+    },
+    "37020": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 37020,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Target of Target",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>",
+        "<6>",
+        "<7>",
+        "<8>"
+      ]
+    },
+    "37019": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 37019,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "<5>",
+        "<3>",
+        "<6>",
+        "<7>",
+        "<8>",
+        "<4>",
+        "<2>"
+      ]
+    },
+    "3596": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3596,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3598": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3598,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3599": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3599,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3608": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3608,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "7442": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 7442,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "16554": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 16554,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "16555": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 16555,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target"
+      ]
+    },
+    "25871": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 25871,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "25872": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 25872,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "37029": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 37029,
+      "Priority": [
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3603": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3603,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "<4>",
+        "<2>",
+        "<3>",
+        "<5>",
+        "<6>",
+        "<7>",
+        "<8>"
+      ]
+    },
+    "3610": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3610,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3612": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3612,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target"
+      ]
+    },
+    "3614": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3614,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target",
+        "<2>",
+        "<3>"
+      ]
+    },
+    "3594": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3594,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target",
+        "<2>",
+        "<3>"
+      ]
+    },
+    "3595": {
+      "$type": "Redirect.Redirection, Redirect",
+      "ID": 3595,
+      "Priority": [
+        "UI Mouseover",
+        "Target",
+        "Focus",
+        "Target of Target",
+        "<2>",
+        "<3>"
+      ]
+    }
+  }
+}
