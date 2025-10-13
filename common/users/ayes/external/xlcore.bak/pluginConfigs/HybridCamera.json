@@ -1,0 +1,16 @@
+{
+  "$type": "HybridCamera.Configuration, HybridCamera",
+  "autorunMoveMode": null,
+  "cameraRotateMoveMode": null,
+  "legacyModeKeyList": null,
+  "useTurnOnCameraTurn": null,
+  "ControllerMode": false,
+  "useTurnOnBackpedal": true,
+  "useTurnOnFrontpedal": true,
+  "useLegacyWhileMoving": true,
+  "useLegacyTurning": true,
+  "disableLRMouseMove": false,
+  "shutUpConfigHelp": false,
+  "ShowExperimental": false,
+  "HideTooltips": false
+}

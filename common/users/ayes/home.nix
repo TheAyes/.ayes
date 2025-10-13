@@ -11,18 +11,6 @@
   ];
 
   home = {
-    /*
-      pointerCursor = {
-      enable = true;
-      gtk.enable = true;
-      x11.enable = true;
-      dotIcons.enable = true;
-
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
-      };
-    */
-
     sessionVariables = {
       GIT_MERGE_AUTOEDIT = "no";
     };

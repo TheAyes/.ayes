@@ -1,6 +1,9 @@
 ﻿{
+  "CurrentModSelectorWidth": 200.0,
+  "ModSelectorMinimumScale": 0.1,
+  "ModSelectorMaximumScale": 0.5,
   "Version": 9,
-  "LastSeenVersion": 46,
+  "LastSeenVersion": 49,
   "DebugSeparateWindow": false,
   "TutorialStep": 29,
   "EnableResourceLogging": false,

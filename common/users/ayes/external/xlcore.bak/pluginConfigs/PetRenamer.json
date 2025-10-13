@@ -1,0 +1,53 @@
+{
+  "$type": "PetRenamer.Configuration, PetRenamer",
+  "downloadProfilePictures": true,
+  "languageSettings": 0,
+  "showOnNameplates": true,
+  "showOnCastbars": true,
+  "showInBattleChat": true,
+  "showOnFlyout": true,
+  "showOnEmotes": true,
+  "showOnTooltip": true,
+  "showNamesInMinionBook": true,
+  "showNamesInActionLog": true,
+  "useContextMenus": true,
+  "showOnTargetBars": true,
+  "showOnPartyList": true,
+  "showOnIslandPets": true,
+  "showKofiButton": false,
+  "quickButtonsToggle": true,
+  "listButtonLayout": 0,
+  "minionIconType": 1,
+  "showIslandWarning": true,
+  "debugModeActive": false,
+  "openDebugWindowOnStart": false,
+  "debugShowChatCode": false,
+  "serializableUsersV3": [],
+  "Version": 9,
+  "SerializableUsersV4": [
+    {
+      "$type": "PN.S.SerializableUserV4, PetRenamer",
+      "ContentID": 18014598541772518,
+      "Name": "Meira Kisaragi",
+      "Homeworld": 66,
+      "SoftSkeletonData": [
+        -411,
+        -417,
+        -416,
+        -415,
+        -407
+      ],
+      "SerializableNameDatas": [
+        {
+          "$type": "PN.S.SerializableNameData, PetRenamer",
+          "IDS": [],
+          "Names": []
+        }
+      ]
+    }
+  ],
+  "__Obsolete_Values__": "\nThe values from here onwards are obsolete, editing these will result in NOTHING",
+  "users": [],
+  "serializableUsers": [],
+  "serializableUsersV2": []
+}

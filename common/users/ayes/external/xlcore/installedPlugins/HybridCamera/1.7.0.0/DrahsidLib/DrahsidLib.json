@@ -1,0 +1,16 @@
+{
+  "Author": "Drahsid",
+  "Name": "DrahsidLib",
+  "InternalName": "DrahsidLib",
+  "AssemblyVersion": "1.2.0.0",
+  "Description": "Drahsid Library",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/Drahsid/DrahsidLib",
+  "DalamudApiLevel": 13,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "",
+  "AcceptsFeedback": true
+}

@@ -30,6 +30,15 @@
     ../../presets/nixos/programs/lact.nix
   ];
 
+  fileSystems = {
+    "/home/ayes/.xlcore" = {
+      device = "/etc/nixos/common/users/ayes/external/xlcore";
+      depends = [ "/" "/home" ];
+      fsType = "none";
+      options = [ "bind" ];
+    };
+  };
+
   ##################################
   ## Nix
   ##################################
@@ -65,6 +74,7 @@
       rocmPackages.hsakmt
       rocmPackages.amdsmi
     ];
+
 
     variables =
       let
