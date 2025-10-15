@@ -66,7 +66,16 @@
   };
 
   programs = {
-    bitwig.enable = true;
+    bitwig= {
+    	enable = true;
+     	extraPackages = with pkgs; [
+				yabridge
+				yabridgectl
+
+				# VST's
+				vital
+      ];
+    };
   };
 
   xdg = {

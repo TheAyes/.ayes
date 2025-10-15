@@ -1,4 +1,4 @@
 #! /run/current-system/sw/bin/bash
 DIR=$(git rev-parse --show-toplevel)
 
-nixos-rebuild boot --sudo --flake "$DIR"
+nh os boot "$DIR" --ask --diff=auto

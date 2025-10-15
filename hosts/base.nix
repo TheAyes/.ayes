@@ -32,6 +32,7 @@
       enable = true;
       enableFishIntegration = true;
     };
+
     nh = {
       enable = true;
       clean = {
