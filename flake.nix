@@ -32,11 +32,7 @@
     , flake-parts
     , ...
     }:
-    flake-parts.lib.mkFlake { inherit inputs; } (
-      { withSystem
-      , flake-parts-lib
-      , ...
-      }: {
+    flake-parts.lib.mkFlake { inherit inputs; } ({ ... }: {
 
         imports = [ ./modules/flake-parts/host-manager ];
 
@@ -98,7 +94,6 @@
 
         perSystem =
           { pkgs
-          , config
           , ...
           }: {
             formatter = pkgs.nixpkgs-fmt;

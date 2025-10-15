@@ -1,0 +1,152 @@
+{
+  "$type": "Chatter.Configuration, Chatter",
+  "LogDirectory": "C:\\users\\ayes\\Documents\\FFXIV Chatter",
+  "LogFileNamePrefix": "chatter",
+  "WhenToCloseLogs": "",
+  "ShowMinimalMainWindow": false,
+  "ChatLogs": {
+    "$type": "System.Collections.Generic.SortedDictionary`2[[System.String, System.Private.CoreLib],[Chatter.Configuration+ChatLogConfiguration, Chatter]], System.Collections",
+    "all": {
+      "$type": "Chatter.Configuration+ChatLogConfiguration, Chatter",
+      "ChatTypeFilterFlags": {
+        "$type": "System.Collections.Generic.Dictionary`2[[Dalamud.Game.Text.XivChatType, Dalamud],[Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter]], System.Private.CoreLib",
+        "Say": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "TellOutgoing": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "TellIncoming": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Shout": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Party": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Alliance": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls1": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls2": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls3": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls4": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls5": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls6": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls7": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Ls8": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "FreeCompany": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "NoviceNetwork": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CustomEmote": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "StandardEmote": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "Yell": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossParty": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "PvPTeam": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell1": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell2": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell3": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell4": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell5": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell6": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell7": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        },
+        "CrossLinkShell8": {
+          "$type": "Chatter.Configuration+ChatLogConfiguration+ChatTypeFlag, Chatter",
+          "Value": true
+        }
+      },
+      "DateTimeFormat": null,
+      "DebugIncludeAllMessages": false,
+      "Format": null,
+      "IsEvent": false,
+      "IncludeAllUsers": true,
+      "IncludeMe": true,
+      "IncludeServer": false,
+      "IsActive": true,
+      "MessageWrapIndentation": 0,
+      "MessageWrapWidth": 0,
+      "Name": "all",
+      "Users": {
+        "$type": "System.Collections.Generic.SortedDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Collections"
+      },
+      "EventLengthString": "PT12H",
+      "EventStartTimeString": "-9998-01-01T00:00:00"
+    }
+  },
+  "IsDebug": false,
+  "LogOrder": 1,
+  "Version": 2,
+  "DirectoryForm": 1
+}
