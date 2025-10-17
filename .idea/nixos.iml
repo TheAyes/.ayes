@@ -20,6 +20,8 @@
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/runtime" />
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/temp" />
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/wineprefix" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv/Lib" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv/Scripts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
