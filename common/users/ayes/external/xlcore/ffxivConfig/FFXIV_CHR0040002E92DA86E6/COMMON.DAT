@@ -79,7 +79,7 @@ HotbarLock	1
 HotbarDispRecastTime	1
 HotbarCrossContentsActionEnableInput	1
 HotbarDispRecastTimeDispType	1
-ExHotbarChangeHotbar1	1
+ExHotbarChangeHotbar1	0
 HotbarCommon01	0
 HotbarCommon02	0
 HotbarCommon03	0
@@ -475,7 +475,7 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	40
-ChatType	1
+ChatType	2
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278

@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.5",
+  "LastVersion": "13.0.0.6",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -1343,6 +1343,12 @@
       "$values": [
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Penumbra",
+          "WorkingPluginId": "51966a67-c5ac-4e9d-8f0c-41e1d5318956",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "NoSoliciting",
           "WorkingPluginId": "69507ef8-24dd-4b21-a34f-554f0336c5c1",
           "IsEnabled": true
@@ -1496,20 +1502,14 @@
           "InternalName": "Splatoon",
           "WorkingPluginId": "97af9b85-cdad-4c9d-a940-da1e43c78b02",
           "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Penumbra",
-          "WorkingPluginId": "51966a67-c5ac-4e9d-8f0c-41e1d5318956",
-          "IsEnabled": true
         }
       ]
     },
     "id": "00000000-0000-0000-0000-000000000000",
     "n": "DEFAULT"
   },
-  "ProfilesEnabled": true,
-  "ProfilesHasSeenTutorial": true,
+  "ProfilesEnabled": false,
+  "ProfilesHasSeenTutorial": false,
   "DefaultUiPreset": {
     "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel, Dalamud",
     "id": "00000000-0000-0000-0000-000000000000",

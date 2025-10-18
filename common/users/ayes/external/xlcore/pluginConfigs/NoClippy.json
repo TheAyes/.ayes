@@ -123,12 +123,12 @@
     "24622": 0.6,
     "7442": 0.6,
     "12911": 0.6,
-    "2471": 0.6,
-    "41608": 0.6,
-    "41609": 0.6
+    "44517": 2.6,
+    "44518": 2.6,
+    "30869": 0.6
   },
-  "TotalActionsReduced": 104898,
-  "TotalAnimationLockReduction": 3995.6993357241154,
+  "TotalActionsReduced": 105008,
+  "TotalAnimationLockReduction": 3995.1080752313137,
   "LogToChat": false,
   "LogChatType": 0,
   "EnableEncounterStats": true,
