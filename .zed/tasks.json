@@ -1,0 +1,50 @@
+[
+	{
+		"label": "Rebuild Switch",
+		"command": "/etc/nixos/scripts/rebuild.sh",
+		"args": ["switch"],
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "no_focus",
+		"hide": "never",
+		"shell": "system",
+		"show_summary": true,
+		"show_command": false
+	},
+	{
+		"label": "Rebuild Boot",
+		"command": "/etc/nixos/scripts/rebuild.sh",
+		"args": ["boot"],
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "no_focus",
+		"hide": "never",
+		"shell": "system",
+		"show_summary": true,
+		"show_command": false
+	},
+	{
+		"label": "Rebuild Test",
+		"command": "/etc/nixos/scripts/rebuild.sh",
+		"args": ["test"],
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "no_focus",
+		"hide": "never",
+		"shell": "system",
+		"show_summary": true,
+		"show_command": false
+	},
+	{
+		"label": "Upgrade",
+		"command": "/etc/nixos/scripts/rebuild.sh",
+		"args": ["switch", "--update"],
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "no_focus",
+		"hide": "never",
+		"shell": "system",
+		"show_summary": true,
+		"show_command": false
+	}
+]

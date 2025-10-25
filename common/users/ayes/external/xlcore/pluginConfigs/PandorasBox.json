@@ -1,0 +1,9 @@
+{
+  "$type": "PandorasBox.Configuration, PandorasBox",
+  "EnabledFeatures": [
+    "ATMSolver",
+    "PartyFinderShowMore"
+  ],
+  "DisabledTheme": true,
+  "Version": 0
+}

@@ -1,7 +1,7 @@
-{ hostname
-, pkgs
+{
+ pkgs
 , config
-, lib
+
 , inputs
 , ...
 }: {
@@ -36,6 +36,30 @@
       depends = [ "/" "/home" ];
       fsType = "none";
       options = [ "bind" ];
+    };
+
+    "/nix" = {
+    	device = "/dev/disk/by-uuid/a1b38f00-6ecc-44db-8f2f-6e13d880eb19";
+      fsType = "ext4";
+      depends = ["/"];
+    };
+
+    "/home" = {
+      device = "/dev/disk/by-uuid/215985a5-1a1f-441e-9399-c1fd1ecfc761";
+      fsType = "ext4";
+      depends = ["/" "/nix"];
+    };
+
+    "/mnt/games" = {
+      device = "/dev/disk/by-uuid/8da931bf-76ed-40b6-a030-70647e755c1a";
+      fsType = "ext4";
+      depends = ["/" "/nix"];
+    };
+
+    "/mnt/projects" = {
+    	device = "/dev/disk/by-uuid/df4ccd26-7eee-4410-a0e4-05fd70f5d633";
+      fsType = "ext4";
+      depends = ["/" "/nix"];
     };
   };
 
