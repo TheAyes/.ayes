@@ -1,3 +1,4 @@
+[Bb]ackup/
 [Bb]ackups/
 compatibilitytool/
 dalamud/
@@ -7,6 +8,7 @@ ffxivConfig/cfgcopy/
 ffxivConfig/replay/
 installedPlugins/
 log/
+*cache*/
 logs/
 patch/
 runtime/
@@ -14,7 +16,8 @@ temp/
 wineprefix/
 
 *.old
+*.db
+*.zip
 dalamudUI.ini
-dalamudVfs.db
 launcher.ini
 launcherUI.ini
