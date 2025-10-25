@@ -39,6 +39,36 @@
         "Url": "https://love.puni.sh/ment.json",
         "IsEnabled": true,
         "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/veyn",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://github.com/NightmareXIV/MyDalamudPlugins/raw/main/pluginmaster.json",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/croizat",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/plugins",
+        "IsEnabled": false,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/herc",
+        "IsEnabled": true,
+        "Name": null
       }
     ]
   },
@@ -70,7 +100,88 @@
       "NoClippy",
       "ReAction",
       "VanillaPlus",
-      "NoSoliciting"
+      "NoSoliciting",
+      "EngageTimer",
+      "ARealmRecorded",
+      "Dalamud.CharacterSync",
+      "CharacterPanelRefined",
+      "ContactsTracker",
+      "FauxHollowsSolver",
+      "MiniCactpotSolver",
+      "WondrousTailsSolver",
+      "Glamaholic",
+      "Globetrotter",
+      "Redirect",
+      "ReadyCheckHelper",
+      "PixelPerfect",
+      "WaymarkPresetPlugin",
+      "Umbra",
+      "SortaKinda",
+      "SimpleTweaksPlugin",
+      "RemotePartyFinder",
+      "MacroMate",
+      "JobBars",
+      "LazyLoot",
+      "Orbwalker",
+      "PandorasBox",
+      "Saucy",
+      "TwitchXIV",
+      "WrathCombo",
+      "YesAlready",
+      "NoTypeSay",
+      "Questionable",
+      "TargetFurniture",
+      "TeamcraftListMaker",
+      "Tilted",
+      "TextToTalk",
+      "Bartender",
+      "TalkCopy",
+      "CashFlow",
+      "ChatContext",
+      "ChatAlerts",
+      "MBHistory",
+      "FlyTextFilter",
+      "VFXEditor",
+      "AvantGarde",
+      "vnavmesh",
+      "LaunchpadHotbars",
+      "CameraLoader",
+      "Lifestream",
+      "AbilityAnts",
+      "TeleporterPlugin",
+      "TextAdvance",
+      "ObjectExplorer",
+      "QoLBar",
+      "QuestAWAY",
+      "QuestMap",
+      "BeastieBuddy",
+      "BossMod",
+      "Browsingway",
+      "borderless-fix",
+      "QuestJournal",
+      "HarpHero",
+      "PartyPlanner",
+      "VenueManager",
+      "Cammy",
+      "CombatCursorContainment",
+      "DynamicBridge",
+      "Automaton",
+      "autoSweep",
+      "PvPAnnouncer",
+      "BetterPartyFinder",
+      "AcquisitionDate",
+      "PartyIcons",
+      "AudibleCharacterStatus",
+      "AutoMountBgm",
+      "AutoBGM",
+      "FaderPlugin",
+      "Craftimizer",
+      "DiademCalculator",
+      "Mini",
+      "SonarPlugin",
+      "AutoDuty",
+      "ChatBubbles",
+      "QuestShare"
     ]
   },
   "DevPluginSettings": {
@@ -1330,7 +1441,222 @@
   "ChosenStyle": "Dalamud Standard",
   "SavedProfiles": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Plugin.Internal.Profiles.ProfileModel, Dalamud]], System.Private.CoreLib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1, Dalamud",
+        "b": false,
+        "p": 0,
+        "e": true,
+        "c": 0,
+        "Plugins": {
+          "$type": "System.Collections.Generic.List`1[[Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Penumbra",
+              "WorkingPluginId": "51966a67-c5ac-4e9d-8f0c-41e1d5318956",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Aetherment",
+              "WorkingPluginId": "efc1df6a-6383-4b0d-a466-2d118ca86a24",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "ARealmRecorded",
+              "WorkingPluginId": "eacb3cc6-4c3b-4bf9-8082-c9bfce52c4a0",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "WondrousTailsSolver",
+              "WorkingPluginId": "46814595-95d9-45d6-abca-0a0689886ada",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "MacroMate",
+              "WorkingPluginId": "13bbeea9-9379-41a7-9de8-9b05da53ed6e",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "AutoRetainer",
+              "WorkingPluginId": "6f0d6a37-ad17-4d98-9002-3bf991c509bc",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Dalamud.CharacterSync",
+              "WorkingPluginId": "26491881-8d4a-43c5-8f3d-82cb0f6f266b",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "ContactsTracker",
+              "WorkingPluginId": "6a9c2f04-2971-44c4-86d7-bdeb81d5c04c",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "CharacterPanelRefined",
+              "WorkingPluginId": "0dc88ec7-41b5-4a9a-8d2c-165df650060e",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "EngageTimer",
+              "WorkingPluginId": "7bc27ccc-abaa-443d-bda5-1110a4bc80d4",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "FauxHollowsSolver",
+              "WorkingPluginId": "7c5b08c2-3db5-48ec-811f-05c1b1b00a8c",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Glamaholic",
+              "WorkingPluginId": "456d78de-7608-48bd-9a95-7fe716c69f92",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "HybridCamera",
+              "WorkingPluginId": "d517275d-3298-444e-96fb-383aff5f8ee2",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Globetrotter",
+              "WorkingPluginId": "cf2d7a09-2bec-4f4d-8b75-7f2514e69078",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "JobBars",
+              "WorkingPluginId": "1582b674-c972-4ed4-8fa1-51c18682e47a",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "WaymarkPresetPlugin",
+              "WorkingPluginId": "0feb10d3-e5f7-4513-8c17-2b919b48de20",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "MiniCactpotSolver",
+              "WorkingPluginId": "707632fe-5256-4139-a424-23a29a514325",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "PixelPerfect",
+              "WorkingPluginId": "96e53124-da92-483b-af84-cd561bb840a2",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "SortaKinda",
+              "WorkingPluginId": "e7add00f-56c9-4169-b9f4-b01e2b8569e5",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "NoClippy",
+              "WorkingPluginId": "f4da02cf-b3e2-4dd5-8bf2-bb94454f4a70",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "SimpleTweaksPlugin",
+              "WorkingPluginId": "77bc7494-fbac-46ad-b583-1a85890cd13f",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "ReadyCheckHelper",
+              "WorkingPluginId": "760254bf-821e-45a9-9ed9-1fe6cb32a99b",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Redirect",
+              "WorkingPluginId": "e1944093-2d00-4800-8251-1651346f1397",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "RemotePartyFinder",
+              "WorkingPluginId": "23a972a5-181f-4b8f-bc8e-99f65e3e8140",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Splatoon",
+              "WorkingPluginId": "97af9b85-cdad-4c9d-a940-da1e43c78b02",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Umbra",
+              "WorkingPluginId": "7f56e857-6e7b-4230-9fc7-32c133bd2c43",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "NoSoliciting",
+              "WorkingPluginId": "69507ef8-24dd-4b21-a34f-554f0336c5c1",
+              "IsEnabled": true
+            }
+          ]
+        },
+        "id": "ee94626c-eeef-48f3-8d3c-c36d6bee3f45",
+        "n": "Main"
+      },
+      {
+        "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1, Dalamud",
+        "b": false,
+        "p": 2,
+        "e": false,
+        "c": 0,
+        "Plugins": {
+          "$type": "System.Collections.Generic.List`1[[Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud]], System.Private.CoreLib",
+          "$values": [
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Questionable",
+              "WorkingPluginId": "eff94d75-c47b-45b3-a06a-a31efc2a1a28",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "Lifestream",
+              "WorkingPluginId": "e82a588c-8590-49e4-a1c1-4eb9547de0c7",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "AutoDuty",
+              "WorkingPluginId": "62fb4194-c5d5-4210-a773-6bcf8e6b93a7",
+              "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "vnavmesh",
+              "WorkingPluginId": "c240b715-ba1d-4cff-8102-daf84993cdbe",
+              "IsEnabled": true
+            }
+          ]
+        },
+        "id": "f0181385-35fe-438e-81b2-03efa33ee497",
+        "n": "Botting"
+      }
+    ]
   },
   "DefaultProfile": {
     "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1, Dalamud",
@@ -1343,164 +1669,206 @@
       "$values": [
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Penumbra",
-          "WorkingPluginId": "51966a67-c5ac-4e9d-8f0c-41e1d5318956",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "NoSoliciting",
-          "WorkingPluginId": "69507ef8-24dd-4b21-a34f-554f0336c5c1",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Aetherment",
-          "WorkingPluginId": "efc1df6a-6383-4b0d-a466-2d118ca86a24",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Umbra",
-          "WorkingPluginId": "7f56e857-6e7b-4230-9fc7-32c133bd2c43",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "SimpleTweaksPlugin",
-          "WorkingPluginId": "77bc7494-fbac-46ad-b583-1a85890cd13f",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "ReadyCheckHelper",
-          "WorkingPluginId": "760254bf-821e-45a9-9ed9-1fe6cb32a99b",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "RemotePartyFinder",
-          "WorkingPluginId": "23a972a5-181f-4b8f-bc8e-99f65e3e8140",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "SortaKinda",
-          "WorkingPluginId": "e7add00f-56c9-4169-b9f4-b01e2b8569e5",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "PixelPerfect",
-          "WorkingPluginId": "96e53124-da92-483b-af84-cd561bb840a2",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Redirect",
-          "WorkingPluginId": "e1944093-2d00-4800-8251-1651346f1397",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "MiniCactpotSolver",
-          "WorkingPluginId": "707632fe-5256-4139-a424-23a29a514325",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "MacroMate",
-          "WorkingPluginId": "13bbeea9-9379-41a7-9de8-9b05da53ed6e",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "NoClippy",
-          "WorkingPluginId": "f4da02cf-b3e2-4dd5-8bf2-bb94454f4a70",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "JobBars",
-          "WorkingPluginId": "1582b674-c972-4ed4-8fa1-51c18682e47a",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Globetrotter",
-          "WorkingPluginId": "cf2d7a09-2bec-4f4d-8b75-7f2514e69078",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "HybridCamera",
-          "WorkingPluginId": "d517275d-3298-444e-96fb-383aff5f8ee2",
-          "IsEnabled": false
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Glamaholic",
-          "WorkingPluginId": "456d78de-7608-48bd-9a95-7fe716c69f92",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Dalamud.CharacterSync",
-          "WorkingPluginId": "26491881-8d4a-43c5-8f3d-82cb0f6f266b",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "EngageTimer",
-          "WorkingPluginId": "7bc27ccc-abaa-443d-bda5-1110a4bc80d4",
+          "InternalName": "ARealmRecorded",
+          "WorkingPluginId": "24eff0b8-0955-43f6-a55b-2fb3944f42ee",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "WondrousTailsSolver",
-          "WorkingPluginId": "46814595-95d9-45d6-abca-0a0689886ada",
+          "WorkingPluginId": "e7b9ee52-f13f-41c3-8a83-4080f4dbf92a",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "ARealmRecorded",
-          "WorkingPluginId": "eacb3cc6-4c3b-4bf9-8082-c9bfce52c4a0",
+          "InternalName": "MacroMate",
+          "WorkingPluginId": "81afa269-d48b-473a-b9b3-af398f44fa9a",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "WaymarkPresetPlugin",
-          "WorkingPluginId": "0feb10d3-e5f7-4513-8c17-2b919b48de20",
+          "InternalName": "Dalamud.CharacterSync",
+          "WorkingPluginId": "254340e5-322b-4cc1-8f50-676b6071494f",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "ContactsTracker",
-          "WorkingPluginId": "6a9c2f04-2971-44c4-86d7-bdeb81d5c04c",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "AutoRetainer",
-          "WorkingPluginId": "6f0d6a37-ad17-4d98-9002-3bf991c509bc",
+          "WorkingPluginId": "5552ce0a-48e0-4e0a-830b-e46749963656",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "CharacterPanelRefined",
-          "WorkingPluginId": "0dc88ec7-41b5-4a9a-8d2c-165df650060e",
+          "WorkingPluginId": "dd134159-a4a3-425d-a46a-d2c036c37a25",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "EngageTimer",
+          "WorkingPluginId": "3f652bb4-4fbc-4e53-aef7-01efab0c1854",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "FauxHollowsSolver",
-          "WorkingPluginId": "7c5b08c2-3db5-48ec-811f-05c1b1b00a8c",
+          "WorkingPluginId": "9b95972f-ad85-412a-8fcf-114bbf0777b8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Glamaholic",
+          "WorkingPluginId": "0bca37ae-0729-42c2-8540-ef0fae88c077",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "HybridCamera",
+          "WorkingPluginId": "4fe74e78-37f7-4887-bb03-7d85f4a68583",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Globetrotter",
+          "WorkingPluginId": "0de024c6-e174-40e0-836b-afcacbb468cd",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "JobBars",
+          "WorkingPluginId": "1e703dae-e1d0-439b-962b-2535f581b5e3",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "WaymarkPresetPlugin",
+          "WorkingPluginId": "7f44bb90-b35a-4431-b9e2-4b8a94db5cb7",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "MiniCactpotSolver",
+          "WorkingPluginId": "e550b5e8-5b86-49a8-92e0-d98bff48d416",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PixelPerfect",
+          "WorkingPluginId": "8d4eb6b7-19b5-429a-a7e9-b28acf058c3f",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "SortaKinda",
+          "WorkingPluginId": "0584a3eb-85a7-4b1a-9e9a-36c0104f4718",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "NoSoliciting",
+          "WorkingPluginId": "845f7f2d-1be2-48e3-8b42-662aaf0f0b43",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Umbra",
+          "WorkingPluginId": "4f4ba6ad-1c24-44ac-8d13-6769cc20c6d2",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "RemotePartyFinder",
+          "WorkingPluginId": "ea2f69dc-2de1-4314-a00d-e87e0a14ff5b",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Redirect",
+          "WorkingPluginId": "3d9b74ad-6603-44a7-a554-f342d728ac70",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "ReadyCheckHelper",
+          "WorkingPluginId": "8e856288-c08d-4e00-a0a3-3db544288a51",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "SimpleTweaksPlugin",
+          "WorkingPluginId": "42aac322-9ebe-4976-a7cc-75ef68caf0da",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Penumbra",
+          "WorkingPluginId": "d23116d8-2d32-401c-8cd1-794f9c9b8444",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Aetherment",
+          "WorkingPluginId": "66ebe2d9-d403-48c0-a86d-06b3b63986cf",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "AutoRetainer",
+          "WorkingPluginId": "a70ff66e-4b96-47d0-9638-a93200195045",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "NoClippy",
+          "WorkingPluginId": "f9940238-1751-4bdd-ba9c-71ec4333e4cf",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Saucy",
+          "WorkingPluginId": "8470776c-6ce3-46db-b26d-a9a34953e9e9",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Splatoon",
-          "WorkingPluginId": "97af9b85-cdad-4c9d-a940-da1e43c78b02",
+          "WorkingPluginId": "28cf0ae3-a7b8-4f8d-b0d1-8dbbf27933b8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "YesAlready",
+          "WorkingPluginId": "1cc8bd7e-45a0-4d4c-b271-65495e651616",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "TextAdvance",
+          "WorkingPluginId": "e5080399-96d5-46e0-9482-3493735e97f5",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BossMod",
+          "WorkingPluginId": "470855a9-af5f-4fe9-b4c1-d9863ebadb11",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Automaton",
+          "WorkingPluginId": "aebde605-5f6e-4d86-bb0e-f82df08cf0e0",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PandorasBox",
+          "WorkingPluginId": "095dcac1-7e3f-49ff-940e-f8c87430b5b8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Artisan",
+          "WorkingPluginId": "fae60956-da15-4808-bcf1-cbe22965c6f8",
           "IsEnabled": true
         }
       ]
@@ -1508,8 +1876,8 @@
     "id": "00000000-0000-0000-0000-000000000000",
     "n": "DEFAULT"
   },
-  "ProfilesEnabled": false,
-  "ProfilesHasSeenTutorial": false,
+  "ProfilesEnabled": true,
+  "ProfilesHasSeenTutorial": true,
   "DefaultUiPreset": {
     "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel, Dalamud",
     "id": "00000000-0000-0000-0000-000000000000",
@@ -1521,7 +1889,13 @@
   "DtrOrder": {
     "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "$values": [
-      "SplatoonPriority"
+      "SplatoonPriority",
+      "YesAlready",
+      "vnavmesh",
+      "LifestreamInstance",
+      "vbm-autorotation",
+      "vbm-ai",
+      "vbm-stats"
     ]
   },
   "DtrIgnore": {
