@@ -224,7 +224,6 @@
   ##################################
   boot = {
     # https://wiki.nixos.org/wiki/Linux_kernel
-    kernelPackages = pkgs.linuxPackages_latest;
     #kernelPackages = pkgs.linuxPackages_zen;
   };
 }
