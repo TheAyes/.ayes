@@ -18,6 +18,7 @@ wineprefix/
 *.old
 *.db
 *.zip
+*.log
 dalamudUI.ini
 launcher.ini
 launcherUI.ini

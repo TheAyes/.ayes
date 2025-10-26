@@ -75,7 +75,7 @@
       "AllowAutomaticInteract": true,
       "ShowDemo": false,
       "Enable": true,
-      "CloseBehavior": "Prompt",
+      "CloseBehavior": "DisableActiveModuleCategory",
       "Lock": false,
       "TrishaMode": false,
       "OpaqueArenaBackground": false,
@@ -99,7 +99,9 @@
       "ShowPlayerHints": true,
       "ShowWorldArrows": false,
       "DisabledModules": [],
-      "DisabledCategories": []
+      "DisabledCategories": [
+        "Dungeon"
+      ]
     },
     "BossMod.ZoneModuleConfig": {
       "MinMaturity": "Contributed",
