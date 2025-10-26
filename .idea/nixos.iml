@@ -25,6 +25,9 @@
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/ffxiv" />
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/pluginConfigs/Dalamud.CharacterSync/backups" />
       <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/pluginConfigs/Splatoon/Backups/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/pluginConfigs/MacroMate/Backups" />
+      <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/pluginConfigs/Splatoon/Backups" />
+      <excludeFolder url="file://$MODULE_DIR$/common/users/ayes/external/xlcore/pluginConfigs/vnavmesh/meshcache" />
       <excludePattern pattern="*UI.ini" />
       <excludePattern pattern="dalamudVfs.db" />
       <excludePattern pattern="launcher.ini" />

@@ -1650,6 +1650,12 @@
               "InternalName": "vnavmesh",
               "WorkingPluginId": "c240b715-ba1d-4cff-8102-daf84993cdbe",
               "IsEnabled": true
+            },
+            {
+              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+              "InternalName": "BossMod",
+              "WorkingPluginId": "470855a9-af5f-4fe9-b4c1-d9863ebadb11",
+              "IsEnabled": true
             }
           ]
         },
@@ -1845,12 +1851,6 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "TextAdvance",
           "WorkingPluginId": "e5080399-96d5-46e0-9482-3493735e97f5",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "BossMod",
-          "WorkingPluginId": "470855a9-af5f-4fe9-b4c1-d9863ebadb11",
           "IsEnabled": true
         },
         {
