@@ -1,0 +1,53 @@
+{
+  "$type": "Heliosphere.Configuration, heliosphere-plugin",
+  "UserId": "7902dd89-838b-4137-859d-998211d6652e",
+  "FirstTimeSetupComplete": true,
+  "LoginUpdateMode": 2,
+  "IncludeTags": true,
+  "OpenPenumbraAfterInstall": true,
+  "WarnAboutBreakingChanges": true,
+  "ReplaceSortName": true,
+  "ReplaceModName": true,
+  "HideDefaultVariant": true,
+  "UseNotificationProgress": true,
+  "NotificationsStartMinimised": false,
+  "AllowCommandInstalls": true,
+  "AllowCommandOneClick": false,
+  "UseRecycleBin": false,
+  "ShowImagesInManager": true,
+  "TitlePrefix": "[HS] ",
+  "PenumbraFolder": "Heliosphere",
+  "DefaultCollectionId": "80a9b8c7-9f7c-4f63-820f-229527fb7b88",
+  "OneClick": true,
+  "OneClickSalt": {
+    "$type": "System.Byte[], System.Private.CoreLib",
+    "$value": "ID2peLDQqkA="
+  },
+  "OneClickHash": "eCr94ccEXFi7KlVb1b9q1X3VvsN6v9ZN1+Zc/XSN6bM4tbhw6HJO3bDOhBXC26irMoxncEgLRZUt+YWEWFSP2Bj3MQwRgERj2PiN1w+EyFIY29VMUP4t6tJbVWCnEOlFQm1AQuVg+Vg83KcKgRMCrLKsqCw9FvD7zzEh33SBphg=",
+  "OneClickCollectionId": null,
+  "MaxKibsPerSecond": 30720,
+  "AltMaxKibsPerSecond": 5120,
+  "LimitNormal": 0,
+  "LimitInstance": 2,
+  "LimitCombat": 2,
+  "LimitParty": 0,
+  "Penumbra": {
+    "$type": "Heliosphere.PenumbraIntegration, heliosphere-plugin",
+    "ShowImages": true,
+    "ShowButtons": true,
+    "ExpandSettingsDefault": true,
+    "ImageSize": 0.375
+  },
+  "PackageSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Heliosphere.PackageSettings, heliosphere-plugin]], System.Private.CoreLib",
+    "0a8b4d74-0b54-4c67-b2cf-a50f1247d9a4": {
+      "$type": "Heliosphere.PackageSettings, heliosphere-plugin",
+      "LoginUpdateMode": null,
+      "Update": 0
+    }
+  },
+  "LatestMigration": 0,
+  "AutoUpdate": true,
+  "CheckForUpdates": true,
+  "Version": 3
+}

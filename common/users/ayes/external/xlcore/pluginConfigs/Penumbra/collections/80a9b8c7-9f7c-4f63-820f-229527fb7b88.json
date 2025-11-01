@@ -36,12 +36,151 @@
       "Priority": 0,
       "Enabled": true
     },
+    "Bright Eyes  All RaceNPC Iris Replacement_80891": {
+      "Settings": {},
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-Bibo+-3.1.5-8yq": {
+      "Settings": {
+        "Core Files: Skin Materials": 0,
+        "Core Files: Pube Hair Library": 0,
+        "Core Files: Skin Multi Maps": 0,
+        "Core Files: Old NPCs": 0,
+        "Core Files: Underwear Materials": 0,
+        "Core Files: Au Re Neck Connector": 0,
+        "Midlander, Elezen, Miqo - SKIN DETAIL": 1,
+        "Midlander, Elezen, Miqo - PUBIC HAIR": 6,
+        "Highlander, Roegadyn - SKIN DETAIL": 1,
+        "Highlander, Roegadyn - PUBIC HAIR": 6,
+        "Au Ra : Raen - SKIN DETAIL": 1,
+        "Au Ra: Raen  - PUBIC HAIR": 6,
+        "Au Ra : Xaela - SKIN DETAIL": 1,
+        "Au Ra : Xaela - PUBIC HAIR": 6,
+        "Hrothgar - SKIN DETAIL": 0,
+        "Hrothgar - PUBIC HAIR": 6,
+        "Viera - SKIN DETAIL": 1,
+        "Viera - PUBIC HAIR": 6,
+        "Breasts - Emperor's New Chest": 1,
+        "Breasts - Small Clothes": 1,
+        "Breasts - Small Clothes (NPC)": 1,
+        "Bottoms - Emperor's New Breeches": 1,
+        "Bottoms - Small Clothes": 1,
+        "Bottoms - Small Clothes (NPC)": 1,
+        "Hands": 7,
+        "Feet": 7,
+        "You're Done!": 0
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-Face Defined [DT]-1.0.1-vye": {
+      "Settings": {
+        "Hyur": 0,
+        "Miqote": 1,
+        "Elezen": 1,
+        "Roegadyn": 0,
+        "Au Ra": 1,
+        "Viera": 1,
+        "Hrothgar": 0,
+        "Lalafell": 0
+      },
+      "Priority": 100,
+      "Enabled": true
+    },
+    "hs-Hair Defined 2 - Ultra-7.1.0-LkG": {
+      "Settings": {
+        "Hyur - Midlander": 3,
+        "Hyur - Highlander": 3,
+        "Elezeen": 3,
+        "Miqote": 3,
+        "Roegadyn": 3,
+        "Lalafell": 3,
+        "Au Ra": 3,
+        "Hrothgar": 3,
+        "Viera": 3,
+        "Viera Ears": 3,
+        "Hrothgar Tails": 3,
+        "Miqote Tails": 1,
+        "Credits": 0
+      },
+      "Priority": 100,
+      "Enabled": true
+    },
+    "hs-Kartoffels Upscaled Equipment Textures-1.3.0-9VP": {
+      "Settings": {},
+      "Priority": 100,
+      "Enabled": true
+    },
+    "hs-Kartoffels Upscaled World Textures-1.1.0-fEV": {
+      "Settings": {},
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-The Body SE-3.0.0-Lnq": {
+      "Settings": {
+        "Step 1: Prerequisites": 0,
+        "Step 2: Midlander, Elezen, Miqo'te": 0,
+        "Step 3: Highlander": 0,
+        "Step 4: Au Ra": 0,
+        "Step 5: Viera": 0,
+        "Step 6: Smallclothes options": 0,
+        "Step 7: Emperor's Options": 0
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
     "material_ui_reborn": {
       "Settings": {
         "_collection": 0
       },
       "Priority": 0,
       "Enabled": true
+    },
+    "[HS] Bibo+ (Bibo+ Base Install)": {
+      "Settings": {
+        "Core Files: Skin Materials": 0,
+        "Core Files: Pube Hair Library": 0,
+        "Au Ra : Raen - SKIN DETAIL": 1,
+        "Au Ra: Raen  - PUBIC HAIR": 6,
+        "Au Ra : Xaela - SKIN DETAIL": 1,
+        "Au Ra : Xaela - PUBIC HAIR": 6,
+        "Hrothgar - SKIN DETAIL": 0,
+        "Hrothgar - PUBIC HAIR": 6,
+        "Viera - SKIN DETAIL": 1,
+        "Viera - PUBIC HAIR": 6,
+        "Breasts - Emperor's New Chest": 2,
+        "Breasts - Small Clothes": 2,
+        "Core Files: Skin Multi Maps": 0,
+        "Breasts - Small Clothes (NPC)": 2,
+        "Bottoms - Emperor's New Breeches": 1,
+        "Bottoms - Small Clothes": 1,
+        "Bottoms - Small Clothes (NPC)": 1,
+        "Hands": 7,
+        "Feet": 7,
+        "You're Done!": 0,
+        "Core Files: Old NPCs": 0,
+        "Core Files: Underwear Materials": 0,
+        "Core Files: Au Re Neck Connector": 0,
+        "Midlander, Elezen, Miqo - SKIN DETAIL": 1,
+        "Midlander, Elezen, Miqo - PUBIC HAIR": 6,
+        "Highlander, Roegadyn - SKIN DETAIL": 1,
+        "Highlander, Roegadyn - PUBIC HAIR": 6
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
+    "[HS] RE[DE]FINED LALAFELL (RELALA 3.0)": {
+      "Settings": {
+        "REQUIRED": 0,
+        "Skin Texture Options": 0,
+        "Additional": 0,
+        "Add-Ons": 0,
+        "Minou Beans": 0,
+        "Beans color": 0
+      },
+      "Priority": 0,
+      "Enabled": false
     }
   },
   "Inheritance": []

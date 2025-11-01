@@ -475,11 +475,11 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	40
-ChatType	2
+ChatType	0
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278
-ColorTell	4293025936
+ColorTell	4294937798
 ColorParty	33023
 ColorAlliance	16744448
 ColorLS1	13959039
