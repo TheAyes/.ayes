@@ -10,7 +10,7 @@
       default = [ ];
     };
     pluginPaths = lib.mkOption {
-      type = lib.types.listOf lib.types.string;
+      type = lib.types.listOf lib.types.str;
       default = [
         "$HOME/.nix-profile/lib"
         "/run/current-system/sw/lib"

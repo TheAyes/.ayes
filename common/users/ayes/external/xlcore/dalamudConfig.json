@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.6",
+  "LastVersion": "13.0.0.7",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -181,7 +181,10 @@
       "SonarPlugin",
       "AutoDuty",
       "ChatBubbles",
-      "QuestShare"
+      "QuestShare",
+      "MapPartyAssist",
+      "PennyPincher",
+      "PalacePal"
     ]
   },
   "DevPluginSettings": {

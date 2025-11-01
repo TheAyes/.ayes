@@ -2,10 +2,11 @@
   programs.git = {
     enable = true;
 
-    userName = "Ayes";
-    userEmail = "github.com.faculty419@passmail.net";
-
-    extraConfig = {
+    settings = {
+    	user = {
+	     	name = "Ayes";
+	      email = "github.com.faculty419@passmail.net";
+	    };
       color = {
         ui = "auto";
         branch = "auto";
