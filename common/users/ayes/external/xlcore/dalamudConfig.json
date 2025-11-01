@@ -60,13 +60,13 @@
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
-        "Url": "https://puni.sh/api/plugins",
-        "IsEnabled": false,
+        "Url": "https://puni.sh/api/repository/herc",
+        "IsEnabled": true,
         "Name": null
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
-        "Url": "https://puni.sh/api/repository/herc",
+        "Url": "https://raw.githubusercontent.com/Ottermandias/SeaOfStars/main/repo.json",
         "IsEnabled": true,
         "Name": null
       }
@@ -184,7 +184,13 @@
       "QuestShare",
       "MapPartyAssist",
       "PennyPincher",
-      "PalacePal"
+      "PalacePal",
+      "DynamicUIScaling",
+      "EasyEyes",
+      "OpenerCreator",
+      "BigPlayerDebuffs",
+      "DeviceChangeFix",
+      "heliosphere-plugin"
     ]
   },
   "DevPluginSettings": {
@@ -1872,6 +1878,18 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Artisan",
           "WorkingPluginId": "fae60956-da15-4808-bcf1-cbe22965c6f8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PalacePal",
+          "WorkingPluginId": "104b8aaa-b330-48e6-846b-ff0ab533306e",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "heliosphere-plugin",
+          "WorkingPluginId": "b7541e52-5da0-4f19-9a6a-b345573028f0",
           "IsEnabled": true
         }
       ]

@@ -23,8 +23,22 @@
         "ZoneRestricted": false,
         "ZoneText": "",
         "IsYes": true,
-        "Enabled": true,
+        "Enabled": false,
         "Text": "Skip cutscene?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": true,
+        "ZoneText": "South Horn",
+        "IsYes": true,
+        "Enabled": false,
+        "Text": "/^Return to the starting point for the Occult Crescent: South Horn?$/"
       }
     ]
   },
@@ -127,7 +141,7 @@
   "LordOfVerminionQuit": false,
   "ChocoboRacingQuit": false,
   "PartyFinderJoinConfirm": false,
-  "GimmickYesNo": false,
+  "GimmickYesNo": true,
   "AutoCollectable": false,
   "LotteryWeeklyInput": false,
   "TradeMultiple": false,
