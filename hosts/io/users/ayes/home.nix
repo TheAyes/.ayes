@@ -17,7 +17,7 @@
       # Gaming
       xivlauncher
       (prismlauncher.override {
-        jdks = [ graalvm-ce temurin-jre-bin ];
+        jdks = [ graalvmPackages.graalvm-ce temurin-jre-bin zulu17 ];
       })
       ed-odyssey-materials-helper
 
@@ -29,11 +29,11 @@
 
       zed-editor
 
-      jetbrains.webstorm
-      jetbrains.pycharm-professional
-      jetbrains.idea-ultimate
-      jetbrains.rider
-      jetbrains.rust-rover
+      #jetbrains.webstorm
+      #jetbrains.pycharm-professional
+      #jetbrains.idea-ultimate
+      #jetbrains.rider
+      #jetbrains.rust-rover
 
       godot-mono
 
