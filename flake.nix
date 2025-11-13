@@ -12,14 +12,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixcord.url = "github:kaylorben/nixcord";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     solaar = {
       url = "github:Svenum/Solaar-Flake/main";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,11 +34,14 @@
   };
 
   outputs =
-    inputs @ { nixpkgs
-    , flake-parts
-    , ...
+    inputs@{
+      nixpkgs,
+      flake-parts,
+      ...
     }:
-    flake-parts.lib.mkFlake { inherit inputs; } ({ ... }: {
+    flake-parts.lib.mkFlake { inherit inputs; } (
+      { ... }:
+      {
 
         imports = [ ./modules/flake-parts/host-manager ];
 
@@ -63,6 +72,7 @@
                 # Modules for all users
                 sharedModules = [
                   inputs.nixcord.homeModules.nixcord
+                  inputs.zen-browser.homeModules.beta
                   ./modules/home-manager/bitwig
                 ];
               };
@@ -71,7 +81,14 @@
                 ayes = {
                   enable = true;
                   home-manager.enable = true;
-                  groups = [ "networkmanager" "wheel" "gaming" "audio" "docker" "minecraft" ];
+                  groups = [
+                    "networkmanager"
+                    "wheel"
+                    "gaming"
+                    "audio"
+                    "docker"
+                    "minecraft"
+                  ];
                 };
               };
             };
@@ -83,7 +100,10 @@
                 ayes = {
                   enable = true;
                   home-manager.enable = true;
-                  groups = [ "wheel" "docker" ];
+                  groups = [
+                    "wheel"
+                    "docker"
+                  ];
                 };
               };
 
@@ -93,9 +113,11 @@
         };
 
         perSystem =
-          { pkgs
-          , ...
-          }: {
+          {
+            pkgs,
+            ...
+          }:
+          {
             formatter = pkgs.nixpkgs-fmt;
           };
       }

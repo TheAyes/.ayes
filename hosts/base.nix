@@ -1,8 +1,10 @@
-{ lib
-, inputs
-, pkgs
-, ...
-}: {
+{
+  lib,
+  inputs,
+  pkgs,
+  ...
+}:
+{
   nixpkgs = {
     config = {
       allowUnfree = lib.mkForce true;
@@ -49,6 +51,7 @@
     micro
     linuxHeaders
     jq
+    nixfmt-rfc-style
   ];
 
   fonts.packages = with pkgs; [
