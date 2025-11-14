@@ -81,17 +81,6 @@
           id = 0;
           name = "ayes";
           isDefault = true;
-          extensions = {
-            force = true;
-            packages = with inputs.firefox-addons.packages.${system}; [
-              ublock-origin
-              darkreader
-              #betterttv # Can't install due to unfree
-              proton-pass
-              proton-vpn
-              decentraleyes
-            ];
-          };
           settings = {
             "app.update.auto" = false;
 
@@ -159,38 +148,65 @@
           );
         in
         {
-          ExtensionSettings = mkExtensionSettings {
-            #"addon@darkreader.org" = "darkreader"; # Installed via Nur
-            #"78272b6fa58f4a1abaac99321d503a20@proton.me" = "proton-pass"; # Installed via Nur
-            #"vpn@proton.ch" = "proton-vpn-firefox-extension"; # Installed via Nur
+          ExtensionSettings = {
+            "*" = {
+              installation_mode = "blocked";
+              blocked_install_message = "Install Extensions using your NixOS Configuration!";
+            };
+          }
+          // mkExtensionSettings {
+            "addon@darkreader.org" = "darkreader";
+            "78272b6fa58f4a1abaac99321d503a20@proton.me" = "proton-pass";
+            "vpn@proton.ch" = "proton-vpn-firefox-extension";
             "firefox@betterttv.net" = "betterttv";
             "{8454caa8-cebc-4486-8b23-9771f187ed6c}" = "600-sound-volume-privacy";
-            #"uBlock0@raymondhill.net" = "ublock-origin"; # Installed via Nur
+            "uBlock0@raymondhill.net" = "ublock-origin";
             "idcac-pub@guus.ninja" = "istilldontcareaboutcookies";
+            "search@kagi.com" = "kagi-search-for-firefox";
           };
-          AutofillAddressEnabled = false;
-          AutofillCreditCardEnabled = false;
-          DisableAppUpdate = true;
-          DisableFeedbackCommands = true;
+          AppAutoUpdate = false; # Disable automatic application update
+          BackgroundAppUpdate = false; # Disable automatic application update in the background, when the application is not running.
+          DisableBuiltinPDFViewer = true; # Considered a security liability
           DisableFirefoxStudies = true;
+          DisableFirefoxAccounts = true; # Disable Firefox Sync
+          DisableFirefoxScreenshots = true; # No screenshots?
+          DisableForgetButton = true; # Thing that can wipe history for X time, handled differently
+          DisableMasterPasswordCreation = true; # To be determined how to handle master password
+          DisableProfileImport = true; # Purity enforcement: Only allow nix-defined profiles
+          DisableProfileRefresh = true; # Disable the Refresh Firefox button on about:support and support.mozilla.org
+          DisableSetDesktopBackground = true; # Remove the “Set As Desktop Background…” menuitem when right clicking on an image, because Nix is the only thing that can manage the backgroud
+          DisplayMenuBar = "default-off";
           DisablePocket = true;
           DisableTelemetry = true;
-          DontCheckDefaultBrowser = true;
-          NoDefaultBookmarks = true;
-          OfferToSaveLogins = false;
-
+          DisableFormHistory = true;
+          DisablePasswordReveal = true;
+          DontCheckDefaultBrowser = true; # Stop being attention whore
+          HardwareAcceleration = false; # Disabled as it's exposes points for fingerprinting
+          OfferToSaveLogins = false; # Managed by KeepAss instead
           EnableTrackingProtection = {
             Value = true;
             Locked = true;
             Cryptomining = true;
             Fingerprinting = true;
+            EmailTracking = true;
+            # Exceptions = ["https://example.com"]
           };
+          EncryptedMediaExtensions = {
+            Enabled = true;
+            Locked = true;
+          };
+          ExtensionUpdate = false;
+
           GenerativeAI = {
             Enabled = false;
             Chatbot = false;
             LinkPreviews = false;
             TabGroups = false;
             Locked = false;
+          };
+
+          SearchEngines = {
+            #Default = "";
           };
         };
     };
