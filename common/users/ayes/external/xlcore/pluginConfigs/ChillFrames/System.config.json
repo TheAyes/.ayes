@@ -1,0 +1,28 @@
+{
+  "Blacklist": {
+    "BlacklistedZones": []
+  },
+  "DisableIncrementSetting": 0.025,
+  "EnableIncrementSetting": 0.01,
+  "General": {
+    "DisableDuringBardPerformance": true,
+    "DisableDuringCombatSetting": true,
+    "DisableDuringCraftingSetting": true,
+    "DisableDuringCutsceneSetting": true,
+    "DisableDuringDutyRecorderPlaybackSetting": true,
+    "DisableDuringDutySetting": true,
+    "DisableDuringGpose": true,
+    "DisableDuringQuestEventSetting": true,
+    "DisableIslandSanctuarySetting": true,
+    "DisableInEstatesSetting": true,
+    "EnableDtrBar": true,
+    "EnableDtrColor": true,
+    "EnabledColor": 1,
+    "DisabledColor": 66
+  },
+  "Limiter": {
+    "ActiveFramerateTarget": 60,
+    "IdleFramerateTarget": 60
+  },
+  "PluginEnable": true
+}
