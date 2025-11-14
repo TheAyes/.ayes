@@ -72,7 +72,7 @@
                 # Modules for all users
                 sharedModules = [
                   inputs.nixcord.homeModules.nixcord
-                  inputs.zen-browser.homeModules.beta
+                  inputs.zen-browser.homeModules.twilight
                   ./modules/home-manager/bitwig
                 ];
               };
