@@ -75,7 +75,7 @@
 
     zen-browser = {
       enable = true;
-      package = inputs.zen-browser.packages."${system}".twilight;
+      #package = inputs.zen-browser.packages."${system}".twilight;
       profiles = {
         ayes = {
           id = 0;

@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.7",
+  "LastVersion": "13.0.0.8",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -190,7 +190,8 @@
       "OpenerCreator",
       "BigPlayerDebuffs",
       "DeviceChangeFix",
-      "heliosphere-plugin"
+      "heliosphere-plugin",
+      "Brio"
     ]
   },
   "DevPluginSettings": {
@@ -1891,6 +1892,78 @@
           "InternalName": "heliosphere-plugin",
           "WorkingPluginId": "b7541e52-5da0-4f19-9a6a-b345573028f0",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "NoTypeSay",
+          "WorkingPluginId": "f089c692-afd7-46c9-892e-8abb593ff932",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "InventoryTools",
+          "WorkingPluginId": "271f8ac8-d437-4631-99e6-9c0412696904",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Brio",
+          "WorkingPluginId": "0db16379-8baf-40c8-8cbb-7cf37fe54130",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "ChillFrames",
+          "WorkingPluginId": "7d26d1ae-325f-427a-ad22-fd4b24babe7f",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Avarice",
+          "WorkingPluginId": "4eec9c8e-7cc2-4b3a-9a96-0a93785339c4",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "AutoHook",
+          "WorkingPluginId": "4525e8e0-5c10-4e1e-9a20-4baf068ea357",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "IINACT",
+          "WorkingPluginId": "b86efe10-88a3-45e5-bad9-cc911b864b72",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Browsingway",
+          "WorkingPluginId": "33fb639c-c4ff-485e-9622-3721815f1fdf",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GatherbuddyReborn",
+          "WorkingPluginId": "bab50470-460c-43a1-b7a9-2007be9aecc3",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GoodFriend",
+          "WorkingPluginId": "b111e251-acb7-4721-b6e2-f23c0f648660",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "WrathCombo",
+          "WorkingPluginId": "8679fab7-d998-4f15-8408-a77d9112b758",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GraphicsConfig",
+          "WorkingPluginId": "107b801c-0128-4459-a4a1-b350a11cbb07",
+          "IsEnabled": true
         }
       ]
     },
@@ -1916,7 +1989,9 @@
       "LifestreamInstance",
       "vbm-autorotation",
       "vbm-ai",
-      "vbm-stats"
+      "vbm-stats",
+      "Chill Frames",
+      "Wrath Combo"
     ]
   },
   "DtrIgnore": {
