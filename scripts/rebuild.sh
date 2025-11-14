@@ -14,5 +14,7 @@ if ! nh os "$1" "$DIR" --ask --diff=auto $2; then
 	exit 2
 fi
 
-git add .
-git commit -m "$MESSAGE"
+if [[ "${1,,}" != "test" && "${1,,}" != "build" ]]; then
+    git add .
+    git commit -m "$MESSAGE"
+fi
