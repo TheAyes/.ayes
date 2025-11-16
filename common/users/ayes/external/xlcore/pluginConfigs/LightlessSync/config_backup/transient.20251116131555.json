@@ -1,0 +1,77 @@
+{
+  "TransientConfigs": {
+    "Meira Kisaragi_66": {
+      "GlobalPersistentCache": [],
+      "JobSpecificCache": {
+        "33": [
+          "vfx/common/eff/wp_astro1h.avfx",
+          "vfx/common/eff/wp_astro0h.avfx",
+          "vfx/action/ab_2ast026/eff/abi_as026t0h.avfx",
+          "vfx/common/eff/cmas_castx0h.avfx",
+          "vfx/action/mgc_ast_dot3/eff/abi_as023t0h.avfx",
+          "vfx/action/mgc_ast017/eff/mgc_as017t0p.avfx",
+          "vfx/action/ab_quickcast1/eff/abi_quic1c0h.avfx",
+          "vfx/action/ab_2ast028/eff/abi_as028t0g.avfx",
+          "vfx/action/ab_play_fire1/eff/abi_play1c0h.avfx",
+          "vfx/action/ab_play_fire1/eff/abi_play1t0h.avfx",
+          "vfx/action/ab_play09/eff/ab_astplay09_c0p.avfx",
+          "vfx/action/ab_2ast021/eff/abi_as021c1h.avfx",
+          "vfx/action/ab_play_ice1/eff/abi_play4c0h.avfx",
+          "vfx/action/ab_play_ice1/eff/abi_play4t0h.avfx",
+          "vfx/action/ab_2ast018/eff/abi_as018c0h.avfx",
+          "vfx/cut/duneov/duneov00130/texture/bl_line_01_c.atex",
+          "vfx/action/ab_play_thunder1/eff/abi_play6c0h.avfx",
+          "vfx/action/ab_play_thunder1/eff/abi_play6t0h.avfx",
+          "vfx/action/ab_play_wind1/eff/abi_play3c0h.avfx",
+          "vfx/action/ab_2ast024/eff/abi_as024c0h.avfx",
+          "vfx/action/ab_2ast024/eff/abi_as024t0h.avfx",
+          "vfx/monster/c0101/texture/hinoko_anm.atex",
+          "vfx/common/eff/abi_as024t1h.avfx",
+          "vfx/common/eff/lmas_castx1h.avfx",
+          "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c2h.avfx",
+          "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c4h.avfx",
+          "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c6h.avfx",
+          "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c7h.avfx",
+          "vfx/limitbreak/lbk_astro_lv3/texture/kira_a04ah.atex",
+          "vfx/common/eff/cmpp_djcas0c.avfx",
+          "vfx/common/eff/pop_tlep1t0h.avfx",
+          "vfx/common/eff/pop_tlep1t1h.avfx",
+          "vfx/action/mgc_ast_heal2/eff/mgc_ashl2t0h.avfx",
+          "vfx/action/mgc_heal1/eff/mgc_heal1t0h.avfx",
+          "vfx/action/mgc_ast_heal3/eff/mgc_ashl3t1h.avfx",
+          "vfx/action/mgc_ast_heal3/eff/mgc_ashl3t0h.avfx",
+          "vfx/action/ab_2ast014/eff/abi_as014c1h.avfx",
+          "vfx/action/ab_2ast040/eff/ab_ast040c0p.avfx",
+          "vfx/action/mgc_ast019/eff/mgc_as019c0p.avfx",
+          "vfx/action/ab_2ast030/eff/ab_2gl030_c0p.avfx",
+          "vfx/common/eff/astr_abi030sts_t0p.avfx",
+          "vfx/action/ab_2ast030/eff/ab_2gl030_t0p.avfx",
+          "vfx/action/ab_play10/eff/ab_astplay10_c0p.avfx",
+          "vfx/action/ab_play_water1/eff/abi_play5c0h.avfx",
+          "vfx/action/ab_play_water1/eff/abi_play5t0h.avfx",
+          "vfx/action/ab_play_stone1/eff/abi_play2c0h.avfx",
+          "vfx/action/ab_play_stone1/eff/abi_play2t0h.avfx",
+          "vfx/action/ab_2ast032/eff/ab_2gl_ast032c0g.avfx",
+          "vfx/common/eff/abi_bari1c0h.avfx",
+          "vfx/action/mgc_ast029/eff/mgc_as029c1p.avfx",
+          "vfx/common/eff/pop_dejo1t0c.avfx",
+          "vfx/common/eff/pop_dejo1t1c.avfx",
+          "vfx/action/ab_2ast013/eff/abi_as013t1h.avfx",
+          "vfx/action/ab_2ast013/eff/abi_as013t0h.avfx"
+        ]
+      },
+      "JobSpecificPetCache": {
+        "33": [
+          "chara/monster/m7103/obj/body/b0001/vfx/eff/vm0001.avfx",
+          "vfx/monster/m7103/eff/m7103sp_01c0h.avfx"
+        ]
+      }
+    },
+    "--_0": {
+      "GlobalPersistentCache": [],
+      "JobSpecificCache": {},
+      "JobSpecificPetCache": {}
+    }
+  },
+  "Version": 1
+}

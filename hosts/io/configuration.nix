@@ -1,9 +1,11 @@
-{ pkgs
-, config
+{
+  pkgs,
+  config,
 
-, inputs
-, ...
-}: {
+  inputs,
+  ...
+}:
+{
   imports = [
     ./hardware-configuration.nix
     ./fail2ban.nix
@@ -32,7 +34,10 @@
   fileSystems = {
     "/home/ayes/.xlcore" = {
       device = "/etc/nixos/common/users/ayes/external/xlcore";
-      depends = [ "/" "/home" ];
+      depends = [
+        "/"
+        "/home"
+      ];
       fsType = "none";
       options = [ "bind" ];
     };
@@ -46,19 +51,28 @@
     "/home" = {
       device = "/dev/disk/by-uuid/215985a5-1a1f-441e-9399-c1fd1ecfc761";
       fsType = "ext4";
-      depends = [ "/" "/nix" ];
+      depends = [
+        "/"
+        "/nix"
+      ];
     };
 
     "/mnt/games" = {
       device = "/dev/disk/by-uuid/8da931bf-76ed-40b6-a030-70647e755c1a";
       fsType = "ext4";
-      depends = [ "/" "/nix" ];
+      depends = [
+        "/"
+        "/nix"
+      ];
     };
 
     "/mnt/projects" = {
       device = "/dev/disk/by-uuid/df4ccd26-7eee-4410-a0e4-05fd70f5d633";
       fsType = "ext4";
-      depends = [ "/" "/nix" ];
+      depends = [
+        "/"
+        "/nix"
+      ];
     };
   };
 
@@ -112,14 +126,19 @@
   ## Groups
   ##################################
   users.groups.gaming = {
-    members = [ "ayes" "janny" ];
+    members = [
+      "ayes"
+      "janny"
+    ];
   };
 
   ##################################
   ## Programs
   ##################################
   programs = {
-    hyprland = { enable = false; };
+    hyprland = {
+      enable = false;
+    };
     partition-manager.enable = true;
     firefox.enable = false;
     gamemode.enable = true;
@@ -146,6 +165,10 @@
       window = "hide"; # Show the window on startup (show, *hide*, only [window only])
       batteryIcons = "regular"; # Which battery icons to use (*regular*, symbolic, solaar)
       extraArgs = ""; # Extra arguments to pass to solaar on startup
+    };
+
+    mautrix-discord = {
+      enable = false; # Maybe in the future once I get a home-server
     };
 
     ddclient = {

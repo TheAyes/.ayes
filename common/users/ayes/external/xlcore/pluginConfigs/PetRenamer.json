@@ -2,6 +2,8 @@
   "$type": "PetRenamer.Configuration, PetRenamer",
   "downloadProfilePictures": true,
   "languageSettings": 0,
+  "showColours": 0,
+  "showCommandFeedback": true,
   "showOnNameplates": true,
   "showOnCastbars": true,
   "showInBattleChat": true,
@@ -19,14 +21,16 @@
   "listButtonLayout": 0,
   "minionIconType": 1,
   "showIslandWarning": true,
+  "attachToPCP": true,
+  "readFromPCP": true,
   "debugModeActive": false,
   "openDebugWindowOnStart": false,
   "debugShowChatCode": false,
   "serializableUsersV3": [],
-  "Version": 9,
-  "SerializableUsersV4": [
+  "Version": 10,
+  "SerializableUsersV5": [
     {
-      "$type": "PN.S.SerializableUserV4, PetRenamer",
+      "$type": "PN.S.SerializableUserV5, PetRenamer",
       "ContentID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "Homeworld": 66,
@@ -39,9 +43,11 @@
       ],
       "SerializableNameDatas": [
         {
-          "$type": "PN.S.SerializableNameData, PetRenamer",
+          "$type": "PN.S.SerializableNameDataV2, PetRenamer",
           "IDS": [],
-          "Names": []
+          "Names": [],
+          "EdgeColours": [],
+          "TextColours": []
         }
       ]
     }
@@ -49,5 +55,6 @@
   "__Obsolete_Values__": "\nThe values from here onwards are obsolete, editing these will result in NOTHING",
   "users": [],
   "serializableUsers": [],
-  "serializableUsersV2": []
+  "serializableUsersV2": [],
+  "SerializableUsersV4": []
 }

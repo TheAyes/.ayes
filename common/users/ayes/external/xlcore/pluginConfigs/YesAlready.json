@@ -20,11 +20,11 @@
         "ConditionalNumberTemplate": "",
         "ConditionalNumber": 0,
         "ComparisonType": 3,
-        "ZoneRestricted": false,
-        "ZoneText": "",
+        "ZoneRestricted": true,
+        "ZoneText": "South Horn",
         "IsYes": true,
         "Enabled": false,
-        "Text": "Skip cutscene?"
+        "Text": "/^Return to the starting point for the Occult Crescent: South Horn?$/"
       },
       {
         "$type": "YesAlready.TextEntryNode, YesAlready",
@@ -34,11 +34,39 @@
         "ConditionalNumberTemplate": "",
         "ConditionalNumber": 0,
         "ComparisonType": 3,
-        "ZoneRestricted": true,
-        "ZoneText": "South Horn",
+        "ZoneRestricted": false,
+        "ZoneText": "",
         "IsYes": true,
-        "Enabled": false,
-        "Text": "/^Return to the starting point for the Occult Crescent: South Horn?$/"
+        "Enabled": true,
+        "Text": "Travel to the phantom village?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "/Travel to \\w+\\?/"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "/Return to \\w+\\?/"
       }
     ]
   },
@@ -63,8 +91,8 @@
         "$type": "YesAlready.ListEntryNode, YesAlready",
         "TargetRestricted": false,
         "TargetText": "",
-        "Enabled": false,
-        "Text": "Add some text here!"
+        "Enabled": true,
+        "Text": "Retire to an inn"
       }
     ]
   },

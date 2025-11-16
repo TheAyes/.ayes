@@ -1,0 +1,20 @@
+{
+  "$type": "Honorific.PluginConfig, Honorific",
+  "WorldCharacterDictionary": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Honorific.CharacterConfig, Honorific]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "ShowColoredTitles": true,
+  "DebugOpenOnStatup": true,
+  "HideKofi": false,
+  "ApplyToInspect": true,
+  "DisplayPreviewInConfigWindow": true,
+  "HideVanillaSelf": false,
+  "HideVanillaParty": false,
+  "HideVanillaAlliance": false,
+  "HideVanillaFriends": false,
+  "HideVanillaOther": false,
+  "IdentifyAs": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.ValueTuple`2[[System.String, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Version": 1
+}

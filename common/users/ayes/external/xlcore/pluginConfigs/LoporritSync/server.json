@@ -1,0 +1,24 @@
+{
+  "CurrentServer": 0,
+  "ServerStorage": [
+    {
+      "Authentications": [
+        {
+          "CharacterName": "Meira Kisaragi",
+          "WorldId": 66,
+          "SecretKeyIdx": 1
+        }
+      ],
+      "FullPause": false,
+      "SecretKeys": {
+        "1": {
+          "FriendlyName": "YTUNNWX (registered 2025-11-15)",
+          "Key": "30A2C4E2FCB58D7A44E3DF1106EB7E6D7C11E14CC62068DB31B46650EBF93094"
+        }
+      },
+      "ServerName": "Loporrit Main Server",
+      "ServerUri": "wss://lop-sync.com"
+    }
+  ],
+  "Version": 1
+}

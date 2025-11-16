@@ -8,5 +8,8 @@
   "SelectedTab": 0,
   "SelectedDesign": "ebde8299-7f59-4506-a916-4842eadc3fb7",
   "SelectedQuickDesign": "ebde8299-7f59-4506-a916-4842eadc3fb7",
-  "LastSeenVersion": 26
+  "LastSeenVersion": 32,
+  "CurrentDesignSelectorWidth": 200.0,
+  "DesignSelectorMinimumScale": 0.1,
+  "DesignSelectorMaximumScale": 0.5
 }
