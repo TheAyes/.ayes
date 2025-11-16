@@ -21,9 +21,9 @@
   "OneClick": true,
   "OneClickSalt": {
     "$type": "System.Byte[], System.Private.CoreLib",
-    "$value": "ID2peLDQqkA="
+    "$value": "HYFhMlBIDn0="
   },
-  "OneClickHash": "eCr94ccEXFi7KlVb1b9q1X3VvsN6v9ZN1+Zc/XSN6bM4tbhw6HJO3bDOhBXC26irMoxncEgLRZUt+YWEWFSP2Bj3MQwRgERj2PiN1w+EyFIY29VMUP4t6tJbVWCnEOlFQm1AQuVg+Vg83KcKgRMCrLKsqCw9FvD7zzEh33SBphg=",
+  "OneClickHash": "mP4tsAdoPRR8WdLj4ynHcYOQQ8C7XSvoUQuuCMxCRy7jQ6x4iEEWBdUaZorTMj7xYMCgh7GAt7DIqCvnj8+i+sTBUjRyG9IQzs9WWW1efTPQAS34l0h/LvN6uPoVB/BKep7H0MTybaRc3kollitabN5kmkqLXhZH/vGQ0TrEXEM=",
   "OneClickCollectionId": null,
   "MaxKibsPerSecond": 30720,
   "AltMaxKibsPerSecond": 5120,
@@ -45,6 +45,10 @@
       "LoginUpdateMode": null,
       "Update": 0
     }
+  },
+  "Unsupported": {
+    "$type": "Heliosphere.Unsupported, heliosphere-plugin",
+    "AllowNetworkedInstalls": false
   },
   "LatestMigration": 0,
   "AutoUpdate": true,

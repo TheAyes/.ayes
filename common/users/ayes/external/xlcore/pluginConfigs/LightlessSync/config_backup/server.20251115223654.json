@@ -1,0 +1,18 @@
+{
+  "CurrentServer": 0,
+  "ServerStorage": [
+    {
+      "Authentications": [],
+      "FullPause": false,
+      "SecretKeys": {},
+      "ServerName": "Follow the light (Official Central Server)",
+      "ServerUri": "wss://sync.lightless-sync.org",
+      "UseOAuth2": true,
+      "OAuthToken": null,
+      "HttpTransportType": 1
+    }
+  ],
+  "SendCensusData": false,
+  "ShownCensusPopup": false,
+  "Version": 2
+}

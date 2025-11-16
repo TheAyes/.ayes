@@ -57,6 +57,7 @@
       blockbench
       gimp
       proton-pass
+      element-desktop
     ];
 
   };

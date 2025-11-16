@@ -1,4 +1,5 @@
 ﻿{
+  "AttachToPcp": true,
   "UseRestrictedGearProtection": false,
   "OpenFoldersByDefault": false,
   "AutoRedrawEquipOnChanges": false,
@@ -16,8 +17,6 @@
   "ShowQuickBarInTabs": true,
   "OpenWindowAtStart": false,
   "ShowWindowWhenUiHidden": false,
-  "UseAdvancedParameters": true,
-  "UseAdvancedDyes": true,
   "KeepAdvancedDyesAttached": true,
   "ShowPalettePlusImport": true,
   "UseFloatForColors": true,
@@ -25,12 +24,20 @@
   "ShowColorConfig": true,
   "ChangeEntireItem": false,
   "AlwaysApplyAssociatedMods": false,
+  "UseTemporarySettings": true,
   "AllowDoubleClickToApply": false,
   "RespectManualOnAutomationUpdate": false,
+  "PreventRandomRepeats": false,
+  "PcpFolder": "PCP",
+  "PcpColor": "",
+  "HideDesignPanel": 0,
+  "AutoExpandDesignPanel": 0,
   "DefaultDesignSettings": {
     "AlwaysForceRedrawing": false,
     "ResetAdvancedDyes": false,
-    "ShowQuickDesignBar": true
+    "ShowQuickDesignBar": true,
+    "ResetTemporarySettings": false,
+    "Locked": false
   },
   "HeightDisplayType": 1,
   "ShowRename": 4,
@@ -51,11 +58,19 @@
       "Modifier": 16
     }
   },
+  "IncognitoModifier": {
+    "Modifier1": {
+      "Modifier": 17
+    },
+    "Modifier2": {
+      "Modifier": 0
+    }
+  },
   "ChangeLogDisplayType": 0,
-  "QdbButtons": 15,
+  "QdbButtons": 271,
   "Codes": [],
   "DebugMode": false,
-  "Version": 7,
+  "Version": 8,
   "Colors": {
     "NormalDesign": 4294967295,
     "CustomizationDesign": 4290773184,
@@ -81,7 +96,11 @@
     "TriStateCross": 4278190288,
     "TriStateNeutral": 4291875024,
     "BattleNpc": 4294967295,
-    "EventNpc": 4294967295
+    "EventNpc": 4294967295,
+    "ModdedItemMarker": 4294910207,
+    "ContainsItemsEnabled": 4288737440,
+    "ContainsItemsDisabled": 2158031008,
+    "AdvancedDyeActive": 4284014079
   },
   "SortMode": "FoldersFirstT"
 }

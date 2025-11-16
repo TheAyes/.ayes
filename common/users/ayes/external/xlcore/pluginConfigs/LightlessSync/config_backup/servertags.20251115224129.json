@@ -1,0 +1,10 @@
+{
+  "ServerTagStorage": {
+    "wss://sync.lightless-sync.org": {
+      "OpenPairTags": [],
+      "ServerAvailablePairTags": [],
+      "UidServerPairedUserTags": {}
+    }
+  },
+  "Version": 0
+}

@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.8",
+  "LastVersion": "13.0.0.9",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -67,6 +67,12 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/Ottermandias/SeaOfStars/main/repo.json",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://repo.lightless-sync.org/",
         "IsEnabled": true,
         "Name": null
       }
@@ -191,7 +197,37 @@
       "BigPlayerDebuffs",
       "DeviceChangeFix",
       "heliosphere-plugin",
-      "Brio"
+      "Brio",
+      "GraphicsConfig",
+      "LightlessSync",
+      "IslandWorkshopSearch",
+      "LogogramHelper",
+      "LoporritSync",
+      "GatherBuddy",
+      "Glamourer",
+      "vsatisfy",
+      "Sightseeingway",
+      "SillyChat",
+      "SimpleHeels",
+      "SimpleMapTracker",
+      "CurrencySpender",
+      "CurrencyAlert",
+      "CustomizePlus",
+      "CustomResolution2782",
+      "cl_showpos",
+      "HandyHotbarHelper",
+      "Honorific",
+      "HotbarBackup",
+      "FlashOnTell",
+      "BurntToast",
+      "PeepingTom",
+      "PetRenamer",
+      "PetScale",
+      "MacroChain",
+      "MogMogCheck",
+      "MonsterLootHunter",
+      "Moodles",
+      "Compass"
     ]
   },
   "DevPluginSettings": {
@@ -1919,12 +1955,6 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Avarice",
-          "WorkingPluginId": "4eec9c8e-7cc2-4b3a-9a96-0a93785339c4",
-          "IsEnabled": false
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "AutoHook",
           "WorkingPluginId": "4525e8e0-5c10-4e1e-9a20-4baf068ea357",
           "IsEnabled": true
@@ -1934,12 +1964,6 @@
           "InternalName": "IINACT",
           "WorkingPluginId": "b86efe10-88a3-45e5-bad9-cc911b864b72",
           "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Browsingway",
-          "WorkingPluginId": "33fb639c-c4ff-485e-9622-3721815f1fdf",
-          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -1955,14 +1979,50 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "WrathCombo",
-          "WorkingPluginId": "8679fab7-d998-4f15-8408-a77d9112b758",
+          "InternalName": "LoporritSync",
+          "WorkingPluginId": "eb167542-a20f-4c52-976e-bddaa07d344f",
           "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "GraphicsConfig",
-          "WorkingPluginId": "107b801c-0128-4459-a4a1-b350a11cbb07",
+          "InternalName": "Glamourer",
+          "WorkingPluginId": "46d81707-8af2-42ce-ae14-2577c14e8006",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "SimpleHeels",
+          "WorkingPluginId": "0094ae74-d02d-4b90-98bd-006f689f70df",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "CustomizePlus",
+          "WorkingPluginId": "c7235461-08ed-4c69-9da7-64c659fa93b7",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Honorific",
+          "WorkingPluginId": "ec507b97-2ac0-446a-b7c5-516c33dad0bd",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PetRenamer",
+          "WorkingPluginId": "53c147da-a214-45d6-be4c-26d2de5decf8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "LightlessSync",
+          "WorkingPluginId": "f1dc4c39-2451-460b-989e-0ecf4be6d3d0",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "VFXEditor",
+          "WorkingPluginId": "ec8fa319-972e-4a1d-87ae-c4ab674d9499",
           "IsEnabled": true
         }
       ]
@@ -1991,7 +2051,8 @@
       "vbm-ai",
       "vbm-stats",
       "Chill Frames",
-      "Wrath Combo"
+      "Wrath Combo",
+      "Loporrit"
     ]
   },
   "DtrIgnore": {
