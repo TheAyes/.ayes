@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ./programs/git.nix
     ./programs/btop.nix
@@ -39,6 +40,8 @@
 
       btop.enable = true;
       micro.enable = true;
+
+      vicinae.enable = false;
 
     };
   };
