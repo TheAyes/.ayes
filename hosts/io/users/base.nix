@@ -2,10 +2,11 @@
   user,
   pkgs,
   ...
-}: {
+}:
+{
   home = {
-    username = user.username;
-    homeDirectory = "/home/${user.username}";
+    #username = user.username;
+    #homeDirectory = "/home/${user.username}";
   };
 
   programs = {
