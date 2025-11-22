@@ -535,6 +535,92 @@
           </Macro>
         </Nodes>
       </Group>
+      <Group>
+        <Name>Occult</Name>
+        <Nodes>
+          <Macro>
+            <Name>Line AOE</Name>
+            <IconId>138</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>50</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Line AOE!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--South Horn (1252)-->
+                      <Territory>1252</Territory>
+                      <!--Heathcliff (4938)-->
+                      <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Donut AOE</Name>
+            <IconId>137</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>51</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Donut AOE!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--South Horn (1252)-->
+                      <Territory>1252</Territory>
+                      <!--Heathcliff (4938)-->
+                      <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Knockback</Name>
+            <IconId>214835</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>52</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Knockback AOE!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--South Horn (1252)-->
+                      <Territory>1252</Territory>
+                      <!--Heathcliff (4938)-->
+                      <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+        </Nodes>
+      </Group>
     </Nodes>
   </Root>
 </MacroMate>

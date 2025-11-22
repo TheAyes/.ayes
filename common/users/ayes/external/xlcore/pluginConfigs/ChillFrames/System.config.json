@@ -7,22 +7,22 @@
   "General": {
     "DisableDuringBardPerformance": true,
     "DisableDuringCombatSetting": true,
-    "DisableDuringCraftingSetting": true,
-    "DisableDuringCutsceneSetting": true,
-    "DisableDuringDutyRecorderPlaybackSetting": true,
+    "DisableDuringCraftingSetting": false,
+    "DisableDuringCutsceneSetting": false,
+    "DisableDuringDutyRecorderPlaybackSetting": false,
     "DisableDuringDutySetting": true,
-    "DisableDuringGpose": true,
-    "DisableDuringQuestEventSetting": true,
-    "DisableIslandSanctuarySetting": true,
-    "DisableInEstatesSetting": true,
+    "DisableDuringGpose": false,
+    "DisableDuringQuestEventSetting": false,
+    "DisableIslandSanctuarySetting": false,
+    "DisableInEstatesSetting": false,
     "EnableDtrBar": true,
     "EnableDtrColor": true,
     "EnabledColor": 1,
     "DisabledColor": 66
   },
   "Limiter": {
-    "ActiveFramerateTarget": 60,
-    "IdleFramerateTarget": 60
+    "ActiveFramerateTarget": 72,
+    "IdleFramerateTarget": 30
   },
   "PluginEnable": true
 }

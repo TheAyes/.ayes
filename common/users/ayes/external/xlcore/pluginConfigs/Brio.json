@@ -145,6 +145,16 @@
           "JobSpecificPetCache": {
             "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
           }
+        },
+        "Meira Kisaragi_402": {
+          "$type": "Brio.Config.TransientConfig+TransientPlayerConfig, Brio",
+          "GlobalPersistentCache": [],
+          "JobSpecificCache": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+          },
+          "JobSpecificPetCache": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+          }
         }
       },
       "Version": 1

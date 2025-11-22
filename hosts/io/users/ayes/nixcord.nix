@@ -52,7 +52,7 @@
         loadingQuotes.enable = true;
         messageLinkEmbeds.enable = true;
         messageLogger.enable = true;
-        moreUserTags.enable = true;
+        #moreUserTags.enable = true;
         mutualGroupDMs.enable = true;
         newGuildSettings.enable = true;
         noMosaic.enable = true;

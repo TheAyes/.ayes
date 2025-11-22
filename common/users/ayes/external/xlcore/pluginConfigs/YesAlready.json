@@ -20,20 +20,6 @@
         "ConditionalNumberTemplate": "",
         "ConditionalNumber": 0,
         "ComparisonType": 3,
-        "ZoneRestricted": true,
-        "ZoneText": "South Horn",
-        "IsYes": true,
-        "Enabled": false,
-        "Text": "/^Return to the starting point for the Occult Crescent: South Horn?$/"
-      },
-      {
-        "$type": "YesAlready.TextEntryNode, YesAlready",
-        "RequiresPlayerConditions": false,
-        "PlayerConditions": "",
-        "IsConditional": false,
-        "ConditionalNumberTemplate": "",
-        "ConditionalNumber": 0,
-        "ComparisonType": 3,
         "ZoneRestricted": false,
         "ZoneText": "",
         "IsYes": true,
@@ -52,7 +38,7 @@
         "ZoneText": "",
         "IsYes": true,
         "Enabled": true,
-        "Text": "/Travel to \\w+\\?/"
+        "Text": "/^(Travel)|(Return) to .+\\?$/"
       },
       {
         "$type": "YesAlready.TextEntryNode, YesAlready",
@@ -66,7 +52,7 @@
         "ZoneText": "",
         "IsYes": true,
         "Enabled": true,
-        "Text": "/Return to \\w+\\?/"
+        "Text": "Exit room?"
       }
     ]
   },
@@ -141,15 +127,15 @@
   },
   "DesynthDialogEnabled": false,
   "DesynthBulkDialogEnabled": false,
-  "MaterializeDialogEnabled": false,
-  "MaterialAttachDialogEnabled": false,
+  "MaterializeDialogEnabled": true,
+  "MaterialAttachDialogEnabled": true,
   "OnlyMeldWhenGuaranteed": true,
-  "MateriaRetrieveDialogEnabled": false,
+  "MateriaRetrieveDialogEnabled": true,
   "ItemInspectionResultEnabled": false,
   "ItemInspectionResultRateLimiter": 0,
   "RetainerTaskAskEnabled": false,
   "RetainerTaskResultEnabled": false,
-  "GrandCompanySupplyReward": false,
+  "GrandCompanySupplyReward": true,
   "ShopCardDialog": false,
   "ShopExchangeItemDialogEnabled": false,
   "JournalResultCompleteEnabled": false,
@@ -178,7 +164,7 @@
   "CustomDeliveries": false,
   "MKSRecordQuit": false,
   "FrontlineRecordQuit": false,
-  "DataCentreTravelConfirmEnabled": false,
+  "DataCentreTravelConfirmEnabled": true,
   "AirShipExplorationResultFinalize": false,
   "AirShipExplorationResultRedeploy": false,
   "MiragePrismRemoveDispel": false,

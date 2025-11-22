@@ -2,7 +2,9 @@
   "$type": "PandorasBox.Configuration, PandorasBox",
   "EnabledFeatures": [
     "ATMSolver",
-    "PartyFinderShowMore"
+    "PartyFinderShowMore",
+    "AutoVoteMvp",
+    "AfkDummyReset"
   ],
   "DisabledTheme": true,
   "Version": 0
