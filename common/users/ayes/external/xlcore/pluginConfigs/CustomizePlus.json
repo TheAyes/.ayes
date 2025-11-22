@@ -38,10 +38,10 @@
     "PreviewCharacter": {
       "Type": "Player",
       "PlayerName": "Meira Kisaragi",
-      "HomeWorld": 66
+      "HomeWorld": 402
     },
     "EditorValuesPrecision": 3,
-    "EditorMode": 0,
+    "EditorMode": 1,
     "SetPreviewToCurrentCharacterOnLogin": false,
     "FavoriteBones": []
   },

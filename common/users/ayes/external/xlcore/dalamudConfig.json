@@ -75,6 +75,12 @@
         "Url": "https://repo.lightless-sync.org/",
         "IsEnabled": true,
         "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/marzent/IINACT/main/repo.json",
+        "IsEnabled": true,
+        "Name": null
       }
     ]
   },
@@ -227,7 +233,10 @@
       "MogMogCheck",
       "MonsterLootHunter",
       "Moodles",
-      "Compass"
+      "Compass",
+      "GatherbuddyReborn",
+      "IINACT",
+      "ChillFrames"
     ]
   },
   "DevPluginSettings": {
@@ -1747,7 +1756,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "ContactsTracker",
           "WorkingPluginId": "5552ce0a-48e0-4e0a-830b-e46749963656",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2023,7 +2032,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "VFXEditor",
           "WorkingPluginId": "ec8fa319-972e-4a1d-87ae-c4ab674d9499",
-          "IsEnabled": true
+          "IsEnabled": false
         }
       ]
     },
@@ -2057,7 +2066,9 @@
   },
   "DtrIgnore": {
     "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
-    "$values": []
+    "$values": [
+      "YesAlready"
+    ]
   },
   "DtrSpacing": 10,
   "DtrSwapDirection": false,

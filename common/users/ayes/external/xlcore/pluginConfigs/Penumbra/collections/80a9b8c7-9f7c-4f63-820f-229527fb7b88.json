@@ -13,7 +13,7 @@
         "Ear choices": 1
       },
       "Priority": 1010,
-      "Enabled": true
+      "Enabled": false
     },
     "Astral Dote": {
       "Settings": {},
@@ -41,7 +41,7 @@
         "Earthly Star V2 // Divination Adj": 1,
         "Skill Icons": 0,
         "Weapon VFX ": 0,
-        "VFX": 217579007
+        "VFX": 209189375
       },
       "Priority": 0,
       "Enabled": true
@@ -120,7 +120,7 @@
         "You're Done!": 0
       },
       "Priority": 0,
-      "Enabled": true
+      "Enabled": false
     },
     "hs-Face Defined [DT]-1.0.1-vye": {
       "Settings": {
@@ -190,7 +190,7 @@
         "Adventurer's Bedhair": 0
       },
       "Priority": 1000,
-      "Enabled": true
+      "Enabled": false
     },
     "material_ui_reborn": {
       "Settings": {

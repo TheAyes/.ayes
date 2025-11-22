@@ -1,6 +1,7 @@
 {
   lib,
   inputs,
+  config,
   pkgs,
   ...
 }:
@@ -21,7 +22,9 @@
         experimental-features = lib.mkDefault "nix-command flakes";
         flake-registry = lib.mkDefault "";
         auto-optimise-store = true;
+        access-tokens = "!include ${config.sops.secrets."github/access-token".path}";
       };
+
       channel.enable = lib.mkForce false;
 
       # Opinionated: make flake registry and nix path match flake inputs

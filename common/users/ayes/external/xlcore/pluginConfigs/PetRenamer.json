@@ -27,24 +27,32 @@
   "openDebugWindowOnStart": false,
   "debugShowChatCode": false,
   "serializableUsersV3": [],
-  "Version": 10,
-  "SerializableUsersV5": [
+  "Version": 11,
+  "SerializableUsersV6": [
     {
-      "$type": "PN.S.SerializableUserV5, PetRenamer",
+      "$type": "PN.S.SerializableUserV6, PetRenamer",
       "ContentID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "Homeworld": 66,
       "SoftSkeletonData": [
-        -411,
-        -417,
-        -416,
-        -415,
-        -407
+        411,
+        417,
+        416,
+        415,
+        407
+      ],
+      "SoftSkeletonTypes": [
+        2,
+        2,
+        2,
+        2,
+        2
       ],
       "SerializableNameDatas": [
         {
-          "$type": "PN.S.SerializableNameDataV2, PetRenamer",
-          "IDS": [],
+          "$type": "PN.S.SerializableNameDataV3, PetRenamer",
+          "Ids": [],
+          "SkeletonTypes": [],
           "Names": [],
           "EdgeColours": [],
           "TextColours": []
@@ -56,5 +64,6 @@
   "users": [],
   "serializableUsers": [],
   "serializableUsersV2": [],
-  "SerializableUsersV4": []
+  "SerializableUsersV4": [],
+  "SerializableUsersV5": []
 }
