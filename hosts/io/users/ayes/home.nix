@@ -164,6 +164,7 @@
             "uBlock0@raymondhill.net" = "ublock-origin";
             "idcac-pub@guus.ninja" = "istilldontcareaboutcookies";
             "search@kagi.com" = "kagi-search-for-firefox";
+            "{0d7cafdd-501c-49ca-8ebb-e3341caaa55e}" = "youtube-nonstop";
           };
           AppAutoUpdate = false; # Disable automatic application update
           BackgroundAppUpdate = false; # Disable automatic application update in the background, when the application is not running.

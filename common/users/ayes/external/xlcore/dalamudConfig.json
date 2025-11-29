@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.9",
+  "LastVersion": "13.0.0.11",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -79,6 +79,12 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/marzent/IINACT/main/repo.json",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/FFXIV-CombatReborn/CombatRebornRepo/main/pluginmaster.json",
         "IsEnabled": true,
         "Name": null
       }
@@ -1677,7 +1683,7 @@
         "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1, Dalamud",
         "b": false,
         "p": 2,
-        "e": false,
+        "e": true,
         "c": 0,
         "Plugins": {
           "$type": "System.Collections.Generic.List`1[[Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud]], System.Private.CoreLib",
@@ -1710,7 +1716,7 @@
               "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
               "InternalName": "BossMod",
               "WorkingPluginId": "470855a9-af5f-4fe9-b4c1-d9863ebadb11",
-              "IsEnabled": true
+              "IsEnabled": false
             }
           ]
         },
@@ -1751,12 +1757,6 @@
           "InternalName": "Dalamud.CharacterSync",
           "WorkingPluginId": "254340e5-322b-4cc1-8f50-676b6071494f",
           "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "ContactsTracker",
-          "WorkingPluginId": "5552ce0a-48e0-4e0a-830b-e46749963656",
-          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -1960,7 +1960,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "ChillFrames",
           "WorkingPluginId": "7d26d1ae-325f-427a-ad22-fd4b24babe7f",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -1976,21 +1976,9 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "GatherbuddyReborn",
-          "WorkingPluginId": "bab50470-460c-43a1-b7a9-2007be9aecc3",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "GoodFriend",
           "WorkingPluginId": "b111e251-acb7-4721-b6e2-f23c0f648660",
           "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "LoporritSync",
-          "WorkingPluginId": "eb167542-a20f-4c52-976e-bddaa07d344f",
-          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2033,6 +2021,12 @@
           "InternalName": "VFXEditor",
           "WorkingPluginId": "ec8fa319-972e-4a1d-87ae-c4ab674d9499",
           "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GatherbuddyReborn",
+          "WorkingPluginId": "e69ee1bd-109f-4d25-adf5-6b41eee93870",
+          "IsEnabled": true
         }
       ]
     },

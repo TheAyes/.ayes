@@ -64,12 +64,15 @@
       "JobSpecificPetCache": {}
     },
     "Meira Kisaragi_402": {
-      "GlobalPersistentCache": [],
+      "GlobalPersistentCache": [
+        "vfx/common/eff/cmpp_djcas0c.avfx",
+        "vfx/common/eff/pop_tlep1t0h.avfx",
+        "vfx/common/eff/pop_tlep1t1h.avfx",
+        "vfx/common/eff/pop_dejo1t0c.avfx",
+        "vfx/common/eff/pop_dejo1t1c.avfx"
+      ],
       "JobSpecificCache": {
         "33": [
-          "vfx/common/eff/cmpp_djcas0c.avfx",
-          "vfx/common/eff/pop_tlep1t0h.avfx",
-          "vfx/common/eff/pop_tlep1t1h.avfx",
           "vfx/common/eff/wp_astro1h.avfx",
           "vfx/common/eff/wp_astro0h.avfx",
           "vfx/action/ab_2ast026/eff/abi_as026t0h.avfx",
@@ -114,8 +117,10 @@
           "vfx/limitbreak/lbk_astro_lv3/texture/kira_a04ah.atex",
           "vfx/action/ab_play_thunder1/eff/abi_play6c0h.avfx",
           "vfx/action/ab_play_thunder1/eff/abi_play6t0h.avfx",
-          "vfx/action/ab_play_wind1/eff/abi_play3c0h.avfx"
-        ]
+          "vfx/action/ab_play_wind1/eff/abi_play3c0h.avfx",
+          "vfx/action/mgc_ast022/eff/mgc_as022t0p.avfx"
+        ],
+        "17": []
       },
       "JobSpecificPetCache": {
         "33": [
