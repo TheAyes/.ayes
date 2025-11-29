@@ -65,7 +65,8 @@
     "TooltipTweaks@UnlockablePreviews",
     "RefreshMarketPrices",
     "UiAdjustments@ScenarioProgressionDisplay",
-    "UiAdjustments@TimerOnDutyWaiting"
+    "UiAdjustments@TimerOnDutyWaiting",
+    "PhantomJobCommand"
   ],
   "HiddenTweaks": [],
   "CustomTweakProviders": [],

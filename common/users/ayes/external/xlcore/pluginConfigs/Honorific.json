@@ -15,6 +15,9 @@
           "Enabled": true,
           "TitleCondition": 0,
           "ConditionParam0": 0,
+          "RainbowMode": 0,
+          "GradientColourSet": null,
+          "GradientAnimationStyle": null,
           "Color": {
             "$type": "System.Nullable`1[[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib",
             "X": 1.0,
@@ -37,37 +40,15 @@
           "Enabled": false,
           "TitleCondition": 0,
           "ConditionParam0": 0,
+          "RainbowMode": 0,
+          "GradientColourSet": null,
+          "GradientAnimationStyle": null,
           "Color": null,
           "Glow": null
         },
         "CustomTitles": [],
         "UseRandom": false,
-        "RandomOnZoneChange": false,
-        "ActiveTitle": null,
-        "AllTitles": [
-          {
-            "$type": "Honorific.CustomTitle, Honorific",
-            "Title": "The Heart of all Cards",
-            "IsPrefix": true,
-            "IsOriginal": false,
-            "UniqueId": "",
-            "Enabled": true,
-            "TitleCondition": 0,
-            "ConditionParam0": 0,
-            "Color": {
-              "$type": "System.Nullable`1[[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib",
-              "X": 1.0,
-              "Y": 0.7336244,
-              "Z": 0.0
-            },
-            "Glow": {
-              "$type": "System.Nullable`1[[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib",
-              "X": 1.0,
-              "Y": 0.39301312,
-              "Z": 0.0
-            }
-          }
-        ]
+        "RandomOnZoneChange": false
       }
     }
   },
@@ -81,6 +62,11 @@
   "HideVanillaAlliance": false,
   "HideVanillaFriends": false,
   "HideVanillaOther": false,
+  "IsSupporter": false,
+  "EnableAnimation": true,
+  "EnableAntiFlashing": true,
+  "ShowGradientBuilder": false,
+  "DisableQuotes": false,
   "IdentifyAs": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.ValueTuple`2[[System.String, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
   },

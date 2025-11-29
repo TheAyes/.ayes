@@ -66,8 +66,7 @@
     "BossMod.AIHintsConfig": {
       "DonutFallback": "AssumeCircle",
       "ConeFallbackAngle": 180,
-      "OmenSetting": "Automatic",
-      "EnableHelperHints": false
+      "OmenSetting": "Automatic"
     },
     "BossMod.BossModuleConfig": {
       "MinMaturity": "Contributed",
@@ -148,6 +147,11 @@
     "BossMod.PartyRolesConfig": {
       "Assignments": {}
     },
+    "BossMod.DeveloperConfig": {
+      "ModulePackDirectory": "",
+      "MapLoadFromSource": false,
+      "MapSourcePath": ""
+    },
     "BossMod.ModuleConfig": {},
     "BossMod.ReplayManagementConfig": {
       "ShowUI": false,
@@ -162,10 +166,6 @@
       "RememberReplays": false,
       "RememberReplayTimes": false,
       "ReplayHistory": []
-    },
-    "BossMod.Pathfinding.ObstacleMapConfig": {
-      "LoadFromSource": false,
-      "SourcePath": ""
     },
     "BossMod.Stormblood.StormbloodConfig": {},
     "BossMod.Stormblood.Ultimate.UWU.UWUConfig": {
@@ -257,6 +257,7 @@
       "Enable": true,
       "EnableMinimap": true,
       "TrapHints": true,
+      "DrawTraps": false,
       "AutoPassage": true,
       "AutoClear": "Leveling",
       "ForbidDOTs": false,
@@ -739,7 +740,14 @@
       "SpotlightHintSeconds": 15
     },
     "BossMod.Dawntrail.Quantum.Q01TheFinalVerse.Q01TheFinalVerseConfig": {
-      "SinBearerOrder": "PRP"
+      "SinBearerOrder": "AccelFirst",
+      "FlamebornAssignments": {
+        "NW": "None",
+        "NE": "None",
+        "Center": "None",
+        "SW": "None",
+        "SE": "None"
+      }
     },
     "BossMod.Dawntrail.Foray.ForkedTower.ForkedTowerConfig": {
       "PlayerAlliance": "None",
@@ -759,8 +767,11 @@
       "ShowDTR": "None",
       "ShowStatsDTR": false,
       "HideDefaultPreset": false,
+      "SuggestHealerAI": true,
       "ShowPositionals": false,
+      "ClearPresetOnDeath": true,
       "ClearPresetOnCombatEnd": false,
+      "ClearPresetOnLuring": true,
       "ClearForceDisableOnCombatEnd": true,
       "EarlyPullThreshold": 1.5
     },
@@ -780,5 +791,5 @@
       "AlignDashToCamera": false
     }
   },
-  "AssemblyVersion": "0.4.4.0"
+  "AssemblyVersion": "0.4.7.0"
 }

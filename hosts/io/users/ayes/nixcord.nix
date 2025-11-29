@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.nixcord = {
     enable = true;
     discord = {
@@ -31,7 +32,7 @@
         betterSettings.enable = false; # This plugin causes discord to break
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
-        clearURLs.enable = true;
+        clearUrLs.enable = true;
         consoleJanitor.enable = true;
         dearrow.enable = true;
         decor.enable = true;
@@ -60,7 +61,7 @@
         noPendingCount.enable = true;
         noProfileThemes.enable = true;
         #noScreensharePreview.enable = true;
-        onePingPerDM.enable = true;
+        onePingPerDm.enable = true;
         permissionFreeWill.enable = true;
         pinDMs.enable = true;
         relationshipNotifier.enable = true;
@@ -74,7 +75,7 @@
         typingTweaks.enable = true;
         unlockedAvatarZoom.enable = true;
         unsuppressEmbeds.enable = true;
-        USRBG.enable = true;
+        usrbg.enable = true;
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;

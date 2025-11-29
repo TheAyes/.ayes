@@ -63,7 +63,7 @@
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Artisan.CraftingLogic.RecipeConfig, Artisan]], System.Private.CoreLib"
   },
   "ReplicateMacroDelay": false,
-  "AutoDelay": 0,
+  "AutoDelay": 314,
   "DelayRecommendation": false,
   "RecommendationDelay": 0,
   "AbortIfNoFoodPot": false,
@@ -81,13 +81,15 @@
   "EnduranceStopNQ": false,
   "RepairPercent": 50,
   "RetainerIDs": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt64, System.Private.CoreLib]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt64, System.Private.CoreLib]], System.Private.CoreLib",
+    "33777197235712755": 18014598541772518,
+    "33777197235723971": 18014598541772518
   },
   "UnavailableRetainerIDs": [],
   "MaxQuantityMode": false,
   "HideQuestHelper": false,
   "DisableTheme": true,
-  "RequestToStopDuty": false,
+  "RequestToStopDuty": true,
   "RequestToResumeDuty": false,
   "RequestToResumeDelay": 5,
   "UseConsumablesTrial": false,
@@ -183,8 +185,169 @@
     "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent"
   },
   "Version": 2,
-  "AutoMode": false,
+  "AutoMode": true,
   "CraftingLists": [],
-  "NewCraftingLists": [],
+  "NewCraftingLists": [
+    {
+      "$type": "Artisan.CraftingLists.NewCraftingList, Artisan",
+      "SkipLiteral": false,
+      "RepairPercent": 50,
+      "AddAsQuickSynth": false,
+      "ID": 2065,
+      "Name": "Bone Harpoon",
+      "Recipes": [
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1008,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1103,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1011,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1030,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1037,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 189,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1120,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1039,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1102,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1122,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1040,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1020,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1023,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        }
+      ],
+      "ExpandedList": [
+        1008,
+        1008,
+        1103,
+        1011,
+        1030,
+        1037,
+        1037,
+        189,
+        1120,
+        1039,
+        1102,
+        1122,
+        1040,
+        1020,
+        1023
+      ],
+      "SkipIfEnough": false,
+      "Materia": false,
+      "Repair": false
+    }
+  ],
   "ShowItemsV1": 62463
 }
