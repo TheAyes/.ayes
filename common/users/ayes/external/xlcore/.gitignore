@@ -9,7 +9,7 @@ ffxivConfig/cfgcopy/
 ffxivConfig/replay/
 installedPlugins/
 log/
-*cache*/
+*[Cc]ache*/
 logs/
 patch/
 runtime/
@@ -20,6 +20,9 @@ wineprefix/
 *.db
 *.zip
 *.log
+*.bin
+*.sqlite
+*.pdb
 dalamudUI.ini
 launcher.ini
 launcherUI.ini

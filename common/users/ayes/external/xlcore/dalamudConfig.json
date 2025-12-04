@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.11",
+  "LastVersion": "13.0.0.12",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -12,7 +12,6 @@
   "LastChangelogMajorMinor": "10.0.",
   "GeneralChatType": 1,
   "DoPluginTest": false,
-  "DalamudBetaKey": null,
   "ThirdRepoList": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud]], System.Private.CoreLib",
     "$values": [
@@ -295,7 +294,6 @@
   "IsGamepadNavigationEnabled": true,
   "IsFocusManagementEnabled": true,
   "IsResumeGameAfterPluginLoad": false,
-  "DalamudBetaKind": null,
   "PluginSafeMode": false,
   "PluginWaitBeforeFree": null,
   "ReportShutdownCrashes": false,
@@ -1894,7 +1892,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Splatoon",
           "WorkingPluginId": "28cf0ae3-a7b8-4f8d-b0d1-8dbbf27933b8",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2097,5 +2095,7 @@
     "$type": "System.Numerics.Vector2, System.Private.CoreLib",
     "X": 1.0,
     "Y": 1.0
-  }
+  },
+  "DalamudBetaKey": null,
+  "DalamudBetaKind": null
 }
