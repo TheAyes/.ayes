@@ -1,7 +1,5 @@
 {
   pkgs,
-  config,
-
   inputs,
   ...
 }:
@@ -123,16 +121,6 @@
   };
 
   ##################################
-  ## Groups
-  ##################################
-  users.groups.gaming = {
-    members = [
-      "ayes"
-      "janny"
-    ];
-  };
-
-  ##################################
   ## Programs
   ##################################
   programs = {
@@ -171,19 +159,9 @@
       enable = false; # Maybe in the future once I get a home-server
     };
 
-    ddclient = {
-      enable = false;
-      quiet = true;
-
-      ssl = true;
-      protocol = "cloudflare";
-
-      passwordFile = "${config.sops.secrets."cloudflare/api-token".path}";
-    };
-
     ollama = {
       enable = true;
-      acceleration = "rocm";
+      package = pkgs.ollama-rocm;
       rocmOverrideGfx = "gfx1101";
     };
 

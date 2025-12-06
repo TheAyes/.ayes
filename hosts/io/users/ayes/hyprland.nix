@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     hyprsome
     playerctl
@@ -7,7 +8,7 @@
   ];
 
   wayland.windowManager.hyprland = {
-    enable = true;
+    enable = false;
     settings = {
       "$mainMod" = "SUPER";
 
@@ -98,17 +99,18 @@
 
         "$mainMod, S, togglespecialworkspace, magic"
         "$mainMod SHIFT, S, movetoworkspace, special:magic"
-      ] ++ (builtins.concatLists (
-        builtins.genList
-          (i:
-            let
-              ws = toString (i + 1);
-            in
-            [
-              "$mainMod, ${ws}, exec, hyprsome workspace ${ws}"
-              "$mainMod SHIFT, ${ws}, exec, hyprsome move ${ws}"
-            ]
-          ) 9
+      ]
+      ++ (builtins.concatLists (
+        builtins.genList (
+          i:
+          let
+            ws = toString (i + 1);
+          in
+          [
+            "$mainMod, ${ws}, exec, hyprsome workspace ${ws}"
+            "$mainMod SHIFT, ${ws}, exec, hyprsome move ${ws}"
+          ]
+        ) 9
       ));
 
       bindl = [
