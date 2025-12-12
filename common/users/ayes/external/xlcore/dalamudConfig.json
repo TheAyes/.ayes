@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.12",
+  "LastVersion": "13.0.0.15",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -1892,7 +1892,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Splatoon",
           "WorkingPluginId": "28cf0ae3-a7b8-4f8d-b0d1-8dbbf27933b8",
-          "IsEnabled": false
+          "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2025,6 +2025,12 @@
           "InternalName": "GatherbuddyReborn",
           "WorkingPluginId": "e69ee1bd-109f-4d25-adf5-6b41eee93870",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PeepingTom",
+          "WorkingPluginId": "2bd8cc5e-4e77-452c-9039-dd6e6e17a054",
+          "IsEnabled": true
         }
       ]
     },
@@ -2038,7 +2044,13 @@
     "id": "00000000-0000-0000-0000-000000000000",
     "n": "New Preset",
     "w": {
-      "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Dalamud.Interface.Windowing.Persistence.PresetModel+PresetWindow, Dalamud]], System.Private.CoreLib"
+      "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Dalamud.Interface.Windowing.Persistence.PresetModel+PresetWindow, Dalamud]], System.Private.CoreLib",
+      "3228278164": {
+        "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel+PresetWindow, Dalamud",
+        "p": true,
+        "ct": true,
+        "a": 0.60669
+      }
     }
   },
   "DtrOrder": {

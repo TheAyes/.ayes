@@ -182,7 +182,7 @@
           DisablePasswordReveal = true;
           DontCheckDefaultBrowser = true; # Stop being attention whore
           HardwareAcceleration = false; # Disabled as it's exposes points for fingerprinting
-          OfferToSaveLogins = false; # Managed by KeepAss instead
+          OfferToSaveLogins = false; # Managed by ProtonPass
           EnableTrackingProtection = {
             Value = true;
             Locked = true;

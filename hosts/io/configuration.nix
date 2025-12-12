@@ -91,7 +91,7 @@
   ##################################
   environment = {
     systemPackages = with pkgs; [
-      keepassxc
+      #keepassxc
       sops
       #cloudflared
 
