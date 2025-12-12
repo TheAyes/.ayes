@@ -14,10 +14,10 @@
   "ResourceWatcherResourceCategories": 16383,
   "ResourceWatcherRecordTypes": 15,
   "CollectionPanel": 0,
-  "SelectedTab": 1,
+  "SelectedTab": 0,
   "ChangedItemFilter": 114687,
   "FixMainWindow": false,
-  "LastModPath": "hs-Bibo+-3.1.5-8yq",
+  "LastModPath": "material_ui_reborn",
   "AdvancedEditingOpen": false,
   "ForceRedrawOnFileChange": false,
   "IncognitoMode": false

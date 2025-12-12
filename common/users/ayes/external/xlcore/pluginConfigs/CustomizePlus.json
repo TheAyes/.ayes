@@ -1,11 +1,11 @@
 ﻿{
-  "Version": 4,
+  "Version": 5,
   "PluginEnabled": true,
   "DebuggingModeEnabled": false,
   "DefaultProfile": "00000000-0000-0000-0000-000000000000",
   "DefaultLocalPlayerProfile": "00000000-0000-0000-0000-000000000000",
   "ChangelogSettings": {
-    "LastSeenVersion": 20,
+    "LastSeenVersion": 21,
     "ChangeLogDisplayType": 0
   },
   "UISettings": {
