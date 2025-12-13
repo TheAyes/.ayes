@@ -60,6 +60,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "bak";
+
               extraSpecialArgs = {
                 inherit inputs;
                 system = hostConfig.systemType;
@@ -79,7 +80,7 @@
                   ];
 
                   home = {
-                    homeDirectory = "/home/${username}";
+                    #homeDirectory = "/home/${username}";
                     stateVersion = "23.11";
                   };
                 };
