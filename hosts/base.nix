@@ -53,7 +53,6 @@
   environment.systemPackages = with pkgs; [
     micro
     linuxHeaders
-    jq
     nixfmt-rfc-style
   ];
 

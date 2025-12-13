@@ -95,12 +95,21 @@
       # ...
     };
     quickCss = ''
+      /*
       :root {
         --custom-app-top-bar-height: 0;
       }
+      */
 
-      li.channel__972a0.container_e45859:has(div a[href="/store"]),
-      li.channel__972a0.container_e45859:has(div a[href="/shop"]),
+
+
+      ul.d125d22cdfd32cfe-content[role="list"] {
+      	& > div > li:has(div > a[href="/store"]),
+      	& > li:has(div > a[href="/shop"]) {
+       		display: none
+       }
+
+       }
       div.buttons__74017 div[aria-label="Send a gift"],
       div.buttons__74017 div:has(div[aria-label="Send a gift"]),
       .mask__0d616,
@@ -108,9 +117,11 @@
         display: none
       }
 
+      /*
       div.itemsContainer_ef3116 {
         padding-block: 8px;
       }
+      */
     '';
   };
 
