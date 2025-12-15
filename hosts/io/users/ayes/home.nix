@@ -6,7 +6,7 @@
 {
   imports = [
     ../../../../common/users/ayes/home.nix
-
+    ./theme.nix
     ./hyprland.nix
     ./nixcord.nix
     ./kitty.nix
@@ -56,6 +56,7 @@
       gimp
       proton-pass
       element-desktop
+      quodlibet
     ];
 
   };
@@ -220,15 +221,10 @@
 
     cacheHome = /mnt/games/cache/ayes;
     desktopEntries = {
-      noitaEntangledWorlds = {
-        type = "Application";
-        genericName = "noita-proxy";
-        name = "Noita Entangled Worlds";
-        icon = ../../../../assets/images/noita-proxy.png;
-        exec = "sh -c \"steam-run /mnt/games/noita_entangled_worlds/noita_proxy.x86_64\"";
-      };
+
     };
   };
 
-  gtk.gtk2.enable = false;
+  #gtk.gtk2.enable = false;
+
 }

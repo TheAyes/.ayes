@@ -12,15 +12,6 @@
     vesktop.enable = false;
 
     config = {
-
-      useQuickCss = true; # use out quickCSS
-      themeLinks = [
-        # or use an online theme
-        "https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css"
-        "https://raw.githubusercontent.com/UserPFP/UserPFP/main/import.css"
-      ];
-      frameless = false; # set some Vencord options
-      transparent = true;
       disableMinSize = true;
 
       plugins = {
@@ -94,35 +85,6 @@
       # Some extra JSON config here
       # ...
     };
-    quickCss = ''
-      /*
-      :root {
-        --custom-app-top-bar-height: 0;
-      }
-      */
-
-
-
-      ul.d125d22cdfd32cfe-content[role="list"] {
-      	& > div > li:has(div > a[href="/store"]),
-      	& > li:has(div > a[href="/shop"]) {
-       		display: none
-       }
-
-       }
-      div.buttons__74017 div[aria-label="Send a gift"],
-      div.buttons__74017 div:has(div[aria-label="Send a gift"]),
-      .mask__0d616,
-      div.bar_c38106 {
-        display: none
-      }
-
-      /*
-      div.itemsContainer_ef3116 {
-        padding-block: 8px;
-      }
-      */
-    '';
   };
 
 }

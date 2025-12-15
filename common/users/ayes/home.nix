@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   imports = [
     ./programs/git.nix
@@ -22,27 +22,42 @@
     ];
   };
 
-  stylix = {
-    cursor = {
+  home.pointerCursor = lib.mkDefault {
+    enable = true;
+    name = "Bibata-Modern-Ice";
+    package = pkgs.bibata-cursors;
+    size = 14;
+  };
+  gtk = lib.mkDefault {
+    enable = true;
+    cursorTheme = {
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;
       size = 14;
     };
-
-    autoEnable = false;
-    targets = {
-      gtk.enable = true;
-      qt.enable = true;
-
-      nixcord.enable = false;
-      vencord.enable = false;
-      vesktop.enable = false;
-
-      btop.enable = true;
-      micro.enable = true;
-
-      vicinae.enable = false;
-
-    };
   };
+
+  # stylix = {
+  #   cursor = {
+  #     name = "Bibata-Modern-Ice";
+  #     package = pkgs.bibata-cursors;
+  #     size = 14;
+  #   };
+
+  #   autoEnable = false;
+  #   targets = {
+  #     gtk.enable = true;
+  #     qt.enable = true;
+
+  #     nixcord.enable = false;
+  #     vencord.enable = false;
+  #     vesktop.enable = false;
+
+  #     btop.enable = true;
+  #     micro.enable = true;
+
+  #     vicinae.enable = false;
+
+  #   };
+  # };
 }
