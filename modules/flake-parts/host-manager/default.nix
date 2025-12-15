@@ -60,6 +60,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "bak";
+              backupCommand = "${inputs.nixpkgs.legacyPackages.${hostConfig.systemType}.trash-cli}/bin/trash";
 
               extraSpecialArgs = {
                 inherit inputs;

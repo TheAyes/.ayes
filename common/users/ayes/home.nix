@@ -6,6 +6,7 @@
     ./programs/fish.nix
     ./programs/eza.nix
     ./programs/zoxide.nix
+    ./programs/zed/config.nix
 
     #../../../presets/home-manager/programs/fish.nix
     ../../../presets/home-manager/programs/direnv.nix
@@ -37,27 +38,4 @@
     };
   };
 
-  # stylix = {
-  #   cursor = {
-  #     name = "Bibata-Modern-Ice";
-  #     package = pkgs.bibata-cursors;
-  #     size = 14;
-  #   };
-
-  #   autoEnable = false;
-  #   targets = {
-  #     gtk.enable = true;
-  #     qt.enable = true;
-
-  #     nixcord.enable = false;
-  #     vencord.enable = false;
-  #     vesktop.enable = false;
-
-  #     btop.enable = true;
-  #     micro.enable = true;
-
-  #     vicinae.enable = false;
-
-  #   };
-  # };
 }
