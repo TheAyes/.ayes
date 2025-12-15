@@ -3,7 +3,7 @@
   ...
 }:
 {
-  programs = {
+  programs.btop = {
     package = pkgs.btop-rocm;
   };
 }

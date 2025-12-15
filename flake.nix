@@ -12,10 +12,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # stylix = {
+    #   url = "github:nix-community/stylix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     nixcord.url = "github:kaylorben/nixcord";
     zen-browser = {
@@ -53,7 +53,7 @@
           home-manager = { };
 
           sharedHostModules = [
-            inputs.stylix.nixosModules.stylix
+            #inputs.stylix.nixosModules.stylix
           ];
 
           hosts = {

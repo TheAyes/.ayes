@@ -70,14 +70,15 @@
 
               users = lib.concatMapAttrs (username: userConfig: {
                 ${username} = {
-                  imports = [
-                    (
-                      if userConfig.home-manager.enable then
+                  imports = (
+                    if userConfig.home-manager.enable then
+                      [
                         ../../../hosts/${hostname}/users/${username}/home.nix
-                      else
-                        null
-                    )
-                  ];
+                        ../../../hosts/${hostname}/users/base.nix
+                      ]
+                    else
+                      [ ]
+                  );
 
                   home = {
                     #homeDirectory = "/home/${username}";
