@@ -475,7 +475,7 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	20
-ChatType	2
+ChatType	0
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278
@@ -587,6 +587,7 @@ GPoseMotionFilterAction	1
 GPoseRollRotationCameraCorrection	1
 GPoseInitCameraFocus	1
 GposePortraitRotateType	0
+GroupPosePortraitUnlockAspectLimit	0
 LsListSortPriority	0
 FriendListSortPriority	1
 FriendListFilterType	0
