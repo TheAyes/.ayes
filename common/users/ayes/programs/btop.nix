@@ -9,6 +9,9 @@
       proc_gradient = false;
       update_ms = 500;
     };
+    themes = {
+      catppuccin-mocha = ../../../../assets/themes/btop/catppuccin-mocha.theme;
+    };
   };
 
   /*

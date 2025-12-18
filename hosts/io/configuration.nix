@@ -2,8 +2,7 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   imports = [
     ./hardware-configuration.nix
     ./fail2ban.nix
@@ -37,13 +36,14 @@
         "/home"
       ];
       fsType = "none";
-      options = [ "bind" ];
+      options = ["bind"];
     };
 
     "/nix" = {
       device = "/dev/disk/by-uuid/a1b38f00-6ecc-44db-8f2f-6e13d880eb19";
       fsType = "ext4";
-      depends = [ "/" ];
+      neededForBoot = true;
+      options = ["noatime"];
     };
 
     "/home" = {
@@ -77,13 +77,13 @@
   ##################################
   ## Nix
   ##################################
-  nix = { };
+  nix = {};
 
   nixpkgs = {
     config = {
       rocmSupport = true;
     };
-    overlays = [ inputs.nix-minecraft.overlay ];
+    overlays = [inputs.nix-minecraft.overlay];
   };
 
   ##################################
@@ -213,12 +213,12 @@
   ##################################
   ## Networking
   ##################################
-  networking = { };
+  networking = {};
 
   ##################################
   ## Security
   ##################################
-  security = { };
+  security = {};
 
   ##################################
   ## Boot
