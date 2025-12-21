@@ -66,7 +66,10 @@
         typingTweaks.enable = true;
         unlockedAvatarZoom.enable = true;
         unsuppressEmbeds.enable = true;
-        usrbg.enable = true;
+        usrbg = {
+          enable = true;
+          nitroFirst = false;
+        };
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;

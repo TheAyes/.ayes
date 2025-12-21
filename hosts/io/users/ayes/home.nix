@@ -27,6 +27,7 @@
 
       heroic
       lutris
+      nexusmods-app-unfree
 
       # Music Production
       bitwig-studio
