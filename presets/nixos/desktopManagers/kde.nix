@@ -1,12 +1,14 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, ... }:
+{
   services = {
-    xserver.enable = true;
+    xserver.enable = false;
     displayManager.sddm.enable = true;
     desktopManager.plasma6.enable = true;
 
   };
 
   environment.systemPackages = with pkgs.kdePackages; [
+    plasma-integration
     kolourpaint
     kcalc
 
