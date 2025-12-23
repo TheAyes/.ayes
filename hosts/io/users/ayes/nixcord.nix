@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.nixcord = {
     enable = true;
@@ -20,10 +20,10 @@
           enable = true;
           backgroundCheck = true;
         };
-        betterSettings.enable = false; # This plugin causes discord to break
+        betterSettings.enable = lib.mkForce false; # This plugin causes discord to break
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
-        clearUrLs.enable = true;
+        ClearURLs.enable = true;
         consoleJanitor.enable = true;
         dearrow.enable = true;
         decor.enable = true;
@@ -45,16 +45,16 @@
         messageLinkEmbeds.enable = true;
         messageLogger.enable = true;
         #moreUserTags.enable = true;
-        mutualGroupDMs.enable = true;
+        MutualGroupDMs.enable = true;
         newGuildSettings.enable = true;
         noMosaic.enable = true;
         noOnboardingDelay.enable = true;
         noPendingCount.enable = true;
         noProfileThemes.enable = true;
         #noScreensharePreview.enable = true;
-        onePingPerDm.enable = true;
+        OnePingPerDM.enable = true;
         permissionFreeWill.enable = true;
-        pinDMs.enable = true;
+        PinDMs.enable = true;
         relationshipNotifier.enable = true;
         showHiddenChannels.enable = true;
         showHiddenThings.enable = true;
@@ -66,7 +66,7 @@
         typingTweaks.enable = true;
         unlockedAvatarZoom.enable = true;
         unsuppressEmbeds.enable = true;
-        usrbg = {
+        USRBG = {
           enable = true;
           nitroFirst = false;
         };
