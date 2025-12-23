@@ -13,6 +13,7 @@
     kcalc
 
     pkgs.unrar
+    wallpaper-engine-plugin
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
