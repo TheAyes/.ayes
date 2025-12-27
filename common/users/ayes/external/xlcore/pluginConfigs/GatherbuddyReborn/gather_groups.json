@@ -204,6 +204,108 @@
     ]
   },
   {
+    "Name": "100***",
+    "Description": "Contains Courtly crafting nodes.",
+    "Nodes": [
+      {
+        "Annotation": "",
+        "ItemId": 49209,
+        "PreferLocation": 0,
+        "StartMinute": 0,
+        "EndMinute": 120,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49212,
+        "PreferLocation": 0,
+        "StartMinute": 120,
+        "EndMinute": 240,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49210,
+        "PreferLocation": 0,
+        "StartMinute": 240,
+        "EndMinute": 360,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49211,
+        "PreferLocation": 0,
+        "StartMinute": 360,
+        "EndMinute": 480,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49207,
+        "PreferLocation": 0,
+        "StartMinute": 480,
+        "EndMinute": 600,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49208,
+        "PreferLocation": 0,
+        "StartMinute": 600,
+        "EndMinute": 720,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49209,
+        "PreferLocation": 0,
+        "StartMinute": 720,
+        "EndMinute": 840,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49212,
+        "PreferLocation": 0,
+        "StartMinute": 840,
+        "EndMinute": 960,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49210,
+        "PreferLocation": 0,
+        "StartMinute": 960,
+        "EndMinute": 1080,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49211,
+        "PreferLocation": 0,
+        "StartMinute": 1080,
+        "EndMinute": 1200,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49207,
+        "PreferLocation": 0,
+        "StartMinute": 1200,
+        "EndMinute": 1320,
+        "Type": "Gatherable"
+      },
+      {
+        "Annotation": "",
+        "ItemId": 49208,
+        "PreferLocation": 0,
+        "StartMinute": 1320,
+        "EndMinute": 0,
+        "Type": "Gatherable"
+      }
+    ]
+  },
+  {
     "Name": "100orange",
     "Description": "Contains level 100 orange scrip nodes.",
     "Nodes": [

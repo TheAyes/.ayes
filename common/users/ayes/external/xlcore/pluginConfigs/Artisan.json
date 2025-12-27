@@ -104,6 +104,8 @@
     "requiredSquadronManual": 1,
     "requiredFoodHQ": false,
     "requiredPotionHQ": false,
+    "CurrentSolverType": "",
+    "CurrentSolverFlavour": 0,
     "FoodEnabled": false,
     "PotionEnabled": false,
     "ManualEnabled": false,
@@ -166,7 +168,6 @@
   "DiscordWebhookUrl": null,
   "RaphaelSolverConfig": {
     "$type": "Artisan.CraftingLogic.Solvers.RaphaelSolverSettings, Artisan",
-    "AllowEnsureReliability": false,
     "AllowBackloadProgress": false,
     "ShowSpecialistSettings": false,
     "ExactCraftsmanship": false,
@@ -178,10 +179,10 @@
     "GenerateOnExperts": false,
     "TimeOutMins": 1
   },
-  "RaphaelSolverCacheV2": {
+  "RaphaelSolverCacheV3": {
     "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent"
   },
-  "RaphaelSolverCacheV3": {
+  "RaphaelSolverCacheV4": {
     "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent"
   },
   "Version": 2,
