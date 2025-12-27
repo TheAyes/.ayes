@@ -33,7 +33,6 @@
       bitwig-studio
 
       zed-editor
-
       #jetbrains.webstorm
       #jetbrains.pycharm-professional
       #jetbrains.idea-ultimate
@@ -51,6 +50,20 @@
       claude-code
       nil
       nixd
+
+      # cpp dependencies until I figure out how to configure them per project
+      # gcc
+      # cmake
+      # codespell
+      # gdb
+      # clang-tools
+      # conan
+      # cppcheck
+      # doxygen
+      # gtest
+      # lcov
+      # #vcpkg
+      # vcpkg-tool
 
       dotnetCorePackages.dotnet_9.sdk
 
