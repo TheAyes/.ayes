@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "13.0.0.15",
+  "LastVersion": "14.0.0.3",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
     "AutoUpdate": 1
@@ -241,7 +241,10 @@
       "Compass",
       "GatherbuddyReborn",
       "IINACT",
-      "ChillFrames"
+      "ChillFrames",
+      "InventoryTools",
+      "AllaganItemSearch",
+      "Directional"
     ]
   },
   "DevPluginSettings": {
@@ -2048,7 +2051,7 @@
       "3228278164": {
         "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel+PresetWindow, Dalamud",
         "p": true,
-        "ct": true,
+        "ct": false,
         "a": 0.60669
       }
     }
@@ -2065,7 +2068,9 @@
       "vbm-stats",
       "Chill Frames",
       "Wrath Combo",
-      "Loporrit"
+      "Loporrit",
+      "AutoHook",
+      "AutoHookPresets"
     ]
   },
   "DtrIgnore": {
@@ -2109,5 +2114,10 @@
     "Y": 1.0
   },
   "DalamudBetaKey": null,
-  "DalamudBetaKind": null
+  "DalamudBetaKind": null,
+  "UsedBadgePasswords": {
+    "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "$values": []
+  },
+  "ShowBadgesOnTitleScreen": true
 }
