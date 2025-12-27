@@ -1,5 +1,5 @@
 #! /usr/bin/env nix-shell
-#! nix-shell -i bash -p wget unzip
+#! nix-shell -i bash -p jq wget unzip
 
 # Check if URL parameter is provided
 if [ -z "$1" ]; then

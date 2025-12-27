@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "AutoEnableChatOnLogin": false,
+  "ShowRulesOverlayOnOpen": true,
+  "ShowMessageTimestamps": true,
+  "ChatWindowOpacity": 0.97,
+  "FadeWhenUnfocused": false,
+  "UnfocusedWindowOpacity": 0.6,
+  "IsWindowPinned": false,
+  "AutoOpenChatOnPluginLoad": false,
+  "ChatFontScale": 1,
+  "HideInCombat": false,
+  "HideInDuty": false,
+  "ShowWhenUiHidden": true,
+  "ShowInCutscenes": true,
+  "ShowInGpose": true,
+  "ChannelOrder": [],
+  "PreferNotesForChannels": {}
+}

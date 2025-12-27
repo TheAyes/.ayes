@@ -182,6 +182,7 @@
             "{2662ff67-b302-4363-95f3-b050218bd72c}" = "untrap-for-youtube";
             "jid1-BoFifL9Vbdl2zQ@jetpack" = "decentraleyes";
             "{6c00218c-707a-4977-84cf-36df1cef310f}" = "port-authority";
+            "sponsorBlocker@ajay.app" = "sponsorblock";
           };
           AppAutoUpdate = false; # Disable automatic application update
           BackgroundAppUpdate = false; # Disable automatic application update in the background, when the application is not running.

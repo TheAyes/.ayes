@@ -4,7 +4,7 @@
   "SeColorCommands": 31,
   "SeColorArguments": 546,
   "SeColorAlarm": 518,
-  "Version": 7,
+  "Version": 9,
   "BotanistSetName": "Botanist",
   "MinerSetName": "Miner",
   "FisherSetName": "Fisher",
@@ -35,14 +35,14 @@
   "HideClippy": false,
   "ShowStatusLine": true,
   "MainInterfaceHotkey": {
-    "$type": "OtterGui.Classes.ModifiableHotkey, OtterGui",
+    "$type": "ElliLib.Classes.ModifiableHotkey, ElliLib",
     "Hotkey": 0,
     "Modifier1": {
-      "$type": "OtterGui.Classes.ModifierHotkey, OtterGui",
+      "$type": "ElliLib.Classes.ModifierHotkey, ElliLib",
       "Modifier": 0
     },
     "Modifier2": {
-      "$type": "OtterGui.Classes.ModifierHotkey, OtterGui",
+      "$type": "ElliLib.Classes.ModifierHotkey, ElliLib",
       "Modifier": 0
     }
   },
@@ -798,9 +798,42 @@
     "SurfaceSlapGPAbove": true,
     "EnableIdenticalCast": false,
     "IdenticalCastGPThreshold": 350,
-    "IdenticalCastGPAbove": true
+    "IdenticalCastGPAbove": true,
+    "UseHookTimers": false,
+    "AutoCollectablesFishing": true,
+    "DiademAutoAetherCannon": false
   },
   "AutoGatherListSelectorWidth": 225.0,
+  "CollectableConfig": {
+    "$type": "GatherBuddy.Config.CollectableConfig, GatherBuddyReborn",
+    "AutoTurnInCollectables": false,
+    "BuyAfterEachCollect": false,
+    "CollectableInventoryThreshold": 100,
+    "PreferredCollectableShop": {
+      "$type": "GatherBuddy.AutoGather.Collectables.Data.CollectableShop, GatherBuddyReborn",
+      "Name": "Eulmore",
+      "Location": {
+        "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+        "X": 16.94,
+        "Y": 82.05,
+        "Z": -19.177
+      },
+      "AetheryteId": 134,
+      "TerritoryId": 820,
+      "NpcId": 1027542,
+      "ScripShopNpcId": 1027541,
+      "Disabled": false,
+      "IsLifestreamRequired": false,
+      "LifestreamCommand": "",
+      "ScripShopLocation": {
+        "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+        "X": 16.94,
+        "Y": 82.05,
+        "Z": -19.177
+      }
+    },
+    "ScripShopItems": []
+  },
   "ShowWeatherNames": true,
   "AlarmsEnabled": false,
   "AlarmsInDuty": true,
@@ -888,19 +921,19 @@
   "LockGatherWindow": false,
   "GatherWindowBottomAnchor": false,
   "GatherWindowHotkey": {
-    "$type": "OtterGui.Classes.ModifiableHotkey, OtterGui",
+    "$type": "ElliLib.Classes.ModifiableHotkey, ElliLib",
     "Hotkey": 71,
     "Modifier1": {
-      "$type": "OtterGui.Classes.ModifierHotkey, OtterGui",
+      "$type": "ElliLib.Classes.ModifierHotkey, ElliLib",
       "Modifier": 17
     },
     "Modifier2": {
-      "$type": "OtterGui.Classes.ModifierHotkey, OtterGui",
+      "$type": "ElliLib.Classes.ModifierHotkey, ElliLib",
       "Modifier": 0
     }
   },
   "GatherWindowDeleteModifier": {
-    "$type": "OtterGui.Classes.ModifierHotkey, OtterGui",
+    "$type": "ElliLib.Classes.ModifierHotkey, ElliLib",
     "Modifier": 17
   },
   "GatherWindowHoldKey": 18
