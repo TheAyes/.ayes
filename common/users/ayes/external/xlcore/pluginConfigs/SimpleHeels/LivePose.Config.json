@@ -28,6 +28,7 @@
     "UndoStackSize": 50,
     "FreezeActorOnPoseImport": false,
     "CursedMode": false,
+    "CopyPoseToBrio": false,
     "AutoSaveOnDestroy": true
   },
   "Import": {

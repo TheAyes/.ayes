@@ -62,6 +62,8 @@
   "DownloadSpeedLimitInBytes": 0,
   "DownloadSpeedType": 2,
   "PreferNotesOverNamesForVisible": false,
+  "VisiblePairSortMode": 0,
+  "OnlinePairSortMode": 0,
   "ProfileDelay": 1.5,
   "ProfilePopoutRight": false,
   "ProfilesAllowNsfw": false,
@@ -75,8 +77,11 @@
   "ShowOnlineNotifications": false,
   "ShowOnlineNotificationsOnlyForIndividualPairs": true,
   "ShowOnlineNotificationsOnlyForNamedPairs": false,
+  "ShowVisiblePairsGreenEye": false,
   "ShowTransferBars": true,
   "ShowTransferWindow": false,
+  "ShowPlayerLinesTransferWindow": true,
+  "ShowPlayerSpeedBarsTransferWindow": true,
   "UseNotificationsForDownloads": true,
   "ShowUploading": true,
   "ShowUploadingBigText": true,
@@ -151,5 +156,5 @@
   "BroadcastTtl": "0001-01-01T00:00:00",
   "SyncshellFinderEnabled": false,
   "SelectedFinderSyncshell": null,
-  "LastSeenVersion": "1.12.4"
+  "LastSeenVersion": "2.0.1"
 }
