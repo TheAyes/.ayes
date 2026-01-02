@@ -143,6 +143,7 @@
   "useColoredUIDs": true,
   "BroadcastEnabled": false,
   "LightfinderAutoEnableOnConnect": false,
+  "LightfinderLabelRenderer": 0,
   "LightfinderLabelOffsetX": 0,
   "LightfinderLabelOffsetY": 0,
   "LightfinderLabelUseIcon": false,
@@ -156,5 +157,6 @@
   "BroadcastTtl": "0001-01-01T00:00:00",
   "SyncshellFinderEnabled": false,
   "SelectedFinderSyncshell": null,
-  "LastSeenVersion": "2.0.1"
+  "LastSeenVersion": "2.0.2",
+  "OrphanableTempCollections": []
 }

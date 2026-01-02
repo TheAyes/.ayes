@@ -13,6 +13,7 @@ in
   };
   gtk = {
     enable = true;
+    colorScheme = "dark";
     cursorTheme = {
       name = cursorName;
       package = cursorPackage;

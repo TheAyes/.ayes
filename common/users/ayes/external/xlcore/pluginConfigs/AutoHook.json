@@ -229,7 +229,7 @@
         "PresetToSwapSwimbaitFills": "-",
         "SwimbaitRunsOutAction": 0,
         "PresetToSwapSwimbaitRunsOut": "-",
-        "UniqueId": "c02b9bf6-7d56-421b-86e4-ccda0c386a9f"
+        "UniqueId": "b3d46b83-cd34-4c4d-8196-20bd96e624b6"
       },
       "ListOfBaits": [
         {
@@ -635,7 +635,7 @@
           "UseSwimbait": false,
           "SwimbaitCountThreshold": 1,
           "OnlyUseWhenNoMoochAvailable": true,
-          "UniqueId": "d40a9a83-5e96-43ac-87a0-16330adbcf2a"
+          "UniqueId": "c9bad1c7-c983-48b9-a5ef-d72a3f46a71d"
         }
       ],
       "ListOfMooch": [
@@ -1042,7 +1042,7 @@
           "UseSwimbait": false,
           "SwimbaitCountThreshold": 1,
           "OnlyUseWhenNoMoochAvailable": true,
-          "UniqueId": "10dde769-76db-4c77-b45f-259cb68c7ec9"
+          "UniqueId": "7fc2152a-45f3-4e96-acc8-94cdf59d8e81"
         }
       ],
       "ListOfFish": [],
@@ -1053,7 +1053,7 @@
     "CustomPresets": [],
     "Folders": [],
     "SelectedGuid": "",
-    "UniqueId": "1fbc6712-bf60-48fb-8fd0-7f0a268ad851"
+    "UniqueId": "7ab86540-420f-450e-8386-0d7a469478c1"
   },
   "AutoGigConfig": {
     "$type": "AutoHook.Spearfishing.SpearFishingPresets, AutoHook",
@@ -1079,7 +1079,7 @@
     "NatureBountyBeforeFish": false,
     "Presets": [],
     "SelectedGuid": "",
-    "UniqueId": "bad5cd70-4aa7-4531-8f98-e093bc0f803b"
+    "UniqueId": "27b4d7aa-cdac-4e36-b341-b383c6a9b102"
   },
   "ShowDebugConsole": false,
   "ShowChatLogs": true,
@@ -1097,6 +1097,8 @@
   "DontHideOptionsDisabled": true,
   "ResetAfkTimer": true,
   "AutoStartFishing": false,
+  "DtrBarEnabled": false,
+  "DtrPresetBarEnabled": false,
   "BaitPresetList": [],
   "Version": 5,
   "CurrentLanguage": "en"
