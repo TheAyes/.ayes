@@ -128,7 +128,12 @@
           "vfx/monster/m7103/eff/m7103sp_01c0h.avfx"
         ]
       }
+    },
+    "_0": {
+      "GlobalPersistentCache": [],
+      "JobSpecificCache": {},
+      "JobSpecificPetCache": {}
     }
   },
-  "Version": 1
+  "Version": 2
 }

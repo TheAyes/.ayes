@@ -50,9 +50,9 @@
   "PreferredGatheringType": 8,
   "AutoGatherConfig": {
     "$type": "GatherBuddy.AutoGather.AutoGatherConfig, GatherBuddyReborn",
-    "MountUpDistance": 15.0,
-    "AutoGatherMountId": 1,
-    "MoveWhileMounting": false,
+    "MountUpDistance": 30.0,
+    "AutoGatherMountId": 138,
+    "MoveWhileMounting": true,
     "BlacklistedNodesByTerritoryId": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
     },
@@ -774,7 +774,7 @@
     "DoReduce": false,
     "DoRepair": false,
     "RepairThreshold": 50,
-    "HonkMode": true,
+    "HonkMode": false,
     "SortingMethod": 1,
     "GoHomeWhenIdle": true,
     "GoHomeWhenDone": true,
@@ -799,6 +799,12 @@
     "EnableIdenticalCast": false,
     "IdenticalCastGPThreshold": 350,
     "IdenticalCastGPAbove": true,
+    "EnableAmbitiousLure": false,
+    "AmbitiousLureGPThreshold": 200,
+    "AmbitiousLureGPAbove": true,
+    "EnableModestLure": false,
+    "ModestLureGPThreshold": 200,
+    "ModestLureGPAbove": false,
     "UseHookTimers": false,
     "AutoCollectablesFishing": true,
     "DiademAutoAetherCannon": false
@@ -806,9 +812,11 @@
   "AutoGatherListSelectorWidth": 225.0,
   "CollectableConfig": {
     "$type": "GatherBuddy.Config.CollectableConfig, GatherBuddyReborn",
-    "AutoTurnInCollectables": false,
+    "AutoTurnInCollectables": true,
     "BuyAfterEachCollect": false,
+    "UseInventoryFullThreshold": true,
     "CollectableInventoryThreshold": 100,
+    "InventoryFullThreshold": 140,
     "PreferredCollectableShop": {
       "$type": "GatherBuddy.AutoGather.Collectables.Data.CollectableShop, GatherBuddyReborn",
       "Name": "Eulmore",
@@ -915,10 +923,10 @@
   "ShowGatherWindowAlarms": true,
   "SortGatherWindowByUptime": false,
   "ShowGatherWindowOnlyAvailable": false,
-  "HideGatherWindowCompletedItems": false,
+  "HideGatherWindowCompletedItems": true,
   "HideGatherWindowInDuty": true,
   "OnlyShowGatherWindowHoldingKey": false,
-  "LockGatherWindow": false,
+  "LockGatherWindow": true,
   "GatherWindowBottomAnchor": false,
   "GatherWindowHotkey": {
     "$type": "ElliLib.Classes.ModifiableHotkey, ElliLib",

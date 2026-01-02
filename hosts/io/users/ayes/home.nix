@@ -38,7 +38,9 @@
       #jetbrains.idea-ultimate
       #jetbrains.rider
       #jetbrains.rust-rover
-      jetbrains.clion
+      (jetbrains.clion.override {
+        forceWayland = true;
+      })
 
       godot-mono
 
@@ -240,7 +242,4 @@
 
     };
   };
-
-  #gtk.gtk2.enable = false;
-
 }

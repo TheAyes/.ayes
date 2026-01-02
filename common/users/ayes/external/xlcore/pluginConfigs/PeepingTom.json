@@ -22,7 +22,7 @@
   "DebugMarkers": false,
   "KeepHistory": true,
   "HistoryWhenClosed": true,
-  "NumHistory": 5,
+  "NumHistory": 10,
   "ShowTimestamps": true,
   "LogParty": true,
   "LogAlliance": false,
