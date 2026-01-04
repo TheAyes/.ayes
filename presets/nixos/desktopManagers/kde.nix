@@ -8,12 +8,12 @@
   };
 
   environment.systemPackages = with pkgs.kdePackages; [
+    elisa
     plasma-integration
     kolourpaint
     kcalc
 
     pkgs.unrar
-    pkgs.linux-wallpaperengine
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
