@@ -33,53 +33,29 @@
     "Fallback": false
   },
   {
-    "ItemIds": [],
-    "Quantities": {},
-    "PrefferedLocations": {},
-    "EnabledItems": {},
-    "Name": "Crafting",
-    "Description": "",
-    "FolderPath": "",
-    "Order": 1,
-    "Enabled": false,
-    "Fallback": false
-  },
-  {
     "ItemIds": [
-      6,
-      5115,
+      5114,
       4,
-      12882,
-      11,
-      12597,
-      5343,
-      12,
-      10
+      3,
+      32009,
+      32013
     ],
     "Quantities": {
-      "6": 51,
-      "5115": 200,
-      "4": 250,
-      "12882": 50,
-      "11": 150,
-      "12597": 306,
-      "5343": 204,
-      "12": 402,
-      "10": 50
+      "5114": 150,
+      "4": 400,
+      "3": 100,
+      "32009": 250,
+      "32013": 250
     },
     "PrefferedLocations": {},
     "EnabledItems": {
-      "6": true,
-      "5115": true,
+      "5114": true,
       "4": true,
-      "12882": true,
-      "11": true,
-      "12597": true,
-      "5343": true,
-      "12": true,
-      "10": true
+      "3": true,
+      "32009": true,
+      "32013": true
     },
-    "Name": "Rarefied Rainbow Bolero",
+    "Name": "Skycrafts",
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 0,

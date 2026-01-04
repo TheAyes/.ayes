@@ -15,7 +15,6 @@
           "Enabled": true,
           "TitleCondition": 0,
           "ConditionParam0": 0,
-          "RainbowMode": 0,
           "GradientColourSet": null,
           "GradientAnimationStyle": null,
           "Color": {
@@ -29,7 +28,8 @@
             "X": 1.0,
             "Y": 0.39301312,
             "Z": 0.0
-          }
+          },
+          "Color3": null
         },
         "Override": {
           "$type": "Honorific.CustomTitle, Honorific",
@@ -40,11 +40,11 @@
           "Enabled": false,
           "TitleCondition": 0,
           "ConditionParam0": 0,
-          "RainbowMode": 0,
           "GradientColourSet": null,
           "GradientAnimationStyle": null,
           "Color": null,
-          "Glow": null
+          "Glow": null,
+          "Color3": null
         },
         "CustomTitles": [],
         "UseRandom": false,

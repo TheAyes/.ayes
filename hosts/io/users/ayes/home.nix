@@ -23,11 +23,10 @@
           zulu17
         ];
       })
-      ed-odyssey-materials-helper
+      #ed-odyssey-materials-helper
 
       heroic
       lutris
-      nexusmods-app-unfree
 
       # Music Production
       bitwig-studio
@@ -38,13 +37,15 @@
       #jetbrains.idea-ultimate
       #jetbrains.rider
       #jetbrains.rust-rover
+      (jetbrains.idea.override {
+        forceWayland = true;
+      })
       (jetbrains.clion.override {
         forceWayland = true;
       })
 
       godot-mono
 
-      #rustup
       nodejs
       bun
       uv
@@ -53,27 +54,15 @@
       nil
       nixd
 
-      # cpp dependencies until I figure out how to configure them per project
-      # gcc
-      # cmake
-      # codespell
-      # gdb
-      # clang-tools
-      # conan
-      # cppcheck
-      # doxygen
-      # gtest
-      # lcov
-      # #vcpkg
-      # vcpkg-tool
-
       dotnetCorePackages.dotnet_9.sdk
 
       blockbench
       gimp
       proton-pass
       element-desktop
+
       quodlibet
+      haruna
     ];
 
   };
@@ -82,8 +71,8 @@
     bitwig = {
       enable = true;
       extraPackages = with pkgs; [
-        yabridge
-        yabridgectl
+        #yabridge
+        #yabridgectl
 
         # VST's
         vital
@@ -98,9 +87,49 @@
           id = 0;
           name = "ayes";
           isDefault = true;
+          search = {
+            force = true;
+            default = "kagi";
+            engines = {
+              google.metaData.hidden = true;
+              bing.metaData.hidden = true;
+
+              nixrepo = {
+                name = "Nixpkgs Issues & PR's";
+                urls = [
+                  {
+                    template = "https://github.com/NixOS/nixpkgs/issues?q={searchTerms}";
+                    params = [
+                      {
+                        name = "query";
+                        value = "searchTerms";
+                      }
+                    ];
+                    definedAliases = [ "@nixrepo" ];
+                  }
+                ];
+              };
+
+              nix = {
+                name = "NixOS/HM Packages & Options";
+                urls = [
+                  {
+                    template = "https://searchix.ovh/";
+                    params = [
+                      {
+                        name = "query";
+                        value = "searchTerms";
+                      }
+                    ];
+                    definedAliases = [ "@nix" ];
+                  }
+                ];
+              };
+            };
+          };
+
           settings = {
             "app.update.auto" = false;
-
             "gfx.webrender.all" = true;
             "media.ffmpeg.vaapi.enabled" = true;
             "widget.dmabuf.force-enabled" = true;
@@ -226,10 +255,6 @@
             TabGroups = false;
             Locked = false;
           };
-
-          SearchEngines = {
-            #Default = "";
-          };
         };
     };
   };
@@ -238,8 +263,6 @@
     enable = true;
 
     cacheHome = /mnt/games/cache/ayes;
-    desktopEntries = {
-
-    };
+    desktopEntries = { };
   };
 }
