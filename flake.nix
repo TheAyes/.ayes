@@ -1,6 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/62eebee3b8bb5809ff1693f53d3e9e5af7c480fe";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,11 +12,6 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # stylix = {
-    #   url = "github:nix-community/stylix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
 
     nixcord.url = "github:kaylorben/nixcord";
     zen-browser = {

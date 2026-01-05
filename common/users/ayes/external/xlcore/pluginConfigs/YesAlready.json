@@ -109,6 +109,34 @@
         "IsYes": true,
         "Enabled": true,
         "Text": "A kupo voucher is required"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Restore item to its original form?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "This item is unique and untradable. Are you certain you wish to sell it?"
       }
     ]
   },
