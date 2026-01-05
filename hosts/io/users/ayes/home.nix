@@ -71,8 +71,8 @@
     bitwig = {
       enable = true;
       extraPackages = with pkgs; [
-        #yabridge
-        #yabridgectl
+        yabridge
+        yabridgectl
 
         # VST's
         vital
@@ -93,21 +93,44 @@
             engines = {
               google.metaData.hidden = true;
               bing.metaData.hidden = true;
+              ddg.metaData.hidden = true;
+              ecosia.metaData.hidden = true;
+              perplexity.metaData.hidden = true;
+              wikipedia.metaData.hidden = true;
+
+              kagi = {
+                name = "Kagi";
+                urls = [
+                  {
+                    template = "https://kagi.com/search/";
+                    params = [
+                      {
+                        name = "q";
+                        value = "{searchTerms}";
+                      }
+                    ];
+                  }
+                ];
+                suggestUrl = "https://kagi.com/api/autosuggest?q=%s";
+                definedAliases = [ "@kagi" ];
+                iconMapObj."16" = "https://kagi.com/favicon.ico";
+              };
 
               nixrepo = {
                 name = "Nixpkgs Issues & PR's";
                 urls = [
                   {
-                    template = "https://github.com/NixOS/nixpkgs/issues?q={searchTerms}";
+                    template = "https://github.com/NixOS/nixpkgs/issues/";
                     params = [
                       {
-                        name = "query";
-                        value = "searchTerms";
+                        name = "q";
+                        value = "{searchTerms}";
                       }
                     ];
-                    definedAliases = [ "@nixrepo" ];
                   }
                 ];
+                definedAliases = [ "@nr" ];
+                iconMapObj."16" = "https://github.com/favicon.ico";
               };
 
               nix = {
@@ -118,12 +141,15 @@
                     params = [
                       {
                         name = "query";
-                        value = "searchTerms";
+                        value = "{searchTerms}";
                       }
                     ];
-                    definedAliases = [ "@nix" ];
+
                   }
                 ];
+
+                definedAliases = [ "@np" ];
+                icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
               };
             };
           };
@@ -208,7 +234,7 @@
             "{8454caa8-cebc-4486-8b23-9771f187ed6c}" = "600-sound-volume-privacy";
             "uBlock0@raymondhill.net" = "ublock-origin";
             "idcac-pub@guus.ninja" = "istilldontcareaboutcookies";
-            "search@kagi.com" = "kagi-search-for-firefox";
+            #"search@kagi.com" = "kagi-search-for-firefox";
             "{0d7cafdd-501c-49ca-8ebb-e3341caaa55e}" = "youtube-nonstop";
             "{2662ff67-b302-4363-95f3-b050218bd72c}" = "untrap-for-youtube";
             "jid1-BoFifL9Vbdl2zQ@jetpack" = "decentraleyes";

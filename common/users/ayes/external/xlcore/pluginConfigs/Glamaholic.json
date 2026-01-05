@@ -1,0 +1,159 @@
+{
+  "$type": "Glamaholic.Configuration, Glamaholic",
+  "ShowEditorMenu": true,
+  "ShowExamineMenu": true,
+  "ShowTryOnMenu": true,
+  "ShowKofiButton": true,
+  "ItemFilterShowObtainedOnly": false,
+  "TroubleshootingMode": false,
+  "Version": 3,
+  "Plates": [
+    {
+      "NodeType": "Plate",
+      "Id": "79a07931-ea56-430f-8e11-9ae6f14e0b87",
+      "Plate": {
+        "$type": "Glamaholic.SavedPlate, Glamaholic",
+        "Name": "Winter Outfit (F)",
+        "Items": {
+          "$type": "System.Collections.Generic.Dictionary`2[[Glamaholic.PlateSlot, Glamaholic],[Glamaholic.SavedGlamourItem, Glamaholic]], System.Private.CoreLib",
+          "MainHand": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 45059,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Head": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 8557,
+            "Stain1": 101,
+            "Stain2": 108
+          },
+          "Body": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 37197,
+            "Stain1": 101,
+            "Stain2": 0
+          },
+          "Hands": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 38213,
+            "Stain1": 101,
+            "Stain2": 113
+          },
+          "Legs": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 41593,
+            "Stain1": 101,
+            "Stain2": 108
+          },
+          "Feet": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 24006,
+            "Stain1": 101,
+            "Stain2": 108
+          },
+          "Ears": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 35997,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Neck": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9292,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Wrists": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9294,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "RightRing": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9295,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "LeftRing": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9295,
+            "Stain1": 0,
+            "Stain2": 0
+          }
+        },
+        "Tags": [],
+        "FillWithNewEmperor": false
+      }
+    },
+    {
+      "NodeType": "Plate",
+      "Id": "8a0b9444-d10b-41d9-971f-654446859637",
+      "Plate": {
+        "$type": "Glamaholic.SavedPlate, Glamaholic",
+        "Name": "General Bunny (M)",
+        "Items": {
+          "$type": "System.Collections.Generic.Dictionary`2[[Glamaholic.PlateSlot, Glamaholic],[Glamaholic.SavedGlamourItem, Glamaholic]], System.Private.CoreLib",
+          "Body": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 41561,
+            "Stain1": 102,
+            "Stain2": 123
+          },
+          "Hands": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 10034,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Legs": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 38214,
+            "Stain1": 102,
+            "Stain2": 0
+          },
+          "Feet": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 30761,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Ears": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9293,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Neck": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9292,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "Wrists": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9294,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "RightRing": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9295,
+            "Stain1": 0,
+            "Stain2": 0
+          },
+          "LeftRing": {
+            "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+            "ItemId": 9295,
+            "Stain1": 0,
+            "Stain2": 0
+          }
+        },
+        "Tags": [],
+        "FillWithNewEmperor": false
+      }
+    }
+  ],
+  "LastSeenChangelogVersion": "1.12.0.0"
+}
