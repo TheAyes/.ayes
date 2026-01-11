@@ -5,11 +5,6 @@ let
   cursorSize = 14;
 in
 {
-  home.packages = with pkgs; [
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-    catppuccin-kvantum
-  ];
   home.pointerCursor = {
     enable = true;
     name = cursorName;
@@ -20,16 +15,8 @@ in
     enable = true;
     colorScheme = "dark";
     theme = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "standard";
-        variant = "mocha";
-      };
-    };
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "Breeze-Dark";
+      package = pkgs.kdePackages.breeze-gtk;
     };
     cursorTheme = {
       name = cursorName;
@@ -39,28 +26,12 @@ in
   };
   qt = {
     enable = true;
-    platformTheme.name = "kvantum";
-    style.name = "kvantum";
-  };
-
-  xdg.configFile = {
-    "Kvantum/kvantum.kvconfig".text = ''
-      [General]
-      theme=Catppuccin-Mocha-Blue
-    '';
-    "Kvantum/Catppuccin-Mocha-Blue".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Mocha-Blue";
+    style.name = "breeze-dark";
   };
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
-      icon-theme = "Papirus-Dark";
     };
-  };
-
-  home.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "kvantum";
-    QT_STYLE_OVERRIDE = "kvantum";
   };
 
   programs = {
