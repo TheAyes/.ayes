@@ -137,6 +137,20 @@
         "IsYes": true,
         "Enabled": true,
         "Text": "This item is unique and untradable. Are you certain you wish to sell it?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "You are commissioning another player to meld additional materia to an item. If that player fails, you will lose the materia and the melding fee will not be refunded. Proceed?"
       }
     ]
   },

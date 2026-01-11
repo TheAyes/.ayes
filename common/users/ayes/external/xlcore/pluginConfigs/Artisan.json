@@ -3652,6 +3652,7 @@
   "DiscordWebhookUrl": null,
   "RaphaelSolverConfig": {
     "$type": "Artisan.CraftingLogic.Solvers.RaphaelSolverSettings, Artisan",
+    "AllowEnsureReliability": false,
     "AllowBackloadProgress": false,
     "ShowSpecialistSettings": false,
     "ExactCraftsmanship": false,
@@ -6685,6 +6686,7 @@
       "RepairPercent": 50,
       "AddAsQuickSynth": false,
       "TidyAfter": true,
+      "OnlyRestockNonCrafted": false,
       "ID": 2578,
       "Name": "Skycrafts",
       "Recipes": [
@@ -6811,6 +6813,142 @@
         34441,
         34441
       ],
+      "SkipIfEnough": false,
+      "Materia": true,
+      "Repair": true
+    },
+    {
+      "$type": "Artisan.CraftingLists.NewCraftingList, Artisan",
+      "SkipLiteral": false,
+      "RepairPercent": 50,
+      "AddAsQuickSynth": false,
+      "TidyAfter": true,
+      "OnlyRestockNonCrafted": false,
+      "ID": 35104,
+      "Name": "Crafted Raid Gear",
+      "Recipes": [
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 5660,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37809,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37811,
+          "Quantity": 3,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37818,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 5642,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37909,
+          "Quantity": 2,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37812,
+          "Quantity": 4,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 5632,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37883,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37808,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 5652,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 37885,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        }
+      ],
+      "ExpandedList": [],
       "SkipIfEnough": false,
       "Materia": true,
       "Repair": true

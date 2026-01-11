@@ -244,7 +244,31 @@
       "ChillFrames",
       "InventoryTools",
       "AllaganItemSearch",
-      "Directional"
+      "Directional",
+      "OhHey",
+      "TrackyTrack",
+      "AetherDraw",
+      "BisBuddy",
+      "WDIGViewer",
+      "Mappy",
+      "ResStackCounter",
+      "LootView",
+      "CWLSLastSeenTool",
+      "OBSPlugin",
+      "StickyFocusTarget",
+      "Messenger",
+      "PrefPro",
+      "BigNaelQuotes",
+      "TriadBuddy",
+      "DeathRecap",
+      "StatusContrast",
+      "RezoPlugin",
+      "XIVCombo",
+      "visland",
+      "Hyperfocus",
+      "MarketBoardPlugin",
+      "PriceCheck",
+      "AllaganMarket"
     ]
   },
   "DevPluginSettings": {
@@ -1709,12 +1733,6 @@
             },
             {
               "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-              "InternalName": "vnavmesh",
-              "WorkingPluginId": "c240b715-ba1d-4cff-8102-daf84993cdbe",
-              "IsEnabled": true
-            },
-            {
-              "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
               "InternalName": "BossMod",
               "WorkingPluginId": "470855a9-af5f-4fe9-b4c1-d9863ebadb11",
               "IsEnabled": false
@@ -2034,6 +2052,60 @@
           "InternalName": "PeepingTom",
           "WorkingPluginId": "2bd8cc5e-4e77-452c-9039-dd6e6e17a054",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "vnavmesh",
+          "WorkingPluginId": "c240b715-ba1d-4cff-8102-daf84993cdbe",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BisBuddy",
+          "WorkingPluginId": "cd0d33d0-2a39-4ae6-8018-da54d694dd40",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "CWLSLastSeenTool",
+          "WorkingPluginId": "5cf01a39-8e80-4cc0-a299-1beba54b44d5",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "HandyHotbarHelper",
+          "WorkingPluginId": "7361552b-4f95-4c56-8504-e2f982a4274f",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "StatusContrast",
+          "WorkingPluginId": "3126a052-4758-421e-aee2-4781a010f715",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Dalamud.LoadingImage",
+          "WorkingPluginId": "052b43e8-7b87-4ee4-bc16-189ea6c37955",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BetterTargetingSystem",
+          "WorkingPluginId": "a073fe79-f528-4dd4-a2a6-9c20e33cbfde",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "MarketBoardPlugin",
+          "WorkingPluginId": "f77249c2-fa6c-4626-8052-ff91699818e5",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PriceCheck",
+          "WorkingPluginId": "40e4a765-4438-4ec5-9880-bdb9e87a3c96",
+          "IsEnabled": false
         }
       ]
     },
@@ -2052,7 +2124,7 @@
         "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel+PresetWindow, Dalamud",
         "p": true,
         "ct": false,
-        "a": 0.60669
+        "a": 0.88787
       }
     }
   },
