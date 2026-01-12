@@ -1,0 +1,70 @@
+﻿{
+  "Version": 4,
+  "UniqueId": "24645e7c-6af3-46be-9a46-a4c2a04d9915",
+  "CreationDate": "2025-11-19T23:58:34.7011919+00:00",
+  "ModifiedDate": "2025-11-20T00:06:28.9468817+00:00",
+  "Name": "Main",
+  "Bones": {
+    "j_mune_l": {
+      "PropagateTranslation": false,
+      "PropagateRotation": false,
+      "PropagateScale": false,
+      "Translation": {
+        "X": 0.005,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Rotation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Scaling": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 1.1
+      }
+    },
+    "j_mune_r": {
+      "PropagateTranslation": false,
+      "PropagateRotation": false,
+      "PropagateScale": false,
+      "Translation": {
+        "X": 0.005,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Rotation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Scaling": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 1.1
+      }
+    },
+    "j_ex_met_a": {
+      "PropagateTranslation": false,
+      "PropagateRotation": false,
+      "PropagateScale": false,
+      "Translation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Rotation": {
+        "X": 7.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Scaling": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  "IsWriteProtected": false
+}

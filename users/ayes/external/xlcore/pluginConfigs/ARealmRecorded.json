@@ -1,0 +1,16 @@
+{
+  "$type": "ARealmRecorded.Configuration, ARealmRecorded",
+  "LastLoadedReplay": "Z:\\home\\ayes\\.xlcore\\ffxivConfig\\replay\\autorenamed\\the Unending Coil of Bahamut (Ultimate) 2025.12.09 23.12.37.dat",
+  "EnableRecordingIcon": false,
+  "MaxAutoRenamedReplays": 30,
+  "MaxDeletedReplays": 10,
+  "EnablePlaybackControlHiding": true,
+  "EnableHideOwnName": false,
+  "EnableQuickLoad": true,
+  "EnableJumpToTime": true,
+  "MaxSeekDelta": 100.0,
+  "CustomSpeedPreset": 30.0,
+  "EnableWaymarks": true,
+  "PluginVersion": "1.0.2.1",
+  "Version": 0
+}

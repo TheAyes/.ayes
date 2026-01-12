@@ -1,0 +1,15 @@
+{
+  "$type": "GraphicsConfig.Configuration, GraphicsConfig",
+  "DefaultPreset": "None",
+  "InDutyPreset": "None",
+  "CraftingPreset": "None",
+  "EditingCharacterPreset": "None",
+  "GatheringPreset": "None",
+  "CombatPreset": "None",
+  "PerformancePreset": "None",
+  "WatchingCutscenePreset": "None",
+  "UnpluggedPreset": "None",
+  "SavedOnce": true,
+  "IsDebug": false,
+  "Version": 0
+}

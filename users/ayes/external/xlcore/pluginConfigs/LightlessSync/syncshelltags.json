@@ -1,0 +1,9 @@
+{
+  "ServerTagStorage": {
+    "wss://sync.lightless-sync.org": {
+      "ServerAvailableSyncshellTags": [],
+      "SyncshellPairedTags": {}
+    }
+  },
+  "Version": 0
+}

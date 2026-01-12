@@ -1,0 +1,143 @@
+[
+  {
+    "ItemIds": [
+      5,
+      2,
+      3,
+      6,
+      7,
+      4
+    ],
+    "Quantities": {
+      "5": 1000,
+      "2": 1000,
+      "3": 1000,
+      "6": 1000,
+      "7": 1000,
+      "4": 1000
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "5": true,
+      "2": true,
+      "3": true,
+      "6": true,
+      "7": true,
+      "4": true
+    },
+    "Name": "All Shards",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 2,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [
+      5114,
+      4,
+      3,
+      32009,
+      32013
+    ],
+    "Quantities": {
+      "5114": 150,
+      "4": 400,
+      "3": 100,
+      "32009": 250,
+      "32013": 250
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "5114": true,
+      "4": true,
+      "3": true,
+      "32009": true,
+      "32013": true
+    },
+    "Name": "Skycrafts",
+    "Description": "Imported from Artisan",
+    "FolderPath": "",
+    "Order": 0,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [
+      44007,
+      13,
+      49208,
+      14,
+      17,
+      49209,
+      16,
+      49212,
+      44034,
+      44043,
+      19,
+      18,
+      44006,
+      10,
+      49210,
+      43996,
+      8,
+      49207,
+      15,
+      44028,
+      12
+    ],
+    "Quantities": {
+      "44007": 9,
+      "13": 16,
+      "49208": 8,
+      "14": 21,
+      "17": 24,
+      "49209": 12,
+      "16": 36,
+      "49212": 6,
+      "44034": 2,
+      "44043": 2,
+      "19": 6,
+      "18": 6,
+      "44006": 6,
+      "10": 16,
+      "49210": 16,
+      "43996": 5,
+      "8": 8,
+      "49207": 4,
+      "15": 3,
+      "44028": 5,
+      "12": 8
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "44007": true,
+      "13": true,
+      "49208": true,
+      "14": true,
+      "17": true,
+      "49209": true,
+      "16": true,
+      "49212": true,
+      "44034": true,
+      "44043": true,
+      "19": true,
+      "18": true,
+      "44006": true,
+      "10": true,
+      "49210": true,
+      "43996": true,
+      "8": true,
+      "49207": true,
+      "15": true,
+      "44028": true,
+      "12": true
+    },
+    "Name": "Crafted Raid Gear",
+    "Description": "Imported from Artisan",
+    "FolderPath": "",
+    "Order": 4,
+    "Enabled": true,
+    "Fallback": false
+  }
+]
