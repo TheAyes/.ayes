@@ -3,101 +3,106 @@
   config,
   inputs,
   ...
-}:
-{
+}: {
   options = {
     host-manager = {
       enable = lib.mkEnableOption "the host-manager module";
 
-      baseDir = lib.mkOption {
+      hostDir = lib.mkOption {
         type = lib.types.path;
         default = ../../../hosts;
+      };
+
+      userDir = lib.mkOption {
+        type = lib.types.path;
+        default = ../../../users;
       };
 
       sharedHostModules = lib.mkOption {
         type = with lib.types; listOf deferredModule;
         description = "Extra modules that will be shared between all hosts";
-        default = [ ];
+        default = [];
       };
 
       hosts = lib.mkOption {
-        type =
-          with lib.types;
+        type = with lib.types;
           attrsOf (submoduleWith {
-            modules = [ ./host.nix ];
+            modules = [./host.nix];
           });
-        default = { };
+        default = {};
       };
 
       home-manager = {
         globalModules = lib.mkOption {
           type = with lib.types; listOf deferredModule;
-          default = [ ];
+          default = [];
         };
       };
     };
   };
 
   config.flake = lib.mkIf config.host-manager.enable {
-    nixosConfigurations = lib.mapAttrs (
-      hostname: hostConfig:
-      inputs.nixpkgs.lib.nixosSystem {
-        modules = [
-          ../../../hosts/base.nix
-          (config.host-manager.baseDir + "/${hostname}/configuration.nix")
+    nixosConfigurations =
+      lib.mapAttrs (
+        hostname: hostConfig:
+          inputs.nixpkgs.lib.nixosSystem {
+            modules = let
+              makeOptionalImport = file: lib.optional (builtins.pathExists file) file;
+            in
+              [
+                (makeOptionalImport config.host-manager.hostDir + /base.nix)
+                (config.host-manager.hostDir + "/${hostname}/configuration.nix")
 
-          {
-            users.users = lib.mapAttrs (username: userConfig: {
-              isNormalUser = true;
-              extraGroups = userConfig.groups;
-            }) hostConfig.users;
-          }
+                {
+                  users.users =
+                    lib.mapAttrs (username: userConfig: {
+                      isNormalUser = true;
+                      extraGroups = userConfig.groups;
+                    })
+                    hostConfig.users;
+                }
 
-          (inputs.home-manager.nixosModules.home-manager)
+                (inputs.home-manager.nixosModules.home-manager)
 
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              backupFileExtension = "bak";
-              backupCommand = "${inputs.nixpkgs.legacyPackages.${hostConfig.systemType}.trash-cli}/bin/trash";
+                {
+                  home-manager = {
+                    useGlobalPkgs = true;
+                    useUserPackages = true;
+                    backupFileExtension = "bak";
+                    backupCommand = "${inputs.nixpkgs.legacyPackages.${hostConfig.systemType}.trash-cli}/bin/trash";
 
-              extraSpecialArgs = {
-                inherit inputs;
-                system = hostConfig.systemType;
-              };
-              sharedModules =
-                hostConfig.home-manager.sharedModules ++ config.host-manager.home-manager.globalModules;
+                    extraSpecialArgs = {
+                      inherit inputs;
+                      system = hostConfig.systemType;
+                    };
+                    sharedModules =
+                      hostConfig.home-manager.sharedModules ++ config.host-manager.home-manager.globalModules;
 
-              users = lib.concatMapAttrs (username: userConfig: {
-                ${username} = {
-                  imports = (
-                    if userConfig.home-manager.enable then
-                      [
-                        ../../../hosts/${hostname}/users/${username}/home.nix
-                        ../../../hosts/${hostname}/users/base.nix
-                      ]
-                    else
-                      [ ]
-                  );
-
-                  home = {
-                    #homeDirectory = "/home/${username}";
-                    stateVersion = "23.11";
+                    users =
+                      lib.concatMapAttrs (username: userConfig: {
+                        ${username} = {
+                          imports = (
+                            lib.optional userConfig.home-manager.enable [
+                              (makeOptionalImport config.host-manager.userDir + /base.nix) # Base user config
+                              (config.host-manager.userDir + /${username}/home.nix) # Common user config (across all machines)
+                              (makeOptionalImport config.host-manager.hostDir + /${hostname}/base-user.nix) # Host specific user config
+                            ]
+                          );
+                        };
+                      })
+                      hostConfig.users;
                   };
-                };
-              }) hostConfig.users;
+                }
+              ]
+              ++ hostConfig.extraModules
+              ++ config.host-manager.sharedHostModules;
+            system = hostConfig.systemType;
+            specialArgs = {
+              inherit inputs hostname;
+              system = hostConfig.systemType;
             };
           }
-        ]
-        ++ hostConfig.extraModules
-        ++ config.host-manager.sharedHostModules;
-        system = hostConfig.systemType;
-        specialArgs = {
-          inherit inputs hostname;
-          system = hostConfig.systemType;
-        };
-      }
-    ) config.host-manager.hosts;
+      )
+      config.host-manager.hosts;
   };
 }

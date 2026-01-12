@@ -1,9 +1,9 @@
 {
   pkgs,
+  lib,
   ...
-}:
-{
+}: {
   programs.btop = {
-    package = pkgs.btop-rocm;
+    package = lib.mkDefault pkgs.btop-rocm;
   };
 }

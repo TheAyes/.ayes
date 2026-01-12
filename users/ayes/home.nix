@@ -1,5 +1,8 @@
-{ pkgs, lib, ... }:
 {
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./programs/git.nix
     ./programs/btop.nix
@@ -7,10 +10,13 @@
     ./programs/eza.nix
     ./programs/zoxide.nix
     ./programs/zed/config.nix
-
-    #../../../presets/home-manager/programs/fish.nix
-    ../../../presets/home-manager/programs/direnv.nix
   ];
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    silent = true;
+  };
 
   home = {
     sessionVariables = {
@@ -29,6 +35,7 @@
     package = pkgs.bibata-cursors;
     size = 14;
   };
+
   gtk = lib.mkDefault {
     enable = true;
     cursorTheme = {
@@ -37,5 +44,4 @@
       size = 14;
     };
   };
-
 }
