@@ -2,8 +2,7 @@
   hostname,
   pkgs,
   ...
-}:
-{
+}: {
   imports = [
     ./security.nix
   ];
@@ -58,38 +57,6 @@
     passSecretService.enable = true;
   };
 
-  # stylix = {
-  #   enable = true;
-  #   base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-  #   fonts = {
-  #     serif = {
-  #       package = pkgs.caladea;
-  #       name = "Caladea-Regular";
-  #     };
-
-  #     sansSerif = {
-  #       package = pkgs.encode-sans;
-  #       name = "EncodeSans-Regular";
-  #     };
-
-  #     monospace = {
-  #       package = pkgs.cascadia-code;
-  #       name = "CascadiaCodeNF";
-  #     };
-
-  #     emoji = {
-  #       package = pkgs.serenityos-emoji-font;
-  #       name = "SerenityOS Emoji";
-  #     };
-  #   };
-
-  #   autoEnable = false;
-  #   targets = {
-  #     gtk.enable = true;
-  #     qt.enable = true;
-  #   };
-  # };
-
   environment = {
     systemPackages = with pkgs; [
       pass
@@ -105,18 +72,13 @@
     '';
 
     shellAliases = {
-      "rebuild-switch" =
-        "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh && popd";
-      "rebuild-test" = "nixos-rebuild switch --sudo --flake /mnt/c/Projekte/.ayes/";
-      "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/upgrade.sh && popd";
-      "bc14-push" =
-        "pushd /mnt/c/Projekte/bosmono/ && git update-index && git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" && git push && popd";
-      "bc14-push-force" =
-        "pushd /mnt/c/Projekte/bosmono/ && git update-index && git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" --force && git push --force && popd";
-      "bc14-pull-master" =
-        "pushd /mnt/c/Projekte/bosmono/ && git update-index && git subtree pull --prefix apps/bc14 apps/bc14 refs/heads/master && popd";
-      "bc14-object-split" =
-        "pushd /mnt/c/Projekte/bosmono/ && git update-index && bc14-pull-master && pushd /mnt/c/Projekte/bosmono/apps/bc14/BC/ && powershell.exe \"C:\\Projekte\\bosmono\\packages\\cal-ps-tools\\ObjectSplit.ps1\" obj.txt && popd && popd";
+      "rebuild-switch" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh switch && popd";
+      "rebuild-test" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh test && popd";
+      "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh switch --upgrade && popd";
+      #"bc14-push"      = "pushd /mnt/c/Projekte/bosmono/ && git update-index && git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" && git push && popd";
+      #"bc14-push-force" = "pushd /mnt/c/Projekte/bosmono/ && git update-index && git push apps/bc14 \"$(git subtree split --prefix=apps/bc14 main --rejoin):refs/heads/justin\" --force && git push --force && popd";
+      #"bc14-pull-master" = "pushd /mnt/c/Projekte/bosmono/ && git update-index && git subtree pull --prefix apps/bc14 apps/bc14 refs/heads/master && popd";
+      #"bc14-object-split" = "pushd /mnt/c/Projekte/bosmono/ && git update-index && bc14-pull-master && pushd /mnt/c/Projekte/bosmono/apps/bc14/BC/ && powershell.exe \"C:\\Projekte\\bosmono\\packages\\cal-ps-tools\\ObjectSplit.ps1\" obj.txt && popd && popd";
     };
   };
 
