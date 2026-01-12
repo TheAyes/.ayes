@@ -108,10 +108,24 @@
 
             calliope = {
               enable = true;
+              ayes = {
+                enable = true;
+                groups = [
+                  "wheel"
+                ];
+              };
             };
 
             janus = {
               enable = true;
+              users = {
+                ayes = {
+                  enable = true;
+                  groups = [
+                    "wheel"
+                  ];
+                };
+              };
             };
           };
         };
