@@ -51,9 +51,10 @@
   };
 
   environment.systemPackages = with pkgs; [
+    git
     micro
     linuxHeaders
-    nixfmt-rfc-style
+    nixfmt
   ];
 
   fonts.packages = with pkgs; [

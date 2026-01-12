@@ -105,6 +105,14 @@
 
               extraModules = [ inputs.nixos-wsl.nixosModules.default ];
             };
+
+            calliope = {
+              enable = true;
+            };
+
+            janus = {
+              enable = true;
+            };
           };
         };
 
