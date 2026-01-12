@@ -1,0 +1,22 @@
+{
+  "FcCustomizations": {},
+  "DefaultCustomization": {
+    "Enabled": false,
+    "Replacement": "",
+    "HideQuoteMarks": false,
+    "OwnLine": false
+  },
+  "WandererCustomization": {
+    "Enabled": false,
+    "Replacement": "<crossworldicon><homeworld>",
+    "HideQuoteMarks": false,
+    "OwnLine": false
+  },
+  "TravellerCustomization": {
+    "Enabled": false,
+    "Replacement": "<crossworldicon><homeworld>",
+    "HideQuoteMarks": false,
+    "OwnLine": false
+  },
+  "Version": 1
+}

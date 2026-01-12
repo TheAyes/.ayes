@@ -1,0 +1,14 @@
+{
+  "OpenLightlessHubOnGposeStart": false,
+  "LastSavedCharaDataLocation": "",
+  "FavoriteCodes": {},
+  "DownloadMcdDataOnConnection": true,
+  "Version": 0,
+  "NearbyOwnServerOnly": false,
+  "NearbyIgnoreHousingLimitations": false,
+  "NearbyDrawWisps": true,
+  "NearbyDistanceFilter": 100,
+  "NearbyShowOwnData": false,
+  "ShowHelpTexts": true,
+  "NearbyShowAlways": false
+}

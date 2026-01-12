@@ -1,0 +1,17 @@
+{
+  "SortOnItemAdded": true,
+  "SortOnItemRemoved": true,
+  "SortOnItemChanged": false,
+  "SortOnItemMoved": false,
+  "SortOnItemMerged": false,
+  "SortOnItemSplit": false,
+  "SortOnZoneChange": true,
+  "SortOnJobChange": true,
+  "SortOnLogin": true,
+  "ReorderUnsortedItems": false,
+  "Version": 0,
+  "CharacterName": "Meira Kisaragi",
+  "CharacterWorld": "Alpha",
+  "ContentId": 0,
+  "LodestoneId": null
+}

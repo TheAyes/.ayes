@@ -1,0 +1,19 @@
+{
+  "Panel0": {
+    "Enabled": true,
+    "Tolerance": 0
+  },
+  "Panel1": {
+    "Enabled": true,
+    "Tolerance": 0
+  },
+  "Panel2": {
+    "Enabled": true,
+    "Tolerance": 0
+  },
+  "Panel3": {
+    "Enabled": true,
+    "Tolerance": 0
+  },
+  "Version": 1
+}

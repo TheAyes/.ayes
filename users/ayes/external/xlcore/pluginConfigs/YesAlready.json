@@ -1,0 +1,289 @@
+{
+  "$type": "YesAlready.Configuration, YesAlready",
+  "Version": 2,
+  "Enabled": true,
+  "MessageChannel": 1,
+  "ForcedYesKey": 0,
+  "ForcedTalkKey": 0,
+  "DisableKey": 0,
+  "SeparateForcedKeys": false,
+  "RootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Travel to the phantom village?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": true,
+        "PlayerConditions": "!2",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "/^(Travel)|(Return)|(Journey)|(Teleport) to .+/"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Exit room?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Leave.*"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Do you really want to trade a high-quality item?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": false,
+        "Enabled": true,
+        "Text": "/Refuse to sign .+'s free company petition\\?/"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "A kupo voucher is required"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "Restore item to its original form?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "This item is unique and untradable. Are you certain you wish to sell it?"
+      },
+      {
+        "$type": "YesAlready.TextEntryNode, YesAlready",
+        "RequiresPlayerConditions": false,
+        "PlayerConditions": "",
+        "IsConditional": false,
+        "ConditionalNumberTemplate": "",
+        "ConditionalNumber": 0,
+        "ComparisonType": 3,
+        "ZoneRestricted": false,
+        "ZoneText": "",
+        "IsYes": true,
+        "Enabled": true,
+        "Text": "You are commissioning another player to meld additional materia to an item. If that player fails, you will lose the materia and the melding fee will not be refunded. Proceed?"
+      }
+    ]
+  },
+  "OkRootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.OkEntryNode, YesAlready",
+        "Enabled": false,
+        "Text": "Add some text here!"
+      }
+    ]
+  },
+  "ListRootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.ListEntryNode, YesAlready",
+        "TargetRestricted": false,
+        "TargetText": "",
+        "Enabled": true,
+        "Text": "Retire to an inn"
+      },
+      {
+        "$type": "YesAlready.ListEntryNode, YesAlready",
+        "TargetRestricted": true,
+        "TargetText": "",
+        "Enabled": true,
+        "Text": ""
+      },
+      {
+        "$type": "YesAlready.ListEntryNode, YesAlready",
+        "TargetRestricted": false,
+        "TargetText": "Jeffroy",
+        "Enabled": true,
+        "Text": "/Journey to .*/"
+      }
+    ]
+  },
+  "TalkRootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.TalkEntryNode, YesAlready",
+        "TargetText": "Your text goes here",
+        "Enabled": false,
+        "Text": ""
+      }
+    ]
+  },
+  "NumericsRootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.NumericsEntryNode, YesAlready",
+        "IsPercent": true,
+        "Percentage": 100,
+        "Quantity": 0,
+        "Enabled": false,
+        "Text": "Add some text here!"
+      }
+    ]
+  },
+  "CustomRootFolder": {
+    "$type": "YesAlready.TextFolderNode, YesAlready",
+    "Name": "/",
+    "Enabled": true,
+    "Children": [
+      {
+        "$type": "YesAlready.CustomEntryNode, YesAlready",
+        "Addon": "",
+        "UpdateState": true,
+        "CallbackParams": "",
+        "Enabled": false,
+        "Text": "Add some text here!"
+      }
+    ]
+  },
+  "DesynthDialogEnabled": false,
+  "DesynthBulkDialogEnabled": false,
+  "MaterialAttachDialogEnabled": true,
+  "OnlyMeldWhenGuaranteed": true,
+  "MateriaRetrieveDialogEnabled": true,
+  "ItemInspectionResultEnabled": false,
+  "ItemInspectionResultRateLimiter": 0,
+  "RetainerTaskAskEnabled": false,
+  "RetainerTaskResultEnabled": false,
+  "GrandCompanySupplyReward": true,
+  "ShopCardDialog": false,
+  "ShopExchangeItemDialogEnabled": false,
+  "JournalResultCompleteEnabled": false,
+  "ContentsFinderConfirmEnabled": false,
+  "ContentsFinderOneTimeConfirmEnabled": false,
+  "InclusionShopRememberEnabled": false,
+  "InclusionShopRememberCategory": 0,
+  "InclusionShopRememberSubcategory": 1,
+  "GuildLeveDifficultyConfirm": false,
+  "FallGuysRegisterConfirm": false,
+  "FallGuysExitConfirm": false,
+  "RetainerTransferListConfirm": false,
+  "RetainerTransferProgressConfirm": false,
+  "DesynthesisResults": false,
+  "AetherialReductionResults": false,
+  "FashionCheckQuit": false,
+  "LordOfVerminionQuit": false,
+  "ChocoboRacingQuit": false,
+  "PartyFinderJoinConfirm": false,
+  "GimmickYesNo": true,
+  "AutoCollectable": false,
+  "LotteryWeeklyInput": false,
+  "TradeMultiple": false,
+  "TransmuteMode": 0,
+  "KupoOfFortune": false,
+  "CustomDeliveries": false,
+  "MKSRecordQuit": false,
+  "FrontlineRecordQuit": false,
+  "DataCentreTravelConfirmEnabled": true,
+  "AirShipExplorationResultFinalize": false,
+  "AirShipExplorationResultRedeploy": false,
+  "MiragePrismRemoveDispel": false,
+  "MiragePrismExecuteCast": false,
+  "BannerPreviewUpdate": false,
+  "WKSRewardClose": false,
+  "WKSAnnounceHide": false,
+  "DifficultySelectYesNoEnabled": false,
+  "DifficultySelectYesNo": 2,
+  "CustomCallbacks": []
+}

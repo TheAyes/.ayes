@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MacroMate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ConfigVersion="1">
+  <LinkPlaceholderIconId>60042</LinkPlaceholderIconId>
+  <ShowVanillaMacroContextMenus>true</ShowVanillaMacroContextMenus>
+  <UseMacroChainByDefault>false</UseMacroChainByDefault>
+  <EnableSubscriptionAutoCheckForUpdates>true</EnableSubscriptionAutoCheckForUpdates>
+  <MinutesBetweenSubscriptionAutoCheckForUpdates>120</MinutesBetweenSubscriptionAutoCheckForUpdates>
+  <CharPickerDialogFavourites />
+  <Root>
+    <Name>Root</Name>
+    <Nodes>
+      <Group>
+        <Name>M1S</Name>
+        <Nodes>
+          <Macro>
+            <Name>Pair Stacks</Name>
+            <IconId>14184</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>50</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Pair stacks! </Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Light Party Stacks</Name>
+            <IconId>14199</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>52</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Light party stacks! East and West!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Role Stacks</Name>
+            <IconId>62146</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>51</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Role stacks! T-H-D</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--Scratching Ring (1225)-->
+                      <Territory>1225</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Group>
+            <Name>Cleaves</Name>
+            <Nodes>
+              <Macro>
+                <Name>Cleave 1 In</Name>
+                <IconId>66162</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>60</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 1 Inside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 1 Out</Name>
+                <IconId>66182</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>61</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 1 Outside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 2 In</Name>
+                <IconId>66163</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>62</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 2 Inside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 2 Out</Name>
+                <IconId>66183</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>63</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 2 Outside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 3 In</Name>
+                <IconId>66164</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>64</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 3 Inside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 3 Out</Name>
+                <IconId>66184</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>65</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 3 Outside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                  <AndCondition>
+                    <OpExprs />
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 4 In</Name>
+                <IconId>66165</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>66</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 4 Inside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--Scratching Ring (1225)-->
+                          <Territory>1225</Territory>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Cleave 4 Out</Name>
+                <IconId>66185</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>67</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p 4 Outside to avoid cleave!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                  <AndCondition>
+                    <OpExprs />
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+            </Nodes>
+          </Group>
+          <Group>
+            <Name>Baits</Name>
+            <Nodes>
+              <Macro>
+                <Name>Bait 1</Name>
+                <IconId>15871</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>70</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Baits on 1!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Bait 2</Name>
+                <IconId>15872</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>71</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Baits on 2!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Bait 3</Name>
+                <IconId>15873</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>72</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Baits on 3!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Bait 4</Name>
+                <IconId>15874</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>73</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Baits on 4!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="ContentCondition">
+                          <!--AAC Light-heavyweight M1 (Savage) (986)-->
+                          <Content>986</Content>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+            </Nodes>
+          </Group>
+        </Nodes>
+      </Group>
+      <Group>
+        <Name>M2S</Name>
+        <Nodes>
+          <Macro>
+            <Name>Pair Stacks</Name>
+            <IconId>14184</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>50</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Pair stacks! </Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Spread</Name>
+            <IconId>15140</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>51</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Spreads!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>DPS First</Name>
+            <IconId>76803</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>60</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p DPS explode first!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>Supports First</Name>
+            <IconId>76801</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>61</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/p Supports explode first!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+          <Macro>
+            <Name>I didn't see</Name>
+            <IconId>15012</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>52</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>Didn't see! Please specify with d or s, if you know!</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="ContentCondition">
+                      <!--AAC Light-heavyweight M2 (Savage) (988)-->
+                      <Content>988</Content>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+        </Nodes>
+      </Group>
+      <Group>
+        <Name>Occult</Name>
+        <Nodes>
+          <Group>
+            <Name>Birb</Name>
+            <Nodes>
+              <Macro>
+                <Name>Separate</Name>
+                <IconId>31</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>53</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p --------------</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--South Horn (1252)-->
+                          <Territory>1252</Territory>
+                          <!--Heathcliff (4938)-->
+                          <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Line AOE</Name>
+                <IconId>138</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>50</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Line AOE!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--South Horn (1252)-->
+                          <Territory>1252</Territory>
+                          <!--Heathcliff (4938)-->
+                          <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Donut AOE</Name>
+                <IconId>137</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>51</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Donut AOE!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--South Horn (1252)-->
+                          <Territory>1252</Territory>
+                          <!--Heathcliff (4938)-->
+                          <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+              <Macro>
+                <Name>Knockback</Name>
+                <IconId>214835</IconId>
+                <MacroSet>SHARED</MacroSet>
+                <MacroSlots>
+                  <unsignedInt>52</unsignedInt>
+                </MacroSlots>
+                <LinkWithMacroChain>false</LinkWithMacroChain>
+                <Lines>/p Knockback AOE!</Lines>
+                <Notes />
+                <AlwaysLinked>false</AlwaysLinked>
+                <OrCondition>
+                  <AndCondition>
+                    <OpExprs>
+                      <OpExprXML>
+                        <Condition xsi:type="LocationCondition">
+                          <!--South Horn (1252)-->
+                          <Territory>1252</Territory>
+                          <!--Heathcliff (4938)-->
+                          <RegionOrSubAreaName>4938</RegionOrSubAreaName>
+                        </Condition>
+                        <Op>IS</Op>
+                      </OpExprXML>
+                    </OpExprs>
+                  </AndCondition>
+                </OrCondition>
+              </Macro>
+            </Nodes>
+          </Group>
+          <Macro>
+            <Name>Buff Rotation</Name>
+            <IconId>57</IconId>
+            <MacroSet>SHARED</MacroSet>
+            <MacroSlots>
+              <unsignedInt>60</unsignedInt>
+            </MacroSlots>
+            <LinkWithMacroChain>false</LinkWithMacroChain>
+            <Lines>/phantomjob Phantom Bard|71,6
+/wait 1
+/ac Phantom Action II|55,32
+/wait 3
+/phantomjob Phantom Monk|71,3
+/wait 1
+/ac Phantom Action III|55,33
+/wait 3
+/phantomjob Phantom Knight|71,1
+/wait 1
+/ac Phantom Action II|55,32</Lines>
+            <Notes />
+            <AlwaysLinked>false</AlwaysLinked>
+            <OrCondition>
+              <AndCondition>
+                <OpExprs>
+                  <OpExprXML>
+                    <Condition xsi:type="LocationCondition">
+                      <!--South Horn (1252)-->
+                      <Territory>1252</Territory>
+                    </Condition>
+                    <Op>IS</Op>
+                  </OpExprXML>
+                </OpExprs>
+              </AndCondition>
+            </OrCondition>
+          </Macro>
+        </Nodes>
+      </Group>
+    </Nodes>
+  </Root>
+</MacroMate>
