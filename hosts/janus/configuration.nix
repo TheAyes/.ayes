@@ -6,6 +6,7 @@
 {
   imports = [
     ../../presets/nixos/locales/german.nix
+    ../../presets/nixos/boot/systemd-boot.nix
   ];
 
   fileSystems = {
