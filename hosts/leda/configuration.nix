@@ -48,7 +48,7 @@
 
     gnupg.agent = {
       enable = true;
-      pinentryPackage = pkgs.pinentry.tty;
+      pinentryPackage = pkgs.pinentry-curses;
       enableSSHSupport = true;
     };
   };

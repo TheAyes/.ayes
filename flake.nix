@@ -27,26 +27,36 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-minecraft.url = "github:Infinidoge/nix-minecraft";
+
+    /*
+      host-manager = {
+      url = "path:./modules/flake-parts/host-manager-v2";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
+      };
+    };
+    */
   };
 
-  outputs =
-    inputs@{
-      nixpkgs,
-      flake-parts,
-      ...
-    }:
-    flake-parts.lib.mkFlake { inherit inputs; } (
-      { ... }:
-      {
+  outputs = inputs @ {
+    nixpkgs,
+    flake-parts,
+    ...
+  }:
+    flake-parts.lib.mkFlake {inherit inputs;} (
+      {...}: {
+        imports = [
+          #inputs.host-manager.flakeModule
+          ./modules/flake-parts/host-manager
+        ];
 
-        imports = [ ./modules/flake-parts/host-manager ];
-
-        systems = [ "x86_64-linux" ];
+        systems = ["x86_64-linux"];
 
         host-manager = {
           enable = true;
 
-          home-manager = { };
+          home-manager = {};
 
           sharedHostModules = [
             #inputs.stylix.nixosModules.stylix
@@ -103,7 +113,7 @@
                 };
               };
 
-              extraModules = [ inputs.nixos-wsl.nixosModules.default ];
+              extraModules = [inputs.nixos-wsl.nixosModules.default];
             };
 
             calliope = {
@@ -130,14 +140,9 @@
           };
         };
 
-        perSystem =
-          {
-            pkgs,
-            ...
-          }:
-          {
-            formatter = pkgs.nixpkgs-fmt;
-          };
+        perSystem = {pkgs, ...}: {
+          formatter = pkgs.nixpkgs-fmt;
+        };
       }
     );
 }
