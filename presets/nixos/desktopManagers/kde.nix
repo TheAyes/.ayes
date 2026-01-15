@@ -1,7 +1,6 @@
-{
-  pkgs,
-  lib,
-  ...
+{ pkgs
+, lib
+, ...
 }: {
   services = {
     xserver.enable = false;
@@ -37,5 +36,5 @@
 
   qt.platformTheme = lib.mkForce "kde";
 
-  xdg.icons.fallbackCursorThemes = ["breeze_cursors"];
+  xdg.icons.fallbackCursorThemes = [ "breeze_cursors" ];
 }
