@@ -10,7 +10,7 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-if ! nh os "$1" "$DIR" --ask --diff=auto "$2"; then
+if ! nh os "$1" "$DIR" --ask --diff=auto $2; then
 	exit 2
 fi
 

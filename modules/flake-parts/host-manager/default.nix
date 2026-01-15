@@ -49,9 +49,9 @@
             modules = let
               makeOptionalImport = file: lib.optional (builtins.pathExists file) file;
             in
-              [
-                (makeOptionalImport config.host-manager.hostDir + /base.nix)
-                (config.host-manager.hostDir + "/${hostname}/configuration.nix")
+              makeOptionalImport (config.host-manager.hostDir + /base.nix)
+              ++ [
+                (config.host-manager.hostDir + /${hostname}/configuration.nix)
 
                 {
                   users.users =
@@ -82,11 +82,17 @@
                       lib.concatMapAttrs (username: userConfig: {
                         ${username} = {
                           imports = (
-                            lib.optional userConfig.home-manager.enable [
-                              (makeOptionalImport config.host-manager.userDir + /base.nix) # Base user config
-                              (config.host-manager.userDir + /${username}/home.nix) # Common user config (across all machines)
-                              (makeOptionalImport config.host-manager.hostDir + /${hostname}/base-user.nix) # Host specific user config
-                            ]
+                            lib.optionals userConfig.home-manager.enable (
+                              # Base user config
+                              makeOptionalImport (config.host-manager.userDir + /base.nix)
+                              # Common user config (across all machines)
+                              ++ [
+                                (config.host-manager.userDir + /${username}/home.nix)
+                              ]
+                              # Host specific user config)
+                              ++ makeOptionalImport (config.host-manager.hostDir + /${hostname}/base-user.nix)
+                              ++ makeOptionalImport (config.host-manager.hostDir + /${hostname}/users/${username}/home.nix)
+                            )
                           );
                         };
                       })

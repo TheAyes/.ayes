@@ -1,49 +1,67 @@
 {
-  flake-parts-lib,
-  nixpkgs-lib,
-  ...
-}: {
   lib,
   inputs,
   ...
-}:
-assert inputs.nixpkgs || throw "'inputs.nixpkgs' was not given. Host-Manager cannot build configurations without it."; {
-  imports = [
-    ./host.nix
-  ];
-
-  options.host-manager = {
-    enable = lib.mkOption {
-      type = lib.types.bool;
+}: let
+  inherit (lib) mkOption types optionals literalExpression mapAttrs concatMapAttrs;
+in {
+  options = {
+    enable = mkOption {
+      type = types.bool;
       default = false;
       description = "Whether to enable host-manager";
       example = true;
     };
 
-    hostsPath = lib.mkOption {
-      type = lib.types.path;
+    root = mkOption {
+      type = types.nullOr types.path;
+      default = null;
+      description = "The root from which configurations are being imported";
+      example = literalExpression "./.";
+    };
+
+    hostsPath = mkOption {
+      type = types.path;
       default = /hosts;
       description = "The location for where your host-files are going to reside in";
       example = /some/other/host/path;
     };
 
-    usersPath = lib.mkOption {
-      type = lib.types.path;
+    hosts = mkOption {
+      type = with types; attrsOf (submoduleWith {modules = [./host.nix];});
+    };
+
+    usersPath = mkOption {
+      type = types.path;
       default = /users;
       description = "The location for where your user-files are going to reside in";
       example = /some/other/user/path;
     };
 
+    globalUsers = mkOption {
+      type = with types; attrsOf (submoduleWith {modules = [./user.nix];});
+      default = {};
+      description = "Users to be created across all hosts";
+      example = {
+        moderator = {
+          enable = true;
+          /*
+          ...more config...
+          */
+        };
+      };
+    };
+
     nixos = {
-      input = lib.mkOption {
-        type = lib.types.deferredModule;
+      input = mkOption {
+        type = types.deferredModule;
         default = inputs.nixpkgs;
         description = "The input to take for nixpkgs";
         example = inputs.nixpkgs-unstable;
       };
 
-      globalNixosModules = lib.mkOption {
-        type = with lib.types; listOf deferredModule;
+      globalNixosModules = mkOption {
+        type = with types; listOf deferredModule;
         default = [];
         description = "Extra modules that will be imported for all hosts managed by host-manager";
         example = [
@@ -55,36 +73,22 @@ assert inputs.nixpkgs || throw "'inputs.nixpkgs' was not given. Host-Manager can
     };
 
     home-manager = {
-      enable = lib.mkOption {
-        type = lib.types.bool;
+      enable = mkOption {
+        type = types.bool;
         default = false;
         description = "Whether to enable home-manager";
         example = true;
       };
 
-      input = lib.mkOption {
-        type = lib.types.deferredModule;
+      input = mkOption {
+        type = types.deferredModule;
         default = inputs.home-manager;
         description = "The input to take for home-manager";
         example = inputs.home-manager-unstable;
       };
 
-      useGlobalPkgs = lib.mkOption {
-        type = lib.types.bool;
-        default = true;
-        description = "A wrapper for the original 'home-manager.useGlobalPkgs' for you to set";
-        example = false;
-      };
-
-      useUserPackages = lib.mkOption {
-        type = lib.types.bool;
-        default = true;
-        description = "A wrapper for the original 'home-manager.useUserPackages' for you to set";
-        example = false;
-      };
-
-      globalHomeManagerModules = lib.mkOption {
-        type = with lib.types; listOf deferredModule;
+      globalHomeManagerModules = mkOption {
+        type = with types; listOf deferredModule;
         default = [];
         description = "Extra modules that will be imported for all home-manager users across all hosts managed by host-manager";
         example = [
@@ -94,14 +98,5 @@ assert inputs.nixpkgs || throw "'inputs.nixpkgs' was not given. Host-Manager can
         ];
       };
     };
-  };
-
-  config.flake = lib.mkIf config.host-manager.enable {
-    nixosConfigurations = lib.mapAttrs (hostname: hostConfig:
-      lib.nixosSystem {
-        modules = [
-        ];
-      })
-    config.host-manager.hosts;
   };
 }

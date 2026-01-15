@@ -6,8 +6,10 @@
   ...
 }: {
   imports = [
-    ../../../../common/users/ayes/home.nix
+    #../../../../users/ayes/home.nix
   ];
+
+  dconf.enable = false;
 
   home.packages = with pkgs; [
     bun

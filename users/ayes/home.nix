@@ -24,16 +24,15 @@
     };
 
     packages = with pkgs; [
-      # Documentation and Writing
       obsidian
     ];
-  };
 
-  home.pointerCursor = lib.mkDefault {
-    enable = true;
-    name = "Bibata-Modern-Ice";
-    package = pkgs.bibata-cursors;
-    size = 14;
+    pointerCursor = lib.mkDefault {
+      enable = true;
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 14;
+    };
   };
 
   gtk = lib.mkDefault {

@@ -10,7 +10,7 @@
       update_ms = 500;
     };
     themes = {
-      catppuccin-mocha = ../../../../assets/themes/btop/catppuccin-mocha.theme;
+      catppuccin-mocha = ../../../assets/themes/btop/catppuccin-mocha.theme;
     };
   };
 
