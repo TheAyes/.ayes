@@ -2,7 +2,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   imports = [
     ./programs/git.nix
     ./programs/btop.nix
@@ -10,6 +11,7 @@
     ./programs/eza.nix
     ./programs/zoxide.nix
     ./programs/zed/config.nix
+    ./programs/gitkraken.nix
   ];
 
   programs.direnv = {

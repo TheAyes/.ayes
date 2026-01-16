@@ -2,6 +2,7 @@
   lib,
   config,
   inputs,
+  self,
   ...
 }: {
   options = {
@@ -72,7 +73,7 @@
                     backupCommand = "${inputs.nixpkgs.legacyPackages.${hostConfig.systemType}.trash-cli}/bin/trash";
 
                     extraSpecialArgs = {
-                      inherit inputs;
+                      inherit inputs self;
                       system = hostConfig.systemType;
                     };
                     sharedModules =
@@ -91,6 +92,7 @@
                               ]
                               # Host specific user config)
                               ++ makeOptionalImport (config.host-manager.hostDir + /${hostname}/base-user.nix)
+                              ++ makeOptionalImport (config.host-manager.userDir + /${username}/hosts/${hostname})
                               ++ makeOptionalImport (config.host-manager.userDir + /${username}/hosts/${hostname}/home.nix)
                             )
                           );

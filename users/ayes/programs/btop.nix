@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, self, ... }:
+{
   programs.btop = {
     enable = true;
     #package = pkgs.btop-rocm;
@@ -10,15 +11,15 @@
       update_ms = 500;
     };
     themes = {
-      catppuccin-mocha = ../../../assets/themes/btop/catppuccin-mocha.theme;
+      catppuccin-mocha = self + ./assets/themes/btop/catppuccin-mocha.theme;
     };
   };
 
   /*
-  xdg.configFile.btop-catppuccin-theme = {
-    enable = true;
-    source = ../../../../assets/themes/btop/catppuccin-mocha.theme;
-    target = "./btop/themes/catppuccin-mocha.theme";
-  };
+    xdg.configFile.btop-catppuccin-theme = {
+      enable = true;
+      source = ../../../../assets/themes/btop/catppuccin-mocha.theme;
+      target = "./btop/themes/catppuccin-mocha.theme";
+    };
   */
 }
