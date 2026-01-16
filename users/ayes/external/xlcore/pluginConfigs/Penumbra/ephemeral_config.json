@@ -1,3 +1,4 @@
+<<<<<<< HEAD:users/ayes/external/xlcore/pluginConfigs/Penumbra/ephemeral_config.json
 ﻿{
   "CurrentModSelectorWidth": 401.0,
   "ModSelectorMinimumScale": 0.1,
@@ -21,4 +22,29 @@
   "AdvancedEditingOpen": false,
   "ForceRedrawOnFileChange": false,
   "IncognitoMode": false
+=======
+﻿{
+  "CurrentModSelectorWidth": 401.0,
+  "ModSelectorMinimumScale": 0.1,
+  "ModSelectorMaximumScale": 0.5,
+  "Version": 9,
+  "LastSeenVersion": 49,
+  "DebugSeparateWindow": false,
+  "TutorialStep": 29,
+  "EnableResourceLogging": false,
+  "ResourceLoggingFilter": "",
+  "EnableResourceWatcher": false,
+  "OnlyAddMatchingResources": true,
+  "ResourceWatcherResourceTypes": 4503599627370495,
+  "ResourceWatcherResourceCategories": 16383,
+  "ResourceWatcherRecordTypes": 15,
+  "CollectionPanel": 0,
+  "SelectedTab": 1,
+  "ChangedItemFilter": 114687,
+  "FixMainWindow": false,
+  "LastModPath": "hs-Vanilla+ eyes-1.0.0-zfBL",
+  "AdvancedEditingOpen": false,
+  "ForceRedrawOnFileChange": false,
+  "IncognitoMode": false
+>>>>>>> c7b64ff ([io gen.186] Version 26.05.20260110.1566daa - 6.18.3-zen1):common/users/ayes/external/xlcore/pluginConfigs/Penumbra/ephemeral_config.json
 }

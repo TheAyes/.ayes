@@ -1,19 +1,26 @@
 {
   inputs = {
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/?rev=1566daa69241ebdcb0edc2c7ed2cda792d781e39";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixos-wsl = {
+      url = "github:nix-community/NixOS-WSL/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nixcord.url = "github:kaylorben/nixcord";
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -26,37 +33,29 @@
       url = "github:Svenum/Solaar-Flake/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
-
-    /*
-      host-manager = {
-      url = "path:./modules/flake-parts/host-manager-v2";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-      };
+    nix-minecraft = {
+      url = "github:Infinidoge/nix-minecraft";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
-    */
   };
 
-  outputs = inputs @ {
-    nixpkgs,
-    flake-parts,
-    ...
-  }:
-    flake-parts.lib.mkFlake {inherit inputs;} (
-      {...}: {
-        imports = [
-          #inputs.host-manager.flakeModule
-          ./modules/flake-parts/host-manager
-        ];
+  outputs =
+    inputs@{
+      nixpkgs,
+      flake-parts,
+      ...
+    }:
+    flake-parts.lib.mkFlake { inherit inputs; } (
+      { ... }:
+      {
+        imports = [ ./modules/flake-parts/host-manager ];
 
-        systems = ["x86_64-linux"];
+        systems = [ "x86_64-linux" ];
 
         host-manager = {
           enable = true;
 
-          home-manager = {};
+          home-manager = { };
 
           sharedHostModules = [
             #inputs.stylix.nixosModules.stylix
@@ -94,6 +93,7 @@
                     "audio"
                     "docker"
                     "minecraft"
+                    "libvirtd"
                   ];
                 };
               };
@@ -113,7 +113,7 @@
                 };
               };
 
-              extraModules = [inputs.nixos-wsl.nixosModules.default];
+              extraModules = [ inputs.nixos-wsl.nixosModules.default ];
             };
 
             calliope = {
@@ -140,9 +140,11 @@
           };
         };
 
-        perSystem = {pkgs, ...}: {
-          formatter = pkgs.nixpkgs-fmt;
-        };
+        perSystem =
+          { pkgs, ... }:
+          {
+            formatter = pkgs.nixpkgs-fmt;
+          };
       }
     );
 }

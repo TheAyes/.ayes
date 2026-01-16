@@ -75,7 +75,7 @@ TimeLocal	1
 TimeServer	0
 ActiveLS_H	0
 ActiveLS_L	0
-HotbarLock	0
+HotbarLock	1
 HotbarDispRecastTime	1
 HotbarCrossContentsActionEnableInput	1
 HotbarDispRecastTimeDispType	1

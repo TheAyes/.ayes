@@ -24,6 +24,7 @@
     plasma-integration
     kolourpaint
     kcalc
+    isoimagewriter
 
     pkgs.unrar
   ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD:users/ayes/external/xlcore/pluginConfigs/SimpleHeels/LivePoseCharacters/0040002E92DA86E6.json
 {
   "ContentId": 18014598541772518,
   "Name": "Meira Kisaragi",
@@ -6,4 +7,14 @@
   "BodyPoses": [],
   "FacePoses": [],
   "MinionPoses": []
+=======
+{
+  "ContentId": 18014598541772518,
+  "Name": "Meira Kisaragi",
+  "World": 402,
+  "SaveTime": "2026-01-14T22:11:55.4645429+01:00",
+  "BodyPoses": [],
+  "FacePoses": [],
+  "MinionPoses": []
+>>>>>>> c7b64ff ([io gen.186] Version 26.05.20260110.1566daa - 6.18.3-zen1):common/users/ayes/external/xlcore/pluginConfigs/SimpleHeels/LivePoseCharacters/0040002E92DA86E6.json
 }

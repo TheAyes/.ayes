@@ -1,9 +1,12 @@
 {
   pkgs,
   lib,
+  inputs,
+  system,
   ...
-}: {
-  imports = [];
+}:
+{
+  imports = [ ];
 
   home = {
     packages = with pkgs; [
@@ -73,14 +76,14 @@
 
     zen-browser = {
       enable = true;
-      #package = inputs.zen-browser.packages."${system}".twilight;
+      package = inputs.zen-browser.packages."${system}".twilight;
       profiles = {
         ayes = {
           id = 0;
           name = "ayes";
           isDefault = true;
           search = {
-            force = true;
+            force = false;
 
             engines = {
               google.metaData.hidden = true;
@@ -103,7 +106,7 @@
                     ];
                   }
                 ];
-                definedAliases = ["@nr"];
+                definedAliases = [ "@nr" ];
                 iconMapObj."16" = "https://github.com/favicon.ico";
               };
 
@@ -121,7 +124,7 @@
                   }
                 ];
 
-                definedAliases = ["@np"];
+                definedAliases = [ "@np" ];
                 icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
               };
             };
@@ -139,58 +142,61 @@
             "zen.welcome-screen.seen" = true;
           };
           pinsForce = true;
-          pins = let
-            utils = import ../../../../modules/nixos/utils.nix {inherit lib;};
-          in {
-            music = {
-              title = "Music";
-              id = utils.generateUUID "music";
-              url = "https://music.youtube.com/";
-              isEssential = true;
-              position = 1000;
+          pins =
+            let
+              utils = import ../../../../modules/nixos/utils.nix { inherit lib; };
+            in
+            {
+              music = {
+                title = "Music";
+                id = utils.generateUUID "music";
+                url = "https://music.youtube.com/";
+                isEssential = true;
+                position = 1000;
+              };
+              youtube = {
+                title = "Youtube";
+                id = utils.generateUUID "youtube";
+                url = "https://youtube.com/";
+                isEssential = true;
+                position = 2000;
+              };
+              email = {
+                title = "E-Mail";
+                id = utils.generateUUID "email";
+                url = "https://mail.proton.me/";
+                isEssential = true;
+                position = 3000;
+              };
+              nixos_packages = {
+                title = "NixOS Packages";
+                id = utils.generateUUID "nixospackages";
+                url = "https://search.nixos.org/packages?channel=unstable";
+                isEssential = false;
+                position = 10000;
+              };
+              hm_options = {
+                title = utils.generateUUID "hmoptions";
+                id = "ee18f999-cb14-4b81-9f1b-b7a03dc4ba89";
+                url = "https://home-manager-options.extranix.com/?query=&release=master";
+                isEssential = false;
+                position = 11000;
+              };
             };
-            youtube = {
-              title = "Youtube";
-              id = utils.generateUUID "youtube";
-              url = "https://youtube.com/";
-              isEssential = true;
-              position = 2000;
-            };
-            email = {
-              title = "E-Mail";
-              id = utils.generateUUID "email";
-              url = "https://mail.proton.me/";
-              isEssential = true;
-              position = 3000;
-            };
-            nixos_packages = {
-              title = "NixOS Packages";
-              id = utils.generateUUID "nixospackages";
-              url = "https://search.nixos.org/packages?channel=unstable";
-              isEssential = false;
-              position = 10000;
-            };
-            hm_options = {
-              title = utils.generateUUID "hmoptions";
-              id = "ee18f999-cb14-4b81-9f1b-b7a03dc4ba89";
-              url = "https://home-manager-options.extranix.com/?query=&release=master";
-              isEssential = false;
-              position = 11000;
-            };
-          };
         };
       };
 
-      policies = let
-        mkExtensionSettings = builtins.mapAttrs (
-          _: pluginId: {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/${pluginId}/latest.xpi";
-            installation_mode = "force_installed";
-          }
-        );
-      in {
-        ExtensionSettings =
-          {
+      policies =
+        let
+          mkExtensionSettings = builtins.mapAttrs (
+            _: pluginId: {
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/${pluginId}/latest.xpi";
+              installation_mode = "force_installed";
+            }
+          );
+        in
+        {
+          ExtensionSettings = {
             "*" = {
               installation_mode = "blocked";
               blocked_install_message = "Install Extensions using your NixOS Configuration!";
@@ -211,54 +217,54 @@
             "{6c00218c-707a-4977-84cf-36df1cef310f}" = "port-authority";
             "sponsorBlocker@ajay.app" = "sponsorblock";
           };
-        AppAutoUpdate = false; # Disable automatic application update
-        BackgroundAppUpdate = false; # Disable automatic application update in the background, when the application is not running.
-        DisableBuiltinPDFViewer = true; # Considered a security liability
-        DisableFirefoxStudies = true;
-        DisableFirefoxAccounts = true; # Disable Firefox Sync
-        DisableFirefoxScreenshots = true; # No screenshots?
-        DisableForgetButton = true; # Thing that can wipe history for X time, handled differently
-        DisableMasterPasswordCreation = true; # To be determined how to handle master password
-        DisableProfileImport = true; # Purity enforcement: Only allow nix-defined profiles
-        DisableProfileRefresh = true; # Disable the Refresh Firefox button on about:support and support.mozilla.org
-        DisableSetDesktopBackground = true; # Remove the “Set As Desktop Background…” menuitem when right clicking on an image, because Nix is the only thing that can manage the backgroud
-        DisplayMenuBar = "default-off";
-        DisablePocket = true;
-        DisableTelemetry = true;
-        DisableFormHistory = true;
-        DisablePasswordReveal = true;
-        DontCheckDefaultBrowser = true; # Stop being attention whore
-        HardwareAcceleration = false; # Disabled as it exposes points for fingerprinting
-        OfferToSaveLogins = false; # Managed by ProtonPass
-        EnableTrackingProtection = {
-          Value = true;
-          Locked = true;
-          Cryptomining = true;
-          Fingerprinting = true;
-          EmailTracking = true;
-          # Exceptions = ["https://example.com"]
-        };
-        EncryptedMediaExtensions = {
-          Enabled = true;
-          Locked = true;
-        };
-        ExtensionUpdate = false;
+          AppAutoUpdate = false; # Disable automatic application update
+          BackgroundAppUpdate = false; # Disable automatic application update in the background, when the application is not running.
+          DisableBuiltinPDFViewer = true; # Considered a security liability
+          DisableFirefoxStudies = true;
+          DisableFirefoxAccounts = true; # Disable Firefox Sync
+          DisableFirefoxScreenshots = true; # No screenshots?
+          DisableForgetButton = true; # Thing that can wipe history for X time, handled differently
+          DisableMasterPasswordCreation = true; # To be determined how to handle master password
+          DisableProfileImport = true; # Purity enforcement: Only allow nix-defined profiles
+          DisableProfileRefresh = true; # Disable the Refresh Firefox button on about:support and support.mozilla.org
+          DisableSetDesktopBackground = true; # Remove the “Set As Desktop Background…” menuitem when right clicking on an image, because Nix is the only thing that can manage the backgroud
+          DisplayMenuBar = "default-off";
+          DisablePocket = true;
+          DisableTelemetry = true;
+          DisableFormHistory = true;
+          DisablePasswordReveal = true;
+          DontCheckDefaultBrowser = true; # Stop being attention whore
+          HardwareAcceleration = false; # Disabled as it exposes points for fingerprinting
+          OfferToSaveLogins = false; # Managed by ProtonPass
+          EnableTrackingProtection = {
+            Value = true;
+            Locked = true;
+            Cryptomining = true;
+            Fingerprinting = true;
+            EmailTracking = true;
+            # Exceptions = ["https://example.com"]
+          };
+          EncryptedMediaExtensions = {
+            Enabled = true;
+            Locked = true;
+          };
+          ExtensionUpdate = false;
 
-        GenerativeAI = {
-          Enabled = false;
-          Chatbot = false;
-          LinkPreviews = false;
-          TabGroups = false;
-          Locked = false;
+          GenerativeAI = {
+            Enabled = false;
+            Chatbot = false;
+            LinkPreviews = false;
+            TabGroups = false;
+            Locked = false;
+          };
         };
-      };
     };
   };
 
   xdg = {
     enable = true;
 
-    cacheHome = /mnt/games/cache/ayes;
-    desktopEntries = {};
+    desktopEntries = { };
+    #cacheHome = /mnt/games/cache/ayes;
   };
 }
