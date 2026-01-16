@@ -1,5 +1,5 @@
 {
-  import = [
+  imports = [
     ./home.nix
     ./theme.nix
     ./hyprland.nix

@@ -31,7 +31,7 @@
 
   fileSystems = {
     "/home/ayes/.xlcore" = {
-      device = "/etc/nixos/common/users/ayes/external/xlcore";
+      device = "/etc/nixos/users/ayes/external/xlcore";
       depends = [
         "/"
         "/home"
@@ -75,10 +75,29 @@
     };
   };
 
+  systemd.user.services.clear-cache = {
+    description = "Clear user cache";
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.bash}/bin/bash -c 'rm -rf $XDG_CACHE_HOME/*'";
+    };
+  };
+
+  systemd.user.timers.clear-cache = {
+    description = "Clear cache weekly";
+    wantedBy = [ "timers.target" ];
+    timerConfig = {
+      OnCalendar = "weekly";
+      Persistent = true;
+    };
+  };
+
   ##################################
   ## Nix
   ##################################
-  nix = { };
+  nix.settings = {
+
+  };
 
   nixpkgs = {
     config = {
@@ -105,7 +124,11 @@
       wineWowPackages.staging
       winetricks
       bottles
+
+      dnsmasq
       quickemu
+      spice
+      spice-gtk
 
       rocmPackages.rocm-device-libs
       rocmPackages.hsakmt
@@ -147,6 +170,9 @@
       ];
     };
   };
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   ##################################
   ## Services
