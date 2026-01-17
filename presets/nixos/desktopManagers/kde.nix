@@ -1,7 +1,9 @@
-{ pkgs
-, lib
-, ...
-}: {
+{
+  pkgs,
+  lib,
+  ...
+}:
+{
   services = {
     xserver.enable = false;
     displayManager.sddm = {
@@ -12,7 +14,7 @@
           CursorTheme = "Bibata-Modern-Ice"; # the cursor name here matters
           # I would always go check the source nix file
           # to see how the maintainers built and named it
-          CursorSize = 14;
+          CursorSize = 20;
         };
       };
     };
