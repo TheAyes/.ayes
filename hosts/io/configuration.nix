@@ -114,6 +114,7 @@
       #keepassxc
       sops
       #cloudflared
+      protonvpn-gui
 
       qpwgraph
 
