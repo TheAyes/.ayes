@@ -31,6 +31,6 @@
   "UndercutComparisonSettings": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib"
   },
-  "ShowWizardNewFeatures": false,
+  "ShowWizardNewFeatures": true,
   "WizardVersionsSeen": []
 }

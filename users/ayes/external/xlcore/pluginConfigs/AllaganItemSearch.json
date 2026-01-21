@@ -17,6 +17,9 @@
   "IsDirty": false,
   "Version": 0,
   "PinnedFields": [],
-  "ShowWizardNewFeatures": false,
-  "WizardVersionsSeen": []
+  "ShowWizardNewFeatures": true,
+  "WizardVersionsSeen": [
+    "1.0.0.0",
+    "1.0.0"
+  ]
 }
