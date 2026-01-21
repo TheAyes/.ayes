@@ -37,6 +37,12 @@
         "Url": "https://raw.githubusercontent.com/UnknownX7/DalamudPluginRepo/master/pluginmaster.json",
         "IsEnabled": true,
         "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://aetherment.sevii.dev/plugin",
+        "IsEnabled": true,
+        "Name": null
       }
     ]
   },
@@ -100,7 +106,8 @@
       "FauxHollowsSolver",
       "MiniCactpotSolver",
       "FastJobSwitcher",
-      "LazyLoot"
+      "LazyLoot",
+      "Aetherment"
     ]
   },
   "DevPluginSettings": {
@@ -1560,6 +1567,12 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "MiniCactpotSolver",
           "WorkingPluginId": "fbe65dce-3b6b-454e-85da-7f746fc6fd7f",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Aetherment",
+          "WorkingPluginId": "c9924e76-7ca3-4ac0-916b-3f7370809f20",
           "IsEnabled": true
         }
       ]

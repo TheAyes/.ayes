@@ -24,5 +24,4 @@ wineprefix/
 *.sqlite
 *.pdb
 dalamudUI.ini
-launcher.ini
 launcherUI.ini
