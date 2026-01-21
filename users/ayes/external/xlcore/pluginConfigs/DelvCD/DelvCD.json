@@ -1,0 +1,77 @@
+{
+  "$type": "DelvCD.Config.DelvCDConfig",
+  "Name": "DelvCD",
+  "Version": "1.5.0.0",
+  "ElementList": {
+    "$type": "DelvCD.Config.ElementListConfig",
+    "Name": "Elements",
+    "UIElements": []
+  },
+  "GroupConfig": {
+    "$type": "DelvCD.Config.GroupConfig, DelvCD",
+    "IsDynamic": false,
+    "DynamicOffset": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "DynamicMaxPerRow": 5,
+    "DynamicGrowthDir": 0,
+    "Position": {
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Name": "Group"
+  },
+  "VisibilityConfig": {
+    "$type": "DelvCD.Config.VisibilityConfig",
+    "AlwaysHide": false,
+    "HideInPvP": false,
+    "HideOutsidePvP": false,
+    "HideInCombat": false,
+    "HideOutsideCombat": false,
+    "HideOutsideDuty": false,
+    "HideWhilePerforming": false,
+    "HideInGoldenSaucer": false,
+    "HideWhenSheathed": false,
+    "IgnoreInCombat": false,
+    "IgnoreInDuty": false,
+    "Clip": false,
+    "HideIfLevel": false,
+    "HideIfLevelOp": 2,
+    "HideIfLevelValue": 100,
+    "ShowForJobTypes": 0,
+    "CustomJobString": "",
+    "CustomJobList": [],
+    "Name": "Visibility"
+  },
+  "FontConfig": {
+    "$type": "DelvCD.Config.FontConfig",
+    "Name": "Fonts",
+    "Fonts": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[DelvCD.Helpers.FontData, DelvCD]], System.Private.CoreLib",
+      "big-noodle-too_24": {
+        "$type": "DelvCD.Helpers.FontData",
+        "Name": "big-noodle-too",
+        "Size": 24,
+        "Chinese": false,
+        "Korean": false
+      },
+      "big-noodle-too_20": {
+        "$type": "DelvCD.Helpers.FontData",
+        "Name": "big-noodle-too",
+        "Size": 20,
+        "Chinese": false,
+        "Korean": false
+      },
+      "big-noodle-too_16": {
+        "$type": "DelvCD.Helpers.FontData",
+        "Name": "big-noodle-too",
+        "Size": 16,
+        "Chinese": false,
+        "Korean": false
+      }
+    }
+  }
+}

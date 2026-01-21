@@ -1,0 +1,36 @@
+{
+  "$type": "AllaganMarket.Configuration, AllaganMarket",
+  "IsConfigWindowMovable": true,
+  "Characters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[AllaganMarket.Models.Character, AllaganMarket]], System.Private.CoreLib",
+    "18014598541772518": {
+      "$type": "AllaganMarket.Models.Character, AllaganMarket",
+      "CharacterId": 18014598541772518,
+      "CharacterType": 0,
+      "OwnerId": null,
+      "Name": "Meira Kisaragi",
+      "WorldId": 402,
+      "ClassJobId": 33,
+      "Level": 100,
+      "DisplayOrder": 0,
+      "RetainerTown": null
+    }
+  },
+  "Gil": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "IntegerSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "BooleanSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "EnumSettings": {},
+  "IsDirty": false,
+  "Version": 0,
+  "UndercutComparisonSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib"
+  },
+  "ShowWizardNewFeatures": false,
+  "WizardVersionsSeen": []
+}

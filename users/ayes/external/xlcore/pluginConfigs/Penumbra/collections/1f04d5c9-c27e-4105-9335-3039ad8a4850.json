@@ -1,0 +1,90 @@
+﻿{
+  "Version": 2,
+  "Id": "1f04d5c9-c27e-4105-9335-3039ad8a4850",
+  "Name": "Default",
+  "Settings": {
+    "Adventurer's Bedhair (Hat compatable)": {
+      "Settings": {
+        "Ear choices": 0
+      },
+      "Priority": 10,
+      "Enabled": true
+    },
+    "Astrologian Evolved (2)": {
+      "Settings": {
+        "Lightspeed VFX Scaling": 0,
+        "Neutral Sect Options": 4,
+        "Weapon VFX Scaling": 0,
+        "Earthly Star V2 // Divination Adj": 0,
+        "Skill Icons": 0,
+        "Weapon VFX ": 0,
+        "VFX": 0
+      },
+      "Priority": 10,
+      "Enabled": true
+    },
+    "hs-Face Defined [DT]-1.0.1-vye": {
+      "Settings": {
+        "Hyur": 0,
+        "Miqote": 1,
+        "Elezen": 1,
+        "Roegadyn": 0,
+        "Au Ra": 1,
+        "Viera": 1,
+        "Hrothgar": 0,
+        "Lalafell": 0
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-Hair Defined 2 - Ultra-7.1.0-LkG": {
+      "Settings": {
+        "Hyur - Midlander": 3,
+        "Hyur - Highlander": 3,
+        "Elezeen": 3,
+        "Miqote": 3,
+        "Roegadyn": 3,
+        "Lalafell": 3,
+        "Au Ra": 3,
+        "Hrothgar": 3,
+        "Viera": 3,
+        "Viera Ears": 3,
+        "Hrothgar Tails": 3,
+        "Miqote Tails": 1,
+        "Credits": 0
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-Kartoffels Upscaled Equipment Textures-1.3.0-9VP": {
+      "Settings": {},
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-Kartoffels Upscaled World Textures-1.1.0-fEV": {
+      "Settings": {},
+      "Priority": 0,
+      "Enabled": true
+    },
+    "hs-[liinxie] Adventurer's Bedhair! ♥- Vanilla Hair Mashup-1.0.0-V8Hq": {
+      "Settings": {
+        "Adventurer's Bedhair": 0
+      },
+      "Priority": 5,
+      "Enabled": true
+    },
+    "material_ui_reborn": {
+      "Settings": {
+        "_collection": 0
+      },
+      "Priority": 0,
+      "Enabled": true
+    },
+    "[ColoxrN] Astrologian's Teleport": {
+      "Settings": {},
+      "Priority": 10,
+      "Enabled": true
+    }
+  },
+  "Inheritance": []
+}
