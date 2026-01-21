@@ -107,7 +107,9 @@
       "MiniCactpotSolver",
       "FastJobSwitcher",
       "LazyLoot",
-      "Aetherment"
+      "Aetherment",
+      "TPie",
+      "FCNameColor"
     ]
   },
   "DevPluginSettings": {
@@ -1574,6 +1576,12 @@
           "InternalName": "Aetherment",
           "WorkingPluginId": "c9924e76-7ca3-4ac0-916b-3f7370809f20",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "NoKillPlugin",
+          "WorkingPluginId": "88be2257-c2e4-467d-8b3a-cd33cfb69bb2",
+          "IsEnabled": true
         }
       ]
     },
@@ -1607,7 +1615,7 @@
   "IsMbCollect": true,
   "EffectiveLanguage": "en",
   "ShowDevBarInfo": true,
-  "LastFeedbackContactDetails": "",
+  "LastFeedbackContactDetails": "the_ayes",
   "PluginTestingOptIns": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud]], System.Private.CoreLib",
     "$values": []
