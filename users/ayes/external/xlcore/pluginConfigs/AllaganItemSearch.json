@@ -1,0 +1,22 @@
+{
+  "$type": "AllaganItemSearch.Configuration, AllaganItemSearch",
+  "IsConfigWindowMovable": true,
+  "IntegerSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "BooleanSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "StringSettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "EnumSettings": {},
+  "VirtualKeySettings": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Dalamud.Game.ClientState.Keys.VirtualKey[], Dalamud]], System.Private.CoreLib"
+  },
+  "IsDirty": false,
+  "Version": 0,
+  "PinnedFields": [],
+  "ShowWizardNewFeatures": false,
+  "WizardVersionsSeen": []
+}
