@@ -1,25 +1,16 @@
-{ pkgs, self, ... }:
+{ ... }:
 {
   programs.btop = {
     enable = true;
-    #package = pkgs.btop-rocm;
 
     settings = {
-      #color_theme = "catppuccin-mocha";
+      color_theme = "catppuccin-mocha";
       theme_background = false;
       proc_gradient = false;
       update_ms = 500;
     };
     themes = {
-      catppuccin-mocha = self + ./assets/themes/btop/catppuccin-mocha.theme;
+      catppuccin-mocha = ../../../assets/themes/btop/catppuccin-mocha.theme;
     };
   };
-
-  /*
-    xdg.configFile.btop-catppuccin-theme = {
-      enable = true;
-      source = ../../../../assets/themes/btop/catppuccin-mocha.theme;
-      target = "./btop/themes/catppuccin-mocha.theme";
-    };
-  */
 }
