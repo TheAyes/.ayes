@@ -3,7 +3,7 @@
   programs.nixcord = {
     enable = true;
     discord = {
-      enable = true;
+      #enable = true;
       package = pkgs.discord-canary;
 
       vencord.enable = true;
@@ -12,7 +12,7 @@
     vesktop.enable = false;
 
     config = {
-      disableMinSize = true;
+      disableMinSize = false;
 
       plugins = {
         alwaysAnimate.enable = true;
