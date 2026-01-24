@@ -79,9 +79,9 @@
         #silentTyping.enable = true;
 
         # Vesktop specific
-        webKeybinds.enable = true;
-        webRichPresence.enable = false;
-        webScreenShareFixes.enable = true;
+        #webKeybinds.enable = true;
+        #webRichPresence.enable = false;
+        #webScreenShareFixes.enable = true;
       };
     };
     extraConfig = {
