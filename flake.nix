@@ -40,10 +40,9 @@
   };
 
   outputs =
-    inputs@{
-      nixpkgs,
-      flake-parts,
-      ...
+    inputs@{ nixpkgs
+    , flake-parts
+    , ...
     }:
     flake-parts.lib.mkFlake { inherit inputs; } (
       { ... }:
@@ -58,7 +57,6 @@
           home-manager = { };
 
           sharedHostModules = [
-            #inputs.stylix.nixosModules.stylix
           ];
 
           hosts = {
@@ -101,11 +99,12 @@
 
             leda = {
               enable = true;
+              home-manager.enable = false;
 
               users = {
                 ayes = {
                   enable = true;
-                  home-manager.enable = true;
+                  home-manager.enable = false;
                   groups = [
                     "wheel"
                     "docker"

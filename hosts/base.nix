@@ -1,9 +1,8 @@
-{
-  lib,
-  inputs,
-  config,
-  pkgs,
-  ...
+{ lib
+, inputs
+, config
+, pkgs
+, ...
 }:
 {
   nixpkgs = {
@@ -52,9 +51,12 @@
 
   environment.systemPackages = with pkgs; [
     git
+    grc
     micro
+    microfetch
     linuxHeaders
     nixfmt
+    zoxide
   ];
 
   fonts.packages = with pkgs; [

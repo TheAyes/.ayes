@@ -1,15 +1,16 @@
-{
-  user,
-  pkgs,
-  system,
-  inputs,
-  ...
+You need to install grc!
+{ user
+, pkgs
+, lib
+, system
+, inputs
+, ...
 }: {
   imports = [
-    #../../../../users/ayes/home.nix
+
   ];
 
-  dconf.enable = false;
+  dconf.enable = lib.mkForce false;
 
   home.packages = with pkgs; [
     bun
