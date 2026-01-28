@@ -1,4 +1,3 @@
-You need to install grc!
 { user
 , pkgs
 , lib
