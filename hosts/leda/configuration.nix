@@ -58,6 +58,7 @@
 
   environment = {
     systemPackages = with pkgs; [
+      claude-code
       pass
       gnupg1
 
