@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "14.0.1.0",
+  "LastVersion": "14.0.2.0",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -28,12 +28,6 @@
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
-        "Url": "https://raw.githubusercontent.com/xivdev/Penumbra/master/repo.json",
-        "IsEnabled": true,
-        "Name": null
-      },
-      {
-        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/UnknownX7/DalamudPluginRepo/master/pluginmaster.json",
         "IsEnabled": true,
         "Name": null
@@ -41,6 +35,12 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://aetherment.sevii.dev/plugin",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/Ottermandias/SeaOfStars/main/repo.json",
         "IsEnabled": true,
         "Name": null
       }
@@ -109,7 +109,14 @@
       "LazyLoot",
       "Aetherment",
       "TPie",
-      "FCNameColor"
+      "FCNameColor",
+      "heliosphere-plugin",
+      "DeathRoll",
+      "Brio",
+      "Eventy",
+      "StanleyParableXiv",
+      "Splatoon",
+      "BeegWindow"
     ]
   },
   "DevPluginSettings": {
@@ -1489,12 +1496,6 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Penumbra",
-          "WorkingPluginId": "97500c3c-8050-43e3-8d64-1d07df91ddea",
-          "IsEnabled": true
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "NoSoliciting",
           "WorkingPluginId": "8de01b93-de70-4bf0-b7ed-3c6029bd564d",
           "IsEnabled": true
@@ -1545,7 +1546,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "BetterFriendList",
           "WorkingPluginId": "bcbd7dcb-a0db-4a5a-acb4-328e9821929d",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -1582,6 +1583,42 @@
           "InternalName": "NoKillPlugin",
           "WorkingPluginId": "88be2257-c2e4-467d-8b3a-cd33cfb69bb2",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BetterPartyFinder",
+          "WorkingPluginId": "45e6a9eb-b57e-4991-9480-b030dcf79323",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Penumbra",
+          "WorkingPluginId": "8a526a98-2c7d-4dd4-b76a-9c68174a993e",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "heliosphere-plugin",
+          "WorkingPluginId": "2d73c191-3ef5-468a-8c66-d2c58cca7f61",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Brio",
+          "WorkingPluginId": "7a0c9507-795f-4121-9e0e-da6b99d12146",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "StanleyParableXiv",
+          "WorkingPluginId": "180f492d-adfb-4359-9cb0-2ffbf35307a1",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Splatoon",
+          "WorkingPluginId": "cd0c1e95-7320-48b0-98aa-f996f1bf1f3e",
+          "IsEnabled": true
         }
       ]
     },
@@ -1601,7 +1638,8 @@
   "DtrOrder": {
     "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "$values": [
-      "YesAlready"
+      "YesAlready",
+      "SplatoonPriority"
     ]
   },
   "DtrIgnore": {

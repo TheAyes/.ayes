@@ -10,38 +10,38 @@
 	"ui_font_family": "Noto Sans",
 	"buffer_font_family": "CaskaydiaCove Nerd Font Propo",
 	"edit_predictions": {
-		"mode": "subtle"
+		"mode": "subtle",
 	},
 	"agent": {
 		"default_model": {
 			"provider": "ollama",
-			"model": "llama3.2:1b"
+			"model": "llama3.2:1b",
 		},
 		"inline_assistant_model": {
 			"provider": "ollama",
-			"model": "qwen3:14b"
-		}
+			"model": "qwen3:14b",
+		},
 	},
 	"diagnostics": {
 		"button": true,
 		"include_warnings": true,
 		"lsp_pull_diagnostics": {
 			"enabled": true,
-			"debounce_ms": 50
+			"debounce_ms": 50,
 		},
 		"inline": {
 			"enabled": true,
 			"update_debounce_ms": 150,
 			"padding": 2,
 			"min_column": 0,
-			"max_severity": "warning"
-		}
+			"max_severity": "warning",
+		},
 	},
 	"hard_tabs": true,
 	"autosave": "on_focus_change",
 	"icon_theme": "Catppuccin Mocha",
 	"minimap": {
-		"show": "auto"
+		"show": "auto",
 	},
 	"format_on_save": "on",
 	"formatter": "auto",
@@ -50,20 +50,20 @@
 			"initialization_options": {
 				"imports": {
 					"granularity": {
-						"group": "module"
+						"group": "module",
 					},
-					"prefix": "self"
-				}
-			}
+					"prefix": "self",
+				},
+			},
 		},
 		"discord_presence": {
 			"initialization_options": {
 				"idle": {
-					"timeout": -1
+					"timeout": 9999999999,
 				},
-				"git_integration": true
-			}
-		}
+				"git_integration": true,
+			},
+		},
 	},
 	"languages": {
 		// Refer https://zed.dev/docs/languages/javascript and https://zed.dev/docs/languages/typescript for more info
@@ -73,20 +73,20 @@
 				"enabled": true,
 				"show_parameter_hints": true,
 				"show_other_hints": true,
-				"show_type_hints": true
-			}
+				"show_type_hints": true,
+			},
 		},
 		"Python": {
 			"formatter": { "language_server": { "name": "ruff" } },
-			"language_servers": ["pyright", "ruff"]
+			"language_servers": ["pyright", "ruff"],
 		},
 		"Nix": {
 			"formatter": {
 				"external": {
-					"command": "nixfmt"
-				}
-			}
-		}
+					"command": "nixfmt",
+				},
+			},
+		},
 	},
 	"inlay_hints": {
 		"enabled": true,
@@ -102,36 +102,36 @@
 			"alt": false,
 			"shift": false,
 			"platform": false,
-			"function": false
-		}
+			"function": false,
+		},
 	},
 	"telemetry": {
 		"metrics": false,
-		"diagnostics": false
+		"diagnostics": false,
 	},
 	"journal": {
-		"hour_format": "hour24"
+		"hour_format": "hour24",
 	},
 	"terminal": {
 		"line_height": "standard",
 		"shell": {
-			"program": "fish"
+			"program": "fish",
 		},
 		"env": {
-			"EDITOR": "zed --wait"
-		}
+			"EDITOR": "zed --wait",
+		},
 	},
 	"git": {
 		"git_gutter": "tracked_files",
 		"branch_picker": {
-			"show_author_name": true
+			"show_author_name": true,
 		},
-		"gutter_debounce": 50
+		"gutter_debounce": 50,
 	},
 	"file_types": {
 		"Dockerfile": ["Dockerfile", "Dockerfile.*"],
 		"JSON": ["json", "jsonc", "*.code-snippets"],
-		"Nix": ["nix"]
+		"Nix": ["nix"],
 	},
 	"base_keymap": "JetBrains",
 	"ui_font_size": 15,
@@ -139,11 +139,11 @@
 	"theme": {
 		"mode": "system",
 		"light": "Ayu Light",
-		"dark": "Catppuccin Mocha"
+		"dark": "Catppuccin Mocha",
 	},
 	"git_panel": {
 		"sort_by_path": true,
-		"dock": "left"
+		"dock": "left",
 	},
 	"project_panel": {
 		"button": true,
@@ -152,21 +152,21 @@
 		"folder_icons": true,
 		"git_status": true,
 		"scrollbar": {
-			"show": "auto"
+			"show": "auto",
 		},
 		"auto_reveal_entries": false,
-		"auto_fold_dirs": true
+		"auto_fold_dirs": true,
 	},
 	"features": {
-		"edit_prediction_provider": "zed"
+		"edit_prediction_provider": "zed",
 	},
 	"tabs": {
-		"show_diagnostics": "errors"
+		"show_diagnostics": "errors",
 	},
 	"load_direnv": "direct",
 	"indent_guides": {
 		"enabled": true,
-		"coloring": "indent_aware"
+		"coloring": "indent_aware",
 	},
 	"file_scan_exclusions": [
 		"**/.git",
@@ -190,6 +190,6 @@
 		"**/.nyc_output",
 		"**/report",
 		"**/node_modules",
-		"**/.idea"
-	]
+		"**/.idea",
+	],
 }

@@ -1,0 +1,1064 @@
+{
+  "$type": "BetterFriendList.Configuration, BetterFriendList",
+  "Version": 0,
+  "RefreshFriendOnOpen": false,
+  "SortOnDifferentTab": true,
+  "FixedColumnSize": true,
+  "VirtualKey": 27,
+  "FriendsColors": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.Numerics.Vector4, System.Private.CoreLib]], System.Private.CoreLib",
+    "18014598551454979": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545720997": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498570471345": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598539656090": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542127900": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548496792": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540807580": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546241886": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498547533265": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547476763": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547181346": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598544227284": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551388061": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547957555": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550287534": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546263795": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498539578990": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545578805": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550072488": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540422385": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545232957": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498541841506": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545999561": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543400593": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546387261": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598555875317": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546026896": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598549098152": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548085334": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550538433": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498546122351": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551765622": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546909044": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545170916": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598552574640": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498546237639": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546200770": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548607187": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498544253126": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546364430": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542511151": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545794688": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598549805051": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548519620": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542150442": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540186814": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547479705": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498539643431": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598541865112": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542351758": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598541034635": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498549725998": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550651621": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498546723238": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551855206": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545775046": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543501044": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540955504": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498539483880": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547284845": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546659630": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543226218": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550305332": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546151816": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546334655": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498548145873": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545570849": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540656342": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540712783": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547728329": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598541932393": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545928236": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542444389": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551098899": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540766707": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547517115": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498546528327": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548554673": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545966934": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598541664928": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545892581": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542406163": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543509776": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598541481881": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598544796308": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498549208047": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548113790": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498546825871": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550911932": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543558491": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598549024654": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542940944": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498547312891": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550844998": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547186076": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543825372": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551281755": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498547317321": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545949397": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598551269527": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598552923753": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550135347": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547165400": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547182789": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598542942127": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547321508": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550412372": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547974322": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498548172477": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598553867593": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545640441": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548981298": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550699143": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546599827": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545348558": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498542164990": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598550502869": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498547511720": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598549814154": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598549997840": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598552416449": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598552618232": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546764628": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598545256097": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598547874996": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598540134011": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546074334": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598548743428": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598543042385": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014498544287815": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    },
+    "18014598546641408": {
+      "$type": "System.Numerics.Vector4, System.Private.CoreLib",
+      "X": 255.0,
+      "Y": 255.0,
+      "Z": 255.0,
+      "W": 1.0
+    }
+  },
+  "FriendNotes": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "18014498539578990": "",
+    "18014598540807580": "",
+    "18014598545232957": "",
+    "18014598539656090": "",
+    "18014598544227284": "",
+    "18014598546263795": "",
+    "18014598545720997": "",
+    "18014598547957555": "",
+    "18014598551454979": "",
+    "18014498570471345": "",
+    "18014598550287534": "",
+    "18014598540422385": "",
+    "18014598550072488": "",
+    "18014498541841506": "",
+    "18014598545578805": "",
+    "18014598542127900": "",
+    "18014498547533265": "",
+    "18014598546241886": "",
+    "18014598551388061": "",
+    "18014598547181346": "",
+    "18014598548496792": "",
+    "18014598547476763": "",
+    "18014598543042385": "",
+    "18014498547317321": "",
+    "18014598542942127": "",
+    "18014598547165400": "",
+    "18014598542940944": "",
+    "18014598540712783": "",
+    "18014598545775046": "",
+    "18014498546122351": "",
+    "18014598545348558": "",
+    "18014598540955504": "",
+    "18014598547284845": "",
+    "18014598542444389": "",
+    "18014598546200770": "",
+    "18014598546151816": "",
+    "18014598543226218": "",
+    "18014598545928236": "",
+    "18014498546825871": "",
+    "18014598543558491": "",
+    "18014598549997840": "",
+    "18014598546026896": "",
+    "18014498546723238": "",
+    "18014498544253126": "",
+    "18014498546237639": "",
+    "18014598547182789": "",
+    "18014598542511151": "",
+    "18014598541932393": "",
+    "18014598543400593": "",
+    "18014598548981298": "",
+    "18014598541865112": "",
+    "18014498539483880": "",
+    "18014598546764628": "",
+    "18014598544796308": "",
+    "18014598547517115": "",
+    "18014598547974322": "",
+    "18014598547479705": "",
+    "18014598541481881": "",
+    "18014598540766707": "",
+    "18014598542406163": "",
+    "18014598549024654": "",
+    "18014598549098152": "",
+    "18014598545949397": "",
+    "18014598545999561": "",
+    "18014598548113790": "",
+    "18014598550305332": "",
+    "18014598546909044": "",
+    "18014598550412372": "",
+    "18014598550699143": "",
+    "18014598545170916": "",
+    "18014598541034635": "",
+    "18014598543509776": "",
+    "18014598550538433": "",
+    "18014598546387261": "",
+    "18014598546659630": "",
+    "18014598542351758": "",
+    "18014498549725998": "",
+    "18014598546074334": "",
+    "18014598546334655": "",
+    "18014498546528327": "",
+    "18014598546641408": "",
+    "18014498547511720": "",
+    "18014598552416449": "",
+    "18014598541664928": "",
+    "18014598547728329": "",
+    "18014498542164990": "",
+    "18014598545794688": "",
+    "18014598552574640": "",
+    "18014498539643431": "",
+    "18014598543501044": "",
+    "18014598540656342": "",
+    "18014598545966934": "",
+    "18014598551269527": "",
+    "18014598550651621": "",
+    "18014598546364430": "",
+    "18014598550911932": "",
+    "18014598545640441": "",
+    "18014598550502869": "",
+    "18014598549814154": "",
+    "18014598552618232": "",
+    "18014598553867593": "",
+    "18014598547874996": "",
+    "18014598548554673": "",
+    "18014498549208047": "",
+    "18014498544287815": "",
+    "18014598548607187": "",
+    "18014598540186814": "",
+    "18014598540134011": "",
+    "18014598542150442": "",
+    "18014598545256097": "",
+    "18014498548145873": "",
+    "18014598548519620": "",
+    "18014598551281755": "",
+    "18014598548743428": "",
+    "18014598545892581": "",
+    "18014498547312891": "",
+    "18014498548172477": "",
+    "18014598551098899": "",
+    "18014598546599827": "",
+    "18014598552923753": "",
+    "18014598551765622": "",
+    "18014598545570849": "",
+    "18014598547186076": "",
+    "18014598547321508": "",
+    "18014598549805051": "",
+    "18014598550135347": "",
+    "18014598550844998": "",
+    "18014598543825372": "",
+    "18014598551855206": "",
+    "18014598548085334": "",
+    "18014598555875317": ""
+  },
+  "Sorting": 0,
+  "OnlineFirst": true
+}
