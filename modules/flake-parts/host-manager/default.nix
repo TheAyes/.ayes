@@ -64,7 +64,7 @@
                         })
                         hostConfig.users;
                   }
-
+                ] ++ (lib.optionals hostConfig.home-manager.enable [
                   (inputs.home-manager.nixosModules.home-manager)
 
                   {
@@ -103,7 +103,7 @@
                           hostConfig.users;
                     };
                   }
-                ]
+                ])
                 ++ hostConfig.extraModules
                 ++ config.host-manager.sharedHostModules;
               system = hostConfig.systemType;

@@ -99,12 +99,12 @@
 
             leda = {
               enable = true;
-              home-manager.enable = false;
+              home-manager.enable = true;
 
               users = {
                 ayes = {
                   enable = true;
-                  home-manager.enable = false;
+                  home-manager.enable = true;
                   groups = [
                     "wheel"
                     "docker"
