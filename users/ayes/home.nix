@@ -28,21 +28,5 @@
     packages = with pkgs; [
       obsidian
     ];
-
-    pointerCursor = lib.mkDefault {
-      enable = true;
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
-      size = 14;
-    };
-  };
-
-  gtk = lib.mkDefault {
-    enable = true;
-    cursorTheme = {
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
-      size = 14;
-    };
   };
 }

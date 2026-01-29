@@ -14,10 +14,37 @@
       "Level": 100,
       "DisplayOrder": 0,
       "RetainerTown": null
+    },
+    "33777197235712755": {
+      "$type": "AllaganMarket.Models.Character, AllaganMarket",
+      "CharacterId": 33777197235712755,
+      "CharacterType": 1,
+      "OwnerId": 18014598541772518,
+      "Name": "Simastana",
+      "WorldId": 402,
+      "ClassJobId": 33,
+      "Level": 75,
+      "DisplayOrder": 0,
+      "RetainerTown": 4
+    },
+    "33777197235723971": {
+      "$type": "AllaganMarket.Models.Character, AllaganMarket",
+      "CharacterId": 33777197235723971,
+      "CharacterType": 1,
+      "OwnerId": 18014598541772518,
+      "Name": "Dedaaa",
+      "WorldId": 402,
+      "ClassJobId": 17,
+      "Level": 65,
+      "DisplayOrder": 0,
+      "RetainerTown": 2
     }
   },
   "Gil": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib",
+    "33777197235712755": 0,
+    "0": 0,
+    "33777197235723971": 0
   },
   "IntegerSettings": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
@@ -31,6 +58,6 @@
   "UndercutComparisonSettings": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib"
   },
-  "ShowWizardNewFeatures": true,
+  "ShowWizardNewFeatures": false,
   "WizardVersionsSeen": []
 }

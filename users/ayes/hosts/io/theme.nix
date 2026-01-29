@@ -47,7 +47,7 @@ in
       };
 
       quickCss = ''
-        ul.d125d22cdfd32cfe-content[role="list"] {
+        ul.content_d125d2[role="list"] {
         	& > div > li:has(div > a[href="/store"]),
         	& > li:has(div > a[href="/shop"]) {
          		display: none
@@ -56,8 +56,7 @@ in
 
         div.buttons__74017 div[aria-label="Send a gift"],
         div.buttons__74017 div:has(div[aria-label="Send a gift"]),
-        .mask__0d616,
-        div.bar_c38106 {
+        .mask__0d616 {
           display: none
         }
       '';
