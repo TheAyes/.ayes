@@ -63,6 +63,7 @@
       gnupg1
       meson
       ninja
+      python315
 
       nodejs
       uv
