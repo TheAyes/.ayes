@@ -58,13 +58,14 @@
 
   environment = {
     systemPackages = with pkgs; [
-      claude-code
+      icu
       pass
       gnupg1
 
       nodejs
       uv
       powershell
+      claude-code
     ];
 
     shellInit = ''
