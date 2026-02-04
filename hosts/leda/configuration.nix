@@ -61,6 +61,8 @@
       icu
       pass
       gnupg1
+      meson
+      ninja
 
       nodejs
       uv
