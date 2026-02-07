@@ -45,7 +45,6 @@
     "UiAdjustments@HideAchievementsNotifications",
     "HighResScreenshots",
     "TooltipTweaks@SimplifiedClassJobDisplay",
-    "SmartStrafe",
     "UiAdjustments@TargetCastbarCountdown",
     "UiAdjustments@AccurateVentureTimes",
     "UiAdjustments@GearPositions",
@@ -68,7 +67,9 @@
     "UiAdjustments@TimerOnDutyWaiting",
     "PhantomJobCommand"
   ],
-  "HiddenTweaks": [],
+  "HiddenTweaks": [
+    "UiAdjustments@SubmarineDestinationLetters"
+  ],
   "CustomTweakProviders": [],
   "BlacklistedTweaks": [
     "UiAdjustments@ExtendedDesynthesisWindow",

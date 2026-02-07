@@ -115,7 +115,8 @@
     ],
     "Favorites": [],
     "LastBrowsePaths": {
-      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+      ".cmp.pose": "Z:\\mnt\\games\\FinalFantasyXIV-Poses"
     },
     "ReturnLibraryToLastLocation": true,
     "UseFilenameAsActorName": false
@@ -169,7 +170,7 @@
     }
   },
   "LastMCDFPath": "",
-  "LastExportPath": "",
+  "LastExportPath": "Z:\\mnt\\games\\FinalFantasyXIV-Poses",
   "LastXATPath": "",
   "LastScenePath": "",
   "UseLibraryWhenImporting": true,

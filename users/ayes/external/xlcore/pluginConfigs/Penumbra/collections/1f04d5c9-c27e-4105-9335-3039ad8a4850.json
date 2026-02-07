@@ -13,12 +13,12 @@
     "Astrologian Evolved (2)": {
       "Settings": {
         "Lightspeed VFX Scaling": 0,
-        "Neutral Sect Options": 4,
+        "Neutral Sect Options": 1,
         "Weapon VFX Scaling": 0,
-        "Earthly Star V2 // Divination Adj": 0,
+        "Earthly Star V2 // Divination Adj": 1,
         "Skill Icons": 0,
-        "Weapon VFX ": 0,
-        "VFX": 0
+        "Weapon VFX ": 1,
+        "VFX": 92268671
       },
       "Priority": 10,
       "Enabled": true

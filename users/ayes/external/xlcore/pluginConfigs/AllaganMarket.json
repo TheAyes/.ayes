@@ -23,7 +23,7 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 75,
+      "Level": 76,
       "DisplayOrder": 0,
       "RetainerTown": 4
     },
@@ -35,7 +35,7 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 65,
+      "Level": 68,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }
@@ -59,5 +59,8 @@
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib"
   },
   "ShowWizardNewFeatures": false,
-  "WizardVersionsSeen": []
+  "WizardVersionsSeen": [
+    "1.0.0",
+    "1.0.0.1"
+  ]
 }

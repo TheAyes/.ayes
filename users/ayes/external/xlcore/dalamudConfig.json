@@ -43,6 +43,18 @@
         "Url": "https://raw.githubusercontent.com/Ottermandias/SeaOfStars/main/repo.json",
         "IsEnabled": true,
         "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/FFXIV-CombatReborn/CombatRebornRepo/main/pluginmaster.json",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/veyn",
+        "IsEnabled": true,
+        "Name": null
       }
     ]
   },
@@ -116,7 +128,34 @@
       "Eventy",
       "StanleyParableXiv",
       "Splatoon",
-      "BeegWindow"
+      "BeegWindow",
+      "Glamourer",
+      "Dispeller",
+      "Glamaholic",
+      "GatherbuddyReborn",
+      "VanillaPlus",
+      "vnavmesh",
+      "ActionTimelineReborn",
+      "AetherBreaker",
+      "Artisan",
+      "BossModReborn",
+      "BlueMageHelper",
+      "BossMod",
+      "CashFlow",
+      "Dalamud.CharacterSync",
+      "ChatTwo",
+      "DiademCalculator",
+      "Dalamud.DiscordBridge",
+      "LaunchpadHotbars",
+      "CameraLoader",
+      "ActionTimeline",
+      "Dalamud.FindAnything",
+      "WDIGViewer",
+      "Housemate",
+      "CurrencyAlert",
+      "PalacePal",
+      "DistantSeas",
+      "FaderPlugin"
     ]
   },
   "DevPluginSettings": {
@@ -1544,12 +1583,6 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "BetterFriendList",
-          "WorkingPluginId": "bcbd7dcb-a0db-4a5a-acb4-328e9821929d",
-          "IsEnabled": false
-        },
-        {
-          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "CharacterPanelRefined",
           "WorkingPluginId": "d0b55ef5-780d-412e-8cec-41597eb342c1",
           "IsEnabled": true
@@ -1619,6 +1652,42 @@
           "InternalName": "Splatoon",
           "WorkingPluginId": "cd0c1e95-7320-48b0-98aa-f996f1bf1f3e",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Glamourer",
+          "WorkingPluginId": "817a92f5-d036-4c6f-b654-d1d6b9b4bf09",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Glamaholic",
+          "WorkingPluginId": "4990c588-6991-4f6c-9981-ab2a8a5b4835",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GatherbuddyReborn",
+          "WorkingPluginId": "76e663ce-c364-4f70-8984-ccc5e76ed82d",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "vnavmesh",
+          "WorkingPluginId": "bd8f7d8b-78f8-48b3-b5f0-235046fd1845",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Dalamud.CharacterSync",
+          "WorkingPluginId": "71deab5d-b8b8-4ec5-b460-13e094b76a3a",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "FaderPlugin",
+          "WorkingPluginId": "401a1045-1d4e-4888-98ad-35cacb7bba3e",
+          "IsEnabled": true
         }
       ]
     },
@@ -1639,7 +1708,8 @@
     "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "$values": [
       "YesAlready",
-      "SplatoonPriority"
+      "SplatoonPriority",
+      "vnavmesh"
     ]
   },
   "DtrIgnore": {

@@ -2,14 +2,16 @@
   "FileVersion": 2,
   "Identifier": "ebde8299-7f59-4506-a916-4842eadc3fb7",
   "CreationDate": "2024-09-29T23:42:00.2324921+02:00",
-  "LastEdit": "2024-10-08T17:29:03.5048768+00:00",
+  "LastEdit": "2026-01-29T17:50:12.1941779+00:00",
   "Name": "Catto",
   "Description": "",
   "ForcedRedraw": false,
+  "ResetAdvancedDyes": false,
+  "ResetTemporarySettings": false,
   "Color": "",
   "QuickDesign": true,
   "Tags": [],
-  "WriteProtected": true,
+  "WriteProtected": false,
   "Equipment": {
     "MainHand": {
       "ItemId": 42959,
@@ -30,10 +32,10 @@
       "Stain2": 0
     },
     "Head": {
-      "ItemId": 8557,
+      "ItemId": 22131,
       "Crest": false,
       "Apply": true,
-      "ApplyStain": true,
+      "ApplyStain": false,
       "ApplyCrest": true,
       "Stain": 101,
       "Stain2": 0
@@ -41,8 +43,8 @@
     "Body": {
       "ItemId": 37197,
       "Crest": false,
-      "Apply": true,
-      "ApplyStain": true,
+      "Apply": false,
+      "ApplyStain": false,
       "ApplyCrest": true,
       "Stain": 101,
       "Stain2": 0
@@ -50,8 +52,8 @@
     "Hands": {
       "ItemId": 38213,
       "Crest": false,
-      "Apply": true,
-      "ApplyStain": true,
+      "Apply": false,
+      "ApplyStain": false,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 113
@@ -59,8 +61,8 @@
     "Legs": {
       "ItemId": 41593,
       "Crest": false,
-      "Apply": true,
-      "ApplyStain": true,
+      "Apply": false,
+      "ApplyStain": false,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 0
@@ -68,8 +70,8 @@
     "Feet": {
       "ItemId": 24006,
       "Crest": false,
-      "Apply": true,
-      "ApplyStain": true,
+      "Apply": false,
+      "ApplyStain": false,
       "ApplyCrest": false,
       "Stain": 101,
       "Stain2": 0
@@ -123,6 +125,10 @@
       "Show": true,
       "Apply": true
     },
+    "VieraEars": {
+      "Show": true,
+      "Apply": false
+    },
     "Visor": {
       "IsToggled": false,
       "Apply": true
@@ -134,7 +140,7 @@
   },
   "Bonus": {
     "Glasses": {
-      "BonusId": 0,
+      "BonusId": 844424946909184,
       "Apply": false
     }
   },
@@ -146,7 +152,7 @@
     },
     "Gender": {
       "Value": 1,
-      "Apply": true
+      "Apply": false
     },
     "BodyType": {
       "Value": 1,
@@ -154,135 +160,135 @@
     },
     "Height": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "Clan": {
       "Value": 7,
-      "Apply": true
+      "Apply": false
     },
     "Face": {
       "Value": 3,
-      "Apply": true
+      "Apply": false
     },
     "Hairstyle": {
       "Value": 162,
-      "Apply": true
+      "Apply": false
     },
     "Highlights": {
-      "Value": 0,
-      "Apply": true
+      "Value": 128,
+      "Apply": false
     },
     "SkinColor": {
       "Value": 144,
-      "Apply": true
+      "Apply": false
     },
     "EyeColorRight": {
       "Value": 152,
-      "Apply": true
+      "Apply": false
     },
     "HairColor": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "HighlightsColor": {
       "Value": 138,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature1": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature2": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature3": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature4": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature5": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature6": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacialFeature7": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "LegacyTattoo": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "TattooColor": {
       "Value": 1,
-      "Apply": true
+      "Apply": false
     },
     "Eyebrows": {
       "Value": 1,
-      "Apply": true
+      "Apply": false
     },
     "EyeColorLeft": {
       "Value": 152,
-      "Apply": true
+      "Apply": false
     },
     "EyeShape": {
       "Value": 4,
-      "Apply": true
+      "Apply": false
     },
     "SmallIris": {
-      "Value": 0,
-      "Apply": true
+      "Value": 128,
+      "Apply": false
     },
     "Nose": {
       "Value": 4,
-      "Apply": true
+      "Apply": false
     },
     "Jaw": {
       "Value": 3,
-      "Apply": true
+      "Apply": false
     },
     "Mouth": {
       "Value": 3,
-      "Apply": true
+      "Apply": false
     },
     "Lipstick": {
       "Value": 128,
-      "Apply": true
+      "Apply": false
     },
     "LipColor": {
       "Value": 130,
-      "Apply": true
+      "Apply": false
     },
     "MuscleMass": {
       "Value": 100,
-      "Apply": true
+      "Apply": false
     },
     "TailShape": {
       "Value": 3,
-      "Apply": true
+      "Apply": false
     },
     "BustSize": {
       "Value": 80,
-      "Apply": true
+      "Apply": false
     },
     "FacePaint": {
       "Value": 0,
-      "Apply": true
+      "Apply": false
     },
     "FacePaintReversed": {
-      "Value": 0,
-      "Apply": true
+      "Value": 128,
+      "Apply": false
     },
     "FacePaintColor": {
       "Value": 1,
-      "Apply": true
+      "Apply": false
     },
     "Wetness": {
       "Value": true,

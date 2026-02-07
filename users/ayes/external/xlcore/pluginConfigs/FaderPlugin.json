@@ -1,0 +1,907 @@
+{
+  "$type": "FaderPlugin.Data.Configuration, FaderPlugin",
+  "Version": 6,
+  "elementsConfig": {
+    "$type": "System.Collections.Generic.Dictionary`2[[FaderPlugin.Data.Element, FaderPlugin],[System.Collections.Generic.List`1[[FaderPlugin.Data.ConfigEntry, FaderPlugin]], System.Private.CoreLib]], System.Private.CoreLib",
+    "Unknown": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Hotbar1": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Hotbar2": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Hotbar3": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Hotbar4": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Hotbar5": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Hotbar6": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Hotbar7": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Hotbar8": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Hotbar9": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Hotbar10": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "CrossHotbar": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "PetHotbar": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.2
+      }
+    ],
+    "ContextActionHotbar": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Job": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "CastBar": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.2
+      }
+    ],
+    "ExperienceBar": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "InventoryGrid": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Currency": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "ScenarioGuide": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "QuestLog": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "DutyList": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "ServerInfo": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "IslekeepIndex": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "MainMenu": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Chat": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 12,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 14,
+        "setting": 0,
+        "Opacity": 0.75
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Minimap": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 20,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Nameplates": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "TargetInfo": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "PartyList": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "LimitBreak": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "Parameters": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
+      }
+    ],
+    "Status": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "StatusEnhancements": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "StatusEnfeeblements": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "StatusOther": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 0,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.3
+      }
+    ],
+    "StatusConditional": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "CosmicExotablet": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "AllianceList1": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "AllianceList2": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "OccultCrescentHud": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "BozjaHud": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "EurekaElementalHud": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ],
+    "EurekaLogosHud": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
+    ]
+  },
+  "DisabledElements": {
+    "$type": "System.Collections.Generic.Dictionary`2[[FaderPlugin.Data.Element, FaderPlugin],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+    "Unknown": false,
+    "Hotbar1": false,
+    "Hotbar2": false,
+    "Hotbar3": false,
+    "Hotbar4": false,
+    "Hotbar5": false,
+    "Hotbar6": false,
+    "Hotbar7": false,
+    "Hotbar8": false,
+    "Hotbar9": false,
+    "Hotbar10": false,
+    "CrossHotbar": false,
+    "PetHotbar": false,
+    "ContextActionHotbar": false,
+    "Job": false,
+    "CastBar": false,
+    "ExperienceBar": false,
+    "InventoryGrid": false,
+    "Currency": false,
+    "ScenarioGuide": false,
+    "QuestLog": false,
+    "DutyList": false,
+    "ServerInfo": false,
+    "IslekeepIndex": false,
+    "MainMenu": false,
+    "Chat": false,
+    "Minimap": false,
+    "Nameplates": false,
+    "TargetInfo": false,
+    "PartyList": false,
+    "LimitBreak": false,
+    "Parameters": false,
+    "Status": false,
+    "StatusEnhancements": false,
+    "StatusEnfeeblements": false,
+    "StatusOther": false,
+    "StatusConditional": false,
+    "CosmicExotablet": false,
+    "AllianceList1": false,
+    "AllianceList2": false,
+    "OccultCrescentHud": false,
+    "BozjaHud": false,
+    "EurekaElementalHud": false,
+    "EurekaLogosHud": false
+  },
+  "FadeOverrides": {
+    "$type": "System.Collections.Generic.Dictionary`2[[FaderPlugin.Data.Element, FaderPlugin],[faderPlugin.Data.FadeOverride, FaderPlugin]], System.Private.CoreLib",
+    "Unknown": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar1": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar2": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar3": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar4": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar5": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar6": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar7": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar8": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar9": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Hotbar10": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "CrossHotbar": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "PetHotbar": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "ContextActionHotbar": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Job": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "CastBar": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "ExperienceBar": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "InventoryGrid": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Currency": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "ScenarioGuide": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "QuestLog": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "DutyList": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "ServerInfo": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "IslekeepIndex": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "MainMenu": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Chat": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Minimap": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Nameplates": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "TargetInfo": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "PartyList": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "LimitBreak": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Parameters": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "Status": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "StatusEnhancements": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "StatusEnfeeblements": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "StatusOther": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "StatusConditional": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "CosmicExotablet": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "AllianceList1": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "AllianceList2": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "OccultCrescentHud": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "BozjaHud": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "EurekaElementalHud": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "EurekaLogosHud": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    }
+  },
+  "HoverGroups": [],
+  "DefaultDelayEnabled": true,
+  "DefaultDelay": 2000,
+  "ChatActivityTimeout": 5000,
+  "OverrideKey": 18,
+  "FocusOnHotbarsUnlock": false,
+  "EmoteActivity": false,
+  "ImportantActivity": false,
+  "DefaultAlpha": 1.0,
+  "EnterTransitionSpeed": 4.0,
+  "ExitTransitionSpeed": 1.0,
+  "RelativeOpacity": false
+}

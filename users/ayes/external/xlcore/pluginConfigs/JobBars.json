@@ -191,7 +191,7 @@
   "CooldownPosition": {
     "$type": "System.Numerics.Vector2, System.Private.CoreLib",
     "X": -40.0,
-    "Y": 40.0
+    "Y": 20.0
   },
   "CooldownScale": 1.0,
   "CooldownsSpacing": 40.0,
