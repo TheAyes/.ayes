@@ -14,6 +14,6 @@
     "StuckTimeoutMs": 500,
     "RetryOnStuck": true,
     "RandomnessMultiplier": 1.0,
-    "BuildMaxCores": 4
+    "BuildMaxCores": 8
   }
 }

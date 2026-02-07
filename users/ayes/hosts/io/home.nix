@@ -82,54 +82,54 @@
           id = 0;
           name = "ayes";
           isDefault = true;
-          search = {
-            force = false;
-            default = "Kagi";
+          # search = {
+          #   force = false;
+          #   default = "Kagi";
 
-            engines = {
-              google.metaData.hidden = true;
-              bing.metaData.hidden = true;
-              ddg.metaData.hidden = true;
-              ecosia.metaData.hidden = true;
-              perplexity.metaData.hidden = true;
-              wikipedia.metaData.hidden = true;
+          #   engines = {
+          #     google.metaData.hidden = true;
+          #     bing.metaData.hidden = true;
+          #     ddg.metaData.hidden = true;
+          #     ecosia.metaData.hidden = true;
+          #     perplexity.metaData.hidden = true;
+          #     wikipedia.metaData.hidden = true;
 
-              nixrepo = {
-                name = "Nixpkgs Issues & PR's";
-                urls = [
-                  {
-                    template = "https://github.com/NixOS/nixpkgs/issues/";
-                    params = [
-                      {
-                        name = "q";
-                        value = "{searchTerms}";
-                      }
-                    ];
-                  }
-                ];
-                definedAliases = [ "@nr" ];
-                iconMapObj."16" = "https://github.com/favicon.ico";
-              };
+          #     nixrepo = {
+          #       name = "Nixpkgs Issues & PR's";
+          #       urls = [
+          #         {
+          #           template = "https://github.com/NixOS/nixpkgs/issues/";
+          #           params = [
+          #             {
+          #               name = "q";
+          #               value = "{searchTerms}";
+          #             }
+          #           ];
+          #         }
+          #       ];
+          #       definedAliases = [ "@nr" ];
+          #       iconMapObj."16" = "https://github.com/favicon.ico";
+          #     };
 
-              nix = {
-                name = "NixOS/HM Packages & Options";
-                urls = [
-                  {
-                    template = "https://searchix.ovh/";
-                    params = [
-                      {
-                        name = "query";
-                        value = "{searchTerms}";
-                      }
-                    ];
-                  }
-                ];
+          #     nix = {
+          #       name = "NixOS/HM Packages & Options";
+          #       urls = [
+          #         {
+          #           template = "https://searchix.ovh/";
+          #           params = [
+          #             {
+          #               name = "query";
+          #               value = "{searchTerms}";
+          #             }
+          #           ];
+          #         }
+          #       ];
 
-                definedAliases = [ "@np" ];
-                icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-              };
-            };
-          };
+          #       definedAliases = [ "@np" ];
+          #       icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+          #     };
+          #   };
+          # };
 
           settings = {
             "app.update.auto" = false;

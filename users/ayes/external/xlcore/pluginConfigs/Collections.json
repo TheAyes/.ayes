@@ -14,7 +14,8 @@
       24115,
       38213,
       13673
-    ]
+    ],
+    "Emotes": []
   },
   "Wishlist": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.HashSet`1[[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
@@ -732,6 +733,7 @@
     1064353216
   ],
   "ArmoireItemIds": [],
+  "ShowAdditionalTooltips": false,
   "GlamourTree": {
     "$type": "Collections.GlamourTree, Collections",
     "Directories": [
@@ -747,17 +749,93 @@
               "Body": {
                 "$type": "Collections.GlamourItem, Collections",
                 "ItemId": 37197,
-                "StainId": 101
+                "Stain0Id": 0,
+                "Stain1Id": 0
               },
               "Legs": {
                 "$type": "Collections.GlamourItem, Collections",
                 "ItemId": 7267,
-                "StainId": 101
+                "Stain0Id": 0,
+                "Stain1Id": 0
               },
               "Feet": {
                 "$type": "Collections.GlamourItem, Collections",
                 "ItemId": 24006,
-                "StainId": 101
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              }
+            }
+          },
+          {
+            "$type": "Collections.GlamourSet, Collections",
+            "Name": "Saints Card Set",
+            "Items": {
+              "$type": "System.Collections.Generic.Dictionary`2[[Collections.EquipSlot, Collections],[Collections.GlamourItem, Collections]], System.Private.CoreLib",
+              "Body": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 44252,
+                "Stain0Id": 101,
+                "Stain1Id": 10
+              },
+              "Legs": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 24115,
+                "Stain0Id": 101,
+                "Stain1Id": 0
+              },
+              "Feet": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 42747,
+                "Stain0Id": 101,
+                "Stain1Id": 10
+              },
+              "Gloves": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 38053,
+                "Stain0Id": 101,
+                "Stain1Id": 0
+              },
+              "Head": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 2748,
+                "Stain0Id": 10,
+                "Stain1Id": 0
+              },
+              "Ears": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 39998,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "Wrists": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 9294,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "Neck": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 9292,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "FingerR": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 9295,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "FingerL": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 9295,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "MainHand": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 33833,
+                "Stain0Id": 0,
+                "Stain1Id": 0
               }
             }
           }
@@ -766,6 +844,9 @@
     ]
   },
   "AutoOpenInstanceTab": false,
+  "OnlyOpenIfUncollected": false,
+  "AutoHideObtainedFromInstanceTab": false,
+  "ExcludedCollectionsFromInstanceTab": [],
   "ForceTryOn": true,
   "Version": 1
 }

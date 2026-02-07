@@ -137,6 +137,45 @@
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 4,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [],
+    "Quantities": {},
+    "PrefferedLocations": {},
+    "EnabledItems": {},
+    "Name": "Pot Mats",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 5,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [
+      43929,
+      43930,
+      43925,
+      43928
+    ],
+    "Quantities": {
+      "43929": 25,
+      "43930": 25,
+      "43925": 100,
+      "43928": 25
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "43929": true,
+      "43930": true,
+      "43925": true,
+      "43928": true
+    },
+    "Name": "Orange Scrip Farm",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 7,
     "Enabled": true,
     "Fallback": false
   }

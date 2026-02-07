@@ -10,7 +10,7 @@
   "FisherSetName": "Fisher",
   "IdentifiedGatherableFormat": "Identified {Item} for \"{Input}\".",
   "AlarmFormat": "{Alarm} {Item} {DelayString} at {Location}.",
-  "AetherytePreference": 1,
+  "AetherytePreference": 0,
   "ShowItems": 212991,
   "ShowFish": 65407,
   "HideFishPatch": 0,
@@ -50,7 +50,8 @@
   "PreferredGatheringType": 8,
   "AutoGatherConfig": {
     "$type": "GatherBuddy.AutoGather.AutoGatherConfig, GatherBuddyReborn",
-    "MountUpDistance": 30.0,
+    "MountUpDistance": 34.0,
+    "LandingDistance": 7.5,
     "AutoGatherMountId": 138,
     "MoveWhileMounting": true,
     "BlacklistedNodesByTerritoryId": {
@@ -87,6 +88,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -136,6 +143,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -175,6 +188,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -223,6 +242,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -267,6 +292,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -306,6 +337,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -354,6 +391,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -393,6 +436,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -440,6 +489,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -483,6 +538,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -522,6 +583,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -571,6 +638,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -611,6 +684,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -659,6 +738,12 @@
             "Use": true,
             "NodeLevel": 100,
             "AvoidCap": false
+          },
+          "CloudedNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
           }
         },
         "RequiredIntegrity": 1
@@ -699,6 +784,12 @@
             "AvoidCap": false
           },
           "LegendaryNode": {
+            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
+            "Use": true,
+            "NodeLevel": 100,
+            "AvoidCap": false
+          },
+          "CloudedNode": {
             "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
             "Use": true,
             "NodeLevel": 100,
@@ -776,8 +867,9 @@
     "RepairThreshold": 50,
     "HonkMode": false,
     "SortingMethod": 1,
-    "GoHomeWhenIdle": true,
-    "GoHomeWhenDone": true,
+    "TeleportToNextNode": true,
+    "GoHomeWhenIdle": false,
+    "GoHomeWhenDone": false,
     "UseSkillsForFallbackItems": false,
     "AbandonNodes": false,
     "ExecutionDelay": 0,
@@ -787,7 +879,7 @@
     "LifestreamCommand": "auto",
     "SoundPlaybackVolume": 100,
     "FishDataCollection": false,
-    "AlwaysGatherMaps": false,
+    "AlwaysGatherMaps": true,
     "MaxFishingSpotMinutes": 20,
     "UseNavigation": true,
     "UseAutoHook": true,
@@ -807,16 +899,35 @@
     "ModestLureGPAbove": false,
     "UseHookTimers": false,
     "AutoCollectablesFishing": true,
-    "DiademAutoAetherCannon": false
+    "DiademAutoAetherCannon": true,
+    "DiademWindmireJumps": true,
+    "DiademFarmCloudedNodes": true,
+    "DeferRepairDuringFishingBuffs": true,
+    "DeferReductionDuringFishingBuffs": true,
+    "DeferMateriaExtractionDuringFishingBuffs": true,
+    "UseFood": false,
+    "FoodItemId": 0,
+    "UseMedicine": false,
+    "MedicineItemId": 0,
+    "UseCordialForFishing": false,
+    "CordialForFishingGPThreshold": 0,
+    "UsePatience": true,
+    "UsePrizeCatch": false,
+    "PrizeCatchGPThreshold": 200,
+    "PrizeCatchGPAbove": true,
+    "UseChum": false,
+    "ChumGPThreshold": 100,
+    "ChumGPAbove": true
   },
   "AutoGatherListSelectorWidth": 225.0,
   "CollectableConfig": {
     "$type": "GatherBuddy.Config.CollectableConfig, GatherBuddyReborn",
     "AutoTurnInCollectables": true,
-    "BuyAfterEachCollect": false,
-    "UseInventoryFullThreshold": true,
+    "BuyAfterEachCollect": true,
+    "UseInventoryFullThreshold": false,
     "CollectableInventoryThreshold": 100,
-    "InventoryFullThreshold": 140,
+    "InventoryFullThreshold": 130,
+    "ReserveScripAmount": 0,
     "PreferredCollectableShop": {
       "$type": "GatherBuddy.AutoGather.Collectables.Data.CollectableShop, GatherBuddyReborn",
       "Name": "Eulmore",
@@ -840,7 +951,22 @@
         "Z": -19.177
       }
     },
-    "ScripShopItems": []
+    "ScripShopItems": [
+      {
+        "$type": "GatherBuddy.AutoGather.Collectables.Data.ItemToPurchase, GatherBuddyReborn",
+        "Item": {
+          "$type": "GatherBuddy.AutoGather.Collectables.Data.ScripShopItem, GatherBuddyReborn",
+          "ItemID": 46246,
+          "Index": 2,
+          "ItemCost": 300,
+          "Page": 4,
+          "SubPage": 8,
+          "ScripType": 1
+        },
+        "Name": "Levinchrome Aethersand",
+        "Quantity": 99
+      }
+    ]
   },
   "ShowWeatherNames": true,
   "AlarmsEnabled": false,
@@ -921,7 +1047,7 @@
   "ShowGatherWindow": false,
   "ShowGatherWindowTimers": true,
   "ShowGatherWindowAlarms": true,
-  "SortGatherWindowByUptime": false,
+  "SortGatherWindowByUptime": true,
   "ShowGatherWindowOnlyAvailable": false,
   "HideGatherWindowCompletedItems": true,
   "HideGatherWindowInDuty": true,
