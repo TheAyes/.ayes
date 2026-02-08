@@ -6,10 +6,10 @@
       #enable = true;
       package = pkgs.discord-canary;
 
-      vencord.enable = true;
+      vencord.enable = false;
     };
 
-    vesktop.enable = false;
+    vesktop.enable = true;
 
     config = {
       disableMinSize = false;

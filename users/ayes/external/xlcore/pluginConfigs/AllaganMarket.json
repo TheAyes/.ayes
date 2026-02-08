@@ -23,7 +23,7 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 76,
+      "Level": 77,
       "DisplayOrder": 0,
       "RetainerTown": 4
     },
@@ -47,16 +47,25 @@
     "33777197235723971": 0
   },
   "IntegerSettings": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+    "UndercutBy": 1
   },
   "BooleanSettings": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+    "RetainerOverlayCollapsed": false
   },
-  "EnumSettings": {},
+  "EnumSettings": {
+    "UndercutComparison": {
+      "Type": "AllaganMarket.Settings.UndercutComparison",
+      "Assembly": "AllaganMarket",
+      "Value": "MatchingQuality"
+    }
+  },
   "IsDirty": false,
   "Version": 0,
   "UndercutComparisonSettings": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[AllaganMarket.Settings.UndercutComparison, AllaganMarket]], System.Private.CoreLib",
+    "22511": 1
   },
   "ShowWizardNewFeatures": false,
   "WizardVersionsSeen": [
