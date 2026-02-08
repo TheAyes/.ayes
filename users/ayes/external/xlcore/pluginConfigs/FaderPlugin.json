@@ -388,7 +388,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 14,
         "setting": 0,
-        "Opacity": 0.75
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -894,8 +894,8 @@
   },
   "HoverGroups": [],
   "DefaultDelayEnabled": true,
-  "DefaultDelay": 2000,
-  "ChatActivityTimeout": 5000,
+  "DefaultDelay": 5000,
+  "ChatActivityTimeout": 10000,
   "OverrideKey": 18,
   "FocusOnHotbarsUnlock": false,
   "EmoteActivity": false,

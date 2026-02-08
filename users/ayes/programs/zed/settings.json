@@ -59,7 +59,7 @@
 		"discord_presence": {
 			"initialization_options": {
 				"idle": {
-					"timeout": 9999999999,
+					"timeout": 300,
 				},
 				"git_integration": true,
 			},
