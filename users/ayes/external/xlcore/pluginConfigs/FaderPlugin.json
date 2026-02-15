@@ -22,7 +22,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -48,7 +48,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -74,7 +74,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -132,7 +132,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -158,7 +158,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -184,7 +184,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -218,7 +218,7 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
@@ -240,11 +240,17 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 9,
         "setting": 0,
-        "Opacity": 0.5
+        "Opacity": 0.7
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 10,
+        "setting": 0,
+        "Opacity": 0.7
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
         "setting": 0,
         "Opacity": 1.0
       },
@@ -266,13 +272,19 @@
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 21,
         "setting": 0,
-        "Opacity": 0.7
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
-        "Opacity": 0.2
+        "Opacity": 0.0
       }
     ],
     "ExperienceBar": [
@@ -450,9 +462,27 @@
     "LimitBreak": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 1,
+        "state": 10,
         "setting": 0,
         "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
       }
     ],
     "Parameters": [

@@ -11,5 +11,22 @@
     };
   };
 
-  swapDevices = [{device = "/dev/disk/by-label/swap";}];
+  swapDevices = [{ device = "/dev/disk/by-label/swap"; }];
+
+  boot = {
+    loader.grub = {
+      enable = true;
+      device = "/dev/sda";
+    };
+
+    initrd.availableKernelModules = [
+      "ahci"
+      "xhci_pci"
+      "virtio_pci"
+      "virtio_scsi"
+      "sd_mod"
+      "sr_mod"
+      "ext4"
+    ];
+  };
 }

@@ -1,43 +1,26 @@
-{
-  pkgs,
-  inputs,
-  ...
+{ pkgs
+, inputs
+, ...
 }:
 {
   imports = [
+    ./filesystem.nix
     ../../presets/nixos/locales/german.nix
   ];
 
   environment.systemPackages = with pkgs; [
   ];
 
-  fileSystems = {
-    "/boot" = {
-      device = "/dev/disk/by-label/boot";
-      fsType = "ext4";
-    };
-
-    "/" = {
-      device = "/dev/disk/by-label/nixos";
-      fsType = "ext4";
+  nix = {
+    settings = {
+      trusted-users = [ "root" "ayes" ];
     };
   };
-  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.initrd.availableKernelModules = [
-    "ahci"
-    "xhci_pci"
-    "virtio_pci"
-    "virtio_scsi"
-    "sd_mod"
-    "sr_mod"
-    "ext4"
-  ];
 
   users.users = {
     root.hashedPassword = "!"; # Disable root login
+
     ayes = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
@@ -46,13 +29,20 @@
       ];
     };
   };
+
   security.sudo.wheelNeedsPassword = false;
-  services.openssh = {
-    enable = true;
-    settings = {
-      PermitRootLogin = "no";
-      PasswordAuthentication = false;
-      KbdInteractiveAuthentication = false;
+  services = {
+    openssh = {
+      enable = true;
+      settings = {
+        PermitRootLogin = "no";
+        PasswordAuthentication = false;
+        KbdInteractiveAuthentication = false;
+      };
+    };
+
+    matrix-synapse = {
+      enable = true;
     };
   };
 }

@@ -5,12 +5,12 @@ MESSAGE=$("$DIR"/scripts/commit_message.sh)
 if [ -z "$1" ]; then
 	echo "error: missing positional argument <COMMAND>"
 	echo ""
-	echo "Usage: rebuild.sh <COMMAND> [--upgrade]"
+	echo "Usage: rebuild.sh <COMMAND> [OPTIONS...]"
 
 	exit 1
 fi
 
-if ! nh os "$1" "$DIR" --ask --diff=auto $2; then
+if ! nh os "$1" "$DIR" --ask --diff=auto "${@:2}"; then
 	exit 2
 fi
 

@@ -28,6 +28,12 @@
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/common/external/xlcore/runtime" />
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/common/external/xlcore/temp" />
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/common/external/xlcore/wineprefix" />
+      <excludeFolder url="file://$MODULE_DIR$/.claude" />
+      <excludeFolder url="file://$MODULE_DIR$/.zed" />
+      <excludeFolder url="file://$MODULE_DIR$/users/ayes/external" />
+      <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/backups" />
+      <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/compatibilitytool" />
+      <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/installedPlugins" />
       <excludePattern pattern="*UI.ini" />
       <excludePattern pattern="dalamudVfs.db" />
       <excludePattern pattern="launcher.ini" />
