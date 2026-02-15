@@ -1,7 +1,6 @@
-{
-  pkgs,
-  inputs,
-  ...
+{ pkgs
+, inputs
+, ...
 }:
 {
   imports = [
@@ -95,9 +94,7 @@
   ##################################
   ## Nix
   ##################################
-  nix.settings = {
-
-  };
+  nix.settings = { };
 
   nixpkgs = {
     config = {
@@ -159,6 +156,7 @@
     firefox.enable = false;
     gamemode.enable = true;
     fish.enable = true;
+    ssh.startAgent = true;
 
     kdeconnect.enable = true;
     obs-studio = {

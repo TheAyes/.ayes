@@ -1,7 +1,6 @@
-{
-  pkgs,
-  lib,
-  ...
+{ pkgs
+, lib
+, ...
 }:
 {
   services = {
@@ -18,6 +17,7 @@
         };
       };
     };
+
     desktopManager.plasma6.enable = true;
   };
 
