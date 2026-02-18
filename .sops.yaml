@@ -1,7 +1,37 @@
 keys:
-  - &primary age1wp3l7jsp2074y0wq5zz7e6jkf5s89tajqdnevd03x8exyezq9vlsewxlr3
+  # Recovery key - stored in password manager
+  - &recovery age1r5y20hy0mwx5f628ykxgk3lquphegglew0ealsmncwzfaj40zqaqeff6n5
+
+  # Per-host keys (generate with: ./scripts/sops-init-host.sh)
+  - &io age15yvj4g487qq353sqv3l7cp3h7gmwev5vpdzadmrsytcw8530rp8qm5smfn
+  # - &janus age1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  # - &leda age1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 creation_rules:
-  - path_regex: secrets/secrets.yaml$
+  # Shared secrets - accessible by all hosts
+  - path_regex: secrets/shared\.yaml$
     key_groups:
       - age:
-          - *primary
+          - *recovery
+          - *io
+          # - *janus
+          # - *leda
+
+  # Per-host secrets
+  - path_regex: secrets/io\.yaml$
+    key_groups:
+      - age:
+          - *recovery
+          - *io
+
+  # - path_regex: secrets/janus\.yaml$
+  #   key_groups:
+  #     - age:
+  #         - *recovery
+  #         - *janus
+
+  # - path_regex: secrets/leda\.yaml$
+  #   key_groups:
+  #     - age:
+  #         - *recovery
+  #         - *leda

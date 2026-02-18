@@ -1,42 +1,8 @@
+# Legacy profile - imports the split profiles for backwards compatibility
 {
-  security = {
-    sudo.wheelNeedsPassword = false;
-  };
-
-  powerManagement.cpuFreqGovernor = "performance";
-
-  security.pam.loginLimits = [
-    {
-      domain = "@audio";
-      item = "memlock";
-      type = "-";
-      value = "unlimited";
-    }
-    {
-      domain = "@audio";
-      item = "rtprio";
-      type = "-";
-      value = "99";
-    }
-    {
-      domain = "@audio";
-      item = "nofile";
-      type = "soft";
-      value = "99999";
-    }
-    {
-      domain = "@audio";
-      item = "nofile";
-      type = "hard";
-      value = "99999";
-    }
+  imports = [
+    ./sudo-nopassword.nix
+    ../audio/low-latency.nix
+    ../performance/desktop.nix
   ];
-
-  services.udev = {
-    extraRules = ''
-      KERNEL=="rtc0", GROUP="audio"
-      KERNEL=="hpet", GROUP="audio"
-      DEVPATH=="/devices/virtual/misc/cpu_dma_latency", OWNER="root", GROUP="audio", MODE="0660"
-    '';
-  };
 }
