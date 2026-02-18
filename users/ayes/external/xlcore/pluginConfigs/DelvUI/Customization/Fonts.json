@@ -1,0 +1,27 @@
+{
+  "$type": "DelvUI.Interface.GeneralElements.FontsConfig, DelvUI",
+  "FontsPath": "C:\\",
+  "Fonts": {
+    "$type": "System.Collections.Generic.SortedList`2[[System.String, System.Private.CoreLib],[DelvUI.Interface.GeneralElements.FontData, DelvUI]], System.Collections",
+    "Expressway_16": {
+      "$type": "DelvUI.Interface.GeneralElements.FontData, DelvUI",
+      "Name": "Expressway",
+      "Size": 16
+    },
+    "Expressway_20": {
+      "$type": "DelvUI.Interface.GeneralElements.FontData, DelvUI",
+      "Name": "Expressway",
+      "Size": 20
+    },
+    "Expressway_24": {
+      "$type": "DelvUI.Interface.GeneralElements.FontData, DelvUI",
+      "Name": "Expressway",
+      "Size": 24
+    }
+  },
+  "SupportChineseCharacters": false,
+  "SupportKoreanCharacters": false,
+  "SupportCyrillicCharacters": false,
+  "Enabled": true,
+  "Version": "2.6.2.1"
+}

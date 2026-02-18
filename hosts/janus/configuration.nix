@@ -5,7 +5,7 @@
 {
   imports = [
     ./filesystem.nix
-    ../../presets/nixos/locales/german.nix
+    ../../profiles/nixos/locales/german.nix
   ];
 
   environment.systemPackages = with pkgs; [

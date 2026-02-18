@@ -1,65 +1,66 @@
-{
-  pkgs,
-  lib,
-  inputs,
-  system,
-  ...
+{ pkgs
+, lib
+, inputs
+, system
+, ...
 }:
 {
   imports = [ ];
 
   home = {
-    packages = with pkgs; [
-      # Gaming
-      xivlauncher
-      (prismlauncher.override {
-        jdks = [
-          graalvmPackages.graalvm-ce
-          temurin-jre-bin
-          zulu17
-        ];
-      })
-      #ed-odyssey-materials-helper
+    packages = with pkgs;
+      lib.attrValues
+        (
+          lib.genAttrs
+            [
+              "idea"
+              "clion"
+            ]
+            (ide:
+              jetbrains."${ide}".override {
+                forceWayland = true;
+              }
+            )
+        ) ++ [
+        zed-editor
 
-      heroic
-      lutris
+        # Gaming
+        xivlauncher
+        (prismlauncher.override {
+          jdks = [
+            graalvmPackages.graalvm-ce
+            temurin-jre-bin
+            zulu17
+          ];
+        })
+        #ed-odyssey-materials-helper
 
-      # Music Production
-      bitwig-studio
+        heroic
+        lutris
 
-      zed-editor
-      #jetbrains.webstorm
-      #jetbrains.pycharm-professional
-      #jetbrains.idea-ultimate
-      #jetbrains.rider
-      #jetbrains.rust-rover
-      (jetbrains.idea.override {
-        forceWayland = true;
-      })
-      (jetbrains.clion.override {
-        forceWayland = true;
-      })
+        # Music Production
+        bitwig-studio
 
-      godot-mono
+        godot-mono
 
-      nodejs
-      bun
-      uv
-      ruff
-      claude-code
-      nil
-      nixd
+        nodejs
+        bun
+        uv
+        ruff
+        claude-code
+        nil
+        nixd
 
-      dotnetCorePackages.dotnet_9.sdk
+        dotnetCorePackages.dotnet_9.sdk
 
-      blockbench
-      gimp
-      proton-pass
-      element-desktop
+        blockbench
+        gimp
+        proton-pass
+        element-desktop
 
-      quodlibet
-      haruna
-    ];
+        quodlibet
+        haruna
+      ];
   };
 
   programs = {

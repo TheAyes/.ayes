@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "14.0.2.1",
+  "LastVersion": "14.0.2.2",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -53,6 +53,12 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://puni.sh/api/repository/veyn",
+        "IsEnabled": true,
+        "Name": null
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/marzent/IINACT/main/repo.json",
         "IsEnabled": true,
         "Name": null
       }
@@ -157,7 +163,15 @@
       "DistantSeas",
       "FaderPlugin",
       "PartyFinderReborn",
-      "PFSearch"
+      "PFSearch",
+      "IINACT",
+      "DelvUI",
+      "OfDungeonsDeep",
+      "Directional",
+      "Browsingway",
+      "NeatNoter",
+      "WExtras",
+      "Tippy"
     ]
   },
   "DevPluginSettings": {
@@ -1653,7 +1667,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Splatoon",
           "WorkingPluginId": "cd0c1e95-7320-48b0-98aa-f996f1bf1f3e",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -1690,6 +1704,18 @@
           "InternalName": "FaderPlugin",
           "WorkingPluginId": "401a1045-1d4e-4888-98ad-35cacb7bba3e",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "IINACT",
+          "WorkingPluginId": "42bb8fb0-fde7-4e35-8341-a30025e4a4fa",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "DelvUI",
+          "WorkingPluginId": "05cdf1a6-2335-4089-85ca-4089ec06d1ff",
+          "IsEnabled": false
         }
       ]
     },
