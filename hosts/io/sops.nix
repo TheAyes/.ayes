@@ -1,10 +1,14 @@
 { config, ... }:
-{
-  sops = {
-    defaultSopsFile = ../../secrets/secrets.yaml;
-    defaultSopsFormat = "yaml";
 
-    age.keyFile = "/home/ayes/.config/sops/age/keys.txt";
+{
+  imports = [
+    ../../profiles/nixos/services/sops.nix
+  ];
+
+  sops = {
+    # Host-specific secrets file
+    defaultSopsFile = ../../secrets/io.yaml;
+
     secrets = {
       "cloudflare/aethyria-tunnel-token" = {
         owner = config.users.users.ayes.name;

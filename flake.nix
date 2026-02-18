@@ -57,6 +57,7 @@
           home-manager = { };
 
           sharedHostModules = [
+            inputs.sops-nix.nixosModules.sops
           ];
 
           hosts = {
@@ -66,7 +67,6 @@
               extraModules = [
                 inputs.solaar.nixosModules.default
                 inputs.nix-minecraft.nixosModules.minecraft-servers
-                inputs.sops-nix.nixosModules.sops
               ];
 
               home-manager = {

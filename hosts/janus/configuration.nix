@@ -5,7 +5,10 @@
 {
   imports = [
     ./filesystem.nix
+    ./sops.nix
     ../../profiles/nixos/locales/german.nix
+    ../../profiles/nixos/services/ssh-server.nix
+    ../../profiles/nixos/security/sudo-nopassword.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -30,17 +33,7 @@
     };
   };
 
-  security.sudo.wheelNeedsPassword = false;
   services = {
-    openssh = {
-      enable = true;
-      settings = {
-        PermitRootLogin = "no";
-        PasswordAuthentication = false;
-        KbdInteractiveAuthentication = false;
-      };
-    };
-
     matrix-synapse = {
       enable = true;
     };

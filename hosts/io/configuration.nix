@@ -26,6 +26,18 @@
     ../../profiles/nixos/programs/steam.nix
     #../../profiles/nixos/programs/envision.nix
     ../../profiles/nixos/programs/lact.nix
+    ../../profiles/nixos/programs/obs.nix
+    ../../profiles/nixos/programs/nix-ld.nix
+
+    # Gaming Profiles
+    ../../profiles/nixos/gaming/wine.nix
+
+    # Virtualization Profiles
+    ../../profiles/nixos/virtualization/docker.nix
+    ../../profiles/nixos/virtualization/libvirt.nix
+
+    # Service Profiles
+    ../../profiles/nixos/services/ollama-rocm.nix
   ];
 
   fileSystems = {
@@ -108,25 +120,15 @@
   ##################################
   environment = {
     systemPackages = with pkgs; [
-      #keepassxc
       sops
-      #cloudflared
       protonvpn-gui
 
       qpwgraph
 
       ffmpeg
       libopus
-      #vital
-
-      wineWowPackages.staging
-      winetricks
-      bottles
 
       dnsmasq
-      quickemu
-      spice
-      spice-gtk
 
       rocmPackages.rocm-device-libs
       rocmPackages.hsakmt
@@ -136,14 +138,11 @@
     ];
   };
 
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      portaudio
-      stdenv.cc.cc.lib
-      rocmPackages.llvm.llvm
-    ];
-  };
+  # Additional nix-ld libraries (profile provides base)
+  programs.nix-ld.libraries = with pkgs; [
+    portaudio
+    rocmPackages.llvm.llvm
+  ];
 
   ##################################
   ## Programs
@@ -159,19 +158,7 @@
     ssh.startAgent = true;
 
     kdeconnect.enable = true;
-    obs-studio = {
-      enable = true;
-      plugins = with pkgs.obs-studio-plugins; [
-        wlrobs
-        obs-replay-source
-        advanced-scene-switcher
-        obs-pipewire-audio-capture
-      ];
-    };
   };
-
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
 
   ##################################
   ## Services
@@ -188,12 +175,6 @@
       enable = false; # Maybe in the future once I get a home-server
     };
 
-    ollama = {
-      enable = true;
-      package = pkgs.ollama-rocm;
-      rocmOverrideGfx = "gfx1101";
-    };
-
     udev = {
       enable = true;
       extraRules = ''
@@ -202,8 +183,6 @@
       '';
     };
   };
-
-  virtualisation.docker.enable = true;
 
   ##################################
   ## Networking

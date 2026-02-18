@@ -5,62 +5,43 @@
 , ...
 }:
 {
-  imports = [ ];
+  imports = [
+    # Development Profiles
+    ../../../../profiles/home-manager/development/node.nix
+    ../../../../profiles/home-manager/development/python.nix
+    ../../../../profiles/home-manager/development/nix.nix
+
+    # Program Profiles
+    ../../../../profiles/home-manager/programs/jetbrains.nix
+
+    # Gaming Profiles
+    ../../../../profiles/home-manager/gaming/launchers.nix
+  ];
 
   home = {
-    packages = with pkgs;
-      lib.attrValues
-        (
-          lib.genAttrs
-            [
-              "idea"
-              "clion"
-            ]
-            (ide:
-              jetbrains."${ide}".override {
-                forceWayland = true;
-              }
-            )
-        ) ++ [
-        zed-editor
+    packages = with pkgs; [
+      zed-editor
 
-        # Gaming
-        xivlauncher
-        (prismlauncher.override {
-          jdks = [
-            graalvmPackages.graalvm-ce
-            temurin-jre-bin
-            zulu17
-          ];
-        })
-        #ed-odyssey-materials-helper
+      # Gaming
+      xivlauncher
 
-        heroic
-        lutris
+      # Music Production
+      bitwig-studio
 
-        # Music Production
-        bitwig-studio
+      godot-mono
 
-        godot-mono
+      claude-code
 
-        nodejs
-        bun
-        uv
-        ruff
-        claude-code
-        nil
-        nixd
+      dotnetCorePackages.dotnet_9.sdk
 
-        dotnetCorePackages.dotnet_9.sdk
+      blockbench
+      gimp
+      proton-pass
+      element-desktop
 
-        blockbench
-        gimp
-        proton-pass
-        element-desktop
-
-        quodlibet
-        haruna
-      ];
+      quodlibet
+      haruna
+    ];
   };
 
   programs = {
