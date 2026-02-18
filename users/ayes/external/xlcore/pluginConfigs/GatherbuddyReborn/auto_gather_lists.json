@@ -28,7 +28,7 @@
     "Name": "All Shards",
     "Description": "",
     "FolderPath": "",
-    "Order": 2,
+    "Order": 1,
     "Enabled": false,
     "Fallback": false
   },
@@ -58,7 +58,7 @@
     "Name": "Skycrafts",
     "Description": "Imported from Artisan",
     "FolderPath": "",
-    "Order": 0,
+    "Order": 2,
     "Enabled": false,
     "Fallback": false
   },
@@ -136,7 +136,7 @@
     "Name": "Crafted Raid Gear",
     "Description": "Imported from Artisan",
     "FolderPath": "",
-    "Order": 4,
+    "Order": 3,
     "Enabled": false,
     "Fallback": false
   },
@@ -148,7 +148,7 @@
     "Name": "Pot Mats",
     "Description": "",
     "FolderPath": "",
-    "Order": 5,
+    "Order": 4,
     "Enabled": false,
     "Fallback": false
   },
@@ -175,7 +175,7 @@
     "Name": "Orange Scrip Farm",
     "Description": "",
     "FolderPath": "",
-    "Order": 7,
+    "Order": 5,
     "Enabled": true,
     "Fallback": false
   }

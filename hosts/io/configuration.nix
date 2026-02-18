@@ -9,23 +9,23 @@
     ./sops.nix
     ./minecraft-servers.nix
 
-    # System Modules
-    ../../presets/nixos/boot/systemd-boot.nix
-    ../../presets/nixos/desktopManagers/kde.nix
-    ../../presets/nixos/audio/pipewire.nix
-    ../../presets/nixos/networking/default.nix
-    ../../presets/nixos/security
+    # System Profiles
+    ../../profiles/nixos/boot/systemd-boot.nix
+    ../../profiles/nixos/desktopManagers/kde.nix
+    ../../profiles/nixos/audio/pipewire.nix
+    ../../profiles/nixos/networking/default.nix
+    ../../profiles/nixos/security
 
-    ../../presets/nixos/hardware/amdgpu.nix
-    ../../presets/nixos/hardware/bluetooth.nix
-    ../../presets/nixos/hardware/logitech.nix
+    ../../profiles/nixos/hardware/amdgpu.nix
+    ../../profiles/nixos/hardware/bluetooth.nix
+    ../../profiles/nixos/hardware/logitech.nix
 
-    ../../presets/nixos/locales/german.nix
+    ../../profiles/nixos/locales/german.nix
 
-    # Program Modules
-    ../../presets/nixos/programs/steam.nix
-    #../../presets/nixos/programs/envision.nix
-    ../../presets/nixos/programs/lact.nix
+    # Program Profiles
+    ../../profiles/nixos/programs/steam.nix
+    #../../profiles/nixos/programs/envision.nix
+    ../../profiles/nixos/programs/lact.nix
   ];
 
   fileSystems = {
