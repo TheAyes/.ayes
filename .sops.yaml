@@ -5,7 +5,7 @@ keys:
   # Per-host keys (generate with: ./scripts/sops-init-host.sh)
   - &io age15yvj4g487qq353sqv3l7cp3h7gmwev5vpdzadmrsytcw8530rp8qm5smfn
   # - &janus age1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  # - &leda age1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  - &leda age1d3zx9zznu3pp2sudd8s3as7jzfnhu3uczm0sklrmhuv7a7hvv54q6n4hk9
 
 creation_rules:
   # Shared secrets - accessible by all hosts
@@ -15,7 +15,7 @@ creation_rules:
           - *recovery
           - *io
           # - *janus
-          # - *leda
+          - *leda
 
   # Per-host secrets
   - path_regex: secrets/io\.yaml$
@@ -30,8 +30,8 @@ creation_rules:
   #         - *recovery
   #         - *janus
 
-  # - path_regex: secrets/leda\.yaml$
-  #   key_groups:
-  #     - age:
-  #         - *recovery
-  #         - *leda
+  - path_regex: secrets/leda\.yaml$
+    key_groups:
+      - age:
+          - *recovery
+          - *leda

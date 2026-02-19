@@ -4,6 +4,7 @@
 }: {
   imports = [
     ./security.nix
+    ./sops.nix
   ];
 
   system.stateVersion = "23.11";
