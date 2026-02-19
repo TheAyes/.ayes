@@ -106,7 +106,9 @@
   ##################################
   ## Nix
   ##################################
-  nix.settings = { };
+  nix.settings = {
+    secret-key-files = [ "/etc/nix/private-key" ];
+  };
 
   nixpkgs = {
     config = {

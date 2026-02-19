@@ -17,6 +17,7 @@
   nix = {
     settings = {
       trusted-users = [ "root" "ayes" ];
+      trusted-public-keys = [ "io:Zu/umjucw6vgqfr8Y1RA039dxtjNzT23HyIz6BoL9Bg=" ];
     };
   };
 

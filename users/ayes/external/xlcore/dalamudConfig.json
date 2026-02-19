@@ -1713,9 +1713,9 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "DelvUI",
-          "WorkingPluginId": "05cdf1a6-2335-4089-85ca-4089ec06d1ff",
-          "IsEnabled": false
+          "InternalName": "Artisan",
+          "WorkingPluginId": "dcdb96cf-fda3-48a3-9a21-f26f1d879edc",
+          "IsEnabled": true
         }
       ]
     },

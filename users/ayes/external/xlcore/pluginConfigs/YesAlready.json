@@ -1,7 +1,7 @@
 {
   "$type": "YesAlready.Configuration, YesAlready",
   "Version": 2,
-  "Enabled": true,
+  "Enabled": false,
   "MessageChannel": 1,
   "ForcedYesKey": 0,
   "ForcedTalkKey": 0,
@@ -217,6 +217,8 @@
         "IsPercent": true,
         "Percentage": 100,
         "Quantity": 0,
+        "ZoneRestricted": false,
+        "ZoneText": "",
         "Enabled": false,
         "Text": "Add some text here!"
       }

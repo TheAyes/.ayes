@@ -282,6 +282,12 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 0,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
         "Opacity": 0.0
