@@ -30,12 +30,12 @@
     "MidBaitPliantWithObserveAfterIQ": true,
     "MidPrimedManipPreQuality": true,
     "MidPrimedManipAfterIQ": true,
-    "MidKeepHighDuraUnbuffed": true,
-    "MidKeepHighDuraVeneration": false,
+    "MidUseTP": 0,
+    "MidMaxBaitStepsForTP": 0,
+    "MidKeepHighDura": 0,
+    "MidAllowIntensive": 2,
     "MidAllowVenerationGoodOmen": true,
     "MidAllowVenerationAfterIQ": true,
-    "MidAllowIntensiveUnbuffed": false,
-    "MidAllowIntensiveVeneration": false,
     "MidAllowPrecise": true,
     "MidAllowSturdyPreсise": false,
     "MidAllowCenteredHasty": true,
@@ -3560,6 +3560,7 @@
   "ShowOnlyCraftableRetainers": false,
   "Materia": false,
   "LockMiniMenuR": true,
+  "ConsumableLevelGapDifference": 10,
   "EnduranceStopFail": false,
   "EnduranceStopNQ": false,
   "RepairPercent": 50,
@@ -3662,10 +3663,8 @@
     "AutoSwitchOverManual": true,
     "MaximumThreads": 0,
     "GenerateOnExperts": false,
-    "TimeOutMins": 1
-  },
-  "RaphaelSolverCacheV3": {
-    "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent"
+    "TimeOutMins": 1,
+    "MaxStellarHand": 2
   },
   "RaphaelSolverCacheV4": {
     "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent",
@@ -3699,6 +3698,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3717,6 +3717,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3735,6 +3736,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3753,6 +3755,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3771,6 +3774,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3789,6 +3793,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3807,6 +3812,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3825,6 +3831,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3843,6 +3850,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3861,6 +3869,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3879,6 +3888,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3897,6 +3907,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3933,6 +3944,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3951,6 +3963,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3969,6 +3982,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -3987,6 +4001,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4005,6 +4020,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4023,6 +4039,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4041,6 +4058,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4059,6 +4077,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4077,6 +4096,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4095,6 +4115,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4113,6 +4134,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4131,6 +4153,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4167,6 +4190,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4185,6 +4209,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4203,6 +4228,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4221,6 +4247,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4239,6 +4266,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4257,6 +4285,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4275,6 +4304,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4293,6 +4323,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4311,6 +4342,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4329,6 +4361,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4365,6 +4398,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4383,6 +4417,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4401,6 +4436,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4419,6 +4455,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4437,6 +4474,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4455,6 +4493,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4473,6 +4512,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4491,6 +4531,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4509,6 +4550,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4527,6 +4569,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4545,6 +4588,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4563,6 +4607,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4581,6 +4626,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4617,6 +4663,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4635,6 +4682,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4653,6 +4701,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4671,6 +4720,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4689,6 +4739,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4707,6 +4758,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4743,6 +4795,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4761,6 +4814,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4779,6 +4833,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4797,6 +4852,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4815,6 +4871,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4833,6 +4890,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4851,6 +4909,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4869,6 +4928,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4887,6 +4947,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4905,6 +4966,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4923,6 +4985,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4941,6 +5004,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4959,6 +5023,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -4995,6 +5060,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5013,6 +5079,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5031,6 +5098,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5049,6 +5117,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5067,6 +5136,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5085,6 +5155,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5103,6 +5174,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5121,6 +5193,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5139,6 +5212,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5157,6 +5231,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5175,6 +5250,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5193,6 +5269,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5229,6 +5306,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5247,6 +5325,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5265,6 +5344,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5283,6 +5363,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5301,6 +5382,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5319,6 +5401,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5337,6 +5420,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5355,6 +5439,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5373,6 +5458,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5391,6 +5477,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5409,6 +5496,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5427,6 +5515,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5445,6 +5534,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5481,6 +5571,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5499,6 +5590,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5517,6 +5609,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5535,6 +5628,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5553,6 +5647,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5571,6 +5666,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5589,6 +5685,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5607,6 +5704,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5625,6 +5723,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5643,6 +5742,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5661,6 +5761,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5697,6 +5798,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5715,6 +5817,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5733,6 +5836,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5751,6 +5855,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5769,6 +5874,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5787,6 +5893,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5823,6 +5930,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5841,6 +5949,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5859,6 +5968,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5877,6 +5987,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5895,6 +6006,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5913,6 +6025,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5931,6 +6044,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5949,6 +6063,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5967,6 +6082,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -5985,6 +6101,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6003,6 +6120,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6039,6 +6157,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6057,6 +6176,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6075,6 +6195,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6093,6 +6214,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6111,6 +6233,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6129,6 +6252,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6147,6 +6271,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6165,6 +6290,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6183,6 +6309,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6201,6 +6328,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6219,6 +6347,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6237,6 +6366,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6255,6 +6385,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6291,6 +6422,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6309,6 +6441,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6327,6 +6460,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6345,6 +6479,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6363,6 +6498,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6381,6 +6517,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6399,6 +6536,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6417,6 +6555,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6453,6 +6592,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6471,6 +6611,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6489,6 +6630,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6507,6 +6649,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6525,6 +6668,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6543,6 +6687,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6561,6 +6706,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6579,6 +6725,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6597,6 +6744,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6615,6 +6763,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6633,6 +6782,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6651,6 +6801,7 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
@@ -6669,12 +6820,16 @@
           "ExcludeMalleable": false,
           "ExcludePrimed": false,
           "ExcludeGoodOmen": false,
+          "ExcludeRobust": false,
           "ReplaceOnExclude": false,
           "ReplacementAction": 0,
           "HasExcludeCondition": false
         }
       ]
     }
+  },
+  "RaphaelSolverCacheV5": {
+    "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent"
   },
   "Version": 2,
   "AutoMode": true,

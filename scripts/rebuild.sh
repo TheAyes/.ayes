@@ -10,7 +10,10 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-if ! nh os "$1" "$DIR" --ask --diff=auto "${@:2}"; then
+ASK_FLAG=""
+[ -t 0 ] && ASK_FLAG="--ask"
+
+if ! nh os "$1" "$DIR" $ASK_FLAG --diff=auto "${@:2}"; then
 	exit 2
 fi
 
