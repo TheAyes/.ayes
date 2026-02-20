@@ -29,6 +29,11 @@
     trusted-public-keys = [ "io:Zu/umjucw6vgqfr8Y1RA039dxtjNzT23HyIz6BoL9Bg=" "leda:I2NgSQksndXEYvjCiVShBM9/zNPQN7k8u8za0R0QJTM=" ];
   };
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "olm-3.2.16"
+  ];
+
+
   users.users = {
     root.hashedPassword = "!"; # Disable root login
 
