@@ -9,6 +9,4 @@ stdenv.mkDerivation (finalAttributes: {
     rev = "v${finalAttributes.version}";
     hash = "sha256-iCjqqRnBuqaRmpABbouMR82au5LhnYWooJ+JnjQEUc4=";
   };
-
-
 })

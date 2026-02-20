@@ -1,13 +1,12 @@
-{
-  pkgs,
-  lib,
-  ...
+{ pkgs
+, lib
+, ...
 }:
 {
   imports = [
+    ../../profiles/home-manager/programs/fish.nix
     ./programs/git.nix
     ./programs/btop.nix
-    ./programs/fish.nix
     ./programs/eza.nix
     ./programs/zoxide.nix
     ./programs/zed/config.nix
