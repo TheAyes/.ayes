@@ -6,6 +6,7 @@
       server_name = "convene.chat";
       public_baseurl = "https://matrix.convene.chat";
 
+
       listeners = [
         {
           port = 8008;
@@ -22,6 +23,8 @@
         }
       ];
     };
+
+    extraConfigFiles = [ config.sops.secrets."matrix/synapse_secrets".path ];
   };
 
   services.postgresql = {
