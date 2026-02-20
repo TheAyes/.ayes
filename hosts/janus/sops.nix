@@ -10,10 +10,9 @@
     # defaultSopsFile = ../../secrets/janus.yaml;
 
     secrets = {
-      # Add janus-specific secrets here
-      # "example/secret" = {
-      #   owner = "root";
-      # };
+      "matrix/registration_secret" = {
+        owner = "ayes";
+      };
     };
   };
 }
