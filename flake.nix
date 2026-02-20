@@ -123,6 +123,8 @@
 
             janus = {
               enable = true;
+              home-manager.enable = true;
+
               users = {
                 ayes = {
                   enable = true;

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="95.216.208.207" id="e9e7aefc-e562-4346-97da-47a50e224c0f" keyPath="$USER_HOME$/.ssh/id_ed25519" port="22" nameFormat="DESCRIPTIVE" username="ayes" useOpenSSHConfig="true" />
+      <sshConfig host="95.216.208.207" id="e9e7aefc-e562-4346-97da-47a50e224c0f" keyPath="$USER_HOME$/.ssh/id_ed25519" port="22" customName="ayes@janus" nameFormat="CUSTOM" username="ayes" useOpenSSHConfig="true">
+        <option name="customName" value="ayes@janus" />
+      </sshConfig>
     </configs>
   </component>
 </project>
