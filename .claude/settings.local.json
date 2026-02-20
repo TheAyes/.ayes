@@ -3,7 +3,8 @@
     "allow": [
       "Bash(tree:*)",
       "Bash(git add:*)",
-      "Bash(nix flake check:*)"
+      "Bash(nix flake check:*)",
+      "WebFetch(domain:nixos.org)"
     ],
     "deny": [],
     "ask": []

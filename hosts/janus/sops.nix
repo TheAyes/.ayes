@@ -9,8 +9,9 @@
     defaultSopsFile = ../../secrets/janus.yaml;
 
     secrets = {
-      "matrix/registration_secret" = {
-        owner = "ayes";
+      "matrix/synapse_secrets" = {
+        owner = "matrix-synapse";
+        group = "matrix-synapse";
       };
     };
   };
