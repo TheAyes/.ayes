@@ -21,28 +21,17 @@
           ];
         }
       ];
-
-      # Database - using SQLite by default, consider PostgreSQL for production
-      # database = {
-      #   name = "psycopg2";
-      #   args = {
-      #     host = "/run/postgresql";
-      #     database = "matrix-synapse";
-      #     user = "matrix-synapse";
-      #   };
-      # };
     };
   };
 
-  # Uncomment for PostgreSQL (recommended for production)
-  # services.postgresql = {
-  #   enable = true;
-  #   ensureDatabases = [ "matrix-synapse" ];
-  #   ensureUsers = [
-  #     {
-  #       name = "matrix-synapse";
-  #       ensureDBOwnership = true;
-  #     }
-  #   ];
-  # };
+  services.postgresql = {
+    enable = true;
+    ensureDatabases = [ "matrix-synapse" ];
+    ensureUsers = [
+      {
+        name = "matrix-synapse";
+        ensureDBOwnership = true;
+      }
+    ];
+  };
 }
