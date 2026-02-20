@@ -11,8 +11,8 @@
     ./filesystem.nix
     ./sops.nix
 
-    ./teamspeak-server.nix
-    ./matrix-server.nix
+    #./teamspeak-server.nix
+    #./matrix-server.nix
   ];
 
   environment.systemPackages = with pkgs; [
