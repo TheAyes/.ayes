@@ -1,23 +1,48 @@
+{ config, ... }:
 {
-  # See https://search.nixos.org/options?channel=unstable&query=services.matrix-conduit.
-  # and https://docs.conduit.rs/configuration.html
-  services.matrix-conduit = {
+  services.matrix-synapse = {
     enable = true;
-    settings.global = {
-      # allow_registration = true;
-      # You will need this token when creating your first account.
-      # registration_token = "A S3CR3T TOKEN";
-      # server_name = yourDomainName;
-      # port = yourPort;
-      address = "::1";
-      database_backend = "rocksdb";
+    settings = {
+      server_name = "convene.chat";
+      public_baseurl = "https://matrix.convene.chat";
 
-      # See https://docs.conduit.rs/turn.html, and https://github.com/element-hq/synapse/blob/develop/docs/turn-howto.md for more details
-      # turn_uris = [
-      #  "turn:your.turn.url?transport=udp"
-      #  "turn:your.turn.url?transport=tcp"
-      # ];
-      # turn_secret = "your secret";
+      listeners = [
+        {
+          port = 8008;
+          bind_addresses = [ "127.0.0.1" ];
+          type = "http";
+          tls = false;
+          x_forwarded = true;
+          resources = [
+            {
+              names = [ "client" "federation" ];
+              compress = true;
+            }
+          ];
+        }
+      ];
+
+      # Database - using SQLite by default, consider PostgreSQL for production
+      # database = {
+      #   name = "psycopg2";
+      #   args = {
+      #     host = "/run/postgresql";
+      #     database = "matrix-synapse";
+      #     user = "matrix-synapse";
+      #   };
+      # };
     };
   };
+
+  # Uncomment for PostgreSQL (recommended for production)
+  # services.postgresql = {
+  #   enable = true;
+  #   ensureDatabases = [ "matrix-synapse" ];
+  #   ensureUsers = [
+  #     {
+  #       name = "matrix-synapse";
+  #       ensureDBOwnership = true;
+  #     }
+  #   ];
+  # };
 }
