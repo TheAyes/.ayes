@@ -1,18 +1,26 @@
-{
-  lib,
-  pkgs,
-  config,
-  ...
-}: {
-  programs.fish.enable = lib.mkDefault true;
+{ lib, pkgs, ... }: {
+  programs = {
+    fish = {
+      enable = lib.mkDefault true;
+      plugins = with pkgs.fishPlugins; [
+        {
+          name = "tide";
+          src = tide.src;
+        }
+        {
+          name = "grc";
+          src = grc.src;
+        }
+      ];
 
-  programs.bash = lib.mkDefault {
-    initExtra = ''
-      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
-      then
-        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-      fi
-    '';
+      interactiveShellInit = ''
+        	  set fish_greeting # Disable greeting
+        	  microfetch
+      '';
+    };
   };
+  home.packages = with pkgs; [
+    grc
+    microfetch
+  ];
 }

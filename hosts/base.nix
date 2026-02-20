@@ -5,6 +5,10 @@
 , ...
 }:
 {
+  imports = [
+    ../profiles/nixos/programs/fish.nix
+  ];
+
   nixpkgs = {
     config = {
       allowUnfree = lib.mkForce true;

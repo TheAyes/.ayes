@@ -38,6 +38,7 @@
       <excludePattern pattern="dalamudVfs.db" />
       <excludePattern pattern="launcher.ini" />
       <excludePattern pattern="*.old" />
+      <excludePattern pattern="*.lock" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

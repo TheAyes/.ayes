@@ -3,4 +3,5 @@
   <component name="AhkProjectSettings">
     <option name="defaultAhkSdk" value="AutoHotkey v2.0.17" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="24" project-jdk-type="JavaSDK" />
 </project>
