@@ -5,6 +5,11 @@
       fsType = "ext4";
     };
 
+    "/nix" = {
+      device = "/dev/disk/by-label/nix";
+      fsType = "ext4";
+    };
+
     "/" = {
       device = "/dev/disk/by-label/nixos";
       fsType = "ext4";
@@ -16,7 +21,7 @@
   boot = {
     loader.grub = {
       enable = true;
-      device = "/dev/sda";
+      device = "/dev/sdb";
     };
 
     initrd.availableKernelModules = [

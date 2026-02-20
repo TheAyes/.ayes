@@ -3,11 +3,16 @@
 }:
 {
   imports = [
-    ./filesystem.nix
-    ./sops.nix
     ../../profiles/nixos/locales/german.nix
     ../../profiles/nixos/services/ssh-server.nix
     ../../profiles/nixos/security/sudo-nopassword.nix
+    ../../profiles/nixos/networking/default.nix
+
+    ./filesystem.nix
+    ./sops.nix
+
+    ./teamspeak-server.nix
+    ./matrix-server.nix
   ];
 
   environment.systemPackages = with pkgs; [

@@ -3,10 +3,11 @@
     enable = true;
 
     settings = {
-    	user = {
-	     	name = "Ayes";
-	      email = "github.com.faculty419@passmail.net";
-	    };
+      user = {
+        name = "Ayes";
+        email = "github.com.faculty419@passmail.net";
+      };
+
       color = {
         ui = "auto";
         branch = "auto";
