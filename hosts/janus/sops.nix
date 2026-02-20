@@ -6,8 +6,7 @@
   ];
 
   sops = {
-    # Host-specific secrets file (uncomment when secrets/janus.yaml exists)
-    # defaultSopsFile = ../../secrets/janus.yaml;
+    defaultSopsFile = ../../secrets/janus.yaml;
 
     secrets = {
       "matrix/registration_secret" = {
