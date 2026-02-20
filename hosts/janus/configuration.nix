@@ -39,10 +39,4 @@
   programs = {
     fish.enable = true;
   };
-
-  services = {
-    matrix-synapse = {
-      enable = true;
-    };
-  };
 }
