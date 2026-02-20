@@ -1,12 +1,17 @@
 { pkgs
+, hostname
 , ...
 }:
 {
+  networking.hostName = hostname;
+
   imports = [
     ../../profiles/nixos/locales/german.nix
     ../../profiles/nixos/services/ssh-server.nix
     ../../profiles/nixos/security/sudo-nopassword.nix
-    ../../profiles/nixos/networking/default.nix
+    ../../profiles/nixos/networking/firewall.nix
+    ../../profiles/nixos/networking/nameservers.nix
+    ../../profiles/nixos/networking/dhcp.nix
 
     ./filesystem.nix
     ./sops.nix
