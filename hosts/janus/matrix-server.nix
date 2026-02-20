@@ -29,12 +29,41 @@
 
   services.postgresql = {
     enable = true;
-    ensureDatabases = [ "matrix-synapse" ];
+    ensureDatabases = [ "matrix-synapse" "mautrix-discord" ];
     ensureUsers = [
       {
         name = "matrix-synapse";
         ensureDBOwnership = true;
       }
+      {
+        name = "mautrix-discord";
+        ensureDBOwnership = true;
+      }
     ];
+  };
+
+  services.mautrix-discord = {
+    enable = true;
+    registerToSynapse = true;
+    settings = {
+      homeserver = {
+        address = "http://localhost:8008";
+        domain = "convene.chat";
+      };
+
+      appservice = {
+        database = {
+          type = "postgres";
+          uri = "postgresql:///mautrix-discord?host=/run/postgresql";
+        };
+      };
+
+      bridge = {
+        permissions = {
+          "convene.chat" = "user";
+          "@ayes:convene.chat" = "admin";
+        };
+      };
+    };
   };
 }
