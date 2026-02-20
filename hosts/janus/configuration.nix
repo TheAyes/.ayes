@@ -15,9 +15,10 @@
 
     ./filesystem.nix
     ./sops.nix
+    ./reverse-proxy.nix
+    ./matrix-server.nix
 
     #./teamspeak-server.nix
-    #./matrix-server.nix
   ];
 
   environment.systemPackages = with pkgs; [
