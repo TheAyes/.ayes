@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   services.matrix-synapse = {
     enable = true;
@@ -66,4 +66,8 @@
       };
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    lottieconverter
+  ];
 }
