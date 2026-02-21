@@ -1,8 +1,8 @@
 ﻿{
   "FileVersion": 2,
   "Identifier": "190765e4-cb81-45ed-a4e5-db6fd3b6c5be",
-  "CreationDate": "2026-01-29T20:22:42.7598311+00:00",
-  "LastEdit": "2026-01-29T20:26:35.3286218+00:00",
+  "CreationDate": "2026-01-29T21:22:42.7598311+01:00",
+  "LastEdit": "2026-02-21T09:24:23.8948051+00:00",
   "Name": "Saints Card Outfit",
   "Description": "",
   "ForcedRedraw": false,
@@ -151,7 +151,7 @@
       "Apply": false
     },
     "Gender": {
-      "Value": 0,
+      "Value": 1,
       "Apply": false
     },
     "BodyType": {
@@ -171,8 +171,8 @@
       "Apply": false
     },
     "Hairstyle": {
-      "Value": 1,
-      "Apply": false
+      "Value": 157,
+      "Apply": true
     },
     "Highlights": {
       "Value": 128,
@@ -271,7 +271,7 @@
       "Apply": false
     },
     "TailShape": {
-      "Value": 1,
+      "Value": 0,
       "Apply": true
     },
     "BustSize": {

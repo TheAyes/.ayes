@@ -128,6 +128,7 @@
     systemPackages = with pkgs; [
       sops
       protonvpn-gui
+      teamspeak6-client
 
       qpwgraph
 
