@@ -113,6 +113,10 @@
   nixpkgs = {
     config = {
       rocmSupport = true;
+      element-web.conf = {
+        show_labs_settings = true;
+        default_theme = "dark";
+      };
     };
     overlays = [ inputs.nix-minecraft.overlay ];
   };
