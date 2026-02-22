@@ -1667,7 +1667,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Splatoon",
           "WorkingPluginId": "cd0c1e95-7320-48b0-98aa-f996f1bf1f3e",
-          "IsEnabled": false
+          "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",

@@ -53,15 +53,21 @@
     git.enable = lib.mkDefault true;
   };
 
-  environment.systemPackages = with pkgs; [
-    git
-    grc
-    micro
-    microfetch
-    linuxHeaders
-    nixfmt
-    zoxide
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      git
+      grc
+      micro
+      microfetch
+      linuxHeaders
+      nixfmt
+      zoxide
+    ];
+
+    sessionVariables = {
+      SOPS_AGE_KEY_FILE = "/var/lib/sops-nix/key.txt";
+    };
+  };
 
   fonts.packages = with pkgs; [
     noto-fonts
