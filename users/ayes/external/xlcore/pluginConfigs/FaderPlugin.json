@@ -32,6 +32,12 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
         "Opacity": 0.0
@@ -53,6 +59,12 @@
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
         "setting": 0,
         "Opacity": 0.5
       },
@@ -84,6 +96,12 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
         "Opacity": 0.0
@@ -92,33 +110,129 @@
     "Hotbar4": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 1,
+        "state": 10,
         "setting": 0,
         "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
       }
     ],
     "Hotbar5": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 1,
+        "state": 10,
         "setting": 0,
         "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
       }
     ],
     "Hotbar6": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 1,
+        "state": 10,
         "setting": 0,
         "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
       }
     ],
     "Hotbar7": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 1,
+        "state": 10,
         "setting": 0,
         "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 21,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 0.0
       }
     ],
     "Hotbar8": [
@@ -137,6 +251,12 @@
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
         "setting": 0,
         "Opacity": 0.5
       },
@@ -168,6 +288,12 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
         "Opacity": 0.0
@@ -189,6 +315,12 @@
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
         "setting": 0,
         "Opacity": 0.5
       },
@@ -222,9 +354,21 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 2,
+        "setting": 0,
+        "Opacity": 0.5
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 1,
         "setting": 0,
-        "Opacity": 0.2
+        "Opacity": 0.0
       }
     ],
     "ContextActionHotbar": [
@@ -276,15 +420,15 @@
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 9,
+        "state": 22,
         "setting": 0,
-        "Opacity": 0.5
+        "Opacity": 1.0
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
-        "state": 0,
+        "state": 9,
         "setting": 0,
-        "Opacity": 1.0
+        "Opacity": 0.5
       },
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",

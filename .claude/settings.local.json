@@ -4,7 +4,8 @@
       "Bash(tree:*)",
       "Bash(git add:*)",
       "Bash(nix flake check:*)",
-      "WebFetch(domain:nixos.org)"
+      "WebFetch(domain:nixos.org)",
+      "WebFetch(domain:wiki.nixos.org)"
     ],
     "deny": [],
     "ask": []
