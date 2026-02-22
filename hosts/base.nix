@@ -65,7 +65,7 @@
     ];
 
     sessionVariables = {
-      SOPS_AGE_KEY_FILE = "/var/lib/sops-nix/key.txt";
+      SOPS_AGE_KEY = "/var/lib/sops-nix/key.txt";
     };
   };
 

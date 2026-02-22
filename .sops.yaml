@@ -14,7 +14,7 @@ creation_rules:
             -   age:
                     - *recovery
                     - *io
-                    #- *janus
+                    - *janus
                     - *leda
 
     # Per-host secrets
@@ -29,9 +29,12 @@ creation_rules:
             -   age:
                     - *recovery
                     - *janus
+                    - *io
+                    - *leda
 
     -   path_regex: secrets/leda\.yaml$
         key_groups:
             -   age:
                     - *recovery
                     - *leda
+                    - *io
