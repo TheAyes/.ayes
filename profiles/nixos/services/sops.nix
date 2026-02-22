@@ -7,10 +7,7 @@
     defaultSopsFormat = "yaml";
 
     age = {
-      # System-level key - available at boot, before user login
-      # Generate with: age-keygen -o /var/lib/sops-nix/key.txt
-      # Use mkDefault so hosts can override during migration
-      keyFile = lib.mkDefault "/var/lib/sops-nix/key.txt";
+      keyFile = "/var/lib/sops-nix/key.txt";
     };
   };
 }
