@@ -13,6 +13,9 @@
         owner = "matrix-synapse";
         group = "matrix-synapse";
       };
+
+      "livekit/key" = {};
+      "livekit/secret" = {};
       "matrix/turn_shared_secret" = {
         owner = "matrix-synapse";
         group = "matrix-synapse";
@@ -22,5 +25,9 @@
         group = "turnserver";
       };
     };
+
+    templates."livekit-keyfile".content = ''
+      ${config.sops.placeholder."livekit/key"}: ${config.sops.placeholder."livekit/secret"}
+    '';
   };
 }

@@ -18,6 +18,7 @@
     ./reverse-proxy.nix
     ./matrix-server.nix
     ./teamspeak-server.nix
+    ./livekit.nix
     #./mail-server.nix
     ./coturn-server.nix
   ];
