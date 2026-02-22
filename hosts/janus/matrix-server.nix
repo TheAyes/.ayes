@@ -67,12 +67,12 @@
     };
   };
 
-  services.livekit = {
+  /*services.livekit = {
     enable = true;
     openFirewall = true;
     settings.room.auto_create = false;
 
-  };
+  };*/
 
   environment.systemPackages = with pkgs; [
     lottieconverter
