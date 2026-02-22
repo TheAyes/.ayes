@@ -17,7 +17,7 @@ if ! nh os "$1" "$DIR" $ASK_FLAG --diff=auto "${@:2}"; then
 	exit 2
 fi
 
-if [[ "${1,,}" != "test" && "${1,,}" != "build" ]]; then
+if [[ "${1,,}" != "test" && "${1,,}" != "build" && "$HOSTNAME" != "janus" ]]; then
 	git add .
 	git commit -m "$MESSAGE"
 fi
