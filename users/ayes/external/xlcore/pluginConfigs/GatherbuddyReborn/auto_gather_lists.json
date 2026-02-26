@@ -176,6 +176,30 @@
     "Description": "",
     "FolderPath": "",
     "Order": 5,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [
+      5113,
+      4,
+      19
+    ],
+    "Quantities": {
+      "5113": 3,
+      "4": 2,
+      "19": 1
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "5113": true,
+      "4": true,
+      "19": true
+    },
+    "Name": "Flawless Band",
+    "Description": "Imported from Artisan",
+    "FolderPath": "",
+    "Order": 6,
     "Enabled": true,
     "Fallback": false
   }

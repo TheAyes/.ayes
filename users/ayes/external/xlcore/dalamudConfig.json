@@ -171,7 +171,25 @@
       "Browsingway",
       "NeatNoter",
       "WExtras",
-      "Tippy"
+      "Tippy",
+      "ZodiacBuddyReborn",
+      "LootView",
+      "LogogramHelper",
+      "Lifestream",
+      "Stylist",
+      "MinimapMarkerMagnitude",
+      "StickyFocusTarget",
+      "GoodFriend",
+      "Chatter",
+      "SillyChat",
+      "TrackyTrack",
+      "TriadBuddy",
+      "NOTED",
+      "LazyGatherer",
+      "PetScale",
+      "QuestShare",
+      "vsatisfy",
+      "Visibility"
     ]
   },
   "DevPluginSettings": {
@@ -1715,6 +1733,18 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Artisan",
           "WorkingPluginId": "dcdb96cf-fda3-48a3-9a21-f26f1d879edc",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GoodFriend",
+          "WorkingPluginId": "3c7c0324-e75e-4061-af5a-5e87c39318e8",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Visibility",
+          "WorkingPluginId": "9bc08ee8-bcce-4894-8d7e-10bbb4339e86",
           "IsEnabled": true
         }
       ]
