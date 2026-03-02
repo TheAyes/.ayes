@@ -43,7 +43,7 @@
       config = {
         credential = {
           helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-          credentialStore = "wincredman";
+          credentialStore = "store";
         };
       };
     };
