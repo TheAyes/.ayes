@@ -40,36 +40,20 @@
 
     git = {
       enable = true;
-      config.credential = {
-        helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-        credentialStore = "gpg";
+      config = {
+        credential = {
+          helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
+          credentialStore = "wincredman";
+        };
       };
     };
-
-    gnupg.agent = {
-      enable = true;
-      pinentryPackage = pkgs.pinentry-curses;
-      enableSSHSupport = true;
-    };
   };
 
-  services = {
-    passSecretService.enable = true;
-  };
+
 
   environment = {
     systemPackages = with pkgs; [
-      icu
-      pass
-      gnupg1
-      meson
-      ninja
-      python315
 
-      nodejs
-      uv
-      powershell
-      claude-code
     ];
 
     shellInit = ''
