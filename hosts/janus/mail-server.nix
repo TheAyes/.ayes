@@ -1,0 +1,5 @@
+{
+  mailserver = {
+    enable = true;
+  };
+}
