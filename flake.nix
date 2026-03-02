@@ -33,6 +33,10 @@
       url = "github:Infinidoge/nix-minecraft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixos-mailserver = {
+      url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -133,6 +137,10 @@
                   ];
                 };
               };
+
+              extraModules = [
+                inputs.nixos-mailserver.nixosModule
+              ];
             };
           };
         };

@@ -18,6 +18,7 @@
     ./reverse-proxy.nix
     ./matrix-server.nix
     ./teamspeak-server.nix
+    ./mail-server.nix
   ];
 
   environment.systemPackages = with pkgs; [
