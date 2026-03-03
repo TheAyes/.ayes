@@ -3,16 +3,17 @@
 
   programs.git = {
     enable = true;
+
     signing = {
       key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyhtn5mvYllUOMfg4MmCNWSl1So1WQNegcWk095YccW ayes@leda";
       signByDefault = true;
     };
+
     settings = {
       gpg = {
         format = "ssh";
+        ssh.allowedSignersFile = "~/.ssh/allowed_signers";
       };
     };
   };
-
-  services.ssh-agent.enable = true;
 }

@@ -40,24 +40,40 @@
 
     git = {
       enable = true;
-      config = {
-        credential = {
-          helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
-          credentialStore = "store";
-        };
+      config.credential = {
+        helper = "${pkgs.git-credential-manager}/bin/git-credential-manager";
+        credentialStore = "gpg";
       };
+    };
+
+    gnupg.agent = {
+      enable = true;
+      pinentryPackage = pkgs.pinentry-curses;
+      enableSSHSupport = true;
     };
   };
 
-
+  services = {
+    passSecretService.enable = true;
+  };
 
   environment = {
     systemPackages = with pkgs; [
+      icu
+      pass
+      gnupg1
+      meson
+      ninja
+      python315
 
+      nodejs
+      uv
+      powershell
+      claude-code
     ];
 
     shellInit = ''
-
+      export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
     '';
 
     shellAliases = {
