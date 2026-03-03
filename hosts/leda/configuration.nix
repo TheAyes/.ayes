@@ -72,10 +72,6 @@
       claude-code
     ];
 
-    shellInit = ''
-      export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-    '';
-
     shellAliases = {
       "rebuild-switch" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh switch && popd";
       "rebuild-test" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh test && popd";
