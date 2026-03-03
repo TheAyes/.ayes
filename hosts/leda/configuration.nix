@@ -46,11 +46,11 @@
       };
     };
 
-    gnupg.agent = {
+    /*gnupg.agent = {
       enable = true;
       pinentryPackage = pkgs.pinentry-curses;
       enableSSHSupport = true;
-    };
+    };*/
   };
 
   services = {
