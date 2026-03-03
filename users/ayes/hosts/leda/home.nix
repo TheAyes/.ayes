@@ -22,4 +22,6 @@
     enableSshSupport = false;
     pinentryPackage = pkgs.pinentry-curses;
   };
+
+  services.ssh-agent.enable = true;
 }

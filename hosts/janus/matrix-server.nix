@@ -39,7 +39,7 @@
 
   services.postgresql = {
     enable = true;
-    ensureDatabases = [ "matrix-synapse" "mautrix-discord" ];
+    ensureDatabases = [ "matrix-synapse" "mautrix-discord" "mautrix-signal" ];
     ensureUsers = [
       {
         name = "matrix-synapse";
@@ -49,29 +49,61 @@
         name = "mautrix-discord";
         ensureDBOwnership = true;
       }
+      {
+        name = "mautrix-signal";
+        ensureDBOwnership = true;
+      }
     ];
   };
 
-  services.mautrix-discord = {
-    enable = true;
-    registerToSynapse = true;
-    settings = {
-      homeserver = {
-        address = "http://localhost:8008";
-        domain = "convene.chat";
-      };
+  services = {
+    mautrix-discord = {
+      enable = true;
+      registerToSynapse = true;
+      settings = {
+        homeserver = {
+          address = "http://localhost:8008";
+          domain = "convene.chat";
+        };
 
-      appservice = {
-        database = {
-          type = "postgres";
-          uri = "postgresql:///mautrix-discord?host=/run/postgresql";
+        appservice = {
+          database = {
+            type = "postgres";
+            uri = "postgresql:///mautrix-discord?host=/run/postgresql";
+          };
+        };
+
+        bridge = {
+          permissions = {
+            "convene.chat" = "user";
+            "@ayes:convene.chat" = "admin";
+          };
         };
       };
 
-      bridge = {
-        permissions = {
-          "convene.chat" = "user";
-          "@ayes:convene.chat" = "admin";
+    };
+
+    mautrix-signal = {
+      enable = true;
+      registerToSynapse = true;
+      settings = {
+        homeserver = {
+          address = "http://localhost:8008";
+          domain = "convene.chat";
+        };
+
+        appservice = {
+          database = {
+            type = "postgres";
+            uri = "postgresql:///mautrix-signal?host=/run/postgresql";
+          };
+        };
+
+        bridge = {
+          permissions = {
+            "convene.chat" = "user";
+            "@ayes:convene.chat" = "admin";
+          };
         };
       };
     };
@@ -86,4 +118,6 @@
   environment.systemPackages = with pkgs; [
     lottieconverter
   ];
+
+  users.users.matrix-synapse.extraGroups = [ "mautrix-discord" "mautrix-signal" ];
 }

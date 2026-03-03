@@ -1,8 +1,8 @@
 # Shared sops-nix configuration for all hosts
 # Each host should set sops.defaultSopsFile and sops.secrets as needed
-{ config, lib, ... }:
+{ ... }:
 
-{
+rec {
   sops = {
     defaultSopsFormat = "yaml";
 
@@ -12,6 +12,6 @@
   };
 
   environment.sessionVariables = {
-    SOPS_AGE_KEY_FILE = "/var/lib/sops-nix/key.txt";
+    SOPS_AGE_KEY_FILE = sops.age.keyFile;
   };
 }
