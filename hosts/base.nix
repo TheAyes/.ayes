@@ -66,7 +66,6 @@
 
     sessionVariables = {
       EDITOR = pkgs.micro;
-      SOPS_AGE_KEY = "/var/lib/sops-nix/key.txt";
     };
   };
 
