@@ -13,6 +13,14 @@
         owner = "matrix-synapse";
         group = "matrix-synapse";
       };
+      "matrix/turn_shared_secret" = {
+        owner = "matrix-synapse";
+        group = "matrix-synapse";
+      };
+      "coturn/static_auth_secret" = {
+        owner = "turnserver";
+        group = "turnserver";
+      };
     };
   };
 }

@@ -22,9 +22,19 @@
           ];
         }
       ];
+
+      turn_uris = [
+        "turn:turn.convene.chat:3478?transport=udp"
+        "turn:turn.convene.chat:3478?transport=tcp"
+      ];
+      turn_user_lifetime = "1h";
+      turn_allow_guests = false;
     };
 
-    extraConfigFiles = [ config.sops.secrets."matrix/synapse_secrets".path ];
+    extraConfigFiles = [
+      config.sops.secrets."matrix/synapse_secrets".path
+      config.sops.secrets."matrix/turn_shared_secret".path
+    ];
   };
 
   services.postgresql = {
