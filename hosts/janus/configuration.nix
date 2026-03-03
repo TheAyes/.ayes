@@ -19,6 +19,7 @@
     ./matrix-server.nix
     ./teamspeak-server.nix
     ./mail-server.nix
+    ./coturn-server.nix
   ];
 
   environment.systemPackages = with pkgs; [
