@@ -5,7 +5,7 @@
     enable = true;
 
     signing = {
-      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyhtn5mvYllUOMfg4MmCNWSl1So1WQNegcWk095YccW ayes@leda";
+      key = "~/.ssh/id_ed25519.pub";
       signByDefault = true;
     };
 
@@ -19,7 +19,7 @@
 
   services.gpg-agent = {
     enable = true;
-    enableSshSupport = true;
+    enableSshSupport = false;
     pinentryPackage = pkgs.pinentry-curses;
   };
 }
