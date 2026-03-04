@@ -35,14 +35,14 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 70,
+      "Level": 71,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }
   },
   "Gil": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib",
-    "33777197235712755": 8633,
+    "33777197235712755": 0,
     "0": 0,
     "33777197235723971": 0
   },
