@@ -1,7 +1,7 @@
 {
   "$type": "YesAlready.Configuration, YesAlready",
   "Version": 2,
-  "Enabled": false,
+  "Enabled": true,
   "MessageChannel": 1,
   "ForcedYesKey": 0,
   "ForcedTalkKey": 0,
@@ -38,7 +38,7 @@
         "ZoneText": "",
         "IsYes": true,
         "Enabled": true,
-        "Text": "/^(Travel)|(Return)|(Journey)|(Teleport) to .+/"
+        "Text": "^(?!Accept )((Travel)|(Return)|(Journey)|(Teleport)) to .+"
       },
       {
         "$type": "YesAlready.TextEntryNode, YesAlready",

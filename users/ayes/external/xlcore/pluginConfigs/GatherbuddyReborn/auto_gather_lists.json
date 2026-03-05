@@ -29,7 +29,7 @@
     "Description": "",
     "FolderPath": "",
     "Order": 1,
-    "Enabled": false,
+    "Enabled": true,
     "Fallback": false
   },
   {
@@ -200,7 +200,7 @@
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 6,
-    "Enabled": true,
+    "Enabled": false,
     "Fallback": false
   }
 ]

@@ -84,7 +84,7 @@
     };
 
     mautrix-signal = {
-      enable = true;
+      enable = false;
       registerToSynapse = true;
       settings = {
         homeserver = {
