@@ -11,7 +11,7 @@
         '';
       };
 
-      "turn.convene.chat" = {
+      "http://turn.convene.chat" = {
         extraConfig = ''
           reverse_proxy /.well-known/acme-challenge/* http://127.0.0.1:8402
         '';
