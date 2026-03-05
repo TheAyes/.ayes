@@ -11,6 +11,12 @@
         '';
       };
 
+      "turn.convene.chat" = {
+        extraConfig = ''
+          reverse_proxy /.well-known/acme-challenge/* http://127.0.0.1:8402
+        '';
+      };
+
       # .well-known for federation and LiveKit discovery
       "convene.chat" = {
         extraConfig = ''
