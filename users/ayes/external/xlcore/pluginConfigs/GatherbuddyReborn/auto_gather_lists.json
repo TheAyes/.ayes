@@ -181,26 +181,35 @@
   },
   {
     "ItemIds": [
-      5113,
+      5343,
+      6,
+      5524,
+      5,
       4,
-      19
+      5113
     ],
     "Quantities": {
-      "5113": 3,
-      "4": 2,
-      "19": 1
+      "5343": 6,
+      "6": 24,
+      "5524": 1,
+      "5": 2,
+      "4": 11,
+      "5113": 3
     },
     "PrefferedLocations": {},
     "EnabledItems": {
-      "5113": true,
+      "5343": true,
+      "6": true,
+      "5524": true,
+      "5": true,
       "4": true,
-      "19": true
+      "5113": true
     },
-    "Name": "Flawless Band",
+    "Name": "Velveteen Gaskins",
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 6,
-    "Enabled": false,
+    "Enabled": true,
     "Fallback": false
   }
 ]

@@ -10,7 +10,7 @@
       "OwnerId": null,
       "Name": "Meira Kisaragi",
       "WorldId": 402,
-      "ClassJobId": 33,
+      "ClassJobId": 17,
       "Level": 100,
       "DisplayOrder": 0,
       "RetainerTown": null
@@ -23,7 +23,7 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 78,
+      "Level": 81,
       "DisplayOrder": 0,
       "RetainerTown": 4
     },
@@ -35,7 +35,7 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 71,
+      "Level": 75,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }
@@ -52,13 +52,19 @@
   },
   "BooleanSettings": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-    "RetainerOverlayCollapsed": false
+    "RetainerOverlayCollapsed": false,
+    "HighlightRetainerSellList": true
   },
   "EnumSettings": {
     "UndercutComparison": {
       "Type": "AllaganMarket.Settings.UndercutComparison",
       "Assembly": "AllaganMarket",
       "Value": "MatchingQuality"
+    },
+    "ViewMode": {
+      "Type": "AllaganMarket.Settings.ViewMode",
+      "Assembly": "AllaganMarket",
+      "Value": "Grid"
     }
   },
   "IsDirty": false,
