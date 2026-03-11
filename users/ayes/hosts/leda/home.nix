@@ -1,5 +1,8 @@
-{ pkgs, ... }: {
-  home.packages = with pkgs; [ claude-code ];
+{ pkgs, lib, ... }: {
+  home = {
+    packages = with pkgs; [ claude-code ];
+    sessionPath = [ "${pkgs.icu}/lib" ];
+  };
 
   programs.git = {
     enable = true;
