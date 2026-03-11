@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "14.0.3.0",
+  "LastVersion": "14.0.4.0",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -17,50 +17,42 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://love.puni.sh/ment.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://github.com/NightmareXIV/MyDalamudPlugins/raw/main/pluginmaster.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/UnknownX7/DalamudPluginRepo/master/pluginmaster.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://aetherment.sevii.dev/plugin",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/Ottermandias/SeaOfStars/main/repo.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/FFXIV-CombatReborn/CombatRebornRepo/main/pluginmaster.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://puni.sh/api/repository/veyn",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       },
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/marzent/IINACT/main/repo.json",
-        "IsEnabled": true,
-        "Name": null
+        "IsEnabled": true
       }
     ]
   },
@@ -189,7 +181,8 @@
       "PetScale",
       "QuestShare",
       "vsatisfy",
-      "Visibility"
+      "Visibility",
+      "DalamudMinesweeper"
     ]
   },
   "DevPluginSettings": {
@@ -1452,8 +1445,12 @@
   },
   "DefaultProfile": {
     "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1, Dalamud",
-    "b": false,
     "p": 0,
+    "e4c": false,
+    "pc": {
+      "$type": "System.Collections.Generic.List`1[[Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Character, Dalamud]], System.Private.CoreLib",
+      "$values": []
+    },
     "e": true,
     "c": 0,
     "Plugins": {
@@ -1746,6 +1743,12 @@
           "InternalName": "Visibility",
           "WorkingPluginId": "9bc08ee8-bcce-4894-8d7e-10bbb4339e86",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "DalamudMinesweeper",
+          "WorkingPluginId": "c5719dac-f098-4de7-ba26-0a0d06e63fd4",
+          "IsEnabled": true
         }
       ]
     },
@@ -1754,6 +1757,7 @@
   },
   "ProfilesEnabled": false,
   "ProfilesHasSeenTutorial": false,
+  "ProfilesEnableCharacters": false,
   "DefaultUiPreset": {
     "$type": "Dalamud.Interface.Windowing.Persistence.PresetModel, Dalamud",
     "id": "00000000-0000-0000-0000-000000000000",
@@ -1808,6 +1812,7 @@
     "X": 1.0,
     "Y": 1.0
   },
+  "AllowSeasonalEvents": true,
   "DalamudBetaKey": null,
   "DalamudBetaKind": null,
   "UsedBadgePasswords": {
