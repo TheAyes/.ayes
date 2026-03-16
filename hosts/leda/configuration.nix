@@ -26,6 +26,7 @@
   programs = {
     fish.enable = true;
 
+    dconf.enable = true;
     direnv = {
       enable = true;
       nix-direnv.enable = true;
