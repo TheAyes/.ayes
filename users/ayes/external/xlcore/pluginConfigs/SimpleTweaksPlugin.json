@@ -65,7 +65,9 @@
     "RefreshMarketPrices",
     "UiAdjustments@ScenarioProgressionDisplay",
     "UiAdjustments@TimerOnDutyWaiting",
-    "PhantomJobCommand"
+    "PhantomJobCommand",
+    "SyncCrafterBars",
+    "SyncGathererBars"
   ],
   "HiddenTweaks": [
     "UiAdjustments@SubmarineDestinationLetters"

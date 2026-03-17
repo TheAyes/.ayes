@@ -326,6 +326,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-bitwig": {
+      "locked": {
+        "lastModified": 1773243648,
+        "narHash": "sha256-ins8qGoplqJqdH+GuGL5ORFjGhtc50sBMcKF8+Z3pk8=",
+        "owner": "so-lar-is",
+        "repo": "nixpkgs",
+        "rev": "b193d05f3da31bbe906a74ca456908156eb466eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "so-lar-is",
+        "ref": "add-bitwig-studio6",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-lib": {
       "locked": {
         "lastModified": 1772328832,
@@ -365,6 +381,7 @@
         "nixos-mailserver": "nixos-mailserver",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-bitwig": "nixpkgs-bitwig",
         "solaar": "solaar",
         "sops-nix": "sops-nix",
         "zen-browser": "zen-browser"
