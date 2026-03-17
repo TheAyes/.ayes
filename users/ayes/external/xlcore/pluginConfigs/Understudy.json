@@ -1,0 +1,70 @@
+{
+  "$type": "Understudy.Configuration, Understudy",
+  "Version": 1,
+  "LastChangelogVersion": "1.0.0",
+  "IsConfigWindowMovable": true,
+  "ShowJobCategoryInDashboard": true,
+  "CompactMode": false,
+  "VerboseLogging": false,
+  "ReorderUnlocked": false,
+  "Characters": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[Understudy.Models.CharacterData, Understudy]], System.Private.CoreLib",
+    "18014598541772518": {
+      "$type": "Understudy.Models.CharacterData, Understudy",
+      "Name": "Meira Kisaragi",
+      "WorldId": 402,
+      "ContentId": 18014598541772518,
+      "Tomestones": {
+        "$type": "Understudy.Models.TomestoneData, Understudy",
+        "Mnemonics": 1035,
+        "MnemonicsWeekly": 0,
+        "MnemonicsCap": 2000,
+        "MnemonicsWeeklyCap": 450,
+        "Mathematics": 2000,
+        "MathematicsWeekly": 0,
+        "MathematicsCap": 2000,
+        "LastUpdated": "2026-03-17T17:33:08.1711852Z"
+      },
+      "RaidProgress": {
+        "$type": "Understudy.Models.RaidData, Understudy",
+        "M1": false,
+        "M2": false,
+        "M3": false,
+        "M4": false,
+        "LastUpdated": "2026-03-17T17:33:08.1711943Z"
+      },
+      "GearSets": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Understudy.Models.GearSetData, Understudy]], System.Private.CoreLib"
+      },
+      "BisSets": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[Understudy.Models.BiSData, Understudy]], System.Private.CoreLib"
+      },
+      "Miscellany": {
+        "$type": "Understudy.Models.MiscellanyData, Understudy",
+        "BookCounts": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+          "M4": 0,
+          "M2": 2,
+          "M3": 0,
+          "M1": 3
+        },
+        "TwineCount": 0,
+        "GlazeCount": 0,
+        "SolventCount": 0,
+        "UniversalTomestoneCount": 0,
+        "CofferCounts": {
+          "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+        },
+        "LastUpdated": "2026-03-17T17:33:08.1712166Z"
+      },
+      "FrameImageId": 0,
+      "FrameOpacity": 0.6,
+      "LoadoutOrder": []
+    }
+  },
+  "CharacterOrder": [
+    18014598541772518
+  ],
+  "DashboardFrameImageId": 0,
+  "DashboardFrameOpacity": 0.6
+}

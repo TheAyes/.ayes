@@ -26,7 +26,7 @@
       xivlauncher
 
       # Music Production
-      bitwig-studio
+      #bitwig-studio
 
       godot-mono
 
@@ -47,6 +47,7 @@
   programs = {
     bitwig = {
       enable = true;
+      package = inputs.nixpkgs-bitwig.legacyPackages."${system}".bitwig-studio6;
       extraPackages = with pkgs; [
         yabridge
         yabridgectl
