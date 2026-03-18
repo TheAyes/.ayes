@@ -38,6 +38,10 @@
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    /*noita-entangled-worlds = {
+      url = "github:IntQuant/noita_entangled_worlds";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };*/
   };
 
   outputs =
