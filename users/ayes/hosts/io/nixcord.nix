@@ -3,7 +3,7 @@
   programs.nixcord = {
     enable = true;
     discord = {
-      #enable = true;
+      enable = false;
       package = pkgs.discord-canary;
 
       vencord.enable = false;

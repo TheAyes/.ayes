@@ -24,6 +24,7 @@
 
       # Gaming
       xivlauncher
+      #inputs.noita-entangled-worlds.packages."${pkgs.stdenv.hostPlatform.system}".default
 
       # Music Production
       #bitwig-studio
