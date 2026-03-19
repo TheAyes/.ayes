@@ -1,0 +1,27 @@
+{
+  "$type": "Browsingway.Configuration, Browsingway",
+  "Inlays": [
+    {
+      "$type": "Browsingway.InlayConfiguration, Browsingway",
+      "ClickThrough": false,
+      "Framerate": 60,
+      "Guid": "612cd993-9021-446e-b8e5-7c54182fa3da",
+      "Hidden": false,
+      "Locked": false,
+      "Name": "DPS",
+      "Opacity": 100.0,
+      "TypeThrough": true,
+      "Url": "http://proxy.iinact.com/overlay/horizoverlay/?HOST_PORT=ws://127.0.0.1:10501",
+      "Zoom": 100.0,
+      "Disabled": false,
+      "CustomCss": "",
+      "Muted": false,
+      "ActOptimizations": false,
+      "Fullscreen": false,
+      "HideOutOfCombat": false,
+      "HideInPvP": true,
+      "HideDelay": 0
+    }
+  ],
+  "Version": 0
+}

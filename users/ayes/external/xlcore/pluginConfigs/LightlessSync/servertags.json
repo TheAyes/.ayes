@@ -3,7 +3,9 @@
     "wss://sync.lightless-sync.org": {
       "OpenPairTags": [
         "Lightless_Unpaired",
-        "__folder_syncshells"
+        "__folder_syncshells",
+        "Lightless_Online",
+        "Lightless_Offline"
       ],
       "ServerAvailablePairTags": [],
       "UidServerPairedUserTags": {}

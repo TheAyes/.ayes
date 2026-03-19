@@ -23,6 +23,7 @@ in
       package = cursorPackage;
       size = cursorSize;
     };
+    gtk4.theme = null;
   };
   qt = {
     enable = true;

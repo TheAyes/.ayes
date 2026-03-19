@@ -12,3 +12,7 @@ build/
 out/
 
 external/
+
+.idea/
+.zed/
+certificates/
