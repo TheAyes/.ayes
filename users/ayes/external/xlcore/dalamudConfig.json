@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "14.0.4.1",
+  "LastVersion": "14.0.4.3",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -52,6 +52,11 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/marzent/IINACT/main/repo.json",
+        "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://repo.lightless-sync.org/",
         "IsEnabled": true
       }
     ]
@@ -194,7 +199,21 @@
       "CurrencySpender",
       "AetherialArena",
       "RezoPlugin",
-      "Distance"
+      "Distance",
+      "BetterPartyFinder",
+      "LightlessSync",
+      "Honorific",
+      "autoSweep",
+      "PeepingTom",
+      "PetRenamer",
+      "Sightseeingway",
+      "SimpleHeels",
+      "Cammy",
+      "CustomizePlus",
+      "MacroChain",
+      "MogMogCheck",
+      "Moodles",
+      "FATEhelper"
     ]
   },
   "DevPluginSettings": {
@@ -1764,9 +1783,33 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Understudy",
-          "WorkingPluginId": "ec448e8e-fde2-4e81-b7d4-109f5f855e76",
+          "InternalName": "Browsingway",
+          "WorkingPluginId": "620c173a-af42-44cd-a421-be17e7c504a1",
           "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "LightlessSync",
+          "WorkingPluginId": "b35876fa-114a-448f-bc4b-ffa7615d317b",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Honorific",
+          "WorkingPluginId": "7686c3a8-db50-4a10-99d4-c34289d7894f",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PetRenamer",
+          "WorkingPluginId": "05ca400b-c7ce-4059-9b10-cb2792cb79b5",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "CustomizePlus",
+          "WorkingPluginId": "28a303bc-5522-40c3-98bd-95ec137c1bca",
+          "IsEnabled": true
         }
       ]
     },

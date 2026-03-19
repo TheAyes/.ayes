@@ -1,15 +1,11 @@
 ﻿{
-  "Version": 7,
-  "IncognitoMode": false,
+  "Version": 12,
   "UnlockDetailMode": true,
   "ShowDesignQuickBar": false,
   "LockDesignQuickBar": false,
   "LockMainWindow": false,
-  "SelectedTab": 3,
-  "SelectedDesign": "190765e4-cb81-45ed-a4e5-db6fd3b6c5be",
+  "SelectedMainTab": 0,
   "SelectedQuickDesign": "190765e4-cb81-45ed-a4e5-db6fd3b6c5be",
-  "LastSeenVersion": 32,
-  "CurrentDesignSelectorWidth": 200.0,
-  "DesignSelectorMinimumScale": 0.1,
-  "DesignSelectorMaximumScale": 0.5
+  "LastSeenVersion": 34,
+  "IncognitoMode": false
 }

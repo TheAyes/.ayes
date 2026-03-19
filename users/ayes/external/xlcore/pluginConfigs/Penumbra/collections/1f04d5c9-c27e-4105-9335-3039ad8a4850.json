@@ -5,7 +5,7 @@
   "Settings": {
     "Adventurer's Bedhair (Hat compatable)": {
       "Settings": {
-        "Ear choices": 0
+        "Ear choices": 1
       },
       "Priority": 10,
       "Enabled": true
@@ -18,7 +18,7 @@
         "Earthly Star V2 // Divination Adj": 1,
         "Skill Icons": 0,
         "Weapon VFX ": 1,
-        "VFX": 92268671
+        "VFX": 91744383
       },
       "Priority": 10,
       "Enabled": true

@@ -33,5 +33,7 @@ in
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
+
+    gtk4.theme = null;
   };
 }

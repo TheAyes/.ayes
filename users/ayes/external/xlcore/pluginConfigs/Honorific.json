@@ -48,7 +48,9 @@
         },
         "CustomTitles": [],
         "UseRandom": false,
-        "RandomOnZoneChange": false
+        "RandomOnZoneChange": false,
+        "RandomOnTimer": false,
+        "RandomTimerDuration": 10
       }
     }
   },

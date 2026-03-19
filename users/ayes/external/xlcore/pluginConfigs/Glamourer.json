@@ -30,6 +30,12 @@
   "PreventRandomRepeats": false,
   "PcpFolder": "PCP",
   "PcpColor": "",
+  "RememberActorFilter": false,
+  "RememberDesignFilter": false,
+  "RememberNpcFilter": true,
+  "RememberAutomationFilter": false,
+  "RememberUnlocksFilters": true,
+  "RoughnessSetting": 0,
   "HideDesignPanel": 0,
   "AutoExpandDesignPanel": 0,
   "DefaultDesignSettings": {
@@ -40,37 +46,21 @@
     "Locked": false
   },
   "HeightDisplayType": 1,
-  "ShowRename": 4,
   "ToggleQuickDesignBar": {
-    "Hotkey": 0,
-    "Modifier1": {
-      "Modifier": 0
-    },
-    "Modifier2": {
-      "Modifier": 0
-    }
+    "Hotkey": 0
   },
   "DeleteDesignModifier": {
-    "Modifier1": {
-      "Modifier": 17
-    },
-    "Modifier2": {
-      "Modifier": 16
-    }
+    "Modifier1": 17,
+    "Modifier2": 16
   },
   "IncognitoModifier": {
-    "Modifier1": {
-      "Modifier": 17
-    },
-    "Modifier2": {
-      "Modifier": 0
-    }
+    "Modifier1": 17
   },
   "ChangeLogDisplayType": 0,
   "QdbButtons": 271,
   "Codes": [],
   "DebugMode": false,
-  "Version": 8,
+  "Version": 12,
   "Colors": {
     "NormalDesign": 4294967295,
     "CustomizationDesign": 4290773184,
@@ -102,5 +92,9 @@
     "ContainsItemsDisabled": 2158031008,
     "AdvancedDyeActive": 4284014079
   },
+  "GroupUnlocksByModel": false,
+  "GroupUnlocksIgnoreVariants": false,
+  "KeepItemComboFilter": true,
+  "ShowRename": 4,
   "SortMode": "FoldersFirstT"
 }

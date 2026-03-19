@@ -73,13 +73,10 @@
       ],
       "JobSpecificCache": {
         "33": [
-          "vfx/common/eff/wp_astro1h.avfx",
-          "vfx/common/eff/wp_astro0h.avfx",
           "vfx/action/ab_2ast026/eff/abi_as026t0h.avfx",
           "vfx/action/ab_2ast018/eff/abi_as018c0h.avfx",
           "vfx/common/eff/cmas_castx0h.avfx",
           "vfx/action/mgc_ast017/eff/mgc_as017t0p.avfx",
-          "vfx/action/ab_quickcast1/eff/abi_quic1c0h.avfx",
           "vfx/action/mgc_ast_dot3/eff/abi_as023t0h.avfx",
           "vfx/action/ab_play_fire1/eff/abi_play1c0h.avfx",
           "vfx/action/ab_play_fire1/eff/abi_play1t0h.avfx",
@@ -98,7 +95,6 @@
           "vfx/action/ab_2ast024/eff/abi_as024c0h.avfx",
           "vfx/action/ab_2ast024/eff/abi_as024t0h.avfx",
           "vfx/common/eff/abi_as024t1h.avfx",
-          "vfx/action/mgc_ast029/eff/mgc_as029c1p.avfx",
           "vfx/action/ab_2ast025/eff/abi_as025t0h.avfx",
           "vfx/action/mgc_ast_heal3/eff/mgc_ashl3t1h.avfx",
           "vfx/action/mgc_ast_heal3/eff/mgc_ashl3t0h.avfx",
@@ -108,7 +104,6 @@
           "vfx/action/ab_play_stone1/eff/abi_play2t0h.avfx",
           "vfx/action/ab_2ast030/eff/ab_2gl030_c0p.avfx",
           "vfx/action/ab_2ast030/eff/ab_2gl030_t0p.avfx",
-          "vfx/action/mgc_ast_heal2/eff/mgc_ashl2t0h.avfx",
           "vfx/common/eff/lmas_castx1h.avfx",
           "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c2h.avfx",
           "vfx/limitbreak/lbk_astro_lv3/eff/lbk_astro_lv3c4h.avfx",
@@ -118,7 +113,10 @@
           "vfx/action/ab_play_thunder1/eff/abi_play6c0h.avfx",
           "vfx/action/ab_play_thunder1/eff/abi_play6t0h.avfx",
           "vfx/action/ab_play_wind1/eff/abi_play3c0h.avfx",
-          "vfx/action/mgc_ast022/eff/mgc_as022t0p.avfx"
+          "vfx/action/mgc_ast022/eff/mgc_as022t0p.avfx",
+          "vfx/action/ab_2ast033/eff/ab_2gl_ast033t0p.avfx",
+          "vfx/common/eff/abi_as027c1h.avfx",
+          "vfx/cut/duneov/duneov00130/texture/bl_line_01_c.atex"
         ],
         "17": []
       },

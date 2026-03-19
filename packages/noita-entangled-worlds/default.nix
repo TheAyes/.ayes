@@ -1,7 +1,0 @@
-let
-  nixpkgs = fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-24.05";
-  pkgs = import nixpkgs { config = { }; overlays = [ ]; };
-in
-{
-  noita-entangled-worlds = pkgs.callPackage ./noita-entangled-worlds.nix { };
-}

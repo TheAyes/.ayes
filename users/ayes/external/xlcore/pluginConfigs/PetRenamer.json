@@ -1,9 +1,11 @@
 {
   "$type": "PetRenamer.Configuration, PetRenamer",
+  "serializableUsersV3": [],
   "downloadProfilePictures": true,
   "languageSettings": 0,
   "showColours": 0,
   "showCommandFeedback": true,
+  "showNotifications": true,
   "showOnNameplates": true,
   "showOnCastbars": true,
   "showInBattleChat": true,
@@ -26,14 +28,13 @@
   "debugModeActive": false,
   "openDebugWindowOnStart": false,
   "debugShowChatCode": false,
-  "serializableUsersV3": [],
   "Version": 11,
   "SerializableUsersV6": [
     {
       "$type": "PN.S.SerializableUserV6, PetRenamer",
       "ContentID": 18014598541772518,
       "Name": "Meira Kisaragi",
-      "Homeworld": 66,
+      "Homeworld": 402,
       "SoftSkeletonData": [
         411,
         417,

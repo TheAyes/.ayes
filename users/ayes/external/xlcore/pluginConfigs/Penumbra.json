@@ -4,17 +4,19 @@
     "AssignCollection": true,
     "AllowIpc": true,
     "DisableHandling": false,
-    "FolderName": "PCP"
+    "FolderName": "PCP",
+    "PcpExtension": ".pcp"
   },
   "MinimumSize": {
     "X": 900.0,
     "Y": 675.0
   },
-  "Version": 9,
+  "Version": 13,
   "ChangeLogDisplayType": 0,
   "EnableMods": true,
   "ModDirectory": "Z:\\mnt\\games\\FinalFantasyXIV-Mods",
   "ExportDirectory": "",
+  "WatchDirectory": "",
   "UseCrashHandler": null,
   "OpenWindowAtStart": false,
   "HideUiInGPose": false,
@@ -35,12 +37,15 @@
   "HideRedrawBar": false,
   "HideMachinistOffhandFromChangedItems": true,
   "DefaultTemporaryMode": false,
+  "EnableDirectoryWatch": false,
+  "EnableAutomaticModImport": false,
+  "AutoDismissModImportSuccessReports": true,
+  "AlwaysShowDetailedModImport": false,
+  "PreventExportLoopback": true,
   "EnableCustomShapes": true,
-  "ShowRename": 4,
   "ChangedItemDisplay": 0,
   "OptionGroupCollapsibleMin": 5,
   "DebugMode": true,
-  "MaxResourceWatcherRecords": 1024,
   "OpenFoldersByDefault": false,
   "SingleGroupRadioMax": 2,
   "DefaultImportFolder": "",
@@ -48,20 +53,11 @@
   "QuickMoveFolder2": "",
   "QuickMoveFolder3": "",
   "DeleteModModifier": {
-    "Modifier1": {
-      "Modifier": 17
-    },
-    "Modifier2": {
-      "Modifier": 16
-    }
+    "Modifier1": 17,
+    "Modifier2": 16
   },
   "IncognitoModifier": {
-    "Modifier1": {
-      "Modifier": 17
-    },
-    "Modifier2": {
-      "Modifier": 0
-    }
+    "Modifier1": 17
   },
   "PrintSuccessfulCommandsToChat": true,
   "AutoDeduplicateOnImport": true,
@@ -74,7 +70,9 @@
   "AlwaysOpenDefaultImport": false,
   "KeepDefaultMetaChanges": false,
   "DefaultModAuthor": "Unknown",
+  "DefaultEditWindowModPinned": true,
   "EditRawTileTransforms": false,
+  "WholePairSelectorAlwaysHighlights": false,
   "HdrRenderTargets": true,
   "Colors": {
     "EnabledMod": 4294967295,
@@ -109,5 +107,14 @@
     "ChangedItemPreferenceStar": 822083583,
     "NoTint": 0
   },
+  "PreferredEditorFactories": {},
+  "IncludeShpkInSwap": false,
+  "RememberModFilters": true,
+  "RememberCollectionFilters": true,
+  "RememberOnScreenFilters": true,
+  "RememberChangedItemFilters": true,
+  "RememberEffectiveChangesFilters": true,
+  "RememberResourceManagerFilters": true,
+  "ShowRename": 4,
   "SortMode": "FoldersFirstT"
 }

@@ -1,6 +1,7 @@
-{ pkgs
-, inputs
-, ...
+{
+  pkgs,
+  inputs,
+  ...
 }:
 {
   imports = [
@@ -127,7 +128,7 @@
   environment = {
     systemPackages = with pkgs; [
       sops
-      protonvpn-gui
+      proton-vpn
       teamspeak6-client
 
       qpwgraph
