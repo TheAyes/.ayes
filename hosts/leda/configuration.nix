@@ -14,14 +14,13 @@
     startMenuLaunchers = true;
 
     defaultUser = "ayes";
-    interop.includePath = false;
+    #interop.includePath = true;
 
     wslConf = {
       network = {
         hostname = hostname;
-        generateResolvConf = false;
       };
-      interop.enabled = false;
+      #interop.enabled = true;
     };
   };
 

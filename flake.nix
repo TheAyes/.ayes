@@ -8,7 +8,7 @@
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs.follows = "nixpkgs";
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-wsl = {
       url = "github:nix-community/NixOS-WSL/main";
