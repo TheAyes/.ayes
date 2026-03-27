@@ -88,13 +88,14 @@
                               ${username} = {
                                 imports =
                                   # Base user config
-                                  makeOptionalImport (config.host-manager.userDir + /base.nix)
+                                  makeOptionalImport (config.host-manager.userDir + /shared/base.nix)
                                   # Common user config (across all machines)
                                   ++ [
                                     (config.host-manager.userDir + /${username}/home.nix)
                                   ]
-                                  # Host specific user config)
-                                  ++ makeOptionalImport (config.host-manager.hostDir + /${hostname}/base-user.nix)
+                                  # Shared user config for all users on this host
+                                  ++ makeOptionalImport (config.host-manager.userDir + /shared/${hostname}/default.nix)
+                                  # Host specific user config
                                   ++ makeOptionalImport (config.host-manager.userDir + /${username}/hosts/${hostname}/default.nix);
                               };
                             }

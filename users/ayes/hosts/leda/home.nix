@@ -10,6 +10,7 @@
     signing = {
       key = "~/.ssh/id_ed25519.pub";
       signByDefault = true;
+      format = null;
     };
 
     settings = {
@@ -23,7 +24,7 @@
   services.gpg-agent = {
     enable = true;
     enableSshSupport = false;
-    pinentryPackage = pkgs.pinentry-curses;
+    pinentry.package = pkgs.pinentry-curses;
   };
 
   services.ssh-agent.enable = true;
