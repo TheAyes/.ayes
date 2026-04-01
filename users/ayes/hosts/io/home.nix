@@ -22,14 +22,14 @@
   home = {
     packages = with pkgs; [
       zed-editor
+      jetbrains.webstorm
+
+      claude-code
+      godot-mono
 
       # Gaming
       xivlauncher
       #inputs.noita-entangled-worlds.packages."${pkgs.stdenv.hostPlatform.system}".default
-
-      godot-mono
-
-      claude-code
 
       dotnetCorePackages.dotnet_9.sdk
 
