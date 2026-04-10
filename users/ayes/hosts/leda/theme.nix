@@ -23,6 +23,7 @@ in
       package = cursorPackage;
       size = cursorSize;
     };
+
     gtk4.theme = null;
   };
   qt = {
@@ -33,7 +34,5 @@ in
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
     };
-
-    gtk4.theme = null;
   };
 }
