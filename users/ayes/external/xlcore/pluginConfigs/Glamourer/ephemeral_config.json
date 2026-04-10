@@ -1,10 +1,10 @@
-﻿{
-  "Version": 12,
+{
+  "Version": 13,
   "UnlockDetailMode": true,
   "ShowDesignQuickBar": false,
   "LockDesignQuickBar": false,
   "LockMainWindow": false,
-  "SelectedMainTab": 0,
+  "SelectedMainTab": 5,
   "SelectedQuickDesign": "190765e4-cb81-45ed-a4e5-db6fd3b6c5be",
   "LastSeenVersion": 34,
   "IncognitoMode": false

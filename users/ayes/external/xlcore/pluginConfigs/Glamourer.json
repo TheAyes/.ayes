@@ -1,4 +1,4 @@
-﻿{
+{
   "AttachToPcp": true,
   "UseRestrictedGearProtection": false,
   "OpenFoldersByDefault": false,
@@ -7,7 +7,8 @@
   "HideApplyCheckmarks": false,
   "SmallEquip": false,
   "UnlockedItemMode": false,
-  "DisableFestivals": 1,
+  "FestivalMode": 0,
+  "LastFestivalPopup": "2026-02-26",
   "EnableGameContextMenu": true,
   "HideWindowInCutscene": false,
   "ShowAutomationSetEditing": true,
@@ -60,7 +61,7 @@
   "QdbButtons": 271,
   "Codes": [],
   "DebugMode": false,
-  "Version": 12,
+  "Version": 13,
   "Colors": {
     "NormalDesign": 4294967295,
     "CustomizationDesign": 4290773184,
@@ -96,5 +97,5 @@
   "GroupUnlocksIgnoreVariants": false,
   "KeepItemComboFilter": true,
   "ShowRename": 4,
-  "SortMode": "FoldersFirstT"
+  "SortMode": "FoldersFirst"
 }

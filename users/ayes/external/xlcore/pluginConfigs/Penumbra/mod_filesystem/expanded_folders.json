@@ -1,4 +1,10 @@
 {
     "Version": 1,
-    "Nodes": []
+    "Nodes": [
+        "Base Mods",
+        "Base Mods/Character",
+        "Base Mods/Character/Face",
+        "Base Mods/Character/Hair",
+        "Base Mods/VFX"
+    ]
 }
