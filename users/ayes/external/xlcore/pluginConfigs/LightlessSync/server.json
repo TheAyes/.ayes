@@ -17,7 +17,7 @@
       "ServerName": "Follow the light (Official Central Server)",
       "ServerUri": "wss://sync.lightless-sync.org",
       "UseOAuth2": true,
-      "OAuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxVEVGSDMzRkpMIiwiZXhwaXJhdGlvbl9kYXRlIjoiNjM5MTEyNjY0Mjk4MTk3NTY3IiwiZGlzY29yZF91c2VyX2lkIjoiMjY2NDg3Njg2MDExODEzODg4IiwiZGlzY29yZF91c2VyIjoidGhlX2F5ZXMiLCJvYXV0aF9sb2dpbl90b2tlbiI6IlRydWUiLCJuYmYiOjE3NzQ0NjAwMjksImV4cCI6MTc3NTY2OTYyOSwiaWF0IjoxNzc0NDYwMDI5fQ.Po8c4d6_QoNg-RWgngHaAUSJcsUXEKCySyG59peGhpo",
+      "OAuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxVEVGSDMzRkpMIiwiZGlzY29yZF91c2VyX2lkIjoiMjY2NDg3Njg2MDExODEzODg4IiwiZGlzY29yZF91c2VyIjoidGhlX2F5ZXMiLCJvYXV0aF9sb2dpbl90b2tlbiI6IlRydWUiLCJuYmYiOjE3NzU1Nzk2MzksImV4cCI6MTc3Njc4OTIzOSwiaWF0IjoxNzc1NTc5NjM5LCJleHBpcmF0aW9uX2RhdGUiOiI2MzkxMjM4NjAzOTc3MzA3NjcifQ.JhYhwZGZO9t0fUz8YULVBnKVYUd7wnFqfjL0TbT45FQ",
       "HttpTransportType": 1
     }
   ],

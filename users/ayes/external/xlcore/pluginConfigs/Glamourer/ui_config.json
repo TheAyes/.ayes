@@ -1,0 +1,24 @@
+{
+    "Version": 1,
+    "ActorsTab": {
+        "Mode": "Absolute",
+        "Width": 250
+    },
+    "DesignsTab": {
+        "Mode": "Percentage",
+        "Width": 0.3
+    },
+    "AutomationTab": {
+        "Mode": "Percentage",
+        "Width": 0.3
+    },
+    "NpcTab": {
+        "Mode": "Absolute",
+        "Width": 250
+    },
+    "SelectedActor": {
+  "Type": "Player",
+  "PlayerName": "Meira Kisaragi",
+  "HomeWorld": 402
+}
+}
