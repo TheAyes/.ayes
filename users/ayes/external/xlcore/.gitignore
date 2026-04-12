@@ -21,7 +21,7 @@ wineprefix/
 *.db
 *.zip
 *.log
-*.bin
+*.bin<yy
 *.sqlite
 *.pdb
 dalamudUI.ini
