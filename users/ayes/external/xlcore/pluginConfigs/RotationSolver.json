@@ -1,0 +1,1398 @@
+{
+  "DutyRotationChoice": {},
+  "_rotationConfigurationsDict": {
+    "AST": {
+      "": {
+        "OpenWindow": "Balance",
+        "EssentialPrio2": "When capped",
+        "MovingCombustRefresh": "Disable"
+      }
+    }
+  },
+  "_ignorePvPInvincibilityDict": {},
+  "_TinctureTypeDict": {
+    "AST": 0
+  },
+  "_interruptibleMoreCheckDict": {},
+  "_healthForAutoDefenseDict": {},
+  "_useGroundBeneficialAbilityWhenMovingDict": {},
+  "_useGroundBeneficialAbilityOnlySelfDict": {},
+  "_useTargetTankForGroundHealDict": {},
+  "_raisePlayerFirstDict": {},
+  "_raisePlayerBySwiftDict": {},
+  "_HardCastRaiseTypeDict": {},
+  "_RaiseTypeDict": {},
+  "_raiseBrinkOfDeathDict": {},
+  "_h2Dict": {},
+  "_offRaiserRaiseDict": {},
+  "_action6headDict": {
+    "AST": 0.25
+  },
+  "_hostileTypeDict": {
+    "AST": 2
+  },
+  "_lucidDreamingMpThresholdDict": {},
+  "_healthAreaAbilityHotDict": {},
+  "_healthAreaSpellHotDict": {},
+  "_healthAreaAbilityDict": {},
+  "_healthAreaSpellDict": {},
+  "_healthSingleAbilityHotDict": {},
+  "_healthSingleSpellHotDict": {},
+  "_healthSingleAbilityDict": {},
+  "_healthSingleSpellDict": {},
+  "_healthForDyingTanksDict": {},
+  "_PvPRotationChoiceDict": {},
+  "_rotationChoiceDict": {
+    "AST": ""
+  },
+  "_rotationActionConfigDict": {
+    "AST": {
+      "16554": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": true,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "16555": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7568": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7571": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "16560": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "37030": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 1,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3594": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": true,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3595": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": true,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3596": {
+        "IsEnabled": false,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3598": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3599": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": true,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3600": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 1,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3601": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 2,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3603": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3608": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": true,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3610": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": true,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "3615": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7442": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "25871": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "25872": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "25874": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 1,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7559": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7561": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      },
+      "7562": {
+        "IsEnabled": true,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true
+      }
+    }
+  },
+  "_rotationItemConfigDict": {
+    "AST": {
+      "23168": {
+        "IsOnCooldownWindow": false,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "IsEnabled": false,
+        "IsIntercepted": false,
+        "IsRestrictedDOT": false
+      },
+      "4570": {
+        "IsOnCooldownWindow": false,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "IsEnabled": false,
+        "IsIntercepted": false,
+        "IsRestrictedDOT": false
+      },
+      "49238": {
+        "IsOnCooldownWindow": false,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "IsEnabled": false,
+        "IsIntercepted": false,
+        "IsRestrictedDOT": false
+      }
+    }
+  },
+  "Version": 12,
+  "LastSeenChangelog": "7.4.5.29",
+  "TutorialDone": true,
+  "Events": [],
+  "DisabledJobs": [],
+  "RotationLibs": [],
+  "TargetingTypes": [],
+  "DutyStart": {
+    "MacroIndex": -1,
+    "IsShared": false
+  },
+  "DutyEnd": {
+    "MacroIndex": -1,
+    "IsShared": false
+  },
+  "HealthForGuard": 0.15,
+  "InterceptActionTime": 5.0,
+  "AoEType": 2,
+  "DTRType": 0,
+  "PosPassageOfArms": false,
+  "PosFlameThrower": false,
+  "PosImprovisation": false,
+  "UseHpPotionsPercent": 0.5,
+  "UseMpPotionsPercent": 0.5,
+  "DistanceForMoving2": 3.0,
+  "HotbarDisabledTintColor": {
+    "X": 1.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "W": 0.4
+  },
+  "CastingStopTime": 2.5,
+  "AutoDefenseNumber": 2,
+  "AutoOffAfterCombatTime": 30.0,
+  "AngleOfVisionCone": 45.0,
+  "MeleeRangeOffset": 1.0,
+  "HealWhenNothingTodoBelow": 0.8,
+  "HealthTankRatio": 0.45,
+  "HealthHealerRatio": 0.4,
+  "HealthSelfRatio": 0.4,
+  "SwiftcastBuffer": 0.6,
+  "RaiseDelay2": {
+    "X": 3.0,
+    "Y": 3.0
+  },
+  "EsunaDelay": {
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "LessMPNoRaise": 2400,
+  "HealthDifference": 0.25,
+  "SpecialDuration": 3.0,
+  "StopCastingDelay": {
+    "X": 0.5,
+    "Y": 1.0
+  },
+  "InterruptDelay": {
+    "X": 0.5,
+    "Y": 1.0
+  },
+  "ProvokeDelay": {
+    "X": 0.5,
+    "Y": 1.0
+  },
+  "NotInCombatDelay": {
+    "X": 2.0,
+    "Y": 3.0
+  },
+  "ClickingDelay": {
+    "X": 0.1,
+    "Y": 0.2
+  },
+  "HealWhenNothingTodoDelay": {
+    "X": 0.5,
+    "Y": 1.0
+  },
+  "CountDownAhead": 0.4,
+  "CooldownWindowIconSize": 30.0,
+  "ControlWindowNextSizeRatio": 1.5,
+  "ControlWindowGCDSize": 40.0,
+  "ControlWindow0GCDSize": 30.0,
+  "ControlProgressHeight": 8.0,
+  "AutoHealTimeToKill": 8.0,
+  "MinUpdatingTime": 0.0,
+  "AnimationLockDelayMax2": 26,
+  "AnimLockDelaySmoothing": 0.3,
+  "CooldownAdjustMaxMs": 100,
+  "TeachingModeColor": {
+    "X": 0.0,
+    "Y": 1.0,
+    "Z": 0.0,
+    "W": 1.0
+  },
+  "TargetColor": {
+    "X": 1.0,
+    "Y": 0.2,
+    "Z": 0.0,
+    "W": 0.8
+  },
+  "ControlWindowLockBg": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "W": 0.55
+  },
+  "ControlWindowUnlockBg": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "W": 0.75
+  },
+  "InfoWindowBg": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Z": 0.0,
+    "W": 0.4
+  },
+  "TargetDelay": {
+    "X": 0.0,
+    "Y": 0.0
+  },
+  "MoveTargetAngle": 24.0,
+  "BossTimeToKill": 90.0,
+  "DyingTimeToKill": 10.0,
+  "IsDyingConfig": 0.02,
+  "CycleType": 0,
+  "ActionSequencerIndex": 0,
+  "PoslockModifier": 0,
+  "KeyboardNoisePresses": {
+    "X": 2,
+    "Y": 3
+  },
+  "TargetingIndex": 0,
+  "O12SOmegaMf": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "M8SWindStone": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "M9SCleaveOnly": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "M9SCellTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "M9SAdsTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "M10SBroTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "LimitlessBlueTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "CinderDriftPallTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TeaJagdDoll": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TeaTrueHeart": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TopOmegaMf": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "FruCrystalOfDarkness": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ColossusRubricatusImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "DohnMhegLyre": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "JailerImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ForkedtowerDeadStar": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "Eminent": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ThanatosImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "IrminsulSawtoothImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "SuperiorFlightUnitImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "HanselorGretelShieldedImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "JeunoBossImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "CodImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "DrakeImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "IgnorePvPttk": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PrioAtomelith": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "PrioBtomelith": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffWhenDeadPvP": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffPvPMatchEnd": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOnPvPMatchStart": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpStateControl": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpGuardControl": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpGcdLockControl": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpAllowSprintWithoutTarget": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptAction3": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptSpell3": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptWeaponskill3": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptAbility3": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptMacro": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptCooldown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "Statuscap2": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "NoNewHostiles": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffBetweenArea": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffCutScene": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffSwitchClass": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffWhenDead": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffWhenDutyCompleted": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ChangelogPopup": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowInfoOnDtr": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowInfoOnToast": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "PoslockCasting": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseKnockback": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseHpPotions": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseMpPotions": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UsePhoenixDown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "CanAttackMarkAoe": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TeachingMode": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "KeyboardNoise": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "StartOnCountdown": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "CountdownStartsManualMode": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "CancelStateOnCombatBeforeCountdown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOnYes": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "StartOnAttackedBySomeone2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "StartOnPartyIsInCombat2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "StartOnAllianceIsInCombat2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "StartOnFieldOpInCombat2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseHealWhenNotAHealer": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ProvokeAnything": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseStopCasting": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "DispelAll": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "InDebug": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ToggleManual": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ToggleAuto": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "OnlyShowWithHostileOrInDuty": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowControlWindow": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "IsControlWindowLock": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowNextActionWindow": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowInterceptedActionWindow": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "IsInfoWindowNoInputs": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "IsInfoWindowNoMove": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowItemsCooldown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowGcdCooldown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseOriginalCooldown": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowCooldownsAlways": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowTooltips": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowContext": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowHints": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ReddenDisabledHotbarActions": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowToastsAboutDoAction": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoBurst": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "CastingStop": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "CastingStopCalculate": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoHeal": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "StopHealingAfterThresholdExperimental2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseAbility": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseDefenseAbility": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseStDefense": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseAoeDefense": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoTankStance": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoProvokeForTank": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoUseTrueNorth": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoSpeedOutOfCombat": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoSpeedOutOfCombatNoDuty": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseGroundBeneficialAbility": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowCooldownWindow": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowActionTimelineWindow": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ActionTimelineOnlyInCombat": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ActionTimelineOnlyWhenActive": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ActionTimelineShowOgcd": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ActionTimelineShowAutoAttack": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ActionTimelineSaveToFile": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "RecordCastingArea": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "AutoOffAfterCombat": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "EnableClickingCount": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "HideWarning": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "OnlyHealSelfWhenNoHealer": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "OnlyHealAsNonHealIfNoHealers": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowToggledSettingInChat": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "RecordKnockbackies": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "SetBluActions2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "HealOutOfCombat": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "FriendlyBattleNpcHeal": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "FriendlyPartyNpcHealRaise3": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "ChocoboPartyMember": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "FocusTargetIsParty": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "HealWhenNothingTodo": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "Priolowtank": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "RemoveAnimationLockDelay": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "RemoveCooldownDelay": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "EnableCactbotTimeline": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ShowCactbotToasts": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "MoveTowardsScreenCenter": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ChooseAttackMark": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PrioEnemyParts": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "FilterStopMark": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "FilterOneHpInvincible": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "IgnoreNonFateInFate": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "MoveAreaActionFarthest": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "SwitchTargetFriendly2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetFreely": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "OnlyAttackInView": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "OnlyAttackInVisionCone": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetHuntingRelicLevePriority": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetQuestPriority": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetQuestThings2": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "ForlornPriority": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "DisableTargetDummys": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetFatePriority": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TargetDelayEnable": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "DummyBoss": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "SmallHp": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BigHp": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  }
+}

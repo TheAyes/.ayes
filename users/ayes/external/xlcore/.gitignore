@@ -27,3 +27,5 @@ wineprefix/
 dalamudUI.ini
 launcherUI.ini
 Browsingway/eb
+
+pluginConfigs/LightlessSync/server.json
