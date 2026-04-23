@@ -14,6 +14,7 @@
   "UseSimulatedStartingQuality": false,
   "DisableHighlightedAction": true,
   "AcknowledgeExpertSettings": false,
+  "UseNativeButtons": true,
   "ExpertSolverConfig": {
     "$type": "Artisan.CraftingLogic.Solvers.ExpertSolverSettings, Artisan",
     "EnableExpertProfiles": false,
@@ -5378,7 +5379,10 @@
     "GenerateOnExperts": false,
     "TimeOutMins": 1,
     "MaxStellarHand": 2,
-    "DefaultRaphSolver": false
+    "DefaultRaphSolver": false,
+    "FallbackToSolverIfRaphaelLocked": true,
+    "FallbackSolverType": "Artisan.CraftingLogic.Solvers.StandardSolverDefinition",
+    "FallbackSolverFlavour": 0
   },
   "RaphaelSolverCacheV4": {
     "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, System.Private.CoreLib],[Artisan.CraftingLogic.Solvers.MacroSolverSettings+Macro, Artisan]], System.Collections.Concurrent",
@@ -9036,6 +9040,7 @@
     }
   },
   "ShowLevelingRecipeProgress": true,
+  "ShowOtherRecipeProgress": true,
   "ExitCraftStanceEndurance": true,
   "DebugTrackConditionData": false,
   "Version": 2,
