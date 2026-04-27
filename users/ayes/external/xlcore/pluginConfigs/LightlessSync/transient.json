@@ -116,7 +116,8 @@
           "vfx/action/mgc_ast022/eff/mgc_as022t0p.avfx",
           "vfx/action/ab_2ast033/eff/ab_2gl_ast033t0p.avfx",
           "vfx/common/eff/abi_as027c1h.avfx",
-          "vfx/cut/duneov/duneov00130/texture/bl_line_01_c.atex"
+          "vfx/cut/duneov/duneov00130/texture/bl_line_01_c.atex",
+          "vfx/action/mgc_heal1/eff/mgc_heal1t0h.avfx"
         ],
         "17": []
       },
