@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     heroic
-    lutris
+    #lutris
     (prismlauncher.override {
       jdks = [
         graalvmPackages.graalvm-ce
