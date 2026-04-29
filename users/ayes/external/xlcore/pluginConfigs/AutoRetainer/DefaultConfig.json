@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 7,
+      "CreationFrame": 0,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -46,7 +46,7 @@
       ],
       "Preferred": true,
       "Ventures": 185,
-      "InventorySpace": 6,
+      "InventorySpace": 4,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -262,7 +262,7 @@
         0,
         0
       ],
-      "Gil": 1127387,
+      "Gil": 1135404,
       "GCSeals": 191,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -310,7 +310,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 7,
+      "CreationFrame": 0,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -467,7 +467,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 7,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -492,7 +492,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 7,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -610,10 +610,10 @@
       "Gil": -1,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 0,
-      "FCPoints": 12943735,
-      "FCPointsLastUpdate": 1776883177459,
+      "FCPoints": 12967147,
+      "FCPointsLastUpdate": 1777312912517,
       "HolderChara": 18014598541772518,
-      "Rank": 0
+      "Rank": 30
     },
     "9279948507173645194": {
       "ID": 0,
@@ -621,10 +621,10 @@
       "Gil": 500000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1769641333349,
-      "FCPoints": 12881028,
-      "FCPointsLastUpdate": 1775986215138,
+      "FCPoints": 12965887,
+      "FCPointsLastUpdate": 1777308104959,
       "HolderChara": 0,
-      "Rank": 0
+      "Rank": 30
     }
   },
   "UpdateStaleFCData": false,
