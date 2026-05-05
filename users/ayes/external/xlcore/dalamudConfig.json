@@ -242,7 +242,8 @@
       "Y": 0.0
     },
     "LetterSpacing": 0.0,
-    "GlyphRanges": null
+    "GlyphRanges": null,
+    "FontNo": 0
   },
   "ImeStateIndicatorOpacity": 1.0,
   "ToggleUiHide": true,
