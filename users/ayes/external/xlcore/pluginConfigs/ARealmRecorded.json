@@ -1,6 +1,6 @@
 {
   "$type": "ARealmRecorded.Configuration, ARealmRecorded",
-  "LastLoadedReplay": "Z:\\home\\ayes\\.xlcore\\ffxivConfig\\replay\\autorenamed\\AAC Heavyweight M3 (Savage) 2026.04.21 22.03.18.dat",
+  "LastLoadedReplay": "Z:\\home\\ayes\\.xlcore\\ffxivConfig\\replay\\autorenamed\\AAC Heavyweight M3 (Savage) 2026.05.06 21.03.30.dat",
   "EnableRecordingIcon": false,
   "MaxAutoRenamedReplays": 30,
   "MaxDeletedReplays": 10,
@@ -11,6 +11,6 @@
   "MaxSeekDelta": 100.0,
   "CustomSpeedPreset": 30.0,
   "EnableWaymarks": true,
-  "PluginVersion": "1.0.2.1",
+  "PluginVersion": "1.0.3.0",
   "Version": 0
 }
