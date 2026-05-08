@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -21,9 +21,9 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1776852729,
+          "VentureEndsAt": 1778150489,
           "HasVenture": true,
-          "Level": 83,
+          "Level": 84,
           "VentureBeginsAt": 0,
           "Job": 33,
           "VentureID": 740,
@@ -33,9 +33,9 @@
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1776852735,
+          "VentureEndsAt": 1778150494,
           "HasVenture": true,
-          "Level": 78,
+          "Level": 79,
           "VentureBeginsAt": 0,
           "Job": 17,
           "VentureID": 742,
@@ -45,8 +45,8 @@
         }
       ],
       "Preferred": true,
-      "Ventures": 185,
-      "InventorySpace": 4,
+      "Ventures": 177,
+      "InventorySpace": 45,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -262,7 +262,7 @@
         0,
         0
       ],
-      "Gil": 1135404,
+      "Gil": 1155712,
       "GCSeals": 191,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -295,14 +295,13 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20536": 2,
-        "20537": 2,
-        "20538": 2,
         "20550": 2,
         "20551": 2,
         "20557": 2,
         "20558": 2,
-        "20564": 2
+        "20564": 2,
+        "20578": 2,
+        "20579": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -310,7 +309,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -467,23 +466,18 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
       "Deposit": false,
       "VenturePlan": {
         "Name": "",
-        "List": [
-          {
-            "ID": 740,
-            "Num": 1
-          }
-        ],
+        "List": [],
         "PlanCompleteBehavior": 0
       },
       "LinkedVenturePlan": "",
-      "VenturePlanIndex": 1,
+      "VenturePlanIndex": 0,
       "EnablePlanner": true,
       "Ilvl": 300,
       "Gathering": 0,
@@ -492,7 +486,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -574,7 +568,7 @@
   "ShutdownMakesNightMode": false,
   "ShowDeployables": false,
   "BailoutTimeout": 5,
-  "EnableBailout": true,
+  "EnableBailout": false,
   "EnableCharaSelectBailout": true,
   "NightMode": false,
   "NightModePersistent": false,
@@ -610,8 +604,8 @@
       "Gil": -1,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 0,
-      "FCPoints": 12967147,
-      "FCPointsLastUpdate": 1777312912517,
+      "FCPoints": 13093856,
+      "FCPointsLastUpdate": 1777990307404,
       "HolderChara": 18014598541772518,
       "Rank": 30
     },
@@ -793,5 +787,7 @@
   "HoursForShutdown": 3.0,
   "MultiOnPluginLoad": false,
   "MultiModeOnPluginLoadDelay": 10,
-  "IgnoreGCRankCheck": false
+  "IgnoreGCRankCheck": false,
+  "PreserveMultiModeState": false,
+  "MultiModeEnabled": false
 }

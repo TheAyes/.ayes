@@ -822,6 +822,14 @@
         "setting": 0,
         "Opacity": 1.0
       }
+    ],
+    "CosmicAnnouncements": [
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 1,
+        "setting": 0,
+        "Opacity": 1.0
+      }
     ]
   },
   "DisabledElements": {
@@ -869,7 +877,8 @@
     "OccultCrescentHud": false,
     "BozjaHud": false,
     "EurekaElementalHud": false,
-    "EurekaLogosHud": false
+    "EurekaLogosHud": false,
+    "CosmicAnnouncements": false
   },
   "FadeOverrides": {
     "$type": "System.Collections.Generic.Dictionary`2[[FaderPlugin.Data.Element, FaderPlugin],[faderPlugin.Data.FadeOverride, FaderPlugin]], System.Private.CoreLib",
@@ -1132,6 +1141,12 @@
       "ExitTransitionSpeedOverride": 1.0
     },
     "EurekaLogosHud": {
+      "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
+      "UseCustomFadeTimes": false,
+      "EnterTransitionSpeedOverride": 4.0,
+      "ExitTransitionSpeedOverride": 1.0
+    },
+    "CosmicAnnouncements": {
       "$type": "faderPlugin.Data.FadeOverride, FaderPlugin",
       "UseCustomFadeTimes": false,
       "EnterTransitionSpeedOverride": 4.0,

@@ -1,7 +1,7 @@
 {
   "$type": "Brio.Config.Configuration, Brio",
   "Version": 4,
-  "PopupKey": 22,
+  "PopupKey": 2232,
   "Interface": {
     "$type": "Brio.Config.InterfaceConfiguration, Brio",
     "OpenBrioBehavior": 1,
@@ -42,6 +42,7 @@
     "HideNameOnGPoseSettingsWindow": true,
     "GPoseTargetChangesWithBrio": false,
     "BrioTargetChangesWithGPose": true,
+    "AutoSelectTransformOnEntitySelect": false,
     "UndoStackSize": 50,
     "FreezeActorOnPoseImport": false
   },
@@ -172,6 +173,7 @@
   "LastMCDFPath": "",
   "LastExportPath": "Z:\\mnt\\games\\FinalFantasyXIV-Poses",
   "LastXATPath": "",
+  "LastPreviewImagePath": "",
   "LastScenePath": "",
   "UseLibraryWhenImporting": true,
   "SceneDestoryActorsBeforeImport": false,
@@ -422,7 +424,8 @@
     "ShowPromptsInGPose": false,
     "EnableKeyHandlingOnKeyMod": true,
     "EnableConsumeAllInput": false,
-    "FlipKeyBindsPastNinety": false
+    "FlipKeyBindsPastNinety": false,
+    "DisableScrollWheelOnInputs": false
   },
   "AutoSave": {
     "$type": "Brio.Config.AutoSaveConfiguration, Brio",
