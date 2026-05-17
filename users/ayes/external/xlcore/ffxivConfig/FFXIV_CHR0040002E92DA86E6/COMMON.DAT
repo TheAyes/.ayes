@@ -319,7 +319,7 @@ LogTabFilter0	0
 LogTabFilter1	1
 LogTabFilter2	2
 LogTabFilter3	3
-LogChatFilter	1
+LogChatFilter	0
 LogEnableErrMsgLv1	1
 LogNameType	0
 LogTimeDisp	1
@@ -475,7 +475,7 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	20
-ChatType	18
+ChatType	2
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278

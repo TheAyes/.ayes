@@ -492,6 +492,24 @@
     "CastBar": [
       {
         "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 9,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 10,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
+        "state": 3,
+        "setting": 0,
+        "Opacity": 1.0
+      },
+      {
+        "$type": "FaderPlugin.Data.ConfigEntry, FaderPlugin",
         "state": 18,
         "setting": 0,
         "Opacity": 0.0

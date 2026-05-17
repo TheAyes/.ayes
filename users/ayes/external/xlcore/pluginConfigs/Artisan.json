@@ -1,11 +1,11 @@
 {
   "$type": "Artisan.Configuration, Artisan",
+  "MaxMaterialMiracles": 0,
+  "MinimumStepsBeforeMiracle": 10,
   "DisableFailurePrediction": false,
   "MaxPercentage": 100,
   "UseTricksGood": false,
   "MaxIQPrepTouch": 10,
-  "MaxMaterialMiracles": 0,
-  "MinimumStepsBeforeMiracle": 10,
   "LowStatsMode": false,
   "UseTricksExcellent": false,
   "UseSpecialist": false,
@@ -5370,6 +5370,10 @@
     "AllowEnsureReliability": false,
     "AllowBackloadProgress": false,
     "ShowSpecialistSettings": false,
+    "EnsureReliability": false,
+    "BackloadProgress": true,
+    "UseHeartAndSoul": false,
+    "UseQuickInno": false,
     "ExactCraftsmanship": false,
     "AutoGenerate": false,
     "AutoSwitch": true,
@@ -9039,12 +9043,15 @@
       ]
     }
   },
+  "RaphaelV5Converted": true,
   "ShowLevelingRecipeProgress": true,
   "ShowOtherRecipeProgress": true,
   "ExitCraftStanceEndurance": true,
   "DebugTrackConditionData": false,
   "Version": 2,
   "AutoMode": true,
+  "StandardMMUses": 0,
+  "StandardMMSteps": 10,
   "CraftingLists": [],
   "NewCraftingLists": [
     {
@@ -9054,149 +9061,13 @@
       "AddAsQuickSynth": false,
       "TidyAfter": true,
       "OnlyRestockNonCrafted": false,
-      "ID": 2578,
-      "Name": "Skycrafts",
+      "Locked": false,
+      "ID": 21426,
+      "Name": "Tasks",
       "Recipes": [
         {
           "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 786,
-          "Quantity": 50,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 34441,
-          "Quantity": 50,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        }
-      ],
-      "ExpandedList": [
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        786,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441,
-        34441
-      ],
-      "SkipIfEnough": false,
-      "Materia": true,
-      "Repair": true
-    },
-    {
-      "$type": "Artisan.CraftingLists.NewCraftingList, Artisan",
-      "SkipLiteral": false,
-      "RepairPercent": 50,
-      "AddAsQuickSynth": false,
-      "TidyAfter": true,
-      "OnlyRestockNonCrafted": false,
-      "ID": 35104,
-      "Name": "Crafted Raid Gear",
-      "Recipes": [
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 5660,
+          "ID": 690,
           "Quantity": 2,
           "ListItemOptions": {
             "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
@@ -9204,132 +9075,6 @@
             "Skipping": false
           }
         },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37809,
-          "Quantity": 2,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37811,
-          "Quantity": 3,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37818,
-          "Quantity": 2,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 5642,
-          "Quantity": 2,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37909,
-          "Quantity": 2,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37812,
-          "Quantity": 4,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 5632,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37883,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37808,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 5652,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 37885,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        }
-      ],
-      "ExpandedList": [],
-      "SkipIfEnough": false,
-      "Materia": true,
-      "Repair": true
-    },
-    {
-      "$type": "Artisan.CraftingLists.NewCraftingList, Artisan",
-      "SkipLiteral": false,
-      "RepairPercent": 50,
-      "AddAsQuickSynth": false,
-      "TidyAfter": true,
-      "OnlyRestockNonCrafted": false,
-      "ID": 48391,
-      "Name": "Flawless Band",
-      "Recipes": [
         {
           "$type": "Artisan.CraftingLists.ListItem, Artisan",
           "ID": 725,
@@ -9342,36 +9087,7 @@
         },
         {
           "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 2136,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        }
-      ],
-      "ExpandedList": [
-        725,
-        2136
-      ],
-      "SkipIfEnough": false,
-      "Materia": true,
-      "Repair": true
-    },
-    {
-      "$type": "Artisan.CraftingLists.NewCraftingList, Artisan",
-      "SkipLiteral": false,
-      "RepairPercent": 50,
-      "AddAsQuickSynth": false,
-      "TidyAfter": true,
-      "OnlyRestockNonCrafted": false,
-      "ID": 27859,
-      "Name": "Velveteen Shirt",
-      "Recipes": [
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 506,
+          "ID": 766,
           "Quantity": 1,
           "ListItemOptions": {
             "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
@@ -9381,27 +9097,7 @@
         },
         {
           "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 547,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 553,
-          "Quantity": 1,
-          "ListItemOptions": {
-            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
-            "NQOnly": false,
-            "Skipping": false
-          }
-        },
-        {
-          "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 353,
+          "ID": 1023,
           "Quantity": 2,
           "ListItemOptions": {
             "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
@@ -9411,7 +9107,37 @@
         },
         {
           "$type": "Artisan.CraftingLists.ListItem, Artisan",
-          "ID": 563,
+          "ID": 1103,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1029,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 464,
+          "Quantity": 1,
+          "ListItemOptions": {
+            "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
+            "NQOnly": false,
+            "Skipping": false
+          }
+        },
+        {
+          "$type": "Artisan.CraftingLists.ListItem, Artisan",
+          "ID": 1035,
           "Quantity": 1,
           "ListItemOptions": {
             "$type": "Artisan.CraftingLists.ListItemOptions, Artisan",
@@ -9420,7 +9146,36 @@
           }
         }
       ],
-      "ExpandedList": [],
+      "ExpandedList": [
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        322,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        1115,
+        911,
+        1029,
+        1035,
+        766
+      ],
       "SkipIfEnough": false,
       "Materia": true,
       "Repair": true

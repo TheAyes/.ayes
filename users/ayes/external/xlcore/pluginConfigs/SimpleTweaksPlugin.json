@@ -67,10 +67,21 @@
     "UiAdjustments@TimerOnDutyWaiting",
     "PhantomJobCommand",
     "SyncCrafterBars",
-    "SyncGathererBars"
+    "SyncGathererBars",
+    "EnsureTooltipRemainsOnScreen",
+    "TooltipTweaks@PaintingPreview",
+    "UiAdjustments@AutoFocusMarketboardSearch",
+    "ImprovedWorldVisit",
+    "ContentsFinderConfirmClassSwitch",
+    "UiAdjustments@HouseLotteryTimer",
+    "KeepOpen",
+    "SortWorldList"
   ],
   "HiddenTweaks": [
-    "UiAdjustments@SubmarineDestinationLetters"
+    "UiAdjustments@SubmarineDestinationLetters",
+    "DisableNoviceNetworkAutoSwitch",
+    "UiAdjustments@FadeUnavailableActions",
+    "UiAdjustments@LootWindowSelectNext"
   ],
   "CustomTweakProviders": [],
   "BlacklistedTweaks": [
@@ -80,7 +91,9 @@
     "UiAdjustments@StopCraftingButton::2",
     "UiAdjustments@FadeUnavailableActions",
     "UiAdjustments@LockWindowPosition",
-    "UiAdjustments@SubmarineDestinationLetters"
+    "UiAdjustments@SubmarineDestinationLetters",
+    "CharaCardCommand",
+    "DisableNoviceNetworkAutoSwitch"
   ],
   "HiddenCategories": [],
   "CustomizedCommands": {

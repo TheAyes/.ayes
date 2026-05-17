@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -21,7 +21,7 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1778150489,
+          "VentureEndsAt": 1778844603,
           "HasVenture": true,
           "Level": 84,
           "VentureBeginsAt": 0,
@@ -33,7 +33,7 @@
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1778150494,
+          "VentureEndsAt": 1778844608,
           "HasVenture": true,
           "Level": 79,
           "VentureBeginsAt": 0,
@@ -45,8 +45,8 @@
         }
       ],
       "Preferred": true,
-      "Ventures": 177,
-      "InventorySpace": 45,
+      "Ventures": 165,
+      "InventorySpace": 34,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -239,7 +239,7 @@
         53,
         30,
         63,
-        21,
+        22,
         8,
         100,
         100,
@@ -262,8 +262,8 @@
         0,
         0
       ],
-      "Gil": 1155712,
-      "GCSeals": 191,
+      "Gil": 759976,
+      "GCSeals": 1030,
       "GCRank": 9,
       "OfflineAirshipData": [],
       "OfflineSubmarineData": [],
@@ -278,7 +278,7 @@
       "ExcludeOverlay": false,
       "NumSubSlots": 0,
       "MultiWaitForAllDeployables": false,
-      "FCID": 9279948507173645194,
+      "FCID": 0,
       "DisablePrivateHouseTeleport": false,
       "DisableFcHouseTeleport": false,
       "DisableApartmentTeleport": false,
@@ -295,13 +295,13 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20550": 2,
-        "20551": 2,
         "20557": 2,
         "20558": 2,
         "20564": 2,
         "20578": 2,
-        "20579": 2
+        "20579": 2,
+        "20586": 2,
+        "20587": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -309,7 +309,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -466,7 +466,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -486,7 +486,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -604,8 +604,8 @@
       "Gil": -1,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 0,
-      "FCPoints": 13093856,
-      "FCPointsLastUpdate": 1777990307404,
+      "FCPoints": 13012458,
+      "FCPointsLastUpdate": 1778699469188,
       "HolderChara": 18014598541772518,
       "Rank": 30
     },
