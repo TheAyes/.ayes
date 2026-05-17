@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "15.0.0.4",
+  "LastVersion": "15.0.0.7",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -217,7 +217,13 @@
       "PennyPincher",
       "GatherBuddy",
       "NoSillyReborn",
-      "RotationSolver"
+      "RotationSolver",
+      "NotificationMaster",
+      "OhHey",
+      "BurntToast",
+      "vfaux",
+      "GatherBuddyReborn",
+      "MemoryMarker"
     ]
   },
   "DevMode": false,
@@ -2638,6 +2644,24 @@
           "InternalName": "RotationSolver",
           "WorkingPluginId": "c7688e26-ff63-45c6-8ccf-828e5f8aef67",
           "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BurntToast",
+          "WorkingPluginId": "62202c2c-9c88-4657-8b05-95465ea85e1c",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "VanillaPlus",
+          "WorkingPluginId": "c38cb6e4-f1d4-46d1-929e-a3ddf1279a0c",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "GatherBuddyReborn",
+          "WorkingPluginId": "e4974ee3-e9cd-48ff-88f7-afd2a2b33839",
+          "IsEnabled": true
         }
       ]
     },

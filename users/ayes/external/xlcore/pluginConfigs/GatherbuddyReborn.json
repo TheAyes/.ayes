@@ -4,14 +4,14 @@
   "SeColorCommands": 31,
   "SeColorArguments": 546,
   "SeColorAlarm": 518,
-  "Version": 9,
+  "Version": 15,
   "BotanistSetName": "Botanist",
   "MinerSetName": "Miner",
   "FisherSetName": "Fisher",
   "IdentifiedGatherableFormat": "Identified {Item} for \"{Input}\".",
   "AlarmFormat": "{Alarm} {Item} {DelayString} at {Location}.",
   "AetherytePreference": 0,
-  "ShowItems": 212991,
+  "ShowItems": 3096575,
   "ShowFish": 65407,
   "HideFishPatch": 0,
   "LocationFilter": 63,
@@ -57,812 +57,20 @@
     "BlacklistedNodesByTerritoryId": {
       "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
     },
-    "BYIIConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 100,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "UseWithCystals": false,
-        "MinimumIncrease": 1
-      }
-    },
-    "LuckConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 200,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "YieldIIConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 500,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "UseWithCystals": false
-      }
-    },
-    "YieldIConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 400,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "UseWithCystals": false
-      }
-    },
-    "GivingLandConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 200,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "TwelvesBountyConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 150,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
     "UseGivingLandOnCooldown": false,
-    "ScrutinyConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 200,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "MeticulousConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 0,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "BrazenConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 0,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "SolidAgeCollectablesConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 300,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
-    "SolidAgeGatherablesConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 300,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "MinimumYield": 1,
-        "UseWithCystals": false
-      }
-    },
-    "BoonIConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 50,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "MinBoonChance": 0
-      }
-    },
-    "BoonIIConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 100,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "MinBoonChance": 0
-      }
-    },
-    "TidingsConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 200,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib",
-        "MinBoonChance": 0
-      }
-    },
-    "ScourConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConfig, GatherBuddyReborn",
-      "UseAction": true,
-      "MinimumGP": 0,
-      "MaximumGP": 4294967295,
-      "Conditions": {
-        "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions, GatherBuddyReborn",
-        "UseConditions": false,
-        "UseOnlyOnFirstStep": false,
-        "FilterNodeTypes": false,
-        "NodeFilter": {
-          "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters, GatherBuddyReborn",
-          "RegularNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "UnspoiledNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "EphemeralNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "LegendaryNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          },
-          "CloudedNode": {
-            "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ActionConditions+NodeFilters+NodeConfig, GatherBuddyReborn",
-            "Use": true,
-            "NodeLevel": 100,
-            "AvoidCap": false
-          }
-        },
-        "RequiredIntegrity": 1
-      },
-      "OptionalProperties": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Object, System.Private.CoreLib]], System.Private.CoreLib"
-      }
-    },
     "TimedNodePrecog": 20,
     "DoGathering": true,
     "AutoRetainerMultiMode": false,
     "AutoRetainerMultiModeThreshold": 300,
     "AutoRetainerDelayForTimedNodes": true,
-    "MinimumGPForGathering": 0,
-    "MinimumGPForCollectableRotation": 700,
-    "AlwaysUseSolidAgeCollectables": false,
-    "MinimumGPForCollectable": 0,
     "NavResetCooldown": 3.0,
     "NavResetThreshold": 2.0,
     "ForceWalking": false,
     "FarNodeFilterDistance": 50.0,
     "DisableFlagPathing": false,
-    "MinimumCollectibilityScore": 1000,
-    "GatherIfLastIntegrity": false,
-    "GatherIfLastIntegrityMinimumCollectibility": 600,
-    "CordialConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 700,
-      "ItemId": 0
-    },
-    "FoodConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 0,
-      "ItemId": 0
-    },
-    "PotionConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 0,
-      "ItemId": 0
-    },
-    "ManualConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 0,
-      "ItemId": 0
-    },
-    "SquadronManualConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 0,
-      "ItemId": 0
-    },
-    "SquadronPassConfig": {
-      "$type": "GatherBuddy.AutoGather.AutoGatherConfig+ConsumableConfig, GatherBuddyReborn",
-      "UseConsumable": false,
-      "MinimumGP": 0,
-      "MaximumGP": 0,
-      "ItemId": 0
-    },
     "DoMaterialize": false,
     "DoReduce": false,
+    "AlwaysReduceAllItems": false,
     "DoRepair": false,
     "RepairThreshold": 50,
     "HonkMode": false,
@@ -873,8 +81,6 @@
     "UseSkillsForFallbackItems": false,
     "AbandonNodes": false,
     "ExecutionDelay": 0,
-    "ConfigConversionFixed": true,
-    "RotationSolverConversionDone": true,
     "CheckRetainers": true,
     "LifestreamCommand": "auto",
     "SoundPlaybackVolume": 100,
@@ -917,7 +123,8 @@
     "PrizeCatchGPAbove": true,
     "UseChum": false,
     "ChumGPThreshold": 100,
-    "ChumGPAbove": true
+    "ChumGPAbove": true,
+    "DisableRandomLandingPositions": false
   },
   "AutoGatherListSelectorWidth": 225.0,
   "CollectableConfig": {
@@ -968,6 +175,80 @@
       }
     ]
   },
+  "RaphaelSolverConfig": {
+    "$type": "GatherBuddy.Crafting.RaphaelSolveCoordinatorConfig, GatherBuddyReborn",
+    "RaphaelEnabled": true,
+    "MaxConcurrentRaphaelProcesses": 1,
+    "RaphaelTimeoutMinutes": 5,
+    "RaphaelBackloadProgress": false,
+    "RaphaelAllowSpecialistActions": false,
+    "AutoClearSolutionCache": true,
+    "SolutionCacheMaxAgeDays": 30,
+    "SolverMode": 0
+  },
+  "StandardSolverConfig": {
+    "$type": "GatherBuddy.Vulcan.StandardSolverConfig, GatherBuddyReborn",
+    "UseTricksGood": true,
+    "UseTricksExcellent": false,
+    "MaxPercentage": 100,
+    "UseQualityStarter": false,
+    "SolverCollectibleMode": 3,
+    "MaxIQPrepTouch": 10,
+    "UseSpecialist": false,
+    "UseMaterialMiracle": false,
+    "MinimumStepsBeforeMiracle": 2,
+    "MaterialMiracleMulti": false
+  },
+  "VulcanRepairConfig": {
+    "$type": "GatherBuddy.Config.VulcanRepairConfig, GatherBuddyReborn",
+    "Enabled": true,
+    "RepairThreshold": 10,
+    "PrioritizeNPCRepair": true,
+    "PreferredRepairNPCDataId": 0
+  },
+  "VulcanMateriaConfig": {
+    "$type": "GatherBuddy.Config.VulcanMateriaConfig, GatherBuddyReborn",
+    "Enabled": false
+  },
+  "VulcanRetainerBellConfig": {
+    "$type": "GatherBuddy.Config.VulcanRetainerBellConfig, GatherBuddyReborn",
+    "AutoNavigateToRetainerBell": true
+  },
+  "VulcanExecutionDelayMs": 300,
+  "VulcanContextMenuEntries": true,
+  "CraftingLists": "",
+  "MaxRecentCraftingListsInContextMenu": 10,
+  "TeamCraftImportWindowSize": {
+    "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+    "X": 520.0,
+    "Y": 310.0
+  },
+  "VendorTeamCraftImportWindowSize": {
+    "$type": "System.Numerics.Vector2, System.Private.CoreLib",
+    "X": 520.0,
+    "Y": 310.0
+  },
+  "RecipeBrowserSettings": "",
+  "UserMacros": "",
+  "SkipMacroStepIfUnable": true,
+  "MacroFallbackEnabled": true,
+  "VendorNpcPreferences": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "VendorRoutePreferences": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "VendorBuyLists": [
+    {
+      "$type": "GatherBuddy.Vulcan.Vendors.VendorBuyListDefinition, GatherBuddyReborn",
+      "Id": "2502fa2e-2976-4182-b64b-ab4ded9f3cfb",
+      "Name": "Default",
+      "CreatedAt": "2026-05-13T19:06:00.7273185Z",
+      "Entries": []
+    }
+  ],
+  "ActiveVendorBuyListId": "2502fa2e-2976-4182-b64b-ab4ded9f3cfb",
+  "VendorNpcLocationsDataShareFirst": true,
   "ShowWeatherNames": true,
   "AlarmsEnabled": false,
   "AlarmsInDuty": true,
@@ -1030,6 +311,7 @@
   "SecondIntervalsRounding": 1,
   "ShowCollectableHints": true,
   "ShowMultiHookHints": true,
+  "ShowOceanTypeHints": true,
   "EnableFishStats": false,
   "EnableReportTime": true,
   "EnableReportSize": true,

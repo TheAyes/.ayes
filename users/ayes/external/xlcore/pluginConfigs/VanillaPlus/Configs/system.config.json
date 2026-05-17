@@ -1,0 +1,33 @@
+{
+  "Version": 1,
+  "EnabledModifications": [
+    "DutyLootPreview",
+    "CastBarAetheryteNames",
+    "ClearFlag",
+    "ClearSelectedDuties",
+    "HideMpBars",
+    "MacroLineNumbers",
+    "LockChatButton",
+    "MissingJobStoneLockout",
+    "MSQProgressBar",
+    "SystemConfigSearchBar",
+    "InventoryCooldowns",
+    "InventorySearchBar",
+    "RetainerSearchBar",
+    "SaddlebagSearchBar",
+    "ArmourySearchBar",
+    "ShowAetherCurrents",
+    "ShowAetherytesOnTop",
+    "ShowGatheringPoints",
+    "ShowPlayersOnMap",
+    "ShowTreasureChests",
+    "ShowEnemies",
+    "DutyTimer",
+    "FocusTargetLock",
+    "SkipLoginConfirm",
+    "SuppressSharedBoards"
+  ],
+  "IsDebugMode": false,
+  "CurrentSearch": "",
+  "LastSeasonalNotice": "0001-01-01T00:00:00"
+}

@@ -46,11 +46,6 @@
   programs = {
     bitwig = {
       enable = true;
-      package =
-        (import inputs.nixpkgs-bitwig {
-          inherit system;
-          config.allowUnfree = true;
-        }).bitwig-studio6;
       extraPackages = with pkgs; [
         yabridge
         yabridgectl

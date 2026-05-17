@@ -209,6 +209,48 @@
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 6,
+    "Enabled": false,
+    "Fallback": false
+  },
+  {
+    "ItemIds": [
+      5,
+      5516,
+      7,
+      2,
+      5352,
+      5433,
+      4,
+      3,
+      5402
+    ],
+    "Quantities": {
+      "5": 12,
+      "5516": 36,
+      "7": 13,
+      "2": 4,
+      "5352": 1,
+      "5433": 1,
+      "4": 5,
+      "3": 2,
+      "5402": 1
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "5": true,
+      "5516": true,
+      "7": true,
+      "2": true,
+      "5352": true,
+      "5433": true,
+      "4": true,
+      "3": true,
+      "5402": true
+    },
+    "Name": "Tasks",
+    "Description": "Imported from Artisan",
+    "FolderPath": "",
+    "Order": 7,
     "Enabled": true,
     "Fallback": false
   }

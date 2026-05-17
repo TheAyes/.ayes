@@ -1,4 +1,12 @@
 {
-  "EnabledWindows": [],
+  "EnabledWindows": [
+    "Character",
+    "ContentsInfo",
+    "ContentsInfoDetail",
+    "ItemFinder",
+    "RecipeMaterialList",
+    "RecipeNote",
+    "RecipeTree"
+  ],
   "Version": 1
 }

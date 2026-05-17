@@ -13,7 +13,10 @@
       19174,
       24115,
       38213,
-      13673
+      13673,
+      50253,
+      44246,
+      42602
     ],
     "Emotes": []
   },
@@ -518,7 +521,7 @@
     41796
   ],
   "ArmoireItemIds": [],
-  "ShowAdditionalTooltips": false,
+  "AdditionalTooltips": [],
   "GlamourTree": {
     "$type": "Collections.GlamourTree, Collections",
     "Directories": [
@@ -623,6 +626,19 @@
                 "Stain1Id": 0
               }
             }
+          },
+          {
+            "$type": "Collections.GlamourSet, Collections",
+            "Name": "Ex",
+            "Items": {
+              "$type": "System.Collections.Generic.Dictionary`2[[Collections.EquipSlot, Collections],[Collections.GlamourItem, Collections]], System.Private.CoreLib",
+              "Body": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 36645,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              }
+            }
           }
         ]
       }
@@ -633,5 +649,6 @@
   "AutoHideObtainedFromInstanceTab": false,
   "ExcludedCollectionsFromInstanceTab": [],
   "ForceTryOn": true,
+  "SeparatePreviewAndApply": false,
   "Version": 1
 }
