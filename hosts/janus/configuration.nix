@@ -1,7 +1,8 @@
-{ pkgs
-, lib
-, hostname
-, ...
+{
+  pkgs,
+  lib,
+  hostname,
+  ...
 }:
 {
   networking.hostName = hostname;
@@ -22,14 +23,21 @@
     ./livekit.nix
     #./mail-server.nix
     ./coturn-server.nix
+    ./timers.nix
   ];
 
   environment.systemPackages = with pkgs; [
   ];
 
   nix.settings = {
-    trusted-users = [ "root" "@wheel" ];
-    trusted-public-keys = [ "io:Zu/umjucw6vgqfr8Y1RA039dxtjNzT23HyIz6BoL9Bg=" "leda:I2NgSQksndXEYvjCiVShBM9/zNPQN7k8u8za0R0QJTM=" ];
+    trusted-users = [
+      "root"
+      "@wheel"
+    ];
+    trusted-public-keys = [
+      "io:Zu/umjucw6vgqfr8Y1RA039dxtjNzT23HyIz6BoL9Bg="
+      "leda:I2NgSQksndXEYvjCiVShBM9/zNPQN7k8u8za0R0QJTM="
+    ];
   };
 
   nixpkgs.config = {
@@ -37,7 +45,6 @@
       "olm-3.2.16"
     ];
   };
-
 
   users.users = {
     root.hashedPassword = "!"; # Disable root login
@@ -54,5 +61,6 @@
 
   programs = {
     fish.enable = true;
+    git.config.safe.directory = [ "/etc/nixos" ];
   };
 }
