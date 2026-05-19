@@ -62,10 +62,11 @@
       linuxHeaders
       nixfmt
       zoxide
+      jq
     ];
 
     sessionVariables = {
-      EDITOR = pkgs.micro;
+      EDITOR = "${pkgs.micro}/bin/micro";
     };
   };
 
