@@ -24,6 +24,7 @@
         owner = "turnserver";
         group = "turnserver";
       };
+      "matrix/bot_access_token" = {};
     };
 
     templates."livekit-keyfile".content = ''

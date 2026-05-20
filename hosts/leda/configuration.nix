@@ -63,6 +63,7 @@
       python315
 
       nodejs
+      bun
       uv
       powershell
       claude-code
