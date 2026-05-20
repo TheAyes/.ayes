@@ -63,10 +63,11 @@
       nixfmt
       zoxide
       jq
+      sops
     ];
 
     sessionVariables = {
-      EDITOR = "${pkgs.micro}/bin/micro";
+      EDITOR = "micro";
     };
   };
 
