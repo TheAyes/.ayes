@@ -1,7 +1,8 @@
-{ pkgs
-, lib
-, hostname
-, ...
+{
+  pkgs,
+  lib,
+  hostname,
+  ...
 }:
 {
   networking.hostName = hostname;
@@ -20,7 +21,7 @@
     ./matrix-server.nix
     ./teamspeak-server.nix
     ./livekit.nix
-    ./mail-server.nix
+    #./mail-server.nix
     ./coturn-server.nix
     ./timers.nix
   ];
