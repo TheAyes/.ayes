@@ -16,7 +16,14 @@
       13673,
       50253,
       44246,
-      42602
+      42602,
+      26379,
+      26071,
+      9486,
+      10034,
+      38216,
+      30761,
+      40432
     ],
     "Emotes": []
   },
@@ -77,6 +84,7 @@
     12039,
     24598,
     24586,
+    32802,
     24596,
     14834,
     24584,
@@ -520,7 +528,19 @@
     30055,
     41796
   ],
-  "ArmoireItemIds": [],
+  "ArmoireItemIds": [
+    6105,
+    6110,
+    9272,
+    12038,
+    10045,
+    13333,
+    13334,
+    13989,
+    13990,
+    17498,
+    17499
+  ],
   "AdditionalTooltips": [],
   "GlamourTree": {
     "$type": "Collections.GlamourTree, Collections",
@@ -634,7 +654,31 @@
               "$type": "System.Collections.Generic.Dictionary`2[[Collections.EquipSlot, Collections],[Collections.GlamourItem, Collections]], System.Private.CoreLib",
               "Body": {
                 "$type": "Collections.GlamourItem, Collections",
-                "ItemId": 36645,
+                "ItemId": 40432,
+                "Stain0Id": 101,
+                "Stain1Id": 0
+              },
+              "Gloves": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 10034,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "Legs": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 38216,
+                "Stain0Id": 101,
+                "Stain1Id": 0
+              },
+              "Head": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 47218,
+                "Stain0Id": 0,
+                "Stain1Id": 0
+              },
+              "Feet": {
+                "$type": "Collections.GlamourItem, Collections",
+                "ItemId": 30761,
                 "Stain0Id": 0,
                 "Stain1Id": 0
               }
@@ -648,7 +692,7 @@
   "OnlyOpenIfUncollected": false,
   "AutoHideObtainedFromInstanceTab": false,
   "ExcludedCollectionsFromInstanceTab": [],
-  "ForceTryOn": true,
+  "ForceTryOn": false,
   "SeparatePreviewAndApply": false,
   "Version": 1
 }

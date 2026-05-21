@@ -67,7 +67,7 @@ GarudaSize	0
 TitanSize	0
 IfritSize	0
 SolBahamutSize	0
-PetMirageTypeFairy	0
+PetMirageTypeFairy	1
 TimeMode	2
 Time12	0
 TimeEorzea	0
@@ -475,7 +475,7 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	20
-ChatType	2
+ChatType	0
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278

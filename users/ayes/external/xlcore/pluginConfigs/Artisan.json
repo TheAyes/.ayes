@@ -9061,7 +9061,6 @@
       "AddAsQuickSynth": false,
       "TidyAfter": true,
       "OnlyRestockNonCrafted": false,
-      "Locked": false,
       "ID": 21426,
       "Name": "Tasks",
       "Recipes": [
