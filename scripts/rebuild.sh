@@ -1,6 +1,5 @@
 #! /run/current-system/sw/bin/bash
 DIR=$(git rev-parse --show-toplevel)
-MESSAGE=$("$DIR"/scripts/commit_message.sh)
 
 if [ -z "$1" ]; then
 	echo "error: missing positional argument <COMMAND>"
@@ -14,13 +13,21 @@ COMMAND="$1"
 shift
 
 HEADLESS=0
+TARGET_HOST=""
 ARGS=()
 for arg in "$@"; do
-	if [ "$arg" = "--headless" ]; then
-		HEADLESS=1
-	else
-		ARGS+=("$arg")
-	fi
+	case "$arg" in
+		--headless)
+			HEADLESS=1
+			;;
+		--target-host=*)
+			TARGET_HOST="${arg#*=}"
+			ARGS+=("$arg")
+			;;
+		*)
+			ARGS+=("$arg")
+			;;
+	esac
 done
 
 ASK_FLAG=""
@@ -31,6 +38,7 @@ if ! nh os "$COMMAND" "$DIR" $ASK_FLAG --diff=auto "${ARGS[@]}"; then
 fi
 
 if [[ "${COMMAND,,}" != "test" && "${COMMAND,,}" != "build" && "$HOSTNAME" != "janus" ]]; then
+	MESSAGE=$("$DIR"/scripts/commit_message.sh "$TARGET_HOST")
 	git add .
 	git commit -m "$MESSAGE"
 fi
