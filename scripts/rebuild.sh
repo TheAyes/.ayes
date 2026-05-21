@@ -37,7 +37,7 @@ if ! nh os "$COMMAND" "$DIR" $ASK_FLAG --diff=auto "${ARGS[@]}"; then
 	exit 2
 fi
 
-if [[ "${COMMAND,,}" != "test" && "${COMMAND,,}" != "build" && "$HOSTNAME" != "janus" ]]; then
+if [[ "${COMMAND,,}" != "test" && "${COMMAND,,}" != "build" ]]; then
 	MESSAGE=$("$DIR"/scripts/commit_message.sh "$TARGET_HOST")
 	git add .
 	git commit -m "$MESSAGE"
