@@ -20,35 +20,36 @@ in
       User = "ayes";
       WorkingDirectory = "/etc/nixos";
       ExecStart = pkgs.writeShellScript "upgrade-server" ''
-        set -e
+                set -e
 
-        send_alert() {
-          local message="$1"
-          local token
-          token=$(cat ${tokenPath})
-          ${pkgs.curl}/bin/curl -s -X POST \
-            "${matrixHomeserver}/_matrix/client/v3/rooms/${matrixRoomId}/send/m.room.message" \
-            -H "Authorization: Bearer $token" \
-            -H "Content-Type: application/json" \
-            -d "{\"msgtype\":\"m.text\",\"body\":\"$message\"}"
-        }
+                send_alert() {
+                  local message="$1"
+                  local token
+                  token=$(cat ${tokenPath})
+                  ${pkgs.curl}/bin/curl -s -X POST \
+                    "${matrixHomeserver}/_matrix/client/v3/rooms/${matrixRoomId}/send/m.room.message" \
+                    -H "Authorization: Bearer $token" \
+                    -H "Content-Type: application/json" \
+                    -d "{\"msgtype\":\"m.text\",\"body\":\"$message\"}"
+                }
 
-        if ! git pull; then
-          send_alert "⚠️ Janus upgrade failed: git pull failed"
-          exit 1
-        fi
+                if ! git pull; then
+                  send_alert "⚠️ Janus upgrade failed: git pull failed"
+                  exit 1
+                fi
 
-        if ! /etc/nixos/scripts/rebuild.sh boot --update --headless; then
-          send_alert "⚠️ Janus upgrade failed: rebuild failed"
-          exit 1
-        fi
+                if ! /etc/nixos/scripts/rebuild.sh boot --update --headless; then
+                  send_alert "⚠️ Janus upgrade failed: rebuild failed"
+                  exit 1
+                fi
 
-        if ! git push; then
-          send_alert "⚠️ Janus upgrade failed: git push failed"
-          exit 1
-        fi
+                if ! git push; then
+                  send_alert "⚠️ Janus upgrade failed: git push failed"
+                  exit 1
+                fi
 
-        sudo systemctl reboot
+        		send_alert "✅ Janus upgrade successful: rebooting..."
+                sudo systemctl reboot
       '';
     };
   };
