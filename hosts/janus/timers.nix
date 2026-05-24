@@ -15,6 +15,8 @@ in
 
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
+    path = [ pkgs.git pkgs.nh ];
+    environment.HOME = "/home/ayes";
     serviceConfig = {
       Type = "oneshot";
       User = "ayes";

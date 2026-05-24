@@ -21,7 +21,7 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1779448709,
+          "VentureEndsAt": 1779624965,
           "HasVenture": true,
           "Level": 85,
           "VentureBeginsAt": 0,
@@ -33,7 +33,7 @@
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1779448714,
+          "VentureEndsAt": 1779624970,
           "HasVenture": true,
           "Level": 80,
           "VentureBeginsAt": 0,
@@ -45,7 +45,7 @@
         }
       ],
       "Preferred": true,
-      "Ventures": 153,
+      "Ventures": 149,
       "InventorySpace": 38,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
@@ -262,7 +262,7 @@
         0,
         0
       ],
-      "Gil": 765288,
+      "Gil": 215246,
       "GCSeals": 17,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -295,14 +295,14 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20564": 2,
         "20578": 2,
         "20579": 2,
         "20586": 2,
         "20587": 2,
         "20592": 2,
         "20593": 2,
-        "20594": 2
+        "20594": 2,
+        "20596": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -602,9 +602,9 @@
     "0": {
       "ID": 0,
       "Name": "",
-      "Gil": -1,
+      "Gil": 500000,
       "GilCountsTowardsChara": false,
-      "LastGilUpdate": 0,
+      "LastGilUpdate": 1779566240004,
       "FCPoints": 13247172,
       "FCPointsLastUpdate": 1779216590546,
       "HolderChara": 18014598541772518,
@@ -615,7 +615,7 @@
       "Name": "DEUS VULT",
       "Gil": 500000,
       "GilCountsTowardsChara": false,
-      "LastGilUpdate": 1769641333349,
+      "LastGilUpdate": 1779565541226,
       "FCPoints": 12965887,
       "FCPointsLastUpdate": 1777308104959,
       "HolderChara": 0,

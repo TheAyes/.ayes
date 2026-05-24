@@ -86,7 +86,7 @@
   "_rotationActionConfigDict": {
     "AST": {
       "3": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -100,10 +100,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16552": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -117,10 +118,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16553": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -134,10 +136,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16554": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": true,
         "ShouldCheckStatus": true,
@@ -151,10 +154,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16555": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -168,10 +172,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16556": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -185,10 +190,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16557": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -202,7 +208,8 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16558": {
         "IsEnabled": true,
@@ -219,10 +226,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16559": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -236,10 +244,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "16560": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -253,10 +262,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3594": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -270,10 +280,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3595": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -287,10 +298,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "8324": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -304,7 +316,8 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3596": {
         "IsEnabled": false,
@@ -321,10 +334,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3598": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -338,10 +352,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3599": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": true,
         "ShouldCheckStatus": true,
@@ -355,10 +370,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3600": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -372,10 +388,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3601": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -389,10 +406,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3603": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -406,10 +424,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3606": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -423,10 +442,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3608": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": true,
         "ShouldCheckStatus": true,
@@ -440,10 +460,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "25871": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -457,10 +478,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3610": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -474,10 +496,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "25872": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -491,10 +514,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "25873": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -508,10 +532,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3612": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -525,27 +550,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
-      },
-      "3613": {
-        "IsEnabled": true,
-        "IsIntercepted": true,
-        "IsRestrictedDOT": false,
-        "ShouldCheckStatus": true,
-        "ShouldCheckTargetStatus": true,
-        "ShouldCheckCombo": true,
-        "StatusGcdCount": 2,
-        "GCDSingleHeal": false,
-        "AoeCount": 1,
-        "TimeToKill": 0.0,
-        "AutoHealRatio": 0.8,
-        "IsOnCooldownWindow": true,
-        "MinHPFeature": false,
-        "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "25874": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -559,10 +568,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
-      "3614": {
-        "IsEnabled": true,
+      "3613": {
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -570,16 +580,17 @@
         "ShouldCheckCombo": true,
         "StatusGcdCount": 2,
         "GCDSingleHeal": false,
-        "AoeCount": 3,
+        "AoeCount": 1,
         "TimeToKill": 0.0,
         "AutoHealRatio": 0.8,
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "25875": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -593,10 +604,29 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
+      },
+      "3614": {
+        "IsEnabled": false,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "3615": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -610,10 +640,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7559": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -627,10 +658,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7561": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -644,7 +676,8 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7562": {
         "IsEnabled": true,
@@ -657,14 +690,15 @@
         "GCDSingleHeal": false,
         "AoeCount": 3,
         "TimeToKill": 0.0,
-        "AutoHealRatio": 0.8,
+        "AutoHealRatio": 0.90000004,
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7568": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -678,10 +712,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7571": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -695,10 +730,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7439": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -712,10 +748,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7442": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -729,10 +766,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7444": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -746,10 +784,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "7445": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -763,10 +802,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37017": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -780,10 +820,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37018": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -797,10 +838,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37019": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -814,10 +856,65 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
+      },
+      "37020": {
+        "IsEnabled": false,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
+      },
+      "37021": {
+        "IsEnabled": false,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
+      },
+      "37022": {
+        "IsEnabled": false,
+        "IsIntercepted": true,
+        "IsRestrictedDOT": false,
+        "ShouldCheckStatus": true,
+        "ShouldCheckTargetStatus": true,
+        "ShouldCheckCombo": true,
+        "StatusGcdCount": 2,
+        "GCDSingleHeal": false,
+        "AoeCount": 3,
+        "TimeToKill": 0.0,
+        "AutoHealRatio": 0.8,
+        "IsOnCooldownWindow": true,
+        "MinHPFeature": false,
+        "MinHPPercent": 0.2,
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37023": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -831,10 +928,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37024": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -848,10 +946,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37025": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -865,10 +964,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37026": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -882,10 +982,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37027": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -899,10 +1000,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37028": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -916,10 +1018,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37029": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -933,10 +1036,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37030": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -950,10 +1054,11 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       },
       "37031": {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "IsIntercepted": true,
         "IsRestrictedDOT": false,
         "ShouldCheckStatus": true,
@@ -967,7 +1072,8 @@
         "IsOnCooldownWindow": true,
         "MinHPFeature": false,
         "MinHPPercent": 0.2,
-        "AoeResetDone": true
+        "AoeResetDone": true,
+        "SkipPositionSafetyCheck": false
       }
     }
   },
@@ -1036,10 +1142,13 @@
     "W": 0.4
   },
   "CastingStopTime": 2.5,
+  "BMRRaidwideMitWindow": 5.0,
+  "BMRTankbusterMitWindow": 3.0,
+  "BMRKnockbackWindow": 3.0,
   "AutoDefenseNumber": 2,
   "AutoOffAfterCombatTime": 30.0,
   "AngleOfVisionCone": 45.0,
-  "MeleeRangeOffset": 1.0,
+  "MeleeRangedOffset": 1.0,
   "HealWhenNothingTodoBelow": 0.8,
   "HealthTankRatio": 0.45,
   "HealthHealerRatio": 0.4,
@@ -1137,6 +1246,71 @@
     "Y": 3
   },
   "TargetingIndex": 0,
+  "BlockflatdamagedeathimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockslowimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockpetrificationimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockparalysisimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockinterruptimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockblindimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockstunimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlocksleepimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockbindimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockheavyimmuneBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlockimmuneBlu": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlocknonweakBlu": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AllowunaspectedBlu": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
   "O12SOmegaMf": {
     "Value": true,
     "Enable": false,
@@ -1173,6 +1347,11 @@
     "Disable": false
   },
   "CinderDriftPallTargeting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "TheUnmakingShadow": {
     "Value": true,
     "Enable": false,
     "Disable": false
@@ -1247,12 +1426,27 @@
     "Enable": false,
     "Disable": false
   },
+  "AlexanderImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
   "CodImmune": {
     "Value": true,
     "Enable": false,
     "Disable": false
   },
   "DrakeImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "Treasuredungeontimed": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "Treasuredungeonnumbered": {
     "Value": true,
     "Enable": false,
     "Disable": false
@@ -1297,6 +1491,41 @@
     "Enable": false,
     "Disable": false
   },
+  "PvpGuardCancel": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifyStun": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifySilence": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifyDeepFreeze": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifyMiracleOfNature": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifyHeavy": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "PvpPurifyBind": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
   "PvpGcdLockControl": {
     "Value": true,
     "Enable": false,
@@ -1304,6 +1533,16 @@
   },
   "PvpAllowSprintWithoutTarget": {
     "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "BmrSafetyCheckAuto": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BmrSafetyCheckIntercept": {
+    "Value": false,
     "Enable": false,
     "Disable": false
   },
@@ -1334,6 +1573,11 @@
   },
   "InterceptCooldown": {
     "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "InterceptPassing": {
+    "Value": true,
     "Enable": false,
     "Disable": false
   },
@@ -1392,6 +1636,21 @@
     "Enable": false,
     "Disable": false
   },
+  "PldlockCasting": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "AstlockCasting": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "BlulockCasting": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
   "UseKnockback": {
     "Value": true,
     "Enable": false,
@@ -1418,6 +1677,16 @@
     "Disable": false
   },
   "TeachingMode": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TeachingModeAutoTarget": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TeachingModeShowTargetHint": {
     "Value": false,
     "Enable": false,
     "Disable": false
@@ -1488,6 +1757,16 @@
     "Disable": false
   },
   "InDebug": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "EnableActionTracer": {
+    "Value": false,
+    "Enable": false,
+    "Disable": false
+  },
+  "TraceMirrorToPluginLog": {
     "Value": false,
     "Enable": false,
     "Disable": false
@@ -1624,6 +1903,11 @@
   },
   "UseAoeDefense": {
     "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
+  "UseBmrTimeline": {
+    "Value": false,
     "Enable": false,
     "Disable": false
   },
@@ -1807,8 +2091,8 @@
     "Enable": false,
     "Disable": false
   },
-  "FilterStopMark": {
-    "Value": true,
+  "FilterStopMark2": {
+    "Value": false,
     "Enable": false,
     "Disable": false
   },
@@ -1857,8 +2141,8 @@
     "Enable": false,
     "Disable": false
   },
-  "TargetQuestThings2": {
-    "Value": false,
+  "TargetQuestThings3": {
+    "Value": true,
     "Enable": false,
     "Disable": false
   },
