@@ -1,9 +1,10 @@
 {
 
   outputs =
-    inputs@{ nixpkgs
-    , flake-parts
-    , ...
+    inputs@{
+      nixpkgs,
+      flake-parts,
+      ...
     }:
     flake-parts.lib.mkFlake { inherit inputs; } (
       { ... }:
@@ -116,6 +117,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
