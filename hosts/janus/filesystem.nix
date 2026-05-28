@@ -24,9 +24,9 @@
   swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
   boot = {
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
+    loader.grub = {
+      enable = true;
+      device = "/dev/sda";
     };
 
     initrd.availableKernelModules = [
