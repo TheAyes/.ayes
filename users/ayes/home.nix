@@ -10,6 +10,7 @@
     ./programs/zoxide.nix
     ./programs/zed/config.nix
     ./programs/gitkraken.nix
+    ./services/steam.nix
   ];
 
   programs.direnv = {

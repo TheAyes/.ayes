@@ -209,4 +209,5 @@
     # https://wiki.nixos.org/wiki/Linux_kernel
     kernelPackages = pkgs.linuxPackages_zen;
   };
+
 }

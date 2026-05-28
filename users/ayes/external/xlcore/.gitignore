@@ -24,6 +24,7 @@ wineprefix/
 *.bin
 *.sqlite
 *.pdb
+*.bak
 dalamudUI.ini
 launcherUI.ini
 Browsingway/eb
