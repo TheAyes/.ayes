@@ -1,4 +1,5 @@
-#! /run/current-system/sw/bin/bash
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p git nh
 DIR=$(git rev-parse --show-toplevel)
 
 if [ -z "$1" ]; then
