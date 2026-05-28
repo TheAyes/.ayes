@@ -1,8 +1,13 @@
+{ lib, modulesPath, ... }:
 {
+  imports = [
+    (modulesPath + "/profiles/qemu-guest.nix")
+  ];
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   fileSystems = {
     "/boot" = {
       device = "/dev/disk/by-label/boot";
-      fsType = "ext4";
+      fsType = "vfat";
     };
 
     "/nix" = {
@@ -16,12 +21,12 @@
     };
   };
 
-  swapDevices = [{ device = "/dev/disk/by-label/swap"; }];
+  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
   boot = {
-    loader.grub = {
-      enable = true;
-      device = "/dev/sdb";
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
     };
 
     initrd.availableKernelModules = [
@@ -31,7 +36,7 @@
       "virtio_scsi"
       "sd_mod"
       "sr_mod"
-      "ext4"
+      # "ext4"
     ];
   };
 }
