@@ -35,8 +35,8 @@ in
             -d "{\"msgtype\":\"m.text\",\"body\":\"$message\"}"
         }
 
-        if ! git pull; then
-          send_alert "⚠️ Janus upgrade failed: git pull failed"
+        if ! git fetch || ! git reset --hard origin/main; then
+          send_alert "⚠️ Janus upgrade failed: git fetch/reset failed"
           exit 1
         fi
 
