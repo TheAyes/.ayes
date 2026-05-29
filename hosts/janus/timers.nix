@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 let
   matrixRoomId = "!ezRIEmZMsaRZTaGMBZ:convene.chat";
   matrixHomeserver = "http://localhost:8008";
@@ -16,7 +16,10 @@ in
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
     path = [ pkgs.git pkgs.nh pkgs.openssh pkgs.nix ];
-    environment.HOME = "/home/ayes";
+    environment = {
+      HOME = "/home/ayes";
+      NIX_PATH = lib.concatStringsSep ":" config.nix.nixPath;
+    };
     serviceConfig = {
       Type = "oneshot";
       User = "ayes";
