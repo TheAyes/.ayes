@@ -16,7 +16,10 @@ in
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
     path = with pkgs; [ git nh openssh nix ];
-    environment.HOME = "/home/ayes";
+    environment = {
+      HOME = "/home/ayes";
+      GIT_SSH_COMMAND = "ssh -i /home/ayes/.ssh/id_ed25519 -o IdentitiesOnly=yes";
+    };
     serviceConfig = {
       Type = "oneshot";
       WorkingDirectory = "/etc/nixos";
