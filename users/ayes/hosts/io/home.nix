@@ -7,6 +7,8 @@
 }:
 {
   imports = [
+    ./autostart.nix
+
     # Development Profiles
     ../../../../profiles/home-manager/development/node.nix
     ../../../../profiles/home-manager/development/python.nix

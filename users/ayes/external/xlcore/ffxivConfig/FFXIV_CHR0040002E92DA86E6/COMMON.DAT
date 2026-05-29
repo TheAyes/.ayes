@@ -475,7 +475,7 @@ LogChatBubbleCwls8ShowType	1
 LogChatBubbleCwls8FontColor	0
 LogChatBubbleCwls8WindowColor	0
 LogPermeationRateInput	20
-ChatType	18
+ChatType	2
 ShopSell	0
 ColorSay	16316664
 ColorShout	16754278
@@ -611,9 +611,9 @@ MouseWheelOperationShiftDown	0
 TelepoTicketUseType	4
 TelepoTicketGilSetting	5000
 TelepoCategoryType	1
-HidePcAroundQuestProgressNpc	0
+HidePcAroundQuestProgressNpc	1
 HidePcAroundQuestProgressNpcIncludeParty	0
-HidePcAroundNpcAccessingQuest	0
+HidePcAroundNpcAccessingQuest	1
 HidePcAroundNpcAccessingQuestIncludeParty	0
 PvPFrontlinesGCFree	1
  
