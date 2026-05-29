@@ -1,21 +1,17 @@
-{ pkgs, ... }:
 {
-  systemd.user.services.steam = {
-    Unit = {
-      Description = "Steam";
-      After = [
-        "graphical-session.target"
-        "network-online.target"
-      ];
-      Wants = [ "network-online.target" ];
-      PartOf = [ "graphical-session.target" ];
+  services.autostart = {
+    enable = true;
+    apps = {
+      steam = {
+        description = "Steam";
+        command = "/run/current-system/sw/bin/steam -silent";
+        requiresNetwork = true;
+      };
+      vesktop = {
+        description = "Vesktop";
+        command = "/etc/profiles/per-user/ayes/bin/vesktop";
+        requiresNetwork = true;
+      };
     };
-    Service = {
-      ExecStartPre = "${pkgs.networkmanager}/bin/nm-online -q -t 60";
-      ExecStart = "/run/current-system/sw/bin/steam -silent";
-      Restart = "on-failure";
-      RestartSec = 5;
-    };
-    Install.WantedBy = [ "graphical-session.target" ];
   };
 }
