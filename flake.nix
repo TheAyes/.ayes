@@ -39,6 +39,7 @@
                   inputs.nixcord.homeModules.nixcord
                   inputs.zen-browser.homeModules.twilight
                   ./modules/home-manager/bitwig
+                  ./modules/home-manager/autostart.nix
                 ];
               };
 
