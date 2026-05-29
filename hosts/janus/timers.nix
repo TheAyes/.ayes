@@ -15,7 +15,7 @@ in
 
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
-    path = with pkgs; [ git nixos-rebuild openssh nix ];
+    path = with pkgs; [ git nixos-rebuild openssh nix jq ];
     environment = {
       HOME = "/home/ayes";
       GIT_SSH_COMMAND = "ssh -i /home/ayes/.ssh/id_ed25519 -o IdentitiesOnly=yes";
@@ -28,23 +28,30 @@ in
 
         send_alert() {
           local message="$1"
+          local timestamp
+          timestamp=$(date '+%Y-%m-%d %H:%M:%S %Z')
           local token
           token=$(cat ${tokenPath})
-          ${pkgs.curl}/bin/curl -s -X POST \
-            "${matrixHomeserver}/_matrix/client/v3/rooms/${matrixRoomId}/send/m.room.message" \
-            -H "Authorization: Bearer $token" \
-            -H "Content-Type: application/json" \
-            -d "{\"msgtype\":\"m.text\",\"body\":\"$message\"}"
+          jq -nc --arg body "[$timestamp]"$'\n'"$message" '{msgtype:"m.text", body:$body}' \
+            | ${pkgs.curl}/bin/curl -s -X POST \
+                "${matrixHomeserver}/_matrix/client/v3/rooms/${matrixRoomId}/send/m.room.message" \
+                -H "Authorization: Bearer $token" \
+                -H "Content-Type: application/json" \
+                --data-binary @-
+        }
+
+        fail() {
+          local stage="$1"
+          send_alert "⚠️ Janus upgrade failed: $stage"$'\n\n'"$(journalctl -u upgrade-server.service -n 20 --no-pager)"
+          exit 1
         }
 
         if ! git fetch || ! git reset --hard origin/main; then
-          send_alert "⚠️ Janus upgrade failed: git fetch/reset failed"
-          exit 1
+          fail "git fetch/reset"
         fi
 
         if ! nix flake update || ! nixos-rebuild boot --flake .#janus; then
-          send_alert "⚠️ Janus upgrade failed: rebuild failed"
-          exit 1
+          fail "rebuild"
         fi
 
         if ! git diff --quiet flake.lock; then
@@ -53,8 +60,7 @@ in
         fi
 
         if ! git push; then
-          send_alert "⚠️ Janus upgrade failed: git push failed"
-          exit 1
+          fail "git push"
         fi
 
         new=$(readlink -f /nix/var/nix/profiles/system)
