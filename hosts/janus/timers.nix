@@ -19,7 +19,6 @@ in
     environment.HOME = "/home/ayes";
     serviceConfig = {
       Type = "oneshot";
-      User = "ayes";
       WorkingDirectory = "/etc/nixos";
       ExecStart = pkgs.writeShellScript "upgrade-server" ''
         set -e
@@ -55,8 +54,15 @@ in
           exit 1
         fi
 
+        new=$(readlink -f /nix/var/nix/profiles/system)
+        current=$(readlink -f /run/current-system)
+        if [ "$new" = "$current" ]; then
+          send_alert "✅ Janus upgrade: no system changes, skipping reboot"
+          exit 0
+        fi
+
         send_alert "✅ Janus upgrade successful: rebooting..."
-        sudo systemctl reboot
+        systemctl reboot
       '';
     };
   };
