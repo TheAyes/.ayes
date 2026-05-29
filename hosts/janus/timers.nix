@@ -15,7 +15,7 @@ in
 
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
-    path = [ pkgs.git pkgs.nh pkgs.openssh ];
+    path = [ pkgs.git pkgs.nh pkgs.openssh pkgs.nix ];
     environment.HOME = "/home/ayes";
     serviceConfig = {
       Type = "oneshot";
