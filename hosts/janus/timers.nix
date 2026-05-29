@@ -15,7 +15,7 @@ in
 
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
-    path = with pkgs; [ git nh openssh nix ];
+    path = with pkgs; [ git nixos-rebuild openssh nix ];
     environment = {
       HOME = "/home/ayes";
       GIT_SSH_COMMAND = "ssh -i /home/ayes/.ssh/id_ed25519 -o IdentitiesOnly=yes";
@@ -42,7 +42,7 @@ in
           exit 1
         fi
 
-        if ! nh os boot . --update; then
+        if ! nix flake update || ! nixos-rebuild boot --flake .#janus; then
           send_alert "⚠️ Janus upgrade failed: rebuild failed"
           exit 1
         fi
