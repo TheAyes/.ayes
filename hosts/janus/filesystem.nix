@@ -7,7 +7,7 @@
   fileSystems = {
     "/boot" = {
       device = "/dev/disk/by-label/boot";
-      fsType = "vfat";
+      fsType = "ext4";
     };
 
     "/nix" = {
@@ -21,7 +21,7 @@
     };
   };
 
-  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
+  swapDevices = [{ device = "/dev/disk/by-label/swap"; }];
 
   boot = {
     loader.grub = {
@@ -36,7 +36,7 @@
       "virtio_scsi"
       "sd_mod"
       "sr_mod"
-      # "ext4"
+      "ext4"
     ];
   };
 }
