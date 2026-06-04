@@ -3,21 +3,71 @@
   "serializableUsersV3": [],
   "downloadProfilePictures": true,
   "languageSettings": 0,
-  "showColours": 0,
   "showCommandFeedback": true,
   "showNotifications": true,
-  "showOnNameplates": true,
-  "showOnCastbars": true,
-  "showInBattleChat": true,
-  "showOnFlyout": true,
-  "showOnEmotes": true,
-  "showOnTooltip": true,
-  "showNamesInMinionBook": true,
-  "showNamesInActionLog": true,
-  "useContextMenus": true,
-  "showOnTargetBars": true,
-  "showOnPartyList": true,
+  "SelectedColourMode": 0,
+  "ShowOnNameplatesColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnCastbarsColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowInBattleChatColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnFlyoutColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnEmotesColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnTooltipColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowNamesInMinionBookColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowNamesInActionLogColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnTargetBarsColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
+  "ShowOnPartyListColour": {
+    "$type": "PetRenamer.Configuration+ColourConfig, PetRenamer",
+    "Enabled": true,
+    "OverrideColourMode": false,
+    "ColourMode": 0
+  },
   "showOnIslandPets": true,
+  "useContextMenus": true,
   "showKofiButton": false,
   "quickButtonsToggle": true,
   "listButtonLayout": 0,
@@ -28,7 +78,18 @@
   "debugModeActive": false,
   "openDebugWindowOnStart": false,
   "debugShowChatCode": false,
-  "Version": 11,
+  "showColours": 0,
+  "showOnNameplates": true,
+  "showOnCastbars": true,
+  "showInBattleChat": true,
+  "showOnFlyout": true,
+  "showOnEmotes": true,
+  "showOnTooltip": true,
+  "showNamesInMinionBook": true,
+  "showNamesInActionLog": true,
+  "showOnTargetBars": true,
+  "showOnPartyList": true,
+  "Version": 12,
   "SerializableUsersV6": [
     {
       "$type": "PN.S.SerializableUserV6, PetRenamer",

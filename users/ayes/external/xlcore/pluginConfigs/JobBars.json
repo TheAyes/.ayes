@@ -1,8 +1,5 @@
 {
   "$type": "JobBars.Data.Configuration, JobBars",
-  "Use4K": true,
-  "AttachAddon": 0,
-  "CooldownAttachAddon": 2,
   "GaugeScale": 1.0,
   "GaugeHorizontal": false,
   "GaugeAlignRight": false,
@@ -191,7 +188,7 @@
   "CooldownPosition": {
     "$type": "System.Numerics.Vector2, System.Private.CoreLib",
     "X": -40.0,
-    "Y": 20.0
+    "Y": 35.0
   },
   "CooldownScale": 1.0,
   "CooldownsSpacing": 40.0,

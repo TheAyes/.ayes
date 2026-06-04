@@ -21,9 +21,9 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1780053734,
+          "VentureEndsAt": 1780635962,
           "HasVenture": true,
-          "Level": 85,
+          "Level": 86,
           "VentureBeginsAt": 0,
           "Job": 33,
           "VentureID": 740,
@@ -33,7 +33,7 @@
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1780053741,
+          "VentureEndsAt": 1780635967,
           "HasVenture": true,
           "Level": 81,
           "VentureBeginsAt": 0,
@@ -45,8 +45,8 @@
         }
       ],
       "Preferred": true,
-      "Ventures": 137,
-      "InventorySpace": 33,
+      "Ventures": 125,
+      "InventorySpace": 31,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -262,7 +262,7 @@
         0,
         0
       ],
-      "Gil": 382797,
+      "Gil": 381742,
       "GCSeals": 7961,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -305,7 +305,10 @@
         "20596": 2,
         "20597": 2,
         "20599": 2,
-        "20601": 2
+        "20601": 2,
+        "20602": 2,
+        "20606": 2,
+        "20608": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -608,8 +611,8 @@
       "Gil": 500000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1779566240004,
-      "FCPoints": 13756212,
-      "FCPointsLastUpdate": 1779821874522,
+      "FCPoints": 13686596,
+      "FCPointsLastUpdate": 1780432531078,
       "HolderChara": 18014598541772518,
       "Rank": 30
     },
