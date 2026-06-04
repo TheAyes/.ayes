@@ -2,5 +2,26 @@
   "version": 1,
   "assetCapture": {
     "enableRuntimeCapture": false
+  },
+  "housingCulling": {
+    "disableFurnitureDisplayCulling": false
+  },
+  "housingMode": {
+    "mode": "Normal",
+    "size": "Small",
+    "area": "Indoor"
+  },
+  "layouts": {
+    "defaultLayoutId": null
+  },
+  "layoutAutoSave": {
+    "enabled": true,
+    "intervalSeconds": 60
+  },
+  "rendering": {
+    "drawMode": "Automatic",
+    "depthMode": "AlwaysVisible",
+    "antiAliasing": 100,
+    "drawOverGameUi": false
   }
 }
