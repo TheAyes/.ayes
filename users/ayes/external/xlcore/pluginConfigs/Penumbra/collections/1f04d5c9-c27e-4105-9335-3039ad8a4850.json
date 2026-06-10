@@ -56,6 +56,18 @@
             "Priority": 0,
             "Enabled": true
         },
+        "hs-decode for all female base [182]-1.0.0-S8ZK": {
+            "Settings": {
+                "base": 0,
+                "toggles": 0,
+                "install": 1,
+                "aura": 0,
+                "alternative highlights: full": 0,
+                "alternative highlights: remove": 0
+            },
+            "Priority": 5,
+            "Enabled": true
+        },
         "hs-Face Defined [DT]-1.0.1-vye": {
             "Settings": {
                 "Hyur": 0,

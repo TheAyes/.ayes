@@ -1,31 +1,44 @@
 {
   "$type": "Questionable.Configuration, Questionable",
-  "Version": 1,
   "PluginSetupCompleteVersion": 5,
   "General": {
     "$type": "Questionable.Configuration+GeneralConfiguration, Questionable",
     "CombatModule": 1,
     "MountId": 138,
+    "ChocoboName": "Chicken",
     "GrandCompany": 0,
     "CombatJob": 0,
+    "CraftingJob": 8,
+    "GatheringJob": 16,
+    "GearsetUpdateSource": 0,
     "HideInAllInstances": true,
     "UseEscToCancelQuesting": true,
     "ShowIncompleteSeasonalEvents": true,
     "SkipLowPriorityDuties": false,
     "ConfigureTextAdvance": true,
+    "DontSkipCutscenes": false,
+    "DontShowAnswerSuggestions": false,
     "AutoStepRefreshEnabled": true,
-    "AutoStepRefreshDelaySeconds": 30
+    "AutoStepRefreshDelaySeconds": 30,
+    "UseTickets": false,
+    "HideSponsorButton": false,
+    "DismissedReportWarning": false,
+    "ReportsDisabled": false,
+    "ReportMessage": "",
+    "DisplayName": "Anonymous"
   },
   "Stop": {
     "$type": "Questionable.Configuration+StopConfiguration, Questionable",
     "Enabled": false,
     "QuestsToStopAfter": [],
+    "QuestsToStopWhenAccepted": [],
     "LevelToStopAfter": false,
     "TargetLevel": 50
   },
   "Duties": {
     "$type": "Questionable.Configuration+DutyConfiguration, Questionable",
     "RunInstancedContentWithAutoDuty": false,
+    "RunUnsynced": true,
     "WhitelistedDutyCfcIds": [],
     "BlacklistedDutyCfcIds": [],
     "ExpansionHeaderStates": {
@@ -39,7 +52,7 @@
   "SinglePlayerDuties": {
     "$type": "Questionable.Configuration+SinglePlayerDutyConfiguration, Questionable",
     "RunSoloInstancesWithBossMod": true,
-    "RetryDifficulty": 0,
+    "RetryDifficulty": 2,
     "WhitelistedSinglePlayerDutyCfcIds": [],
     "BlacklistedSinglePlayerDutyCfcIds": [],
     "HeaderStates": {
@@ -61,25 +74,54 @@
     "HighlightColor": 4,
     "NeverFly": false,
     "AdditionalStatusInformation": false,
+    "ShowTracked": false,
+    "ShowDailies": false,
+    "ShowDirector": false,
+    "ShowActionManager": false,
+    "ShowNewGamePlus": false,
     "DisableAutoDutyBareMode": false,
     "SkipAetherCurrents": false,
     "SkipClassJobQuests": false,
     "SkipARealmRebornHardModePrimals": false,
     "SkipCrystalTowerRaids": false,
     "PreventQuestCompletion": false,
+    "AbandonQuestBeforeCompletion": false,
+    "RemoveFromPriorityWhenAbandoned": false,
     "ShowWindowOnStart": false,
-    "StartMinimized": false
+    "StartMinimized": false,
+    "OpenEditor": false,
+    "NamazuPreferCraft": false
   },
   "DebugWindowConfig": {
-    "$type": "LLib.ImGui.WindowConfig, LLib",
+    "$type": "Questionable.Windows.Common.WindowConfig, Questionable",
     "IsPinned": false,
     "IsClickthrough": false,
     "Alpha": null
   },
   "ConfigWindowConfig": {
-    "$type": "LLib.ImGui.WindowConfig, LLib",
+    "$type": "Questionable.Windows.Common.WindowConfig, Questionable",
     "IsPinned": false,
     "IsClickthrough": false,
     "Alpha": null
+  },
+  "Priority": {
+    "$type": "Questionable.Configuration+PriorityConfiguration, Questionable",
+    "Presets": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+    }
+  },
+  "PathData": {
+    "$type": "Questionable.Configuration+PathDataConfiguration, Questionable",
+    "AutoUpdate": true,
+    "InstalledDataVersion": 1780900042,
+    "BundlePluginVersion": "15.297.0.7",
+    "LastCheck": "2026-06-08T09:07:48.1664228+00:00"
+  },
+  "Version": 2,
+  "Profiles": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Newtonsoft.Json.Linq.JObject, Newtonsoft.Json]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "CharacterProfiles": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   }
 }

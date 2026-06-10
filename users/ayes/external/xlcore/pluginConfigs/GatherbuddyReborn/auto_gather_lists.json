@@ -29,8 +29,9 @@
     "Description": "",
     "FolderPath": "",
     "Order": 1,
-    "Enabled": true,
-    "Fallback": false
+    "Enabled": false,
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [
@@ -60,7 +61,8 @@
     "FolderPath": "",
     "Order": 2,
     "Enabled": false,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [
@@ -138,7 +140,8 @@
     "FolderPath": "",
     "Order": 3,
     "Enabled": false,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [],
@@ -150,7 +153,8 @@
     "FolderPath": "",
     "Order": 4,
     "Enabled": false,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [
@@ -177,7 +181,8 @@
     "FolderPath": "",
     "Order": 5,
     "Enabled": false,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [
@@ -210,48 +215,41 @@
     "FolderPath": "",
     "Order": 6,
     "Enabled": false,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   },
   {
     "ItemIds": [
-      5,
-      5516,
-      7,
-      2,
-      5352,
-      5433,
-      4,
-      3,
-      5402
+      32016,
+      32022,
+      32017,
+      12642,
+      13,
+      12
     ],
     "Quantities": {
-      "5": 12,
-      "5516": 36,
-      "7": 13,
-      "2": 4,
-      "5352": 1,
-      "5433": 1,
-      "4": 5,
-      "3": 2,
-      "5402": 1
+      "32016": 250,
+      "32022": 250,
+      "32017": 250,
+      "12642": 100,
+      "13": 200,
+      "12": 100
     },
     "PrefferedLocations": {},
     "EnabledItems": {
-      "5": true,
-      "5516": true,
-      "7": true,
-      "2": true,
-      "5352": true,
-      "5433": true,
-      "4": true,
-      "3": true,
-      "5402": true
+      "32016": true,
+      "32022": true,
+      "32017": true,
+      "12642": true,
+      "13": true,
+      "12": true
     },
     "Name": "Tasks",
     "Description": "Imported from Artisan",
     "FolderPath": "",
-    "Order": 7,
+    "Order": 8,
     "Enabled": true,
-    "Fallback": false
+    "Fallback": false,
+    "RemoveCompletedItems": false
   }
 ]

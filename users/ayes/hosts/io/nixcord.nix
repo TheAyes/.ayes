@@ -23,7 +23,7 @@
         betterSettings.enable = lib.mkForce false; # This plugin causes discord to break
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
-        ClearURLs.enable = true;
+        clearUrls.enable = true;
         consoleJanitor.enable = true;
         dearrow.enable = true;
         decor.enable = true;
@@ -45,16 +45,16 @@
         messageLinkEmbeds.enable = true;
         messageLogger.enable = true;
         #moreUserTags.enable = true;
-        MutualGroupDMs.enable = true;
+        mutualGroupDms.enable = true;
         newGuildSettings.enable = true;
         noMosaic.enable = true;
         noOnboardingDelay.enable = true;
         noPendingCount.enable = true;
         noProfileThemes.enable = true;
         #noScreensharePreview.enable = true;
-        OnePingPerDM.enable = true;
+        onePingPerDm.enable = true;
         permissionFreeWill.enable = true;
-        PinDMs.enable = true;
+        pinDms.enable = true;
         relationshipNotifier.enable = true;
         showHiddenChannels.enable = true;
         showHiddenThings.enable = true;
@@ -66,7 +66,7 @@
         typingTweaks.enable = true;
         unlockedAvatarZoom.enable = true;
         unsuppressEmbeds.enable = true;
-        USRBG = {
+        usrbg = {
           enable = true;
           nitroFirst = false;
         };

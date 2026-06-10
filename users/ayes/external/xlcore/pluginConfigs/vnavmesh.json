@@ -8,7 +8,7 @@
     "AlignCameraHeight": -15.0,
     "ShowWaypoints": false,
     "ForceShowGameCollision": false,
-    "CancelMoveOnUserInput": false,
+    "CancelMoveOnUserInput": true,
     "StopOnStuck": false,
     "StuckTolerance": 0.05,
     "StuckTimeoutMs": 500,
