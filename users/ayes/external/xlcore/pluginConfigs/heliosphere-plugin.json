@@ -21,12 +21,12 @@
   "OneClick": true,
   "OneClickSalt": {
     "$type": "System.Byte[], System.Private.CoreLib",
-    "$value": "olEt69KBlUI="
+    "$value": "pf9z5VIEKKQ="
   },
-  "OneClickHash": "Yy924H010kkT4tmmkBUEi7MOlA/s21gsxbm/EWujX1emBJnxzyg7upQbDEtQCOe3ZJUX+vgGnsoh1LVuhjTUv+5pzhwj35G3m6kwtyFU0c3oniHomNtG+lt0hlVGuT43rn9NmC3MjGXAoIjsWsxKAmfJY+fN9kR4ebKfyUJCinY=",
+  "OneClickHash": "1r6fwlUmNmF47ufP1lp+lCEQUrZct+JzKQHQ8zUwSz5ZvQnsvwLLzl8x2LOVotVXJ8YnEGP1bVqPq37kS7s0+GKxQ/AYxKBwufepDzoWIomQV1BxPQQ0rAL8NaWBR5J/zv7bkDToWrxRMdCT9yfbfMuiIJ/yzXMiCCowcwLTvro=",
   "OneClickCollectionId": null,
-  "MaxKibsPerSecond": 30720,
-  "AltMaxKibsPerSecond": 5120,
+  "MaxKibsPerSecond": 0,
+  "AltMaxKibsPerSecond": 0,
   "LimitNormal": 0,
   "LimitInstance": 2,
   "LimitCombat": 2,

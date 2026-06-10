@@ -1,0 +1,88 @@
+{
+  "$type": "TheCollector.Configuration, TheCollector",
+  "Version": 6,
+  "ItemsToPurchase": [],
+  "EnableAutogatherOnFinish": true,
+  "CollectOnFinishCraftingList": true,
+  "ShouldCraftOnAutogatherChanged": true,
+  "CollectOnAutogatherFinish": false,
+  "BuyAfterEachCollect": false,
+  "ResetEachQuantityAfterCompletingList": false,
+  "CollectOnFinishedFishing": false,
+  "ArtisanListId": 0,
+  "LastSeenVersion": 24,
+  "CheckForVenturesBetweenRuns": false,
+  "CheckForDeliverooBetweenRuns": false,
+  "ChangeLogDisplayType": 0,
+  "PreferredCollectableShop": {
+    "$type": "TheCollector.Data.Models.CollectableShop, TheCollector",
+    "TerritoryId": 0,
+    "Location": {
+      "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "RetainerBellLoc": {
+      "$type": "System.Numerics.Vector3, System.Private.CoreLib",
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Disabled": false,
+    "IsLifestreamRequired": false,
+    "LifestreamRootAetheryteId": null,
+    "LifestreamAethernetId": null,
+    "ScripShopLocation": null
+  },
+  "PreferredTerritoryId": 886,
+  "Goal": {
+    "$type": "TheCollector.Data.Models.ScripGoal, TheCollector",
+    "StopGatheringWhenComplete": true,
+    "HideFishingCollectables": false,
+    "HideUnobtainableCollectables": true,
+    "ItemsToPurchase": []
+  },
+  "Stop": {
+    "$type": "TheCollector.Data.Models.StopConditions, TheCollector",
+    "StopOnScripsEarnedEnabled": false,
+    "MaxScripsEarned": 10000,
+    "StopOnBuyCyclesEnabled": false,
+    "MaxBuyCycles": 5,
+    "StopOnSessionTimeEnabled": false,
+    "MaxSessionMinutes": 120
+  },
+  "Discord": {
+    "$type": "TheCollector.Data.Models.DiscordNotificationSettings, TheCollector",
+    "Enabled": false,
+    "WebhookUrl": "",
+    "NotifyOnHardFail": true,
+    "NotifyOnGoalComplete": true,
+    "NotifyOnStopCondition": true,
+    "NotifyOnScripCap": false
+  },
+  "CharacterBalances": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt64, System.Private.CoreLib],[TheCollector.Data.Models.CharacterBalance, TheCollector]], System.Private.CoreLib",
+    "18014598541772518": {
+      "$type": "TheCollector.Data.Models.CharacterBalance, TheCollector",
+      "ContentId": 18014598541772518,
+      "LastSeenName": "Meira Kisaragi",
+      "LastSeenWorld": "Alpha",
+      "ScripBalances": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+        "33913": 0,
+        "33914": 1854,
+        "41784": 0,
+        "41785": 1277
+      },
+      "LastSampledAt": "2026-06-08T17:33:59.8914395Z"
+    }
+  },
+  "TotalScripsSpent": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "UiDelayMs": 300,
+  "ReserveScripAmount": 0,
+  "HardFailReason": null,
+  "ActiveRunSource": 1
+}

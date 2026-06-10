@@ -5,6 +5,8 @@
         "Base Mods/Character",
         "Base Mods/Character/Face",
         "Base Mods/Character/Hair",
-        "Base Mods/VFX"
+        "Base Mods/VFX",
+        "Base Mods/World",
+        "UI"
     ]
 }

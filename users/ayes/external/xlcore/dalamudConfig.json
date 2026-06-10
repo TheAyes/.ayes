@@ -58,6 +58,16 @@
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://repo.lightless-sync.org/",
         "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/TomestoneGG/Dalamud.Tomestone/master/repo.json",
+        "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/Ashylila/AshPluggyRepo/refs/heads/main/repo.json",
+        "IsEnabled": true
       }
     ]
   },
@@ -232,7 +242,13 @@
       "vfaux",
       "GatherBuddyReborn",
       "MemoryMarker",
-      "PassportCheckerReborn"
+      "PassportCheckerReborn",
+      "MapLinker",
+      "OpenerCreator",
+      "NoPolice",
+      "QuestTracker",
+      "Dalamud.Tomestone",
+      "TheCollector"
     ]
   },
   "DevMode": false,
@@ -2738,6 +2754,24 @@
           "InternalName": "PassportCheckerReborn",
           "WorkingPluginId": "7ef1e3ec-6a4c-4a02-bc9f-e67d3eb7444b",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Dalamud.Tomestone",
+          "WorkingPluginId": "5bfdd013-edd4-4718-a058-8ecbde0b72b6",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "TheCollector",
+          "WorkingPluginId": "f50a641e-5243-4fde-abbb-3208a9ff292f",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Lifestream",
+          "WorkingPluginId": "d4bf003c-3eb7-4b28-8e04-fd0bd5a24750",
+          "IsEnabled": true
         }
       ]
     },
@@ -2760,7 +2794,8 @@
       "YesAlready",
       "SplatoonPriority",
       "vnavmesh",
-      "Rotation Solver Reborn"
+      "Rotation Solver Reborn",
+      "LifestreamInstance"
     ]
   },
   "DtrIgnore": {

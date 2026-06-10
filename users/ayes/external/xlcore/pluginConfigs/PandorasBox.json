@@ -4,7 +4,9 @@
     "ATMSolver",
     "PartyFinderShowMore",
     "AutoVoteMvp",
-    "AfkDummyReset"
+    "AfkDummyReset",
+    "AutoFairy",
+    "AutoSelectTurnin"
   ],
   "DisabledTheme": true,
   "Version": 0

@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -21,32 +21,32 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1780635962,
+          "VentureEndsAt": 1781113939,
           "HasVenture": true,
           "Level": 86,
           "VentureBeginsAt": 0,
           "Job": 33,
-          "VentureID": 740,
+          "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235712755,
-          "MBItems": 0
+          "MBItems": 13
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1780635967,
+          "VentureEndsAt": 1781113946,
           "HasVenture": true,
-          "Level": 81,
+          "Level": 82,
           "VentureBeginsAt": 0,
           "Job": 17,
-          "VentureID": 742,
+          "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235723971,
-          "MBItems": 1
+          "MBItems": 9
         }
       ],
       "Preferred": true,
-      "Ventures": 125,
-      "InventorySpace": 31,
+      "Ventures": 93,
+      "InventorySpace": 47,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -235,11 +235,11 @@
         0,
         59,
         55,
-        28,
+        50,
         53,
-        30,
-        63,
-        22,
+        50,
+        73,
+        83,
         8,
         100,
         100,
@@ -262,23 +262,101 @@
         0,
         0
       ],
-      "Gil": 381742,
-      "GCSeals": 7961,
+      "Gil": 133657,
+      "GCSeals": 8431,
       "GCRank": 9,
       "OfflineAirshipData": [],
-      "OfflineSubmarineData": [],
+      "OfflineSubmarineData": [
+        {
+          "Name": "Submersible-1",
+          "ReturnTime": 1781074724
+        },
+        {
+          "Name": "Submersible-2",
+          "ReturnTime": 1781074733
+        },
+        {
+          "Name": "Submersible-3",
+          "ReturnTime": 1781075553
+        },
+        {
+          "Name": "Submersible-4",
+          "ReturnTime": 1781075564
+        }
+      ],
       "EnabledAirships": [],
       "EnabledSubs": [],
       "AdditionalAirshipData": {},
-      "AdditionalSubmarineData": {},
+      "AdditionalSubmarineData": {
+        "Submersible-1": {
+          "Level": 89,
+          "Part1": 22528,
+          "Part2": 21795,
+          "Part3": 21796,
+          "Part4": 23904,
+          "NextLevelExp": 12409258,
+          "CurrentExp": 7166432,
+          "VesselBehavior": 1,
+          "UnlockMode": 0,
+          "SelectedUnlockPlan": "00000000-0000-0000-0000-000000000000",
+          "SelectedPointPlan": "00000000-0000-0000-0000-000000000000",
+          "Points": "DwoAAAA=",
+          "IndexOverride": 0
+        },
+        "Submersible-2": {
+          "Level": 89,
+          "Part1": 22528,
+          "Part2": 21795,
+          "Part3": 21796,
+          "Part4": 23904,
+          "NextLevelExp": 12409258,
+          "CurrentExp": 2438650,
+          "VesselBehavior": 1,
+          "UnlockMode": 0,
+          "SelectedUnlockPlan": "00000000-0000-0000-0000-000000000000",
+          "SelectedPointPlan": "00000000-0000-0000-0000-000000000000",
+          "Points": "DwoAAAA=",
+          "IndexOverride": 0
+        },
+        "Submersible-3": {
+          "Level": 88,
+          "Part1": 22528,
+          "Part2": 21795,
+          "Part3": 21796,
+          "Part4": 23904,
+          "NextLevelExp": 4136419,
+          "CurrentExp": 2537021,
+          "VesselBehavior": 1,
+          "UnlockMode": 0,
+          "SelectedUnlockPlan": "00000000-0000-0000-0000-000000000000",
+          "SelectedPointPlan": "00000000-0000-0000-0000-000000000000",
+          "Points": "DwoAAAA=",
+          "IndexOverride": 0
+        },
+        "Submersible-4": {
+          "Level": 86,
+          "Part1": 22528,
+          "Part2": 21795,
+          "Part3": 21796,
+          "Part4": 23904,
+          "NextLevelExp": 3372592,
+          "CurrentExp": 1770040,
+          "VesselBehavior": 1,
+          "UnlockMode": 0,
+          "SelectedUnlockPlan": "00000000-0000-0000-0000-000000000000",
+          "SelectedPointPlan": "00000000-0000-0000-0000-000000000000",
+          "Points": "DwoAAAA=",
+          "IndexOverride": 0
+        }
+      },
       "Ceruleum": 0,
       "RepairKits": 0,
       "ExcludeRetainer": false,
       "ExcludeWorkshop": false,
       "ExcludeOverlay": false,
-      "NumSubSlots": 0,
+      "NumSubSlots": 4,
       "MultiWaitForAllDeployables": false,
-      "FCID": 0,
+      "FCID": 9279948507173645194,
       "DisablePrivateHouseTeleport": false,
       "DisableFcHouseTeleport": false,
       "DisableApartmentTeleport": false,
@@ -295,8 +373,6 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20578": 2,
-        "20579": 2,
         "20586": 2,
         "20587": 2,
         "20592": 2,
@@ -308,7 +384,11 @@
         "20601": 2,
         "20602": 2,
         "20606": 2,
-        "20608": 2
+        "20608": 2,
+        "20610": 2,
+        "20612": 2,
+        "20613": 2,
+        "20614": 10
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -316,7 +396,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -473,27 +553,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 1,
-      "EntrustDuplicates": false,
-      "WithdrawGil": true,
-      "WithdrawGilPercent": 100,
-      "Deposit": false,
-      "VenturePlan": {
-        "Name": "",
-        "List": [],
-        "PlanCompleteBehavior": 0
-      },
-      "LinkedVenturePlan": "",
-      "VenturePlanIndex": 0,
-      "EnablePlanner": true,
-      "Ilvl": 300,
-      "Gathering": 0,
-      "Perception": 0,
-      "EntrustPlan": "00000000-0000-0000-0000-000000000000",
-      "ShouldSerializeCreationFrame": false
-    },
-    "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -502,7 +562,32 @@
         "Name": "",
         "List": [
           {
-            "ID": 742,
+            "ID": 395,
+            "Num": 1
+          }
+        ],
+        "PlanCompleteBehavior": 0
+      },
+      "LinkedVenturePlan": "",
+      "VenturePlanIndex": 1,
+      "EnablePlanner": true,
+      "Ilvl": 300,
+      "Gathering": 0,
+      "Perception": 0,
+      "EntrustPlan": "00000000-0000-0000-0000-000000000000",
+      "ShouldSerializeCreationFrame": false
+    },
+    "#0040002E92DA86E6 Dedaaa": {
+      "CreationFrame": 0,
+      "EntrustDuplicates": false,
+      "WithdrawGil": true,
+      "WithdrawGilPercent": 100,
+      "Deposit": false,
+      "VenturePlan": {
+        "Name": "",
+        "List": [
+          {
+            "ID": 395,
             "Num": 1
           }
         ],
@@ -608,11 +693,11 @@
     "0": {
       "ID": 0,
       "Name": "",
-      "Gil": 500000,
+      "Gil": 5500000,
       "GilCountsTowardsChara": false,
-      "LastGilUpdate": 1779566240004,
-      "FCPoints": 13686596,
-      "FCPointsLastUpdate": 1780432531078,
+      "LastGilUpdate": 1781039197713,
+      "FCPoints": 13950820,
+      "FCPointsLastUpdate": 1781111323628,
       "HolderChara": 18014598541772518,
       "Rank": 30
     },
@@ -622,8 +707,8 @@
       "Gil": 500000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1779565541226,
-      "FCPoints": 13742766,
-      "FCPointsLastUpdate": 1779745364496,
+      "FCPoints": 13892058,
+      "FCPointsLastUpdate": 1780934103196,
       "HolderChara": 0,
       "Rank": 30
     }
@@ -750,7 +835,7 @@
     "Y": 431.0
   },
   "WindowPos": {
-    "X": 479.0,
+    "X": 478.0,
     "Y": 79.0
   },
   "PinWindow": false,

@@ -1,0 +1,18 @@
+{
+  "$type": "Dalamud.Tomestone.Configuration, Dalamud.Tomestone",
+  "Version": 0,
+  "IsFirstLaunch": false,
+  "DalamudToken": "8037|Nzr0Z9lgzBPTU7hzMg5HBNxmn4pewGWRQTndHByN9da86388",
+  "TokenChecked": true,
+  "TokenValid": true,
+  "CharacterClaimed": true,
+  "ModifyUI": true,
+  "Enabled": true,
+  "SendActivity": true,
+  "SendGear": true,
+  "SendTriad": true,
+  "SendOrchestrion": true,
+  "SendBlueMage": true,
+  "SendChocoboBarding": true,
+  "ContextMenuButtonName": "Open Tomestone"
+}
