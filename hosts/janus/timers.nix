@@ -15,7 +15,7 @@ in
 
   systemd.services."upgrade-server" = {
     description = "Pull, upgrade, push, and reboot";
-    path = with pkgs; [ git nixos-rebuild openssh nix jq ];
+    path = with pkgs; [ git nixos-rebuild openssh nix jq bash coreutils hostname ];
     environment = {
       HOME = "/home/ayes";
       GIT_SSH_COMMAND = "ssh -i /home/ayes/.ssh/id_ed25519 -o IdentitiesOnly=yes";
@@ -56,7 +56,7 @@ in
 
         if ! git diff --quiet flake.lock; then
           git add flake.lock
-          git commit -m "[janus] Auto-update flake.lock"
+          git commit -m "$(bash scripts/commit_message.sh)"
         fi
 
         if ! git push; then
