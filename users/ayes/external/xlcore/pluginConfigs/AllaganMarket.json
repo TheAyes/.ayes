@@ -23,7 +23,7 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 86,
+      "Level": 90,
       "DisplayOrder": 0,
       "RetainerTown": 4
     },
@@ -35,7 +35,7 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 82,
+      "Level": 86,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }
@@ -53,7 +53,8 @@
   "BooleanSettings": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
     "RetainerOverlayCollapsed": false,
-    "HighlightRetainerSellList": true
+    "HighlightRetainerSellList": true,
+    "HighlightRetainerList": true
   },
   "EnumSettings": {
     "UndercutComparison": {
