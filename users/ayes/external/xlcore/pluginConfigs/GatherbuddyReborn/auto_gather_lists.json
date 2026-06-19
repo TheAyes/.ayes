@@ -248,6 +248,65 @@
     "Description": "Imported from Artisan",
     "FolderPath": "",
     "Order": 8,
+    "Enabled": false,
+    "Fallback": false,
+    "RemoveCompletedItems": false
+  },
+  {
+    "ItemIds": [
+      43922
+    ],
+    "Quantities": {
+      "43922": 6
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "43922": true
+    },
+    "Name": "Gatherer Scrips",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 9,
+    "Enabled": true,
+    "Fallback": false,
+    "RemoveCompletedItems": false
+  },
+  {
+    "ItemIds": [
+      44007,
+      13,
+      44018,
+      10,
+      43996,
+      8,
+      44006,
+      9
+    ],
+    "Quantities": {
+      "44007": 394,
+      "13": 632,
+      "44018": 780,
+      "10": 2496,
+      "43996": 390,
+      "8": 624,
+      "44006": 234,
+      "9": 624
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "44007": true,
+      "13": true,
+      "44018": true,
+      "10": true,
+      "43996": true,
+      "8": true,
+      "44006": true,
+      "9": true
+    },
+    "Name": "Crafters Scrips",
+    "Description": "Imported from Artisan",
+    "FolderPath": "",
+    "Order": 10,
     "Enabled": true,
     "Fallback": false,
     "RemoveCompletedItems": false

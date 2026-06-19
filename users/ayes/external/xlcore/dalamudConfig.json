@@ -4,13 +4,13 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "15.0.2.0",
+  "LastVersion": "15.0.2.1",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
   "LastChangelogMajorMinor": "10.0.",
   "GeneralChatType": 1,
-  "DoPluginTest": false,
+  "DoPluginTest": true,
   "ThirdRepoList": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud]], System.Private.CoreLib",
     "$values": [
@@ -67,6 +67,11 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://raw.githubusercontent.com/Ashylila/AshPluggyRepo/refs/heads/main/repo.json",
+        "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/ice",
         "IsEnabled": true
       }
     ]
@@ -248,7 +253,23 @@
       "NoPolice",
       "QuestTracker",
       "Dalamud.Tomestone",
-      "TheCollector"
+      "TheCollector",
+      "ICE",
+      "AutoHook",
+      "ARealmRepopulated",
+      "TopSellingItems",
+      "StackSellPrice",
+      "Shanbells",
+      "CWLSLastSeenTool",
+      "MoonbaseOmega",
+      "AkuTrack",
+      "EchoXIV",
+      "TermFilter2",
+      "Marketbuddy",
+      "PriceInsight",
+      "ComfyLoot",
+      "AetherBags",
+      "SortaKinda"
     ]
   },
   "DevMode": false,
@@ -2765,12 +2786,48 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "TheCollector",
           "WorkingPluginId": "f50a641e-5243-4fde-abbb-3208a9ff292f",
-          "IsEnabled": false
+          "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Lifestream",
           "WorkingPluginId": "d4bf003c-3eb7-4b28-8e04-fd0bd5a24750",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "ICE",
+          "WorkingPluginId": "55b2e542-00f5-4540-928f-9be923f05264",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "AutoHook",
+          "WorkingPluginId": "91e493ac-2870-49b5-8e1f-a21da4ffdd17",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Stylist",
+          "WorkingPluginId": "6f9b2944-a87d-41af-84e2-f87eda2e6795",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "TopSellingItems",
+          "WorkingPluginId": "ffefb736-7b93-458e-a451-b6c91e907477",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Marketbuddy",
+          "WorkingPluginId": "3b7af8e3-bfde-4edf-9b18-685443041659",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "PriceInsight",
+          "WorkingPluginId": "47aa21ae-41af-425a-ac10-0875caccaa85",
           "IsEnabled": true
         }
       ]
@@ -2795,7 +2852,9 @@
       "SplatoonPriority",
       "vnavmesh",
       "Rotation Solver Reborn",
-      "LifestreamInstance"
+      "LifestreamInstance",
+      "AutoHook",
+      "AutoHookPresets"
     ]
   },
   "DtrIgnore": {
@@ -2812,7 +2871,18 @@
   "LastFeedbackContactDetails": "the_ayes",
   "PluginTestingOptIns": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud]], System.Private.CoreLib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud",
+        "InternalName": "AutoHook",
+        "Branch": "testing-live"
+      },
+      {
+        "$type": "Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud",
+        "InternalName": "Dalamud.LoadingImage",
+        "Branch": "testing-live"
+      }
+    ]
   },
   "PluginAutoUpdatePreferences": {
     "$type": "System.Collections.Generic.List`1[[Dalamud.Configuration.Internal.AutoUpdatePreference, Dalamud]], System.Private.CoreLib",
@@ -2827,7 +2897,7 @@
   "UiBuilderHitch": 100.0,
   "UseTexturePluginTracking": false,
   "PluginInstallerOpen": 0,
-  "AutoUpdateBehavior": 1,
+  "AutoUpdateBehavior": 3,
   "CheckPeriodicallyForUpdates": true,
   "SendUpdateNotificationToChat": false,
   "UpdateDisabledPlugins": false,

@@ -21,32 +21,32 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1781246353,
+          "VentureEndsAt": 1781713154,
           "HasVenture": true,
-          "Level": 90,
+          "Level": 92,
           "VentureBeginsAt": 0,
           "Job": 33,
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235712755,
-          "MBItems": 11
+          "MBItems": 9
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1781246361,
+          "VentureEndsAt": 1781713161,
           "HasVenture": true,
-          "Level": 86,
+          "Level": 88,
           "VentureBeginsAt": 0,
           "Job": 17,
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235723971,
-          "MBItems": 7
+          "MBItems": 3
         }
       ],
       "Preferred": true,
-      "Ventures": 243,
-      "InventorySpace": 35,
+      "Ventures": 195,
+      "InventorySpace": 68,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -64,6 +64,7 @@
         11,
         12,
         15,
+        18,
         24,
         37,
         38,
@@ -151,6 +152,7 @@
         272,
         283,
         291,
+        298,
         299,
         300,
         301,
@@ -223,7 +225,13 @@
         700,
         739,
         740,
-        757
+        751,
+        753,
+        754,
+        756,
+        757,
+        766,
+        775
       ],
       "ClassJobLevelArray": [
         0,
@@ -233,18 +241,18 @@
         0,
         0,
         0,
-        59,
-        55,
-        50,
-        53,
-        50,
-        73,
-        83,
-        8,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
         100,
         100,
         18,
-        57,
+        58,
         65,
         0,
         30,
@@ -262,8 +270,8 @@
         0,
         0
       ],
-      "Gil": 226990,
-      "GCSeals": 20851,
+      "Gil": 325810,
+      "GCSeals": 23765,
       "GCRank": 9,
       "OfflineAirshipData": [],
       "OfflineSubmarineData": [
@@ -373,8 +381,6 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20586": 2,
-        "20587": 2,
         "20592": 2,
         "20593": 2,
         "20594": 2,
@@ -390,7 +396,11 @@
         "20613": 2,
         "20614": 16,
         "20615": 39,
-        "20616": 4
+        "20616": 4,
+        "20617": 8,
+        "20618": 8,
+        "20620": 3,
+        "20621": 4
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -704,8 +714,8 @@
       "Gil": 5500000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1781039197713,
-      "FCPoints": 13950820,
-      "FCPointsLastUpdate": 1781111323628,
+      "FCPoints": 14187376,
+      "FCPointsLastUpdate": 1781636420321,
       "HolderChara": 18014598541772518,
       "Rank": 30
     },
@@ -715,8 +725,8 @@
       "Gil": 500000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1779565541226,
-      "FCPoints": 13892058,
-      "FCPointsLastUpdate": 1780934103196,
+      "FCPoints": 14187376,
+      "FCPointsLastUpdate": 1781554613280,
       "HolderChara": 0,
       "Rank": 30
     }
@@ -33770,8 +33780,8 @@
     "Y": 420.0
   },
   "WindowPos": {
-    "X": 377.0,
-    "Y": 112.0
+    "X": 337.0,
+    "Y": 255.0
   },
   "PinWindow": false,
   "DisplayOnStart": false,

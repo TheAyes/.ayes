@@ -10,8 +10,8 @@
       "OwnerId": null,
       "Name": "Meira Kisaragi",
       "WorldId": 402,
-      "ClassJobId": 33,
-      "Level": 100,
+      "ClassJobId": 15,
+      "Level": 8,
       "DisplayOrder": 0,
       "RetainerTown": null
     },
@@ -23,7 +23,7 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 90,
+      "Level": 92,
       "DisplayOrder": 0,
       "RetainerTown": 4
     },
@@ -35,7 +35,7 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 86,
+      "Level": 88,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }
@@ -54,7 +54,12 @@
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
     "RetainerOverlayCollapsed": false,
     "HighlightRetainerSellList": true,
-    "HighlightRetainerList": true
+    "HighlightRetainerList": true,
+    "ShowRetainerOverlay": false,
+    "UndercutAllowFallback": true,
+    "ChatNotifyUndercut": false,
+    "ChatNotifyUndercutLogin": false,
+    "ChatNotifySoldItem": true
   },
   "EnumSettings": {
     "UndercutComparison": {

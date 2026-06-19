@@ -87,10 +87,9 @@
   "AddressApartmentNoEntry": false,
   "SingleBookMode": false,
   "MultiPathes": [],
-  "GameVersion": "2026.05.25.0000.0000",
+  "GameVersion": "2026.06.10.0000.0000",
   "PublicInstances": {
-    "1291": 3,
-    "1185": 2
+    "1291": 3
   },
   "ShowInstanceSwitcher": false,
   "InstanceSwitcherRepeat": true,

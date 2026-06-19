@@ -1,0 +1,19 @@
+{
+  "$type": "TopSellingItems.Configuration, TopSellingItems",
+  "Version": 1,
+  "IsConfigWindowMovable": true,
+  "SelectedWorldId": 73,
+  "SelectedDatacenterId": 7,
+  "HomeWorldId": 402,
+  "SellOnHomeDatacenter": true,
+  "ScanAllDatacenters": true,
+  "UseDatacenterScope": true,
+  "TopN": 50,
+  "MinDailySales": 1.0,
+  "IncludeHq": true,
+  "HistoryDays": 7,
+  "ScanItemLimit": 500,
+  "MinProfitPercent": 0.1,
+  "MinAbsoluteProfit": 100,
+  "MinSalesCount": 3
+}

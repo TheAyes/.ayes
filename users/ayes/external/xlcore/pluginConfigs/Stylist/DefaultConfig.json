@@ -1,0 +1,10 @@
+﻿{
+  "Priorities": {},
+  "UseInventory": true,
+  "Reequip": true,
+  "NotifyTerr": [],
+  "BlacklistedGearsets": {
+    "18014598541772518": []
+  },
+  "UnmoveItems": false
+}
