@@ -1,0 +1,26 @@
+{
+  "$type": "NoClippy.Configuration, NoClippy",
+  "EnableAnimLockComp": true,
+  "EnableLogging": false,
+  "EnableDryRun": false,
+  "AnimationLocks": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Single, System.Private.CoreLib]], System.Private.CoreLib",
+    "43357": 0.6,
+    "3": 0.6,
+    "19303": 0.6,
+    "19002": 0.6,
+    "19018": 0.6,
+    "19010": 0.6,
+    "4582": 0.6
+  },
+  "TotalActionsReduced": 26,
+  "TotalAnimationLockReduction": 0.7351675033569336,
+  "LogToChat": false,
+  "LogChatType": 0,
+  "EnableEncounterStats": false,
+  "EnableEncounterStatsLogging": false,
+  "PredictStatusApplications": false,
+  "PredictMudras": false,
+  "PredictDualcast": false,
+  "Version": 0
+}
