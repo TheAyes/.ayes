@@ -102,7 +102,7 @@
               };
 
               extraModules = [
-                inputs.nixos-mailserver.nixosModule
+                #inputs.nixos-mailserver.nixosModule
               ];
             };
           };
@@ -150,10 +150,12 @@
       url = "github:Infinidoge/nix-minecraft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixos-mailserver = {
-      url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    /*
+      nixos-mailserver = {
+        url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+    */
     /*
       noita-entangled-worlds = {
         url = "github:IntQuant/noita_entangled_worlds";
