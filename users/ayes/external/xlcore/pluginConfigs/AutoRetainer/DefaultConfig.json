@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -408,7 +408,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -565,7 +565,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -590,7 +590,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,

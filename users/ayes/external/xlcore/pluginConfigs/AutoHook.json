@@ -173,7 +173,7 @@
         "AutoOceanFishTimeId": 0,
         "AutoOceanFishConditionSet": null,
         "Triggers": [],
-        "UniqueId": "fa1a47dd-b7aa-465d-8065-05e1459778a6"
+        "UniqueId": "96e0ae67-9eee-4c6d-b87f-009b6a7ed9ca"
       },
       "ListOfBaits": [
         {
@@ -689,7 +689,7 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "118f044c-ca71-445b-82bf-c3e9ba7aa811"
+          "UniqueId": "42bcfd65-be41-46f5-925e-4f1fec573387"
         }
       ],
       "ListOfMooch": [
@@ -1206,7 +1206,7 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "43cfef93-39eb-456b-9567-2344825c08aa"
+          "UniqueId": "6023fc58-1527-4bc6-ba41-1974356d24d1"
         }
       ],
       "ListOfFish": [],
@@ -1217,7 +1217,7 @@
     "CustomPresets": [],
     "Folders": [],
     "SelectedGuid": "",
-    "UniqueId": "1dc6a48c-3fc2-4773-a060-85734f3b6eed"
+    "UniqueId": "0ee95746-45b3-4a17-97d0-ab26b355325d"
   },
   "AutoGigConfig": {
     "AutoGigEnabled": false,
@@ -1241,7 +1241,7 @@
     "NatureBountyBeforeFish": false,
     "Presets": [],
     "SelectedGuid": "",
-    "UniqueId": "bccd1fb7-1de1-435d-a775-a4acef5a9c66"
+    "UniqueId": "7990e0d7-997f-4e23-8538-9c5473ad0b89"
   },
   "ShowDebugConsole": false,
   "ShowChatLogs": true,

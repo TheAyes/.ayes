@@ -1763,7 +1763,7 @@
   },
   "ShowInfoButton": true,
   "MiddleColumnWidth": 1000.0,
-  "SelectedJob": 8,
+  "SelectedJob": 14,
   "XPRelicIgnoreManual": false,
   "XPRelicOnlyEnabled": false,
   "MoonSprint": true,
@@ -1794,9 +1794,10 @@
   "HubReturn_Distance": 75.0,
   "UseRedAlertNpc": true,
   "HideRewardWindow": true,
+  "FakeIncreaseFisher": false,
   "CrazyTaxiArrow": false,
   "PlaceboCheckbox": false,
-  "SelectedMode": 10,
+  "SelectedMode": 1,
   "OnlyGrabMission_Debug": false,
   "TargetLevel": 100,
   "StopWhenLevel": false,
@@ -1807,6 +1808,7 @@
   "StopOnceHitCosmicScore": false,
   "CosmicScoreCap": 500000,
   "StopOnceRelicFinished": false,
+  "StopOnceStandardMissionsGolded": false,
   "StopAtRelicLv": false,
   "RelicLv": 20,
   "MissionPrio": [
@@ -1884,7 +1886,12 @@
     "1376": 4,
     "1377": 4,
     "1374": 3,
-    "1378": 14
+    "1378": 14,
+    "1550": 16,
+    "1547": 15,
+    "1548": 14,
+    "1549": 13,
+    "1552": 24
   },
   "MissionConfig": {
     "1": {
@@ -36450,14 +36457,14 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 63,
+      "TotalCompletions": 64,
       "BronzeCompletion": 63,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 63,
+      "TotalAttempts": 64,
       "TurninRecords": [
         {
           "Time": 43.0989084,
@@ -36710,6 +36717,10 @@
         {
           "Time": 81.3785199,
           "State": 1
+        },
+        {
+          "Time": 107.7545252,
+          "State": 3
         }
       ],
       "CraftSettings": {
@@ -36737,16 +36748,96 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 16,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 16,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 16,
+      "TurninRecords": [
+        {
+          "Time": 159.9252503,
+          "State": 3
+        },
+        {
+          "Time": 158.21691,
+          "State": 3
+        },
+        {
+          "Time": 194.4896611,
+          "State": 3
+        },
+        {
+          "Time": 136.7487887,
+          "State": 3
+        },
+        {
+          "Time": 136.4122049,
+          "State": 3
+        },
+        {
+          "Time": 191.3100726,
+          "State": 3
+        },
+        {
+          "Time": 136.7979531,
+          "State": 3
+        },
+        {
+          "Time": 134.3697027,
+          "State": 3
+        },
+        {
+          "Time": 120.6823033,
+          "State": 3
+        },
+        {
+          "Time": 119.6586668,
+          "State": 3
+        },
+        {
+          "Time": 120.8486016,
+          "State": 3
+        },
+        {
+          "Time": 120.5437111,
+          "State": 3
+        },
+        {
+          "Time": 129.9959051,
+          "State": 3
+        },
+        {
+          "Time": 116.5636372,
+          "State": 3
+        },
+        {
+          "Time": 116.7162609,
+          "State": 3
+        },
+        {
+          "Time": 116.5095767,
+          "State": 3
+        }
+      ],
+      "CraftSettings": {
+        "38148": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1548": {
       "Enabled": false,
@@ -36756,16 +36847,36 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 108.8573744,
+          "State": 3
+        }
+      ],
+      "CraftSettings": {
+        "38149": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1549": {
       "Enabled": false,
@@ -36775,16 +36886,70 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 6,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 6,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 6,
+      "TurninRecords": [
+        {
+          "Time": 125.4392451,
+          "State": 3
+        },
+        {
+          "Time": 112.9200735,
+          "State": 3
+        },
+        {
+          "Time": 108.8467522,
+          "State": 3
+        },
+        {
+          "Time": 110.2060754,
+          "State": 3
+        },
+        {
+          "Time": 110.7531879,
+          "State": 3
+        },
+        {
+          "Time": 109.9437399,
+          "State": 3
+        }
+      ],
+      "CraftSettings": {
+        "38150": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        },
+        "38151": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1550": {
       "Enabled": false,
@@ -36794,16 +36959,50 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 330.5234055,
+          "State": 3
+        }
+      ],
+      "CraftSettings": {
+        "38152": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        },
+        "38153": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1551": {
       "Enabled": false,
@@ -36832,16 +37031,48 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 4,
       "BronzeCompletion": 0,
-      "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "SilverCompletions": 3,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 4,
+      "TurninRecords": [
+        {
+          "Time": 109.5941267,
+          "State": 2
+        },
+        {
+          "Time": 98.0775113,
+          "State": 2
+        },
+        {
+          "Time": 96.8175082,
+          "State": 2
+        },
+        {
+          "Time": 106.3780278,
+          "State": 3
+        }
+      ],
+      "CraftSettings": {
+        "38155": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1553": {
       "Enabled": false,
@@ -36870,16 +37101,36 @@
       "Master_Items": 6,
       "Use_BuildinPreset": false,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
-      "SilverCompletions": 0,
+      "SilverCompletions": 1,
       "GoldCompletions": 0,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
-      "CraftSettings": {}
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 132.3356873,
+          "State": 2
+        }
+      ],
+      "CraftSettings": {
+        "38157": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1555": {
       "Enabled": false,
@@ -36953,9 +37204,24 @@
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
+      "TotalAttempts": 24,
       "TurninRecords": [],
-      "CraftSettings": {}
+      "CraftSettings": {
+        "38162": {
+          "ExpertProfileId": 0,
+          "UseGlobal": true,
+          "FoodId": 0,
+          "FoodHQ": true,
+          "PotionId": 0,
+          "PotionHQ": false,
+          "ManualId": 0,
+          "SquadronManualId": 0,
+          "ArtisanSolverType": 0,
+          "MacroName": "",
+          "SkillUsageAmount": -1,
+          "MinStepsForMiracle": -1
+        }
+      }
     },
     "1559": {
       "Enabled": false,
@@ -40159,7 +40425,7 @@
       "TurninGoal": 3,
       "Master_Score": 1000,
       "Master_Items": 6,
-      "Use_BuildinPreset": false,
+      "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
       "TotalCompletions": 0,
       "BronzeCompletion": 0,
@@ -40674,7 +40940,7 @@
   "DisableHub_Critical": false,
   "ItemFilter": 268320767,
   "MissionFilter": 511,
-  "JobFilter": 1,
+  "JobFilter": 64,
   "ShowOverlay": true,
   "ShowSeconds": false,
   "ShowCurrentScore": true,
