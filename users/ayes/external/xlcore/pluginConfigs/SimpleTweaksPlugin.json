@@ -75,7 +75,8 @@
     "ContentsFinderConfirmClassSwitch",
     "UiAdjustments@HouseLotteryTimer",
     "KeepOpen",
-    "SortWorldList"
+    "SortWorldList",
+    "ArmoireTooltipForGlamourDresser"
   ],
   "HiddenTweaks": [
     "UiAdjustments@SubmarineDestinationLetters",

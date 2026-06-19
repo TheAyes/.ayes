@@ -6,11 +6,13 @@
   "CollectOnFinishCraftingList": true,
   "ShouldCraftOnAutogatherChanged": true,
   "CollectOnAutogatherFinish": false,
-  "BuyAfterEachCollect": false,
+  "BuyAfterEachCollect": true,
   "ResetEachQuantityAfterCompletingList": false,
   "CollectOnFinishedFishing": false,
   "ArtisanListId": 0,
-  "LastSeenVersion": 24,
+  "PauseArtisanOnInventoryFull": true,
+  "ArtisanInventoryFullThreshold": 3,
+  "LastSeenVersion": 26,
   "CheckForVenturesBetweenRuns": false,
   "CheckForDeliverooBetweenRuns": false,
   "ChangeLogDisplayType": 0,
@@ -35,13 +37,378 @@
     "LifestreamAethernetId": null,
     "ScripShopLocation": null
   },
-  "PreferredTerritoryId": 886,
+  "PreferredTerritoryId": 1186,
   "Goal": {
     "$type": "TheCollector.Data.Models.ScripGoal, TheCollector",
     "StopGatheringWhenComplete": true,
     "HideFishingCollectables": false,
     "HideUnobtainableCollectables": true,
-    "ItemsToPurchase": []
+    "ItemsToPurchase": [
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 850,
+          "ItemCost": 220,
+          "Page": 3,
+          "SubPage": 13,
+          "ItemId": 49364
+        },
+        "Name": "Star Tech Ring of Gathering",
+        "Quantity": 1,
+        "AmountPurchased": 1
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 395,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49326
+        },
+        "Name": "Star Tech Saw",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 396,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49327
+        },
+        "Name": "Star Tech Cross-pein Hammer",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 397,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49328
+        },
+        "Name": "Star Tech Raising Hammer",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 398,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49329
+        },
+        "Name": "Star Tech Mallet",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 399,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49330
+        },
+        "Name": "Star Tech Knife",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 400,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49331
+        },
+        "Name": "Star Tech Needle",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 401,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49332
+        },
+        "Name": "Star Tech Alembic",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 402,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49333
+        },
+        "Name": "Star Tech Frypan",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 403,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49337
+        },
+        "Name": "Star Tech Claw Hammer",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 404,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49338
+        },
+        "Name": "Star Tech File",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 405,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49339
+        },
+        "Name": "Star Tech Pliers",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 406,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49340
+        },
+        "Name": "Star Tech Grinding Wheel",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 407,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49341
+        },
+        "Name": "Star Tech Awl",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 408,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49342
+        },
+        "Name": "Star Tech Spinning Wheel",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 409,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49343
+        },
+        "Name": "Star Tech Mortar",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 410,
+          "ItemCost": 500,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49344
+        },
+        "Name": "Star Tech Culinary Knife",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 411,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49347
+        },
+        "Name": "Star Tech Headgear of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 412,
+          "ItemCost": 900,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49348
+        },
+        "Name": "Star Tech Top of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 413,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49349
+        },
+        "Name": "Star Tech Armguards of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 414,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49350
+        },
+        "Name": "Star Tech Slops of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 415,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49351
+        },
+        "Name": "Star Tech Workboots of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 416,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49357
+        },
+        "Name": "Star Tech Ear Cuff of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 417,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49358
+        },
+        "Name": "Star Tech Choker of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 418,
+          "ItemCost": 300,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49359
+        },
+        "Name": "Star Tech Bracelet of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      },
+      {
+        "$type": "TheCollector.Data.Models.ItemToPurchase, TheCollector",
+        "Item": {
+          "$type": "TheCollector.Data.Models.ScripShopItem, TheCollector",
+          "Index": 419,
+          "ItemCost": 220,
+          "Page": 0,
+          "SubPage": 13,
+          "ItemId": 49360
+        },
+        "Name": "Star Tech Ring of Crafting",
+        "Quantity": 1,
+        "AmountPurchased": 0
+      }
+    ]
   },
   "Stop": {
     "$type": "TheCollector.Data.Models.StopConditions, TheCollector",
@@ -73,16 +440,26 @@
         "33913": 0,
         "33914": 1854,
         "41784": 0,
-        "41785": 1277
+        "41785": 1285,
+        "28063": 48
       },
-      "LastSampledAt": "2026-06-08T17:33:59.8914395Z"
+      "LastSampledAt": "2026-06-19T02:04:11.0375878Z"
     }
   },
   "TotalScripsSpent": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.UInt32, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib",
+    "41785": 220
   },
   "UiDelayMs": 300,
   "ReserveScripAmount": 0,
   "HardFailReason": null,
-  "ActiveRunSource": 1
+  "ActiveRunSource": 0,
+  "ActiveSystem": 0,
+  "FirmamentGoal": {
+    "$type": "TheCollector.Data.Models.ScripGoal, TheCollector",
+    "StopGatheringWhenComplete": true,
+    "HideFishingCollectables": false,
+    "HideUnobtainableCollectables": true,
+    "ItemsToPurchase": []
+  }
 }

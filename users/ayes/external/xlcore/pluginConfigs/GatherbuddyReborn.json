@@ -54,7 +54,7 @@
   "PreferredGatheringType": 8,
   "AutoGatherConfig": {
     "$type": "GatherBuddy.AutoGather.AutoGatherConfig, GatherBuddyReborn",
-    "MountUpDistance": 34.0,
+    "MountUpDistance": 50.0,
     "LandingDistance": 7.5,
     "AutoGatherMountId": 138,
     "MoveWhileMounting": true,
@@ -199,7 +199,7 @@
       "Modifier": 0
     }
   },
-  "CraftingLists": "",
+  "CraftingLists": "[{\"ID\":48559,\"Name\":\"Schatzi Stuff\",\"Description\":\"\",\"FolderPath\":\"\",\"Order\":0,\"CreatedAt\":\"2026-06-14T16:02:20.5143447Z\",\"Recipes\":[{\"RecipeId\":2415,\"Quantity\":1,\"Options\":{\"Skipping\":false,\"NQOnly\":false},\"IngredientPreferences\":{},\"ConsumableOverrides\":{\"Food\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"Medicine\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"Manual\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"SquadronManual\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false}},\"IsOriginalRecipe\":false,\"CraftSettings\":null}],\"ExpandedList\":[],\"Consumables\":{\"FoodItemId\":null,\"FoodHQ\":false,\"MedicineItemId\":null,\"MedicineHQ\":false,\"ManualItemId\":null,\"SquadronManualItemId\":null},\"PrecraftOptions\":{\"1207\":{\"Skipping\":false,\"NQOnly\":false},\"825\":{\"Skipping\":false,\"NQOnly\":false},\"2759\":{\"Skipping\":false,\"NQOnly\":false}},\"PrecraftCraftSettings\":{},\"DefaultPrecraftMacroId\":null,\"DefaultFinalMacroId\":null,\"DefaultPrecraftSolverOverride\":0,\"DefaultFinalSolverOverride\":0,\"PrecraftRecipeOverrides\":{},\"SkipIfEnough\":false,\"SkipFinalIfEnough\":false,\"QuickSynthAll\":false,\"QuickSynthAllPreferNQ\":false,\"QuickSynthAllPrecraftsOnly\":false,\"Materia\":false,\"Repair\":false,\"RepairPercent\":50,\"RetainerRestock\":false,\"Ephemeral\":false},{\"ID\":15513,\"Name\":\"Money Making\",\"Description\":\"\",\"FolderPath\":\"\",\"Order\":1,\"CreatedAt\":\"2026-06-14T17:07:16.1584552Z\",\"Recipes\":[{\"RecipeId\":37820,\"Quantity\":999,\"Options\":{\"Skipping\":false,\"NQOnly\":false},\"IngredientPreferences\":{},\"ConsumableOverrides\":{\"Food\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"Medicine\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"Manual\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false},\"SquadronManual\":{\"Mode\":0,\"ItemId\":null,\"HQ\":false}},\"IsOriginalRecipe\":false,\"CraftSettings\":null}],\"ExpandedList\":[],\"Consumables\":{\"FoodItemId\":null,\"FoodHQ\":false,\"MedicineItemId\":null,\"MedicineHQ\":false,\"ManualItemId\":null,\"SquadronManualItemId\":null},\"PrecraftOptions\":{\"5661\":{\"Skipping\":false,\"NQOnly\":false}},\"PrecraftCraftSettings\":{},\"DefaultPrecraftMacroId\":null,\"DefaultFinalMacroId\":null,\"DefaultPrecraftSolverOverride\":0,\"DefaultFinalSolverOverride\":0,\"PrecraftRecipeOverrides\":{},\"SkipIfEnough\":false,\"SkipFinalIfEnough\":false,\"QuickSynthAll\":false,\"QuickSynthAllPreferNQ\":false,\"QuickSynthAllPrecraftsOnly\":false,\"Materia\":false,\"Repair\":false,\"RepairPercent\":50,\"RetainerRestock\":false,\"Ephemeral\":false}]",
   "CraftingFolders": [],
   "MaxRecentCraftingListsInContextMenu": 10,
   "TeamCraftImportWindowSize": {
