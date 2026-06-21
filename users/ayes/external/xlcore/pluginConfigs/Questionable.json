@@ -8,24 +8,25 @@
     "ChocoboName": "Chicken",
     "GrandCompany": 0,
     "CombatJob": 0,
-    "CraftingJob": 8,
-    "GatheringJob": 16,
-    "GearsetUpdateSource": 0,
+    "CraftingJob": 13,
+    "GatheringJob": 17,
+    "GearsetUpdateSource": 1,
     "HideInAllInstances": true,
     "UseEscToCancelQuesting": true,
     "ShowIncompleteSeasonalEvents": true,
-    "SkipLowPriorityDuties": false,
+    "SkipLowPriorityDuties": true,
     "ConfigureTextAdvance": true,
     "DontSkipCutscenes": false,
     "DontShowAnswerSuggestions": false,
     "AutoStepRefreshEnabled": true,
     "AutoStepRefreshDelaySeconds": 30,
     "UseTickets": false,
-    "HideSponsorButton": false,
+    "HideSponsorButton": true,
     "DismissedReportWarning": false,
     "ReportsDisabled": false,
     "ReportMessage": "",
-    "DisplayName": "Anonymous"
+    "DisplayName": "Anonymous",
+    "Language": "en"
   },
   "Stop": {
     "$type": "Questionable.Configuration+StopConfiguration, Questionable",
@@ -90,7 +91,8 @@
     "ShowWindowOnStart": false,
     "StartMinimized": false,
     "OpenEditor": false,
-    "NamazuPreferCraft": false
+    "NamazuPreferCraft": false,
+    "Debug": false
   },
   "DebugWindowConfig": {
     "$type": "Questionable.Windows.Common.WindowConfig, Questionable",
@@ -113,9 +115,9 @@
   "PathData": {
     "$type": "Questionable.Configuration+PathDataConfiguration, Questionable",
     "AutoUpdate": true,
-    "InstalledDataVersion": 1780900042,
-    "BundlePluginVersion": "15.297.0.7",
-    "LastCheck": "2026-06-08T09:07:48.1664228+00:00"
+    "InstalledDataVersion": 1782054665,
+    "BundlePluginVersion": "15.301.0.28",
+    "LastCheck": "2026-06-21T16:10:51.9466598+00:00"
   },
   "Version": 2,
   "Profiles": {
