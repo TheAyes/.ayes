@@ -201,7 +201,7 @@
   "ContentsFinderOneTimeConfirmEnabled": false,
   "InclusionShopRememberEnabled": false,
   "InclusionShopRememberCategory": 2,
-  "InclusionShopRememberSubcategory": 2,
+  "InclusionShopRememberSubcategory": 1,
   "GuildLeveDifficultyConfirm": false,
   "FallGuysRegisterConfirm": true,
   "FallGuysExitConfirm": true,

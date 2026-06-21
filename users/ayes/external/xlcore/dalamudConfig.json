@@ -73,6 +73,11 @@
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://puni.sh/api/repository/ice",
         "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/croizat",
+        "IsEnabled": true
       }
     ]
   },
@@ -269,7 +274,9 @@
       "PriceInsight",
       "ComfyLoot",
       "AetherBags",
-      "SortaKinda"
+      "SortaKinda",
+      "EasyZoomReborn",
+      "Automaton"
     ]
   },
   "DevMode": false,
@@ -2690,7 +2697,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Artisan",
           "WorkingPluginId": "dcdb96cf-fda3-48a3-9a21-f26f1d879edc",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2786,7 +2793,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "TheCollector",
           "WorkingPluginId": "f50a641e-5243-4fde-abbb-3208a9ff292f",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2829,6 +2836,24 @@
           "InternalName": "PriceInsight",
           "WorkingPluginId": "47aa21ae-41af-425a-ac10-0875caccaa85",
           "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Questionable",
+          "WorkingPluginId": "75cd0955-93ea-4534-8548-320f38a3f9d2",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BossModReborn",
+          "WorkingPluginId": "0b543aeb-faca-4b1b-bfce-0e7972815b55",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Automaton",
+          "WorkingPluginId": "f4f0916a-0b96-49e2-9796-d4b524e6723e",
+          "IsEnabled": true
         }
       ]
     },
@@ -2854,7 +2879,9 @@
       "Rotation Solver Reborn",
       "LifestreamInstance",
       "AutoHook",
-      "AutoHookPresets"
+      "AutoHookPresets",
+      "bmr-autorotation",
+      "bmr-ai"
     ]
   },
   "DtrIgnore": {

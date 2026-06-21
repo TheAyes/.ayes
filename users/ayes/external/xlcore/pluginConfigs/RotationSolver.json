@@ -1376,6 +1376,11 @@
     "Enable": false,
     "Disable": false
   },
+  "DmuBossImmune": {
+    "Value": true,
+    "Enable": false,
+    "Disable": false
+  },
   "ColossusRubricatusImmune": {
     "Value": true,
     "Enable": false,

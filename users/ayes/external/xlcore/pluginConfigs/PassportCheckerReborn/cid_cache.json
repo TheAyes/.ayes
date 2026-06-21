@@ -171,7 +171,7 @@
     "Name": "Yakui Maido",
     "WorldId": 67,
     "WorldName": "Shiva",
-    "LastSeen": "2026-06-11T16:55:47.5852128Z"
+    "LastSeen": "2026-06-20T06:34:34.7910793Z"
   },
   "18014598542930574": {
     "Name": "Teostra Amagiri",
@@ -279,7 +279,7 @@
     "Name": "Kaja Jeon",
     "WorldId": 33,
     "WorldName": "Twintania",
-    "LastSeen": "2026-06-14T09:21:58.5364021Z"
+    "LastSeen": "2026-06-20T06:34:34.7897124Z"
   },
   "18014598551508173": {
     "Name": "Luike Shemas",
@@ -345,7 +345,7 @@
     "Name": "Fufu Pu",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-05-24T09:37:21.5144747Z"
+    "LastSeen": "2026-06-20T06:34:34.7917141Z"
   },
   "18014598542956550": {
     "Name": "Nana Konno",
@@ -1713,7 +1713,7 @@
     "Name": "Anuki Fukuda",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-06-14T09:21:58.5769617Z"
+    "LastSeen": "2026-06-20T06:34:34.7946059Z"
   },
   "18014598553707490": {
     "Name": "Misa Douji",
@@ -1743,7 +1743,7 @@
     "Name": "Nykteus Fenrir",
     "WorldId": 42,
     "WorldName": "Zodiark",
-    "LastSeen": "2026-06-13T18:14:43.9721716Z"
+    "LastSeen": "2026-06-20T06:34:34.7896492Z"
   },
   "18014598555193938": {
     "Name": "Cryz Sam",
@@ -6003,7 +6003,7 @@
     "Name": "Saif Aaa",
     "WorldId": 39,
     "WorldName": "Omega",
-    "LastSeen": "2026-06-10T11:14:04.3533144Z"
+    "LastSeen": "2026-06-20T06:34:34.7895563Z"
   },
   "18014598549133539": {
     "Name": "San Moon",
@@ -7956,10 +7956,10 @@
     "LastSeen": "2026-06-08T08:12:08.4801246Z"
   },
   "18014598547363991": {
-    "Name": "Link Vi",
+    "Name": "Link Il",
     "WorldId": 56,
     "WorldName": "Phoenix",
-    "LastSeen": "2026-06-10T11:20:17.7093869Z"
+    "LastSeen": "2026-06-20T06:34:34.7917815Z"
   },
   "18014598543829661": {
     "Name": "Illyria Blaid",
@@ -8355,7 +8355,7 @@
     "Name": "Aoba Nobu",
     "WorldId": 36,
     "WorldName": "Lich",
-    "LastSeen": "2026-06-13T18:14:43.968677Z"
+    "LastSeen": "2026-06-20T06:34:34.7911684Z"
   },
   "18014598555988514": {
     "Name": "Verdandi Gungnir",
@@ -9231,7 +9231,7 @@
     "Name": "Daniel Chaosbringer",
     "WorldId": 66,
     "WorldName": "Odin",
-    "LastSeen": "2026-06-09T11:58:52.5508694Z"
+    "LastSeen": "2026-06-20T06:34:34.7868674Z"
   },
   "18014598540763771": {
     "Name": "Rosie V\u0027",
@@ -10125,7 +10125,7 @@
     "Name": "Izayoi Chimatsuri",
     "WorldId": 39,
     "WorldName": "Omega",
-    "LastSeen": "2026-06-09T17:59:59.59525Z"
+    "LastSeen": "2026-06-20T06:34:34.7917505Z"
   },
   "18014598548848323": {
     "Name": "Onion Amicitia",
@@ -10809,7 +10809,7 @@
     "Name": "U\u0027riri Ospo",
     "WorldId": 71,
     "WorldName": "Moogle",
-    "LastSeen": "2026-06-10T06:41:38.426391Z"
+    "LastSeen": "2026-06-20T06:34:34.7810359Z"
   },
   "18014598546750522": {
     "Name": "Dungeon Inquisitor",
@@ -10923,7 +10923,7 @@
     "Name": "Bogdanoff Retschild",
     "WorldId": 83,
     "WorldName": "Louisoix",
-    "LastSeen": "2026-06-10T11:20:17.7113512Z"
+    "LastSeen": "2026-06-20T06:34:34.7911367Z"
   },
   "18014598539844571": {
     "Name": "Yuri Urameshi",
@@ -13756,5 +13756,41 @@
     "WorldId": 66,
     "WorldName": "Odin",
     "LastSeen": "2026-06-19T17:33:50.0816902Z"
+  },
+  "18014598555531835": {
+    "Name": "Lune Aylif",
+    "WorldId": 56,
+    "WorldName": "Phoenix",
+    "LastSeen": "2026-06-20T06:34:34.7867812Z"
+  },
+  "18014598554621212": {
+    "Name": "X\u0027mhoku Tia",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-06-20T06:34:34.7871407Z"
+  },
+  "18014398519600099": {
+    "Name": "Dro Rond",
+    "WorldId": 97,
+    "WorldName": "Ragnarok",
+    "LastSeen": "2026-06-20T06:34:34.7883389Z"
+  },
+  "18014598547724307": {
+    "Name": "Pandakuro Kori",
+    "WorldId": 403,
+    "WorldName": "Raiden",
+    "LastSeen": "2026-06-20T06:34:34.7905626Z"
+  },
+  "18014598555441976": {
+    "Name": "Sacro Aventis",
+    "WorldId": 42,
+    "WorldName": "Zodiark",
+    "LastSeen": "2026-06-20T06:34:34.7918076Z"
+  },
+  "18014598543884630": {
+    "Name": "Ichigo- Kurosaki-",
+    "WorldId": 33,
+    "WorldName": "Twintania",
+    "LastSeen": "2026-06-20T06:34:34.7946136Z"
   }
 }
