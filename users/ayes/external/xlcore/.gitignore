@@ -43,6 +43,8 @@ pluginConfigs/PassportCheckerReborn.json
 *.nfo
 *.new.*
 pluginConfigs/**/*.dat
+# SomethingNeedDoing auto-generated Lua API stubs (IDE autocomplete only)
+pluginConfigs/SomethingNeedDoing/stubs/
 
 # --- Downloaded / bundled assets (fonts, audio, browser runtime) ---
 *.ttf
