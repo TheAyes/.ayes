@@ -6,6 +6,7 @@
   imports = [
     ../../profiles/home-manager/programs/fish.nix
     ./programs/git.nix
+    ./programs/ssh.nix
     ./programs/btop.nix
     ./programs/eza.nix
     ./programs/zoxide.nix
