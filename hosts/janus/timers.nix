@@ -22,6 +22,8 @@ in
     };
     serviceConfig = {
       Type = "oneshot";
+      User = "ayes";
+      Group = "users";
       WorkingDirectory = "/etc/nixos";
       ExecStart = pkgs.writeShellScript "upgrade-server" ''
         set -e
@@ -42,7 +44,7 @@ in
 
         fail() {
           local stage="$1"
-          send_alert "⚠️ Janus upgrade failed: $stage"$'\n\n'"$(journalctl -u upgrade-server.service -n 20 --no-pager)"
+          send_alert "⚠️ Janus upgrade failed: $stage"$'\n\n'"$(/run/wrappers/bin/sudo journalctl -u upgrade-server.service -n 20 --no-pager)"
           exit 1
         }
 
@@ -50,7 +52,7 @@ in
           fail "git fetch/reset"
         fi
 
-        if ! nix flake update || ! nixos-rebuild boot --flake .#janus; then
+        if ! nix flake update || ! /run/wrappers/bin/sudo nixos-rebuild boot --flake .#janus; then
           fail "rebuild"
         fi
 
@@ -71,7 +73,7 @@ in
         fi
 
         send_alert "✅ Janus upgrade successful: rebooting..."
-        systemctl reboot
+        /run/wrappers/bin/sudo systemctl reboot
       '';
     };
   };
