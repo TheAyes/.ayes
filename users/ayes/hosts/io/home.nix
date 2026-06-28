@@ -23,9 +23,6 @@
 
   home = {
     packages = with pkgs; [
-      zed-editor
-      jetbrains.webstorm
-
       claude-code
       godot-mono
 
