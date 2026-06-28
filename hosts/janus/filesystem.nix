@@ -26,7 +26,10 @@
   boot = {
     loader.grub = {
       enable = true;
-      device = "/dev/sda";
+      # Boot disk is the QEMU HARDDISK (msdos, holds /boot + /), NOT the GPT
+      # Hetzner cloud volume that now enumerates as /dev/sda. Pin by stable
+      # by-id path so a device-name swap can't point GRUB at the wrong disk.
+      device = "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_109601625";
     };
 
     initrd.availableKernelModules = [
