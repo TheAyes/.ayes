@@ -70,9 +70,9 @@
     ];
 
     shellAliases = {
-      "rebuild-switch" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh switch && popd";
-      "rebuild-test" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh test && popd";
-      "upgrade" = "pushd /mnt/c/Projekte/.ayes && /mnt/c/Projekte/.ayes/scripts/rebuild.sh switch --update && popd";
+      "rebuild-switch" = "pushd /etc/nixos && /etc/nixos/scripts/rebuild.sh switch && popd";
+      "rebuild-test" = "pushd /etc/nixos && /etc/nixos/scripts/rebuild.sh test && popd";
+      "upgrade" = "pushd /etc/nixos && /etc/nixos/scripts/rebuild.sh switch --update && popd";
     };
   };
 
