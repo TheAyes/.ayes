@@ -1,77 +1,381 @@
 [
   {
-    "Key": "1035/100/4662/3878/499/0/0/0",
+    "Key": "2772/100/5356/4919/573/0/1/0",
     "Request": {
-      "RecipeId": 1035,
+      "RecipeId": 2772,
       "Level": 100,
-      "Craftsmanship": 4662,
-      "Control": 3878,
-      "CP": 499,
+      "Craftsmanship": 5356,
+      "Control": 4919,
+      "CP": 573,
       "Manipulation": false,
-      "Specialist": false,
+      "Specialist": true,
       "InitialQuality": 0
     },
     "ActionIds": [
+      100387,
       100323
     ],
-    "GeneratedAt": "2026-06-20T07:17:12.3733332Z",
+    "GeneratedAt": "2026-07-04T12:31:53.1877115Z",
     "IsFailed": false,
     "FailureReason": null
   },
   {
-    "Key": "1035/100/4407/3878/499/0/0/0",
+    "Key": "2653/100/5237/4876/558/0/0/0",
     "Request": {
-      "RecipeId": 1035,
+      "RecipeId": 2653,
       "Level": 100,
-      "Craftsmanship": 4407,
-      "Control": 3878,
-      "CP": 499,
+      "Craftsmanship": 5237,
+      "Control": 4876,
+      "CP": 558,
       "Manipulation": false,
       "Specialist": false,
       "InitialQuality": 0
     },
     "ActionIds": [
+      260,
       100323
     ],
-    "GeneratedAt": "2026-06-20T07:17:07.5412065Z",
+    "GeneratedAt": "2026-07-04T12:31:29.7608574Z",
     "IsFailed": false,
     "FailureReason": null
   },
   {
-    "Key": "198/100/4662/3878/499/0/0/0",
+    "Key": "2612/100/5303/4899/558/0/0/0",
     "Request": {
-      "RecipeId": 198,
+      "RecipeId": 2612,
       "Level": 100,
-      "Craftsmanship": 4662,
-      "Control": 3878,
-      "CP": 499,
+      "Craftsmanship": 5303,
+      "Control": 4899,
+      "CP": 558,
       "Manipulation": false,
       "Specialist": false,
       "InitialQuality": 0
     },
     "ActionIds": [
+      100387,
       100323
     ],
-    "GeneratedAt": "2026-06-20T07:17:11.0376401Z",
+    "GeneratedAt": "2026-07-04T12:39:29.4228555Z",
     "IsFailed": false,
     "FailureReason": null
   },
   {
-    "Key": "183/100/4662/3878/499/0/0/0",
+    "Key": "2653/100/5303/4899/558/0/0/0",
     "Request": {
-      "RecipeId": 183,
+      "RecipeId": 2653,
       "Level": 100,
-      "Craftsmanship": 4662,
-      "Control": 3878,
-      "CP": 499,
+      "Craftsmanship": 5303,
+      "Control": 4899,
+      "CP": 558,
       "Manipulation": false,
       "Specialist": false,
       "InitialQuality": 0
     },
     "ActionIds": [
+      260,
       100323
     ],
-    "GeneratedAt": "2026-06-20T07:16:59.5486248Z",
+    "GeneratedAt": "2026-07-04T12:38:47.4119409Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2657/100/5237/4876/558/0/0/0",
+    "Request": {
+      "RecipeId": 2657,
+      "Level": 100,
+      "Craftsmanship": 5237,
+      "Control": 4876,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:28.3234642Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2332/100/5237/4876/558/0/0/0",
+    "Request": {
+      "RecipeId": 2332,
+      "Level": 100,
+      "Craftsmanship": 5237,
+      "Control": 4876,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:17.3839487Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2332/100/5303/4899/558/0/0/0",
+    "Request": {
+      "RecipeId": 2332,
+      "Level": 100,
+      "Craftsmanship": 5303,
+      "Control": 4899,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:37:56.2377889Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2333/100/5303/4899/558/0/0/0",
+    "Request": {
+      "RecipeId": 2333,
+      "Level": 100,
+      "Craftsmanship": 5303,
+      "Control": 4899,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:38:07.0863541Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2612/100/5237/4876/558/0/0/0",
+    "Request": {
+      "RecipeId": 2612,
+      "Level": 100,
+      "Craftsmanship": 5237,
+      "Control": 4876,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:52.4603502Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2488/100/5290/4896/573/0/1/0",
+    "Request": {
+      "RecipeId": 2488,
+      "Level": 100,
+      "Craftsmanship": 5290,
+      "Control": 4896,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:49.5237606Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2483/100/5356/4919/573/0/1/0",
+    "Request": {
+      "RecipeId": 2483,
+      "Level": 100,
+      "Craftsmanship": 5356,
+      "Control": 4919,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:39:16.1218546Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2493/100/5356/4919/573/0/1/0",
+    "Request": {
+      "RecipeId": 2493,
+      "Level": 100,
+      "Craftsmanship": 5356,
+      "Control": 4919,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:39:09.6419032Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2333/100/5237/4876/558/0/0/0",
+    "Request": {
+      "RecipeId": 2333,
+      "Level": 100,
+      "Craftsmanship": 5237,
+      "Control": 4876,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:17.3839677Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2493/100/5290/4896/573/0/1/0",
+    "Request": {
+      "RecipeId": 2493,
+      "Level": 100,
+      "Craftsmanship": 5290,
+      "Control": 4896,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:45.4785371Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2657/100/5303/4899/558/0/0/0",
+    "Request": {
+      "RecipeId": 2657,
+      "Level": 100,
+      "Craftsmanship": 5303,
+      "Control": 4899,
+      "CP": 558,
+      "Manipulation": false,
+      "Specialist": false,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      260,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:38:27.8275032Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2483/100/5290/4896/573/0/1/0",
+    "Request": {
+      "RecipeId": 2483,
+      "Level": 100,
+      "Craftsmanship": 5290,
+      "Control": 4896,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:48.1204302Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2498/100/5290/4896/573/0/1/0",
+    "Request": {
+      "RecipeId": 2498,
+      "Level": 100,
+      "Craftsmanship": 5290,
+      "Control": 4896,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:31:43.7851583Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2488/100/5356/4919/573/0/1/0",
+    "Request": {
+      "RecipeId": 2488,
+      "Level": 100,
+      "Craftsmanship": 5356,
+      "Control": 4919,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:39:22.7550295Z",
+    "IsFailed": false,
+    "FailureReason": null
+  },
+  {
+    "Key": "2498/100/5356/4919/573/0/1/0",
+    "Request": {
+      "RecipeId": 2498,
+      "Level": 100,
+      "Craftsmanship": 5356,
+      "Control": 4919,
+      "CP": 573,
+      "Manipulation": false,
+      "Specialist": true,
+      "InitialQuality": 0
+    },
+    "ActionIds": [
+      100387,
+      100323
+    ],
+    "GeneratedAt": "2026-07-04T12:39:02.938484Z",
     "IsFailed": false,
     "FailureReason": null
   }

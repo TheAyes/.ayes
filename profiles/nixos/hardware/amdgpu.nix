@@ -1,6 +1,11 @@
 { pkgs, ... }:
 {
-  hardware.amdgpu.opencl.enable = true;
+  hardware.amdgpu = {
+    opencl.enable = true;
+    overdrive.enable = true;
+    zluda.enable = true;
+  };
+
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
   hardware.graphics.extraPackages = with pkgs; [
@@ -18,8 +23,8 @@
           rocblas
           hipblas
           clr
-          rocm-device-libs
-          hsakmt
+          #rocm-device-libs
+          #hsakmt
         ];
       };
     in
@@ -29,7 +34,7 @@
 
   boot = {
     kernelModules = [
-      "amdgpu"
+
     ];
 
     kernelPatches = [

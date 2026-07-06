@@ -10,7 +10,7 @@
       "OwnerId": null,
       "Name": "Meira Kisaragi",
       "WorldId": 402,
-      "ClassJobId": 11,
+      "ClassJobId": 33,
       "Level": 100,
       "DisplayOrder": 0,
       "RetainerTown": null
@@ -23,9 +23,9 @@
       "Name": "Simastana",
       "WorldId": 402,
       "ClassJobId": 33,
-      "Level": 92,
+      "Level": 95,
       "DisplayOrder": 0,
-      "RetainerTown": 4
+      "RetainerTown": 14
     },
     "33777197235723971": {
       "$type": "AllaganMarket.Models.Character, AllaganMarket",
@@ -35,7 +35,7 @@
       "Name": "Dedaaa",
       "WorldId": 402,
       "ClassJobId": 17,
-      "Level": 88,
+      "Level": 90,
       "DisplayOrder": 0,
       "RetainerTown": 2
     }

@@ -39,7 +39,7 @@
         fixSpotifyEmbeds.enable = true;
         fixYoutubeEmbeds.enable = true;
         forceOwnerCrown.enable = true;
-        friendsSince.enable = true;
+        #friendsSince.enable = true;
         fullSearchContext.enable = true;
         loadingQuotes.enable = true;
         messageLinkEmbeds.enable = true;

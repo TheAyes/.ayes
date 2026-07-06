@@ -9,11 +9,11 @@
     "ShowWaypoints": false,
     "ForceShowGameCollision": false,
     "CancelMoveOnUserInput": true,
-    "StopOnStuck": false,
+    "StopOnStuck": true,
     "StuckTolerance": 0.05,
-    "StuckTimeoutMs": 500,
+    "StuckTimeoutMs": 1500,
     "RetryOnStuck": true,
-    "RandomnessMultiplier": 1.0,
+    "RandomnessMultiplier": 2.0,
     "BuildMaxCores": 8
   }
 }

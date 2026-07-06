@@ -4,12 +4,19 @@
   "DisableDamageShield": false,
   "DisableCombinePets": false,
   "DisablePvp": true,
+  "LogChatMessages": true,
+  "AutoDeleteNetworkLogs": false,
+  "NetworkLogRetentionDays": 30,
   "SimulateIndividualDoTCrits": false,
   "ShowRealDoTTicks": false,
   "ShowDebug": false,
   "LogFilePath": "C:\\users\\ayes\\Documents\\IINACT",
   "WriteLogFile": true,
   "DisableWritingPvpLogFile": false,
+  "PlayerCharacterName": "YOU",
   "Version": 1,
-  "SelectedOverlay": "Ikegami"
+  "SelectedOverlay": "Skyline",
+  "GoogleTtsLanguage": "en",
+  "ForceGoogleTts": false,
+  "TtsPlaybackDevice": -1
 }

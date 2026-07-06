@@ -1,6 +1,6 @@
 ﻿{
   "HideLocButton": true,
-  "PluginEnabled": false,
+  "PluginEnabled": true,
   "HookPresets": {
     "DefaultPreset": {
       "AutoCastsCfg": {
@@ -173,8 +173,9 @@
         "AutoOceanFishTimeId": 0,
         "AutoOceanFishConditionSet": null,
         "Triggers": [],
-        "UniqueId": "e4c2ea8a-44eb-40e0-90a0-38eafa397e9a"
+        "UniqueId": "f50c2e83-13ab-4152-a612-bcc285ec4d3a"
       },
+      "IsAnonymous": false,
       "ListOfBaits": [
         {
           "Enabled": true,
@@ -689,7 +690,7 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "f00531a7-fc58-4c8f-829b-b916daf8a902"
+          "UniqueId": "9ad3a78e-6d33-4c2f-8283-f3224c4cae27"
         }
       ],
       "ListOfMooch": [
@@ -1206,18 +1207,890 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "ad879f40-3fcf-4bbc-a770-49421d0ed869"
+          "UniqueId": "36b48c51-4cfc-4120-9498-3a7e54c92254"
         }
       ],
       "ListOfFish": [],
+      "NamedConditions": [],
       "IsGlobal": true,
       "PresetName": "Global Preset",
       "UniqueId": "6188d541-74d6-4f30-9060-180e62703327"
     },
-    "CustomPresets": [],
+    "CustomPresets": [
+      {
+        "AutoCastsCfg": {
+          "EnableAll": true,
+          "DontCancelMooch": true,
+          "RecastAnimationCancel": false,
+          "TurnCollectOff": false,
+          "ChumAnimationCancel": false,
+          "TurnCollectOffWithoutAnimCancel": false,
+          "CastLine": {
+            "IgnoreMooch": true,
+            "Enabled": true,
+            "Id": 289,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "Priority": 1,
+            "IsExcludedPriority": true,
+            "GpThresholdAbove": true,
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
+          },
+          "CastMooch": {
+            "Mooch2": {
+              "Enabled": false,
+              "Id": 268,
+              "GpThreshold": 100,
+              "DontCancelMooch": true,
+              "Priority": 11,
+              "IsExcludedPriority": true,
+              "GpThresholdAbove": true,
+              "ConditionSet": null
+            },
+            "Enabled": false,
+            "Id": 297,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "Priority": 10,
+            "IsExcludedPriority": true,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastChum": {
+            "Enabled": false,
+            "Id": 4104,
+            "GpThreshold": 700,
+            "DontCancelMooch": true,
+            "Priority": 1,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
+          },
+          "CastCollect": {
+            "Enabled": false,
+            "Id": 4101,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "Priority": 2,
+            "IsExcludedPriority": true,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastSnagging": {
+            "Enabled": false,
+            "Id": 4100,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "Priority": 3,
+            "IsExcludedPriority": true,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastCordial": {
+            "InvertCordialPriority": false,
+            "IgnoreTimeWindow": false,
+            "Enabled": true,
+            "Id": 12669,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "OvercapConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            },
+            "Priority": 4,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
+          },
+          "CastFishEyes": {
+            "IgnoreMooch": false,
+            "Enabled": false,
+            "Id": 4105,
+            "GpThreshold": 550,
+            "DontCancelMooch": true,
+            "Priority": 6,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastMakeShiftBait": {
+            "MakeshiftBaitStacks": 5,
+            "Enabled": false,
+            "Id": 26805,
+            "GpThreshold": 5,
+            "DontCancelMooch": true,
+            "Priority": 9,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastPatience": {
+            "RefreshEarlyTime": 0,
+            "Enabled": false,
+            "Id": 4106,
+            "GpThreshold": 560,
+            "DontCancelMooch": true,
+            "Priority": 12,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastPrizeCatch": {
+            "Enabled": true,
+            "Id": 26806,
+            "GpThreshold": 200,
+            "DontCancelMooch": true,
+            "Priority": 13,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastThaliaksFavor": {
+            "ThaliaksFavorStacks": 3,
+            "ThaliaksFavorRecover": 150,
+            "Enabled": false,
+            "Id": 26804,
+            "GpThreshold": 0,
+            "DontCancelMooch": true,
+            "Priority": 16,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastBigGame": {
+            "AnglersStacks": 2,
+            "Enabled": false,
+            "Id": 37046,
+            "GpThreshold": 2,
+            "DontCancelMooch": true,
+            "Priority": 18,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastMultihook": {
+            "Enabled": false,
+            "Id": 42059,
+            "GpThreshold": 1,
+            "DontCancelMooch": true,
+            "Priority": 0,
+            "IsExcludedPriority": true,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "TimeWindowConditionSet": null
+        },
+        "ExtraCfg": {
+          "Enabled": true,
+          "ResetCounterPresetSwap": false,
+          "ForceBaitSwap": false,
+          "ForcedBaitId": 0,
+          "AutoOceanFishEnabled": false,
+          "AutoOceanFishAllStops": false,
+          "AutoOceanFishSpotId": 0,
+          "AutoOceanFishTimeId": 0,
+          "AutoOceanFishConditionSet": {
+            "m": 0,
+            "g": [
+              {
+                "m": 0,
+                "c": [],
+                "a": true
+              }
+            ],
+            "e": null
+          },
+          "Triggers": [
+            {
+              "Enabled": true,
+              "ConditionSet": {
+                "m": 0,
+                "g": [
+                  {
+                    "m": 0,
+                    "c": [
+                      {
+                        "t": "TimeWindowCD",
+                        "p": {},
+                        "e": true
+                      }
+                    ],
+                    "a": true
+                  }
+                ],
+                "e": null
+              },
+              "SwapPreset": false,
+              "PresetToSwap": "-",
+              "SwapBait": false,
+              "BaitToSwap": {
+                "Id": -1,
+                "LureMessage": "",
+                "Name": "None",
+                "BaitType": 3
+              },
+              "StopAction": 0,
+              "ResolveCollectablesWindow": true,
+              "ResolveCollectablesForceNo": false,
+              "StartFishing": false,
+              "ReduceFish": false,
+              "RemoveStatus": false,
+              "StatusToRemove": 0,
+              "ResetFishCaughtCounter": false,
+              "NotifyOnSuccess": {
+                "Enabled": false,
+                "EchoChatMessage": false,
+                "ChatText": "",
+                "DisplayGameToast": false,
+                "GameToastText": "",
+                "DisplayToastNotification": false,
+                "ToastText": "",
+                "FlashTaskbarIcon": false,
+                "BringGameForeground": false,
+                "BeepOnSuccess": false
+              }
+            }
+          ],
+          "UniqueId": "497db37c-370a-4306-9b9e-1657b81a558a"
+        },
+        "IsAnonymous": true,
+        "ListOfBaits": [
+          {
+            "Enabled": true,
+            "BaitFish": {
+              "Id": -99,
+              "LureMessage": "",
+              "Name": "All Baits",
+              "BaitType": 3
+            },
+            "NormalHook": {
+              "RequiredStatus": 0,
+              "PatienceWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": true,
+                "HooksetType": 4179,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [
+                        {
+                          "t": "BiteTimerCD",
+                          "p": {
+                            "r": [
+                              0.0,
+                              7.9
+                            ]
+                          },
+                          "e": true
+                        }
+                      ],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
+                "HookTypeConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "PatienceStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": true,
+                "HooksetType": 41278,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 1,
+                      "c": [
+                        {
+                          "t": "BiteTimerCD",
+                          "p": {
+                            "r": [
+                              17.0,
+                              0.0
+                            ]
+                          },
+                          "e": true
+                        }
+                      ],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
+                "HookTypeConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "PatienceLegendary": {
+                "HooksetEnabled": false,
+                "EnableHooksetSwap": true,
+                "HooksetType": 4103,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "UseDoubleHook": false,
+              "LetFishEscapeDoubleHook": false,
+              "DoubleWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "DoubleStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "DoubleLegendary": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "UseTripleHook": false,
+              "LetFishEscapeTripleHook": false,
+              "TripleWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TripleStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TripleLegendary": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TimeoutMax": 0.0,
+              "ChumTimeoutMax": 0.0,
+              "UseCustomStatusHook": false,
+              "CastLures": {
+                "LureStacks": 3,
+                "CancelAttempt": false,
+                "LureTarget": 0,
+                "Enabled": true,
+                "Id": 37594,
+                "GpThreshold": 10,
+                "DontCancelMooch": true,
+                "Priority": 0,
+                "IsExcludedPriority": true,
+                "GpThresholdAbove": true,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                }
+              },
+              "TimeoutConditionSet": null,
+              "ChumTimeoutConditionSet": null
+            },
+            "IntuitionHook": {
+              "RequiredStatus": 568,
+              "PatienceWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 4179,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "PatienceStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 4103,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "PatienceLegendary": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 4103,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "UseDoubleHook": false,
+              "LetFishEscapeDoubleHook": false,
+              "DoubleWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "DoubleStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "DoubleLegendary": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 269,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "UseTripleHook": false,
+              "LetFishEscapeTripleHook": false,
+              "TripleWeak": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TripleStrong": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TripleLegendary": {
+                "HooksetEnabled": true,
+                "EnableHooksetSwap": false,
+                "HooksetType": 27523,
+                "UseMultipleHookTypesByTimer": false,
+                "UseNormalHookTypeByTimer": false,
+                "NormalHookTypeMin": 0.0,
+                "NormalHookTypeMax": 0.0,
+                "UsePrecisionHookTypeByTimer": false,
+                "PrecisionHookTypeMin": 0.0,
+                "PrecisionHookTypeMax": 0.0,
+                "UsePowerfulHookTypeByTimer": false,
+                "PowerfulHookTypeMin": 0.0,
+                "PowerfulHookTypeMax": 0.0,
+                "UseStellarHookTypeByTimer": false,
+                "StellarHookTypeMin": 0.0,
+                "StellarHookTypeMax": 0.0,
+                "ConditionSet": null,
+                "HookTypeConditionSet": null,
+                "NormalHookTypeConditionSet": null,
+                "PrecisionHookTypeConditionSet": null,
+                "PowerfulHookTypeConditionSet": null,
+                "StellarHookTypeConditionSet": null
+              },
+              "TimeoutMax": 0.0,
+              "ChumTimeoutMax": 0.0,
+              "UseCustomStatusHook": false,
+              "CastLures": {
+                "LureStacks": 3,
+                "CancelAttempt": false,
+                "LureTarget": 0,
+                "Enabled": false,
+                "Id": 37594,
+                "GpThreshold": 10,
+                "DontCancelMooch": true,
+                "Priority": 0,
+                "IsExcludedPriority": true,
+                "GpThresholdAbove": true,
+                "ConditionSet": null
+              },
+              "TimeoutConditionSet": null,
+              "ChumTimeoutConditionSet": null
+            },
+            "StopAfterResetCount": false,
+            "StopFishingStep": 1,
+            "SwimbaitNormal": {
+              "UseSwimbait": false,
+              "ConditionSet": null
+            },
+            "SwimbaitIntuition": {
+              "UseSwimbait": false,
+              "ConditionSet": null
+            },
+            "NotifyOnSuccess": {
+              "Enabled": false,
+              "EchoChatMessage": false,
+              "ChatText": "",
+              "DisplayGameToast": false,
+              "GameToastText": "",
+              "DisplayToastNotification": false,
+              "ToastText": "",
+              "FlashTaskbarIcon": false,
+              "BringGameForeground": false,
+              "BeepOnSuccess": false
+            },
+            "StopConditionSet": null,
+            "UniqueId": "7989041e-5257-4581-a4bb-97b2ebb0b63c"
+          }
+        ],
+        "ListOfMooch": [],
+        "ListOfFish": [],
+        "NamedConditions": [],
+        "IsGlobal": false,
+        "PresetName": "anon_[1657] Valuable Southern-central Specimens",
+        "UniqueId": "3545c6c2-e1a7-41ed-a6be-2a1d60cd6721"
+      }
+    ],
     "Folders": [],
-    "SelectedGuid": "",
-    "UniqueId": "6afeaa64-c3aa-4c40-b76b-e3bc70a70ebd"
+    "SelectedGuid": "3545c6c2-e1a7-41ed-a6be-2a1d60cd6721",
+    "UniqueId": "bb53a493-ab6f-4362-a962-09f8867f7f91"
   },
   "AutoGigConfig": {
     "AutoGigEnabled": false,
@@ -1241,7 +2114,7 @@
     "NatureBountyBeforeFish": false,
     "Presets": [],
     "SelectedGuid": "",
-    "UniqueId": "363cf42d-4561-4663-9f82-e147bf0cffa7"
+    "UniqueId": "d7c7a842-fa5a-4748-ac4e-3b6ffba59fed"
   },
   "ShowDebugConsole": false,
   "ShowChatLogs": true,
@@ -1261,6 +2134,7 @@
   "BlockInputWhileFishing": false,
   "AutoStartFishing": false,
   "AutoOceanFish": false,
+  "SpectralRest": false,
   "DtrBarEnabled": false,
   "DtrPresetBarEnabled": false,
   "AutoCollectablesEnabled": true,

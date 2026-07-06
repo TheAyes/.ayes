@@ -38,6 +38,7 @@ Tweaks:
       Enabled: true
       MovementType: Direct
     MapClick: *o0
+    ClickModifier: Shift
   Commands:
     EnableDesynth: false
     DisableRender: false

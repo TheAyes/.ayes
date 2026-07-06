@@ -1,0 +1,32 @@
+{
+  "Actions": [
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 450.0,
+        "Y": 0.0,
+        "Z": -5.0
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Bahamut Prime"
+    }
+  ],
+  "Meta": {
+    "CreatedAt": 285,
+    "Changelog": [
+      {
+        "Version": 299,
+        "Change": ""
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
+  }
+}
