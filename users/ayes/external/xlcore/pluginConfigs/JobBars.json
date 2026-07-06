@@ -187,7 +187,7 @@
   "BuffTextSize_v2": 23,
   "CooldownPosition": {
     "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-    "X": -40.0,
+    "X": -25.0,
     "Y": 35.0
   },
   "CooldownScale": 1.0,
@@ -227,7 +227,65 @@
       "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib"
     }
   },
-  "CustomCooldown": [],
+  "CustomCooldown": [
+    {
+      "$type": "JobBars.Data.CustomCooldownProps, JobBars",
+      "Name": "Collective Unconscious - Custom (Astrologian)",
+      "Id": "VEFRO",
+      "Job": 33,
+      "Props": {
+        "$type": "JobBars.Cooldowns.CooldownProps, JobBars",
+        "Icon": 3613,
+        "Triggers": [
+          {
+            "$type": "JobBars.Item, JobBars",
+            "Id": 3613,
+            "Type": 1
+          }
+        ],
+        "Duration": 10.0,
+        "CD": 60.0
+      }
+    },
+    {
+      "$type": "JobBars.Data.CustomCooldownProps, JobBars",
+      "Name": "Kerachole - Custom (Sage)",
+      "Id": "23176",
+      "Job": 40,
+      "Props": {
+        "$type": "JobBars.Cooldowns.CooldownProps, JobBars",
+        "Icon": 24298,
+        "Triggers": [
+          {
+            "$type": "JobBars.Item, JobBars",
+            "Id": 24298,
+            "Type": 1
+          }
+        ],
+        "Duration": 15.0,
+        "CD": 30.0
+      }
+    },
+    {
+      "$type": "JobBars.Data.CustomCooldownProps, JobBars",
+      "Name": "Sacred Soil - Custom (Scholar)",
+      "Id": "LXQ2F",
+      "Job": 28,
+      "Props": {
+        "$type": "JobBars.Cooldowns.CooldownProps, JobBars",
+        "Icon": 188,
+        "Triggers": [
+          {
+            "$type": "JobBars.Item, JobBars",
+            "Id": 188,
+            "Type": 1
+          }
+        ],
+        "Duration": 15.0,
+        "CD": 30.0
+      }
+    }
+  ],
   "CursorsEnabled": false,
   "CursorHideWhenHeld": false,
   "CursorHideWeaponSheathed": false,

@@ -1,0 +1,119 @@
+{
+  "Actions": [
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
+        "X": -373.67224,
+        "Y": -270.6564,
+        "Z": -0.8648445
+      },
+      "Arguments": [
+        "2003415"
+      ],
+      "Conditions": [],
+      "Note": "Inner Bulkhead"
+    },
+    {
+      "Tag": "None",
+      "Name": "Wait",
+      "Position": {
+        "X": -420.4999,
+        "Y": -270.7,
+        "Z": 0.14191608
+      },
+      "Arguments": [
+        "500"
+      ],
+      "Conditions": [],
+      "Note": "Walks into the transition area and waits for the transition."
+    },
+    {
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "Wait",
+      "Position": {
+        "X": -450.0,
+        "Y": 800.22375,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "500"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -450.0,
+        "Y": 800.2237,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "30"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "-2"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionObjectData, AutoDuty",
+          "baseId": 2002735,
+          "property": "EventState",
+          "value": 7
+        }
+      ],
+      "Note": "Goes back if the gauntlet is still ongoing."
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -450.0,
+        "Y": 800.0,
+        "Z": 80.0
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Melusine"
+    }
+  ],
+  "Meta": {
+    "CreatedAt": 299,
+    "Changelog": [
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
+  }
+}

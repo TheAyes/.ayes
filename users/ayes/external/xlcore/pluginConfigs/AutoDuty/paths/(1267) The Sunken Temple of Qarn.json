@@ -1,118 +1,766 @@
 {
-  "actions": [
+  "Actions": [
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -135.85783,
+        "Y": -17.875036,
+        "Z": -11.138184
+      },
+      "Arguments": [
+        "18"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "135"
+      ],
+      "Conditions": [],
+      "Note": "Treasure Coffer - AD will attempt to click it until it despawns because it's an Interactable step (since it's position is not static)."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -102.35817,
+        "Y": -9.000038,
+        "Z": -60.644756
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #1 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
         "X": -71.01,
-        "Y": -12,
+        "Y": -12.0,
         "Z": -61.7
       },
-      "arguments": [
-        "on"
+      "Arguments": [
+        ""
       ],
-      "note": "Teratotaur"
+      "Conditions": [],
+      "Note": "Teratotaur"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -25.371717,
-        "Y": -18.000046,
-        "Z": 0.06027671
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -62.80971,
+        "Y": -12.00001,
+        "Z": -45.376003
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Helps avoid getting stuck in the doorway."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 7.4527836,
+        "Y": -19.000002,
+        "Z": 28.144012
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Helps avoid getting stuck in the doorway."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 9.032339,
+        "Y": -19.000006,
+        "Z": 52.85779
+      },
+      "Arguments": [
+        "2000415"
+      ],
+      "Conditions": [],
+      "Note": "The Flame of Magic"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 8.983742,
+        "Y": -19.000004,
+        "Z": -52.890522
+      },
+      "Arguments": [
+        "2000416"
+      ],
+      "Conditions": [],
+      "Note": "The Fruit of Knowledge"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 10.620081,
+        "Y": -19.00007,
+        "Z": -26.478024
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Helps avoid getting stuck in the doorway."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 33.706665,
+        "Y": -19.000145,
+        "Z": -21.823263
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 74.8394,
+        "Y": -25.302977,
+        "Z": -79.98918
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 75.35086,
+        "Y": -33.816315,
+        "Z": -71.624306
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": "Hops over the ledge."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 77.17064,
+        "Y": -40.23155,
+        "Z": -53.88696
+      },
+      "Arguments": [
+        "48"
+      ],
+      "Conditions": [],
+      "Note": "Ensures The Condemned is killed for the GC Hunting Log."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #2 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
         "X": 57.38,
         "Y": -49.71,
         "Z": -7.63
       },
-      "arguments": [
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Temple Guardian"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 49.523148,
-        "Y": -19.000088,
-        "Z": 5.0506725
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 120.22537,
-        "Y": -4.0001907,
-        "Z": -0.55485016
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 189.58017,
-        "Y": -4.000005,
-        "Z": 0.053727567
+      "Tag": "Unsynced",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 67.43445,
+        "Y": -38.619816,
+        "Z": 59.271297
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "35"
+      ],
+      "Conditions": [],
+      "Note": "Ensures The Condemned is killed for the GC Hunting Log."
     },
     {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
-        "X": 189.58,
-        "Y": -4,
-        "Z": 0.05
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 55.5679,
+        "Y": -18.452265,
+        "Z": 5.2054386
       },
-      "arguments": [
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 115.325386,
+        "Y": -4.000001,
+        "Z": 7.634002
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- The other Treasure Coffers around here are skipped... -->"
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- ...because they only contain Elemental Shards. -->"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 116.09554,
+        "Y": -4.0,
+        "Z": 21.546297
+      },
+      "Arguments": [
+        "2000421"
+      ],
+      "Conditions": [],
+      "Note": "Stone Pedestal"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "SelectString",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "1"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 123.25183,
+        "Y": -4.0,
+        "Z": 20.591078
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Helps avoid getting stuck in the doorway."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 151.43388,
+        "Y": -0.9999418,
+        "Z": 46.475647
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 124.13914,
+        "Y": -4.0000005,
+        "Z": 16.836395
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": "Helps avoid slightly janky pathing."
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 186.1008,
+        "Y": -4.000045,
+        "Z": -0.19343238
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "2000428"
+      ],
+      "Conditions": [],
+      "Note": "Right Pan"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "SelectString",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "1"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionItemCount, AutoDuty",
+          "itemId": 2000566,
+          "quantity": 0,
+          "operatorValue": ">"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Wait",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "200"
+      ],
+      "Conditions": [],
+      "Note": "Gives a moment for the item to actually leave your inventory."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "-3"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionItemCount, AutoDuty",
+          "itemId": 2000566,
+          "quantity": 0,
+          "operatorValue": ">"
+        }
+      ],
+      "Note": "Goes back if you still have the Fruit of Knowledge."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "2000427"
+      ],
+      "Conditions": [],
+      "Note": "Left Pan"
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "SelectString",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "0"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionItemCount, AutoDuty",
+          "itemId": 2000565,
+          "quantity": 0,
+          "operatorValue": ">"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Wait",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "200"
+      ],
+      "Conditions": [],
+      "Note": "Gives a moment for the item to actually leave your inventory."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "-3"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionItemCount, AutoDuty",
+          "itemId": 2000565,
+          "quantity": 0,
+          "operatorValue": ">"
+        }
+      ],
+      "Note": "Goes back if you still have the Flame of Knowledge."
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
         "2000658"
       ],
-      "note": "The Scales of Judgment"
+      "Conditions": [],
+      "Note": "The Scales of Judgment"
     },
     {
-      "tag": "None",
-      "name": "SelectYesno",
-      "position": {
-        "X": 189.58,
-        "Y": -4,
-        "Z": 0.05
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "Yes"
+      "Arguments": [
+        "-1"
       ],
-      "note": ""
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionObjectData, AutoDuty",
+          "baseId": 2000658,
+          "property": "IsTargetable",
+          "value": 1
+        }
+      ],
+      "Note": "Goes back if The Scales of Judgment weren't properly interacted with."
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": 233.46,
-        "Y": -4,
-        "Z": -0.17
+      "Tag": "Treasure",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
+      "Arguments": [
+        "+5"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionObjectData, AutoDuty",
+          "baseId": 2000430,
+          "property": "EventState",
+          "value": 0
+        }
+      ],
+      "Note": "Skips ahead if the Treasure Room is inaccessible."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 194.14586,
+        "Y": -4.000017,
+        "Z": -35.71277
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Extra step in case one is skipped while watching the Boss cutscene."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 196.32959,
+        "Y": -4.000017,
+        "Z": -37.085686
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 188.4359,
+        "Y": -4.000017,
+        "Z": -40.084858
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 187.7216,
+        "Y": -4.000017,
+        "Z": -45.79171
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #3 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 233.46,
+        "Y": -4.0,
+        "Z": -0.17
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Adjudicator"
     }
   ],
-  "meta": {
-    "createdAt": 203,
-    "changelog": [],
-    "notes": []
+  "Meta": {
+    "CreatedAt": 203,
+    "Changelog": [
+      {
+        "Version": 299,
+        "Change": "Added Trash/Boss Comments & Boss names. Added Unsynced steps. Added Treasure steps. Added KillInRanged steps. Removed SelectYesNo step."
+      },
+      {
+        "Version": 300,
+        "Change": "Added Unsynced KillInRange steps to ensure ghosts are killed for the GC Hunting Log. Added an extra step before the final boss so that nothing important is skipped by anyone watching the cutscene. Added failsafes for the Interacts at the end. Removed unnecessary KillInRange steps after the first boss. Removed the Treasure steps required for any Coffer that only gives Elemental Shards."
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
   }
 }

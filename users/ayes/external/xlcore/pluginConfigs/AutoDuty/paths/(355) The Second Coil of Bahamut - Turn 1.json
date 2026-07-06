@@ -1,221 +1,212 @@
 {
-  "actions": [
+  "Actions": [
     {
-      "tag": "None",
-      "name": "StopForCombat",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "False"
+      "Arguments": [
+        "IsReady"
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -140.04,
-        "Y": 8.48,
-        "Z": -9.3
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -133.6852,
+        "Y": 8.330847,
+        "Z": -12.419906
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "VNAV builds before the area changes, so these are necessary to go around the rock formations."
     },
     {
-      "tag": "None",
-      "name": "StopForCombat",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -140.05447,
+        "Y": 8.465953,
+        "Z": -9.259231
       },
-      "arguments": [
-        "True"
+      "Arguments": [
+        "10"
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "Wait",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "500"
+      "Arguments": [
+        "TRUE"
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "StopForCombat",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "False"
+      "Arguments": [
+        "FALSE"
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -146.06,
-        "Y": 5.02,
-        "Z": 1.51
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -195.84212,
+        "Y": 1.3412483,
+        "Z": 32.434746
       },
-      "arguments": [
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "See above."
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -199.34,
-        "Y": 2.16,
-        "Z": 22.3
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -202.9707,
+        "Y": 1.2369566,
+        "Z": 29.066256
       },
-      "arguments": [
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -197.8245,
+        "Y": 2.6691632,
+        "Z": 23.487194
+      },
+      "Arguments": [
+        "10"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -275.34537,
+        "Y": 10.421,
+        "Z": 33.424366
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Rafflesia"
     },
     {
-      "tag": "None",
-      "name": "StopForCombat",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "True"
-      ],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Unsure if this is necessary, but kept it in from the old path. Do first-timers need to click the Terminal? -->"
     },
     {
-      "tag": "None",
-      "name": "Wait",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
+        "X": -312.22476,
+        "Y": 8.667104,
+        "Z": 42.588623
       },
-      "arguments": [
-        "1000"
+      "Arguments": [
+        "2003416"
       ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -267.43,
-        "Y": 10.42,
-        "Z": 36.76
-      },
-      "arguments": [
-        ""
-      ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
-      },
-      "arguments": [
-        ""
-      ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -291.18,
-        "Y": 10.42,
-        "Z": 38.1
-      },
-      "arguments": [
-        ""
-      ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -291.3,
-        "Y": 10.42,
-        "Z": 41.41
-      },
-      "arguments": [
-        ""
-      ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -313.28,
-        "Y": 8.71,
-        "Z": 43.68
-      },
-      "arguments": [
-        ""
-      ],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
-      },
-      "arguments": [
-        "Allagan Terminal"
-      ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Allagan Terminal"
     }
   ],
-  "meta": {
-    "createdAt": 106,
-    "changelog": [
+  "Meta": {
+    "CreatedAt": 106,
+    "Changelog": [
       {
-        "version": 161,
-        "change": "Converted to new JSON Structure"
+        "Version": 161,
+        "Change": "Converted to new JSON Structure"
       },
       {
-        "version": 163,
-        "change": "Converted to newer JSON Structure"
+        "Version": 163,
+        "Change": "Converted to newer JSON Structure"
       },
       {
-        "version": 164,
-        "change": "Converted to JSON Structure with Tags"
+        "Version": 164,
+        "Change": "Converted to JSON Structure with Tags"
       },
       {
-        "version": 189,
-        "change": "Adjusted tags to string values"
+        "Version": 189,
+        "Change": "Adjusted tags to string values"
+      },
+      {
+        "Version": 299,
+        "Change": "Added Boss name. Added KillInRange steps. Removed excess MoveTo steps."
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
       }
     ],
-    "notes": []
+    "Notes": []
   }
 }

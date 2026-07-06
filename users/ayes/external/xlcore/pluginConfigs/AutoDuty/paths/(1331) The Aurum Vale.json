@@ -1,0 +1,466 @@
+{
+  "Actions": [
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 113.88036,
+        "Y": -9.283727,
+        "Z": 35.086517
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 98.69428,
+        "Y": -9.236141,
+        "Z": 33.123753
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 84.63628,
+        "Y": -8.530854,
+        "Z": 22.085766
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 56.190235,
+        "Y": -7.52927,
+        "Z": 13.619279
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #1 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 34.466824,
+        "Y": -9.306429,
+        "Z": 1.593219
+      },
+      "Arguments": [
+        "<18.52, -9.42, -42.97>"
+      ],
+      "Conditions": [],
+      "Note": "Locksmith"
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -40.702755,
+        "Y": -16.160746,
+        "Z": -103.60631
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -44.29241,
+        "Y": -15.764131,
+        "Z": -128.33527
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -71.85433,
+        "Y": -24.31031,
+        "Z": -143.70514
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "Wait",
+      "Position": {
+        "X": -100.662964,
+        "Y": -30.3,
+        "Z": -128.13884
+      },
+      "Arguments": [
+        "2500"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "Wait",
+      "Position": {
+        "X": -108.88354,
+        "Y": -30.220198,
+        "Z": -133.80357
+      },
+      "Arguments": [
+        "2500"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -116.277405,
+        "Y": -29.09835,
+        "Z": -111.02179
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "Wait",
+      "Position": {
+        "X": -127.23948,
+        "Y": -30.141445,
+        "Z": -146.41226
+      },
+      "Arguments": [
+        "3000"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": "Carried over from original path. Use unclear. May be detrimental when Synced."
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "Wait",
+      "Position": {
+        "X": -119.334206,
+        "Y": -30.439249,
+        "Z": -137.76614
+      },
+      "Arguments": [
+        "3000"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced, W2W",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionJob, AutoDuty",
+          "job": "Tanks"
+        }
+      ],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -119.47577,
+        "Y": -30.565554,
+        "Z": -134.15749
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #2 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -150.77948,
+        "Y": -30.64743,
+        "Z": -140.82878
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Coincounter"
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -211.42831,
+        "Y": -26.089367,
+        "Z": -210.59534
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -337.37057,
+        "Y": -32.15146,
+        "Z": -141.05577
+      },
+      "Arguments": [
+        "20"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -334.9595,
+        "Y": -33.42962,
+        "Z": -113.51168
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -373.42502,
+        "Y": -32.265903,
+        "Z": -140.9248
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #3 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -402.33862,
+        "Y": -31.952211,
+        "Z": -125.32716
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Miser's Mistress"
+    }
+  ],
+  "Meta": {
+    "CreatedAt": 279,
+    "Changelog": [
+      {
+        "Version": 284,
+        "Change": "Unsynced path"
+      },
+      {
+        "Version": 299,
+        "Change": "Added Trash/Boss Comments. Added KillInRange steps. Added missing Treasure Chest. Adjusted the W2W section and added the Tank Condition."
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
+  }
+}

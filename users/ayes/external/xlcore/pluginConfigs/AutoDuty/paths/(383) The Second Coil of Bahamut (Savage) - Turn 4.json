@@ -1,0 +1,28 @@
+{
+  "Actions": [
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -2.0
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Nael deus Darnus"
+    }
+  ],
+  "Meta": {
+    "CreatedAt": 299,
+    "Changelog": [
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
+  }
+}

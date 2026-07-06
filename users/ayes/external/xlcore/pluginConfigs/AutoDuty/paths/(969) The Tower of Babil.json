@@ -11,6 +11,7 @@
       "Arguments": [
         "8000"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -24,6 +25,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -37,6 +39,7 @@
       "Arguments": [
         "false"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -50,6 +53,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -63,6 +67,7 @@
       "Arguments": [
         "false"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -76,6 +81,7 @@
       "Arguments": [
         "2500"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -89,6 +95,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -102,6 +109,7 @@
       "Arguments": [
         "true"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -115,6 +123,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -128,6 +137,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": "Barunaba"
     },
     {
@@ -141,6 +151,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -154,6 +165,7 @@
       "Arguments": [
         "2011745"
       ],
+      "Conditions": [],
       "Note": "Control Terminal"
     },
     {
@@ -167,6 +179,7 @@
       "Arguments": [
         "400.10, 0, -177.38;20"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -180,6 +193,7 @@
       "Arguments": [
         "Combat"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -193,6 +207,7 @@
       "Arguments": [
         "5000"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -206,6 +221,7 @@
       "Arguments": [
         "Combat"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -219,6 +235,7 @@
       "Arguments": [
         "5000"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -232,6 +249,7 @@
       "Arguments": [
         "Combat"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -245,6 +263,7 @@
       "Arguments": [
         "5000"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -258,6 +277,7 @@
       "Arguments": [
         "5000"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -271,6 +291,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -284,6 +305,7 @@
       "Arguments": [
         "IsReady"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -297,6 +319,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -310,6 +333,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -321,6 +345,7 @@
         "Z": 332.96356
       },
       "Arguments": [],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -334,6 +359,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": "Lugae"
     },
     {
@@ -347,6 +373,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -360,6 +387,7 @@
       "Arguments": [
         "IsReady"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -373,6 +401,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -386,6 +415,7 @@
       "Arguments": [
         "2011746"
       ],
+      "Conditions": [],
       "Note": "Control Terminal"
     },
     {
@@ -399,6 +429,7 @@
       "Arguments": [
         "14700"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -410,6 +441,7 @@
         "Z": -37.77319
       },
       "Arguments": [],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -423,6 +455,7 @@
       "Arguments": [
         "false"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -436,6 +469,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -449,6 +483,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -462,6 +497,7 @@
       "Arguments": [
         "2500"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -475,6 +511,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -488,6 +525,7 @@
       "Arguments": [
         "true"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -501,6 +539,7 @@
       "Arguments": [
         "false"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -514,6 +553,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -527,6 +567,7 @@
       "Arguments": [
         "2500"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -540,6 +581,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -553,6 +595,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -566,6 +609,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -579,6 +623,7 @@
       "Arguments": [
         "true"
       ],
+      "Conditions": [],
       "Note": ""
     },
     {
@@ -592,6 +637,7 @@
       "Arguments": [
         ""
       ],
+      "Conditions": [],
       "Note": "Anima"
     }
   ],
@@ -613,6 +659,10 @@
       {
         "Version": 246,
         "Change": "Modernized path"
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
       }
     ],
     "Notes": []

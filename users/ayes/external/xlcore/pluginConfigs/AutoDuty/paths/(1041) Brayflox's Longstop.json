@@ -1,167 +1,528 @@
 {
-  "actions": [
+  "Actions": [
     {
-      "tag": "None",
-      "name": "ConditionAction",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "ObjectData;2001462;IsTargetable;false\u0026ModifyIndex;4"
-      ],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
     },
     {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "+6"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionObjectData, AutoDuty",
+          "baseId": 2001462,
+          "property": "IsTargetable",
+          "value": 0
+        }
+      ],
+      "Note": "Skips ahead if the Gate is already open."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
         "X": 21.82,
         "Y": 7.1,
         "Z": 27.4
       },
-      "arguments": [
+      "Arguments": [
         "1004346"
       ],
-      "note": "Goblin Pathfinder"
+      "Conditions": [],
+      "Note": "Goblin Pathfinder"
     },
     {
-      "tag": "None",
-      "name": "ConditionAction",
-      "position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "ItemCount;2000521;\u003C;1\u0026ModifyIndex;0"
+      "Arguments": [
+        "-3"
       ],
-      "note": ""
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionItemCount, AutoDuty",
+          "itemId": 2000521,
+          "quantity": 1,
+          "operatorValue": "<"
+        }
+      ],
+      "Note": "Goes back if you don't have the Key."
     },
     {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 100.091774,
+        "Y": 0.060914516,
+        "Z": 13.517183
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
         "X": 105.56,
         "Y": -0.13,
         "Z": 12.14
       },
-      "arguments": [
+      "Arguments": [
         "2001462"
       ],
-      "note": "Runstop Headgate"
+      "Conditions": [],
+      "Note": "Runstop Headgate"
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #1 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
         "X": 112.59,
         "Y": -2.44,
         "Z": -12.91
       },
-      "arguments": [
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Great Yellow Pelican"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 38.689632,
-        "Y": 5.519903,
-        "Z": -103.78054
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
     },
     {
-      "tag": "None",
-      "name": "StopForCombat",
-      "position": {
-        "X": 42.73,
-        "Y": 6.98,
-        "Z": -80.07
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
-        "false"
+      "Arguments": [
+        "FALSE"
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": -5.17,
-        "Y": 5.74,
-        "Z": -83.51
+      "Tag": "Treasure",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 89.26027,
+        "Y": 4.976077,
+        "Z": -72.18172
       },
-      "arguments": [
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced, Treasure",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "Interactable",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "105"
+      ],
+      "Conditions": [],
+      "Note": "Treasure Coffer - AD will attempt to click it until it despawns because it's an Interactable step (since it's position is not static)."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 36.50248,
+        "Y": 8.595807,
+        "Z": -144.52536
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 39.516823,
+        "Y": 8.595814,
+        "Z": -145.67468
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 65.155136,
+        "Y": 3.13669,
+        "Z": -65.31773
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 65.45306,
+        "Y": 3.18878,
+        "Z": -59.834206
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": 28.122221,
+        "Y": 13.502937,
+        "Z": -54.971577
+      },
+      "Arguments": [
+        "15"
+      ],
+      "Conditions": [],
+      "Note": "Kills the Comet Chasers to avoid potential targeting issues during the next boss fight."
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 19.35828,
+        "Y": 15.786371,
+        "Z": -62.730194
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 9.604291,
+        "Y": 6.1299295,
+        "Z": -68.84272
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #2 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -6.635355,
+        "Y": 5.742157,
+        "Z": -85.50831
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Inferno Drake"
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": -107.99,
-        "Y": -2.38,
-        "Z": -26.81
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -17.354776,
+        "Y": 1.9247377,
+        "Z": -53.81048
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -103.7997,
+        "Y": -1.7477114,
+        "Z": -7.9069514
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #3 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -109.66331,
+        "Y": -2.3816218,
+        "Z": -30.228254
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Hellbender"
     },
     {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
         "X": -90.04,
         "Y": 10.93,
         "Z": -95.78
       },
-      "arguments": [
+      "Arguments": [
         "2001466"
       ],
-      "note": "Longstop Gutgate"
+      "Conditions": [],
+      "Note": "Longstop Gutgate"
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": -27.24,
-        "Y": 35.5,
-        "Z": -236.09
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -90.75622,
+        "Y": 27.342485,
+        "Z": -221.55406
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #4 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -25.284258,
+        "Y": 35.5,
+        "Z": -236.15797
+      },
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "Aiatar"
     }
   ],
-  "meta": {
-    "createdAt": 130,
-    "changelog": [
+  "Meta": {
+    "CreatedAt": 130,
+    "Changelog": [
       {
-        "version": 161,
-        "change": "Converted to new JSON Structure"
+        "Version": 161,
+        "Change": "Converted to new JSON Structure"
       },
       {
-        "version": 163,
-        "change": "Converted to newer JSON Structure"
+        "Version": 163,
+        "Change": "Converted to newer JSON Structure"
       },
       {
-        "version": 164,
-        "change": "Converted to JSON Structure with Tags"
+        "Version": 164,
+        "Change": "Converted to JSON Structure with Tags"
       },
       {
-        "version": 189,
-        "change": "Adjusted tags to string values"
+        "Version": 189,
+        "Change": "Adjusted tags to string values"
+      },
+      {
+        "Version": 289,
+        "Change": "Added chests"
+      },
+      {
+        "Version": 291,
+        "Change": "fixed chest before b2"
+      },
+      {
+        "Version": 299,
+        "Change": "Added Trash/Boss Comments & Boss names. Added Unsynced steps. Added missing TreasureCoffer steps before the 2nd boss. Removed StopForCombat:False before the second boss."
+      },
+      {
+        "Version": 300,
+        "Change": "Removed the Treasure Tag from the KillInRange before the second boss, so that the enemies on the cliff are always killed (to avoid targeting issues during the second boss). Adjusted the step before the final boss so that it won't be skipped by anyone watching the cutscene."
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
       }
     ],
-    "notes": []
+    "Notes": []
   }
 }

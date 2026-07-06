@@ -1,0 +1,114 @@
+{
+  "$type": "AutoFateGrind.Configuration, AutoFateGrind",
+  "Version": 0,
+  "AutoShowOnLogin": false,
+  "SelectedZones": [
+    1189,
+    1187,
+    1190,
+    1192,
+    1188,
+    1191
+  ],
+  "Mode": 2,
+  "ModeId": "endless",
+  "TargetFateCount": 30,
+  "TargetGemstoneCount": 1500,
+  "TargetMinutes": 60,
+  "CombatPresetName": "Auto FATE Grind",
+  "MinTimeRemainingSec": 120,
+  "MaxProgressPct": 85,
+  "SwapZonesWhenEmpty": true,
+  "ShowLivePopout": false,
+  "AutoResumeOnFault": true,
+  "BlacklistedFateIds": [
+    1831,
+    1832,
+    1914,
+    1915
+  ],
+  "BlacklistedTypeIds": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Int32, System.Private.CoreLib],[System.Collections.Generic.HashSet`1[[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "SkippedFateRules": [],
+  "FateSortOrder": [
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 0,
+      "Descending": true
+    },
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 1,
+      "Descending": true
+    },
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 2,
+      "Descending": true
+    },
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 3,
+      "Descending": true
+    },
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 4,
+      "Descending": false
+    },
+    {
+      "$type": "AutoFateGrind.FateSortEntry, AutoFateGrind",
+      "Criterion": 5,
+      "Descending": false
+    }
+  ],
+  "TargetTradeItemId": 44057,
+  "TradeOnCap": true,
+  "TradeThreshold": 319,
+  "AfterTrade": 0,
+  "AfterRun": 0,
+  "SpendMode": 0,
+  "SpendGemsAmount": 1000,
+  "BuyQuantityAmount": 10,
+  "KeepGemstonesReserve": 0,
+  "ApplyClassOnStart": false,
+  "ClassQueue": [],
+  "AfterClassQueueDone": 0,
+  "AutoRepair": true,
+  "AutoRepairThresholdPct": 80,
+  "RepairMode": 0,
+  "PreferredRepairNpc": null,
+  "GmAlertStopRun": true,
+  "GmAlertToast": false,
+  "GmAlertChat": false,
+  "GmAlertSound": false,
+  "GmAlertBeepCount": 3,
+  "GmAlertBeepDurationMs": 250,
+  "GmAlertBeepFrequencyHz": 900,
+  "GmAlertKillGame": false,
+  "GmAlertCommands": [],
+  "HumanizerEnabled": false,
+  "HumanizerFatesBeforeBreak": 20,
+  "HumanizerBreakMinMinutes": 5,
+  "HumanizerBreakMaxMinutes": 10,
+  "HumanizerPauseMinSec": 3,
+  "HumanizerPauseMaxSec": 8,
+  "HumanizerWanderMinMeters": 25,
+  "HumanizerWanderMaxMeters": 80,
+  "HumanizerCities": [
+    129,
+    132,
+    1185,
+    1205
+  ],
+  "AutoConsume": false,
+  "AutoConsumeMinMinutes": 3,
+  "AutoConsumeItems": [],
+  "DeclinePartyInvites": true,
+  "DeclineInviteDelayMinSec": 2,
+  "DeclineInviteDelayMaxSec": 6,
+  "DeclineInviteReply": false,
+  "DeclineInviteReplyChannel": 0,
+  "DeclineInviteReplyMessage": ""
+}

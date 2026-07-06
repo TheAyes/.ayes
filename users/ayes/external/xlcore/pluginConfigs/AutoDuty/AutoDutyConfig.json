@@ -1,6 +1,5 @@
 ﻿{
-  "DefaultConfigName": "Bare",
-  "activeProfileName": "Profile0",
+  "activeProfileName": "Bare",
   "profileData": [
     {
       "Name": "Profile0",
@@ -14,6 +13,7 @@
         "Unsynced": false,
         "HideUnavailableDuties": false,
         "PreferTrustOverSupportLeveling": false,
+        "SquadronAssignLowestMembers": true,
         "ShowMainWindowOnStartup": false,
         "OverlayAnchorBottom": false,
         "ShowDutyLoopText": true,
@@ -52,8 +52,12 @@
         "RebuildNavmeshOnStuck": true,
         "RebuildNavmeshAfterStuckXTimes": 5,
         "MinStuckTime": 500,
+        "StuckOnStep": true,
+        "stuckReturn": true,
+        "StuckReturnX": 10,
         "PathDrawEnabled": false,
         "PathDrawStepCount": 5,
+        "DisableRenderWhileActive": false,
         "OverridePartyValidation": false,
         "UsingAlternativeRotationPlugin": false,
         "UsingAlternativeMovementPlugin": false,
@@ -89,9 +93,13 @@
         "AutoOpenCoffersBlacklistUse": false,
         "AutoOpenCoffersBlacklist": {},
         "AutoDesynthSkillUpLimit": 50,
+        "AutoDesynthNQOnly": false,
+        "AutoDesynthNoGearset": true,
+        "AutoDesynthCategories": 1,
         "AutoGCTurninSlotsLeft": 5,
         "AutoGCTurninSlotsLeftBool": false,
         "AutoGCTurninUseTicket": false,
+        "ArmoireEntrust": false,
         "TripleTriadRegister": false,
         "TripleTriadSell": false,
         "TripleTriadSellMinItemCount": 1,
@@ -108,6 +116,9 @@
         "StopItemAll": false,
         "StopItemQtyItemDictionary": {},
         "StopItemQtyInt": 1,
+        "TerminationBLUSpellsEnabled": false,
+        "TerminationBLUSpells": [],
+        "TerminationBLUSpellsAll": false,
         "ExecuteCommandsTermination": false,
         "CustomCommandsTermination": [],
         "PlayEndSound": false,
@@ -132,6 +143,8 @@
         "AutoManageBossModAISettings": true,
         "MaxDistanceToTargetRoleBased": true,
         "PositionalRoleBased": true,
+        "StuckReturn": true,
+        "LevelingListExperimentalEntries": false,
         "AutoExtractAll": false,
         "AutoDesynth": false,
         "AutoDesynthSkillUp": false,
@@ -139,7 +152,29 @@
       }
     }
   ],
-  "charByCID": {},
+  "charByCID": {
+    "18014598541772518": {
+      "CID": 18014598541772518,
+      "Name": "Meira Kisaragi",
+      "World": "Alpha"
+    }
+  },
+  "dutyCountSinceReset": {},
+  "dutyCountResetDate": "0001-01-01T00:00:00",
+  "stats": {
+    "dungeonsRun": 0,
+    "dutyRecords": [],
+    "timeSpent": "00:00:00"
+  },
   "updatePathsOnStartup": true,
-  "host": false
+  "multibox": {
+    "Host": false,
+    "PipeName": "AutoDutyPipe",
+    "ServerName": ".",
+    "TransportType": "NamedPipe",
+    "ServerAddress": "127.0.0.1",
+    "ServerPort": 1716
+  },
+  "DefaultConfigName": "Bare",
+  "Language": "en-US"
 }

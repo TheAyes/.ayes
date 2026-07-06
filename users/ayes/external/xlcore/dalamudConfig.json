@@ -4,7 +4,7 @@
   "DutyFinderTaskbarFlash": true,
   "DutyFinderChatMessage": true,
   "LanguageOverride": "en",
-  "LastVersion": "15.0.2.1",
+  "LastVersion": "15.0.2.2",
   "SeenFtueLevels": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Int32, System.Private.CoreLib]], System.Private.CoreLib"
   },
@@ -77,6 +77,16 @@
       {
         "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
         "Url": "https://puni.sh/api/repository/croizat",
+        "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://raw.githubusercontent.com/XeldarAlz/DalamudPlugins/main/repo.json",
+        "IsEnabled": true
+      },
+      {
+        "$type": "Dalamud.Configuration.ThirdPartyRepoSettings, Dalamud",
+        "Url": "https://puni.sh/api/repository/erdelf",
         "IsEnabled": true
       }
     ]
@@ -276,7 +286,30 @@
       "AetherBags",
       "SortaKinda",
       "EasyZoomReborn",
-      "Automaton"
+      "Automaton",
+      "Dalamud.RichPresence",
+      "AetherLink",
+      "DiscordBotFFXIV",
+      "AutoFateGrind",
+      "AbilityAnts",
+      "ChilledLeves",
+      "CreateXIV",
+      "rec-cue",
+      "Dummy",
+      "Nicknamer",
+      "ZodiacBuddy",
+      "SimpleTriggers",
+      "WukLamark",
+      "BackseatDriver",
+      "AvantGarde",
+      "AutoDuty",
+      "XIVDeck.FFXIVPlugin",
+      "NowPlaying",
+      "WhoDidThat",
+      "PartyIcons",
+      "Malmstone",
+      "StatusTimers",
+      "BetterTargetingSystem"
     ]
   },
   "DevMode": false,
@@ -2571,19 +2604,19 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "AllaganItemSearch",
           "WorkingPluginId": "c00a5479-b419-4c96-b8e1-159fdec54174",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "AllaganMarket",
           "WorkingPluginId": "f734d641-d1f3-4f55-96e7-a464b7caa87c",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "InventoryTools",
           "WorkingPluginId": "58e215ed-eb60-44d9-b33e-a9a924848bbc",
-          "IsEnabled": true
+          "IsEnabled": false
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2721,7 +2754,7 @@
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
           "InternalName": "Browsingway",
           "WorkingPluginId": "620c173a-af42-44cd-a421-be17e7c504a1",
-          "IsEnabled": false
+          "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
@@ -2845,14 +2878,50 @@
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "BossModReborn",
-          "WorkingPluginId": "0b543aeb-faca-4b1b-bfce-0e7972815b55",
+          "InternalName": "Automaton",
+          "WorkingPluginId": "f4f0916a-0b96-49e2-9796-d4b524e6723e",
           "IsEnabled": true
         },
         {
           "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
-          "InternalName": "Automaton",
-          "WorkingPluginId": "f4f0916a-0b96-49e2-9796-d4b524e6723e",
+          "InternalName": "SomethingNeedDoing",
+          "WorkingPluginId": "2c27f1eb-04e8-47ee-9c16-1896c58bf701",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "AutoFateGrind",
+          "WorkingPluginId": "a8dfe88a-440b-4533-8f52-858f03359fdd",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "AutoDuty",
+          "WorkingPluginId": "50ae5244-66db-46ca-8163-365ecd87925d",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BetterTargetingSystem",
+          "WorkingPluginId": "ca8ebe73-dd75-4e71-a39c-12c64d97bf57",
+          "IsEnabled": false
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "Dalamud.RichPresence",
+          "WorkingPluginId": "596e59bd-5aa5-431f-b3fe-63d3e813a18a",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BossModReborn",
+          "WorkingPluginId": "891d9c11-ab25-4341-afa7-49f9717aa55a",
+          "IsEnabled": true
+        },
+        {
+          "$type": "Dalamud.Plugin.Internal.Profiles.ProfileModelV1+ProfileModelV1Plugin, Dalamud",
+          "InternalName": "BackseatDriver",
+          "WorkingPluginId": "828a16b6-b148-4545-b8b0-5f3ac968fc7c",
           "IsEnabled": true
         }
       ]
@@ -2907,6 +2976,11 @@
       {
         "$type": "Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud",
         "InternalName": "Dalamud.LoadingImage",
+        "Branch": "testing-live"
+      },
+      {
+        "$type": "Dalamud.Configuration.Internal.PluginTestingOptIn, Dalamud",
+        "InternalName": "BackseatDriver",
         "Branch": "testing-live"
       }
     ]

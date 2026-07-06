@@ -1,163 +1,228 @@
 {
-  "actions": [
+  "Actions": [
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -18.983963,
-        "Y": 27.004248,
-        "Z": 121.18141
-      },
-      "arguments": [],
-      "note": ""
-    },
-    {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
         "X": -18.98,
-        "Y": 27,
+        "Y": 27.0,
         "Z": 121.18
       },
-      "arguments": [
+      "Arguments": [
         "2005048"
       ],
-      "note": "Steam-spouting Contraption"
+      "Conditions": [],
+      "Note": "Steam-spouting Contraption"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -15.423407,
-        "Y": 24.524124,
-        "Z": 107.116005
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": -18.403654,
+        "Y": 26.778944,
+        "Z": 119.903656
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "Combat"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -15.990891,
-        "Y": 21.516907,
-        "Z": 90.06123
+      "Tag": "None",
+      "Name": "Wait",
+      "Position": {
+        "X": -15.615263,
+        "Y": 23.584011,
+        "Z": 101.78438
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "700"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 14.836017,
-        "Y": 21.500813,
-        "Z": 89.96994
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -10.369115,
+        "Y": 21.849895,
+        "Z": 92.52557
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 16.74671,
-        "Y": 12.0625305,
-        "Z": 36.442787
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -2.2887301,
-        "Y": -17.96117,
-        "Z": 38.934845
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 12.985632,
+        "Y": 21.360409,
+        "Z": 89.173676
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "Interactable",
-      "position": {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 14.667949,
+        "Y": 14.386927,
+        "Z": 48.942284
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 8.542285,
+        "Y": 12.249518,
+        "Z": 36.765564
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
         "X": -2.29,
         "Y": -17.96,
         "Z": 38.93
       },
-      "arguments": [
+      "Arguments": [
         "2005427"
       ],
-      "note": "Steam-spouting Contraption"
+      "Conditions": [],
+      "Note": "Steam-spouting Contraption"
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 0.137,
-        "Y": -22.781069,
-        "Z": 11.598028
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": -2.2820222,
+        "Y": -18.081104,
+        "Z": 38.254673
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "Combat"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": 0.06510715,
-        "Y": -28.000046,
-        "Z": -30.009491
+      "Tag": "None",
+      "Name": "Wait",
+      "Position": {
+        "X": -1.6208358,
+        "Y": -24.324087,
+        "Z": 2.847136
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "1200"
+      ],
+      "Conditions": [],
+      "Note": ""
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -0.11020745,
-        "Y": -28,
-        "Z": -74.79681
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": "This, along with the next step..."
     },
     {
-      "tag": "None",
-      "name": "MoveTo",
-      "position": {
-        "X": -21.231268,
-        "Y": -28,
-        "Z": -88.575035
+      "Tag": "None",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": -21.034998,
+        "Y": -28.0,
+        "Z": -86.47153
       },
-      "arguments": [],
-      "note": ""
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": "...help you properly be on the boss step during the majority of the fight..."
     },
     {
-      "tag": "None",
-      "name": "Boss",
-      "position": {
-        "X": 0.46,
-        "Y": -28,
-        "Z": -78.19
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
       },
-      "arguments": [
+      "Arguments": [
         ""
       ],
-      "note": ""
+      "Conditions": [],
+      "Note": "...due to the downtime after killing the initial enemies."
     }
   ],
-  "meta": {
-    "createdAt": 182,
-    "changelog": [
+  "Meta": {
+    "CreatedAt": 284,
+    "Changelog": [
       {
-        "version": 189,
-        "change": "Adjusted tags to string values"
+        "Version": 285,
+        "Change": ""
+      },
+      {
+        "Version": 298,
+        "Change": ""
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
       }
     ],
-    "notes": []
+    "Notes": []
   }
 }

@@ -1,0 +1,492 @@
+{
+  "Actions": [
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Synced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 77.23121,
+        "Y": 4.191577,
+        "Z": 210.3302
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": "Prevents hugging the wall before reaching the second crystal."
+    },
+    {
+      "Tag": "Synced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 97.99722,
+        "Y": 1.2761085,
+        "Z": 177.64655
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": 81.78937,
+        "Y": 2.067525,
+        "Z": 127.45017
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 65.018776,
+        "Y": -14.497273,
+        "Z": 94.008194
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #1 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 46.360134,
+        "Y": -14.405196,
+        "Z": 75.00261
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "All-seeing Eye"
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
+        "X": 26.611492,
+        "Y": -13.482446,
+        "Z": 58.71247
+      },
+      "Arguments": [
+        "2000458"
+      ],
+      "Conditions": [],
+      "Note": "Magitek Transporter"
+    },
+    {
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "-2"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionDistance, AutoDuty",
+          "origin": "Location",
+          "originId": 0,
+          "originLoc": {
+            "X": 29.563,
+            "Y": -14.207,
+            "Z": 61.993
+          },
+          "target": "Player",
+          "targetId": 0,
+          "targetLoc": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "operatorValue": "<",
+          "distance": 100.0
+        }
+      ],
+      "Note": "Goes back if you haven't taken the Transporter."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -225.68459,
+        "Y": -23.137669,
+        "Z": 42.028175
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Treasure",
+      "Name": "TreasureCoffer",
+      "Position": {
+        "X": -140.2709,
+        "Y": -25.818148,
+        "Z": 55.947014
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -111.099594,
+        "Y": -23.804768,
+        "Z": 4.6238256
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": -111.824066,
+        "Y": -24.439007,
+        "Z": -7.4638395
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #2 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": -96.21404,
+        "Y": -30.500002,
+        "Z": -30.250416
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Taulurd"
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Trash Packs / 雑魚 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Interactable",
+      "Position": {
+        "X": -96.86854,
+        "Y": -30.246162,
+        "Z": -37.788185
+      },
+      "Arguments": [
+        "2000474"
+      ],
+      "Conditions": [],
+      "Note": "Magitek Transporter"
+    },
+    {
+      "Tag": "None",
+      "Name": "WaitFor",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "IsReady"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "ModifyIndex",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "-2"
+      ],
+      "Conditions": [
+        {
+          "$type": "AutoDuty.Data.PathActionConditionDistance, AutoDuty",
+          "origin": "Location",
+          "originId": 0,
+          "originLoc": {
+            "X": -97.16,
+            "Y": -30.42,
+            "Z": -29.681
+          },
+          "target": "Player",
+          "targetId": 0,
+          "targetLoc": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "operatorValue": "<=",
+          "distance": 20.0
+        }
+      ],
+      "Note": "Goes back if you haven't taken the Transporter."
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "FALSE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "KillInRange",
+      "Position": {
+        "X": -6.961212,
+        "Y": -22.155823,
+        "Z": -160.72961
+      },
+      "Arguments": [
+        "25"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "None",
+      "Name": "MoveTo",
+      "Position": {
+        "X": 47.791676,
+        "Y": -33.69053,
+        "Z": -139.74321
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Unsynced",
+      "Name": "StopForCombat",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [
+        "TRUE"
+      ],
+      "Conditions": [],
+      "Note": ""
+    },
+    {
+      "Tag": "Comment",
+      "Name": "<-- Comment -->",
+      "Position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Arguments": [],
+      "Conditions": [],
+      "Note": "<-- Boss / ボス #3 -->"
+    },
+    {
+      "Tag": "None",
+      "Name": "Boss",
+      "Position": {
+        "X": 79.07387,
+        "Y": -39.000008,
+        "Z": -170.15167
+      },
+      "Arguments": [
+        ""
+      ],
+      "Conditions": [],
+      "Note": "Batraal"
+    }
+  ],
+  "Meta": {
+    "CreatedAt": 279,
+    "Changelog": [
+      {
+        "Version": 279,
+        "Change": "Added arm 1 treasure"
+      },
+      {
+        "Version": 290,
+        "Change": "Added safeguards for transitions"
+      },
+      {
+        "Version": 290,
+        "Change": "Moved B3 spot"
+      },
+      {
+        "Version": 291,
+        "Change": "Enhanced path stability"
+      },
+      {
+        "Version": 298,
+        "Change": "Added safety step before b3"
+      },
+      {
+        "Version": 299,
+        "Change": "Added Trash/Boss Comments. Added Unsynced steps. Removed excess MoveTo steps (kept the notable ones from previous Changes)."
+      },
+      {
+        "Version": 304,
+        "Change": "Version update"
+      }
+    ],
+    "Notes": []
+  }
+}
