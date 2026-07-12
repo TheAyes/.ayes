@@ -1235,11 +1235,76 @@
             "IsExcludedPriority": true,
             "GpThresholdAbove": true,
             "ConditionSet": {
-              "m": 0,
+              "m": 1,
               "g": [
                 {
                   "m": 0,
-                  "c": [],
+                  "c": [
+                    {
+                      "t": "StatusActiveCD",
+                      "p": {
+                        "ids": [
+                          4414
+                        ]
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "StatusActiveCD",
+                      "p": {
+                        "ids": [
+                          2780
+                        ]
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "GpCD",
+                      "p": {
+                        "val": 700
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "CosmicCollectedTotalCD",
+                      "p": {
+                        "val": 20,
+                        "op": "<"
+                      },
+                      "e": true
+                    }
+                  ],
+                  "a": true
+                },
+                {
+                  "m": 0,
+                  "c": [
+                    {
+                      "t": "StatusActiveCD",
+                      "p": {
+                        "ids": [
+                          4414
+                        ]
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "StatusActiveCD",
+                      "p": {
+                        "ids": [
+                          763
+                        ]
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "CosmicCollectedTotalCD",
+                      "p": {
+                        "val": 20
+                      },
+                      "e": true
+                    }
+                  ],
                   "a": true
                 }
               ],
@@ -1267,19 +1332,49 @@
             "ConditionSet": null
           },
           "CastChum": {
-            "Enabled": false,
+            "Enabled": true,
             "Id": 4104,
-            "GpThreshold": 700,
+            "GpThreshold": 100,
             "DontCancelMooch": true,
             "Priority": 1,
             "IsExcludedPriority": false,
             "GpThresholdAbove": true,
             "ConditionSet": {
-              "m": 0,
+              "m": 1,
               "g": [
                 {
                   "m": 0,
-                  "c": [],
+                  "c": [
+                    {
+                      "t": "GpCD",
+                      "p": {
+                        "val": 800
+                      },
+                      "e": true
+                    },
+                    {
+                      "t": "StatusActiveCD",
+                      "p": {
+                        "ids": [
+                          2780
+                        ]
+                      },
+                      "e": true
+                    }
+                  ],
+                  "a": true
+                },
+                {
+                  "m": 0,
+                  "c": [
+                    {
+                      "t": "CosmicCollectedTotalCD",
+                      "p": {
+                        "val": 20
+                      },
+                      "e": true
+                    }
+                  ],
                   "a": true
                 }
               ],
@@ -1324,7 +1419,59 @@
               ],
               "e": null
             },
-            "Priority": 4,
+            "Priority": 11,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [
+                    {
+                      "t": "CosmicCollectedTotalCD",
+                      "p": {
+                        "val": 20,
+                        "op": "<"
+                      },
+                      "e": true
+                    }
+                  ],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
+          },
+          "CastFishEyes": {
+            "IgnoreMooch": false,
+            "Enabled": false,
+            "Id": 4105,
+            "GpThreshold": 550,
+            "DontCancelMooch": true,
+            "Priority": 13,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastMakeShiftBait": {
+            "MakeshiftBaitStacks": 5,
+            "Enabled": false,
+            "Id": 26805,
+            "GpThreshold": 5,
+            "DontCancelMooch": true,
+            "Priority": 14,
+            "IsExcludedPriority": false,
+            "GpThresholdAbove": true,
+            "ConditionSet": null
+          },
+          "CastPatience": {
+            "RefreshEarlyTime": 0,
+            "Enabled": false,
+            "Id": 4106,
+            "GpThreshold": 560,
+            "DontCancelMooch": true,
+            "Priority": 15,
             "IsExcludedPriority": false,
             "GpThresholdAbove": true,
             "ConditionSet": {
@@ -1339,57 +1486,34 @@
               "e": null
             }
           },
-          "CastFishEyes": {
-            "IgnoreMooch": false,
-            "Enabled": false,
-            "Id": 4105,
-            "GpThreshold": 550,
-            "DontCancelMooch": true,
-            "Priority": 6,
-            "IsExcludedPriority": false,
-            "GpThresholdAbove": true,
-            "ConditionSet": null
-          },
-          "CastMakeShiftBait": {
-            "MakeshiftBaitStacks": 5,
-            "Enabled": false,
-            "Id": 26805,
-            "GpThreshold": 5,
-            "DontCancelMooch": true,
-            "Priority": 9,
-            "IsExcludedPriority": false,
-            "GpThresholdAbove": true,
-            "ConditionSet": null
-          },
-          "CastPatience": {
-            "RefreshEarlyTime": 0,
-            "Enabled": false,
-            "Id": 4106,
-            "GpThreshold": 560,
-            "DontCancelMooch": true,
-            "Priority": 12,
-            "IsExcludedPriority": false,
-            "GpThresholdAbove": true,
-            "ConditionSet": null
-          },
           "CastPrizeCatch": {
             "Enabled": true,
             "Id": 26806,
             "GpThreshold": 200,
             "DontCancelMooch": true,
-            "Priority": 13,
+            "Priority": 16,
             "IsExcludedPriority": false,
             "GpThresholdAbove": true,
-            "ConditionSet": null
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
           },
           "CastThaliaksFavor": {
             "ThaliaksFavorStacks": 3,
             "ThaliaksFavorRecover": 150,
-            "Enabled": false,
+            "Enabled": true,
             "Id": 26804,
             "GpThreshold": 0,
             "DontCancelMooch": true,
-            "Priority": 16,
+            "Priority": 12,
             "IsExcludedPriority": false,
             "GpThresholdAbove": true,
             "ConditionSet": null
@@ -1406,19 +1530,29 @@
             "ConditionSet": null
           },
           "CastMultihook": {
-            "Enabled": false,
+            "Enabled": true,
             "Id": 42059,
-            "GpThreshold": 1,
+            "GpThreshold": 0,
             "DontCancelMooch": true,
             "Priority": 0,
             "IsExcludedPriority": true,
             "GpThresholdAbove": true,
-            "ConditionSet": null
+            "ConditionSet": {
+              "m": 0,
+              "g": [
+                {
+                  "m": 0,
+                  "c": [],
+                  "a": true
+                }
+              ],
+              "e": null
+            }
           },
           "TimeWindowConditionSet": null
         },
         "ExtraCfg": {
-          "Enabled": true,
+          "Enabled": false,
           "ResetCounterPresetSwap": false,
           "ForceBaitSwap": false,
           "ForcedBaitId": 0,
@@ -1426,69 +1560,9 @@
           "AutoOceanFishAllStops": false,
           "AutoOceanFishSpotId": 0,
           "AutoOceanFishTimeId": 0,
-          "AutoOceanFishConditionSet": {
-            "m": 0,
-            "g": [
-              {
-                "m": 0,
-                "c": [],
-                "a": true
-              }
-            ],
-            "e": null
-          },
-          "Triggers": [
-            {
-              "Enabled": true,
-              "ConditionSet": {
-                "m": 0,
-                "g": [
-                  {
-                    "m": 0,
-                    "c": [
-                      {
-                        "t": "TimeWindowCD",
-                        "p": {},
-                        "e": true
-                      }
-                    ],
-                    "a": true
-                  }
-                ],
-                "e": null
-              },
-              "SwapPreset": false,
-              "PresetToSwap": "-",
-              "SwapBait": false,
-              "BaitToSwap": {
-                "Id": -1,
-                "LureMessage": "",
-                "Name": "None",
-                "BaitType": 3
-              },
-              "StopAction": 0,
-              "ResolveCollectablesWindow": true,
-              "ResolveCollectablesForceNo": false,
-              "StartFishing": false,
-              "ReduceFish": false,
-              "RemoveStatus": false,
-              "StatusToRemove": 0,
-              "ResetFishCaughtCounter": false,
-              "NotifyOnSuccess": {
-                "Enabled": false,
-                "EchoChatMessage": false,
-                "ChatText": "",
-                "DisplayGameToast": false,
-                "GameToastText": "",
-                "DisplayToastNotification": false,
-                "ToastText": "",
-                "FlashTaskbarIcon": false,
-                "BringGameForeground": false,
-                "BeepOnSuccess": false
-              }
-            }
-          ],
-          "UniqueId": "497db37c-370a-4306-9b9e-1657b81a558a"
+          "AutoOceanFishConditionSet": null,
+          "Triggers": [],
+          "UniqueId": "d2a29db6-3ff7-408d-81ed-033a94c21ddc"
         },
         "IsAnonymous": true,
         "ListOfBaits": [
@@ -1526,12 +1600,9 @@
                       "m": 0,
                       "c": [
                         {
-                          "t": "BiteTimerCD",
+                          "t": "CosmicCollectedTotalCD",
                           "p": {
-                            "r": [
-                              0.0,
-                              7.9
-                            ]
+                            "val": 20
                           },
                           "e": true
                         }
@@ -1541,17 +1612,7 @@
                   ],
                   "e": null
                 },
-                "HookTypeConditionSet": {
-                  "m": 0,
-                  "g": [
-                    {
-                      "m": 0,
-                      "c": [],
-                      "a": true
-                    }
-                  ],
-                  "e": null
-                },
+                "HookTypeConditionSet": null,
                 "NormalHookTypeConditionSet": null,
                 "PrecisionHookTypeConditionSet": null,
                 "PowerfulHookTypeConditionSet": null,
@@ -1560,7 +1621,7 @@
               "PatienceStrong": {
                 "HooksetEnabled": true,
                 "EnableHooksetSwap": true,
-                "HooksetType": 41278,
+                "HooksetType": 4103,
                 "UseMultipleHookTypesByTimer": false,
                 "UseNormalHookTypeByTimer": false,
                 "NormalHookTypeMin": 0.0,
@@ -1578,15 +1639,12 @@
                   "m": 0,
                   "g": [
                     {
-                      "m": 1,
+                      "m": 0,
                       "c": [
                         {
-                          "t": "BiteTimerCD",
+                          "t": "CosmicCollectedTotalCD",
                           "p": {
-                            "r": [
-                              17.0,
-                              0.0
-                            ]
+                            "val": 20
                           },
                           "e": true
                         }
@@ -1596,24 +1654,14 @@
                   ],
                   "e": null
                 },
-                "HookTypeConditionSet": {
-                  "m": 0,
-                  "g": [
-                    {
-                      "m": 0,
-                      "c": [],
-                      "a": true
-                    }
-                  ],
-                  "e": null
-                },
+                "HookTypeConditionSet": null,
                 "NormalHookTypeConditionSet": null,
                 "PrecisionHookTypeConditionSet": null,
                 "PowerfulHookTypeConditionSet": null,
                 "StellarHookTypeConditionSet": null
               },
               "PatienceLegendary": {
-                "HooksetEnabled": false,
+                "HooksetEnabled": true,
                 "EnableHooksetSwap": true,
                 "HooksetType": 4103,
                 "UseMultipleHookTypesByTimer": false,
@@ -1629,7 +1677,25 @@
                 "UseStellarHookTypeByTimer": false,
                 "StellarHookTypeMin": 0.0,
                 "StellarHookTypeMax": 0.0,
-                "ConditionSet": null,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [
+                        {
+                          "t": "CosmicCollectedTotalCD",
+                          "p": {
+                            "val": 20
+                          },
+                          "e": true
+                        }
+                      ],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
                 "HookTypeConditionSet": null,
                 "NormalHookTypeConditionSet": null,
                 "PrecisionHookTypeConditionSet": null,
@@ -1710,10 +1776,10 @@
                 "PowerfulHookTypeConditionSet": null,
                 "StellarHookTypeConditionSet": null
               },
-              "UseTripleHook": false,
+              "UseTripleHook": true,
               "LetFishEscapeTripleHook": false,
               "TripleWeak": {
-                "HooksetEnabled": true,
+                "HooksetEnabled": false,
                 "EnableHooksetSwap": false,
                 "HooksetType": 27523,
                 "UseMultipleHookTypesByTimer": false,
@@ -1753,7 +1819,28 @@
                 "UseStellarHookTypeByTimer": false,
                 "StellarHookTypeMin": 0.0,
                 "StellarHookTypeMax": 0.0,
-                "ConditionSet": null,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [
+                        {
+                          "t": "BiteTimerCD",
+                          "p": {
+                            "r": [
+                              17.0,
+                              60.0
+                            ]
+                          },
+                          "e": true
+                        }
+                      ],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
                 "HookTypeConditionSet": null,
                 "NormalHookTypeConditionSet": null,
                 "PrecisionHookTypeConditionSet": null,
@@ -1777,7 +1864,17 @@
                 "UseStellarHookTypeByTimer": false,
                 "StellarHookTypeMin": 0.0,
                 "StellarHookTypeMax": 0.0,
-                "ConditionSet": null,
+                "ConditionSet": {
+                  "m": 0,
+                  "g": [
+                    {
+                      "m": 0,
+                      "c": [],
+                      "a": true
+                    }
+                  ],
+                  "e": null
+                },
                 "HookTypeConditionSet": null,
                 "NormalHookTypeConditionSet": null,
                 "PrecisionHookTypeConditionSet": null,
@@ -1791,24 +1888,14 @@
                 "LureStacks": 3,
                 "CancelAttempt": false,
                 "LureTarget": 0,
-                "Enabled": true,
+                "Enabled": false,
                 "Id": 37594,
                 "GpThreshold": 10,
                 "DontCancelMooch": true,
                 "Priority": 0,
                 "IsExcludedPriority": true,
                 "GpThresholdAbove": true,
-                "ConditionSet": {
-                  "m": 0,
-                  "g": [
-                    {
-                      "m": 0,
-                      "c": [],
-                      "a": true
-                    }
-                  ],
-                  "e": null
-                }
+                "ConditionSet": null
               },
               "TimeoutConditionSet": null,
               "ChumTimeoutConditionSet": null
@@ -2077,19 +2164,19 @@
               "BeepOnSuccess": false
             },
             "StopConditionSet": null,
-            "UniqueId": "7989041e-5257-4581-a4bb-97b2ebb0b63c"
+            "UniqueId": "f88599be-a37f-47be-8018-7805f63c3e9b"
           }
         ],
         "ListOfMooch": [],
         "ListOfFish": [],
         "NamedConditions": [],
         "IsGlobal": false,
-        "PresetName": "anon_[1657] Valuable Southern-central Specimens",
-        "UniqueId": "3545c6c2-e1a7-41ed-a6be-2a1d60cd6721"
+        "PresetName": "anon_[1665] Aquatic Mechanism Operational Survey",
+        "UniqueId": "ba8a1208-0f53-4b77-be5d-fb8c03b437c1"
       }
     ],
     "Folders": [],
-    "SelectedGuid": "3545c6c2-e1a7-41ed-a6be-2a1d60cd6721",
+    "SelectedGuid": "ba8a1208-0f53-4b77-be5d-fb8c03b437c1",
     "UniqueId": "bb53a493-ab6f-4362-a962-09f8867f7f91"
   },
   "AutoGigConfig": {

@@ -1621,7 +1621,7 @@
   "FakeIncreaseFisher": false,
   "CrazyTaxiArrow": false,
   "PlaceboCheckbox": false,
-  "SelectedMode": 2,
+  "SelectedMode": 1,
   "OnlyGrabMission_Debug": false,
   "TargetLevel": 100,
   "StopWhenLevel": false,
@@ -1826,7 +1826,22 @@
     "1531": 60,
     "1530": 60,
     "1529": 60,
-    "1657": 13
+    "1657": 13,
+    "1661": 16,
+    "1660": 9,
+    "1658": 15,
+    "1662": 19,
+    "1659": 9,
+    "1667": 24,
+    "1665": 50,
+    "1655": 13,
+    "1668": 48,
+    "1652": 5,
+    "1651": 6,
+    "1656": 12,
+    "1663": 29,
+    "1669": 54,
+    "1670": 45
   },
   "MissionConfig": {
     "1": {
@@ -47856,15 +47871,40 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 6,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 6,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 6,
+      "TurninRecords": [
+        {
+          "Time": 87.8075636,
+          "State": 3
+        },
+        {
+          "Time": 119.0221755,
+          "State": 3
+        },
+        {
+          "Time": 67.9994652,
+          "State": 3
+        },
+        {
+          "Time": 176.7609369,
+          "State": 3
+        },
+        {
+          "Time": 104.9202603,
+          "State": 3
+        },
+        {
+          "Time": 81.791811,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1652": {
@@ -47875,15 +47915,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 256.3616732,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1653": {
@@ -47932,15 +47977,40 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 6,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 6,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 6,
+      "TurninRecords": [
+        {
+          "Time": 140.5794553,
+          "State": 3
+        },
+        {
+          "Time": 138.3662449,
+          "State": 3
+        },
+        {
+          "Time": 88.7430993,
+          "State": 3
+        },
+        {
+          "Time": 78.3262292,
+          "State": 3
+        },
+        {
+          "Time": 114.3441515,
+          "State": 3
+        },
+        {
+          "Time": 87.7915421,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1656": {
@@ -47951,15 +48021,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 173.8756975,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1657": {
@@ -47970,14 +48045,14 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 16,
-      "BronzeCompletion": 7,
-      "SilverCompletions": 9,
-      "GoldCompletions": 0,
+      "TotalCompletions": 54,
+      "BronzeCompletion": 10,
+      "SilverCompletions": 38,
+      "GoldCompletions": 6,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 17,
+      "TotalAttempts": 58,
       "TurninRecords": [
         {
           "Time": 314.042587,
@@ -48016,6 +48091,122 @@
           "State": 2
         },
         {
+          "Time": 795.2563338,
+          "State": 2
+        },
+        {
+          "Time": 255.6284895,
+          "State": 2
+        },
+        {
+          "Time": 1523.9614707,
+          "State": 2
+        },
+        {
+          "Time": 1589.8005417,
+          "State": 2
+        },
+        {
+          "Time": 422.8515283,
+          "State": 2
+        },
+        {
+          "Time": 1497.3933828,
+          "State": 2
+        },
+        {
+          "Time": 1292.2595209,
+          "State": 2
+        },
+        {
+          "Time": 1601.3134452,
+          "State": 2
+        },
+        {
+          "Time": 1133.2622527,
+          "State": 2
+        },
+        {
+          "Time": 442.1550773,
+          "State": 2
+        },
+        {
+          "Time": 126.2698142,
+          "State": 2
+        },
+        {
+          "Time": 129.6440345,
+          "State": 2
+        },
+        {
+          "Time": 514.4864603,
+          "State": 2
+        },
+        {
+          "Time": 467.360657,
+          "State": 2
+        },
+        {
+          "Time": 402.6887952,
+          "State": 2
+        },
+        {
+          "Time": 424.5026127,
+          "State": 2
+        },
+        {
+          "Time": 259.9859617,
+          "State": 2
+        },
+        {
+          "Time": 418.6261017,
+          "State": 2
+        },
+        {
+          "Time": 121.3192208,
+          "State": 2
+        },
+        {
+          "Time": 96.9838225,
+          "State": 2
+        },
+        {
+          "Time": 1522.422659,
+          "State": 2
+        },
+        {
+          "Time": 52.0582982,
+          "State": 2
+        },
+        {
+          "Time": 1266.6530666,
+          "State": 2
+        },
+        {
+          "Time": 368.5213062,
+          "State": 2
+        },
+        {
+          "Time": 54.4492141,
+          "State": 2
+        },
+        {
+          "Time": 848.1390017,
+          "State": 2
+        },
+        {
+          "Time": 96.1250955,
+          "State": 2
+        },
+        {
+          "Time": 137.3468151,
+          "State": 2
+        },
+        {
+          "Time": 225.0415063,
+          "State": 2
+        },
+        {
           "Time": 67.9460432,
           "State": 1
         },
@@ -48042,6 +48233,42 @@
         {
           "Time": 901.4193514,
           "State": 1
+        },
+        {
+          "Time": 1535.1123052,
+          "State": 1
+        },
+        {
+          "Time": 623.2333429,
+          "State": 1
+        },
+        {
+          "Time": 16.5432943,
+          "State": 1
+        },
+        {
+          "Time": 413.1334448,
+          "State": 3
+        },
+        {
+          "Time": 101.4207449,
+          "State": 3
+        },
+        {
+          "Time": 95.418759,
+          "State": 3
+        },
+        {
+          "Time": 130.2632196,
+          "State": 3
+        },
+        {
+          "Time": 78.8745309,
+          "State": 3
+        },
+        {
+          "Time": 338.2964351,
+          "State": 3
         }
       ],
       "CraftSettings": {}
@@ -48054,15 +48281,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 261.2152822,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1659": {
@@ -48073,15 +48305,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 27.5322837,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1660": {
@@ -48092,15 +48329,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 50.8705125,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1661": {
@@ -48111,15 +48353,380 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
-      "BronzeCompletion": 0,
-      "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "TotalCompletions": 91,
+      "BronzeCompletion": 72,
+      "SilverCompletions": 18,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 99,
+      "TurninRecords": [
+        {
+          "Time": 509.8169246,
+          "State": 2
+        },
+        {
+          "Time": 353.8085478,
+          "State": 2
+        },
+        {
+          "Time": 1256.1361113,
+          "State": 2
+        },
+        {
+          "Time": 797.9320512,
+          "State": 2
+        },
+        {
+          "Time": 294.9030622,
+          "State": 2
+        },
+        {
+          "Time": 174.690253,
+          "State": 2
+        },
+        {
+          "Time": 39.6137429,
+          "State": 2
+        },
+        {
+          "Time": 240.0448051,
+          "State": 2
+        },
+        {
+          "Time": 36.646525,
+          "State": 2
+        },
+        {
+          "Time": 56.360978,
+          "State": 2
+        },
+        {
+          "Time": 1159.7522888,
+          "State": 2
+        },
+        {
+          "Time": 178.6592862,
+          "State": 2
+        },
+        {
+          "Time": 56.2262386,
+          "State": 2
+        },
+        {
+          "Time": 57.6297527,
+          "State": 2
+        },
+        {
+          "Time": 93.5911599,
+          "State": 2
+        },
+        {
+          "Time": 51.0841105,
+          "State": 2
+        },
+        {
+          "Time": 128.7635962,
+          "State": 2
+        },
+        {
+          "Time": 59.3636302,
+          "State": 2
+        },
+        {
+          "Time": 690.9350347,
+          "State": 1
+        },
+        {
+          "Time": 702.5732676,
+          "State": 1
+        },
+        {
+          "Time": 437.3137205,
+          "State": 1
+        },
+        {
+          "Time": 1432.4091499,
+          "State": 1
+        },
+        {
+          "Time": 1672.9587378,
+          "State": 1
+        },
+        {
+          "Time": 174.5202913,
+          "State": 1
+        },
+        {
+          "Time": 638.7487797,
+          "State": 1
+        },
+        {
+          "Time": 191.3791702,
+          "State": 1
+        },
+        {
+          "Time": 740.023364,
+          "State": 1
+        },
+        {
+          "Time": 1693.8297309,
+          "State": 1
+        },
+        {
+          "Time": 881.1935584,
+          "State": 1
+        },
+        {
+          "Time": 150.7506528,
+          "State": 1
+        },
+        {
+          "Time": 557.3948456,
+          "State": 1
+        },
+        {
+          "Time": 1037.3012646,
+          "State": 1
+        },
+        {
+          "Time": 97.092763,
+          "State": 1
+        },
+        {
+          "Time": 819.9733103,
+          "State": 1
+        },
+        {
+          "Time": 1383.8215856,
+          "State": 1
+        },
+        {
+          "Time": 381.5245247,
+          "State": 1
+        },
+        {
+          "Time": 1125.6789991,
+          "State": 1
+        },
+        {
+          "Time": 573.8952955,
+          "State": 1
+        },
+        {
+          "Time": 886.2455233,
+          "State": 1
+        },
+        {
+          "Time": 904.0764521,
+          "State": 1
+        },
+        {
+          "Time": 772.3058232,
+          "State": 1
+        },
+        {
+          "Time": 457.8598442,
+          "State": 1
+        },
+        {
+          "Time": 290.7588053,
+          "State": 1
+        },
+        {
+          "Time": 1188.7044062,
+          "State": 1
+        },
+        {
+          "Time": 1628.9511887,
+          "State": 1
+        },
+        {
+          "Time": 860.1483502,
+          "State": 1
+        },
+        {
+          "Time": 1573.9127157,
+          "State": 1
+        },
+        {
+          "Time": 1575.5327218,
+          "State": 1
+        },
+        {
+          "Time": 1525.2870803,
+          "State": 1
+        },
+        {
+          "Time": 950.7565868,
+          "State": 1
+        },
+        {
+          "Time": 1064.4838516,
+          "State": 1
+        },
+        {
+          "Time": 1396.8827603,
+          "State": 1
+        },
+        {
+          "Time": 1547.5233535,
+          "State": 1
+        },
+        {
+          "Time": 845.9403029,
+          "State": 1
+        },
+        {
+          "Time": 1384.2735174,
+          "State": 1
+        },
+        {
+          "Time": 934.9455728,
+          "State": 1
+        },
+        {
+          "Time": 777.2841395,
+          "State": 1
+        },
+        {
+          "Time": 569.2121785,
+          "State": 1
+        },
+        {
+          "Time": 1264.822602,
+          "State": 1
+        },
+        {
+          "Time": 570.1035333,
+          "State": 1
+        },
+        {
+          "Time": 1544.3981268,
+          "State": 1
+        },
+        {
+          "Time": 486.3807651,
+          "State": 1
+        },
+        {
+          "Time": 1277.7668397,
+          "State": 1
+        },
+        {
+          "Time": 1331.4473286,
+          "State": 1
+        },
+        {
+          "Time": 1468.5748079,
+          "State": 1
+        },
+        {
+          "Time": 246.2835624,
+          "State": 1
+        },
+        {
+          "Time": 872.8191799,
+          "State": 1
+        },
+        {
+          "Time": 172.7721335,
+          "State": 1
+        },
+        {
+          "Time": 258.3820649,
+          "State": 1
+        },
+        {
+          "Time": 435.1503282,
+          "State": 1
+        },
+        {
+          "Time": 93.2202929,
+          "State": 1
+        },
+        {
+          "Time": 308.360397,
+          "State": 1
+        },
+        {
+          "Time": 227.9907798,
+          "State": 1
+        },
+        {
+          "Time": 168.6690753,
+          "State": 1
+        },
+        {
+          "Time": 439.751718,
+          "State": 1
+        },
+        {
+          "Time": 68.9169706,
+          "State": 1
+        },
+        {
+          "Time": 348.8673972,
+          "State": 1
+        },
+        {
+          "Time": 195.9695163,
+          "State": 1
+        },
+        {
+          "Time": 202.3062446,
+          "State": 1
+        },
+        {
+          "Time": 92.3810399,
+          "State": 1
+        },
+        {
+          "Time": 433.2106386,
+          "State": 1
+        },
+        {
+          "Time": 88.0579987,
+          "State": 1
+        },
+        {
+          "Time": 125.2939379,
+          "State": 1
+        },
+        {
+          "Time": 397.9192348,
+          "State": 1
+        },
+        {
+          "Time": 320.4551005,
+          "State": 1
+        },
+        {
+          "Time": 28.4948363,
+          "State": 1
+        },
+        {
+          "Time": 415.4080718,
+          "State": 1
+        },
+        {
+          "Time": 62.7040093,
+          "State": 1
+        },
+        {
+          "Time": 848.2271054,
+          "State": 1
+        },
+        {
+          "Time": 300.1921503,
+          "State": 1
+        },
+        {
+          "Time": 1136.801423,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1662": {
@@ -48130,15 +48737,28 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 3,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 3,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 3,
+      "TurninRecords": [
+        {
+          "Time": 172.9461048,
+          "State": 3
+        },
+        {
+          "Time": 162.3751348,
+          "State": 3
+        },
+        {
+          "Time": 105.7991914,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1663": {
@@ -48149,15 +48769,24 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 2,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 2,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 2,
+      "TurninRecords": [
+        {
+          "Time": 315.8447466,
+          "State": 3
+        },
+        {
+          "Time": 62.828956,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1664": {
@@ -48187,15 +48816,228 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
-      "BronzeCompletion": 0,
-      "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "TotalCompletions": 53,
+      "BronzeCompletion": 22,
+      "SilverCompletions": 11,
+      "GoldCompletions": 20,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 53,
+      "TurninRecords": [
+        {
+          "Time": 407.7272245,
+          "State": 1
+        },
+        {
+          "Time": 595.6612551,
+          "State": 1
+        },
+        {
+          "Time": 404.2494163,
+          "State": 1
+        },
+        {
+          "Time": 518.4500689,
+          "State": 1
+        },
+        {
+          "Time": 404.408045,
+          "State": 1
+        },
+        {
+          "Time": 496.1557996,
+          "State": 1
+        },
+        {
+          "Time": 585.3619182,
+          "State": 1
+        },
+        {
+          "Time": 379.2619278,
+          "State": 1
+        },
+        {
+          "Time": 412.1483149,
+          "State": 1
+        },
+        {
+          "Time": 389.2134815,
+          "State": 1
+        },
+        {
+          "Time": 422.6029952,
+          "State": 1
+        },
+        {
+          "Time": 410.9519303,
+          "State": 1
+        },
+        {
+          "Time": 511.5043014,
+          "State": 1
+        },
+        {
+          "Time": 486.301301,
+          "State": 1
+        },
+        {
+          "Time": 409.0586323,
+          "State": 1
+        },
+        {
+          "Time": 420.473907,
+          "State": 1
+        },
+        {
+          "Time": 521.4062735,
+          "State": 1
+        },
+        {
+          "Time": 375.9459768,
+          "State": 1
+        },
+        {
+          "Time": 476.3583825,
+          "State": 1
+        },
+        {
+          "Time": 546.6666186,
+          "State": 1
+        },
+        {
+          "Time": 389.3530534,
+          "State": 1
+        },
+        {
+          "Time": 425.7273446,
+          "State": 1
+        },
+        {
+          "Time": 325.1926844,
+          "State": 2
+        },
+        {
+          "Time": 305.292244,
+          "State": 2
+        },
+        {
+          "Time": 336.729227,
+          "State": 2
+        },
+        {
+          "Time": 307.0787733,
+          "State": 2
+        },
+        {
+          "Time": 329.7762708,
+          "State": 2
+        },
+        {
+          "Time": 364.8153784,
+          "State": 2
+        },
+        {
+          "Time": 346.0194331,
+          "State": 2
+        },
+        {
+          "Time": 320.5696621,
+          "State": 2
+        },
+        {
+          "Time": 337.0153984,
+          "State": 2
+        },
+        {
+          "Time": 360.0415315,
+          "State": 2
+        },
+        {
+          "Time": 335.3837227,
+          "State": 2
+        },
+        {
+          "Time": 282.3592721,
+          "State": 3
+        },
+        {
+          "Time": 250.287317,
+          "State": 3
+        },
+        {
+          "Time": 248.5084731,
+          "State": 3
+        },
+        {
+          "Time": 240.1261915,
+          "State": 3
+        },
+        {
+          "Time": 229.6285078,
+          "State": 3
+        },
+        {
+          "Time": 256.6217962,
+          "State": 3
+        },
+        {
+          "Time": 270.4875181,
+          "State": 3
+        },
+        {
+          "Time": 238.9294561,
+          "State": 3
+        },
+        {
+          "Time": 229.291999,
+          "State": 3
+        },
+        {
+          "Time": 237.8278258,
+          "State": 3
+        },
+        {
+          "Time": 252.0894913,
+          "State": 3
+        },
+        {
+          "Time": 285.6273625,
+          "State": 3
+        },
+        {
+          "Time": 294.8041254,
+          "State": 3
+        },
+        {
+          "Time": 286.8831323,
+          "State": 3
+        },
+        {
+          "Time": 248.3025854,
+          "State": 3
+        },
+        {
+          "Time": 266.0993791,
+          "State": 3
+        },
+        {
+          "Time": 253.0075228,
+          "State": 3
+        },
+        {
+          "Time": 229.8084551,
+          "State": 3
+        },
+        {
+          "Time": 249.8418526,
+          "State": 3
+        },
+        {
+          "Time": 264.9348504,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1666": {
@@ -48225,15 +49067,28 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 3,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 3,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 3,
+      "TurninRecords": [
+        {
+          "Time": 647.2591925,
+          "State": 3
+        },
+        {
+          "Time": 341.2158613,
+          "State": 3
+        },
+        {
+          "Time": 563.5512367,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1668": {
@@ -48244,15 +49099,64 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
-      "BronzeCompletion": 0,
-      "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "TotalCompletions": 12,
+      "BronzeCompletion": 3,
+      "SilverCompletions": 2,
+      "GoldCompletions": 7,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 33,
+      "TurninRecords": [
+        {
+          "Time": 161.5299569,
+          "State": 3
+        },
+        {
+          "Time": 205.0427911,
+          "State": 3
+        },
+        {
+          "Time": 89.8834888,
+          "State": 3
+        },
+        {
+          "Time": 182.6782447,
+          "State": 3
+        },
+        {
+          "Time": 66.1753985,
+          "State": 3
+        },
+        {
+          "Time": 197.6722533,
+          "State": 3
+        },
+        {
+          "Time": 156.5760714,
+          "State": 3
+        },
+        {
+          "Time": 209.7454599,
+          "State": 1
+        },
+        {
+          "Time": 259.9812724,
+          "State": 1
+        },
+        {
+          "Time": 187.8990293,
+          "State": 1
+        },
+        {
+          "Time": 199.402075,
+          "State": 2
+        },
+        {
+          "Time": 249.7708777,
+          "State": 2
+        }
+      ],
       "CraftSettings": {}
     },
     "1669": {
@@ -48263,15 +49167,28 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 3,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 3,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 3,
+      "TurninRecords": [
+        {
+          "Time": 104.3390501,
+          "State": 3
+        },
+        {
+          "Time": 62.3566762,
+          "State": 3
+        },
+        {
+          "Time": 80.2020562,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1670": {
@@ -48282,15 +49199,20 @@
       "Master_Items": 6,
       "Use_BuildinPreset": true,
       "AutoHookPresetName": "",
-      "TotalCompletions": 0,
+      "TotalCompletions": 1,
       "BronzeCompletion": 0,
       "SilverCompletions": 0,
-      "GoldCompletions": 0,
+      "GoldCompletions": 1,
       "CriticalCompletions": 0,
       "Master_Completion": 0,
       "FailedCounters": 0,
-      "TotalAttempts": 0,
-      "TurninRecords": [],
+      "TotalAttempts": 1,
+      "TurninRecords": [
+        {
+          "Time": 76.2086587,
+          "State": 3
+        }
+      ],
       "CraftSettings": {}
     },
     "1671": {
@@ -49160,7 +50082,7 @@
     },
     "46252": {
       "KeepAmount": 0,
-      "BuyAmount": 10,
+      "BuyAmount": 0,
       "KeepBuying": false
     }
   },
@@ -49173,6 +50095,10 @@
   "BuyItems": true,
   "CosmoBuyAtAmount": 10000,
   "CosmoKeepAmount": 0,
+  "BookletBuy_Enable": false,
+  "BookletBuy_Amount": 900,
+  "PlanetMount_Enable": false,
+  "PlanetMount_Amount": 60,
   "TableSortOption": 0,
   "HideUnsupportedMissions": false,
   "AutoPickCurrentJob": true,
