@@ -46,7 +46,7 @@
       ],
       "Preferred": true,
       "Ventures": 103,
-      "InventorySpace": 24,
+      "InventorySpace": 87,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -299,7 +299,7 @@
         100,
         100,
         100,
-        76,
+        100,
         58,
         65,
         0,
@@ -318,7 +318,7 @@
         0,
         0
       ],
-      "Gil": 790695,
+      "Gil": 480132,
       "GCSeals": 852,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -771,8 +771,8 @@
       "Gil": 8020000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1782060740634,
-      "FCPoints": 14482078,
-      "FCPointsLastUpdate": 1782060740634,
+      "FCPoints": 15477098,
+      "FCPointsLastUpdate": 1783542331646,
       "HolderChara": 0,
       "Rank": 30
     }

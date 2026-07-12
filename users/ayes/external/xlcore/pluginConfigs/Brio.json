@@ -1,7 +1,7 @@
 {
   "$type": "Brio.Config.Configuration, Brio",
-  "Version": 4,
-  "PopupKey": 2232,
+  "Version": 5,
+  "PopupKey": 3000,
   "Interface": {
     "$type": "Brio.Config.InterfaceConfiguration, Brio",
     "OpenBrioBehavior": 1,
@@ -18,6 +18,7 @@
     "$type": "Brio.Config.PosingConfiguration, Brio",
     "OverlayDefaultsOn": false,
     "AllowGizmoAxisFlip": true,
+    "LastGizmoOperation": 1,
     "BoneCircleSize": 6.3,
     "LightCircleNormalColor": 4278245884,
     "LightCircleHoveredColor": 4281131775,
@@ -34,8 +35,13 @@
     "HideGizmoWhenAdvancedPosingOpen": false,
     "HideToolbarWhenAdvandedPosingOpen": false,
     "HideSkeletonWhenGizmoActive": false,
+    "UsePerCategoryLineColors": false,
+    "BoneCategoryLineColors": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib"
+    },
     "ModelTransformStandout": true,
     "ModelTransformCircleStandOutColor": 4292881264,
+    "WorldObjectOverlayColor": 4294760704,
     "GraphicalSidesSwapped": false,
     "ShowGenitaliaInAdvancedPoseWindow": false,
     "DisableGPoseMouseSelect": true,
@@ -43,8 +49,17 @@
     "GPoseTargetChangesWithBrio": false,
     "BrioTargetChangesWithGPose": true,
     "AutoSelectTransformOnEntitySelect": false,
+    "AutoSelectLightWhenClickingOnALight": true,
+    "IfLightWindowisOpenDontUseSceneManager": false,
+    "IfCameraWindowisOpenDontUseSceneManager": false,
     "UndoStackSize": 50,
-    "FreezeActorOnPoseImport": false
+    "FreezeActorOnPoseImport": false,
+    "FreeCameraHasMovementEnabledByDefault": true,
+    "IsAdvancedGizmoEnabled": true,
+    "UseOverlayOffset": true,
+    "BoneOverlayOffsets": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Numerics.Vector3, System.Private.CoreLib]], System.Private.CoreLib"
+    }
   },
   "IPC": {
     "$type": "Brio.Config.IPCConfiguration, Brio",
@@ -61,7 +76,10 @@
     "EnableTinting": true,
     "EnableBrioStyle": true,
     "EnableBrioColor": true,
-    "EnableBrioScale": false
+    "EnableBrioScale": false,
+    "Theme": "Brio Dark",
+    "WindowOpacity": 0.82,
+    "EnableBlur": true
   },
   "Environment": {
     "$type": "Brio.Config.EnvironmentConfiguration, Brio",
@@ -76,6 +94,13 @@
     "PositionTransformType": 1,
     "RotationTransformType": 2,
     "ScaleTransformType": 2
+  },
+  "Timeline": {
+    "$type": "Brio.Config.TimelineConfiguration, Brio",
+    "PlaybackFramesPerSecond": 60.0,
+    "Loop": true,
+    "OpenWithGPose": false,
+    "ShowInspector": true
   },
   "Library": {
     "$type": "Brio.Config.LibraryConfiguration, Brio",
@@ -121,6 +146,16 @@
     },
     "ReturnLibraryToLastLocation": true,
     "UseFilenameAsActorName": false
+  },
+  "QuickAccess": {
+    "$type": "Brio.Config.QuickAccessConfiguration, Brio",
+    "MaxRecents": 30,
+    "FavoritesByStore": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.List`1[[Brio.Config.QuickAccessEntry, Brio]], System.Private.CoreLib]], System.Private.CoreLib"
+    },
+    "RecentsByStore": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.List`1[[Brio.Config.QuickAccessEntry, Brio]], System.Private.CoreLib]], System.Private.CoreLib"
+    }
   },
   "MCDF": {
     "$type": "Brio.Config.MCDFConfiguration, Brio",
@@ -177,6 +212,7 @@
   "LastScenePath": "",
   "UseLibraryWhenImporting": true,
   "SceneDestoryActorsBeforeImport": false,
+  "EnableEvents": true,
   "InputManager": {
     "$type": "Brio.Config.InputManagerConfiguration, Brio",
     "KeyBindings": {
@@ -432,7 +468,7 @@
     "AutoSaveSystemEnabled": true,
     "AutoSaveIndividualPoses": true,
     "AutoSaveInterval": 60,
-    "MaxAutoSaves": 8,
+    "MaxAutoSaves": 60,
     "CleanAutoSaveOnLeavingGpose": false
   },
   "ForceDebug": false
