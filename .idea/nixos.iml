@@ -34,6 +34,7 @@
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/backups" />
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/compatibilitytool" />
       <excludeFolder url="file://$MODULE_DIR$/users/ayes/external/xlcore/installedPlugins" />
+      <excludeFolder url="file://$MODULE_DIR$/.remember" />
       <excludePattern pattern="*UI.ini" />
       <excludePattern pattern="dalamudVfs.db" />
       <excludePattern pattern="launcher.ini" />
