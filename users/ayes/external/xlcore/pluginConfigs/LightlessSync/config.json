@@ -170,7 +170,7 @@
   "BroadcastTtl": "0001-01-01T00:00:00",
   "SyncshellFinderEnabled": false,
   "SelectedFinderSyncshell": null,
-  "LastSeenVersion": "3.1.4",
+  "LastSeenVersion": "3.1.5",
   "LastValidatedVersion": "3.1.1",
   "SkippedInitialValidation": false,
   "EnableParticleEffects": true,

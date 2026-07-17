@@ -118,6 +118,11 @@
         show_labs_settings = true;
         default_theme = "dark";
       };
+
+      permittedInsecurePackages = [
+        "electron-40.10.5"
+      ];
+
     };
     overlays = [ inputs.nix-minecraft.overlay ];
   };

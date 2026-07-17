@@ -83,8 +83,10 @@
             "Stain2": 0
           }
         },
-        "Tags": [],
-        "FillWithNewEmperor": false
+        "Tags": [
+          "Winter"
+        ],
+        "FillWithNewEmperor": true
       }
     },
     {

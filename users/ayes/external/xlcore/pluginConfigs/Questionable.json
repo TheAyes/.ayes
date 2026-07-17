@@ -6,7 +6,7 @@
     "CombatModule": 1,
     "MountId": 138,
     "ChocoboName": "Chicken",
-    "GrandCompany": 0,
+    "GrandCompany": 2,
     "CombatJob": 0,
     "CraftingJob": 13,
     "GatheringJob": 17,
@@ -26,7 +26,8 @@
     "ReportsDisabled": false,
     "ReportMessage": "",
     "DisplayName": "Anonymous",
-    "Language": "en"
+    "Language": "en",
+    "HideRemainingTasks": false
   },
   "Stop": {
     "$type": "Questionable.Configuration+StopConfiguration, Questionable",
@@ -34,11 +35,13 @@
     "QuestsToStopAfter": [],
     "QuestsToStopWhenAccepted": [],
     "LevelToStopAfter": false,
-    "TargetLevel": 50
+    "TargetLevel": 50,
+    "RunCommandAfterStop": false,
+    "CommandAfterStop": "/li auto"
   },
   "Duties": {
     "$type": "Questionable.Configuration+DutyConfiguration, Questionable",
-    "RunInstancedContentWithAutoDuty": false,
+    "RunInstancedContentWithAutoDuty": true,
     "RunUnsynced": true,
     "WhitelistedDutyCfcIds": [],
     "BlacklistedDutyCfcIds": [],
@@ -80,6 +83,7 @@
     "ShowDirector": false,
     "ShowActionManager": false,
     "ShowNewGamePlus": false,
+    "ShowHoveredItem": false,
     "DisableAutoDutyBareMode": false,
     "SkipAetherCurrents": false,
     "SkipClassJobQuests": false,
@@ -92,7 +96,10 @@
     "StartMinimized": false,
     "OpenEditor": false,
     "NamazuPreferCraft": false,
-    "Debug": false
+    "Debug": false,
+    "DebugLocalisation": false,
+    "AutoRedeemRewardItems": false,
+    "AutoRedeemItemBlacklist": []
   },
   "DebugWindowConfig": {
     "$type": "Questionable.Windows.Common.WindowConfig, Questionable",
@@ -115,11 +122,12 @@
   "PathData": {
     "$type": "Questionable.Configuration+PathDataConfiguration, Questionable",
     "AutoUpdate": true,
-    "InstalledDataVersion": 1782054665,
-    "BundlePluginVersion": "15.301.0.28",
-    "LastCheck": "2026-06-21T16:10:51.9466598+00:00"
+    "InstalledDataVersion": 1784075160,
+    "BundlePluginVersion": "15.306.0.8",
+    "LastCheck": "2026-07-15T11:12:32.7726093+00:00"
   },
   "Version": 2,
+  "AutoRedeemOffResetApplied": true,
   "Profiles": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[Newtonsoft.Json.Linq.JObject, Newtonsoft.Json]], System.Private.CoreLib]], System.Private.CoreLib"
   },

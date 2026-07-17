@@ -11,11 +11,11 @@
       "PyreticThreshold": 1,
       "MisdirectionThreshold": 180,
       "PreferMouseover": false,
-      "SmartTargets": true,
       "UseManualQueue": false,
+      "SmartTargets": true,
       "DashSafety": true,
       "DashSafetyExtra": true,
-      "AutoAutos": false,
+      "AutoAutos2": true,
       "AutoDismount": true,
       "GTMode": "Manual"
     },
@@ -59,21 +59,24 @@
       "AutoPeloton2": false
     },
     "BossMod.SmartRotationConfig": {
-      "Enabled": false,
+      "Enabled2": true,
       "AvoidGazes": true,
       "MinTimeToAvoid": 0.5
     },
     "BossMod.AIHintsConfig": {
       "DonutFallback": "AssumeCircle",
       "ConeFallbackAngle": 180,
-      "OmenSetting": "Automatic"
+      "OmenSetting": "Automatic",
+      "PriorityTracing": false
     },
     "BossMod.BossModuleConfig": {
-      "MinMaturity": "Contributed",
+      "EffectiveArenaScale": 1,
       "AllowAutomaticActions": true,
       "AllowAutomaticInteract": true,
       "ShowDemo": false,
-      "Enable": true,
+      "AllowIncompleteModules": false,
+      "EnableDummyModule": false,
+      "Enable": false,
       "CloseBehavior": "DisableActiveModuleCategory",
       "Lock": false,
       "TrishaMode": false,
@@ -86,8 +89,12 @@
       "ShowBorder": true,
       "ShowBorderRisk": true,
       "ShowCardinals": false,
+      "HighlightN": false,
       "CardinalsFontSize": 17,
       "ShowWaymarks": false,
+      "StrokeWaymarks": false,
+      "ShowSigns": false,
+      "ShowMeleeRange": false,
       "ShowIrrelevantPlayers": false,
       "ShowAllPlayers": true,
       "ColorPlayersBasedOnRole": false,
@@ -103,14 +110,14 @@
       ]
     },
     "BossMod.ZoneModuleConfig": {
-      "MinMaturity": "Contributed",
-      "EnableQuestBattles": false,
+      "EnableQuestBattles": true,
       "ShowWaypoints": false,
       "UseDash": true
     },
     "BossMod.ColorConfig": {
       "ArenaBackground": "#0F0F0FC0",
       "ArenaBorder": "#FFFFFFFF",
+      "ArenaHighlightN": "#FFFF00FF",
       "ArenaAOE": "#80800080",
       "ArenaSafeFromAOE": "#00800080",
       "ArenaDanger": "#FFFF00FF",
@@ -128,6 +135,7 @@
       "ArenaPlayerGenericCaster": "#461E6EFF",
       "ArenaPlayerGenericPhysRanged": "#6E5A1EFF",
       "ArenaPlayerGenericFocus": "#00FFFFFF",
+      "ArenaMeleeRing": "#FFFFFF80",
       "PlannerBackground": "#002B3680",
       "PlannerBackgroundHighlight": "#07364280",
       "PlannerCooldown": "#586E7580",
@@ -149,8 +157,8 @@
     },
     "BossMod.DeveloperConfig": {
       "ModulePackDirectory": "",
-      "MapLoadFromSource": false,
-      "MapSourcePath": ""
+      "MapSourcePath": "",
+      "AutoBitmaps": true
     },
     "BossMod.ModuleConfig": {},
     "BossMod.ReplayManagementConfig": {
@@ -162,10 +170,7 @@
       "DumpServerPackets": false,
       "DumpServerPacketsPlayerOnly": false,
       "DumpClientPackets": false,
-      "WorldLogFormat": "BinaryCompressed",
-      "RememberReplays": false,
-      "RememberReplayTimes": false,
-      "ReplayHistory": []
+      "WorldLogFormat": "BinaryCompressed"
     },
     "BossMod.Stormblood.StormbloodConfig": {},
     "BossMod.Stormblood.Ultimate.UWU.UWUConfig": {
@@ -217,11 +222,30 @@
     "BossMod.Stormblood.Foray.Pyros.PyrosConfig": {
       "FarmTarget": "None"
     },
+    "BossMod.Stormblood.Foray.Pagos.PagosConfig": {
+      "FarmTarget": "None"
+    },
     "BossMod.Stormblood.Foray.Hydatos.HydatosConfig": {
+      "FarmTarget": "None"
+    },
+    "BossMod.Stormblood.Foray.Anemos.AnemosConfig": {
       "FarmTarget": "None"
     },
     "BossMod.Shadowbringers.ShadowbringersConfig": {},
     "BossMod.Shadowbringers.Ultimate.TEA.TEAConfig": {
+      "P1DollAssignments": {
+        "Assignments": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "P1DollPullSafety": true,
       "P2IntermissionHints": "FirstForOddPairs",
       "P2NisiPairs": {
         "Assignments": [
@@ -256,6 +280,7 @@
     "BossMod.Global.DeepDungeon.AutoDDConfig": {
       "Enable": true,
       "EnableMinimap": true,
+      "MinimapScale": 1,
       "TrapHints": true,
       "DrawTraps": false,
       "AutoPassage": true,
@@ -349,6 +374,7 @@
         ]
       },
       "P3LastMonitorSouth": false,
+      "P3MonitorForbiddenDirections": true,
       "P4WaveCannonAssignments": {
         "Assignments": [
           0,
@@ -465,6 +491,60 @@
       "Fireworks2Invert": false
     },
     "BossMod.Dawntrail.DawntrailConfig": {},
+    "BossMod.Dawntrail.Ultimate.UMAD.UMADConfig": {
+      "P1WaveCannonConga": {
+        "Assignments": [
+          3,
+          2,
+          1,
+          0,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "P1Arrows": "BigBox",
+      "P2ForsakenStrategy": "None",
+      "P2ForsakenPairs": {
+        "Assignments": [
+          0,
+          1,
+          0,
+          1,
+          2,
+          3,
+          2,
+          3
+        ]
+      },
+      "P2ForsakenTiebreaker": {
+        "Assignments": [
+          3,
+          2,
+          1,
+          0,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "P3BlackholeStrategy": "None",
+      "P1GravityPuddleStrategy": "None",
+      "P1GravityPuddleSpread": {
+        "Assignments": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
     "BossMod.Dawntrail.Ultimate.FRU.FRUConfig": {
       "P1BoundOfFaithAssignment": {
         "Assignments": [
@@ -710,6 +790,79 @@
         ]
       }
     },
+    "BossMod.Dawntrail.Savage.RM12S2TheLindwurm.RM12S2TheLindwurmConfig": {
+      "Rep2Assignments": {
+        "RolesOrdered": [
+          "Boss",
+          "Cone1",
+          "Stack1",
+          "Defam1",
+          "None",
+          "Defam2",
+          "Stack2",
+          "Cone2"
+        ],
+        "RelativeNorth": "N"
+      },
+      "Rep3Assignments": {
+        "RolesOrdered": [
+          "Stack1",
+          "Stack2",
+          "Stack3",
+          "Stack4",
+          "Defam1",
+          "Defam2",
+          "Defam3",
+          "Defam4"
+        ]
+      }
+    },
+    "BossMod.Dawntrail.Savage.RM11STheTyrant.RM11STheTyrantConfig": {
+      "WeaponHints": true,
+      "WeaponHintsScythe": {
+        "Assignments": [
+          0,
+          4,
+          6,
+          2,
+          5,
+          3,
+          7,
+          1
+        ]
+      },
+      "WeaponHintsSword": "Standard",
+      "ForegoneFatalityAssignments": "StandardNS",
+      "StampedeTowersAssignment": {
+        "Assignments": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ]
+      }
+    },
+    "BossMod.Dawntrail.Savage.RM10STheXtremes.RM10STheXtremesConfig": {
+      "IA2CleanseOrder": "HMR"
+    },
+    "BossMod.Dawntrail.Savage.RM09SVampFatale.RM09SVampFataleConfig": {
+      "HellCellAssignments": {
+        "Assignments": [
+          0,
+          4,
+          1,
+          5,
+          2,
+          6,
+          3,
+          7
+        ]
+      }
+    },
     "BossMod.Dawntrail.Savage.RM08SHowlingBlade.RM08SHowlingBladeConfig": {
       "ReignHints": "Standard",
       "TRHints": "None",
@@ -756,6 +909,32 @@
     "BossMod.Dawntrail.Foray.CriticalEngagement.TradeTortoise.TradeTortoiseConfig": {
       "CoinGame": true
     },
+    "BossMod.Dawntrail.Extreme.Ex8Enuo.Ex8EnuoConfig": {
+      "VoidGaze": {
+        "Assignments": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "IntermissionTower": {
+        "Assignments": [
+          6,
+          0,
+          4,
+          2,
+          5,
+          3,
+          7,
+          1
+        ]
+      }
+    },
     "BossMod.Dawntrail.Extreme.Ex4Zelenia.Ex4ZeleniaConfig": {
       "ShowHolyHazard": true
     },
@@ -776,20 +955,18 @@
       "EarlyPullThreshold": 1.5
     },
     "BossMod.AI.AIConfig": {
-      "Enabled": false,
+      "Enabled": true,
       "DrawUI": false,
-      "ShowStatusOnTitlebar": true,
       "ShowDTR": true,
-      "MoveDelay": 0,
-      "FollowSlot": "One",
-      "ForbidMovement": false,
-      "ForbidActions": false,
       "FocusTargetMaster": false,
-      "BroadcastToSlaves": false
+      "DistanceToMaster": 25,
+      "FollowDuringBoss": false,
+      "ForbidMovement": false,
+      "ForbidActions": false
     },
     "BossMod.ClassShared.SharedActionsConfig": {
       "AlignDashToCamera": false
     }
   },
-  "AssemblyVersion": "0.4.7.0"
+  "AssemblyVersion": "7.5.1.18"
 }
