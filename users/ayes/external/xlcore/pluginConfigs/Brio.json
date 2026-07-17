@@ -1,7 +1,7 @@
 {
   "$type": "Brio.Config.Configuration, Brio",
   "Version": 5,
-  "PopupKey": 3000,
+  "PopupKey": 3002,
   "Interface": {
     "$type": "Brio.Config.InterfaceConfiguration, Brio",
     "OpenBrioBehavior": 1,

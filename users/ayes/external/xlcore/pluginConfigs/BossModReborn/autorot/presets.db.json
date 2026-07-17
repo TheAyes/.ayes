@@ -426,6 +426,643 @@
           }
         ]
       }
+    },
+    {
+      "Name": "Questionable",
+      "Modules": {
+        "BossMod.Autorotation.xan.DNC": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.MCH": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.MNK": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.PCT": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          },
+          {
+            "Track": "Motifs",
+            "Option": "Downtime"
+          }
+        ],
+        "BossMod.Autorotation.xan.PLD": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SAM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SGE": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.VPR": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.NIN": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.GNB": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SMN": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.DRK": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.RPR": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.WHM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.AST": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.BRD": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SCH": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.BLM": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.RDM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.DRG": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.VeynWAR": [
+          {
+            "Track": "AOE",
+            "Option": "AutoFinishCombo"
+          }
+        ],
+        "BossMod.Autorotation.xan.HealerAI": [
+          {
+            "Track": "Esuna2",
+            "Option": "HintOnly"
+          }
+        ],
+        "BossMod.Autorotation.xan.MeleeAI": [],
+        "BossMod.Autorotation.xan.TankAI": [],
+        "BossMod.Autorotation.xan.RangedAI": [],
+        "BossMod.Autorotation.MiscAI.NormalMovement": [
+          {
+            "Track": "Destination",
+            "Option": "Pathfind"
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Questionable - Quest Battles",
+      "Modules": {
+        "BossMod.Autorotation.MiscAI.AutoTarget": [
+          {
+            "Track": "QuestBattle",
+            "Option": "Enabled"
+          },
+          {
+            "Track": "Retarget",
+            "Option": "Always"
+          }
+        ],
+        "BossMod.Autorotation.xan.DNC": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.MCH": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.MNK": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.PCT": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          },
+          {
+            "Track": "Motifs",
+            "Option": "Downtime"
+          }
+        ],
+        "BossMod.Autorotation.xan.PLD": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SAM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SGE": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.VPR": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.NIN": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.GNB": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SMN": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.DRK": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.RPR": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.WHM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.AST": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.BRD": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.SCH": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.BLM": [
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          },
+          {
+            "Track": "LL",
+            "Option": "Force"
+          }
+        ],
+        "BossMod.Autorotation.xan.RDM": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.xan.DRG": [
+          {
+            "Track": "Buffs",
+            "Option": "Automatic"
+          },
+          {
+            "Track": "AOE",
+            "Option": "AOE"
+          },
+          {
+            "Track": "Targeting",
+            "Option": "Manual"
+          }
+        ],
+        "BossMod.Autorotation.VeynWAR": [
+          {
+            "Track": "AOE",
+            "Option": "AutoFinishCombo"
+          }
+        ],
+        "BossMod.Autorotation.xan.HealerAI": [
+          {
+            "Track": "Esuna2",
+            "Option": "HintOnly"
+          }
+        ],
+        "BossMod.Autorotation.xan.MeleeAI": [],
+        "BossMod.Autorotation.xan.TankAI": [],
+        "BossMod.Autorotation.xan.RangedAI": [],
+        "BossMod.Autorotation.MiscAI.NormalMovement": [
+          {
+            "Track": "Destination",
+            "Option": "Pathfind"
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Questionable - Normal Movement",
+      "Modules": {
+        "BossMod.Autorotation.MiscAI.AutoTarget": [
+          {
+            "Track": "QuestBattle",
+            "Option": "Enabled"
+          },
+          {
+            "Track": "Retarget",
+            "Option": "Always"
+          }
+        ],
+        "BossMod.Autorotation.xan.HealerAI": [
+          {
+            "Track": "Esuna2",
+            "Option": "HintOnly"
+          }
+        ],
+        "BossMod.Autorotation.MiscAI.NormalMovement": [
+          {
+            "Track": "Destination",
+            "Option": "Pathfind"
+          }
+        ]
+      }
     }
   ]
 }
