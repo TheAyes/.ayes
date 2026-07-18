@@ -6,6 +6,7 @@
 
       extraCompatPackages = with pkgs; [
         proton-ge-bin
+        dwproton-bin
       ];
 
       remotePlay.openFirewall = lib.mkDefault true;
