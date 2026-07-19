@@ -20,7 +20,7 @@
 
       wp-hdmi-a-1 = {
         description = "Wallpaper for HDMI-A1";
-        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=HDMI-A1 2594686226";
+        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=HDMI-A-1 2594686226";
       };
 
       wp-dp-2 = {
