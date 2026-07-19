@@ -20,12 +20,12 @@
 
       wp-hdmi-a-1 = {
         description = "Wallpaper for HDMI-A1";
-        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=DP-1 2594686226";
+        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=HDMI-A1 2594686226";
       };
 
       wp-dp-2 = {
         description = "Wallpaper for DP-2";
-        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=DP-1 2744538407";
+        command = "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --screen-root=DP-2 2744538407";
       };
     };
   };
