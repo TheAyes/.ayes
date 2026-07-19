@@ -39,6 +39,7 @@
 
       quodlibet
       haruna
+      linux-wallpaperengine
     ];
   };
 
