@@ -20,6 +20,20 @@
     silent = true;
   };
 
+  # Live⇄dev Minecraft sync: `mc-world-pull <server>` / `mc-world-push <server>`.
+  # No modpack is configured yet. When a new pack is set up, enable and add an
+  # entry per live server. `host` is an SSH destination (add a matching entry to
+  # programs.ssh, or use a reachable user@address); set host = null for an
+  # endpoint local to where the command runs.
+  #
+  #   programs.mcWorldSync = {
+  #     enable = true;
+  #     servers.<name> = {
+  #       live = { host = "io"; dataDir = "/srv/minecraft/<name>"; };
+  #       dev  = { host = "io"; dataDir = "/srv/minecraft/<name>-dev"; };
+  #     };
+  #   };
+
   home = {
     sessionVariables = {
       GIT_MERGE_AUTOEDIT = "no";
