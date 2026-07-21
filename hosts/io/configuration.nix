@@ -8,7 +8,7 @@
     ./hardware-configuration.nix
     ./fail2ban.nix
     ./sops.nix
-    ./minecraft-servers.nix
+    ./minecraft-servers
 
     # System Profiles
     ../../profiles/nixos/boot/systemd-boot.nix

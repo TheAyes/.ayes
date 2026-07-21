@@ -10,16 +10,6 @@
     defaultSopsFile = ../../secrets/io.yaml;
 
     secrets = {
-      "cloudflare/aethyria-tunnel-token" = {
-        owner = config.users.users.ayes.name;
-      };
-      "cloudflare/cert" = {
-        owner = config.users.users.ayes.name;
-      };
-      "cloudflare/api-token" = {
-        owner = config.users.users.ayes.name;
-      };
-
       "github/access-token" = {
         owner = config.users.users.ayes.name;
       };

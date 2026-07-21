@@ -16,7 +16,11 @@
         host-manager = {
           enable = true;
 
-          home-manager = { };
+          home-manager = {
+            globalModules = [
+              ./modules/home-manager/mc-world-sync
+            ];
+          };
 
           sharedHostModules = [
             inputs.sops-nix.nixosModules.sops
