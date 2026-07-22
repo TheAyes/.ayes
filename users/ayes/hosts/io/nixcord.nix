@@ -56,7 +56,7 @@
         permissionFreeWill.enable = true;
         pinDms.enable = true;
         relationshipNotifier.enable = true;
-        showHiddenChannels.enable = true;
+        showHiddenChannels.enable = false;
         showHiddenThings.enable = true;
         showTimeoutDuration.enable = true;
         sortFriendRequests.enable = true;

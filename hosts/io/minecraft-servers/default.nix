@@ -11,6 +11,7 @@
   imports = [
     ./protection.nix
     ./example
+    ./aethyria
   ];
 
   services.minecraft-servers = {
