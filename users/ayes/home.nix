@@ -21,18 +21,21 @@
   };
 
   # Live⇄dev Minecraft sync: `mc-world-pull <server>` / `mc-world-push <server>`.
-  # No modpack is configured yet. When a new pack is set up, enable and add an
-  # entry per live server. `host` is an SSH destination (add a matching entry to
-  # programs.ssh, or use a reachable user@address); set host = null for an
-  # endpoint local to where the command runs.
-  #
-  #   programs.mcWorldSync = {
-  #     enable = true;
-  #     servers.<name> = {
-  #       live = { host = "io"; dataDir = "/srv/minecraft/<name>"; };
-  #       dev  = { host = "io"; dataDir = "/srv/minecraft/<name>-dev"; };
-  #     };
-  #   };
+  # host = null since both aethyria and aethyria-dev run on io, the same
+  # machine this home-manager config applies to.
+  programs.mcWorldSync = {
+    enable = true;
+    servers.aethyria = {
+      live = {
+        host = null;
+        dataDir = "/srv/minecraft/aethyria";
+      };
+      dev = {
+        host = null;
+        dataDir = "/srv/minecraft/aethyria-dev";
+      };
+    };
+  };
 
   home = {
     sessionVariables = {
