@@ -6,6 +6,8 @@
       server_name = "convene.chat";
       public_baseurl = "https://matrix.convene.chat";
 
+      media_store_path = "/mediastore/media_store";
+
 
       listeners = [
         {
@@ -41,6 +43,12 @@
       config.sops.secrets."matrix/turn_shared_secret".path
     ];
   };
+
+  systemd.tmpfiles.rules = [
+    "d /mediastore/media_store 0700 matrix-synapse matrix-synapse -"
+  ];
+
+  systemd.services.matrix-synapse.unitConfig.RequiresMountsFor = "/mediastore/media_store";
 
   services.postgresql = {
     enable = true;

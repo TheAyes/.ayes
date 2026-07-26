@@ -15,6 +15,11 @@
       fsType = "ext4";
     };
 
+    "/mediastore" = {
+      device = "/dev/disk/by-label/mediastore";
+      fsType = "ext4";
+    };
+
     "/" = {
       device = "/dev/disk/by-label/nixos";
       fsType = "ext4";
