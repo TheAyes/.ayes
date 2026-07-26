@@ -29,6 +29,11 @@
       ];
       turn_user_lifetime = "1h";
       turn_allow_guests = false;
+
+      media_retention = {
+        local_media_lifetime = "90d";
+        remote_media_lifetime = "14d";
+      };
     };
 
     extraConfigFiles = [
