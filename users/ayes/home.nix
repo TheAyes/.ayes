@@ -1,6 +1,5 @@
-{
-  pkgs,
-  ...
+{ pkgs
+, ...
 }:
 {
   imports = [
@@ -14,28 +13,34 @@
     ./programs/gitkraken.nix
   ];
 
-  programs.direnv = {
-    enable = true;
-    nix-direnv.enable = true;
-    silent = true;
-  };
+  programs = {
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+      silent = true;
+    };
 
-  # Live⇄dev Minecraft sync: `mc-world-pull <server>` / `mc-world-push <server>`.
-  # host = null since both aethyria and aethyria-dev run on io, the same
-  # machine this home-manager config applies to.
-  programs.mcWorldSync = {
-    enable = true;
-    servers.aethyria = {
-      live = {
-        host = null;
-        dataDir = "/srv/minecraft/aethyria";
-      };
-      dev = {
-        host = null;
-        dataDir = "/srv/minecraft/aethyria-dev";
+    jujutsu.enable = true;
+
+    # Live⇄dev Minecraft sync: `mc-world-pull <server>` / `mc-world-push <server>`.
+    # host = null since both aethyria and aethyria-dev run on io, the same
+    # machine this home-manager config applies to.
+    mcWorldSync = {
+      enable = true;
+      servers.aethyria = {
+        live = {
+          host = null;
+          dataDir = "/srv/minecraft/aethyria";
+        };
+        dev = {
+          host = null;
+          dataDir = "/srv/minecraft/aethyria-dev";
+        };
       };
     };
   };
+
+
 
   home = {
     sessionVariables = {
