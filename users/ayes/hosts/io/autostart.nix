@@ -17,7 +17,7 @@
         description = "Wallpapers";
         command =
           "/etc/profiles/per-user/ayes/bin/linux-wallpaperengine --silent "
-          + "--screen-root=DP-1 --bg 3731183557 "
+          + "--screen-root=DP-1 --bg 2799877694 "
           + "--screen-root=HDMI-A-1 --bg 2473589076 "
           + "--screen-root=DP-2 --bg 2217899039";
       };
