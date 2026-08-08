@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  lib,
   ...
 }:
 {
@@ -109,6 +110,12 @@
   ##################################
   nix.settings = {
     secret-key-files = [ "/etc/nix/private-key" ];
+    cores = 12; # leave a few cores free for interactive use during builds
+  };
+
+  systemd.services.nix-daemon.serviceConfig = {
+    Nice = 19;
+    IOSchedulingClass = lib.mkForce "idle";
   };
 
   nixpkgs = {

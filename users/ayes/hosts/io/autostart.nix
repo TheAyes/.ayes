@@ -9,7 +9,7 @@
       };
       vesktop = {
         description = "Vesktop";
-        command = "/etc/profiles/per-user/ayes/bin/vesktop";
+        command = "sleep 2s && /etc/profiles/per-user/ayes/bin/vesktop";
         requiresNetwork = true;
       };
 
