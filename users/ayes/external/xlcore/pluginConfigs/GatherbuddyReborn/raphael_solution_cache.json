@@ -9,7 +9,8 @@
       "CP": 573,
       "Manipulation": false,
       "Specialist": true,
-      "InitialQuality": 0
+      "InitialQuality": 0,
+      "ValidationContext": null
     },
     "ActionIds": [
       100387,

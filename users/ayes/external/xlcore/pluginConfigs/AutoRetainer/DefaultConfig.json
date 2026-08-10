@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -21,7 +21,7 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1784115090,
+          "VentureEndsAt": 1786298784,
           "HasVenture": true,
           "Level": 96,
           "VentureBeginsAt": 0,
@@ -29,11 +29,11 @@
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235712755,
-          "MBItems": 2
+          "MBItems": 20
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1784115097,
+          "VentureEndsAt": 1786298791,
           "HasVenture": true,
           "Level": 92,
           "VentureBeginsAt": 0,
@@ -41,12 +41,12 @@
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235723971,
-          "MBItems": 2
+          "MBItems": 20
         }
       ],
       "Preferred": true,
-      "Ventures": 87,
-      "InventorySpace": 11,
+      "Ventures": 83,
+      "InventorySpace": 33,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -139,6 +139,7 @@
         141,
         144,
         145,
+        147,
         149,
         150,
         152,
@@ -157,6 +158,7 @@
         194,
         198,
         200,
+        201,
         202,
         204,
         206,
@@ -190,18 +192,23 @@
         310,
         312,
         313,
+        314,
         315,
+        318,
         319,
         326,
         332,
         333,
         337,
+        342,
+        343,
         344,
         345,
         346,
         347,
         348,
         349,
+        350,
         351,
         352,
         353,
@@ -209,6 +216,7 @@
         357,
         359,
         360,
+        362,
         364,
         367,
         368,
@@ -324,8 +332,8 @@
         0,
         0
       ],
-      "Gil": 197498,
-      "GCSeals": 852,
+      "Gil": 187041,
+      "GCSeals": 8044,
       "GCRank": 9,
       "OfflineAirshipData": [],
       "OfflineSubmarineData": [
@@ -435,15 +443,9 @@
       "ExchangePlan": "00000000-0000-0000-0000-000000000000",
       "InventoryCleanupPlan": "00000000-0000-0000-0000-000000000000",
       "SentVenturesByDay": {
-        "20620": 3,
-        "20621": 4,
-        "20624": 2,
-        "20634": 4,
-        "20635": 2,
-        "20636": 6,
-        "20637": 4,
         "20647": 3,
-        "20649": 4
+        "20649": 4,
+        "20674": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -465,11 +467,13 @@
         17498,
         17499
       ],
+      "NoFcBuffUse": false,
+      "NoItemBuffUse": false,
       "ShouldSerializeCreationFrame": false,
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -609,6 +613,8 @@
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
       "StoredCabinetItems": [],
+      "NoFcBuffUse": false,
+      "NoItemBuffUse": false,
       "ShouldSerializeCreationFrame": false,
       "CurrentWorld": "Alpha"
     }
@@ -628,7 +634,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -653,7 +659,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 1,
+      "CreationFrame": 0,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -788,8 +794,8 @@
       "Gil": 14090000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1784065289311,
-      "FCPoints": 15583091,
-      "FCPointsLastUpdate": 1784113705489,
+      "FCPoints": 15753094,
+      "FCPointsLastUpdate": 1786295903552,
       "HolderChara": 0,
       "Rank": 30
     }
@@ -843,9 +849,6 @@
   "SubsAutoResend2": true,
   "MultiModeType": 2,
   "NoErrorCheckPlanner2": true,
-  "FailureNoFuel": 0,
-  "FailureNoRepair": 1,
-  "FailureNoInventory": 0,
   "FailureGeneric": 2,
   "FinalizeBeforeResend": false,
   "AlertNotAllEnabled": true,
@@ -868,19 +871,6 @@
   "EnableAutomaticComponentsAndPlanChange": false,
   "StatusBarMSI": false,
   "StatusBarIconWidth": 96,
-  "IMEnableCofferAutoOpen": false,
-  "IMEnableAutoVendor": false,
-  "IMEnableContextMenu": false,
-  "IMSkipVendorIfRetainer": false,
-  "IMAutoVendorHard": [],
-  "IMAutoVendorHardIgnoreStack": [],
-  "IMAutoVendorSoft": [],
-  "IMProtectList": [],
-  "IMAutoVendorHardStackLimit": 20,
-  "IMDry": false,
-  "IMEnableItemDesynthesis": false,
-  "IMEnableNpcSell": false,
-  "AllowSellFromArmory": false,
   "DefaultIMSettings": {
     "GUID": "c0c12fe5-fbf5-44b4-ac9e-2ea01b1e41a2",
     "Name": "",
@@ -33830,6 +33820,7 @@
     "IMEnableNpcSell": false,
     "AllowSellFromArmory": false,
     "EnableCabinetAutoDelivery": false,
+    "EnableMirageAutoDelivery": false,
     "AdditionModeProtectList": true,
     "AdditionModeSoftSellList": false,
     "AdditionModeHardSellList": false,
@@ -33838,7 +33829,6 @@
     "MaxCoffersAtOnce": 10000
   },
   "AdditionalIMSettings": [],
-  "IMMigrated": true,
   "WindowSize": {
     "X": 1092.0,
     "Y": 420.0

@@ -6,7 +6,7 @@
     openFirewall = false;
 
     serverProperties = {
-      server-port = 25575;
+      server-port = 25566;
       gamemode = 0;
       difficulty = 3;
       max-players = 1;

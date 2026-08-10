@@ -50019,6 +50019,7 @@
   "ShowSeconds": false,
   "ShowCurrentScore": true,
   "ShowTotalScore": true,
+  "ShowMasteryScore": true,
   "ShowExpBars": true,
   "ShowExpBars_HideWhenMaxed": false,
   "Overlay_AutoResize": true,

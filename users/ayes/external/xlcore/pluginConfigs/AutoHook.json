@@ -189,17 +189,13 @@
         "AutoOceanFishGoal": 1,
         "AutoOceanFishGoalId": 0,
         "Triggers": [],
-        "UniqueId": "ba2b531a-a061-4820-99fd-46c7ac55e093"
+        "UniqueId": "d6280a7f-8485-491e-a7e2-fa6bb05accbd"
       },
-      "IsAnonymous": false,
       "ListOfBaits": [
         {
           "Enabled": true,
           "BaitFish": {
-            "Id": 0,
-            "LureMessage": "",
-            "Name": "None",
-            "BaitType": 3
+            "Id": 0
           },
           "NormalHook": {
             "RequiredStatus": 0,
@@ -427,9 +423,54 @@
             "ChumTimeoutMax": 0.0,
             "UseCustomStatusHook": false,
             "CastLures": {
-              "LureStacks": 3,
-              "CancelAttempt": false,
-              "LureTarget": 0,
+              "Ambitious": {
+                "Enabled": true,
+                "Any": {
+                  "Enabled": true,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
+              "Modest": {
+                "Enabled": false,
+                "Any": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
               "Enabled": false,
               "Id": 37594,
               "GpThreshold": 0,
@@ -669,9 +710,54 @@
             "ChumTimeoutMax": 0.0,
             "UseCustomStatusHook": false,
             "CastLures": {
-              "LureStacks": 3,
-              "CancelAttempt": false,
-              "LureTarget": 0,
+              "Ambitious": {
+                "Enabled": true,
+                "Any": {
+                  "Enabled": true,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
+              "Modest": {
+                "Enabled": false,
+                "Any": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
               "Enabled": false,
               "Id": 37594,
               "GpThreshold": 0,
@@ -708,17 +794,14 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "dcc14a76-e0de-448f-b10f-0e5fdb873a7a"
+          "UniqueId": "618de095-0050-41ec-96a5-673d51ff74f1"
         }
       ],
       "ListOfMooch": [
         {
           "Enabled": true,
           "BaitFish": {
-            "Id": 0,
-            "LureMessage": "",
-            "Name": "None",
-            "BaitType": 3
+            "Id": 0
           },
           "NormalHook": {
             "RequiredStatus": 0,
@@ -946,9 +1029,54 @@
             "ChumTimeoutMax": 0.0,
             "UseCustomStatusHook": false,
             "CastLures": {
-              "LureStacks": 3,
-              "CancelAttempt": false,
-              "LureTarget": 0,
+              "Ambitious": {
+                "Enabled": true,
+                "Any": {
+                  "Enabled": true,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
+              "Modest": {
+                "Enabled": false,
+                "Any": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
               "Enabled": false,
               "Id": 37594,
               "GpThreshold": 0,
@@ -1188,9 +1316,54 @@
             "ChumTimeoutMax": 0.0,
             "UseCustomStatusHook": false,
             "CastLures": {
-              "LureStacks": 3,
-              "CancelAttempt": false,
-              "LureTarget": 0,
+              "Ambitious": {
+                "Enabled": true,
+                "Any": {
+                  "Enabled": true,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
+              "Modest": {
+                "Enabled": false,
+                "Any": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "Special": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                },
+                "NotSpecial": {
+                  "Enabled": false,
+                  "LureStacks": 3,
+                  "CancelAttempt": false,
+                  "ForceAttemptLimit": false,
+                  "ConditionSet": null
+                }
+              },
               "Enabled": false,
               "Id": 37594,
               "GpThreshold": 0,
@@ -1227,19 +1400,18 @@
             "BeepOnSuccess": false
           },
           "StopConditionSet": null,
-          "UniqueId": "72798298-4378-4d7b-a623-60cdaadf7513"
+          "UniqueId": "86b69595-e794-49fd-9a13-90182fe05a7f"
         }
       ],
       "ListOfFish": [],
       "NamedConditions": [],
-      "IsGlobal": true,
       "PresetName": "Global Preset",
       "UniqueId": "6188d541-74d6-4f30-9060-180e62703327"
     },
     "CustomPresets": [],
     "Folders": [],
     "SelectedGuid": "",
-    "UniqueId": "b2151a74-e59e-4f8d-97e1-d1c3b774329c"
+    "UniqueId": "e75379f3-cd82-4f5f-9b0e-7a2b280b0114"
   },
   "AutoGigConfig": {
     "AutoGigEnabled": false,
@@ -1264,7 +1436,7 @@
     "NatureBountyBeforeFish": false,
     "Presets": [],
     "SelectedGuid": "",
-    "UniqueId": "ea1ad905-3541-409f-932b-4fc7c90dc01a"
+    "UniqueId": "602a6624-3169-4b28-b9d3-933ea4f01efa"
   },
   "ShowDebugConsole": false,
   "ShowChatLogs": true,
@@ -1290,7 +1462,7 @@
   "DtrBarEnabled": false,
   "DtrPresetBarEnabled": false,
   "AutoCollectablesEnabled": true,
-  "Version": 7,
+  "Version": 8,
   "CurrentLanguage": "en",
   "AutoCollectablesConditions": null
 }

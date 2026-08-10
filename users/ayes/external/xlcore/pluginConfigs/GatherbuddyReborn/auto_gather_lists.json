@@ -430,5 +430,43 @@
     "Enabled": false,
     "Fallback": false,
     "RemoveCompletedItems": false
+  },
+  {
+    "ItemIds": [
+      12898
+    ],
+    "Quantities": {
+      "12898": 1
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "12898": true
+    },
+    "Name": "",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 19,
+    "Enabled": false,
+    "Fallback": false,
+    "RemoveCompletedItems": false
+  },
+  {
+    "ItemIds": [
+      12879
+    ],
+    "Quantities": {
+      "12879": 1
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "12879": true
+    },
+    "Name": "",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 20,
+    "Enabled": false,
+    "Fallback": false,
+    "RemoveCompletedItems": false
   }
 ]

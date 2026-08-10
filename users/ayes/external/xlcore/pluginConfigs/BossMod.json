@@ -67,6 +67,7 @@
       "DonutFallback": "AssumeCircle",
       "ConeFallbackAngle": 180,
       "OmenSetting": "Automatic",
+      "EnableRaycasts": true,
       "PriorityTracing": false
     },
     "BossMod.BossModuleConfig": {
@@ -100,6 +101,8 @@
       "ColorPlayersBasedOnRole": false,
       "ShowFocusTargetPlayer": false,
       "HintsInSeparateWindow": false,
+      "HintsFloating": false,
+      "HintShadowColor": "#000000FF",
       "ShowMechanicTimers": true,
       "ShowGlobalHints": true,
       "ShowPlayerHints": true,
@@ -531,6 +534,9 @@
         ]
       },
       "P3BlackholeStrategy": "None",
+      "P3SlapHappyHints": true,
+      "P5MaddeningSpreadAll": true,
+      "P5CelestriadStrategy": "CW",
       "P1GravityPuddleStrategy": "None",
       "P1GravityPuddleSpread": {
         "Assignments": [
@@ -543,7 +549,9 @@
           0,
           1
         ]
-      }
+      },
+      "P1ArrowsConfettiStrategy": "None",
+      "P1ArrowsSpreadStrategy": "None"
     },
     "BossMod.Dawntrail.Ultimate.FRU.FRUConfig": {
       "P1BoundOfFaithAssignment": {
@@ -952,7 +960,8 @@
       "ClearPresetOnCombatEnd": false,
       "ClearPresetOnLuring": true,
       "ClearForceDisableOnCombatEnd": true,
-      "EarlyPullThreshold": 1.5
+      "EarlyPullThreshold": 1.5,
+      "PlannedPullSafety": true
     },
     "BossMod.AI.AIConfig": {
       "Enabled": true,
@@ -962,11 +971,13 @@
       "DistanceToMaster": 25,
       "FollowDuringBoss": false,
       "ForbidMovement": false,
-      "ForbidActions": false
+      "ForbidActions": false,
+      "GoalZoneFallback": true,
+      "ChatConfirmation": false
     },
     "BossMod.ClassShared.SharedActionsConfig": {
       "AlignDashToCamera": false
     }
   },
-  "AssemblyVersion": "7.5.1.18"
+  "AssemblyVersion": "7.5.1.38"
 }

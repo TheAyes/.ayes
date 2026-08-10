@@ -3,7 +3,7 @@
     "Name": "Meira Kisaragi",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-07-13T19:05:56.3223218Z"
+    "LastSeen": "2026-08-09T15:03:51.2152919Z"
   },
   "18014598556053987": {
     "Name": "Franklyn Eden",
@@ -279,7 +279,7 @@
     "Name": "Kaja Jeon",
     "WorldId": 33,
     "WorldName": "Twintania",
-    "LastSeen": "2026-06-30T18:03:16.5554904Z"
+    "LastSeen": "2026-08-09T11:09:05.0114968Z"
   },
   "18014598551508173": {
     "Name": "Luike Shemas",
@@ -1713,7 +1713,7 @@
     "Name": "Anuki Fukuda",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-06-28T20:55:41.8226066Z"
+    "LastSeen": "2026-08-09T11:09:05.0584154Z"
   },
   "18014598553707490": {
     "Name": "Misa Douji",
@@ -1965,7 +1965,7 @@
     "Name": "Kristin Dawnslayer",
     "WorldId": 33,
     "WorldName": "Twintania",
-    "LastSeen": "2026-05-26T16:40:09.4648971Z"
+    "LastSeen": "2026-08-09T11:09:05.0111613Z"
   },
   "18014498546181086": {
     "Name": "Soi Sauce",
@@ -2451,7 +2451,7 @@
     "Name": "Kazumi Nintai",
     "WorldId": 67,
     "WorldName": "Shiva",
-    "LastSeen": "2026-05-26T16:43:00.9850748Z"
+    "LastSeen": "2026-08-09T11:09:05.0089588Z"
   },
   "18014598555019805": {
     "Name": "Ophilia Lightscape",
@@ -3999,7 +3999,7 @@
     "Name": "Sakima Plum",
     "WorldId": 36,
     "WorldName": "Lich",
-    "LastSeen": "2026-06-28T21:02:59.0293934Z"
+    "LastSeen": "2026-08-09T11:09:05.0182416Z"
   },
   "18014598548079494": {
     "Name": "Vesteris Vaer\u0027thin",
@@ -9939,7 +9939,7 @@
     "Name": "Delzor Waka",
     "WorldId": 66,
     "WorldName": "Odin",
-    "LastSeen": "2026-06-30T18:03:19.8123451Z"
+    "LastSeen": "2026-08-09T11:09:05.0345117Z"
   },
   "18014598547238598": {
     "Name": "Mikasa Okami",
@@ -11817,7 +11817,7 @@
     "Name": "Seymour Ayu",
     "WorldId": 66,
     "WorldName": "Odin",
-    "LastSeen": "2026-06-11T16:29:19.107058Z"
+    "LastSeen": "2026-08-09T11:09:05.0609404Z"
   },
   "18014598555954374": {
     "Name": "Taz Gaz",
@@ -12705,7 +12705,7 @@
     "Name": "Novalyn Asteria",
     "WorldId": 403,
     "WorldName": "Raiden",
-    "LastSeen": "2026-06-13T17:53:20.6712115Z"
+    "LastSeen": "2026-08-09T11:09:05.0267886Z"
   },
   "18014598554357552": {
     "Name": "Drudkh Ao",
@@ -12927,7 +12927,7 @@
     "Name": "Nura Miyazono",
     "WorldId": 400,
     "WorldName": "Sagittarius",
-    "LastSeen": "2026-06-13T18:10:34.5632456Z"
+    "LastSeen": "2026-08-09T11:09:05.066539Z"
   },
   "18014598550516671": {
     "Name": "Arismont Aerogard",
@@ -13053,7 +13053,7 @@
     "Name": "Devil\u0027s Luck",
     "WorldId": 36,
     "WorldName": "Lich",
-    "LastSeen": "2026-06-15T19:56:30.7915889Z"
+    "LastSeen": "2026-08-09T11:09:05.0358978Z"
   },
   "18014598554831507": {
     "Name": "Sad Spring",
@@ -13455,7 +13455,7 @@
     "Name": "Noctis Reign",
     "WorldId": 403,
     "WorldName": "Raiden",
-    "LastSeen": "2026-06-15T19:56:30.8166573Z"
+    "LastSeen": "2026-08-09T11:09:05.0030504Z"
   },
   "18014598547992476": {
     "Name": "Syura Kirie",
@@ -14469,7 +14469,7 @@
     "Name": "Yam Yams",
     "WorldId": 42,
     "WorldName": "Zodiark",
-    "LastSeen": "2026-06-29T20:37:35.9974146Z"
+    "LastSeen": "2026-08-09T11:09:05.0090414Z"
   },
   "18014598549344229": {
     "Name": "Chelyonne Chalamet",
@@ -15874,5 +15874,239 @@
     "WorldId": 66,
     "WorldName": "Odin",
     "LastSeen": "2026-07-13T18:08:16.4424599Z"
+  },
+  "18014498544823598": {
+    "Name": "Galant Shinderu",
+    "WorldId": 56,
+    "WorldName": "Phoenix",
+    "LastSeen": "2026-08-09T11:09:05.0090924Z"
+  },
+  "18014598551991349": {
+    "Name": "Minoru Nonaka",
+    "WorldId": 67,
+    "WorldName": "Shiva",
+    "LastSeen": "2026-08-09T11:09:05.011119Z"
+  },
+  "18014598552062344": {
+    "Name": "Anastasiya Void",
+    "WorldId": 80,
+    "WorldName": "Cerberus",
+    "LastSeen": "2026-08-09T11:09:05.0115367Z"
+  },
+  "18014598546441294": {
+    "Name": "Snow Man",
+    "WorldId": 56,
+    "WorldName": "Phoenix",
+    "LastSeen": "2026-08-09T11:09:05.0145441Z"
+  },
+  "18014598551477529": {
+    "Name": "Kaori Haburi",
+    "WorldId": 403,
+    "WorldName": "Raiden",
+    "LastSeen": "2026-08-09T11:09:05.0145705Z"
+  },
+  "18014598545213783": {
+    "Name": "Shizuku Hayashida",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-09T11:09:05.0145997Z"
+  },
+  "18014498547398902": {
+    "Name": "Cathan Blackrage",
+    "WorldId": 56,
+    "WorldName": "Phoenix",
+    "LastSeen": "2026-08-09T11:09:05.01574Z"
+  },
+  "18014598547249237": {
+    "Name": "Monir Mahru",
+    "WorldId": 39,
+    "WorldName": "Omega",
+    "LastSeen": "2026-08-09T11:09:05.0181415Z"
+  },
+  "18014598551271046": {
+    "Name": "Collyord Vix",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0181742Z"
+  },
+  "18014598547394024": {
+    "Name": "Ray Xtreme",
+    "WorldId": 97,
+    "WorldName": "Ragnarok",
+    "LastSeen": "2026-08-09T11:09:05.0182807Z"
+  },
+  "18014598551756612": {
+    "Name": "Evelynn Dyastra",
+    "WorldId": 80,
+    "WorldName": "Cerberus",
+    "LastSeen": "2026-08-09T11:09:05.0219486Z"
+  },
+  "18014598553096962": {
+    "Name": "Salazar-del Sombra",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0219726Z"
+  },
+  "18014598547529057": {
+    "Name": "Mitsunobu Jizutsu",
+    "WorldId": 85,
+    "WorldName": "Spriggan",
+    "LastSeen": "2026-08-09T11:09:05.0219987Z"
+  },
+  "18014598550181779": {
+    "Name": "Dango Chai",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-09T11:09:05.0220203Z"
+  },
+  "18014598549193113": {
+    "Name": "Mio Masaki",
+    "WorldId": 83,
+    "WorldName": "Louisoix",
+    "LastSeen": "2026-08-09T11:09:05.0267346Z"
+  },
+  "18014598555233468": {
+    "Name": "Choi Donghae",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0268551Z"
+  },
+  "18014598553154292": {
+    "Name": "Muji Kay",
+    "WorldId": 42,
+    "WorldName": "Zodiark",
+    "LastSeen": "2026-08-09T11:09:05.0268884Z"
+  },
+  "18014598544967672": {
+    "Name": "Aemyr Tribal",
+    "WorldId": 83,
+    "WorldName": "Louisoix",
+    "LastSeen": "2026-08-09T11:09:05.0308995Z"
+  },
+  "18014598548551119": {
+    "Name": "Lew Rex",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-09T11:09:05.0309335Z"
+  },
+  "18014598549471410": {
+    "Name": "Rayne Blake",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0309654Z"
+  },
+  "18014598547665578": {
+    "Name": "Neko Len",
+    "WorldId": 56,
+    "WorldName": "Phoenix",
+    "LastSeen": "2026-08-09T11:09:05.0310187Z"
+  },
+  "18014598556469572": {
+    "Name": "Seikka Lavold",
+    "WorldId": 67,
+    "WorldName": "Shiva",
+    "LastSeen": "2026-08-09T11:09:05.0343957Z"
+  },
+  "18014598539575504": {
+    "Name": "Miela Phylae",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0344444Z"
+  },
+  "18014598555766515": {
+    "Name": "Rillettes Lindvyre",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-09T11:09:05.0344777Z"
+  },
+  "18014598549388989": {
+    "Name": "Sereki Lamus",
+    "WorldId": 67,
+    "WorldName": "Shiva",
+    "LastSeen": "2026-08-09T11:09:05.0358432Z"
+  },
+  "18014498548901557": {
+    "Name": "Kyo\u0027tei Hoseki",
+    "WorldId": 67,
+    "WorldName": "Shiva",
+    "LastSeen": "2026-08-09T11:09:05.0359188Z"
+  },
+  "18014598546255135": {
+    "Name": "Nomy Pon",
+    "WorldId": 33,
+    "WorldName": "Twintania",
+    "LastSeen": "2026-08-09T11:09:05.0359235Z"
+  },
+  "18014598555899798": {
+    "Name": "Felicia Fhey",
+    "WorldId": 85,
+    "WorldName": "Spriggan",
+    "LastSeen": "2026-08-09T11:09:05.0583819Z"
+  },
+  "18014598549170835": {
+    "Name": "Hanna Lunasol",
+    "WorldId": 33,
+    "WorldName": "Twintania",
+    "LastSeen": "2026-08-09T11:09:05.0584605Z"
+  },
+  "18014598547817293": {
+    "Name": "Sayor\u0027a Shino",
+    "WorldId": 39,
+    "WorldName": "Omega",
+    "LastSeen": "2026-08-09T11:09:05.0584861Z"
+  },
+  "18014598542102269": {
+    "Name": "Lenya Orkona",
+    "WorldId": 33,
+    "WorldName": "Twintania",
+    "LastSeen": "2026-08-09T11:09:05.0609167Z"
+  },
+  "18014598543384884": {
+    "Name": "Scarlet Rot",
+    "WorldId": 33,
+    "WorldName": "Twintania",
+    "LastSeen": "2026-08-09T11:09:05.060945Z"
+  },
+  "18014498547524727": {
+    "Name": "Jacob Lionheart",
+    "WorldId": 42,
+    "WorldName": "Zodiark",
+    "LastSeen": "2026-08-09T11:09:05.0609673Z"
+  },
+  "18014598555294759": {
+    "Name": "Anna Raesu",
+    "WorldId": 67,
+    "WorldName": "Shiva",
+    "LastSeen": "2026-08-09T11:09:05.0664289Z"
+  },
+  "18014598555347650": {
+    "Name": "Maria Harenae",
+    "WorldId": 400,
+    "WorldName": "Sagittarius",
+    "LastSeen": "2026-08-09T11:09:05.0665035Z"
+  },
+  "18014598549932399": {
+    "Name": "Q\u0027nmosa Mhintel",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0665448Z"
+  },
+  "18014598554124152": {
+    "Name": "Aly Azeemi",
+    "WorldId": 403,
+    "WorldName": "Raiden",
+    "LastSeen": "2026-08-09T11:09:05.0764767Z"
+  },
+  "18014598545434217": {
+    "Name": "Onewinged Angel",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T11:09:05.0765434Z"
+  },
+  "18014598550003914": {
+    "Name": "Rei Ayanyami",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-09T15:03:51.2152909Z"
   }
 }

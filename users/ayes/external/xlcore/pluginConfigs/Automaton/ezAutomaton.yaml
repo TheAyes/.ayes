@@ -1,22 +1,35 @@
-﻿Version: 4
-EnabledTweaks:
+Version: 4
+EnabledTweaks: &o13
 - GMAlert
 - AutoSnipeQuests
 - AutoMerge
 - RetrieveMateria
 - AntiAFK
 - AutoInvite
-Tweaks:
+Tweaks: &o14
   AchievementTrackerConfiguration:
-    Achievements: []
-    BarColour:
+    Achievements: &o0 []
+    BarColour: &o1
+      X: 1
+      Y: 1
+      Z: 1
+      W: 1
       X: 1
       Y: 1
       Z: 1
       W: 1
     UpdateFrequency: 60
     AutoRemoveCompleted: false
+    Achievements: *o0
+    BarColour: *o1
+    UpdateFrequency: 60
+    AutoRemoveCompleted: false
   AutoFollow:
+    DistanceToKeep: 3
+    DisableIfFurtherThan: 0
+    OnlyInDuty: false
+    ExcludeCombat: false
+    AutoFollowName: ''
     DistanceToKeep: 3
     DisableIfFurtherThan: 0
     OnlyInDuty: false
@@ -27,19 +40,37 @@ Tweaks:
     IsRegex: true
     TurnOffOnceFull: true
     DelayMs: 500
-    Channels:
+    Channels: &o2
     - Shout
     - Say
     - Yell
+    Pattern: \blfg
+    IsRegex: true
+    TurnOffOnceFull: true
+    DelayMs: 500
+    Channels: *o2
   ARQuestingConfiguration:
     ReturnHome: true
+    ReturnHome: true
   ClickToMove:
-    WorldClick: &o0
+    WorldClick: &o3
       Enabled: true
       MovementType: Direct
-    MapClick: *o0
+    MapClick: *o3
+    ClickModifier: Shift
+    WorldClick: *o3
+    MapClick: *o3
     ClickModifier: Shift
   Commands:
+    EnableDesynth: false
+    DisableRender: false
+    EnableEquip: false
+    EnableGoToFlag: false
+    EnableKillFlag: false
+    EnableLowerQuality: false
+    EnableTPFlag: false
+    EnableTravel: false
+    EnableUseItem: false
     EnableDesynth: false
     DisableRender: false
     EnableEquip: false
@@ -59,16 +90,34 @@ Tweaks:
     EnableTPMarker: false
     EnableTPOffset: false
     EnableTPAbsolute: false
+    AutoVoidIslandRest: false
+    EnableTPClick: false
+    EnableNoClip: false
+    NoClipSpeed: 0.05
+    EnableMoveSpeed: false
+    EnableDirectActions: false
+    EnableTPMarker: false
+    EnableTPOffset: false
+    EnableTPAbsolute: false
   EnhancedDutyStartEnd:
     StartMsg: ''
-    Players: []
+    Players: &o4 []
+    CheckForAll: false
+    CheckForAny: false
+    EndMsg: ''
+    AutoLeaveOnEnd: false
+    TimeToWait: 0
+    StartMsg: ''
+    Players: *o4
     CheckForAll: false
     CheckForAny: false
     EndMsg: ''
     AutoLeaveOnEnd: false
     TimeToWait: 0
   EnhancedLoginLogout:
-    Chars: []
+    Chars: &o5 []
+    RunCommandsWhenARIsActive: false
+    Chars: *o5
     RunCommandsWhenARIsActive: false
   FateToolKit:
     MaxDuration: 900
@@ -76,13 +125,17 @@ Tweaks:
     MaxProgress: 90
     SwapZones: true
     DisplayNameFormat: '[{Level}] {Name}'
-    BarColour:
+    BarColour: &o6
       X: 0.404
       Y: 0.259
       Z: 0.541
       W: 1
-    Blacklist: {}
-    SortOrder:
+      X: 0.404
+      Y: 0.259
+      Z: 0.541
+      W: 1
+    Blacklist: &o7 {}
+    SortOrder: &o8
     - Criteria: HasBonusWithTwist
       Descending: true
     - Criteria: Progress
@@ -93,12 +146,14 @@ Tweaks:
       Descending: false
     - Criteria: Distance
       Descending: false
-  GlamourSets:
-    ShowOnlyMissing: false
-    ShowPartiallyCompleted: false
-    ShowCanAfford: false
-    ShowDoneNotInDresser: false
-    ShowMarketboardPurchasable: false
+    MaxDuration: 900
+    MinTimeRemaining: 120
+    MaxProgress: 90
+    SwapZones: true
+    DisplayNameFormat: '[{Level}] {Name}'
+    BarColour: *o6
+    Blacklist: *o7
+    SortOrder: *o8
   GMAlert:
     Toast: false
     ChatMessage: true
@@ -107,10 +162,22 @@ Tweaks:
     BeepDuration: 250
     BeepFrequency: 900
     KillGame: false
-    Commands: []
+    Commands: &o9 []
+    Toast: false
+    ChatMessage: true
+    Sound: false
+    BeepCount: 3
+    BeepDuration: 250
+    BeepFrequency: 900
+    KillGame: false
+    Commands: *o9
   HuntRelayHelper:
-    Channels:
+    Channels: &o10
     - Item1: Ls1
+      Item2: l1
+      Item3: true
+      Item4: false
+      Item1: Ls1
       Item2: l1
       Item3: true
       Item4: false
@@ -118,7 +185,15 @@ Tweaks:
       Item2: l2
       Item3: true
       Item4: false
+      Item1: Ls2
+      Item2: l2
+      Item3: true
+      Item4: false
     - Item1: Ls3
+      Item2: l3
+      Item3: true
+      Item4: false
+      Item1: Ls3
       Item2: l3
       Item3: true
       Item4: false
@@ -126,7 +201,15 @@ Tweaks:
       Item2: l4
       Item3: true
       Item4: false
+      Item1: Ls4
+      Item2: l4
+      Item3: true
+      Item4: false
     - Item1: Ls5
+      Item2: l5
+      Item3: true
+      Item4: false
+      Item1: Ls5
       Item2: l5
       Item3: true
       Item4: false
@@ -134,7 +217,15 @@ Tweaks:
       Item2: l6
       Item3: true
       Item4: false
+      Item1: Ls6
+      Item2: l6
+      Item3: true
+      Item4: false
     - Item1: Ls7
+      Item2: l7
+      Item3: true
+      Item4: false
+      Item1: Ls7
       Item2: l7
       Item3: true
       Item4: false
@@ -142,7 +233,15 @@ Tweaks:
       Item2: l8
       Item3: true
       Item4: false
+      Item1: Ls8
+      Item2: l8
+      Item3: true
+      Item4: false
     - Item1: FreeCompany
+      Item2: fc
+      Item3: true
+      Item4: false
+      Item1: FreeCompany
       Item2: fc
       Item3: true
       Item4: false
@@ -150,7 +249,15 @@ Tweaks:
       Item2: n
       Item3: true
       Item4: false
+      Item1: NoviceNetwork
+      Item2: n
+      Item3: true
+      Item4: false
     - Item1: CrossLinkShell1
+      Item2: cwl1
+      Item3: false
+      Item4: false
+      Item1: CrossLinkShell1
       Item2: cwl1
       Item3: false
       Item4: false
@@ -158,7 +265,15 @@ Tweaks:
       Item2: cwl2
       Item3: false
       Item4: false
+      Item1: CrossLinkShell2
+      Item2: cwl2
+      Item3: false
+      Item4: false
     - Item1: CrossLinkShell3
+      Item2: cwl3
+      Item3: false
+      Item4: false
+      Item1: CrossLinkShell3
       Item2: cwl3
       Item3: false
       Item4: false
@@ -166,7 +281,15 @@ Tweaks:
       Item2: cwl4
       Item3: false
       Item4: false
+      Item1: CrossLinkShell4
+      Item2: cwl4
+      Item3: false
+      Item4: false
     - Item1: CrossLinkShell5
+      Item2: cwl5
+      Item3: false
+      Item4: false
+      Item1: CrossLinkShell5
       Item2: cwl5
       Item3: false
       Item4: false
@@ -174,11 +297,23 @@ Tweaks:
       Item2: cwl6
       Item3: false
       Item4: false
+      Item1: CrossLinkShell6
+      Item2: cwl6
+      Item3: false
+      Item4: false
     - Item1: CrossLinkShell7
       Item2: cwl7
       Item3: false
       Item4: false
+      Item1: CrossLinkShell7
+      Item2: cwl7
+      Item3: false
+      Item4: false
     - Item1: CrossLinkShell8
+      Item2: cwl8
+      Item3: false
+      Item4: false
+      Item1: CrossLinkShell8
       Item2: cwl8
       Item3: false
       Item4: false
@@ -191,24 +326,47 @@ Tweaks:
     DryRun: false
     ChatMessagePattern: '[<world>] <type> -> <flag>'
     AssumedLocality: PlayerHomeWorld
-    Types:
+    Types: &o11
     - Item1: SRank
+      Item2: S Rank
+      Item3: s rank, rank s, /(?:^|\W)(?<!')[sS](?:$|\W)/
+      Item1: SRank
       Item2: S Rank
       Item3: s rank, rank s, /(?:^|\W)(?<!')[sS](?:$|\W)/
     - Item1: Minions
       Item2: Minions
       Item3: ssminion, /\bminions?\b/
+      Item1: Minions
+      Item2: Minions
+      Item3: ssminion, /\bminions?\b/
     - Item1: Train
+      Item2: Train
+      Item3: train
+      Item1: Train
       Item2: Train
       Item3: train
     - Item1: FATE
       Item2: FATE
       Item3: boss, fate
-  MailEnhanacements:
-    EnableRetrieveAll: true
-    DeleteAfterRetrieval: true
-    UseAfterRetrieval: true
-    EnableRestockMaps: true
+      Item1: FATE
+      Item2: FATE
+      Item3: boss, fate
+    Channels: *o10
+    OnlySendLocalHuntsToLocalChannels: true
+    AssumeBlankWorldsAreLocal: false
+    DontRepeatRelays: true
+    OverrideMinionFlag: true
+    AllowPartialWorldMatches: false
+    RemoveWorldFromNNCallouts: true
+    DryRun: false
+    ChatMessagePattern: '[<world>] <type> -> <flag>'
+    AssumedLocality: PlayerHomeWorld
+    Types: *o11
   SimpleCurrencyAlertConfig:
-    Alerts: []
+    Alerts: &o12 []
+    Alerts: *o12
+ShowDebug: false
+Version: 4
+EnabledTweaks: *o13
+Tweaks: *o14
 ShowDebug: false

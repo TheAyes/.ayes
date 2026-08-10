@@ -7,9 +7,9 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./fail2ban.nix
+    #./fail2ban.nix
     ./sops.nix
-    ./minecraft-servers
+    #./minecraft-servers
 
     # System Profiles
     ../../profiles/nixos/boot/systemd-boot.nix
@@ -25,6 +25,7 @@
     ../../profiles/nixos/locales/german.nix
 
     # Program Profiles
+    ../../profiles/nixos/programs/fish.nix
     ../../profiles/nixos/programs/steam.nix
     #../../profiles/nixos/programs/envision.nix
     ../../profiles/nixos/programs/lact.nix
@@ -58,6 +59,7 @@
       fsType = "ext4";
       neededForBoot = true;
       options = [ "noatime" ];
+      depends = [ "/" ];
     };
 
     "/home" = {
@@ -110,11 +112,11 @@
   ##################################
   nix.settings = {
     secret-key-files = [ "/etc/nix/private-key" ];
-    cores = 12; # leave a few cores free for interactive use during builds
+    cores = 12;
   };
 
   systemd.services.nix-daemon.serviceConfig = {
-    Nice = 19;
+    Nice = 10;
     IOSchedulingClass = lib.mkForce "idle";
   };
 
@@ -140,8 +142,8 @@
   environment = {
     systemPackages = with pkgs; [
       sops
-      proton-vpn
-      teamspeak6-client
+      #proton-vpn
+      #teamspeak6-client
 
       qpwgraph
 
@@ -160,7 +162,6 @@
 
   # Additional nix-ld libraries (profile provides base)
   programs.nix-ld.libraries = with pkgs; [
-    portaudio
     rocmPackages.llvm.llvm
   ];
 
@@ -168,16 +169,11 @@
   ## Programs
   ##################################
   programs = {
-    hyprland = {
-      enable = false;
-    };
     partition-manager.enable = true;
-    firefox.enable = false;
-    gamemode.enable = true;
-    fish.enable = true;
-    ssh.startAgent = true;
-
     kdeconnect.enable = true;
+
+    gamemode.enable = true;
+    ssh.startAgent = true;
   };
 
   ##################################
@@ -191,10 +187,6 @@
       extraArgs = ""; # Extra arguments to pass to solaar on startup
     };
 
-    mautrix-discord = {
-      enable = false; # Maybe in the future once I get a home-server
-    };
-
     udev = {
       enable = true;
       extraRules = ''
@@ -204,19 +196,6 @@
     };
   };
 
-  ##################################
-  ## Networking
-  ##################################
-  networking = { };
-
-  ##################################
-  ## Security
-  ##################################
-  security = { };
-
-  ##################################
-  ## Boot
-  ##################################
   boot = {
     # https://wiki.nixos.org/wiki/Linux_kernel
     kernelPackages = pkgs.linuxPackages_zen;

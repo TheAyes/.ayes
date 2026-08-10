@@ -12,6 +12,7 @@
     "GatheringJob": 17,
     "GearsetUpdateSource": 1,
     "HideInAllInstances": true,
+    "UseQuestionableTheme": true,
     "UseEscToCancelQuesting": true,
     "ShowIncompleteSeasonalEvents": true,
     "SkipLowPriorityDuties": true,
@@ -27,7 +28,9 @@
     "ReportMessage": "",
     "DisplayName": "Anonymous",
     "Language": "en",
-    "HideRemainingTasks": false
+    "HideRemainingTasks": false,
+    "ClaimMail": false,
+    "SameJobThroughoutQuest": false
   },
   "Stop": {
     "$type": "Questionable.Configuration+StopConfiguration, Questionable",
@@ -37,7 +40,8 @@
     "LevelToStopAfter": false,
     "TargetLevel": 50,
     "RunCommandAfterStop": false,
-    "CommandAfterStop": "/li auto"
+    "CommandAfterStop": "/li auto",
+    "RemoveWhenCompleteConditionMet": false
   },
   "Duties": {
     "$type": "Questionable.Configuration+DutyConfiguration, Questionable",
@@ -68,7 +72,9 @@
     "Enabled": true,
     "ChatType": 1,
     "ShowTrayMessage": false,
-    "FlashTaskbar": false
+    "FlashTaskbar": false,
+    "NotifyOnStopCondition": false,
+    "NotifyOnCriticalFailure": true
   },
   "Advanced": {
     "$type": "Questionable.Configuration+AdvancedConfiguration, Questionable",
@@ -98,6 +104,7 @@
     "NamazuPreferCraft": false,
     "Debug": false,
     "DebugLocalisation": false,
+    "AllowPathGeneration": false,
     "AutoRedeemRewardItems": false,
     "AutoRedeemItemBlacklist": []
   },
@@ -122,9 +129,9 @@
   "PathData": {
     "$type": "Questionable.Configuration+PathDataConfiguration, Questionable",
     "AutoUpdate": true,
-    "InstalledDataVersion": 1784075160,
-    "BundlePluginVersion": "15.306.0.8",
-    "LastCheck": "2026-07-15T11:12:32.7726093+00:00"
+    "InstalledDataVersion": 1786372250,
+    "BundlePluginVersion": "15.306.1.49",
+    "LastCheck": "2026-08-10T16:14:28.8007054+00:00"
   },
   "Version": 2,
   "AutoRedeemOffResetApplied": true,

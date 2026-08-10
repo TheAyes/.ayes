@@ -43,6 +43,7 @@
     "ModelTransformCircleStandOutColor": 4292881264,
     "WorldObjectOverlayColor": 4294760704,
     "GraphicalSidesSwapped": false,
+    "SwapRotationXandY": false,
     "ShowGenitaliaInAdvancedPoseWindow": false,
     "DisableGPoseMouseSelect": true,
     "HideNameOnGPoseSettingsWindow": true,
