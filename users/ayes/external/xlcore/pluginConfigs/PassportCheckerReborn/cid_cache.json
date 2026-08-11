@@ -3,7 +3,7 @@
     "Name": "Meira Kisaragi",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-08-09T15:03:51.2152919Z"
+    "LastSeen": "2026-08-10T17:47:03.8896366Z"
   },
   "18014598556053987": {
     "Name": "Franklyn Eden",
@@ -1857,7 +1857,7 @@
     "Name": "Chloe Kokoro",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-07-13T19:05:56.3223185Z"
+    "LastSeen": "2026-08-10T17:47:03.8896357Z"
   },
   "18014598541422502": {
     "Name": "Schild Yuuki",
@@ -16108,5 +16108,53 @@
     "WorldId": 402,
     "WorldName": "Alpha",
     "LastSeen": "2026-08-09T15:03:51.2152909Z"
+  },
+  "18014498539596657": {
+    "Name": "Darkshuda Shadowflame",
+    "WorldId": 66,
+    "WorldName": "Odin",
+    "LastSeen": "2026-08-10T16:25:12.611003Z"
+  },
+  "18014598543642100": {
+    "Name": "Aeva Lumen",
+    "WorldId": 66,
+    "WorldName": "Odin",
+    "LastSeen": "2026-08-10T16:21:10.2532293Z"
+  },
+  "18014598540308009": {
+    "Name": "Ire Thorn",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-10T16:25:12.6110041Z"
+  },
+  "18014598541639343": {
+    "Name": "Eirin Thorn",
+    "WorldId": 36,
+    "WorldName": "Lich",
+    "LastSeen": "2026-08-10T16:25:12.611005Z"
+  },
+  "18014598556393770": {
+    "Name": "Lillianna Lunalba",
+    "WorldId": 66,
+    "WorldName": "Odin",
+    "LastSeen": "2026-08-10T16:25:12.6110052Z"
+  },
+  "18014498539877345": {
+    "Name": "Eoran Fallon",
+    "WorldId": 66,
+    "WorldName": "Odin",
+    "LastSeen": "2026-08-10T16:25:12.6110053Z"
+  },
+  "18014598556396453": {
+    "Name": "Vintorez Rannick",
+    "WorldId": 66,
+    "WorldName": "Odin",
+    "LastSeen": "2026-08-10T16:39:50.0534559Z"
+  },
+  "18014598556381317": {
+    "Name": "T\u0027laq Tia",
+    "WorldId": 402,
+    "WorldName": "Alpha",
+    "LastSeen": "2026-08-10T16:39:50.0534599Z"
   }
 }

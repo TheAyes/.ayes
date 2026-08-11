@@ -8,7 +8,18 @@
         "Lightless_Offline"
       ],
       "ServerAvailablePairTags": [],
-      "UidServerPairedUserTags": {}
+      "UidServerPairedUserTags": {},
+      "PairTagColors": {},
+      "PairTagIcons": {},
+      "FolderOrder": [
+        "tag:Lightless_Visible",
+        "__folder_lightfinder_players",
+        "__folder_lightfinder_syncshells",
+        "syncshells:all",
+        "tag:Lightless_Online",
+        "tag:Lightless_Offline"
+      ],
+      "FolderOrderVersion": 1
     }
   },
   "Version": 0

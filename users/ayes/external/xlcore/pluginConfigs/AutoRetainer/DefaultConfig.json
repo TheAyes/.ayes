@@ -11,7 +11,7 @@
   "Verbose": false,
   "OfflineData": [
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598541772518,
       "Name": "Meira Kisaragi",
       "World": "Alpha",
@@ -21,7 +21,7 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1786298784,
+          "VentureEndsAt": 1786465630,
           "HasVenture": true,
           "Level": 96,
           "VentureBeginsAt": 0,
@@ -33,7 +33,7 @@
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1786298791,
+          "VentureEndsAt": 1786465636,
           "HasVenture": true,
           "Level": 92,
           "VentureBeginsAt": 0,
@@ -45,8 +45,8 @@
         }
       ],
       "Preferred": true,
-      "Ventures": 83,
-      "InventorySpace": 33,
+      "Ventures": 75,
+      "InventorySpace": 119,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -235,6 +235,7 @@
         440,
         443,
         445,
+        446,
         449,
         451,
         456,
@@ -332,7 +333,7 @@
         0,
         0
       ],
-      "Gil": 187041,
+      "Gil": 213219,
       "GCSeals": 8044,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -445,7 +446,9 @@
       "SentVenturesByDay": {
         "20647": 3,
         "20649": 4,
-        "20674": 2
+        "20674": 2,
+        "20675": 2,
+        "20676": 2
       },
       "SentVoyagesByDay": {},
       "AutoFuelPurchase": false,
@@ -473,7 +476,7 @@
       "CurrentWorld": "Alpha"
     },
     {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "CID": 18014598545982441,
       "Name": "Nys Lamara",
       "World": "Lich",
@@ -634,7 +637,7 @@
   "NoTheme": false,
   "AdditionalData": {
     "#0040002E92DA86E6 Simastana": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,
@@ -659,7 +662,7 @@
       "ShouldSerializeCreationFrame": false
     },
     "#0040002E92DA86E6 Dedaaa": {
-      "CreationFrame": 0,
+      "CreationFrame": 1,
       "EntrustDuplicates": false,
       "WithdrawGil": true,
       "WithdrawGilPercent": 100,

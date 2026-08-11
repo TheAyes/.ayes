@@ -6,7 +6,11 @@
     "AutoVoteMvp",
     "AfkDummyReset",
     "AutoFairy",
-    "AutoSelectTurnin"
+    "AutoSelectTurnin",
+    "Desynth",
+    "DisableKnownGlam",
+    "TradeAllCollectibles",
+    "OpenAllCoffers"
   ],
   "DisabledTheme": true,
   "Version": 0
