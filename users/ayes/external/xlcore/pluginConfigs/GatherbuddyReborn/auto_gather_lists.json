@@ -581,6 +581,52 @@
     "Description": "",
     "FolderPath": "",
     "Order": 22,
+    "Enabled": false,
+    "Fallback": false,
+    "RemoveCompletedItems": false
+  },
+  {
+    "ItemIds": [
+      12579,
+      10,
+      12538,
+      5121,
+      8,
+      12578,
+      11,
+      13,
+      16,
+      15
+    ],
+    "Quantities": {
+      "12579": 5,
+      "10": 5,
+      "12538": 15,
+      "5121": 3,
+      "8": 15,
+      "12578": 1,
+      "11": 5,
+      "13": 5,
+      "16": 2,
+      "15": 1
+    },
+    "PrefferedLocations": {},
+    "EnabledItems": {
+      "12579": true,
+      "10": true,
+      "12538": true,
+      "5121": true,
+      "8": true,
+      "12578": true,
+      "11": true,
+      "13": true,
+      "16": true,
+      "15": true
+    },
+    "Name": "Crafting Materials (Auto-Generated)",
+    "Description": "",
+    "FolderPath": "",
+    "Order": 23,
     "Enabled": true,
     "Fallback": false,
     "RemoveCompletedItems": false

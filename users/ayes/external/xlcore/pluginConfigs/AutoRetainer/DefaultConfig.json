@@ -21,32 +21,32 @@
       "RetainerData": [
         {
           "Name": "Simastana",
-          "VentureEndsAt": 1786465630,
+          "VentureEndsAt": 1786482284,
           "HasVenture": true,
-          "Level": 96,
+          "Level": 97,
           "VentureBeginsAt": 0,
           "Job": 33,
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235712755,
-          "MBItems": 20
+          "MBItems": 13
         },
         {
           "Name": "Dedaaa",
-          "VentureEndsAt": 1786465636,
+          "VentureEndsAt": 1786482292,
           "HasVenture": true,
-          "Level": 92,
+          "Level": 93,
           "VentureBeginsAt": 0,
           "Job": 17,
           "VentureID": 395,
           "Gil": 0,
           "RetainerID": 33777197235723971,
-          "MBItems": 20
+          "MBItems": 15
         }
       ],
       "Preferred": true,
-      "Ventures": 75,
-      "InventorySpace": 119,
+      "Ventures": 67,
+      "InventorySpace": 50,
       "VentureCoffers": 0,
       "ServiceAccount": 0,
       "GCDeliveryType": 2,
@@ -149,6 +149,9 @@
         160,
         166,
         168,
+        169,
+        170,
+        174,
         179,
         181,
         184,
@@ -333,7 +336,7 @@
         0,
         0
       ],
-      "Gil": 213219,
+      "Gil": 845622,
       "GCSeals": 8044,
       "GCRank": 9,
       "OfflineAirshipData": [],
@@ -468,7 +471,15 @@
         13989,
         13990,
         17498,
-        17499
+        17499,
+        17802,
+        42581,
+        42583,
+        42661,
+        42662,
+        42663,
+        42664,
+        42665
       ],
       "NoFcBuffUse": false,
       "NoItemBuffUse": false,
@@ -797,8 +808,8 @@
       "Gil": 14090000,
       "GilCountsTowardsChara": false,
       "LastGilUpdate": 1784065289311,
-      "FCPoints": 15753094,
-      "FCPointsLastUpdate": 1786295903552,
+      "FCPoints": 15688037,
+      "FCPointsLastUpdate": 1786558694402,
       "HolderChara": 0,
       "Rank": 30
     }

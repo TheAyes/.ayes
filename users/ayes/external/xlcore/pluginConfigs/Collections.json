@@ -96,6 +96,7 @@
     15925,
     14940,
     7540,
+    28228,
     24583,
     2990,
     9956,
@@ -104,6 +105,7 @@
     18068,
     18314,
     17803,
+    15926,
     8681,
     15472,
     24582,
@@ -530,6 +532,11 @@
     41796
   ],
   "ArmoireItemIds": [
+    2905,
+    3228,
+    3466,
+    3689,
+    3897,
     6105,
     6110,
     9272,
@@ -565,7 +572,7 @@
               "$type": "System.Collections.Generic.Dictionary`2[[Collections.EquipSlot, Collections],[Collections.GlamourItem, Collections]], System.Private.CoreLib",
               "Body": {
                 "$type": "Collections.GlamourItem, Collections",
-                "ItemId": 37197,
+                "ItemId": 27948,
                 "Stain0Id": 0,
                 "Stain1Id": 0
               },

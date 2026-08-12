@@ -8,7 +8,7 @@
     "ShowInGPose": true,
     "ShowInCutscene": false,
     "ShowWhenUIHidden": false,
-    "CensorActorNames": true,
+    "CensorActorNames": false,
     "DefaultTransformMovementSpeed": 0.01,
     "DefaultBoneTransformMovementSpeed": 0.01,
     "DefaultFreeCameraMovementSpeed": 0.03,
