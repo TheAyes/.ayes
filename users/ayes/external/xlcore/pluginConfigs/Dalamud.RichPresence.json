@@ -1,7 +1,7 @@
 {
   "$type": "Dalamud.RichPresence.Configuration, Dalamud.RichPresence",
   "DiscordDetailField": "{location}",
-  "DiscordStateField": "{location}",
+  "DiscordStateField": "{world}",
   "DiscordSmallImageTextField": "{job} Lv. {level}",
   "DiscordLargeImageTextField": "{location}",
   "DisplayDiscordTimestamp": false,

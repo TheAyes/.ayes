@@ -1,4 +1,13 @@
-{ pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+let
+  vesktopSettings = "${config.programs.nixcord.vesktop.configDir}/settings/settings.json";
+  lastfmKeyFile = "/run/secrets/lastfm/api-key";
+in
 {
   programs.nixcord = {
     enable = true;
@@ -44,6 +53,22 @@
         loadingQuotes.enable = true;
         messageLinkEmbeds.enable = true;
         messageLogger.enable = true;
+        # apiKey is not set here on purpose: nixcord renders this config into a
+        # world-readable /nix/store JSON file. The key is injected from sops at
+        # activation time instead - see the bottom of this file.
+        musicRichPresence = {
+          enable = true;
+          username = "Ayes_XD";
+          shareUsername = true;
+          statusName = "";
+          useListeningStatus = true;
+          clickableLinks = true;
+          nameFormat = "artist-first";
+          scrobblerBackend = "lastfm";
+          showAlbumCover = true;
+          showLogo = true;
+          statusDisplayType = "track";
+        };
         #moreUserTags.enable = true;
         mutualGroupDms.enable = true;
         newGuildSettings.enable = true;
@@ -89,5 +114,29 @@
       # ...
     };
   };
+
+  # nixcord installs settings.json as a read-only symlink into the store. We
+  # replace it with a real file that has the Last.fm key injected, so `force`
+  # keeps home-manager's collision check from aborting the next activation.
+  home.file.${vesktopSettings}.force = true;
+
+  home.activation.nixcordLastfmApiKey = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
+    if [ -r ${lastfmKeyFile} ]; then
+      umask 077
+      src="$(readlink -f ${lib.escapeShellArg vesktopSettings})"
+      tmp="$(mktemp)"
+      if ${lib.getExe pkgs.jq} --rawfile key ${lastfmKeyFile} \
+           '.plugins.MusicRichPresence.apiKey = ($key | sub("\\s+$"; ""))' \
+           "$src" > "$tmp"; then
+        run rm -f ${lib.escapeShellArg vesktopSettings}
+        run install -m600 "$tmp" ${lib.escapeShellArg vesktopSettings}
+      else
+        echo "nixcord: could not inject the Last.fm API key, leaving settings.json as-is" >&2
+      fi
+      rm -f "$tmp"
+    else
+      echo "nixcord: ${lastfmKeyFile} is not readable, skipping Last.fm API key injection" >&2
+    fi
+  '';
 
 }

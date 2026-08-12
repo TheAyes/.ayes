@@ -3,7 +3,7 @@
     "Name": "Meira Kisaragi",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-08-12T20:32:14.5067865Z"
+    "LastSeen": "2026-08-12T21:02:58.5334805Z"
   },
   "18014598556053987": {
     "Name": "Franklyn Eden",
@@ -105,19 +105,19 @@
     "Name": "Revy Ei",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-08-12T20:32:14.5067878Z"
+    "LastSeen": "2026-08-12T21:02:58.5334821Z"
   },
   "18014598546241886": {
     "Name": "Eva Riel",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-08-12T20:34:55.1661605Z"
+    "LastSeen": "2026-08-12T21:01:48.40341Z"
   },
   "18014598552606921": {
     "Name": "Kiro Leo",
     "WorldId": 42,
     "WorldName": "Zodiark",
-    "LastSeen": "2026-08-12T20:32:14.506788Z"
+    "LastSeen": "2026-08-12T21:02:58.5334825Z"
   },
   "18014598545106473": {
     "Name": "Kira Shiba",
@@ -16173,7 +16173,7 @@
     "Name": "Siberi Vi",
     "WorldId": 33,
     "WorldName": "Twintania",
-    "LastSeen": "2026-08-12T20:32:14.5067882Z"
+    "LastSeen": "2026-08-12T21:02:58.5334831Z"
   },
   "18014598546892392": {
     "Name": "Michael Beltar",
@@ -16533,18 +16533,24 @@
     "Name": "Khojin Ura",
     "WorldId": 402,
     "WorldName": "Alpha",
-    "LastSeen": "2026-08-12T20:32:14.5067885Z"
+    "LastSeen": "2026-08-12T21:02:52.5081961Z"
   },
   "18014498567483117": {
     "Name": "Elina Solene",
     "WorldId": 42,
     "WorldName": "Zodiark",
-    "LastSeen": "2026-08-12T20:32:14.5067887Z"
+    "LastSeen": "2026-08-12T21:02:58.5334836Z"
   },
   "18014598545542335": {
     "Name": "Enesha Melwalx",
     "WorldId": 42,
     "WorldName": "Zodiark",
     "LastSeen": "2026-08-12T20:29:47.3376074Z"
+  },
+  "18014598553154121": {
+    "Name": "Terry Walker",
+    "WorldId": 403,
+    "WorldName": "Raiden",
+    "LastSeen": "2026-08-12T21:02:56.5254468Z"
   }
 }

@@ -17,6 +17,10 @@
       "minecraft-server/rcon-password" = {
         owner = config.users.users.ayes.name;
       };
+
+      "lastfm/api-key" = {
+        owner = config.users.users.ayes.name;
+      };
     };
   };
 }
